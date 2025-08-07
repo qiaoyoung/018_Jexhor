@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  FFFGroupedUsrInfo.h
 //  NIM
@@ -6,34 +8,49 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "FFFContactDefines.h"
 #import "FFFContactDefines.h"
-#import "MyUserKit.h"
+//: #import "MyUserKit.h"
+#import "Secret.h"
 
-@interface NIMGroupUser:NSObject<NIMGroupMemberProtocol>
+//: @interface NIMGroupUser:NSObject<NIMGroupMemberProtocol>
+@interface UsufructuaryUser:NSObject<ToolTextEnablely>
 
-@property (nonatomic,readonly) FFFKitInfo *info;
+//: @property (nonatomic,readonly) FFFKitInfo *info;
+@property (nonatomic,readonly) DataTeam *info;
 
-- (instancetype)initWithUserId:(NSString *)userId;
+//: - (instancetype)initWithUserId:(NSString *)userId;
+- (instancetype)initWithCenter:(NSString *)userId;
 
+//: @end
 @end
 
-@interface NIMGroupTeamMember:NSObject<NIMGroupMemberProtocol>
+//: @interface NIMGroupTeamMember:NSObject<NIMGroupMemberProtocol>
+@interface CoverMember:NSObject<ToolTextEnablely>
 
-@property (nonatomic,readonly) FFFKitInfo *info;
+//: @property (nonatomic,readonly) FFFKitInfo *info;
+@property (nonatomic,readonly) DataTeam *info;
 
-- (instancetype)initWithUserId:(NSString *)userId
-                       session:(NIMSession *)session;
+//: - (instancetype)initWithUserId:(NSString *)userId
+- (instancetype)initWithRuddy:(NSString *)userId
+                       //: session:(NIMSession *)session;
+                       sendBy:(NIMSession *)session;
 
+//: @end
 @end
 
 
-@interface NIMGroupTeam:NSObject<NIMGroupMemberProtocol>
+//: @interface NIMGroupTeam:NSObject<NIMGroupMemberProtocol>
+@interface MasterTeam:NSObject<ToolTextEnablely>
 
-@property (nonatomic,readonly) FFFKitInfo *info;
+//: @property (nonatomic,readonly) FFFKitInfo *info;
+@property (nonatomic,readonly) DataTeam *info;
 
-- (instancetype)initWithTeamId:(NSString *)teamId
-                      teamType:(NIMKitTeamType)teamType;
+//: - (instancetype)initWithTeamId:(NSString *)teamId
+- (instancetype)initWithType:(NSString *)teamId
+                      //: teamType:(NIMKitTeamType)teamType;
+                      childLink:(NIMKitTeamType)teamType;
 
+//: @end
 @end
-
-

@@ -1,0 +1,261 @@
+
+#import <Foundation/Foundation.h>
+
+NSString *StringFromTheoreticData(Byte *data);
+
+
+//: head_default_group
+Byte user_disappointedTreatyText[] = {5, 18, 42, 6, 144, 229, 146, 143, 139, 142, 137, 142, 143, 144, 139, 159, 150, 158, 137, 145, 156, 153, 159, 154, 166};
+
+//: data
+Byte app_imageStr[] = {14, 4, 9, 9, 82, 183, 4, 103, 41, 109, 106, 125, 106, 164};
+
+//: head_default
+Byte m_exposeTitle[] = {49, 12, 79, 13, 129, 115, 109, 240, 254, 130, 105, 78, 106, 183, 180, 176, 179, 174, 179, 180, 181, 176, 196, 187, 195, 242};
+
+//: type
+Byte user_messageRumName[] = {3, 4, 45, 12, 61, 227, 130, 38, 114, 62, 127, 204, 161, 166, 157, 146, 18};
+
+//: personCardId
+Byte noti_collarStr[] = {24, 12, 45, 6, 219, 182, 157, 146, 159, 160, 156, 155, 112, 142, 159, 145, 118, 145, 146};
+
+// __DEBUG__
+// __CLOSE_PRINT__
+//
+//  RandomControl.m
+// Secret
+//
+//  Created by 田玉龙 on 2022/8/22.
+//  Copyright © 2022 NetEase. All rights reserved.
+//
+
+// __M_A_C_R_O__
+//: #import "FFFSessionShareCardContentView.h"
+#import "RandomControl.h"
+//: #import "FFFMessageModel.h"
+#import "PurseModel.h"
+//: #import "UIViewNimKit.h"
+#import "UIViewNimKit.h"
+//: #import "FFFLoadProgressView.h"
+#import "GeorgiaHomeBoyView.h"
+//: #import "FFFKitDependency.h"
+#import "FFFKitDependency.h"
+//: #import <YYImage/YYImage.h>
+#import <YYImage/YYImage.h>
+//: #import "MyUserKit.h"
+#import "Secret.h"
+//: #import "FFFKitDataProviderImpl.h"
+#import "MerelyImpl.h"
+//: #import "FFFKitInfoFetchOption.h"
+#import "AttributeQuantityOption.h"
+//: #import "UIImage+MyUserKit.h"
+#import "UIImage+Secret.h"
+//: #import "NSString+MyUserKit.h"
+#import "NSString+Secret.h"
+//: #import <SDWebImage/SDWebImage.h>
+#import <SDWebImage/SDWebImage.h>
+//: #import <objc/runtime.h>
+#import <objc/runtime.h>
+//: #import <objc/message.h>
+#import <objc/message.h>
+
+//: @interface FFFSessionShareCardContentView()
+@interface RandomControl()
+
+//: @property (nonatomic,strong) UIImageView *imageView;
+@property (nonatomic,strong) UIImageView *imageView;
+//: @property (nonatomic,strong) UILabel *nameLabel;
+@property (nonatomic,strong) UILabel *nameLabel;
+//: @property (nonatomic,strong) UILabel *accountLabel;
+@property (nonatomic,strong) UILabel *accountLabel;
+
+//: @end
+@end
+
+//: @implementation FFFSessionShareCardContentView
+@implementation RandomControl
+
+//: - (instancetype)initSessionMessageContentView{
+- (instancetype)initAssemblage{
+    //: self = [super initSessionMessageContentView];
+    self = [super initAssemblage];
+    //: if (self) {
+    if (self) {
+        //: self.opaque = YES;
+        self.opaque = YES;
+        //: _imageView = [[UIImageView alloc] initWithFrame:CGRectZero];
+        _imageView = [[UIImageView alloc] initWithFrame:CGRectZero];
+        //: _imageView.backgroundColor = [UIColor whiteColor];
+        _imageView.backgroundColor = [UIColor whiteColor];
+        //: _imageView.contentMode = UIViewContentModeScaleAspectFill;
+        _imageView.contentMode = UIViewContentModeScaleAspectFill;
+        //: _imageView.layer.cornerRadius = 18;
+        _imageView.layer.cornerRadius = 18;
+        //: _imageView.layer.masksToBounds = YES;
+        _imageView.layer.masksToBounds = YES;
+        //: [self addSubview:_imageView];
+        [self addSubview:_imageView];
+
+        //: _nameLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+        _nameLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+        //: _nameLabel.textColor = [UIColor blackColor];
+        _nameLabel.textColor = [UIColor blackColor];
+        //: [self addSubview:_nameLabel];
+        [self addSubview:_nameLabel];
+    }
+    //: return self;
+    return self;
+}
+
+//: - (void)refresh:(FFFMessageModel *)data
+- (void)name:(PurseModel *)data
+{
+    //: [super refresh:data];
+    [super name:data];
+    //: _imageView.image = nil;
+    _imageView.image = nil;
+    //: self.nameLabel.text = @"";
+    self.nameLabel.text = @"";
+    //: NIMCustomObject * cardObject = (NIMCustomObject*)self.model.message.messageObject;
+    NIMCustomObject * cardObject = (NIMCustomObject*)self.model.message.messageObject;
+
+    //: NSString *content = [cardObject.attachment encodeAttachment];
+    NSString *content = [cardObject.attachment encodeAttachment];
+    //: NSData *dataaaaa = [content dataUsingEncoding:NSUTF8StringEncoding];
+    NSData *dataaaaa = [content dataUsingEncoding:NSUTF8StringEncoding];
+    //: if (dataaaaa) {
+    if (dataaaaa) {
+        //: NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:dataaaaa
+        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:dataaaaa
+                                                             //: options:0
+                                                             options:0
+                                                               //: error:nil];
+                                                               error:nil];
+        //: if ([dict isKindOfClass:[NSDictionary class]])
+        if ([dict isKindOfClass:[NSDictionary class]])
+        {
+            //: NSInteger type = [[dict objectForKey:@"type"] intValue];
+            NSInteger type = [[dict objectForKey:StringFromTheoreticData(user_messageRumName)] intValue];
+            //: NSDictionary *datatyl = [dict objectForKey:@"data"];
+            NSDictionary *datatyl = [dict objectForKey:StringFromTheoreticData(app_imageStr)];
+            //: if (type == 105) {
+            if (type == 105) {
+
+                //: NSString *cardid = [datatyl stringValueForKey:@"personCardId" defaultValue:@""];
+                NSString *cardid = [datatyl nameValue:StringFromTheoreticData(noti_collarStr) text:@""];
+
+                //: if ([[datatyl stringValueForKey:@"type" defaultValue:@"0"] boolValue]) {
+                if ([[datatyl nameValue:StringFromTheoreticData(user_messageRumName) text:@"0"] boolValue]) {
+                    //: NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:cardid];
+                    NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:cardid];
+                    //: if (team.teamName.length>0) {
+                    if (team.teamName.length>0) {
+                        //: [self.imageView sd_setImageWithURL:[NSURL URLWithString:team.avatarUrl?:@""] placeholderImage:[UIImage imageNamed:@"head_default_group"]];
+                        [self.imageView sd_setImageWithURL:[NSURL URLWithString:team.avatarUrl?:@""] placeholderImage:[UIImage imageNamed:StringFromTheoreticData(user_disappointedTreatyText)]];
+                        //: self.nameLabel.text = team.teamName;
+                        self.nameLabel.text = team.teamName;
+                    //: }else{
+                    }else{
+                        //: [[NIMSDK sharedSDK].teamManager fetchTeamInfo:cardid completion:^(NSError * _Nullable error, NIMTeam * _Nullable team) {
+                        [[NIMSDK sharedSDK].teamManager fetchTeamInfo:cardid completion:^(NSError * _Nullable error, NIMTeam * _Nullable team) {
+                            //: [self.imageView sd_setImageWithURL:[NSURL URLWithString:team.avatarUrl?:@""] placeholderImage:[UIImage imageNamed:@"head_default_group"]];
+                            [self.imageView sd_setImageWithURL:[NSURL URLWithString:team.avatarUrl?:@""] placeholderImage:[UIImage imageNamed:StringFromTheoreticData(user_disappointedTreatyText)]];
+                            //: self.nameLabel.text = team.teamName;
+                            self.nameLabel.text = team.teamName;
+                        //: }];
+                        }];
+                    }
+                //: } else {
+                } else {
+                    @
+                     //: autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
+                     autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
+                                  ;
+                    //: NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:cardid];
+                    NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:cardid];
+                    //: if (user.userInfo.nickName) {
+                    if (user.userInfo.nickName) {
+                        //: [self.imageView sd_setImageWithURL:[NSURL URLWithString:user.userInfo.avatarUrl] placeholderImage:[UIImage imageNamed:@"head_default"]];
+                        [self.imageView sd_setImageWithURL:[NSURL URLWithString:user.userInfo.avatarUrl] placeholderImage:[UIImage imageNamed:StringFromTheoreticData(m_exposeTitle)]];
+                        //: self.nameLabel.text = user.userInfo.nickName;
+                        self.nameLabel.text = user.userInfo.nickName;
+                    //: }else{
+                    }else{
+                        //: [[NIMSDK sharedSDK].userManager fetchUserInfos:@[cardid] completion:^(NSArray<NIMUser *> * _Nullable users, NSError * _Nullable error) {
+                        [[NIMSDK sharedSDK].userManager fetchUserInfos:@[cardid] completion:^(NSArray<NIMUser *> * _Nullable users, NSError * _Nullable error) {
+                            //: if (users.count) {
+                            if (users.count) {
+                                @
+                                 //: try{} @finally{} __typeof__(self) self = __weak_self__;
+                                 try{} @finally{} __typeof__(self) self = __weak_self__;
+                                                ;
+                                //: NIMUser *user = users.firstObject;
+                                NIMUser *user = users.firstObject;
+                                //: [self.imageView sd_setImageWithURL:[NSURL URLWithString:user.userInfo.avatarUrl] placeholderImage:[UIImage imageNamed:@"head_default"]];
+                                [self.imageView sd_setImageWithURL:[NSURL URLWithString:user.userInfo.avatarUrl] placeholderImage:[UIImage imageNamed:StringFromTheoreticData(m_exposeTitle)]];
+                                //: self.nameLabel.text = user.userInfo.nickName;
+                                self.nameLabel.text = user.userInfo.nickName;
+                            }
+                        //: }];
+                        }];
+                    }
+
+
+                }
+            }
+        }
+    }
+}
+
+//: - (void)layoutSubviews{
+- (void)layoutSubviews{
+    //: [super layoutSubviews];
+    [super layoutSubviews];
+    //: UIEdgeInsets contentInsets = self.model.contentViewInsets;
+    UIEdgeInsets contentInsets = self.model.contentViewInsets;
+    //: CGRect imageViewFrame = CGRectMake(contentInsets.left, contentInsets.top, 36, 36);
+    CGRect imageViewFrame = CGRectMake(contentInsets.left, contentInsets.top, 36, 36);
+    //: self.imageView.frame = imageViewFrame;
+    self.imageView.frame = imageViewFrame;
+    //: self.nameLabel.frame = CGRectMake(contentInsets.left + 44, contentInsets.top, 140, 36);
+    self.nameLabel.frame = CGRectMake(contentInsets.left + 44, contentInsets.top, 140, 36);
+}
+
+
+//: - (void)onTouchUpInside:(id)sender
+- (void)played:(id)sender
+{
+    //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+    BeforeEvent *event = [[BeforeEvent alloc] init];
+    //: event.eventName = FFFKitEventNameTapContent;
+    event.eventName = dream_makeMsg;
+    //: event.messageModel = self.model;
+    event.messageModel = self.model;
+    //: [self.delegate onCatchEvent:event];
+    [self.delegate parametering:event];
+}
+
+//: @end
+@end
+
+Byte * TheoreticDataToCache(Byte *data) {
+    int shaft = data[0];
+    int countoSunny = data[1];
+    Byte smartTemporary = data[2];
+    int horrorDisappear = data[3];
+    if (!shaft) return data + horrorDisappear;
+    for (int i = horrorDisappear; i < horrorDisappear + countoSunny; i++) {
+        int value = data[i] - smartTemporary;
+        if (value < 0) {
+            value += 256;
+        }
+        data[i] = value;
+    }
+    data[0] = 0;
+    data[horrorDisappear + countoSunny] = 0;
+    return data + horrorDisappear;
+}
+
+NSString *StringFromTheoreticData(Byte *data) {
+    return [NSString stringWithUTF8String:(char *)TheoreticDataToCache(data)];
+}
