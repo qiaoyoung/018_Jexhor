@@ -198,7 +198,7 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFGroupAvatarViewController.h"
+//: #import "PushGroupAvatarViewController.h"
 #import "RaceViewController.h"
 //: #import "SVProgressHUD.h"
 #import "SVProgressHUD.h"
@@ -228,10 +228,10 @@ typedef struct {
 #import "UIView+Toast.h"
 //: #import "NTESRegistConfigManager.h"
 #import "MakeManager.h"
-//: #import "FFFKitProgressHUD.h"
+//: #import "PushKitProgressHUD.h"
 #import "CoverView.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "PushKitDependency.h"
+#import "PushKitDependency.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
 //: #import "NSString+MyUserKit.h"
@@ -239,7 +239,7 @@ typedef struct {
 //: #import "NSSetAvater.h"
 #import "SearchedView.h"
 
-//: @interface FFFGroupAvatarViewController ()<NTESCustomUIAlertDelegate>
+//: @interface PushGroupAvatarViewController ()<NTESCustomUIAlertDelegate>
 @interface RaceViewController ()<EasyLayDelegate>
 
 //: @property (nonatomic, strong) UIButton *closeBtn;
@@ -263,7 +263,7 @@ typedef struct {
 //: @end
 @end
 
-//: @implementation FFFGroupAvatarViewController
+//: @implementation PushGroupAvatarViewController
 @implementation RaceViewController
 
 //: - (void)viewDidLoad {
@@ -295,7 +295,7 @@ typedef struct {
     titleLabel.textColor = [UIColor blackColor];
     //: titleLabel.font = [UIFont boldSystemFontOfSize:16];
     titleLabel.font = [UIFont boldSystemFontOfSize:16];
-    //: titleLabel.text = [FFFLanguageManager getTextWithKey:@"set_group_avater"];
+    //: titleLabel.text = [PushLanguageManager getTextWithKey:@"set_group_avater"];
     titleLabel.text = [BackgroundRandomAttribute content:[SaveData main_generallyName]];
     //: titleLabel.textAlignment = NSTextAlignmentCenter;
     titleLabel.textAlignment = NSTextAlignmentCenter;
@@ -348,7 +348,7 @@ typedef struct {
     self.accountLabel.font = [UIFont boldSystemFontOfSize:14];
     //: self.accountLabel.textColor = [UIColor colorWithHexString:@"#5D5F66"];
     self.accountLabel.textColor = [UIColor user:[SaveData noti_horrorUrl]];
-    //: self.accountLabel.text = [FFFLanguageManager getTextWithKey:@"register_good_avater"];
+    //: self.accountLabel.text = [PushLanguageManager getTextWithKey:@"register_good_avater"];
     self.accountLabel.text = [BackgroundRandomAttribute content:[SaveData m_blackName]];
     //: self.accountLabel.textAlignment = NSTextAlignmentCenter;
     self.accountLabel.textAlignment = NSTextAlignmentCenter;
@@ -424,7 +424,7 @@ typedef struct {
     self.registButton.titleLabel.font = [UIFont systemFontOfSize:16];
     //: [self.registButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.registButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [self.registButton setTitle:[FFFLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
+    //: [self.registButton setTitle:[PushLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
     [self.registButton setTitle:[BackgroundRandomAttribute content:[SaveData showTeamTitle]] forState:UIControlStateNormal];
     //: [bodyView addSubview:self.registButton];
     [bodyView addSubview:self.registButton];

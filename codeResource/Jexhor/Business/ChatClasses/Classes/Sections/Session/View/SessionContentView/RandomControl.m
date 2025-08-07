@@ -30,23 +30,23 @@ Byte noti_collarStr[] = {24, 12, 45, 6, 219, 182, 157, 146, 159, 160, 156, 155, 
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionShareCardContentView.h"
+//: #import "PushSessionShareCardContentView.h"
 #import "RandomControl.h"
-//: #import "FFFMessageModel.h"
+//: #import "PushMessageModel.h"
 #import "PurseModel.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFLoadProgressView.h"
+//: #import "PushLoadProgressView.h"
 #import "GeorgiaHomeBoyView.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "PushKitDependency.h"
+#import "PushKitDependency.h"
 //: #import <YYImage/YYImage.h>
 #import <YYImage/YYImage.h>
 //: #import "MyUserKit.h"
 #import "Secret.h"
-//: #import "FFFKitDataProviderImpl.h"
+//: #import "PushKitDataProviderImpl.h"
 #import "MerelyImpl.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "PushKitInfoFetchOption.h"
 #import "AttributeQuantityOption.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
@@ -59,7 +59,7 @@ Byte noti_collarStr[] = {24, 12, 45, 6, 219, 182, 157, 146, 159, 160, 156, 155, 
 //: #import <objc/message.h>
 #import <objc/message.h>
 
-//: @interface FFFSessionShareCardContentView()
+//: @interface PushSessionShareCardContentView()
 @interface RandomControl()
 
 //: @property (nonatomic,strong) UIImageView *imageView;
@@ -72,7 +72,7 @@ Byte noti_collarStr[] = {24, 12, 45, 6, 219, 182, 157, 146, 159, 160, 156, 155, 
 //: @end
 @end
 
-//: @implementation FFFSessionShareCardContentView
+//: @implementation PushSessionShareCardContentView
 @implementation RandomControl
 
 //: - (instancetype)initSessionMessageContentView{
@@ -107,7 +107,7 @@ Byte noti_collarStr[] = {24, 12, 45, 6, 219, 182, 157, 146, 159, 160, 156, 155, 
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data
+//: - (void)refresh:(PushMessageModel *)data
 - (void)name:(PurseModel *)data
 {
     //: [super refresh:data];
@@ -225,9 +225,9 @@ Byte noti_collarStr[] = {24, 12, 45, 6, 219, 182, 157, 146, 159, 160, 156, 155, 
 //: - (void)onTouchUpInside:(id)sender
 - (void)played:(id)sender
 {
-    //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+    //: PushKitEvent *event = [[PushKitEvent alloc] init];
     BeforeEvent *event = [[BeforeEvent alloc] init];
-    //: event.eventName = FFFKitEventNameTapContent;
+    //: event.eventName = PushKitEventNameTapContent;
     event.eventName = dream_makeMsg;
     //: event.messageModel = self.model;
     event.messageModel = self.model;

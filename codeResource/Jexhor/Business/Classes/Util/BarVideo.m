@@ -84,7 +84,7 @@
 #import "BarVideo.h"
 //: #import <sys/stat.h>
 #import <sys/stat.h>
-//: #import "FFFConfig.h"
+//: #import "PushConfig.h"
 #import "AlongTemp.h"
 
 //: @interface NTESFileLocationHelper ()
@@ -129,7 +129,7 @@
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: NSString *appKey = [[FFFConfig sharedConfig] appKey];
+        //: NSString *appKey = [[PushConfig sharedConfig] appKey];
         NSString *appKey = [[AlongTemp frameConfig] appKey];
         //: NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);

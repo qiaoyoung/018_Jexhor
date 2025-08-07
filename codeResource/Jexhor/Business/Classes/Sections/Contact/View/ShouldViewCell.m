@@ -11,7 +11,7 @@
 // __M_A_C_R_O__
 //: #import "NTESUserListCell.h"
 #import "ShouldViewCell.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "PushAvatarImageView.h"
 #import "ImageView.h"
 //: #import "UIView+NTES.h"
 #import "UIView+SearchedTeam.h"
@@ -41,7 +41,7 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     //: if (self) {
     if (self) {
-        //: _avatarImageView = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
+        //: _avatarImageView = [[PushAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
         _avatarImageView = [[ImageView alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
         //: [_avatarImageView addTarget:self action:@selector(onTouchAvatar:) forControlEvents:UIControlEventTouchUpInside];
         [_avatarImageView addTarget:self action:@selector(mobiled:) forControlEvents:UIControlEventTouchUpInside];

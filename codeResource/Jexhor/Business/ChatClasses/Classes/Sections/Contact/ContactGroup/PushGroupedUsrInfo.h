@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFGroupedUsrInfo.h
+//  PushGroupedUsrInfo.h
 //  NIM
 //
 //  Created by Xuhui on 15/3/24.
@@ -9,15 +9,15 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactDefines.h"
-#import "FFFContactDefines.h"
+//: #import "PushContactDefines.h"
+#import "PushContactDefines.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
 
 //: @interface NIMGroupUser:NSObject<NIMGroupMemberProtocol>
 @interface UsufructuaryUser:NSObject<ToolTextEnablely>
 
-//: @property (nonatomic,readonly) FFFKitInfo *info;
+//: @property (nonatomic,readonly) PushKitInfo *info;
 @property (nonatomic,readonly) DataTeam *info;
 
 //: - (instancetype)initWithUserId:(NSString *)userId;
@@ -29,7 +29,7 @@
 //: @interface NIMGroupTeamMember:NSObject<NIMGroupMemberProtocol>
 @interface CoverMember:NSObject<ToolTextEnablely>
 
-//: @property (nonatomic,readonly) FFFKitInfo *info;
+//: @property (nonatomic,readonly) PushKitInfo *info;
 @property (nonatomic,readonly) DataTeam *info;
 
 //: - (instancetype)initWithUserId:(NSString *)userId
@@ -44,7 +44,7 @@
 //: @interface NIMGroupTeam:NSObject<NIMGroupMemberProtocol>
 @interface MasterTeam:NSObject<ToolTextEnablely>
 
-//: @property (nonatomic,readonly) FFFKitInfo *info;
+//: @property (nonatomic,readonly) PushKitInfo *info;
 @property (nonatomic,readonly) DataTeam *info;
 
 //: - (instancetype)initWithTeamId:(NSString *)teamId

@@ -47,7 +47,7 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data
+//: - (void)refresh:(PushMessageModel *)data
 - (void)name:(PurseModel *)data
 {
     //: [super refresh:data];

@@ -94,7 +94,7 @@ Byte m_insideCellUrl[] = {12, 23, 66, 6, 71, 14, 31, 33, 50, 39, 52, 39, 50, 55,
 //: RegistFinshNotification
 Byte noti_mageName[] = {17, 23, 52, 12, 97, 132, 92, 71, 107, 165, 10, 240, 30, 49, 51, 53, 63, 64, 18, 53, 58, 63, 52, 26, 59, 64, 53, 50, 53, 47, 45, 64, 53, 59, 58, 175};
 
-//: #ffffff
+//: #fffPush
 Byte kPositionBlueMessage[] = {51, 7, 51, 11, 215, 45, 41, 61, 33, 39, 119, 240, 51, 51, 51, 51, 51, 51, 75};
 
 //: ppp
@@ -183,7 +183,7 @@ Byte noti_upText[] = {90, 4, 10, 7, 53, 142, 99, 98, 87, 100, 93, 53};
 //
 
 // __M_A_C_R_O__
-//: #import "FFFLoginViewController.h"
+//: #import "PushLoginViewController.h"
 #import "TapMaxViewController.h"
 //: #import "NTESMainTabController.h"
 #import "BecharmBarController.h"
@@ -201,14 +201,14 @@ Byte noti_upText[] = {90, 4, 10, 7, 53, 142, 99, 98, 87, 100, 93, 53};
 #import "SizeCenter.h"
 //: #import "UIActionSheet+NTESBlock.h"
 #import "UIActionSheet+Collection.h"
-//: #import "FFFRegisterViewController.h"
+//: #import "PushRegisterViewController.h"
 #import "RandomSecretViewController.h"
 //: #import "NTESRegistConfigManager.h"
 #import "MakeManager.h"
 //: #import <CoreTelephony/CTCellularData.h>
 #import <CoreTelephony/CTCellularData.h>
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "PushGlobalMacro.h"
+#import "PushGlobalMacro.h"
 //: #import "AppDelegate.h"
 #import "AppDelegate.h"
 //: #import "CCCAutoLoginManager.h"
@@ -220,7 +220,7 @@ Byte noti_upText[] = {90, 4, 10, 7, 53, 142, 99, 98, 87, 100, 93, 53};
 //: #import "GetBackPasswordViewController.h"
 #import "AddViewController.h"
 
-//: @interface FFFLoginViewController ()<UITextFieldDelegate> {
+//: @interface PushLoginViewController ()<UITextFieldDelegate> {
 @interface TapMaxViewController ()<UITextFieldDelegate> {
     //: UIActivityIndicatorView *_ActivityIndicator;
     UIActivityIndicatorView *_ActivityIndicator;
@@ -261,7 +261,7 @@ Byte noti_upText[] = {90, 4, 10, 7, 53, 142, 99, 98, 87, 100, 93, 53};
 //: @end
 @end
 
-//: @implementation FFFLoginViewController
+//: @implementation PushLoginViewController
 @implementation TapMaxViewController
 
 //: - (void)viewDidLoad {
@@ -271,7 +271,8 @@ Byte noti_upText[] = {90, 4, 10, 7, 53, 142, 99, 98, 87, 100, 93, 53};
     //: UIImageView *bg = [[UIImageView alloc]initWithFrame:self.view.bounds];
     UIImageView *bg = [[UIImageView alloc]initWithFrame:self.view.bounds];
     //: bg.image = [UIImage imageNamed:@"login_bg"];
-    bg.image = [UIImage imageNamed:StringFromTickData(userTapValue)];
+    UIImage *image = [UIImage imageNamed:StringFromTickData(userTapValue)];
+    bg.image = image;
     //: [self.view addSubview:bg];
     [self.view addSubview:bg];
 
@@ -363,7 +364,7 @@ Byte noti_upText[] = {90, 4, 10, 7, 53, 142, 99, 98, 87, 100, 93, 53};
                 }
                 //: userDefaults.language = lang;
                 userDefaults.language = lang;
-                //: [[FFFLanguageManager shareInstance] setLanguagre:lang];
+                //: [[PushLanguageManager shareInstance] setLanguagre:lang];
                 [[BackgroundRandomAttribute disable] setInfoTeam:lang];
                 //: [[NSNotificationCenter defaultCenter] postNotificationName:@"NotificationLogout" object:nil];
                 [[NSNotificationCenter defaultCenter] postNotificationName:StringFromTickData(dream_iconFormat) object:nil];
@@ -702,7 +703,7 @@ Byte noti_upText[] = {90, 4, 10, 7, 53, 142, 99, 98, 87, 100, 93, 53};
 
     //: UILabel *labtitle = [[UILabel alloc]initWithFrame:CGRectMake(0, _logoImageView.bottom, [[UIScreen mainScreen] bounds].size.width, 30)];
     UILabel *labtitle = [[UILabel alloc]initWithFrame:CGRectMake(0, _logoImageView.bottom, [[UIScreen mainScreen] bounds].size.width, 30)];
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"activity_login_welcome"];
+    //: labtitle.text = [PushLanguageManager getTextWithKey:@"activity_login_welcome"];
     labtitle.text = [BackgroundRandomAttribute content:StringFromTickData(mainItselfMessage)];
     //: labtitle.textColor = [UIColor blackColor];
     labtitle.textColor = [UIColor blackColor];
@@ -715,7 +716,7 @@ Byte noti_upText[] = {90, 4, 10, 7, 53, 142, 99, 98, 87, 100, 93, 53};
 
     //: UIView *usernameView = [[UIView alloc]initWithFrame:CGRectMake(20, labtitle.bottom+20, [[UIScreen mainScreen] bounds].size.width-40, 48)];
     UIView *usernameView = [[UIView alloc]initWithFrame:CGRectMake(20, labtitle.bottom+20, [[UIScreen mainScreen] bounds].size.width-40, 48)];
-    //: usernameView.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+    //: usernameView.backgroundColor = [UIColor colorWithHexString:@"#fffPush"];
     usernameView.backgroundColor = [UIColor user:StringFromTickData(kPositionBlueMessage)];
     //: usernameView.layer.cornerRadius = 24;
     usernameView.layer.cornerRadius = 24;
@@ -737,7 +738,7 @@ Byte noti_upText[] = {90, 4, 10, 7, 53, 142, 99, 98, 87, 100, 93, 53};
     _usernameTextField.font = [UIFont systemFontOfSize:16];
     //: _usernameTextField.textColor = [UIColor colorWithHexString:@"#333333"];
     _usernameTextField.textColor = [UIColor user:StringFromTickData(kCellIdent)];
-    //: NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc]initWithString:[FFFLanguageManager getTextWithKey:@"register_account_activity_account"] attributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#999999"]}];
+    //: NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc]initWithString:[PushLanguageManager getTextWithKey:@"register_account_activity_account"] attributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#999999"]}];
     NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc]initWithString:[BackgroundRandomAttribute content:StringFromTickData(mSnapMessageStr)] attributes:@{NSForegroundColorAttributeName:[UIColor user:StringFromTickData(app_positionData)]}];
     //: _usernameTextField.attributedPlaceholder = attrString;
     _usernameTextField.attributedPlaceholder = attrString;
@@ -751,7 +752,7 @@ Byte noti_upText[] = {90, 4, 10, 7, 53, 142, 99, 98, 87, 100, 93, 53};
 
     //: UIView *psdView = [[UIView alloc]initWithFrame:CGRectMake(20, usernameView.bottom+20, [[UIScreen mainScreen] bounds].size.width-40, 48)];
     UIView *psdView = [[UIView alloc]initWithFrame:CGRectMake(20, usernameView.bottom+20, [[UIScreen mainScreen] bounds].size.width-40, 48)];
-    //: psdView.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+    //: psdView.backgroundColor = [UIColor colorWithHexString:@"#fffPush"];
     psdView.backgroundColor = [UIColor user:StringFromTickData(kPositionBlueMessage)];
     //: psdView.layer.masksToBounds = YES;
     psdView.layer.masksToBounds = YES;
@@ -776,7 +777,7 @@ Byte noti_upText[] = {90, 4, 10, 7, 53, 142, 99, 98, 87, 100, 93, 53};
     //: _passwordTextField.secureTextEntry = YES;
     _passwordTextField.secureTextEntry = YES;
 //    self.passwordTextField.delegate = self;
-    //: NSMutableAttributedString *attrString1 = [[NSMutableAttributedString alloc]initWithString:[FFFLanguageManager getTextWithKey:@"register_account_activity_psw"] attributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#999999"]}];
+    //: NSMutableAttributedString *attrString1 = [[NSMutableAttributedString alloc]initWithString:[PushLanguageManager getTextWithKey:@"register_account_activity_psw"] attributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#999999"]}];
     NSMutableAttributedString *attrString1 = [[NSMutableAttributedString alloc]initWithString:[BackgroundRandomAttribute content:StringFromTickData(mDisappointedName)] attributes:@{NSForegroundColorAttributeName:[UIColor user:StringFromTickData(app_positionData)]}];
     //: _passwordTextField.attributedPlaceholder = attrString1;
     _passwordTextField.attributedPlaceholder = attrString1;
@@ -805,7 +806,7 @@ Byte noti_upText[] = {90, 4, 10, 7, 53, 142, 99, 98, 87, 100, 93, 53};
     _loginButton.titleLabel.font = [UIFont systemFontOfSize:16];
     //: [_loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [_loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [_loginButton setTitle:[FFFLanguageManager getTextWithKey:@"activity_login_login"] forState:UIControlStateNormal];
+    //: [_loginButton setTitle:[PushLanguageManager getTextWithKey:@"activity_login_login"] forState:UIControlStateNormal];
     [_loginButton setTitle:[BackgroundRandomAttribute content:StringFromTickData(show_panFormat)] forState:UIControlStateNormal];
     //: [_loginButton addTarget:self action:@selector(doLogin) forControlEvents:UIControlEventTouchUpInside];
     [_loginButton addTarget:self action:@selector(fromLogin) forControlEvents:UIControlEventTouchUpInside];
@@ -830,7 +831,7 @@ Byte noti_upText[] = {90, 4, 10, 7, 53, 142, 99, 98, 87, 100, 93, 53};
     [_registerButton addTarget:self action:@selector(lengthPush) forControlEvents:UIControlEventTouchUpInside];
     //: NSDictionary *attributes = @{NSUnderlineStyleAttributeName: @(NSUnderlineStyleSingle)};
     NSDictionary *attributes = @{NSUnderlineStyleAttributeName: @(NSUnderlineStyleSingle)};
-    //: NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:[FFFLanguageManager getTextWithKey:@"activity_register_title"] attributes:attributes];
+    //: NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:[PushLanguageManager getTextWithKey:@"activity_register_title"] attributes:attributes];
     NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:[BackgroundRandomAttribute content:StringFromTickData(m_insideCellUrl)] attributes:attributes];
     //: [_registerButton setAttributedTitle:attributedString forState:UIControlStateNormal];
     [_registerButton setAttributedTitle:attributedString forState:UIControlStateNormal];
@@ -890,7 +891,7 @@ Byte noti_upText[] = {90, 4, 10, 7, 53, 142, 99, 98, 87, 100, 93, 53};
 //: - (void)doRegister
 - (void)lengthPush
 {
-    //: FFFRegisterViewController *vc = [[FFFRegisterViewController alloc]init];
+    //: PushRegisterViewController *vc = [[PushRegisterViewController alloc]init];
     RandomSecretViewController *vc = [[RandomSecretViewController alloc]init];
     //: [self.navigationController pushViewController:vc animated:YES];
     [self.navigationController pushViewController:vc animated:YES];
@@ -935,7 +936,7 @@ Byte noti_upText[] = {90, 4, 10, 7, 53, 142, 99, 98, 87, 100, 93, 53};
 -(YYLabel *)protocolLabel{
     //: if (!_protocolLabel) {
     if (!_protocolLabel) {
-        //: NSString *originText = [FFFLanguageManager getTextWithKey:@"activity_register_agree"];
+        //: NSString *originText = [PushLanguageManager getTextWithKey:@"activity_register_agree"];
         NSString *originText = [BackgroundRandomAttribute content:StringFromTickData(dreamStatusValue)];
         //: NSMutableAttributedString *text1 = [[NSMutableAttributedString alloc] initWithString:originText];
         NSMutableAttributedString *text1 = [[NSMutableAttributedString alloc] initWithString:originText];
@@ -958,7 +959,7 @@ Byte noti_upText[] = {90, 4, 10, 7, 53, 142, 99, 98, 87, 100, 93, 53};
 
             //: ZMONPolicyPrivacyViewController *vc = [[ZMONPolicyPrivacyViewController alloc] init];
             MarginViewController *vc = [[MarginViewController alloc] init];
-            //: vc.webTitle = [FFFLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
+            //: vc.webTitle = [PushLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
             vc.webTitle = [BackgroundRandomAttribute content:StringFromTickData(noti_povertyId)];
             //: vc.urlString = [NIMUserDefaults standardUserDefaults].yshref;
             vc.urlString = [CrossShouldBlock towardScaleOfMeasurement].yshref;
@@ -999,7 +1000,7 @@ Byte noti_upText[] = {90, 4, 10, 7, 53, 142, 99, 98, 87, 100, 93, 53};
 -(YYLabel *)registLabel{
     //: if (!_registLabel) {
     if (!_registLabel) {
-        //: NSString *noCount = [FFFLanguageManager getTextWithKey:@"activity_login_has_no_account"];
+        //: NSString *noCount = [PushLanguageManager getTextWithKey:@"activity_login_has_no_account"];
         NSString *noCount = [BackgroundRandomAttribute content:StringFromTickData(kShowWithBlackId)];
         //: NSString *originText = [NSString stringWithFormat:@"%@",noCount];
         NSString *originText = [NSString stringWithFormat:@"%@",noCount];
@@ -1108,7 +1109,7 @@ Byte noti_upText[] = {90, 4, 10, 7, 53, 142, 99, 98, 87, 100, 93, 53};
 
     //: if (_usernameTextField.text && _usernameTextField.text.length <= 0){
     if (_usernameTextField.text && _usernameTextField.text.length <= 0){
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"register_account_activity_account"] duration:2.0 position:CSToastPositionCenter];
+        //: [self.view makeToast:[PushLanguageManager getTextWithKey:@"register_account_activity_account"] duration:2.0 position:CSToastPositionCenter];
         [self.view makeToast:[BackgroundRandomAttribute content:StringFromTickData(mSnapMessageStr)] duration:2.0 position:CSToastPositionCenter];
         //: return;
         return;
@@ -1116,7 +1117,7 @@ Byte noti_upText[] = {90, 4, 10, 7, 53, 142, 99, 98, 87, 100, 93, 53};
 
     //: if (_passwordTextField.text && _passwordTextField.text.length <= 0){
     if (_passwordTextField.text && _passwordTextField.text.length <= 0){
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"register_account_activity_psw"] duration:2.0 position:CSToastPositionCenter];
+        //: [self.view makeToast:[PushLanguageManager getTextWithKey:@"register_account_activity_psw"] duration:2.0 position:CSToastPositionCenter];
         [self.view makeToast:[BackgroundRandomAttribute content:StringFromTickData(mDisappointedName)] duration:2.0 position:CSToastPositionCenter];
         //: return;
         return;
@@ -1212,7 +1213,7 @@ Byte noti_upText[] = {90, 4, 10, 7, 53, 142, 99, 98, 87, 100, 93, 53};
                     //: if (error != nil) {
                     if (error != nil) {
 
-                        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"login_activity_login_failed"] duration:2.0 position:CSToastPositionCenter];
+                        //: [self.view makeToast:[PushLanguageManager getTextWithKey:@"login_activity_login_failed"] duration:2.0 position:CSToastPositionCenter];
                         [self.view makeToast:[BackgroundRandomAttribute content:StringFromTickData(dream_showData)] duration:2.0 position:CSToastPositionCenter];
 
                         //: return;
@@ -1228,7 +1229,7 @@ Byte noti_upText[] = {90, 4, 10, 7, 53, 142, 99, 98, 87, 100, 93, 53};
                   style.imageSize = CGSizeMake(20, 20);
                 //: style.messageColor = [UIColor colorWithHexString:@"#5D5F66"];
                 style.messageColor = [UIColor user:StringFromTickData(main_saleMessage)];
-                //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"login_activity_login_success"] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:@"login_success"] style:style completion:nil];
+                //: [self.view makeToast:[PushLanguageManager getTextWithKey:@"login_activity_login_success"] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:@"login_success"] style:style completion:nil];
                 [self.view makeToast:[BackgroundRandomAttribute content:StringFromTickData(notiSessionPath)] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:StringFromTickData(mainHorrorPath)] style:style completion:nil];
 
                     //: NTESLoginData *sdkData = [[NTESLoginData alloc] init];
@@ -1290,7 +1291,7 @@ Byte noti_upText[] = {90, 4, 10, 7, 53, 142, 99, 98, 87, 100, 93, 53};
         style.messageColor = [UIColor user:StringFromTickData(main_saleMessage)];
         //: style.imageSize = CGSizeMake(20, 20);
         style.imageSize = CGSizeMake(20, 20);
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:@"login_error"] style:style completion:nil];
+        //: [self.view makeToast:[PushLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:@"login_error"] style:style completion:nil];
         [self.view makeToast:[BackgroundRandomAttribute content:StringFromTickData(dreamEqualIdent)] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:StringFromTickData(kWipePath)] style:style completion:nil];
 
     //: }];

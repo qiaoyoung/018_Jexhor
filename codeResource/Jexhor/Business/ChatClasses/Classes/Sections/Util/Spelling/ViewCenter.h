@@ -21,7 +21,7 @@
 //: @end
 @end
 
-//: @interface FFFSpellingCenter : NSObject
+//: @interface PushSpellingCenter : NSObject
 @interface ViewCenter : NSObject
 {
     //: NSMutableDictionary *_spellingCache; 
@@ -29,7 +29,7 @@
     //: NSString *_filepath;
     NSString *_filepath;
 }
-//: + (FFFSpellingCenter *)sharedCenter;
+//: + (PushSpellingCenter *)sharedCenter;
 + (ViewCenter *)centerStage;
 //: - (void)saveSpellingCache; 
 - (void)memberInsert; //写入缓存

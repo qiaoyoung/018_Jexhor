@@ -363,7 +363,7 @@
     labtitle.textColor = [UIColor user:[CustodyData showUnderPath]];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"Confirm_Account_Deletion"];
+    //: labtitle.text = [PushLanguageManager getTextWithKey:@"Confirm_Account_Deletion"];
     labtitle.text = [BackgroundRandomAttribute content:[CustodyData appJuryData]];
     //: [_box addSubview:labtitle];
     [_box addSubview:labtitle];
@@ -401,7 +401,7 @@
 
     //: if (_agreementButton.selected == NO) {
     if (_agreementButton.selected == NO) {
-        //: [self makeToast:[FFFLanguageManager getTextWithKey:@"Read_agree_agreement"] duration:2.0 position:CSToastPositionCenter];
+        //: [self makeToast:[PushLanguageManager getTextWithKey:@"Read_agree_agreement"] duration:2.0 position:CSToastPositionCenter];
         [self makeToast:[BackgroundRandomAttribute content:[CustodyData mainEqualContent]] duration:2.0 position:CSToastPositionCenter];
         //: return;
         return;
@@ -467,7 +467,7 @@
         _titleLabel.textAlignment = NSTextAlignmentCenter;
 //        _titleLabel.numberOfLines = 1;
 //        _titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"];
+        //: _titleLabel.text = [PushLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"];
         _titleLabel.text = [BackgroundRandomAttribute content:[CustodyData dreamTermsStandingMessage]];
     }
     //: return _titleLabel;
@@ -530,7 +530,7 @@
         labtitle1.font = [UIFont systemFontOfSize:11.f];
         //: labtitle1.textColor = [UIColor blackColor];
         labtitle1.textColor = [UIColor blackColor];
-        //: labtitle1.text = [FFFLanguageManager getTextWithKey:@"Read_agree_agreement"];
+        //: labtitle1.text = [PushLanguageManager getTextWithKey:@"Read_agree_agreement"];
         labtitle1.text = [BackgroundRandomAttribute content:[CustodyData mainEqualContent]];
         //: labtitle1.numberOfLines = 2;
         labtitle1.numberOfLines = 2;
@@ -571,7 +571,7 @@
         labtitle2.font = [UIFont systemFontOfSize:11.f];
         //: labtitle2.textColor = [UIColor colorWithHexString:@"#5D5F66"];
         labtitle2.textColor = [UIColor user:[CustodyData k_pullStorageUrl]];
-        //: labtitle2.text = [FFFLanguageManager getTextWithKey:@"Vertify_login_password"];
+        //: labtitle2.text = [PushLanguageManager getTextWithKey:@"Vertify_login_password"];
         labtitle2.text = [BackgroundRandomAttribute content:[CustodyData mainMotFormat]];
         //: labtitle2.numberOfLines = 2;
         labtitle2.numberOfLines = 2;
@@ -612,7 +612,7 @@
         labtitle3.font = [UIFont systemFontOfSize:11.f];
         //: labtitle3.textColor = [UIColor colorWithHexString:@"#5D5F66"];
         labtitle3.textColor = [UIColor user:[CustodyData k_pullStorageUrl]];
-        //: labtitle3.text = [FFFLanguageManager getTextWithKey:@"Complete_operation"];
+        //: labtitle3.text = [PushLanguageManager getTextWithKey:@"Complete_operation"];
         labtitle3.text = [BackgroundRandomAttribute content:[CustodyData showDismissStr]];
         //: labtitle3.numberOfLines = 2;
         labtitle3.numberOfLines = 2;
@@ -656,7 +656,7 @@
         labtitle1.font = [UIFont boldSystemFontOfSize:12.f];
         //: labtitle1.textColor = [UIColor colorWithHexString:@"#333333"];
         labtitle1.textColor = [UIColor user:[CustodyData main_withData]];
-        //: labtitle1.text = [FFFLanguageManager getTextWithKey:@"Consequences_Account_Deletion"];
+        //: labtitle1.text = [PushLanguageManager getTextWithKey:@"Consequences_Account_Deletion"];
         labtitle1.text = [BackgroundRandomAttribute content:[CustodyData user_contentId]];
         //: [_contentBox addSubview:labtitle1];
         [_contentBox addSubview:labtitle1];
@@ -666,7 +666,7 @@
         labsubtitle1.font = [UIFont systemFontOfSize:12.f];
         //: labsubtitle1.textColor = [UIColor colorWithHexString:@"#333333"];
         labsubtitle1.textColor = [UIColor user:[CustodyData main_withData]];
-        //: labsubtitle1.text = [FFFLanguageManager getTextWithKey:@"Consequences_Account_Deletion_content"];
+        //: labsubtitle1.text = [PushLanguageManager getTextWithKey:@"Consequences_Account_Deletion_content"];
         labsubtitle1.text = [BackgroundRandomAttribute content:[CustodyData notiJumpMessage]];
         //: labsubtitle1.numberOfLines = 0;
         labsubtitle1.numberOfLines = 0;
@@ -681,7 +681,7 @@
         labtitle2.font = [UIFont boldSystemFontOfSize:12.f];
         //: labtitle2.textColor = [UIColor colorWithHexString:@"#333333"];
         labtitle2.textColor = [UIColor user:[CustodyData main_withData]];
-        //: labtitle2.text = [FFFLanguageManager getTextWithKey:@"Explanation_Data_Deletion"];
+        //: labtitle2.text = [PushLanguageManager getTextWithKey:@"Explanation_Data_Deletion"];
         labtitle2.text = [BackgroundRandomAttribute content:[CustodyData show_viewFormat]];
         //: [_contentBox addSubview:labtitle2];
         [_contentBox addSubview:labtitle2];
@@ -691,7 +691,7 @@
         labsubtitle2.font = [UIFont systemFontOfSize:12.f];
         //: labsubtitle2.textColor = [UIColor colorWithHexString:@"#333333"];
         labsubtitle2.textColor = [UIColor user:[CustodyData main_withData]];
-        //: labsubtitle2.text = [FFFLanguageManager getTextWithKey:@"Explanation_Data_Deletion_content"];
+        //: labsubtitle2.text = [PushLanguageManager getTextWithKey:@"Explanation_Data_Deletion_content"];
         labsubtitle2.text = [BackgroundRandomAttribute content:[CustodyData dream_enableRangeKey]];
         //: labsubtitle2.numberOfLines = 0;
         labsubtitle2.numberOfLines = 0;
@@ -706,7 +706,7 @@
         labtitle3.font = [UIFont boldSystemFontOfSize:12.f];
         //: labtitle3.textColor = [UIColor colorWithHexString:@"#333333"];
         labtitle3.textColor = [UIColor user:[CustodyData main_withData]];
-        //: labtitle3.text = [FFFLanguageManager getTextWithKey:@"Irreversible_Operation"];
+        //: labtitle3.text = [PushLanguageManager getTextWithKey:@"Irreversible_Operation"];
         labtitle3.text = [BackgroundRandomAttribute content:[CustodyData showInfluentialKey]];
         //: [_contentBox addSubview:labtitle3];
         [_contentBox addSubview:labtitle3];
@@ -716,7 +716,7 @@
         labsubtitle3.font = [UIFont systemFontOfSize:12.f];
         //: labsubtitle3.textColor = [UIColor colorWithHexString:@"#333333"];
         labsubtitle3.textColor = [UIColor user:[CustodyData main_withData]];
-        //: labsubtitle3.text = [FFFLanguageManager getTextWithKey:@"Irreversible_Operation_content"];
+        //: labsubtitle3.text = [PushLanguageManager getTextWithKey:@"Irreversible_Operation_content"];
         labsubtitle3.text = [BackgroundRandomAttribute content:[CustodyData main_viewPath]];
         //: labsubtitle3.numberOfLines = 0;
         labsubtitle3.numberOfLines = 0;
@@ -757,7 +757,7 @@
         //: [labprotocol addGestureRecognizer:singleTap];
         [labprotocol addGestureRecognizer:singleTap];
 
-        //: NSMutableAttributedString *tncString = [[NSMutableAttributedString alloc] initWithString:[FFFLanguageManager getTextWithKey:@"agree_account_deletion_terms"]];
+        //: NSMutableAttributedString *tncString = [[NSMutableAttributedString alloc] initWithString:[PushLanguageManager getTextWithKey:@"agree_account_deletion_terms"]];
         NSMutableAttributedString *tncString = [[NSMutableAttributedString alloc] initWithString:[BackgroundRandomAttribute content:[CustodyData mainWipeName]]];
         //: [tncString addAttribute:NSUnderlineStyleAttributeName
         [tncString addAttribute:NSUnderlineStyleAttributeName
@@ -811,7 +811,7 @@
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor user:[CustodyData k_pullStorageUrl]] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[BackgroundRandomAttribute content:[CustodyData show_distractKey]] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -838,7 +838,7 @@
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[BackgroundRandomAttribute content:[CustodyData show_economicTitle]] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#FF483D"];
         _sureBtn.backgroundColor = [UIColor user:[CustodyData k_hospitalPath]];

@@ -17,7 +17,7 @@ NSString * drawRein(NSString *api) {
     //: NSString* resultApi;
     NSString* resultApi;
 //    resultApi = [[AlongTemp sharedConfig].domainURL stringByAppendingString:api];
-    //: resultApi = [[[FFFConfig sharedConfig] getCurrentDomain] stringByAppendingString:api];
+    //: resultApi = [[[PushConfig sharedConfig] getCurrentDomain] stringByAppendingString:api];
     resultApi = [[[AlongTemp frameConfig] cell] stringByAppendingString:api];
     //: return resultApi;
     return resultApi;

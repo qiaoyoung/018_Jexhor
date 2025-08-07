@@ -119,10 +119,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSetGroupNameView.h"
+//: #import "PushSetGroupNameView.h"
 #import "ShowView.h"
 
-//: @interface FFFSetGroupNameView ()<UITextFieldDelegate>
+//: @interface PushSetGroupNameView ()<UITextFieldDelegate>
 @interface ShowView ()<UITextFieldDelegate>
 
 //: @property (nonatomic,assign) NSInteger inputLimit;
@@ -149,7 +149,7 @@
 //: @end
 @end
 
-//: @implementation FFFSetGroupNameView
+//: @implementation PushSetGroupNameView
 @implementation ShowView
 
 //: - (instancetype)initWithFrame:(CGRect)frame
@@ -296,7 +296,7 @@
 //        _titleLabel.textAlignment = NSTextAlignmentCenter;
 //        _titleLabel.numberOfLines = 1;
 //        _titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"activity_group_nickname_title"];
+        //: _titleLabel.text = [PushLanguageManager getTextWithKey:@"activity_group_nickname_title"];
         _titleLabel.text = [BackgroundRandomAttribute content:[ItemData notiFeeIdent]];
     }
     //: return _titleLabel;
@@ -314,7 +314,7 @@
         _subtitleLabel.textAlignment = NSTextAlignmentCenter;
         //: _subtitleLabel.textColor = [UIColor colorWithHexString:@"#05D481"];
         _subtitleLabel.textColor = [UIColor user:[ItemData mHolderId]];
-        //: _subtitleLabel.text = [FFFLanguageManager getTextWithKey:@"Required"];
+        //: _subtitleLabel.text = [PushLanguageManager getTextWithKey:@"Required"];
         _subtitleLabel.text = [BackgroundRandomAttribute content:[ItemData kStressMsg]];
     }
     //: return _subtitleLabel;
@@ -351,7 +351,7 @@
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor user:[ItemData dreamSymptomTitle]] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[BackgroundRandomAttribute content:[ItemData showSufferingStr]] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -378,7 +378,7 @@
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[PushLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[BackgroundRandomAttribute content:[ItemData k_adviserMessage]] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#05D481"];
         _sureBtn.backgroundColor = [UIColor user:[ItemData mHolderId]];
@@ -417,7 +417,7 @@
 
         //: _searchField = [[UITextField alloc]initWithFrame:CGRectMake(15, 6, [[UIScreen mainScreen] bounds].size.width-80-30, 40)];
         _searchField = [[UITextField alloc]initWithFrame:CGRectMake(15, 6, [[UIScreen mainScreen] bounds].size.width-80-30, 40)];
-        //: _searchField.placeholder = [FFFLanguageManager getTextWithKey:@"contact_tag_fragment_name"];
+        //: _searchField.placeholder = [PushLanguageManager getTextWithKey:@"contact_tag_fragment_name"];
         _searchField.placeholder = [BackgroundRandomAttribute content:[ItemData appBelowIdent]];
         //: _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];
         _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];

@@ -223,7 +223,7 @@
     NIMMessage *message = [[NIMMessage alloc] init];
     //: message.messageObject = imageObject;
     message.messageObject = imageObject;
-    //: message.apnsContent = [FFFLanguageManager getTextWithKey:@"init_manager_nim_status_bar_image_message"];
+    //: message.apnsContent = [PushLanguageManager getTextWithKey:@"init_manager_nim_status_bar_image_message"];
     message.apnsContent = [BackgroundRandomAttribute content:[ApproximationData noti_userValue]];
     //: NIMMessageSetting *setting = [[NIMMessageSetting alloc] init];
     NIMMessageSetting *setting = [[NIMMessageSetting alloc] init];
@@ -253,7 +253,7 @@
     NIMMessage *message = [[NIMMessage alloc] init];
     //: message.messageObject = audioObject;
     message.messageObject = audioObject;
-    //: message.apnsContent = [FFFLanguageManager getTextWithKey:@"init_manager_nim_status_bar_audio_message"];
+    //: message.apnsContent = [PushLanguageManager getTextWithKey:@"init_manager_nim_status_bar_audio_message"];
     message.apnsContent = [BackgroundRandomAttribute content:[ApproximationData dream_resembleHeavilyName]];
     //: NIMMessageSetting *setting = [[NIMMessageSetting alloc] init];
     NIMMessageSetting *setting = [[NIMMessageSetting alloc] init];
@@ -282,7 +282,7 @@
     NIMMessage *message = [[NIMMessage alloc] init];
     //: message.messageObject = videoObject;
     message.messageObject = videoObject;
-    //: message.apnsContent = [FFFLanguageManager getTextWithKey:@"init_manager_nim_status_bar_video_message"];
+    //: message.apnsContent = [PushLanguageManager getTextWithKey:@"init_manager_nim_status_bar_video_message"];
     message.apnsContent = [BackgroundRandomAttribute content:[ApproximationData k_actorData]];
     //: NIMMessageSetting *setting = [[NIMMessageSetting alloc] init];
     NIMMessageSetting *setting = [[NIMMessageSetting alloc] init];
@@ -662,7 +662,7 @@
     //: message.messageSubType = 20;
     message.messageSubType = 20;
 
-    //: NSString *msg = [NSString stringWithFormat:@"%@%@", revocationMessage.senderName,[FFFLanguageManager getTextWithKey:@"retracted_message"]];
+    //: NSString *msg = [NSString stringWithFormat:@"%@%@", revocationMessage.senderName,[PushLanguageManager getTextWithKey:@"retracted_message"]];
     NSString *msg = [NSString stringWithFormat:@"%@%@", revocationMessage.senderName,[BackgroundRandomAttribute content:[ApproximationData m_messageTitle]]];
 
     //: NIMCustomObject *object = revocationMessage.messageObject;

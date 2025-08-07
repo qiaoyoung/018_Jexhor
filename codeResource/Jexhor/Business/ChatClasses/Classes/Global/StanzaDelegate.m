@@ -9,21 +9,21 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCommonTableDelegate.h"
+//: #import "PushCommonTableDelegate.h"
 #import "StanzaDelegate.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
-//: #import "FFFCommonTableViewCell.h"
+//: #import "PushCommonTableData.h"
+#import "PushCommonTableData.h"
+//: #import "PushCommonTableViewCell.h"
 #import "ViewTitle.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "PushGlobalMacro.h"
+#import "PushGlobalMacro.h"
 
 //: static NSString *DefaultTableCell = @"UITableViewCell";
 static NSString *noti_contextUrl = @"UITableViewCell";
 
-//: @interface FFFCommonTableDelegate()
+//: @interface PushCommonTableDelegate()
 @interface StanzaDelegate()
 
 //: @property (nonatomic,copy) NSArray *(^NTESDataReceiver)(void);
@@ -32,7 +32,7 @@ static NSString *noti_contextUrl = @"UITableViewCell";
 //: @end
 @end
 
-//: @implementation FFFCommonTableDelegate
+//: @implementation PushCommonTableDelegate
 @implementation StanzaDelegate
 
 //: - (instancetype) initWithTableData:(NSArray *(^)(void))data{
@@ -107,7 +107,7 @@ static NSString *noti_contextUrl = @"UITableViewCell";
         [self iconCell:tableRow alterDisable:defaultCell];
     //: }else{
     }else{
-        //: [(id<FFFCommonTableViewCell>)cell refreshData:tableRow tableView:tableView];
+        //: [(id<PushCommonTableViewCell>)cell refreshData:tableRow tableView:tableView];
         [(id<ViewTitle>)cell receive:tableRow extra:tableView];
     }
     //: cell.accessoryType = tableRow.showAccessory ? UITableViewCellAccessoryDisclosureIndicator : UITableViewCellAccessoryNone;

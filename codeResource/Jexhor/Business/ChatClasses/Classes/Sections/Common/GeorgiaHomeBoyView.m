@@ -86,10 +86,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFLoadProgressView.h"
+//: #import "PushLoadProgressView.h"
 #import "GeorgiaHomeBoyView.h"
 
-//: @implementation FFFLoadProgressView
+//: @implementation PushLoadProgressView
 @implementation GeorgiaHomeBoyView
 
 //: - (id)initWithFrame:(CGRect)frame {

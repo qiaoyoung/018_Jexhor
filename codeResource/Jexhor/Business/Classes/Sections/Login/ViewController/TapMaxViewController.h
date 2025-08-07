@@ -12,7 +12,7 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @interface FFFLoginViewController : UIViewController
+//: @interface PushLoginViewController : UIViewController
 @interface TapMaxViewController : UIViewController
 
 //: -(void)inputAccount:(NSString*)account password:(NSString *)password;

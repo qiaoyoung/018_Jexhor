@@ -11,13 +11,13 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFMessageCell.h"
+//: #import "PushMessageCell.h"
 #import "BroadcastTouchCellView.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFAdvancedMessageCell : FFFMessageCell
+//: @interface PushAdvancedMessageCell : PushMessageCell
 @interface GetAcrossView : BroadcastTouchCellView
 
 //: @property (nonatomic,strong) UIButton *replyButton;

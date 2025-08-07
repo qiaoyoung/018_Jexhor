@@ -9,9 +9,9 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFUsrInfoData.h"
-#import "FFFUsrInfoData.h"
-//: #import "FFFSpellingCenter.h"
+//: #import "PushUsrInfoData.h"
+#import "PushUsrInfoData.h"
+//: #import "PushSpellingCenter.h"
 #import "ViewCenter.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
@@ -37,7 +37,7 @@
 
 //: - (NSString *)groupTitle {
 - (NSString *)groupTitle {
-    //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.info.showName].capitalizedString;
+    //: NSString *title = [[PushSpellingCenter sharedCenter] firstLetter:self.info.showName].capitalizedString;
     NSString *title = [[ViewCenter centerStage] premierCurrentDeadLetter:self.info.showName].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
@@ -78,7 +78,7 @@
 
 //: - (id)sortKey {
 - (id)sortKey {
-    //: return [[FFFSpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
+    //: return [[PushSpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
     return [[ViewCenter centerStage] total:self.info.showName].shortSpelling;
 }
 

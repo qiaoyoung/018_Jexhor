@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFPinyinConverter.h"
+//: #import "PushPinyinConverter.h"
 #import "TaskConverter.h"
 
-//: @interface FFFPinyinConverter ()
+//: @interface PushPinyinConverter ()
 @interface TaskConverter ()
 {
     //: int *_codeIndex;
@@ -25,18 +25,18 @@
 //: @end
 @end
 
-//: @implementation FFFPinyinConverter
+//: @implementation PushPinyinConverter
 @implementation TaskConverter
-//: + (FFFPinyinConverter *)sharedInstance
+//: + (PushPinyinConverter *)sharedInstance
 + (TaskConverter *)can
 {
-    //: static FFFPinyinConverter *instance = nil;
+    //: static PushPinyinConverter *instance = nil;
     static TaskConverter *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFPinyinConverter alloc] init];
+        //: instance = [[PushPinyinConverter alloc] init];
         instance = [[TaskConverter alloc] init];
     //: });
     });

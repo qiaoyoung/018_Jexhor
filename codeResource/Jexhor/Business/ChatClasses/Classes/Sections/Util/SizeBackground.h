@@ -12,10 +12,10 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @interface FFFKitDevice : NSObject
+//: @interface PushKitDevice : NSObject
 @interface SizeBackground : NSObject
 
-//: + (FFFKitDevice *)currentDevice;
+//: + (PushKitDevice *)currentDevice;
 + (SizeBackground *)topDevice;
 
 /// 语言

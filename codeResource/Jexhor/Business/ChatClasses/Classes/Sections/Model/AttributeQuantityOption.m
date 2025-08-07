@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "PushKitInfoFetchOption.h"
 #import "AttributeQuantityOption.h"
 
-//: @implementation FFFKitInfoFetchOption
+//: @implementation PushKitInfoFetchOption
 @implementation AttributeQuantityOption
 
 //: @end

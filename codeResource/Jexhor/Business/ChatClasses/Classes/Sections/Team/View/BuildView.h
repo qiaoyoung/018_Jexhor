@@ -11,10 +11,10 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFCommonTableViewCell.h"
+//: #import "PushCommonTableViewCell.h"
 #import "ViewTitle.h"
 
-//: @interface FFFTeamMemberCardHeaderCell : UITableViewCell<FFFCommonTableViewCell>
+//: @interface PushTeamMemberCardHeaderCell : UITableViewCell<PushCommonTableViewCell>
 @interface BuildView : UITableViewCell<ViewTitle>
 
 //: @end

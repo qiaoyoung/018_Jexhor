@@ -15,7 +15,7 @@
 //: @interface NTESContactDataMember : NSObject
 @interface InformationMember : NSObject
 
-//: @property (nonatomic,strong) FFFKitInfo *info;
+//: @property (nonatomic,strong) PushKitInfo *info;
 @property (nonatomic,strong) DataTeam *info;
 
 //: @end

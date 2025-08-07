@@ -199,20 +199,20 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMessageUtil.h"
+//: #import "PushMessageUtil.h"
 #import "ToColor.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFKitUtil.h"
+//: #import "PushGlobalMacro.h"
+#import "PushGlobalMacro.h"
+//: #import "PushKitUtil.h"
 #import "KitUtil.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
 //: #import "NSDictionary+MyUserKit.h"
 #import "NSDictionary+Secret.h"
 
-//: @implementation FFFMessageUtil
+//: @implementation PushMessageUtil
 @implementation ToColor
 
 //: + (NSString *)messageContent:(NIMMessage*)message {
@@ -229,25 +229,25 @@
             break;
         //: case NIMMessageTypeAudio:
         case NIMMessageTypeAudio:
-            //: text = [FFFLanguageManager getTextWithKey:@"Audio"]; 
+            //: text = [PushLanguageManager getTextWithKey:@"Audio"]; 
             text = [BackgroundRandomAttribute content:[BiasData appProvedMsg]]; //@"[语音]".;
             //: break;
             break;
         //: case NIMMessageTypeImage:
         case NIMMessageTypeImage:
-            //: text = [FFFLanguageManager getTextWithKey:@"Image"];
+            //: text = [PushLanguageManager getTextWithKey:@"Image"];
             text = [BackgroundRandomAttribute content:[BiasData appWillingNanFormat]];//@"[图片]".;
             //: break;
             break;
         //: case NIMMessageTypeVideo:
         case NIMMessageTypeVideo:
-            //: text = [FFFLanguageManager getTextWithKey:@"Video"];
+            //: text = [PushLanguageManager getTextWithKey:@"Video"];
             text = [BackgroundRandomAttribute content:[BiasData mainHostageKey]];//@"[视频]".;
             //: break;
             break;
         //: case NIMMessageTypeLocation:
         case NIMMessageTypeLocation:
-            //: text = [FFFLanguageManager getTextWithKey:@"Location"];
+            //: text = [PushLanguageManager getTextWithKey:@"Location"];
             text = [BackgroundRandomAttribute content:[BiasData kRichIdent]];//@"[位置]".;
             //: break;
             break;
@@ -258,7 +258,7 @@
         }
         //: case NIMMessageTypeFile:
         case NIMMessageTypeFile:
-            //: text = [FFFLanguageManager getTextWithKey:@"File"];
+            //: text = [PushLanguageManager getTextWithKey:@"File"];
             text = [BackgroundRandomAttribute content:[BiasData mainNuclearKey]];//@"[文件]".;
             //: break;
             break;
@@ -272,7 +272,7 @@
         case NIMMessageTypeRtcCallRecord: {
             //: NIMRtcCallRecordObject *record = message.messageObject;
             NIMRtcCallRecordObject *record = message.messageObject;
-            //: return (record.callType == NIMRtcCallTypeAudio ? [FFFLanguageManager getTextWithKey:@"Internet_call"] : [FFFLanguageManager getTextWithKey:@"Video_chat"]);
+            //: return (record.callType == NIMRtcCallTypeAudio ? [PushLanguageManager getTextWithKey:@"Internet_call"] : [PushLanguageManager getTextWithKey:@"Video_chat"]);
             return (record.callType == NIMRtcCallTypeAudio ? [BackgroundRandomAttribute content:[BiasData showSlatValue]] : [BackgroundRandomAttribute content:[BiasData main_prisonName]]);
         }
         //: default:
@@ -294,10 +294,10 @@
         NIMNetCallNotificationContent *content = (NIMNetCallNotificationContent *)object.content;
         //: if (content.callType == NIMNetCallTypeAudio) {
         if (content.callType == NIMNetCallTypeAudio) {
-            //: return [FFFLanguageManager getTextWithKey:@"Internet_call"];
+            //: return [PushLanguageManager getTextWithKey:@"Internet_call"];
             return [BackgroundRandomAttribute content:[BiasData showSlatValue]];//@"[网络通话]".;
         }
-        //: return [FFFLanguageManager getTextWithKey:@"Video_chat"];
+        //: return [PushLanguageManager getTextWithKey:@"Video_chat"];
         return [BackgroundRandomAttribute content:[BiasData main_prisonName]];//@"[视频聊天]".;
     }
     //: if (object.notificationType == NIMNotificationTypeTeam) {
@@ -306,7 +306,7 @@
         NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:message.session.sessionId];
         //: if (team.type == NIMTeamTypeNormal) {
         if (team.type == NIMTeamTypeNormal) {
-            //: return [FFFLanguageManager getTextWithKey:@"Group_chat_information_update"];
+            //: return [PushLanguageManager getTextWithKey:@"Group_chat_information_update"];
             return [BackgroundRandomAttribute content:[BiasData app_atMessage]];//@"[讨论组信息更新]".;
         //: }else{
         }else{
@@ -388,14 +388,14 @@
                         break;
             }
 
-            //: return [FFFLanguageManager getTextWithKey:@"Group_information_update"];
+            //: return [PushLanguageManager getTextWithKey:@"Group_information_update"];
             return [BackgroundRandomAttribute content:[BiasData mStressName]];//@"[群信息更新]".;
         }
     }
 
     //: if (object.notificationType == NIMNotificationTypeSuperTeam) {
     if (object.notificationType == NIMNotificationTypeSuperTeam) {
-        //: return [FFFLanguageManager getTextWithKey:@"Super_Group_Information_Update"];
+        //: return [PushLanguageManager getTextWithKey:@"Super_Group_Information_Update"];
         return [BackgroundRandomAttribute content:[BiasData main_pressedValue]];//@"[超大群信息更新]".;
     }
     //: return @"";

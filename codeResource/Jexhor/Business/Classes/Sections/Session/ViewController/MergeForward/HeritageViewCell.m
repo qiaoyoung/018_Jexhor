@@ -58,7 +58,7 @@ typedef struct {
 #import "HeritageViewCell.h"
 //: #import "UIView+NTES.h"
 #import "UIView+SearchedTeam.h"
-//: #import "FFFTimestampModel.h"
+//: #import "PushTimestampModel.h"
 #import "PushSharedNeed.h"
 
 //: @interface NTESTimestampCell ()
@@ -112,9 +112,9 @@ typedef struct {
     _lineRight.centerY = self.timeLabel.centerY;
 }
 
-//: - (void)refreshData:(FFFTimestampModel *)data {
+//: - (void)refreshData:(PushTimestampModel *)data {
 - (void)transitionData:(PushSharedNeed *)data {
-    //: if ([data isKindOfClass:[FFFTimestampModel class]]) {
+    //: if ([data isKindOfClass:[PushTimestampModel class]]) {
     if ([data isKindOfClass:[PushSharedNeed class]]) {
         //: self.timeLabel.text = [self timeFormatString:data.messageTime];
         self.timeLabel.text = [self lab:data.messageTime];

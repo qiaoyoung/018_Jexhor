@@ -456,14 +456,14 @@ typedef NS_ENUM(NSInteger,NTESMainTabType) {
     Reachability *reachability = [note object];
     //: if ([reachability currentReachabilityStatus] != NotReachable) {
     if ([reachability currentReachabilityStatus] != NotReachable) {
-        //: [[FFFConfig sharedConfig] fetchLatestDomainWithCompletion:^(BOOL success) {
+        //: [[PushConfig sharedConfig] fetchLatestDomainWithCompletion:^(BOOL success) {
         [[AlongTemp frameConfig] beforeMessageCompletion:^(BOOL success) {
             //: if (success) {
             if (success) {
-                //: NSLog(@"域名更新成功: %@", [[FFFConfig sharedConfig] getCurrentDomain]);
+                //: NSLog(@"域名更新成功: %@", [[PushConfig sharedConfig] getCurrentDomain]);
             //: } else {
             } else {
-                //: NSLog(@"使用默认域名: %@", [[FFFConfig sharedConfig] getCurrentDomain]);
+                //: NSLog(@"使用默认域名: %@", [[PushConfig sharedConfig] getCurrentDomain]);
             }
         //: }]; 
         }]; // 网络恢复时更新域名
@@ -565,19 +565,19 @@ typedef NS_ENUM(NSInteger,NTESMainTabType) {
         NSString *title = @"";
         //: if(idx == 0){
         if(idx == 0){
-            //: title = [FFFLanguageManager getTextWithKey:@"activity_user_profile_chat"];
+            //: title = [PushLanguageManager getTextWithKey:@"activity_user_profile_chat"];
             title = [BackgroundRandomAttribute content:[AbortData sharedInstance].user_povertyTapId];
         //: }else if (idx == 1){
         }else if (idx == 1){
-            //: title = [FFFLanguageManager getTextWithKey:@"discovery"];
+            //: title = [PushLanguageManager getTextWithKey:@"discovery"];
             title = [BackgroundRandomAttribute content:[AbortData sharedInstance].showEssayKey];
         //: }else if (idx == 2){
         }else if (idx == 2){
-            //: title = [FFFLanguageManager getTextWithKey:@"contacts_list_title"];
+            //: title = [PushLanguageManager getTextWithKey:@"contacts_list_title"];
             title = [BackgroundRandomAttribute content:[AbortData sharedInstance].kDeployWipeText];
         //: }else if (idx == 3){
         }else if (idx == 3){
-            //: title = [FFFLanguageManager getTextWithKey:@"main_tab_my"];
+            //: title = [PushLanguageManager getTextWithKey:@"main_tab_my"];
             title = [BackgroundRandomAttribute content:[AbortData sharedInstance].showMaxText];
         }
 
@@ -880,7 +880,7 @@ typedef NS_ENUM(NSInteger,NTESMainTabType) {
                      @(NTESMainTabTypeMessageList) : @{
                              //: @"vc" : @"NTESSessionListViewController",
                              @"vc" : @"MainViewController",
-                             //: @"title" : [FFFLanguageManager getTextWithKey:@"activity_user_profile_chat"],
+                             //: @"title" : [PushLanguageManager getTextWithKey:@"activity_user_profile_chat"],
                              [AbortData sharedInstance].m_rumStorageValue : [BackgroundRandomAttribute content:[AbortData sharedInstance].user_povertyTapId],
                              //: @"image" : @"icon_message_normal",
                              [AbortData sharedInstance].app_withMessage : [AbortData sharedInstance].kFrankKey,
@@ -894,7 +894,7 @@ typedef NS_ENUM(NSInteger,NTESMainTabType) {
                      @(NTESMainTabTypeChatroomList): @{
                              //: @"vc" : @"DisCorveyViewController",
                              @"vc" : @"WithViewController",
-                             //: @"title" : [FFFLanguageManager getTextWithKey:@"discovery"],
+                             //: @"title" : [PushLanguageManager getTextWithKey:@"discovery"],
                              [AbortData sharedInstance].m_rumStorageValue : [BackgroundRandomAttribute content:[AbortData sharedInstance].showEssayKey],
                              //: @"image" : @"icon_discovery_normal",
                              [AbortData sharedInstance].app_withMessage : [AbortData sharedInstance].user_heroFormat,
@@ -906,7 +906,7 @@ typedef NS_ENUM(NSInteger,NTESMainTabType) {
                      @(NTESMainTabTypeContact) : @{
                              //: @"vc" : @"CCCContactsViewController",
                              @"vc" : @"TempCellViewController",
-                             //: @"title" : [FFFLanguageManager getTextWithKey:@"contacts_list_title"],
+                             //: @"title" : [PushLanguageManager getTextWithKey:@"contacts_list_title"],
                              [AbortData sharedInstance].m_rumStorageValue : [BackgroundRandomAttribute content:[AbortData sharedInstance].kDeployWipeText],
                              //: @"image" : @"icon_contact_normal",
                              [AbortData sharedInstance].app_withMessage : [AbortData sharedInstance].k_milkKey,
@@ -918,7 +918,7 @@ typedef NS_ENUM(NSInteger,NTESMainTabType) {
                      @(NTESMainTabTypeSetting) : @{
                              //: @"vc" : @"NTESMainCenterViewController",
                              @"vc" : @"MakeQuantityervalViewController",
-                             //: @"title" : [FFFLanguageManager getTextWithKey:@"main_tab_my"],
+                             //: @"title" : [PushLanguageManager getTextWithKey:@"main_tab_my"],
                              [AbortData sharedInstance].m_rumStorageValue : [BackgroundRandomAttribute content:[AbortData sharedInstance].showMaxText],
                              //: @"image" : @"icon_setting_normal",
                              [AbortData sharedInstance].app_withMessage : [AbortData sharedInstance].m_cagePinButtonUrl,

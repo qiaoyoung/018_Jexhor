@@ -70,29 +70,29 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCardHeaderCell.h"
+//: #import "PushCardHeaderCell.h"
 #import "CompartmentReusableView.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "PushAvatarImageView.h"
 #import "ImageView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
-//: #import "FFFTeamHelper.h"
+//: #import "PushTeamHelper.h"
 #import "ShowHelper.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+Secret.h"
 
-//: @interface FFFCardHeaderCell()
+//: @interface PushCardHeaderCell()
 @interface CompartmentReusableView()
 
-//: @property (nonatomic,strong) id<FFFKitCardHeaderData> data;
-@property (nonatomic,strong) id<FFFKitCardHeaderData> data;
+//: @property (nonatomic,strong) id<PushKitCardHeaderData> data;
+@property (nonatomic,strong) id<PushKitCardHeaderData> data;
 
 //: @end
 @end
 
-//: @implementation FFFCardHeaderCell
+//: @implementation PushCardHeaderCell
 @implementation CompartmentReusableView
 
 //: - (instancetype)initWithFrame:(CGRect)frame{
@@ -101,7 +101,7 @@
     self = [super initWithFrame:frame];
     //: if (self) {
     if (self) {
-        //: _imageView = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 55, 55)];
+        //: _imageView = [[PushAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 55, 55)];
         _imageView = [[ImageView alloc] initWithFrame:CGRectMake(0, 0, 55, 55)];
         //: [self addSubview:_imageView];
         [self addSubview:_imageView];
@@ -136,8 +136,8 @@
     return self;
 }
 
-//: - (void)refreshData:(id<FFFKitCardHeaderData>)data{
-- (void)notParent:(id<FFFKitCardHeaderData>)data{
+//: - (void)refreshData:(id<PushKitCardHeaderData>)data{
+- (void)notParent:(id<PushKitCardHeaderData>)data{
     //: self.data = data;
     self.data = data;
     //: NSURL *url = [NSURL URLWithString:data.imageUrl];
@@ -151,12 +151,12 @@
     NSString *showName = data.title;
     //: if ([data isMyUserId]) {
     if ([data isMyUserId]) {
-        //: showName = [FFFLanguageManager getTextWithKey:@"Group_Me"];
+        //: showName = [PushLanguageManager getTextWithKey:@"Group_Me"];
         showName = [BackgroundRandomAttribute content:[[MakeAFaceData sharedInstance] mainVillagePath]];//@"我".nim_localized;
     }
     //: self.titleLabel.text = showName;
     self.titleLabel.text = showName;
-    //: self.roleImageView.image = [FFFTeamHelper imageWithMemberType:data.userType];
+    //: self.roleImageView.image = [PushTeamHelper imageWithMemberType:data.userType];
     self.roleImageView.image = [ShowHelper notSpace:data.userType];
     //: [self.titleLabel sizeToFit];
     [self.titleLabel sizeToFit];

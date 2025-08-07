@@ -11,7 +11,7 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFLoginViewController.h"
+//: #import "PushLoginViewController.h"
 #import "TapMaxViewController.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 //: @interface NTESRegistConfigManager : NSObject
 @interface MakeManager : NSObject
-//: @property (nonatomic ,strong) FFFLoginViewController *loginVC;
+//: @property (nonatomic ,strong) PushLoginViewController *loginVC;
 @property (nonatomic ,strong) TapMaxViewController *loginVC;
 //: @property (nonatomic ,strong) NSMutableDictionary *registDict;
 @property (nonatomic ,strong) NSMutableDictionary *registDict;

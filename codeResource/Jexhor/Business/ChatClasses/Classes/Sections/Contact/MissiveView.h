@@ -12,10 +12,10 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @class FFFKitInfo;
+//: @class PushKitInfo;
 @class DataTeam;
 
-//: @protocol FFFContactPickedViewDelegate <NSObject>
+//: @protocol PushContactPickedViewDelegate <NSObject>
 @protocol DeviceDelegate <NSObject>
 
 //: - (void)removeUser:(NSString *)userId;
@@ -24,16 +24,16 @@
 //: @end
 @end
 
-//: @interface FFFContactPickedView : UIView <UIScrollViewDelegate>
+//: @interface PushContactPickedView : UIView <UIScrollViewDelegate>
 @interface MissiveView : UIView <UIScrollViewDelegate>
 
-//: @property (nonatomic, weak) id<FFFContactPickedViewDelegate> delegate;
+//: @property (nonatomic, weak) id<PushContactPickedViewDelegate> delegate;
 @property (nonatomic, weak) id<DeviceDelegate> delegate;
 
-//: - (void)removeMemberInfo:(FFFKitInfo *)info;
+//: - (void)removeMemberInfo:(PushKitInfo *)info;
 - (void)allowByInfo:(DataTeam *)info;
 
-//: - (void)addMemberInfo:(FFFKitInfo *)info;
+//: - (void)addMemberInfo:(PushKitInfo *)info;
 - (void)fast:(DataTeam *)info;
 
 //: @end

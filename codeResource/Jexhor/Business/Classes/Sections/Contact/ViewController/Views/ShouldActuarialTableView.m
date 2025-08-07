@@ -129,7 +129,7 @@ typedef struct {
 #import "ShouldActuarialTableView.h"
 //: #import "NTESSessionUtil.h"
 #import "ReadUtil.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "PushAvatarImageView.h"
 #import "ImageView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
@@ -220,7 +220,7 @@ typedef struct {
     self.titleLabel.text = member.showName;
     //: self.memberId = [member memberId];
     self.memberId = [member memberId];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.memberId option:nil];
+    //: PushKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.memberId option:nil];
     DataTeam *info = [[Secret highlight] infoAndStraddleOption:self.memberId item:nil];
     //: NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;
     NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;
@@ -237,7 +237,7 @@ typedef struct {
     self.titleLabel.text = team.teamName;
     //: self.memberId = [team teamId];
     self.memberId = [team teamId];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByTeam:self.memberId option:nil];
+    //: PushKitInfo *info = [[MyUserKit sharedKit] infoByTeam:self.memberId option:nil];
     DataTeam *info = [[Secret highlight] show:self.memberId corner:nil];
     //: NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;
     NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;

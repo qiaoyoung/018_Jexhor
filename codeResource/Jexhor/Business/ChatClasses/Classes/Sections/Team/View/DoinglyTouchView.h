@@ -14,7 +14,7 @@
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
 
-//: @interface FFFTeamAnnouncementListCell : UITableViewCell
+//: @interface PushTeamAnnouncementListCell : UITableViewCell
 @interface DoinglyTouchView : UITableViewCell
 
 //: - (void)refreshData:(NSDictionary *)data nick:(NSString *)nick;

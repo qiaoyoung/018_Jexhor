@@ -48,14 +48,14 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFImageContentConfig.h"
+//: #import "PushImageContentConfig.h"
 #import "CypherConfig.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
 
-//: @implementation FFFImageContentConfig
+//: @implementation PushImageContentConfig
 @implementation CypherConfig
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
 - (CGSize)tap:(CGFloat)cellWidth button:(NIMMessage *)message
@@ -108,7 +108,7 @@ typedef struct {
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)session:(NIMMessage *)message
 {
-    //: return @"FFFSessionImageContentView";
+    //: return @"PushSessionImageContentView";
     return @"TutorialDataOrientationControl";
 }
 

@@ -1,20 +1,20 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFSessionPrivateProtocol.h
+//  PushSessionPrivateProtocol.h
 // Secret
 //
 //  Created by chris on 2016/11/7.
 //  Copyright © 2016年 NetEase. All rights reserved.
 //
-//: #import "FFFSessionViewController.h"
+//: #import "PushSessionViewController.h"
 #import "CenterBuildViewController.h"
 
 // __M_A_C_R_O__
 
 //: @class NIMMessage;
 @class NIMMessage;
-//: @class FFFMessageModel;
+//: @class PushMessageModel;
 @class PurseModel;
 
 //: @interface NIMSessionMessageOperateResult : NSObject
@@ -41,16 +41,16 @@
 //: - (NIMSessionMessageOperateResult *)insertMessageModels:(NSArray *)models;
 - (ImpactResult *)attach:(NSArray *)models;
 
-//: - (NIMSessionMessageOperateResult *)deleteMessageModel:(FFFMessageModel *)model;
+//: - (NIMSessionMessageOperateResult *)deleteMessageModel:(PushMessageModel *)model;
 - (ImpactResult *)blueish:(PurseModel *)model;
 
-//: - (NIMSessionMessageOperateResult *)updateMessageModel:(FFFMessageModel *)model;
+//: - (NIMSessionMessageOperateResult *)updateMessageModel:(PushMessageModel *)model;
 - (ImpactResult *)date:(PurseModel *)model;
 
-//: - (FFFMessageModel *)findModel:(NIMMessage *)message;
+//: - (PushMessageModel *)findModel:(NIMMessage *)message;
 - (PurseModel *)center:(NIMMessage *)message;
 
-//: - (NSInteger)indexAtModelArray:(FFFMessageModel *)model;
+//: - (NSInteger)indexAtModelArray:(PushMessageModel *)model;
 - (NSInteger)image:(PurseModel *)model;
 
 //: - (NSArray *)deleteModels:(NSRange)range;
@@ -87,7 +87,7 @@
 - (void)should:(void (^)(NSError *))handler;
 
 // 展示message之前做额外配置
-//: - (void)willDisplayMessageModel:(FFFMessageModel *)model;
+//: - (void)willDisplayMessageModel:(PushMessageModel *)model;
 - (void)nameDoing:(PurseModel *)model;
 
 //: - (void)addPinForMessage:(NIMMessage *)message callback:(void (^)(NSError *))handler;
@@ -124,7 +124,7 @@
 //: - (BOOL)canInsertChatroomMessages;
 - (BOOL)doingMessages;
 
-//: - (void)calculateContent:(FFFMessageModel *)model;
+//: - (void)calculateContent:(PushMessageModel *)model;
 - (void)need:(PurseModel *)model;
 
 //: - (void)reloadTable;
@@ -158,7 +158,7 @@
 
 
 
-//: @interface FFFSessionViewController(Interactor)
+//: @interface PushSessionViewController(Interactor)
 @interface CenterBuildViewController(Interactor)
 
 //: - (void)setInteractor:(id<NIMSessionInteractor>) interactor;

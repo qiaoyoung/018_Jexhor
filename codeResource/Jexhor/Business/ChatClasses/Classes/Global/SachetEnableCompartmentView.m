@@ -80,16 +80,16 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitColorButtonCell.h"
+//: #import "PushKitColorButtonCell.h"
 #import "SachetEnableCompartmentView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "PushCommonTableData.h"
+#import "PushCommonTableData.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
 
-//: @interface FFFKitColorButtonCell()
+//: @interface PushKitColorButtonCell()
 @interface SachetEnableCompartmentView()
 
 //: @property (nonatomic,strong) NIMCommonTableRow *rowData;
@@ -98,7 +98,7 @@
 //: @end
 @end
 
-//: @implementation FFFKitColorButtonCell
+//: @implementation PushKitColorButtonCell
 @implementation SachetEnableCompartmentView
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -128,8 +128,8 @@
     self.rowData = rowData;
     //: [self.button setTitle:rowData.title forState:UIControlStateNormal];
     [self.button setTitle:rowData.title forState:UIControlStateNormal];
-    //: FFFKitColorButtonCellStyle style = [rowData.extraInfo integerValue];
-    FFFKitColorButtonCellStyle style = [rowData.extraInfo integerValue];
+    //: PushKitColorButtonCellStyle style = [rowData.extraInfo integerValue];
+    PushKitColorButtonCellStyle style = [rowData.extraInfo integerValue];
     //: self.button.style = style;
     self.button.style = style;
     //: [self.button removeTarget:tableView.nim_viewController action:NULL forControlEvents:UIControlEventTouchUpInside];
@@ -200,8 +200,8 @@
     return self;
 }
 
-//: - (void)setStyle:(FFFKitColorButtonCellStyle)style{
-- (void)setStyle:(FFFKitColorButtonCellStyle)style{
+//: - (void)setStyle:(PushKitColorButtonCellStyle)style{
+- (void)setStyle:(PushKitColorButtonCellStyle)style{
     //: _style = style;
     _style = style;
     //: [self reset];
@@ -214,8 +214,8 @@
     NSString *imageNormalName = @"";
     //: switch (self.style) {
     switch (self.style) {
-        //: case FFFKitColorButtonCellStyleRed:{
-        case FFFKitColorButtonCellStyleRed:{
+        //: case PushKitColorButtonCellStyleRed:{
+        case PushKitColorButtonCellStyleRed:{
             //: imageNormalName = @"icon_cell_red_normal";
             imageNormalName = [[StreetSmartData sharedInstance] mainSealIdent];
             //: UIImage *imageNormal = [[UIImage imageNamed:imageNormalName] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 10, 10, 10) resizingMode:UIImageResizingModeStretch];
@@ -225,8 +225,8 @@
         }
             //: break;
             break;
-        //: case FFFKitColorButtonCellStyleBlue:
-        case FFFKitColorButtonCellStyleBlue:
+        //: case PushKitColorButtonCellStyleBlue:
+        case PushKitColorButtonCellStyleBlue:
         {
             //: imageNormalName = @"icon_cell_blue_normal";
             imageNormalName = [[StreetSmartData sharedInstance] main_vileMsg];

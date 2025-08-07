@@ -200,7 +200,7 @@ typedef struct {
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFCommonTableData.m
+//  PushCommonTableData.m
 //  NIM
 //
 //  Created by chris on 15/6/26.
@@ -208,8 +208,8 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "PushCommonTableData.h"
+#import "PushCommonTableData.h"
 
 //: @implementation NIMCommonTableSection
 @implementation TeamShared

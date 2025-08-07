@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCellConfig.h"
-#import "FFFCellConfig.h"
+//: #import "PushCellConfig.h"
+#import "PushCellConfig.h"
 
-//: @interface FFFCellLayoutConfig : NSObject<FFFCellLayoutConfig>
+//: @interface PushCellLayoutConfig : NSObject<PushCellLayoutConfig>
 @interface MessageImageContainer : NSObject<MessageImageContainer>
 
 //: @end

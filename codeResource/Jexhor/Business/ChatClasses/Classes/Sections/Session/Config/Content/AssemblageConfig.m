@@ -9,14 +9,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTipContentConfig.h"
+//: #import "PushTipContentConfig.h"
 #import "AssemblageConfig.h"
-//: #import "FFFKitUtil.h"
+//: #import "PushKitUtil.h"
 #import "KitUtil.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
 
-//: @implementation FFFTipContentConfig
+//: @implementation PushTipContentConfig
 @implementation AssemblageConfig
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
@@ -26,7 +26,7 @@
     CGFloat messageWidth = cellWidth;
     //: UILabel *label = [[UILabel alloc] init];
     UILabel *label = [[UILabel alloc] init];
-    //: label.text = [FFFKitUtil messageTipContent:message];
+    //: label.text = [PushKitUtil messageTipContent:message];
     label.text = [KitUtil with:message];
     //: label.font = [[MyUserKit sharedKit].config setting:message].font;
     label.font = [[Secret highlight].config click:message].font;
@@ -47,7 +47,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)session:(NIMMessage *)message
 {
-    //: return @"FFFSessionNotificationContentView";
+    //: return @"PushSessionNotificationContentView";
     return @"OrientationClickContentView";
 }
 

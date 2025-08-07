@@ -9,12 +9,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitTitleView.h"
+//: #import "PushKitTitleView.h"
 #import "TitleView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 
-//: @implementation FFFKitTitleView
+//: @implementation PushKitTitleView
 @implementation TitleView
 
 //: - (instancetype)initWithFrame:(CGRect)frame

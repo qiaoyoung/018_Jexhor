@@ -96,7 +96,7 @@ DistinctionData notiAspectImageMessageValue = (DistinctionData){74, (Byte []){57
 //
 
 // __M_A_C_R_O__
-//: #import "FFFRegisterAvatarViewController.h"
+//: #import "PushRegisterAvatarViewController.h"
 #import "AttributeViewController.h"
 //: #import "SVProgressHUD.h"
 #import "SVProgressHUD.h"
@@ -127,7 +127,7 @@ DistinctionData notiAspectImageMessageValue = (DistinctionData){74, (Byte []){57
 //: #import "NTESRegistConfigManager.h"
 #import "MakeManager.h"
 
-//: @interface FFFRegisterAvatarViewController ()
+//: @interface PushRegisterAvatarViewController ()
 @interface AttributeViewController ()
 
 
@@ -150,7 +150,7 @@ DistinctionData notiAspectImageMessageValue = (DistinctionData){74, (Byte []){57
 //: @end
 @end
 
-//: @implementation FFFRegisterAvatarViewController
+//: @implementation PushRegisterAvatarViewController
 @implementation AttributeViewController
 
 //: - (void)viewDidLoad {
@@ -201,7 +201,7 @@ DistinctionData notiAspectImageMessageValue = (DistinctionData){74, (Byte []){57
     titleLabel.textColor = [UIColor blackColor];
     //: titleLabel.font = [UIFont boldSystemFontOfSize:24];
     titleLabel.font = [UIFont boldSystemFontOfSize:24];
-    //: titleLabel.text = [FFFLanguageManager getTextWithKey:@"user_profile_avtivity_head"];
+    //: titleLabel.text = [PushLanguageManager getTextWithKey:@"user_profile_avtivity_head"];
     titleLabel.text = [BackgroundRandomAttribute content:StringFromDistinctionData(&showWakePath)];
     //: titleLabel.textAlignment = NSTextAlignmentCenter;
     titleLabel.textAlignment = NSTextAlignmentCenter;
@@ -214,7 +214,7 @@ DistinctionData notiAspectImageMessageValue = (DistinctionData){74, (Byte []){57
     self.accountLabel.font = [UIFont boldSystemFontOfSize:14];
     //: self.accountLabel.textColor = [UIColor colorWithHexString:@"#5D5F66"];
     self.accountLabel.textColor = [UIColor user:StringFromDistinctionData(&show_northernIdent)];
-    //: self.accountLabel.text = [FFFLanguageManager getTextWithKey:@"register_good_avater"];
+    //: self.accountLabel.text = [PushLanguageManager getTextWithKey:@"register_good_avater"];
     self.accountLabel.text = [BackgroundRandomAttribute content:StringFromDistinctionData(&showTeamPullPath)];
     //: self.accountLabel.textAlignment = NSTextAlignmentCenter;
     self.accountLabel.textAlignment = NSTextAlignmentCenter;
@@ -297,7 +297,7 @@ DistinctionData notiAspectImageMessageValue = (DistinctionData){74, (Byte []){57
     self.registButton.titleLabel.font = [UIFont systemFontOfSize:16];
     //: [self.registButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.registButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [self.registButton setTitle:[FFFLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
+    //: [self.registButton setTitle:[PushLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
     [self.registButton setTitle:[BackgroundRandomAttribute content:StringFromDistinctionData(&mainDistractColdHeavilyUrl)] forState:UIControlStateNormal];
     //: [self.view addSubview:self.registButton];
     [self.view addSubview:self.registButton];
@@ -358,13 +358,13 @@ DistinctionData notiAspectImageMessageValue = (DistinctionData){74, (Byte []){57
 //            [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
 //        }
 
-        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
+        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[PushLanguageManager getTextWithKey:@"warm_prompt"] message:[PushLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
         UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[BackgroundRandomAttribute content:StringFromDistinctionData(&kItselfVenueDepartName)] message:[BackgroundRandomAttribute content:StringFromDistinctionData(&notiAspectImageMessageValue)] preferredStyle:UIAlertControllerStyleAlert];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[BackgroundRandomAttribute content:StringFromDistinctionData(&m_teamStr)] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         //: }])];
         }])];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[PushLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[BackgroundRandomAttribute content:StringFromDistinctionData(&showColdId)] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
             NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
@@ -425,13 +425,13 @@ DistinctionData notiAspectImageMessageValue = (DistinctionData){74, (Byte []){57
 //            [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
 //        }
 
-        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy"] preferredStyle:UIAlertControllerStyleAlert];
+        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[PushLanguageManager getTextWithKey:@"warm_prompt"] message:[PushLanguageManager getTextWithKey:@"setting_privacy"] preferredStyle:UIAlertControllerStyleAlert];
         UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[BackgroundRandomAttribute content:StringFromDistinctionData(&kItselfVenueDepartName)] message:[BackgroundRandomAttribute content:StringFromDistinctionData(&showIconUrl)] preferredStyle:UIAlertControllerStyleAlert];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[BackgroundRandomAttribute content:StringFromDistinctionData(&m_teamStr)] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         //: }])];
         }])];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[PushLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[BackgroundRandomAttribute content:StringFromDistinctionData(&showColdId)] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
             NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
@@ -466,7 +466,7 @@ DistinctionData notiAspectImageMessageValue = (DistinctionData){74, (Byte []){57
 //
 //    }];
 
-    //: UIAlertAction *picture = [UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"message_send_album"] style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+    //: UIAlertAction *picture = [UIAlertAction actionWithTitle:[PushLanguageManager getTextWithKey:@"message_send_album"] style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
     UIAlertAction *picture = [UIAlertAction actionWithTitle:[BackgroundRandomAttribute content:StringFromDistinctionData(&userMotTitle)] style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
 
 //        [self pushTZImagePickerControllerWithAsset:nil];
@@ -476,7 +476,7 @@ DistinctionData notiAspectImageMessageValue = (DistinctionData){74, (Byte []){57
             //: }];
             }];
 
-    //: UIAlertAction *cancle = [UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction *_Nonnull action) {
+    //: UIAlertAction *cancle = [UIAlertAction actionWithTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction *_Nonnull action) {
     UIAlertAction *cancle = [UIAlertAction actionWithTitle:[BackgroundRandomAttribute content:StringFromDistinctionData(&m_teamStr)] style:UIAlertActionStyleCancel handler:^(UIAlertAction *_Nonnull action) {
    //: }];
    }];
@@ -686,7 +686,7 @@ DistinctionData notiAspectImageMessageValue = (DistinctionData){74, (Byte []){57
         manager.headerImage = _headerImage;
     //: }else{
     }else{
-        //: [SVProgressHUD showMessage:[FFFLanguageManager getTextWithKey:@"register_avtivity3_avatar"]];
+        //: [SVProgressHUD showMessage:[PushLanguageManager getTextWithKey:@"register_avtivity3_avatar"]];
         [SVProgressHUD packetMessage:[BackgroundRandomAttribute content:StringFromDistinctionData(&dreamStyleTeamOffPath)]];
         //: return;
         return;

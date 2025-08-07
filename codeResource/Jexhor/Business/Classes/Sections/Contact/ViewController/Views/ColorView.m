@@ -282,7 +282,7 @@
     if (!_tipsLab) {
         //: _tipsLab = [[UILabel alloc] init];
         _tipsLab = [[UILabel alloc] init];
-        //: _tipsLab.text = [FFFLanguageManager getTextWithKey:@"activity_qrcode_scan_me"];
+        //: _tipsLab.text = [PushLanguageManager getTextWithKey:@"activity_qrcode_scan_me"];
         _tipsLab.text = [BackgroundRandomAttribute content:[SizeThreadData noti_collectionUrl]];
 //        _tipsLab.text = @"将二维码放入扫面框内";
         //: _tipsLab.textAlignment = NSTextAlignmentCenter;
@@ -319,7 +319,7 @@
     if (!_qrcodeLab) {
         //: _qrcodeLab = [[UILabel alloc] init];
         _qrcodeLab = [[UILabel alloc] init];
-        //: _qrcodeLab.text = [FFFLanguageManager getTextWithKey:@"qrcode_activity_title"];
+        //: _qrcodeLab.text = [PushLanguageManager getTextWithKey:@"qrcode_activity_title"];
         _qrcodeLab.text = [BackgroundRandomAttribute content:[SizeThreadData dream_showTitle]];
         //: _qrcodeLab.textAlignment = NSTextAlignmentCenter;
         _qrcodeLab.textAlignment = NSTextAlignmentCenter;
@@ -355,7 +355,7 @@
     if (!_albumLab) {
         //: _albumLab = [[UILabel alloc] init];
         _albumLab = [[UILabel alloc] init];
-        //: _albumLab.text = [FFFLanguageManager getTextWithKey:@"message_send_album"];
+        //: _albumLab.text = [PushLanguageManager getTextWithKey:@"message_send_album"];
         _albumLab.text = [BackgroundRandomAttribute content:[SizeThreadData appNameFormat]];
         //: _albumLab.textAlignment = NSTextAlignmentCenter;
         _albumLab.textAlignment = NSTextAlignmentCenter;

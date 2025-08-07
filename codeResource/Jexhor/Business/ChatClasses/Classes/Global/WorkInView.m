@@ -48,20 +48,20 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitSwitcherCell.h"
+//: #import "PushKitSwitcherCell.h"
 #import "WorkInView.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "PushCommonTableData.h"
+#import "PushCommonTableData.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 
-//: @interface FFFKitSwitcherCell ()
+//: @interface PushKitSwitcherCell ()
 @interface WorkInView ()
 
 //: @end
 @end
 
-//: @implementation FFFKitSwitcherCell
+//: @implementation PushKitSwitcherCell
 @implementation WorkInView
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{

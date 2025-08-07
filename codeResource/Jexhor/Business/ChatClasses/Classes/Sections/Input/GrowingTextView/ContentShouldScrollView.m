@@ -9,15 +9,15 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFGrowingTextView.h"
+//: #import "PushGrowingTextView.h"
 #import "ContentShouldScrollView.h"
-//: #import "FFFGrowingInternalTextView.h"
+//: #import "PushGrowingInternalTextView.h"
 #import "ProlusionTouchTextView.h"
 
-//: @interface FFFGrowingTextView()<UITextViewDelegate>
+//: @interface PushGrowingTextView()<UITextViewDelegate>
 @interface ContentShouldScrollView()<UITextViewDelegate>
 
-//: @property (nonatomic,strong) FFFGrowingInternalTextView *textView;
+//: @property (nonatomic,strong) PushGrowingInternalTextView *textView;
 @property (nonatomic,strong) ProlusionTouchTextView *textView;
 
 //: @property (nonatomic,assign) CGFloat maxHeight;
@@ -35,7 +35,7 @@
 //: @end
 @end
 
-//: @implementation FFFGrowingTextView
+//: @implementation PushGrowingTextView
 @implementation ContentShouldScrollView
 
 //: #pragma mark - Override
@@ -49,7 +49,7 @@
     if (self) {
         //: CGRect rect = CGRectMake(0, 0, frame.size.width, frame.size.height);
         CGRect rect = CGRectMake(0, 0, frame.size.width, frame.size.height);
-        //: FFFGrowingInternalTextView *textView = [[FFFGrowingInternalTextView alloc] initWithFrame:rect];
+        //: PushGrowingInternalTextView *textView = [[PushGrowingInternalTextView alloc] initWithFrame:rect];
         ProlusionTouchTextView *textView = [[ProlusionTouchTextView alloc] initWithFrame:rect];
         //: self.textView = textView;
         self.textView = textView;
@@ -70,7 +70,7 @@
     self = [super initWithCoder:aDecoder];
     //: if (self) {
     if (self) {
-        //: FFFGrowingInternalTextView *textView = [[FFFGrowingInternalTextView alloc] initWithFrame:CGRectZero];
+        //: PushGrowingInternalTextView *textView = [[PushGrowingInternalTextView alloc] initWithFrame:CGRectZero];
         ProlusionTouchTextView *textView = [[ProlusionTouchTextView alloc] initWithFrame:CGRectZero];
         //: self.textView = textView;
         self.textView = textView;
@@ -477,7 +477,7 @@
 
 
 
-//: @implementation FFFGrowingTextView(TextView)
+//: @implementation PushGrowingTextView(TextView)
 @implementation ContentShouldScrollView(TextView)
 
 //: - (NSAttributedString *)placeholderAttributedText

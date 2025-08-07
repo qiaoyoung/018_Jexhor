@@ -11,13 +11,13 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFSessionMessageContentView.h"
+//: #import "PushSessionMessageContentView.h"
 #import "MoldControl.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFSessionRtcCallRecordContentView : FFFSessionMessageContentView
+//: @interface PushSessionRtcCallRecordContentView : PushSessionMessageContentView
 @interface ToolControl : MoldControl
 
 //: @property (nonatomic, strong) UILabel *textLabel;

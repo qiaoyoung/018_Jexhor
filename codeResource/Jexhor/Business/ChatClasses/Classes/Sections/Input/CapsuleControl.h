@@ -12,19 +12,19 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @class FFFInputEmoticonTabView;
+//: @class PushInputEmoticonTabView;
 @class CapsuleControl;
 
 //: @protocol NIMInputEmoticonTabDelegate <NSObject>
 @protocol CellMargin <NSObject>
 
-//: - (void)tabView:(FFFInputEmoticonTabView *)tabView didSelectTabIndex:(NSInteger) index;
+//: - (void)tabView:(PushInputEmoticonTabView *)tabView didSelectTabIndex:(NSInteger) index;
 - (void)nameSize:(CapsuleControl *)tabView doingTap:(NSInteger) index;
 
 //: @end
 @end
 
-//: @interface FFFInputEmoticonTabView : UIControl
+//: @interface PushInputEmoticonTabView : UIControl
 @interface CapsuleControl : UIControl
 
 //: @property (nonatomic,strong) UIButton * sendButton;

@@ -93,18 +93,18 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputEmoticonTabView.h"
+//: #import "PushInputEmoticonTabView.h"
 #import "CapsuleControl.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "PushInputEmoticonManager.h"
 #import "DirectorManager.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "PushGlobalMacro.h"
+#import "PushGlobalMacro.h"
 
-//: const NSInteger FFFInputEmoticonTabViewHeight = 44;
+//: const NSInteger PushInputEmoticonTabViewHeight = 44;
 const NSInteger dreamUnderlyingMsg = 44;
 //: const NSInteger NIMInputEmoticonSendButtonWidth = 56;
 const NSInteger dreamEdgeId = 56;
@@ -112,7 +112,7 @@ const NSInteger dreamEdgeId = 56;
 //: const CGFloat NIMInputLineBoarder = .5f;
 const CGFloat k_methodIdent = .5f;
 
-//: @interface FFFInputEmoticonTabView()
+//: @interface PushInputEmoticonTabView()
 @interface CapsuleControl()
 
 //: @property (nonatomic,strong) NSMutableArray * tabs;
@@ -126,12 +126,12 @@ const CGFloat k_methodIdent = .5f;
 
 
 
-//: @implementation FFFInputEmoticonTabView
+//: @implementation PushInputEmoticonTabView
 @implementation CapsuleControl
 
 //: - (instancetype)initWithFrame:(CGRect)frame{
 - (instancetype)initWithFrame:(CGRect)frame{
-    //: self = [super initWithFrame:CGRectMake(0, 0, frame.size.width, FFFInputEmoticonTabViewHeight)];
+    //: self = [super initWithFrame:CGRectMake(0, 0, frame.size.width, PushInputEmoticonTabViewHeight)];
     self = [super initWithFrame:CGRectMake(0, 0, frame.size.width, dreamUnderlyingMsg)];
     //: if (self) {
     if (self) {
@@ -167,7 +167,7 @@ const CGFloat k_methodIdent = .5f;
 //        _sendButton.layer.shadowOpacity = 1;
 //        _sendButton.layer.shadowRadius = 8;
 //        
-        //: _sendButton.nim_height = FFFInputEmoticonTabViewHeight;
+        //: _sendButton.nim_height = PushInputEmoticonTabViewHeight;
         _sendButton.nim_height = dreamUnderlyingMsg;
         //: _sendButton.nim_width = NIMInputEmoticonSendButtonWidth;
         _sendButton.nim_width = dreamEdgeId;
@@ -230,7 +230,7 @@ const CGFloat k_methodIdent = .5f;
         //: [_tabs addObject:button];
         [_tabs addObject:button];
 
-//        UIView *sep = [[UIView alloc] initWithFrame:CGRectMake(0, 0, NIMInputLineBoarder, FFFInputEmoticonTabViewHeight)];
+//        UIView *sep = [[UIView alloc] initWithFrame:CGRectMake(0, 0, NIMInputLineBoarder, PushInputEmoticonTabViewHeight)];
 ////        sep.backgroundColor = sepColor;
 //        sep.backgroundColor = [UIColor whiteColor];
 //        [_seps addObject:sep];
@@ -288,7 +288,7 @@ const CGFloat k_methodIdent = .5f;
         UIButton *button = self.tabs[index];
         //: button.nim_width = NIMInputEmoticonSendButtonWidth;
         button.nim_width = dreamEdgeId;
-        //: button.nim_height = FFFInputEmoticonTabViewHeight;
+        //: button.nim_height = PushInputEmoticonTabViewHeight;
         button.nim_height = dreamUnderlyingMsg;
         //: button.nim_left = left;
         button.nim_left = left;

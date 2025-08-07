@@ -12,47 +12,47 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFLanguageManager.h"
+//: #import "PushLanguageManager.h"
 #import "BackgroundRandomAttribute.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFKitInfo.h"
+//: #import "PushKitInfo.h"
 #import "DataTeam.h"
-//: #import "FFFMediaItem.h"            //多媒体面板对象
+//: #import "PushMediaItem.h"            //多媒体面板对象
 #import "RecordAlbumItem.h"            //多媒体面板对象
-//: #import "FFFMessageModel.h"         //message Wrapper
+//: #import "PushMessageModel.h"         //message Wrapper
 #import "PurseModel.h"         //message Wrapper
-//: #import "FFFKitMessageProvider.h"
+//: #import "PushKitMessageProvider.h"
 #import "CountProvider.h"
-//: #import "FFFCellConfig.h"           //message cell配置协议
-#import "FFFCellConfig.h"           //message cell配置协议
-//: #import "FFFInputProtocol.h"        //输入框回调
-#import "FFFInputProtocol.h"        //输入框回调
-//: #import "FFFKitDataProvider.h"      //APP内容提供器
+//: #import "PushCellConfig.h"           //message cell配置协议
+#import "PushCellConfig.h"           //message cell配置协议
+//: #import "PushInputProtocol.h"        //输入框回调
+#import "PushInputProtocol.h"        //输入框回调
+//: #import "PushKitDataProvider.h"      //APP内容提供器
 #import "BarModel.h"      //APP内容提供器
-//: #import "FFFMessageCellProtocol.h"  //message cell事件回调
-#import "FFFMessageCellProtocol.h"  //message cell事件回调
-//: #import "FFFSessionConfig.h"        //会话页面配置
+//: #import "PushMessageCellProtocol.h"  //message cell事件回调
+#import "PushMessageCellProtocol.h"  //message cell事件回调
+//: #import "PushSessionConfig.h"        //会话页面配置
 #import "CreateTop.h"        //会话页面配置
-//: #import "FFFKitEvent.h"             //点击事件封装类
+//: #import "PushKitEvent.h"             //点击事件封装类
 #import "BeforeEvent.h"             //点击事件封装类
-//: #import "FFFCellLayoutConfig.h"
+//: #import "PushCellLayoutConfig.h"
 #import "MessageImageContainer.h"
-//: #import "FFFSessionMessageContentView.h"
+//: #import "PushSessionMessageContentView.h"
 #import "MoldControl.h"
-//: #import "FFFKitConfig.h"
+//: #import "PushKitConfig.h"
 #import "CoverRandomConfig.h"
-//: #import "FFFSessionViewController.h"
+//: #import "PushSessionViewController.h"
 #import "CenterBuildViewController.h"
-//: #import "FFFSessionListViewController.h"
+//: #import "PushSessionListViewController.h"
 #import "SaveVerballyViewController.h"
-//: #import "FFFKitIndependentModeExtraInfo.h"
+//: #import "PushKitIndependentModeExtraInfo.h"
 #import "OfClick.h"
-//: #import "FFFChatUIManagerProtocol.h"
-#import "FFFChatUIManagerProtocol.h"
-//: #import "FFFCollectionViewLeftAlignedLayout.h"
+//: #import "PushChatUIManagerProtocol.h"
+#import "PushChatUIManagerProtocol.h"
+//: #import "PushCollectionViewLeftAlignedLayout.h"
 #import "ToFlowLayout.h"
-//: #import "FFFKitQuickCommentUtil.h"
+//: #import "PushKitQuickCommentUtil.h"
 #import "MakeUtil.h"
 
 //: extern double NIMKitVersionNumber;
@@ -122,25 +122,25 @@ extern const unsigned char mTeamText[];
 /**
  *  注册自定义的排版配置，通过注册自定义排版配置来实现自定义消息的定制化排版
  */
-//: - (void)registerLayoutConfig:(FFFCellLayoutConfig *)layoutConfig;
+//: - (void)registerLayoutConfig:(PushCellLayoutConfig *)layoutConfig;
 - (void)nameTag:(MessageImageContainer *)layoutConfig;
 
 /**
  *  返回当前的排版配置
  */
-//: - (id<FFFCellLayoutConfig>)layoutConfig;
+//: - (id<PushCellLayoutConfig>)layoutConfig;
 - (id<MessageImageContainer>)layoutConfig;
 
 /**
  *  UI 配置器
  */
-//: @property (nonatomic,strong) FFFKitConfig *config;
+//: @property (nonatomic,strong) PushKitConfig *config;
 @property (nonatomic,strong) CoverRandomConfig *config;
 
 /**
  *  内容提供者，由上层开发者注入。如果没有则使用默认 provider
  */
-//: @property (nonatomic,strong) id<FFFKitDataProvider> provider;
+//: @property (nonatomic,strong) id<PushKitDataProvider> provider;
 @property (nonatomic,strong) id<BarModel> provider;
 
 /**
@@ -148,13 +148,13 @@ extern const unsigned char mTeamText[];
  *
  *  此字段需要配合默认的 BarModel ( MerelyImpl ) 使用，如果上层自己定义了 provider ， 则忽略此字段。
  */
-//: @property (nonatomic,strong) FFFKitIndependentModeExtraInfo *independentModeExtraInfo;
+//: @property (nonatomic,strong) PushKitIndependentModeExtraInfo *independentModeExtraInfo;
 @property (nonatomic,strong) OfClick *independentModeExtraInfo;
 
 /**
  * 聊天模块常用UI方法
  */
-//: @property (nonatomic, readonly) id<FFFChatUIManager> chatUIManager;
+//: @property (nonatomic, readonly) id<PushChatUIManager> chatUIManager;
 @property (nonatomic, readonly) id<TeamImageUimanager> chatUIManager;
 
 /**
@@ -209,25 +209,25 @@ extern const unsigned char mTeamText[];
 /**
  *  返回用户信息
  */
-//: - (FFFKitInfo *)infoByUser:(NSString *)userId
+//: - (PushKitInfo *)infoByUser:(NSString *)userId
 - (DataTeam *)infoAndStraddleOption:(NSString *)userId
-                    //: option:(FFFKitInfoFetchOption *)option;
+                    //: option:(PushKitInfoFetchOption *)option;
                     item:(AttributeQuantityOption *)option;
 
 /**
  *  返回群信息
  */
-//: - (FFFKitInfo *)infoByTeam:(NSString *)teamId
+//: - (PushKitInfo *)infoByTeam:(NSString *)teamId
 - (DataTeam *)show:(NSString *)teamId
-                    //: option:(FFFKitInfoFetchOption *)option;
+                    //: option:(PushKitInfoFetchOption *)option;
                     corner:(AttributeQuantityOption *)option;
 
 /**
  *  返回群信息
  */
-//: - (FFFKitInfo *)infoBySuperTeam:(NSString *)teamId
+//: - (PushKitInfo *)infoBySuperTeam:(NSString *)teamId
 - (DataTeam *)of:(NSString *)teamId
-                         //: option:(FFFKitInfoFetchOption *)option;
+                         //: option:(PushKitInfoFetchOption *)option;
                          enableence_strong:(AttributeQuantityOption *)option;
 
 /**

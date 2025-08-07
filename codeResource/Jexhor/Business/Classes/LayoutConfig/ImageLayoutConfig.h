@@ -14,7 +14,7 @@
 //: #import "MyUserKit.h"
 #import "Secret.h"
 
-//: @interface NTESCellLayoutConfig : FFFCellLayoutConfig<FFFCellLayoutConfig>
+//: @interface NTESCellLayoutConfig : PushCellLayoutConfig<PushCellLayoutConfig>
 @interface ImageLayoutConfig : MessageImageContainer<MessageImageContainer>
 
 //: @end

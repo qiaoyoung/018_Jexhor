@@ -60,18 +60,18 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionFileTransContentView.h"
+//: #import "PushSessionFileTransContentView.h"
 #import "DeviceMessageView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFMessageModel.h"
+//: #import "PushMessageModel.h"
 #import "PurseModel.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
 
-//: @interface FFFSessionFileTransContentView()
+//: @interface PushSessionFileTransContentView()
 @interface DeviceMessageView()
 
 //: @property (nonatomic,strong) UIImageView *imageView;
@@ -92,7 +92,7 @@
 //: @end
 @end
 
-//: @implementation FFFSessionFileTransContentView
+//: @implementation PushSessionFileTransContentView
 @implementation DeviceMessageView
 
 //: - (instancetype)initSessionMessageContentView{
@@ -148,7 +148,7 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data{
+//: - (void)refresh:(PushMessageModel *)data{
 - (void)name:(PurseModel *)data{
     //: [super refresh:data];
     [super name:data];
@@ -261,9 +261,9 @@
 //: - (void)onTouchUpInside:(id)sender
 - (void)played:(id)sender
 {
-    //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+    //: PushKitEvent *event = [[PushKitEvent alloc] init];
     BeforeEvent *event = [[BeforeEvent alloc] init];
-    //: event.eventName = FFFKitEventNameTapContent;
+    //: event.eventName = PushKitEventNameTapContent;
     event.eventName = dream_makeMsg;
     //: event.messageModel = self.model;
     event.messageModel = self.model;

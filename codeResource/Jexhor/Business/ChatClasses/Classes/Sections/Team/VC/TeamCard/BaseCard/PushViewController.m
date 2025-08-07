@@ -146,12 +146,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCardOperationViewController.h"
+//: #import "PushTeamCardOperationViewController.h"
 #import "PushViewController.h"
-//: #import "FFFKitProgressHUD.h"
+//: #import "PushKitProgressHUD.h"
 #import "CoverView.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "PushKitDependency.h"
+#import "PushKitDependency.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
 //: #import "NSString+MyUserKit.h"
@@ -159,7 +159,7 @@
 //: #import "NTESSessionMsgConverter.h"
 #import "SessionDevice.h"
 
-//: @implementation FFFTeamCardOperationViewController
+//: @implementation PushTeamCardOperationViewController
 @implementation PushViewController
 
 //: - (void)dealloc {
@@ -172,13 +172,13 @@
 - (instancetype)initWithNumberChild:(NIMTeam *)team
                      //: session:(NIMSession *)session
                      change:(NIMSession *)session
-                      //: option:(FFFTeamCardViewControllerOption *)option {
+                      //: option:(PushTeamCardViewControllerOption *)option {
                       at:(OrientationBackground *)option {
     //: if (self = [super init]) {
     if (self = [super init]) {
         //: _option = option;
         _option = option;
-        //: _teamListManager = [[FFFTeamListDataManager alloc] initWithTeam:team session:session];
+        //: _teamListManager = [[PushTeamListDataManager alloc] initWithTeam:team session:session];
         _teamListManager = [[MainRead alloc] initWithBusinessExecutiveSpecialSession:team start:session];
         //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(teamInfoUpdate:) name:kNIMTeamListDataTeamInfoUpdate object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(detailled:) name:noti_dataMessage object:nil];
@@ -193,7 +193,7 @@
 - (void)viewDidLoad {
     //: [super viewDidLoad];
     [super viewDidLoad];
-    //: FFFMembersFetchOption *option = [[FFFMembersFetchOption alloc] init];
+    //: PushMembersFetchOption *option = [[PushMembersFetchOption alloc] init];
     ReminiscenceSession *option = [[ReminiscenceSession alloc] init];
     //: option.isRefresh = YES;
     option.isRefresh = YES;
@@ -215,17 +215,17 @@
     [self bruxism];
 }
 
-//: - (void)didFetchTeamMember:(FFFMembersFetchOption *)option {
+//: - (void)didFetchTeamMember:(PushMembersFetchOption *)option {
 - (void)rangeMember:(ReminiscenceSession *)option {
     //: __weak typeof(self) wself = self;
     __weak typeof(self) wself = self;
-    //: [FFFKitProgressHUD show];
+    //: [PushKitProgressHUD show];
     [CoverView input];
     //: [self.teamListManager fetchTeamMembersWithOption:option
     [self.teamListManager at:option
                                           //: completion:^(NSError * _Nullable error, NSString * _Nullable msg) {
                                           teamShared:^(NSError * _Nullable error, NSString * _Nullable msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [PushKitProgressHUD dismiss];
         [CoverView pressed];
         //: if (!error) {
         if (!error) {
@@ -280,11 +280,11 @@
     }
     //: __weak typeof(self) wself = self;
     __weak typeof(self) wself = self;
-    //: [FFFKitProgressHUD show];
+    //: [PushKitProgressHUD show];
     [CoverView input];
     //: [self.teamListManager addUsers:userIds info:info completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
     [self.teamListManager complete:userIds alongTing:info net:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [PushKitProgressHUD dismiss];
         [CoverView pressed];
         //: if (!error) {
         if (!error) {
@@ -306,11 +306,11 @@
 - (void)date:(NSString *)userId {
     //: __weak typeof(self) wself = self;
     __weak typeof(self) wself = self;
-    //: [FFFKitProgressHUD show];
+    //: [PushKitProgressHUD show];
     [CoverView input];
     //: [self.teamListManager kickUsers:@[userId] completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
     [self.teamListManager monthCompletion:@[userId] recent:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [PushKitProgressHUD dismiss];
         [CoverView pressed];
         //: if (!error) {
         if (!error) {
@@ -332,13 +332,13 @@
     }
     //: __weak typeof(self) wself = self;
     __weak typeof(self) wself = self;
-    //: [FFFKitProgressHUD show];
+    //: [PushKitProgressHUD show];
     [CoverView input];
     //: [self.teamListManager updateTeamName:name
     [self.teamListManager reloadInfoFrom:name
                               //: completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
                               should:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [PushKitProgressHUD dismiss];
         [CoverView pressed];
         //: if (!error) {
         if (!error) {
@@ -360,13 +360,13 @@
     }
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [FFFKitProgressHUD show];
+    //: [PushKitProgressHUD show];
     [CoverView input];
     //: [self.teamListManager updateTeamNick:nick
     [self.teamListManager checked:nick
                               //: completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
                               everyFile:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [PushKitProgressHUD dismiss];
         [CoverView pressed];
         //: if (!error) {
         if (!error) {
@@ -388,11 +388,11 @@
     }
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [FFFKitProgressHUD show];
+    //: [PushKitProgressHUD show];
     [CoverView input];
     //: [self.teamListManager updateTeamIntro:intro completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
     [self.teamListManager size:intro labelOf:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [PushKitProgressHUD dismiss];
         [CoverView pressed];
         //: if (!error) {
         if (!error) {
@@ -409,13 +409,13 @@
 - (void)roundShow:(BOOL)mute {
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [FFFKitProgressHUD show];
+    //: [PushKitProgressHUD show];
     [CoverView input];
     //: [self.teamListManager updateTeamMute:mute
     [self.teamListManager modifyImage:mute
                               //: completion:^(NSError * _Nullable error, NSString * _Nullable msg) {
                               cameraShould:^(NSError * _Nullable error, NSString * _Nullable msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [PushKitProgressHUD dismiss];
         [CoverView pressed];
         //: if (!error) {
         if (!error) {
@@ -444,11 +444,11 @@
 - (void)view:(NIMTeamJoinMode)mode {
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [FFFKitProgressHUD show];
+    //: [PushKitProgressHUD show];
     [CoverView input];
     //: [self.teamListManager updateTeamJoinMode:mode completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
     [self.teamListManager radiogram:mode present:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [PushKitProgressHUD dismiss];
         [CoverView pressed];
         //: if (!error) {
         if (!error) {
@@ -465,11 +465,11 @@
 - (void)pop:(NIMTeamInviteMode)mode {
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [FFFKitProgressHUD show];
+    //: [PushKitProgressHUD show];
     [CoverView input];
     //: [self.teamListManager updateTeamInviteMode:mode completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
     [self.teamListManager reload:mode putUp:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [PushKitProgressHUD dismiss];
         [CoverView pressed];
         //: if (!error) {
         if (!error) {
@@ -486,13 +486,13 @@
 - (void)managerSetup:(NIMTeamBeInviteMode)mode {
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [FFFKitProgressHUD show];
+    //: [PushKitProgressHUD show];
     [CoverView input];
     //: [self.teamListManager updateTeamBeInviteMode:mode
     [self.teamListManager show:mode
                                       //: completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
                                       message:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [PushKitProgressHUD dismiss];
         [CoverView pressed];
         //: if (!error) {
         if (!error) {
@@ -509,11 +509,11 @@
 - (void)reload:(NIMTeamUpdateInfoMode)mode {
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [FFFKitProgressHUD show];
+    //: [PushKitProgressHUD show];
     [CoverView input];
     //: [self.teamListManager updateTeamInfoMode:mode completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
     [self.teamListManager color:mode empty:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [PushKitProgressHUD dismiss];
         [CoverView pressed];
         //: if (!error) {
         if (!error) {
@@ -530,11 +530,11 @@
 - (void)teamMedia:(NIMTeamNotifyState)state {
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [FFFKitProgressHUD show];
+    //: [PushKitProgressHUD show];
     [CoverView input];
     //: [self.teamListManager updateTeamNotifyState:state completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
     [self.teamListManager to:state enable:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [PushKitProgressHUD dismiss];
         [CoverView pressed];
         //: if (!error) {
         if (!error) {
@@ -549,7 +549,7 @@
 
 //: - (void)didOntransferToUser:(NSString *)userId leave:(BOOL)leave {
 - (void)labelClick:(NSString *)userId view:(BOOL)leave {
-    //: [FFFKitProgressHUD show];
+    //: [PushKitProgressHUD show];
     [CoverView input];
     //: [self.teamListManager transferOwnerWithUserId:userId
     [self.teamListManager tabLabel:userId
@@ -557,7 +557,7 @@
                                          view:leave
                                     //: completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
                                     atDataBlock:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [PushKitProgressHUD dismiss];
         [CoverView pressed];
         //: if (leave) {
         if (leave) {
@@ -578,11 +578,11 @@
 - (void)visualisation{
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [FFFKitProgressHUD show];
+    //: [PushKitProgressHUD show];
     [CoverView input];
     //: [self.teamListManager dismissTeamCompletion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
     [self.teamListManager record:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [PushKitProgressHUD dismiss];
         [CoverView pressed];
         //: if (!error) {
         if (!error) {
@@ -599,11 +599,11 @@
 - (void)context{
     //: __weak typeof(self) wself = self;
     __weak typeof(self) wself = self;
-    //: [FFFKitProgressHUD show];
+    //: [PushKitProgressHUD show];
     [CoverView input];
     //: [self.teamListManager quitTeamCompletion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
     [self.teamListManager success:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [PushKitProgressHUD dismiss];
         [CoverView pressed];
         //: if (!error) {
         if (!error) {
@@ -694,13 +694,13 @@
     __weak typeof(self) wself = self;
     //: if (success) {
     if (success) {
-        //: [FFFKitProgressHUD show];
+        //: [PushKitProgressHUD show];
         [CoverView input];
         //: __weak typeof(self) weakSelf = self;
         __weak typeof(self) weakSelf = self;
         //: [self.teamListManager updateTeamAvatar:filePath completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
         [self.teamListManager distantAdd:filePath app:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-            //: [FFFKitProgressHUD dismiss];
+            //: [PushKitProgressHUD dismiss];
             [CoverView pressed];
             //: if (!error) {
             if (!error) {
@@ -727,7 +727,7 @@
         }];
     //: } else {
     } else {
-        //: [wself showToastMsg:[FFFLanguageManager getTextWithKey:@"group_info_activity_update_failed"]];
+        //: [wself showToastMsg:[PushLanguageManager getTextWithKey:@"group_info_activity_update_failed"]];
         [wself to:[BackgroundRandomAttribute content:[SatelliteData sharedInstance].m_ironicalData]];
     }
 }
@@ -735,7 +735,7 @@
 //: @end
 @end
 
-//: @implementation FFFTeamCardViewControllerOption
+//: @implementation PushTeamCardViewControllerOption
 @implementation OrientationBackground
 
 //: @end

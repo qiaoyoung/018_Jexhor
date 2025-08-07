@@ -11,11 +11,11 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFTeamCardMemberItem.h"
+//: #import "PushTeamCardMemberItem.h"
 #import "CardSession.h"
-//: #import "FFFTeamMemberListDataSource.h"
+//: #import "PushTeamMemberListDataSource.h"
 #import "ShouldBackground.h"
-//: #import "FFFTeamListDataManager.h"
+//: #import "PushTeamListDataManager.h"
 #import "MainRead.h"
 
 //: @protocol NIMTeamMemberCardActionDelegate <NSObject>
@@ -23,21 +23,21 @@
 //: @optional
 @optional
 
-//: - (void)onTeamMemberMuted:(FFFTeamCardMemberItem *)member mute:(BOOL)mute;
+//: - (void)onTeamMemberMuted:(PushTeamCardMemberItem *)member mute:(BOOL)mute;
 - (void)distance:(CardSession *)member model:(BOOL)mute;
-//: - (void)onTeamMemberKicked:(FFFTeamCardMemberItem *)member;
+//: - (void)onTeamMemberKicked:(PushTeamCardMemberItem *)member;
 - (void)bottom:(CardSession *)member;
 
 //: @end
 @end
 
-//: @interface FFFTeamMemberCardViewController : UIViewController
+//: @interface PushTeamMemberCardViewController : UIViewController
 @interface StraddleViewController : UIViewController
 
 //: @property (nonatomic, strong) id<NIMTeamMemberCardActionDelegate> delegate;
 @property (nonatomic, strong) id<ColorDelegate> delegate;
 
-//: @property (nonatomic, strong) FFFTeamListDataManager *teamListManager;
+//: @property (nonatomic, strong) PushTeamListDataManager *teamListManager;
 @property (nonatomic, strong) MainRead *teamListManager;
 //: @property (nonatomic, strong) NSString *memberId;
 @property (nonatomic, strong) NSString *memberId;

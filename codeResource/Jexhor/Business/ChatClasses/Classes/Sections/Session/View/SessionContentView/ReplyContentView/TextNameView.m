@@ -159,7 +159,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFReplyedTextContentView.h"
+//: #import "PushReplyedTextContentView.h"
 #import "TextNameView.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "InsertView+Secret.h"
@@ -168,12 +168,12 @@
 //: #import "MyUserKit.h"
 #import "Secret.h"
 
-//: @interface FFFReplyedTextContentView ()<M80AttributedLabelDelegate>
+//: @interface PushReplyedTextContentView ()<M80AttributedLabelDelegate>
 @interface TextNameView ()<TempColorRead>
 //: @end
 @end
 
-//: @implementation FFFReplyedTextContentView
+//: @implementation PushReplyedTextContentView
 @implementation TextNameView
 
 //: - (instancetype)initSessionMessageContentView {
@@ -192,7 +192,7 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data {
+//: - (void)refresh:(PushMessageModel *)data {
 - (void)name:(PurseModel *)data {
     //: [super refresh:data];
     [super name:data];
@@ -367,7 +367,7 @@
 
     }
 
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config repliedSetting:data.message];
+    //: PushKitSetting *setting = [[MyUserKit sharedKit].config repliedSetting:data.message];
     SchoolbagTaskSurroundingsBlock *setting = [[Secret highlight].config select:data.message];
     //: self.textLabel.textColor = setting.replyedTextColor;
     self.textLabel.textColor = setting.replyedTextColor;
@@ -483,9 +483,9 @@
 - (void)sessionText:(InsertView *)label
              //: clickedOnLink:(id)linkData{
              modeReplacement:(id)linkData{
-    //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+    //: PushKitEvent *event = [[PushKitEvent alloc] init];
     BeforeEvent *event = [[BeforeEvent alloc] init];
-    //: event.eventName = FFFKitEventNameTapLabelLink;
+    //: event.eventName = PushKitEventNameTapLabelLink;
     event.eventName = appCenterMsg;
     //: event.messageModel = self.model;
     event.messageModel = self.model;
@@ -500,7 +500,7 @@
 - (void)played:(id)sender
 {
 //    BeforeEvent *event = [[BeforeEvent alloc] init];
-//    event.eventName = FFFKitEventNameTapRepliedContent;
+//    event.eventName = PushKitEventNameTapRepliedContent;
 //    event.messageModel = self.model;
 //    [self.delegate onCatchEvent:event];
 }

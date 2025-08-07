@@ -58,10 +58,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCartSetTableViewCell.h"
+//: #import "PushTeamCartSetTableViewCell.h"
 #import "ToolHorseCartView.h"
 
-//: @implementation FFFTeamCartSetTableViewCell
+//: @implementation PushTeamCartSetTableViewCell
 @implementation ToolHorseCartView
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -98,14 +98,14 @@
 //: + (instancetype)cellWithTableView:(UITableView *)tableView
 + (instancetype)pressed:(UITableView *)tableView
 {
-    //: static NSString *identifier = @"FFFTeamCartSetTableViewCell";
+    //: static NSString *identifier = @"PushTeamCartSetTableViewCell";
     static NSString *identifier = @"ToolHorseCartView";
-    //: FFFTeamCartSetTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    //: PushTeamCartSetTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     ToolHorseCartView *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     //: if (!cell)
     if (!cell)
     {
-        //: cell = [[FFFTeamCartSetTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        //: cell = [[PushTeamCartSetTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         cell = [[ToolHorseCartView alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
 
     }

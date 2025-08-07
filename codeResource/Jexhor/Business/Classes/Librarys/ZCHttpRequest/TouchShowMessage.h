@@ -292,7 +292,7 @@ typedef void (^HttpProgress)(NSProgress *progress);
                 //: success:(void(^)(NSString *filePath))success
                 hide:(void(^)(NSString *filePath))success
                  //: failed:(ResponseFailed)failed;
-                 offFailed:(ResponseFailed)failed;
+                 oPushailed:(ResponseFailed)failed;
 
 //: @end
 @end

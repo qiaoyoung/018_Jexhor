@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFInputEmoticonDefine.h
+//  PushInputEmoticonDefine.h
 // Secret
 //
 //  Created by chris.

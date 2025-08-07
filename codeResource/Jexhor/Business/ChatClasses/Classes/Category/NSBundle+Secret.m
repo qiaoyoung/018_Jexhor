@@ -112,8 +112,8 @@
 #import "NSBundle+Secret.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
+//: #import "PushInputEmoticonDefine.h"
+#import "PushInputEmoticonDefine.h"
 //: #import "SSZipArchiveManager.h"
 #import "SharedContentView.h"
 

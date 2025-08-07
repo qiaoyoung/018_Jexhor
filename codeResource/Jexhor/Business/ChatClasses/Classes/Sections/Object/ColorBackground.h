@@ -11,19 +11,19 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
-//: #import "FFFSessionPrivateProtocol.h"
-#import "FFFSessionPrivateProtocol.h"
-//: #import "FFFSessionConfig.h"
+//: #import "PushSessionConfigurateProtocol.h"
+#import "PushSessionConfigurateProtocol.h"
+//: #import "PushSessionPrivateProtocol.h"
+#import "PushSessionPrivateProtocol.h"
+//: #import "PushSessionConfig.h"
 #import "CreateTop.h"
 
-//: @interface FFFSessionDataSourceImpl : NSObject<NIMSessionDataSource>
+//: @interface PushSessionDataSourceImpl : NSObject<NIMSessionDataSource>
 @interface ColorBackground : NSObject<InputMagnitude>
 
 //: - (instancetype)initWithSession:(NIMSession *)session
 - (instancetype)initWithDomain:(NIMSession *)session
-                         //: config:(id<FFFSessionConfig>)sessionConfig;
+                         //: config:(id<PushSessionConfig>)sessionConfig;
                          size:(id<CreateTop>)sessionConfig;
 
 //: @end

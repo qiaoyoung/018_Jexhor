@@ -12,10 +12,10 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @class FFFGrowingTextView;
+//: @class PushGrowingTextView;
 @class ContentShouldScrollView;
 
-//: @protocol FFFGrowingTextViewDelegate <NSObject>
+//: @protocol PushGrowingTextViewDelegate <NSObject>
 @protocol SignDelegate <NSObject>
 //: @optional
 @optional
@@ -29,22 +29,22 @@
 //: - (BOOL)shouldInteractWithTextAttachment:(NSTextAttachment *)textAttachment inRange:(NSRange)range;
 - (BOOL)messageInfo:(NSTextAttachment *)textAttachment squeeze:(NSRange)range;
 
-//: - (void)textViewDidBeginEditing:(FFFGrowingTextView *)growingTextView;
+//: - (void)textViewDidBeginEditing:(PushGrowingTextView *)growingTextView;
 - (void)nearTouch:(ContentShouldScrollView *)growingTextView;
 
-//: - (void)textViewDidChangeSelection:(FFFGrowingTextView *)growingTextView;
+//: - (void)textViewDidChangeSelection:(PushGrowingTextView *)growingTextView;
 - (void)titled:(ContentShouldScrollView *)growingTextView;
 
-//: - (void)textViewDidEndEditing:(FFFGrowingTextView *)growingTextView;
+//: - (void)textViewDidEndEditing:(PushGrowingTextView *)growingTextView;
 - (void)nameBegin:(ContentShouldScrollView *)growingTextView;
 
-//: - (BOOL)textViewShouldBeginEditing:(FFFGrowingTextView *)growingTextView;
+//: - (BOOL)textViewShouldBeginEditing:(PushGrowingTextView *)growingTextView;
 - (BOOL)wordsBack:(ContentShouldScrollView *)growingTextView;
 
-//: - (BOOL)textViewShouldEndEditing:(FFFGrowingTextView *)growingTextView;
+//: - (BOOL)textViewShouldEndEditing:(PushGrowingTextView *)growingTextView;
 - (BOOL)cellAcross:(ContentShouldScrollView *)growingTextView;
 
-//: - (void)textViewDidChange:(FFFGrowingTextView *)growingTextView;
+//: - (void)textViewDidChange:(PushGrowingTextView *)growingTextView;
 - (void)messageShould:(ContentShouldScrollView *)growingTextView;
 
 //: - (void)willChangeHeight:(CGFloat)height;
@@ -56,10 +56,10 @@
 //: @end
 @end
 
-//: @interface FFFGrowingTextView : UIScrollView
+//: @interface PushGrowingTextView : UIScrollView
 @interface ContentShouldScrollView : UIScrollView
 
-//: @property (nonatomic,weak) id<FFFGrowingTextViewDelegate> textViewDelegate;
+//: @property (nonatomic,weak) id<PushGrowingTextViewDelegate> textViewDelegate;
 @property (nonatomic,weak) id<SignDelegate> textViewDelegate;
 
 //: @property (nonatomic,assign) NSInteger minNumberOfLines;
@@ -74,7 +74,7 @@
 //: @end
 @end
 
-//: @interface FFFGrowingTextView(TextView)
+//: @interface PushGrowingTextView(TextView)
 @interface ContentShouldScrollView(TextView)
 
 //: @property (nonatomic,copy) NSAttributedString *placeholderAttributedText;

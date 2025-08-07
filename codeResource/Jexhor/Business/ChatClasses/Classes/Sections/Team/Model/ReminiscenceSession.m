@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMembersFetchOption.h"
+//: #import "PushMembersFetchOption.h"
 #import "ReminiscenceSession.h"
 
-//: @implementation FFFMembersFetchOption
+//: @implementation PushMembersFetchOption
 @implementation ReminiscenceSession
 
 //: - (instancetype)init {

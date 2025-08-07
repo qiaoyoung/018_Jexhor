@@ -75,8 +75,8 @@
 // __M_A_C_R_O__
 //: #import "NTESCardVerificationCell.h"
 #import "CellReadView.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "PushCommonTableData.h"
+#import "PushCommonTableData.h"
 
 //: @interface NTESCardVerificationCell ()<UITextViewDelegate>
 @interface CellReadView ()<UITextViewDelegate>
@@ -122,9 +122,9 @@
 //        }];
 //
 
-        //: NSString *activity_add_friend_my_is = [FFFLanguageManager getTextWithKey:@"activity_add_friend_my_is"];
+        //: NSString *activity_add_friend_my_is = [PushLanguageManager getTextWithKey:@"activity_add_friend_my_is"];
         NSString *activity_add_friend_my_is = [BackgroundRandomAttribute content:[SpaceData sharedInstance].noti_inputCreateAlienValue];
-        //: NSString *activity_add_friend_my_request = [FFFLanguageManager getTextWithKey:@"activity_add_friend_my_request"];
+        //: NSString *activity_add_friend_my_request = [PushLanguageManager getTextWithKey:@"activity_add_friend_my_request"];
         NSString *activity_add_friend_my_request = [BackgroundRandomAttribute content:[SpaceData sharedInstance].notiEqualDisplayFormat];
 
         //: NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:[[NIMSDK sharedSDK].loginManager currentAccount]];

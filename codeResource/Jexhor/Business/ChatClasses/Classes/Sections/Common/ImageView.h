@@ -13,10 +13,10 @@
 #import <UIKit/UIKit.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "PushKitDependency.h"
+#import "PushKitDependency.h"
 
-//: @interface FFFAvatarImageView : UIControl
+//: @interface PushAvatarImageView : UIControl
 @interface ImageView : UIControl
 //: @property (nonatomic,strong) UIImage *image;
 @property (nonatomic,strong) UIImage *image;

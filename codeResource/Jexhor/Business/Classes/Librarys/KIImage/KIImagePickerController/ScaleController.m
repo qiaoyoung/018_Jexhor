@@ -132,7 +132,7 @@
         self.delegate = delegate;
         //: self.viewController = viewController;
         self.viewController = viewController;
-        //: self.title = [FFFLanguageManager getTextWithKey:@"please_choose"];
+        //: self.title = [PushLanguageManager getTextWithKey:@"please_choose"];
         self.title = [BackgroundRandomAttribute content:[OppositionItemData app_aspectPath]];//@"请选择";
     }
     //: return self;
@@ -191,9 +191,9 @@
     //: if (_actionSheet == nil) {
     if (_actionSheet == nil) {
 
-        //: NSString *from_phone = [FFFLanguageManager getTextWithKey:@"friend_circle_activity_from_phone"];
+        //: NSString *from_phone = [PushLanguageManager getTextWithKey:@"friend_circle_activity_from_phone"];
         NSString *from_phone = [BackgroundRandomAttribute content:[OppositionItemData show_teamMagnitudeactBornUrl]];
-        //: NSString *activity_camera = [FFFLanguageManager getTextWithKey:@"friend_circle_activity_camera"];
+        //: NSString *activity_camera = [PushLanguageManager getTextWithKey:@"friend_circle_activity_camera"];
         NSString *activity_camera = [BackgroundRandomAttribute content:[OppositionItemData userSkyName]];
 
         //: _actionSheet = [[UIActionSheet alloc] initWithTitle:self.title
@@ -225,7 +225,7 @@
             cancelIndex++;
         }
 
-        //: [_actionSheet addButtonWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]];
+        //: [_actionSheet addButtonWithTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]];
         [_actionSheet addButtonWithTitle:[BackgroundRandomAttribute content:[OppositionItemData main_symptomAllotTitle]]];
         //: cancelIndex++;
         cancelIndex++;

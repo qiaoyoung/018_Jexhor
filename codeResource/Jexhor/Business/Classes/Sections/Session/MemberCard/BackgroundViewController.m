@@ -244,15 +244,15 @@ typedef struct {
 // __M_A_C_R_O__
 //: #import "TeamMemberNormalViewController.h"
 #import "BackgroundViewController.h"
-//: #import "FFFContactSelectViewController.h"
+//: #import "PushContactSelectViewController.h"
 #import "SwitchlyViewController.h"
-//: #import "FFFCardHeaderCell.h"
+//: #import "PushCardHeaderCell.h"
 #import "CompartmentReusableView.h"
 //: #import "TeamMemberNormalCollectionViewCell.h"
 #import "ShouldReusableView.h"
 //: #import "NTESPersonalCardViewController.h"
 #import "AdHominemBubbleViewController.h"
-//: #import "FFFTeamMemberCardViewController.h"
+//: #import "PushTeamMemberCardViewController.h"
 #import "StraddleViewController.h"
 
 //: @interface TeamMemberNormalViewController ()<UICollectionViewDelegate, UICollectionViewDataSource,NIMContactSelectDelegate>
@@ -370,7 +370,7 @@ typedef struct {
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"group_info_activity_team_member"];
+    //: labtitle.text = [PushLanguageManager getTextWithKey:@"group_info_activity_team_member"];
     labtitle.text = [BackgroundRandomAttribute content:[LaverData mButtonName]];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -426,7 +426,7 @@ typedef struct {
     subtitleLabel.textColor = [UIColor user:[LaverData notiUpName]];
     //: subtitleLabel.textAlignment = NSTextAlignmentRight;
     subtitleLabel.textAlignment = NSTextAlignmentRight;
-    //: subtitleLabel.text = [FFFLanguageManager getTextWithKey:@"group_member_info_activity_team_creator"];
+    //: subtitleLabel.text = [PushLanguageManager getTextWithKey:@"group_member_info_activity_team_creator"];
     subtitleLabel.text = [BackgroundRandomAttribute content:[LaverData dreamEthnicBlueTitle]];
     //: [owerView addSubview:subtitleLabel];
     [owerView addSubview:subtitleLabel];
@@ -484,7 +484,7 @@ typedef struct {
         config.filterIds = users;
         //: config.needMutiSelected = YES;
         config.needMutiSelected = YES;
-        //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+        //: PushContactSelectViewController *vc = [[PushContactSelectViewController alloc] initWithConfig:config];
         SwitchlyViewController *vc = [[SwitchlyViewController alloc] initWithBarBottom:config];
         //: vc.delegate = self;
         vc.delegate = self;
@@ -593,7 +593,7 @@ typedef struct {
                     //: self.owerInfo = member;
                     self.owerInfo = member;
 
-                    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:member.userId option:nil];
+                    //: PushKitInfo *info = [[MyUserKit sharedKit] infoByUser:member.userId option:nil];
                     DataTeam *info = [[Secret highlight] infoAndStraddleOption:member.userId item:nil];
                     //: self.titleLabel.text = info.showName;
                     self.titleLabel.text = info.showName;
@@ -632,7 +632,7 @@ typedef struct {
     //: TeamMemberNormalCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"TeamMemberNormalCollectionViewCell" forIndexPath:indexPath];
     ShouldReusableView *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ShouldReusableView" forIndexPath:indexPath];
     //    cell.delegate = self;
-//    cell.backgroundColor  = RGB_COLOR_String(@"#ffffff");
+//    cell.backgroundColor  = RGB_COLOR_String(@"#fffPush");
 
     //: NIMTeamMember *member = self.memberList[indexPath.row];
     NIMTeamMember *member = self.memberList[indexPath.row];

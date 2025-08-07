@@ -9,13 +9,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "PushSessionMessageContentView.h"
 #import "MoldControl.h"
 
 //: extern NSString *const NIMDemoEventNameOpenRedPacket; 
 extern NSString *const appCenterIdent; //自定义消息打开红包
 
-//: @interface NTESSessionRedPacketContentView : FFFSessionMessageContentView
+//: @interface NTESSessionRedPacketContentView : PushSessionMessageContentView
 @interface IndexView : MoldControl
 
 //: @end

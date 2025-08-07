@@ -51,15 +51,15 @@
 #pragma mark - TouchCross
 
 // __M_A_C_R_O__
-//: #import "FFFMemberGroupView.h"
+//: #import "PushMemberGroupView.h"
 #import "TextLayerView.h"
-//: #import "FFFCardHeaderCell.h"
+//: #import "PushCardHeaderCell.h"
 #import "CompartmentReusableView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFCardOperationItem.h"
+//: #import "PushCardOperationItem.h"
 #import "MaxCreate.h"
-//: #import "FFFTeamCardMemberItem.h"
+//: #import "PushTeamCardMemberItem.h"
 #import "CardSession.h"
 
 //: @implementation NIMMemebrGroupData
@@ -85,10 +85,10 @@
 //: @end
 @end
 
-//: #pragma mark - FFFMemberGroupView
+//: #pragma mark - PushMemberGroupView
 #pragma mark - TextLayerView
 
-//: @interface FFFMemberGroupView()<UICollectionViewDataSource,UICollectionViewDelegate,FFFCardHeaderCellDelegate>
+//: @interface PushMemberGroupView()<UICollectionViewDataSource,UICollectionViewDelegate,PushCardHeaderCellDelegate>
 @interface TextLayerView()<UICollectionViewDataSource,UICollectionViewDelegate,TempCellEvent>
 
 //: @property (nonatomic,strong) NSMutableArray *data;
@@ -100,7 +100,7 @@
 //: @end
 @end
 
-//: @implementation FFFMemberGroupView
+//: @implementation PushMemberGroupView
 @implementation TextLayerView
 
 //: - (instancetype)initWithFrame:(CGRect)frame{
@@ -211,7 +211,7 @@
 
 //: - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    //: FFFCardHeaderCell *cell;
+    //: PushCardHeaderCell *cell;
     CompartmentReusableView *cell;
     //: NIMMemebrGroupData *data = [self dataAtIndexPath:indexPath];
     TouchCross *data = [self envelopWill:indexPath];
@@ -240,9 +240,9 @@
     return self.data[index];
 }
 
-//: #pragma mark - FFFCardHeaderCellDelegate
+//: #pragma mark - PushCardHeaderCellDelegate
 #pragma mark - TempCellEvent
-//: - (void)cellDidSelected:(FFFCardHeaderCell *)cell{
+//: - (void)cellDidSelected:(PushCardHeaderCell *)cell{
 - (void)outsideAll:(CompartmentReusableView *)cell{
     //: NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
     NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
@@ -259,7 +259,7 @@
     }
 }
 
-//: - (void)cellShouldBeRemoved:(FFFCardHeaderCell*)cell{
+//: - (void)cellShouldBeRemoved:(PushCardHeaderCell*)cell{
 - (void)sendBottom:(CompartmentReusableView*)cell{
     //: NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
     NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
@@ -311,7 +311,7 @@
         _collectionView.delegate = self;
         //: _collectionView.dataSource = self;
         _collectionView.dataSource = self;
-        //: [_collectionView registerClass:[FFFCardHeaderCell class] forCellWithReuseIdentifier:@"collectionCell"];
+        //: [_collectionView registerClass:[PushCardHeaderCell class] forCellWithReuseIdentifier:@"collectionCell"];
         [_collectionView registerClass:[CompartmentReusableView class] forCellWithReuseIdentifier:[LaborData app_historyUrl]];
     }
     //: return _collectionView;
@@ -326,9 +326,9 @@
 
 //: #pragma mark - Private
 #pragma mark - Private
-//: - (FFFCardHeaderCell *)buildUserCell:(NIMMemebrGroupData *)data indexPath:(NSIndexPath *)indexPath{
+//: - (PushCardHeaderCell *)buildUserCell:(NIMMemebrGroupData *)data indexPath:(NSIndexPath *)indexPath{
 - (CompartmentReusableView *)ambages:(TouchCross *)data comment:(NSIndexPath *)indexPath{
-    //: FFFCardHeaderCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell" forIndexPath:indexPath];
+    //: PushCardHeaderCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell" forIndexPath:indexPath];
     CompartmentReusableView *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:[LaborData app_historyUrl] forIndexPath:indexPath];
     //: NIMCardMemberItem *item = [[NIMCardMemberItem alloc] init];
     OffBackgroundData *item = [[OffBackgroundData alloc] init];
@@ -343,11 +343,11 @@
     return cell;
 }
 
-//: - (FFFCardHeaderCell *)buildOperatorCell:(NIMKitCardHeaderOpeator)operator indexPath:(NSIndexPath *)indexPath{
+//: - (PushCardHeaderCell *)buildOperatorCell:(NIMKitCardHeaderOpeator)operator indexPath:(NSIndexPath *)indexPath{
 - (CompartmentReusableView *)value:(NIMKitCardHeaderOpeator)operator back_strong:(NSIndexPath *)indexPath{
-    //: FFFCardHeaderCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell" forIndexPath:indexPath];
+    //: PushCardHeaderCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell" forIndexPath:indexPath];
     CompartmentReusableView *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:[LaborData app_historyUrl] forIndexPath:indexPath];
-    //: FFFCardOperationItem *item = [[FFFCardOperationItem alloc] initWithOperation:operator];
+    //: PushCardOperationItem *item = [[PushCardOperationItem alloc] initWithOperation:operator];
     MaxCreate *item = [[MaxCreate alloc] initWithThread:operator];
     //: if (self.operatorTitle[@(operator)]) {
     if (self.operatorTitle[@(operator)]) {

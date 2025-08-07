@@ -129,30 +129,30 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitMediaFetcher.h"
+//: #import "PushKitMediaFetcher.h"
 #import "CellShow.h"
 //: #import <MobileCoreServices/MobileCoreServices.h>
 #import <MobileCoreServices/MobileCoreServices.h>
-//: #import "FFFKitFileLocationHelper.h"
+//: #import "PushKitFileLocationHelper.h"
 #import "SecretHelper.h"
-//: #import "FFFMessageMaker.h"
+//: #import "PushMessageMaker.h"
 #import "AddEnablely.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "PushGlobalMacro.h"
+#import "PushGlobalMacro.h"
+//: #import "PushKitDependency.h"
+#import "PushKitDependency.h"
 //: #import "TZImageManager.h"
 #import "TZImageManager.h"
-//: #import "FFFKitProgressHUD.h"
+//: #import "PushKitProgressHUD.h"
 #import "CoverView.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
-//: #import "FFFKitMediaPickerController.h"
+//: #import "PushKitMediaPickerController.h"
 #import "CountPickerController.h"
 //: #import "AVAsset+MyUserKit.h"
 #import "AVAsset+Secret.h"
 
-//: @interface FFFKitMediaFetcher()<FFFKitMediaPickerDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
+//: @interface PushKitMediaFetcher()<PushKitMediaPickerDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 @interface CellShow()<AddDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 
 //: @property (nonatomic,copy) NIMKitLibraryFetchResult libraryResultHandler;
@@ -164,13 +164,13 @@ typedef struct {
 //: @property (nonatomic,weak) UIImagePickerController *imagePicker;
 @property (nonatomic,weak) UIImagePickerController *imagePicker;
 
-//: @property (nonatomic,strong) FFFKitMediaPickerController *assetsPicker;
+//: @property (nonatomic,strong) PushKitMediaPickerController *assetsPicker;
 @property (nonatomic,strong) CountPickerController *assetsPicker;
 
 //: @end
 @end
 
-//: @implementation FFFKitMediaFetcher
+//: @implementation PushKitMediaFetcher
 @implementation CellShow
 
 //: - (instancetype)init
@@ -290,7 +290,7 @@ typedef struct {
 - (void)to:(void(^)(UIViewController * _Nullable picker)) handler {
     //: UIViewController *pickerVC = nil;
     UIViewController *pickerVC = nil;
-    //: FFFKitMediaPickerController *vc = [[FFFKitMediaPickerController alloc] initWithMaxImagesCount:self.limit];
+    //: PushKitMediaPickerController *vc = [[PushKitMediaPickerController alloc] initWithMaxImagesCount:self.limit];
     CountPickerController *vc = [[CountPickerController alloc] initWithExamine:self.limit];
     //: vc.nim_delegate = self;
     vc.nim_delegate = self;
@@ -363,15 +363,15 @@ typedef struct {
             //: default:
             default:
             {
-                //: [[[UIAlertView alloc] initWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"]
+                //: [[[UIAlertView alloc] initWithTitle:[PushLanguageManager getTextWithKey:@"warm_prompt"]
                 [[[UIAlertView alloc] initWithTitle:[BackgroundRandomAttribute content:[InfluentialVotingData sharedInstance].k_influentialFormat]
-                                            //: message:[FFFLanguageManager getTextWithKey:@"setting_privacy"]
+                                            //: message:[PushLanguageManager getTextWithKey:@"setting_privacy"]
                                             message:[BackgroundRandomAttribute content:[InfluentialVotingData sharedInstance].user_quipScienceViewKey]
                                            //: delegate:self
                                            delegate:self
-                                  //: cancelButtonTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
+                                  //: cancelButtonTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
                                   cancelButtonTitle:[BackgroundRandomAttribute content:[InfluentialVotingData sharedInstance].noti_cellStr]
-                                  //: otherButtonTitles:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
+                                  //: otherButtonTitles:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
                                   otherButtonTitles:[BackgroundRandomAttribute content:[InfluentialVotingData sharedInstance].mainEssentialPath],nil] show];
 
 //                UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:LangKey(@"warm_prompt") message:LangKey(@"setting_privacy") preferredStyle:UIAlertControllerStyleAlert];
@@ -403,15 +403,15 @@ typedef struct {
                 if (status == PHAuthorizationStatusRestricted || status == PHAuthorizationStatusDenied) {
 
 
-                    //: [[[UIAlertView alloc] initWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"]
+                    //: [[[UIAlertView alloc] initWithTitle:[PushLanguageManager getTextWithKey:@"warm_prompt"]
                     [[[UIAlertView alloc] initWithTitle:[BackgroundRandomAttribute content:[InfluentialVotingData sharedInstance].k_influentialFormat]
-                                                //: message:[FFFLanguageManager getTextWithKey:@"setting_privacy"]
+                                                //: message:[PushLanguageManager getTextWithKey:@"setting_privacy"]
                                                 message:[BackgroundRandomAttribute content:[InfluentialVotingData sharedInstance].user_quipScienceViewKey]
                                                //: delegate:self
                                                delegate:self
-                                      //: cancelButtonTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
+                                      //: cancelButtonTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
                                       cancelButtonTitle:[BackgroundRandomAttribute content:[InfluentialVotingData sharedInstance].noti_cellStr]
-                                      //: otherButtonTitles:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
+                                      //: otherButtonTitles:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
                                       otherButtonTitles:[BackgroundRandomAttribute content:[InfluentialVotingData sharedInstance].mainEssentialPath],nil] show];
 
                     //: if(handler) handler(nil);
@@ -460,9 +460,9 @@ typedef struct {
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
             //: NSURL *inputURL = [info objectForKey:UIImagePickerControllerMediaURL];
             NSURL *inputURL = [info objectForKey:UIImagePickerControllerMediaURL];
-            //: NSString *outputFileName = [FFFKitFileLocationHelper genFilenameWithExt:@"mp4"];
+            //: NSString *outputFileName = [PushKitFileLocationHelper genFilenameWithExt:@"mp4"];
             NSString *outputFileName = [SecretHelper show:[InfluentialVotingData sharedInstance].dream_pickupKey];
-            //: NSString *outputPath = [FFFKitFileLocationHelper filepathForVideo:outputFileName];
+            //: NSString *outputPath = [PushKitFileLocationHelper filepathForVideo:outputFileName];
             NSString *outputPath = [SecretHelper key:outputFileName];
             //: AVURLAsset *asset = [AVURLAsset URLAssetWithURL:inputURL options:nil];
             AVURLAsset *asset = [AVURLAsset URLAssetWithURL:inputURL options:nil];
@@ -632,15 +632,15 @@ typedef struct {
     if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
 
 
-        //: [[[UIAlertView alloc] initWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"]
+        //: [[[UIAlertView alloc] initWithTitle:[PushLanguageManager getTextWithKey:@"warm_prompt"]
         [[[UIAlertView alloc] initWithTitle:[BackgroundRandomAttribute content:[InfluentialVotingData sharedInstance].k_influentialFormat]
-                                    //: message:[FFFLanguageManager getTextWithKey:@"setting_privacy_camera"]
+                                    //: message:[PushLanguageManager getTextWithKey:@"setting_privacy_camera"]
                                     message:[BackgroundRandomAttribute content:[InfluentialVotingData sharedInstance].m_parkTeamPath]
                                    //: delegate:self
                                    delegate:self
-                          //: cancelButtonTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
+                          //: cancelButtonTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
                           cancelButtonTitle:[BackgroundRandomAttribute content:[InfluentialVotingData sharedInstance].noti_cellStr]
-                          //: otherButtonTitles:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
+                          //: otherButtonTitles:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
                           otherButtonTitles:[BackgroundRandomAttribute content:[InfluentialVotingData sharedInstance].mainEssentialPath],nil] show];
         //: return NO;
         return NO;
@@ -653,15 +653,15 @@ typedef struct {
     if(authStatus == AVAuthorizationStatusRestricted || authStatus == AVAuthorizationStatusDenied){
 
 
-        //: [[[UIAlertView alloc] initWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"]
+        //: [[[UIAlertView alloc] initWithTitle:[PushLanguageManager getTextWithKey:@"warm_prompt"]
         [[[UIAlertView alloc] initWithTitle:[BackgroundRandomAttribute content:[InfluentialVotingData sharedInstance].k_influentialFormat]
-                                    //: message:[FFFLanguageManager getTextWithKey:@"setting_privacy_camera"]
+                                    //: message:[PushLanguageManager getTextWithKey:@"setting_privacy_camera"]
                                     message:[BackgroundRandomAttribute content:[InfluentialVotingData sharedInstance].m_parkTeamPath]
                                    //: delegate:self
                                    delegate:self
-                          //: cancelButtonTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
+                          //: cancelButtonTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
                           cancelButtonTitle:[BackgroundRandomAttribute content:[InfluentialVotingData sharedInstance].noti_cellStr]
-                          //: otherButtonTitles:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
+                          //: otherButtonTitles:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
                           otherButtonTitles:[BackgroundRandomAttribute content:[InfluentialVotingData sharedInstance].mainEssentialPath],nil] show];
 
         //: return NO;

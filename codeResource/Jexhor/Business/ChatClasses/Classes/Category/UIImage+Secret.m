@@ -88,11 +88,11 @@
 // __M_A_C_R_O__
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
+//: #import "PushInputEmoticonDefine.h"
+#import "PushInputEmoticonDefine.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
-//: #import "FFFKitDevice.h"
+//: #import "PushKitDevice.h"
 #import "SizeBackground.h"
 //: #import "NSBundle+MyUserKit.h"
 #import "NSBundle+Secret.h"
@@ -239,7 +239,7 @@
 //: - (UIImage *)nim_imageForAvatarUpload
 - (UIImage *)off
 {
-    //: CGFloat pixels = [[FFFKitDevice currentDevice] suggestImagePixels];
+    //: CGFloat pixels = [[PushKitDevice currentDevice] suggestImagePixels];
     CGFloat pixels = [[SizeBackground topDevice] searched];
     //: UIImage * image = [self nim_imageForUpload:pixels];
     UIImage * image = [self nim:pixels];

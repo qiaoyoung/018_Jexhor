@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFMessageCellProtocol.h
+//  PushMessageCellProtocol.h
 // Secret
 //
 //  Created by NetEase.
@@ -9,23 +9,23 @@
 //
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFCellConfig.h"
-#import "FFFCellConfig.h"
+//: #import "PushCellConfig.h"
+#import "PushCellConfig.h"
 
 // __M_A_C_R_O__
 
-//: @class FFFMessageModel;
+//: @class PushMessageModel;
 @class PurseModel;
 //: @class NIMMessage;
 @class NIMMessage;
 //: @class NIMQuickComment;
 @class NIMQuickComment;
-//: @class FFFKitEvent;
+//: @class PushKitEvent;
 @class BeforeEvent;
-//: @class FFFTextView;
+//: @class PushTextView;
 @class PositionScrollView;
 
-//: @protocol FFFMessageCellDelegate <NSObject>
+//: @protocol PushMessageCellDelegate <NSObject>
 @protocol SharedOnly <NSObject>
 
 //: @optional
@@ -42,7 +42,7 @@
 
 //: #pragma mark - 点击事件
 #pragma mark - 点击事件
-//: - (BOOL)onTapCell:(FFFKitEvent *)event;
+//: - (BOOL)onTapCell:(PushKitEvent *)event;
 - (BOOL)takeOut:(BeforeEvent *)event;
 
 //: - (BOOL)onLongPressCell:(NIMMessage *)message

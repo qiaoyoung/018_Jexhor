@@ -13,7 +13,7 @@
 #import "InsertView.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
-//: #import "FFFTextHighlight.h"
+//: #import "PushTextHighlight.h"
 #import "NeedTitleHighlight.h"
 
 //: static NSString* const M80EllipsesCharacter = @"\u2026";
@@ -284,7 +284,7 @@ static NSString* const show_keyValue = @"\u2026";
             //: NSString *emoString = [attrM.string substringWithRange:range];
             NSString *emoString = [attrM.string substringWithRange:range];
 
-            //: NIMInputEmoticon *emoticon = [[FFFInputEmoticonManager sharedManager] emoticonByTag:emoString];
+            //: NIMInputEmoticon *emoticon = [[PushInputEmoticonManager sharedManager] emoticonByTag:emoString];
             TextEmoticon *emoticon = [[DirectorManager statusFor] status:emoString];
 
             //: UIImage *image = [UIImage nim_emoticonInKit:emoticon.filename];
@@ -319,10 +319,10 @@ static NSString* const show_keyValue = @"\u2026";
                     [emoText yy_setAttribute:NSKernAttributeName value:@(-1)];
                 }
 
-                //: FFFTextHighlight *highlight = [[FFFTextHighlight alloc] init];
+                //: PushTextHighlight *highlight = [[PushTextHighlight alloc] init];
                 NeedTitleHighlight *highlight = [[NeedTitleHighlight alloc] init];
-                //: highlight.type = FFFTextHighlightTypeEmoji;
-                highlight.type = FFFTextHighlightTypeEmoji;
+                //: highlight.type = PushTextHighlightTypeEmoji;
+                highlight.type = PushTextHighlightTypeEmoji;
                 //: highlight.text = emoString;
                 highlight.text = emoString;
                 //: [emoText yy_setTextHighlight:highlight range:NSMakeRange(0, emoText.length)];

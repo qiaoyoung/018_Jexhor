@@ -454,7 +454,7 @@
         _unitLabel.textColor = [UIColor whiteColor];
         //: _unitLabel.font = [UIFont systemFontOfSize:15];
         _unitLabel.font = [UIFont systemFontOfSize:15];
-        //: _unitLabel.text = [FFFLanguageManager getTextWithKey:@"team_red_adapter_yuan"];
+        //: _unitLabel.text = [PushLanguageManager getTextWithKey:@"team_red_adapter_yuan"];
         _unitLabel.text = [BackgroundRandomAttribute content:[ChiefSessionData sharedInstance].mainBrownMessage];
         //: [_backView addSubview:_unitLabel];
         [_backView addSubview:_unitLabel];
@@ -711,7 +711,7 @@
 -(void)top:(NSString *)userID{
     //: NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
     NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
+    //: PushKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
     DataTeam *info = [[Secret highlight] infoAndStraddleOption:userID item:nil];
     //: NSString *headerUrl = me.userInfo.avatarUrl;
     NSString *headerUrl = me.userInfo.avatarUrl;

@@ -18,12 +18,12 @@ Byte kChoiceText[] = {42, 7, 5, 105, 243, 49, 56, 52, 68, 53, 48, 35, 66};
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamSwitchTableViewCell.h"
+//: #import "PushTeamSwitchTableViewCell.h"
 #import "SaveView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 
-//: @implementation FFFTeamSwitchTableViewCell
+//: @implementation PushTeamSwitchTableViewCell
 @implementation SaveView
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{

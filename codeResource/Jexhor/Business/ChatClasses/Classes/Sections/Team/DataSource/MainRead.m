@@ -159,10 +159,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamListDataManager.h"
+//: #import "PushTeamListDataManager.h"
 #import "MainRead.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "PushGlobalMacro.h"
+#import "PushGlobalMacro.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
 
@@ -171,7 +171,7 @@ NSString *const noti_dataMessage = @"kNIMTeamListDataTeamInfoUpdate";
 //: NSString *const kNIMTeamListDataTeamMembersChanged = @"kNIMTeamListDataTeamMembersChanged";
 NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
 
-//: @interface FFFTeamListDataManager ()<NIMTeamManagerDelegate>
+//: @interface PushTeamListDataManager ()<NIMTeamManagerDelegate>
 @interface MainRead ()<NIMTeamManagerDelegate>
 
 //: @property (nonatomic, strong) NIMTeam *team;
@@ -180,19 +180,19 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
 //: @property (nonatomic, strong) NIMSession *session;
 @property (nonatomic, strong) NIMSession *session;
 
-//: @property (nonatomic, strong) NSMutableArray <FFFTeamCardMemberItem *> *members;
+//: @property (nonatomic, strong) NSMutableArray <PushTeamCardMemberItem *> *members;
 @property (nonatomic, strong) NSMutableArray <CardSession *> *members;
 
 //: @property (nonatomic, strong) NIMTeamMember *myTeamInfo;
 @property (nonatomic, strong) NIMTeamMember *myTeamInfo;
 
-//: @property (nonatomic, strong) FFFTeamCardMemberItem *myCard;
+//: @property (nonatomic, strong) PushTeamCardMemberItem *myCard;
 @property (nonatomic, strong) CardSession *myCard;
 
 //: @end
 @end
 
-//: @implementation FFFTeamListDataManager
+//: @implementation PushTeamListDataManager
 @implementation MainRead
 
 //: - (void)dealloc {
@@ -236,7 +236,7 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
 - (NSMutableArray *)memberIds {
     //: NSMutableArray *ret = [NSMutableArray array];
     NSMutableArray *ret = [NSMutableArray array];
-    //: [_members enumerateObjectsUsingBlock:^(FFFTeamCardMemberItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    //: [_members enumerateObjectsUsingBlock:^(PushTeamCardMemberItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
     [_members enumerateObjectsUsingBlock:^(CardSession * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         //: if (obj.userId) {
         if (obj.userId) {
@@ -249,11 +249,11 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
     return ret;
 }
 
-//: - (FFFTeamCardMemberItem *)memberWithUserId:(NSString *)userId {
+//: - (PushTeamCardMemberItem *)memberWithUserId:(NSString *)userId {
 - (CardSession *)inputTo:(NSString *)userId {
-    //: __block FFFTeamCardMemberItem *ret = nil;
+    //: __block PushTeamCardMemberItem *ret = nil;
     __block CardSession *ret = nil;
-    //: [_members enumerateObjectsUsingBlock:^(FFFTeamCardMemberItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    //: [_members enumerateObjectsUsingBlock:^(PushTeamCardMemberItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
     [_members enumerateObjectsUsingBlock:^(CardSession * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         //: if ([obj.userId isEqualToString:userId]) {
         if ([obj.userId isEqualToString:userId]) {
@@ -299,7 +299,7 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
 
 //: #pragma mark - Private
 #pragma mark - Private
-//: - (void)addMemberItem:(FFFTeamCardMemberItem *)item {
+//: - (void)addMemberItem:(PushTeamCardMemberItem *)item {
 - (void)constituent:(CardSession *)item {
     //: if (!item) {
     if (!item) {
@@ -327,7 +327,7 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
 
 //: - (void)removeMemberItem:(NSString *)userId {
 - (void)alongShow:(NSString *)userId {
-    //: for (FFFTeamCardMemberItem *obj in _members) {
+    //: for (PushTeamCardMemberItem *obj in _members) {
     for (CardSession *obj in _members) {
         //: if ([obj.userId isEqualToString:userId]) {
         if ([obj.userId isEqualToString:userId]) {
@@ -349,7 +349,7 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
 
     //: for (NIMTeamMember *member in members) {
     for (NIMTeamMember *member in members) {
-        //: FFFTeamCardMemberItem *item = [[FFFTeamCardMemberItem alloc] initWithMember:member
+        //: PushTeamCardMemberItem *item = [[PushTeamCardMemberItem alloc] initWithMember:member
         CardSession *item = [[CardSession alloc] initWith:member
                                                                            //: teamType:_team.type];
                                                                            kibbutznik:_team.type];
@@ -370,7 +370,7 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
 
 //: - (NIMTeamMember*)teamInfo:(NSString*)uid{
 - (NIMTeamMember*)teamTing:(NSString*)uid{
-    //: for (FFFTeamCardMemberItem *member in _members) {
+    //: for (PushTeamCardMemberItem *member in _members) {
     for (CardSession *member in _members) {
         //: if ([member.userId isEqualToString:uid]) {
         if ([member.userId isEqualToString:uid]) {
@@ -386,14 +386,14 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
 - (void)setMyTeamInfo:(NIMTeamMember *)myTeamInfo {
     //: _myTeamInfo = myTeamInfo;
     _myTeamInfo = myTeamInfo;
-    //: _myCard = [[FFFTeamCardMemberItem alloc] initWithMember:myTeamInfo
+    //: _myCard = [[PushTeamCardMemberItem alloc] initWithMember:myTeamInfo
     _myCard = [[CardSession alloc] initWith:myTeamInfo
                                                    //: teamType:_team.type];
                                                    kibbutznik:_team.type];
 }
 
 
-//: - (void)updateMembersWithOption:(FFFMembersFetchOption *)option
+//: - (void)updateMembersWithOption:(PushMembersFetchOption *)option
 - (void)teamWith:(ReminiscenceSession *)option
                         //: members:(NSArray <NIMTeamMember *> *)members {
                         content:(NSArray <NIMTeamMember *> *)members {
@@ -418,7 +418,7 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
                 self.myTeamInfo = member;
             }
 
-            //: FFFTeamCardMemberItem *item = [[FFFTeamCardMemberItem alloc] initWithMember:member
+            //: PushTeamCardMemberItem *item = [[PushTeamCardMemberItem alloc] initWithMember:member
             CardSession *item = [[CardSession alloc] initWith:member
                                                                                //: teamType:_team.type];
                                                                                kibbutznik:_team.type];
@@ -442,7 +442,7 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
                 self.myTeamInfo = member;
             }
 
-            //: FFFTeamCardMemberItem *item = [[FFFTeamCardMemberItem alloc] initWithMember:member
+            //: PushTeamCardMemberItem *item = [[PushTeamCardMemberItem alloc] initWithMember:member
             CardSession *item = [[CardSession alloc] initWith:member
                                                                                //: teamType:_team.type];
                                                                                kibbutznik:_team.type];
@@ -484,25 +484,25 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
         if (self.team.type == NIMTeamTypeNormal) { //高级群需要验证，普通群直接进
             //: [self addMembers:members];
             [self menuMembers:members];
-            //: msg = [FFFLanguageManager getTextWithKey:@"邀请成功"];
+            //: msg = [PushLanguageManager getTextWithKey:@"邀请成功"];
             msg = [BackgroundRandomAttribute content:[PrisonShowData main_directKey]];
         //: } else {
         } else {
             //: if (self.team.beInviteMode == NIMTeamBeInviteModeNeedAuth) {
             if (self.team.beInviteMode == NIMTeamBeInviteModeNeedAuth) {
-                //: msg = [FFFLanguageManager getTextWithKey:@"邀请成功，等待验证"];
+                //: msg = [PushLanguageManager getTextWithKey:@"邀请成功，等待验证"];
                 msg = [BackgroundRandomAttribute content:[PrisonShowData main_adviserName]];
             //: } else {
             } else {
                 //: [self addMembers:members];
                 [self menuMembers:members];
-                //: msg = [FFFLanguageManager getTextWithKey:@"邀请成功"];
+                //: msg = [PushLanguageManager getTextWithKey:@"邀请成功"];
                 msg = [BackgroundRandomAttribute content:[PrisonShowData main_directKey]];
             }
         }
     //: } else {
     } else {
-        //: msg = [NSString stringWithFormat:@"%@ :%zd",[FFFLanguageManager getTextWithKey:@"邀请失败"],error.code];
+        //: msg = [NSString stringWithFormat:@"%@ :%zd",[PushLanguageManager getTextWithKey:@"邀请失败"],error.code];
         msg = [NSString stringWithFormat:@"%@ :%zd",[BackgroundRandomAttribute content:[PrisonShowData show_constantId]],error.code];
     }
     //: if (completion) {
@@ -526,7 +526,7 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
         [self debone:userIds];
     //: } else {
     } else {
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [PushLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [BackgroundRandomAttribute content:[PrisonShowData app_cropUrl]];
     }
     //: if (completion) {
@@ -566,7 +566,7 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
     NSString *msg = nil;
     //: if (error) {
     if (error) {
-        //: msg = [FFFLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"];
+        //: msg = [PushLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"];
         msg = [BackgroundRandomAttribute content:[PrisonShowData notiVersionPath]];
     //: } else {
     } else {
@@ -592,11 +592,11 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
     if (!error) {
         //: self.team.teamName = name;
         self.team.teamName = name;
-        //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+        //: msg = [PushLanguageManager getTextWithKey:@"modify_activity_modify_success"];
         msg = [BackgroundRandomAttribute content:[PrisonShowData app_moralPath]];
     //: }else{
     }else{
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [PushLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [BackgroundRandomAttribute content:[PrisonShowData app_cropUrl]];
     }
     //: if (completion) {
@@ -618,11 +618,11 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
     if (!error) {
         //: self.myTeamInfo.nickname = nick;
         self.myTeamInfo.nickname = nick;
-        //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+        //: msg = [PushLanguageManager getTextWithKey:@"modify_activity_modify_success"];
         msg = [BackgroundRandomAttribute content:[PrisonShowData app_moralPath]];
     //: }else{
     }else{
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [PushLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [BackgroundRandomAttribute content:[PrisonShowData app_cropUrl]];
     }
 
@@ -645,11 +645,11 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
     if (!error) {
         //: self.team.intro = intro;
         self.team.intro = intro;
-        //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+        //: msg = [PushLanguageManager getTextWithKey:@"modify_activity_modify_success"];
         msg = [BackgroundRandomAttribute content:[PrisonShowData app_moralPath]];
     //: }else{
     }else{
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [PushLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [BackgroundRandomAttribute content:[PrisonShowData app_cropUrl]];
     }
     //: if (completion) {
@@ -667,11 +667,11 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
     NSString *msg = nil;
     //: if (!error) {
     if (!error) {
-        //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+        //: msg = [PushLanguageManager getTextWithKey:@"modify_activity_modify_success"];
         msg = [BackgroundRandomAttribute content:[PrisonShowData app_moralPath]];
     //: }else{
     }else{
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [PushLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [BackgroundRandomAttribute content:[PrisonShowData app_cropUrl]];
     }
     //: if (completion) {
@@ -693,11 +693,11 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
     if (!error) {
         //: self.team.joinMode = mode;
         self.team.joinMode = mode;
-        //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+        //: msg = [PushLanguageManager getTextWithKey:@"modify_activity_modify_success"];
         msg = [BackgroundRandomAttribute content:[PrisonShowData app_moralPath]];
     //: }else{
     }else{
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [PushLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [BackgroundRandomAttribute content:[PrisonShowData app_cropUrl]];
     }
 
@@ -720,11 +720,11 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
     if (!error) {
         //: self.team.inviteMode = mode;
         self.team.inviteMode = mode;
-        //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+        //: msg = [PushLanguageManager getTextWithKey:@"modify_activity_modify_success"];
         msg = [BackgroundRandomAttribute content:[PrisonShowData app_moralPath]];
     //: } else {
     } else {
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [PushLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [BackgroundRandomAttribute content:[PrisonShowData app_cropUrl]];
     }
 
@@ -747,11 +747,11 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
     if (!error) {
         //: self.team.updateInfoMode = mode;
         self.team.updateInfoMode = mode;
-        //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+        //: msg = [PushLanguageManager getTextWithKey:@"modify_activity_modify_success"];
         msg = [BackgroundRandomAttribute content:[PrisonShowData app_moralPath]];
     //: } else {
     } else {
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [PushLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [BackgroundRandomAttribute content:[PrisonShowData app_cropUrl]];
     }
 
@@ -774,11 +774,11 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
     if (!error) {
         //: self.team.beInviteMode = mode;
         self.team.beInviteMode = mode;
-        //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+        //: msg = [PushLanguageManager getTextWithKey:@"modify_activity_modify_success"];
         msg = [BackgroundRandomAttribute content:[PrisonShowData app_moralPath]];
     //: }else{
     }else{
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [PushLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [BackgroundRandomAttribute content:[PrisonShowData app_cropUrl]];
     }
 
@@ -799,7 +799,7 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
     __block NSString *msg = nil;
     //: if (error) {
     if (error) {
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [PushLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [BackgroundRandomAttribute content:[PrisonShowData app_cropUrl]];
     }
     //: if (completion) {
@@ -823,7 +823,7 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
     if (!error) {
         //: for (NSString *userId in userIds) {
         for (NSString *userId in userIds) {
-            //: [self.members enumerateObjectsUsingBlock:^(FFFTeamCardMemberItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            //: [self.members enumerateObjectsUsingBlock:^(PushTeamCardMemberItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             [self.members enumerateObjectsUsingBlock:^(CardSession * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
                 //: if ([obj.userId isEqualToString:userId]) {
                 if ([obj.userId isEqualToString:userId]) {
@@ -838,11 +838,11 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
             }];
         }
 
-        //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+        //: msg = [PushLanguageManager getTextWithKey:@"modify_activity_modify_success"];
         msg = [BackgroundRandomAttribute content:[PrisonShowData app_moralPath]];
     //: }else{
     }else{
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [PushLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [BackgroundRandomAttribute content:[PrisonShowData app_cropUrl]];
     }
 
@@ -866,7 +866,7 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
     if (!error) {
         //: for (NSString *userId in userIds) {
         for (NSString *userId in userIds) {
-            //: [self.members enumerateObjectsUsingBlock:^(FFFTeamCardMemberItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            //: [self.members enumerateObjectsUsingBlock:^(PushTeamCardMemberItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             [self.members enumerateObjectsUsingBlock:^(CardSession * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
                 //: if ([obj.userId isEqualToString:userId]) {
                 if ([obj.userId isEqualToString:userId]) {
@@ -878,11 +878,11 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
             //: }];
             }];
         }
-        //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+        //: msg = [PushLanguageManager getTextWithKey:@"modify_activity_modify_success"];
         msg = [BackgroundRandomAttribute content:[PrisonShowData app_moralPath]];
     //: }else{
     }else{
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [PushLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [BackgroundRandomAttribute content:[PrisonShowData app_cropUrl]];
     }
     //: if (completion) {
@@ -913,11 +913,11 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
             //: [self removeMembers:@[userId]];
             [self debone:@[userId]];
         }
-        //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+        //: msg = [PushLanguageManager getTextWithKey:@"modify_activity_modify_success"];
         msg = [BackgroundRandomAttribute content:[PrisonShowData app_moralPath]];
     //: }else{
     }else{
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [PushLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [BackgroundRandomAttribute content:[PrisonShowData app_cropUrl]];
     }
 
@@ -940,7 +940,7 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
     NSString *msg = nil;
     //: if (!error) {
     if (!error) {
-        //: [self.members enumerateObjectsUsingBlock:^(FFFTeamCardMemberItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        //: [self.members enumerateObjectsUsingBlock:^(PushTeamCardMemberItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [self.members enumerateObjectsUsingBlock:^(CardSession * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             //: if ([obj.userId isEqualToString:userId]) {
             if ([obj.userId isEqualToString:userId]) {
@@ -951,11 +951,11 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
             }
         //: }];
         }];
-        //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+        //: msg = [PushLanguageManager getTextWithKey:@"modify_activity_modify_success"];
         msg = [BackgroundRandomAttribute content:[PrisonShowData app_moralPath]];
     //: }else{
     }else{
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [PushLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [BackgroundRandomAttribute content:[PrisonShowData app_cropUrl]];
     }
     //: if (completion) {
@@ -973,11 +973,11 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
     NSString *msg = nil;
     //: if (!error) {
     if (!error) {
-        //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+        //: msg = [PushLanguageManager getTextWithKey:@"modify_activity_modify_success"];
         msg = [BackgroundRandomAttribute content:[PrisonShowData app_moralPath]];
     //: }else{
     }else{
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [PushLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [BackgroundRandomAttribute content:[PrisonShowData app_cropUrl]];
     }
     //: if (completion) {
@@ -989,7 +989,7 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
 
 //: - (void)handleFetchTeamMembers:(NSArray <NIMTeamMember *> *)members
 - (void)input:(NSArray <NIMTeamMember *> *)members
-                        //: option:(FFFMembersFetchOption *)option
+                        //: option:(PushMembersFetchOption *)option
                         text:(ReminiscenceSession *)option
                          //: error:(NSError *)error
                          blue:(NSError *)error
@@ -1009,7 +1009,7 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
         msg = [PrisonShowData m_financialData].minIn;
     //: } else {
     } else {
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [PushLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [BackgroundRandomAttribute content:[PrisonShowData app_cropUrl]];
     }
     //: if (completion) {
@@ -1033,7 +1033,7 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
         items = [NSMutableArray array];
         //: for (NIMTeamMember *member in members) {
         for (NIMTeamMember *member in members) {
-            //: FFFTeamCardMemberItem *item = [[FFFTeamCardMemberItem alloc] initWithMember:member
+            //: PushTeamCardMemberItem *item = [[PushTeamCardMemberItem alloc] initWithMember:member
             CardSession *item = [[CardSession alloc] initWith:member
                                                                                //: teamType:_team.type];
                                                                                kibbutznik:_team.type];
@@ -1056,7 +1056,7 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
     NSString *msg = nil;
     //: if (error) {
     if (error) {
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [PushLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [BackgroundRandomAttribute content:[PrisonShowData app_cropUrl]];
     }
     //: if (completion) {
@@ -1066,7 +1066,7 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
     }
 }
 
-//: #pragma mark - <FFFTeamOperation>
+//: #pragma mark - <PushTeamOperation>
 #pragma mark - <BeforeImage>
 //: - (void)addUsers:(NSArray *)userIds
 - (void)complete:(NSArray *)userIds
@@ -1254,7 +1254,7 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
         } else {
             //: if (block) {
             if (block) {
-                //: block(error, [FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]);
+                //: block(error, [PushLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]);
                 block(error, [BackgroundRandomAttribute content:[PrisonShowData appRichId]]);
             }
         }
@@ -1874,7 +1874,7 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
     }
 }
 
-//: - (void)fetchTeamMembersWithOption:(FFFMembersFetchOption *)option
+//: - (void)fetchTeamMembersWithOption:(PushMembersFetchOption *)option
 - (void)at:(ReminiscenceSession *)option
                         //: completion:(NIMTeamListDataBlock)block {
                         teamShared:(NIMTeamListDataBlock)block {
@@ -2020,7 +2020,7 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
     }
 }
 
-//: #pragma mark - <FFFTeamMemberListDataSource>
+//: #pragma mark - <PushTeamMemberListDataSource>
 #pragma mark - <ShouldBackground>
 //: - (NSInteger)memberNumber {
 - (NSInteger)associate {
@@ -2052,7 +2052,7 @@ NSString *const userVideoBarFormat = @"kNIMTeamListDataTeamMembersChanged";
     }
     //: _team = team;
     _team = team;
-    //: FFFMembersFetchOption *option = [[FFFMembersFetchOption alloc] init];
+    //: PushMembersFetchOption *option = [[PushMembersFetchOption alloc] init];
     ReminiscenceSession *option = [[ReminiscenceSession alloc] init];
     //: option.count = _members.count + 50;
     option.count = _members.count + 50;

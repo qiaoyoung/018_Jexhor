@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 //: typedef void(^SpeiceBackBlock) (NSString *Introduce);
 typedef void(^SpeiceBackBlock) (NSString *Introduce);
 
-//: @interface FFFTeamIntroduceViewController : UIViewController
+//: @interface PushTeamIntroduceViewController : UIViewController
 @interface TitleViewController : UIViewController
 
 //: @property (nonatomic, copy) SpeiceBackBlock speiceBackBlock;

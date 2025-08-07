@@ -9,21 +9,21 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitEvent.h"
+//: #import "PushKitEvent.h"
 #import "BeforeEvent.h"
 
-//: NSString *const FFFKitEventNameTapContent = @"FFFKitEventNameTapContent";
-NSString *const dream_makeMsg = @"FFFKitEventNameTapContent";
-//: NSString *const FFFKitEventNameTapLabelLink = @"FFFKitEventNameTapLabelLink";
-NSString *const appCenterMsg = @"FFFKitEventNameTapLabelLink";
-//: NSString *const FFFKitEventNameTapAudio = @"FFFKitEventNameTapAudio";
-NSString *const appAssetIdent = @"FFFKitEventNameTapAudio";
+//: NSString *const PushKitEventNameTapContent = @"PushKitEventNameTapContent";
+NSString *const dream_makeMsg = @"PushKitEventNameTapContent";
+//: NSString *const PushKitEventNameTapLabelLink = @"PushKitEventNameTapLabelLink";
+NSString *const appCenterMsg = @"PushKitEventNameTapLabelLink";
+//: NSString *const PushKitEventNameTapAudio = @"PushKitEventNameTapAudio";
+NSString *const appAssetIdent = @"PushKitEventNameTapAudio";
 
-//: NSString *const FFFKitEventNameTapRepliedContent = @"FFFKitEventNameTapRepliedContent";
-NSString *const m_titleMessage = @"FFFKitEventNameTapRepliedContent";
+//: NSString *const PushKitEventNameTapRepliedContent = @"PushKitEventNameTapRepliedContent";
+NSString *const m_titleMessage = @"PushKitEventNameTapRepliedContent";
 
 
-//: @implementation FFFKitEvent
+//: @implementation PushKitEvent
 @implementation BeforeEvent
 
 //: @end

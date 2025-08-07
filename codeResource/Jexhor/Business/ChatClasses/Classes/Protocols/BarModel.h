@@ -14,14 +14,14 @@
 
 //: @class NIMSession;
 @class NIMSession;
-//: @class FFFKitInfo;
+//: @class PushKitInfo;
 @class DataTeam;
-//: @class FFFKitInfoFetchOption;
+//: @class PushKitInfoFetchOption;
 @class AttributeQuantityOption;
 //: @class NIMMessage;
 @class NIMMessage;
 
-//: @protocol FFFKitDataProvider <NSObject>
+//: @protocol PushKitDataProvider <NSObject>
 @protocol BarModel <NSObject>
 
 //: @optional
@@ -35,9 +35,9 @@
  *
  *  @return 用户信息
  */
-//: - (FFFKitInfo *)infoByUser:(NSString *)userId
+//: - (PushKitInfo *)infoByUser:(NSString *)userId
 - (DataTeam *)infoAndStraddleOption:(NSString *)userId
-                    //: option:(FFFKitInfoFetchOption *)option;
+                    //: option:(PushKitInfoFetchOption *)option;
                     item:(AttributeQuantityOption *)option;
 
 
@@ -49,9 +49,9 @@
  *
  *  @return 群组信息
  */
-//: - (FFFKitInfo *)infoByTeam:(NSString *)teamId
+//: - (PushKitInfo *)infoByTeam:(NSString *)teamId
 - (DataTeam *)show:(NSString *)teamId
-                    //: option:(FFFKitInfoFetchOption *)option;
+                    //: option:(PushKitInfoFetchOption *)option;
                     corner:(AttributeQuantityOption *)option;
 
 /**
@@ -62,9 +62,9 @@
  *
  *  @return 群组信息
  */
-//: - (FFFKitInfo *)infoBySuperTeam:(NSString *)teamId
+//: - (PushKitInfo *)infoBySuperTeam:(NSString *)teamId
 - (DataTeam *)of:(NSString *)teamId
-                         //: option:(FFFKitInfoFetchOption *)option;
+                         //: option:(PushKitInfoFetchOption *)option;
                          enableence_strong:(AttributeQuantityOption *)option;
 
 /**

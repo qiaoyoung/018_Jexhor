@@ -9,12 +9,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFBadgeView.h"
+//: #import "PushBadgeView.h"
 #import "AccumulationCellView.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+Secret.h"
 
-//: @interface FFFBadgeView ()
+//: @interface PushBadgeView ()
 @interface AccumulationCellView ()
 
 //: @property (strong) UIColor *badgeBackgroundColor;
@@ -38,7 +38,7 @@
 //: @end
 @end
 
-//: @implementation FFFBadgeView
+//: @implementation PushBadgeView
 @implementation AccumulationCellView
 
 //: + (instancetype)viewWithBadgeTip:(NSString *)badgeValue{
@@ -48,7 +48,7 @@
         //: badgeValue = @"";
         badgeValue = @"";
     }
-    //: FFFBadgeView *instance = [[FFFBadgeView alloc] init];
+    //: PushBadgeView *instance = [[PushBadgeView alloc] init];
     AccumulationCellView *instance = [[AccumulationCellView alloc] init];
     //: instance.frame = [instance frameWithStr:badgeValue];
     instance.frame = [instance messageOf:badgeValue];

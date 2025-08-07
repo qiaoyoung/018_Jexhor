@@ -83,7 +83,7 @@ typedef struct {
     //: [self addSubview:_iconImageView];
     [self addSubview:_iconImageView];
 
-    //: _avatar = [[FFFAvatarImageView alloc] init];
+    //: _avatar = [[PushAvatarImageView alloc] init];
     _avatar = [[ImageView alloc] init];
     //: [self addSubview:_avatar];
     [self addSubview:_avatar];
@@ -130,7 +130,7 @@ typedef struct {
 
     //: NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:user_id];
     NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:user_id];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:user_id option:nil];
+    //: PushKitInfo *info = [[MyUserKit sharedKit] infoByUser:user_id option:nil];
     DataTeam *info = [[Secret highlight] infoAndStraddleOption:user_id item:nil];
 
     //: [_avatar nim_setImageWithURL:[NSURL URLWithString:info.avatarUrlString] placeholderImage:info.avatarImage options:SDWebImageRetryFailed];

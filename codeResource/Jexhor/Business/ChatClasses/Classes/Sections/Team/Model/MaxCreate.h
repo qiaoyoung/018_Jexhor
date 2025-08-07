@@ -11,11 +11,11 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "PushCardDataSourceProtocol.h"
+#import "PushCardDataSourceProtocol.h"
 
-//: @interface FFFCardOperationItem : NSObject<FFFKitCardHeaderData>
-@interface MaxCreate : NSObject<FFFKitCardHeaderData>
+//: @interface PushCardOperationItem : NSObject<PushKitCardHeaderData>
+@interface MaxCreate : NSObject<PushKitCardHeaderData>
 
 //: @property(nonatomic,copy) NSString *title;
 @property(nonatomic,copy) NSString *title;

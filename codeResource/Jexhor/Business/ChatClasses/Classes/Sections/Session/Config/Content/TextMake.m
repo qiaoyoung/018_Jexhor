@@ -67,14 +67,14 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFVideoContentConfig.h"
+//: #import "PushVideoContentConfig.h"
 #import "TextMake.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
 
-//: @implementation FFFVideoContentConfig
+//: @implementation PushVideoContentConfig
 @implementation TextMake
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
 - (CGSize)tap:(CGFloat)cellWidth button:(NIMMessage *)message
@@ -114,7 +114,7 @@ typedef struct {
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)session:(NIMMessage *)message
 {
-    //: return @"FFFSessionVideoContentView";
+    //: return @"PushSessionVideoContentView";
     return @"CenterView";
 }
 

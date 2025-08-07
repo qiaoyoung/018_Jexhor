@@ -85,17 +85,17 @@
         case NIMLoginClientTypeiOS:
         //: case NIMLoginClientTypeWP:
         case NIMLoginClientTypeWP:
-            //: return [FFFLanguageManager getTextWithKey:@"home_fragment_phone"];
+            //: return [PushLanguageManager getTextWithKey:@"home_fragment_phone"];
             return [BackgroundRandomAttribute content:[CallerData notiPermitName]];
         //: case NIMLoginClientTypePC:
         case NIMLoginClientTypePC:
         //: case NIMLoginClientTypemacOS:
         case NIMLoginClientTypemacOS:
-            //: return [FFFLanguageManager getTextWithKey:@"home_fragment_pc"];
+            //: return [PushLanguageManager getTextWithKey:@"home_fragment_pc"];
             return [BackgroundRandomAttribute content:[CallerData main_powerData]];
         //: case NIMLoginClientTypeWeb:
         case NIMLoginClientTypeWeb:
-            //: return [FFFLanguageManager getTextWithKey:@"home_fragment_web"];
+            //: return [PushLanguageManager getTextWithKey:@"home_fragment_web"];
             return [BackgroundRandomAttribute content:[CallerData mTeamName]];
         //: default:
         default:

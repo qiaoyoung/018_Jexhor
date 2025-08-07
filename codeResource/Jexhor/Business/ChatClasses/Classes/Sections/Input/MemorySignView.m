@@ -36,14 +36,14 @@ Byte dream_snapCoolFormat[] = {51, 13, 31, 13, 219, 209, 170, 133, 35, 255, 194,
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputAudioView.h"
+//: #import "PushInputAudioView.h"
 #import "MemorySignView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "UIView+NTES.h"
 #import "UIView+SearchedTeam.h"
 
-//: @interface FFFInputAudioView()
+//: @interface PushInputAudioView()
 @interface MemorySignView()
 
 //: @property (nonatomic,strong) UIView *audioBgview;
@@ -66,7 +66,7 @@ Byte dream_snapCoolFormat[] = {51, 13, 31, 13, 219, 209, 170, 133, 35, 255, 194,
 //: @end
 @end
 
-//: @implementation FFFInputAudioView
+//: @implementation PushInputAudioView
 @implementation MemorySignView
 
 
@@ -115,7 +115,7 @@ Byte dream_snapCoolFormat[] = {51, 13, 31, 13, 219, 209, 170, 133, 35, 255, 194,
         _delLabel.textAlignment = NSTextAlignmentCenter;
         //: _delLabel.hidden = YES;
         _delLabel.hidden = YES;
-        //: _delLabel.text = [FFFLanguageManager getTextWithKey:@"Releasetocancel"];
+        //: _delLabel.text = [PushLanguageManager getTextWithKey:@"Releasetocancel"];
         _delLabel.text = [BackgroundRandomAttribute content:StringFromManualData(show_importanceData)];
         //: [_audioBgview addSubview:_delLabel];
         [_audioBgview addSubview:_delLabel];
@@ -134,7 +134,7 @@ Byte dream_snapCoolFormat[] = {51, 13, 31, 13, 219, 209, 170, 133, 35, 255, 194,
         //: _tipLabel.textAlignment = NSTextAlignmentCenter;
         _tipLabel.textAlignment = NSTextAlignmentCenter;
 //        _tipLabel.text = @"手指上滑，取消发送".nim_localized;
-        //: _tipLabel.text = [FFFLanguageManager getTextWithKey:@"Releasetosend_swipeuptocancel"];
+        //: _tipLabel.text = [PushLanguageManager getTextWithKey:@"Releasetosend_swipeuptocancel"];
         _tipLabel.text = [BackgroundRandomAttribute content:StringFromManualData(appJarPervId)];
         //: [_audioBgview addSubview:_tipLabel];
         [_audioBgview addSubview:_tipLabel];
@@ -349,7 +349,7 @@ Byte dream_snapCoolFormat[] = {51, 13, 31, 13, 219, 209, 170, 133, 35, 255, 194,
     }
 }
 
-//: - (void)setConfig:(id<FFFSessionConfig>)config
+//: - (void)setConfig:(id<PushSessionConfig>)config
 - (void)setConfig:(id<CreateTop>)config
 {
     //: _config = config;

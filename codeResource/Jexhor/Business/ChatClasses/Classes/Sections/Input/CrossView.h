@@ -9,14 +9,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFPageView.h"
+//: #import "PushPageView.h"
 #import "PageShowWorldView.h"
-//: #import "FFFSessionConfig.h"
+//: #import "PushSessionConfig.h"
 #import "CreateTop.h"
 
 //: @class NIMInputEmoticonCatalog;
 @class SizeCatalog;
-//: @class FFFInputEmoticonTabView;
+//: @class PushInputEmoticonTabView;
 @class CapsuleControl;
 
 //: @protocol NIMInputEmoticonProtocol <NSObject>
@@ -38,10 +38,10 @@
 @end
 
 
-//: @interface FFFInputEmoticonContainerView : UIView<FFFPageViewDataSource,FFFPageViewDelegate>
+//: @interface PushInputEmoticonContainerView : UIView<PushPageViewDataSource,PushPageViewDelegate>
 @interface CrossView : UIView<TouchContent,MessageCreateAdd>
 
-//: @property (nonatomic, strong) FFFPageView *emoticonPageView;
+//: @property (nonatomic, strong) PushPageView *emoticonPageView;
 @property (nonatomic, strong) PageShowWorldView *emoticonPageView;
 //: @property (nonatomic, strong) UIPageControl *emotPageController;
 @property (nonatomic, strong) UIPageControl *emotPageController;
@@ -51,11 +51,11 @@
 @property (nonatomic, strong) SizeCatalog *currentCatalogData;
 //: @property (nonatomic, readonly)NSArray *allEmoticons;
 @property (nonatomic, readonly)NSArray *allEmoticons;
-//: @property (nonatomic, strong) FFFInputEmoticonTabView *tabView;
+//: @property (nonatomic, strong) PushInputEmoticonTabView *tabView;
 @property (nonatomic, strong) CapsuleControl *tabView;
 //: @property (nonatomic, weak) id<NIMInputEmoticonProtocol> delegate;
 @property (nonatomic, weak) id<AttributeProtocol> delegate;
-//: @property (nonatomic, weak) id<FFFSessionConfig> config;
+//: @property (nonatomic, weak) id<PushSessionConfig> config;
 @property (nonatomic, weak) id<CreateTop> config;
 
 //: @property (nonatomic,strong) UIScrollView *scrollView;

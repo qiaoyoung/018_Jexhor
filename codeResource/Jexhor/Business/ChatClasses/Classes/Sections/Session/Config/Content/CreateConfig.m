@@ -9,12 +9,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFFileContentConfig.h"
+//: #import "PushFileContentConfig.h"
 #import "CreateConfig.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
 
-//: @implementation FFFFileContentConfig
+//: @implementation PushFileContentConfig
 @implementation CreateConfig
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
@@ -27,7 +27,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)session:(NIMMessage *)message
 {
-    //: return @"FFFSessionFileTransContentView";
+    //: return @"PushSessionFileTransContentView";
     return @"DeviceMessageView";
 }
 

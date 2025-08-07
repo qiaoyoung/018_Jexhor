@@ -62,14 +62,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMessageModel.h"
+//: #import "PushMessageModel.h"
 #import "PurseModel.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
-//: #import "FFFKitQuickCommentUtil.h"
+//: #import "PushKitQuickCommentUtil.h"
 #import "MakeUtil.h"
 
-//: @interface FFFMessageModel()
+//: @interface PushMessageModel()
 @interface PurseModel()
 
 //: @property (nonatomic,strong) NSMutableDictionary *contentSizeInfo;
@@ -80,7 +80,7 @@
 //: @end
 @end
 
-//: @implementation FFFMessageModel
+//: @implementation PushMessageModel
 @implementation PurseModel
 
 //: @synthesize contentViewInsets = _contentViewInsets;
@@ -159,7 +159,7 @@
 //: - (BOOL)isEqual:(id)object
 - (BOOL)isEqual:(id)object
 {
-    //: if (![object isKindOfClass:[FFFMessageModel class]])
+    //: if (![object isKindOfClass:[PushMessageModel class]])
     if (![object isKindOfClass:[PurseModel class]])
     {
         //: return NO;
@@ -168,7 +168,7 @@
     //: else
     else
     {
-        //: FFFMessageModel *model = object;
+        //: PushMessageModel *model = object;
         PurseModel *model = object;
         //: return [self.message isEqual:model.message];
         return [self.message isEqual:model.message];
@@ -185,7 +185,7 @@
     {
         //: [self updateLayoutConfig];
         [self ting];
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<PushCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<MessageImageContainer> layoutConfig = [[Secret highlight] layoutConfig];
         //: size = [layoutConfig contentSize:self cellWidth:width];
         size = [layoutConfig item:self user:width];
@@ -202,7 +202,7 @@
     //: if (UIEdgeInsetsEqualToEdgeInsets(_contentViewInsets, UIEdgeInsetsZero))
     if (UIEdgeInsetsEqualToEdgeInsets(_contentViewInsets, UIEdgeInsetsZero))
     {
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<PushCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<MessageImageContainer> layoutConfig = [[Secret highlight] layoutConfig];
         //: _contentViewInsets = [layoutConfig contentViewInsets:self];
         _contentViewInsets = [layoutConfig dataCellInput:self];
@@ -216,7 +216,7 @@
     //: if (UIEdgeInsetsEqualToEdgeInsets(_bubbleViewInsets, UIEdgeInsetsZero))
     if (UIEdgeInsetsEqualToEdgeInsets(_bubbleViewInsets, UIEdgeInsetsZero))
     {
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<PushCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<MessageImageContainer> layoutConfig = [[Secret highlight] layoutConfig];
         //: _bubbleViewInsets = [layoutConfig cellInsets:self];
         _bubbleViewInsets = [layoutConfig tap:self];
@@ -228,7 +228,7 @@
 //: - (CGSize)replyContentSize:(CGFloat)width
 - (CGSize)aggregation:(CGFloat)width
 {
-    //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+    //: id<PushCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
     id<MessageImageContainer> layoutConfig = [[Secret highlight] layoutConfig];
     //: CGSize size = [layoutConfig replyContentSize:self cellWidth:width];
     CGSize size = [layoutConfig temp:self length:width];
@@ -241,7 +241,7 @@
     //: if (UIEdgeInsetsEqualToEdgeInsets(_replyContentViewInsets, UIEdgeInsetsZero))
     if (UIEdgeInsetsEqualToEdgeInsets(_replyContentViewInsets, UIEdgeInsetsZero))
     {
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<PushCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<MessageImageContainer> layoutConfig = [[Secret highlight] layoutConfig];
         //: _replyContentViewInsets = [layoutConfig replyContentViewInsets:self];
         _replyContentViewInsets = [layoutConfig item:self];
@@ -255,7 +255,7 @@
     //: if (UIEdgeInsetsEqualToEdgeInsets(_replyBubbleViewInsets, UIEdgeInsetsZero))
     if (UIEdgeInsetsEqualToEdgeInsets(_replyBubbleViewInsets, UIEdgeInsetsZero))
     {
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<PushCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<MessageImageContainer> layoutConfig = [[Secret highlight] layoutConfig];
         //: _replyBubbleViewInsets = [layoutConfig replyCellInsets:self];
         _replyBubbleViewInsets = [layoutConfig ting:self];
@@ -268,7 +268,7 @@
 //: - (void)updateLayoutConfig
 - (void)ting
 {
-    //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+    //: id<PushCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
     id<MessageImageContainer> layoutConfig = [[Secret highlight] layoutConfig];
 
     //: _shouldShowAvatar = [layoutConfig shouldShowAvatar:self];
@@ -350,7 +350,7 @@
             //: if (result.count > 0)
             if (result.count > 0)
             {
-                //: _emoticonsContainerSize = [FFFKitQuickCommentUtil containerSizeWithComments:result];
+                //: _emoticonsContainerSize = [PushKitQuickCommentUtil containerSizeWithComments:result];
                 _emoticonsContainerSize = [MakeUtil name:result];
             }
             //: completion(result);

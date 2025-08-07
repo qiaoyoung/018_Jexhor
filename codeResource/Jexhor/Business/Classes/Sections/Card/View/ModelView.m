@@ -299,7 +299,7 @@
     labsubLabel.textColor = [UIColor user:[RageData sharedInstance].mainPenaltyMessage];
     //: labsubLabel.numberOfLines = 0;
     labsubLabel.numberOfLines = 0;
-    //: labsubLabel.text = [FFFLanguageManager getTextWithKey:@"report_next_select"];
+    //: labsubLabel.text = [PushLanguageManager getTextWithKey:@"report_next_select"];
     labsubLabel.text = [BackgroundRandomAttribute content:[RageData sharedInstance].showNorthernValue];
     //: [_box addSubview:labsubLabel];
     [_box addSubview:labsubLabel];
@@ -351,7 +351,7 @@
 //        _titleLabel.numberOfLines = 0;
 //        _titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
 //        _titleLabel.text = LangKey(@"report_User");
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"report_Content"];
+        //: _titleLabel.text = [PushLanguageManager getTextWithKey:@"report_Content"];
         _titleLabel.text = [BackgroundRandomAttribute content:[RageData sharedInstance].k_snapErrMessage];
 
     }
@@ -383,7 +383,7 @@
         lab.textColor = [UIColor user:[RageData sharedInstance].mainPenaltyMessage];
         //: lab.font = [UIFont systemFontOfSize:14];
         lab.font = [UIFont systemFontOfSize:14];
-        //: lab.text = [FFFLanguageManager getTextWithKey:@"activity_group_chat_avatar_add_black"];
+        //: lab.text = [PushLanguageManager getTextWithKey:@"activity_group_chat_avatar_add_black"];
         lab.text = [BackgroundRandomAttribute content:[RageData sharedInstance].kDisplayName];
         //: [_blockView addSubview:lab];
         [_blockView addSubview:lab];
@@ -432,7 +432,7 @@
         lab.textColor = [UIColor user:[RageData sharedInstance].mainPenaltyMessage];
         //: lab.font = [UIFont systemFontOfSize:14];
         lab.font = [UIFont systemFontOfSize:14];
-        //: lab.text = [FFFLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend"];
+        //: lab.text = [PushLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend"];
         lab.text = [BackgroundRandomAttribute content:[RageData sharedInstance].show_buttonTeamValue];
         //: [_deleteView addSubview:lab];
         [_deleteView addSubview:lab];
@@ -486,7 +486,7 @@
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor user:[RageData sharedInstance].mainPenaltyMessage] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[BackgroundRandomAttribute content:[RageData sharedInstance].main_dismissValue] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -517,7 +517,7 @@
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[BackgroundRandomAttribute content:[RageData sharedInstance].mVoiceTitle] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#05D481"];
         _sureBtn.backgroundColor = [UIColor user:[RageData sharedInstance].main_infoName];

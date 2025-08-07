@@ -9,28 +9,28 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionImageContentView.h"
+//: #import "PushSessionImageContentView.h"
 #import "TutorialDataOrientationControl.h"
-//: #import "FFFMessageModel.h"
+//: #import "PushMessageModel.h"
 #import "PurseModel.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFLoadProgressView.h"
+//: #import "PushLoadProgressView.h"
 #import "GeorgiaHomeBoyView.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "PushKitDependency.h"
+#import "PushKitDependency.h"
 //: #import <YYImage/YYImage.h>
 #import <YYImage/YYImage.h>
 //: #import "UCZProgressView.h"
 #import "UCZProgressView.h"
 
-//: @interface FFFSessionImageContentView()
+//: @interface PushSessionImageContentView()
 @interface TutorialDataOrientationControl()
 
 //: @property (nonatomic,strong,readwrite) YYAnimatedImageView * imageView;
 @property (nonatomic,strong,readwrite) YYAnimatedImageView * imageView;
 
-//: @property (nonatomic,strong) FFFLoadProgressView * progressView;
+//: @property (nonatomic,strong) PushLoadProgressView * progressView;
 @property (nonatomic,strong) GeorgiaHomeBoyView * progressView;
 
 //@property (nonatomic, strong) UCZProgressView *progressView;
@@ -38,7 +38,7 @@
 //: @end
 @end
 
-//: @implementation FFFSessionImageContentView
+//: @implementation PushSessionImageContentView
 @implementation TutorialDataOrientationControl
 
 //: - (instancetype)initSessionMessageContentView{
@@ -64,7 +64,7 @@
 ////        self.progressView.tintColor = [KEKESkinColorManager shareInstance].skinColor;
 //        [self addSubview:self.progressView];
 
-        //: _progressView = [[FFFLoadProgressView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
+        //: _progressView = [[PushLoadProgressView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
         _progressView = [[GeorgiaHomeBoyView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
         //: _progressView.maxProgress = 1.0f;
         _progressView.maxProgress = 1.0f;
@@ -75,7 +75,7 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data
+//: - (void)refresh:(PushMessageModel *)data
 - (void)name:(PurseModel *)data
 {
     //: [super refresh:data];
@@ -92,7 +92,7 @@
         //: [imageObject setUploadURL:url];
         [imageObject setUploadURL:url];
 
-        //: NSMutableDictionary *dic = [[FFFConfig sharedConfig] Gdic];
+        //: NSMutableDictionary *dic = [[PushConfig sharedConfig] Gdic];
         NSMutableDictionary *dic = [[AlongTemp frameConfig] Gdic];
         //: NSData *data = [dic objectForKey:self.model.message.messageId];
         NSData *data = [dic objectForKey:self.model.message.messageId];
@@ -195,9 +195,9 @@
 //: - (void)onTouchUpInside:(id)sender
 - (void)played:(id)sender
 {
-    //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+    //: PushKitEvent *event = [[PushKitEvent alloc] init];
     BeforeEvent *event = [[BeforeEvent alloc] init];
-    //: event.eventName = FFFKitEventNameTapContent;
+    //: event.eventName = PushKitEventNameTapContent;
     event.eventName = dream_makeMsg;
     //: event.messageModel = self.model;
     event.messageModel = self.model;

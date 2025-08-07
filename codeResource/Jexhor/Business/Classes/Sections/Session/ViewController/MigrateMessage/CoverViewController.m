@@ -181,9 +181,9 @@
 // __M_A_C_R_O__
 //: #import "NTESMigrateMessageViewController.h"
 #import "CoverViewController.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
-//: #import "FFFCommonTableDelegate.h"
+//: #import "PushCommonTableData.h"
+#import "PushCommonTableData.h"
+//: #import "PushCommonTableDelegate.h"
 #import "StanzaDelegate.h"
 //: #import "SVProgressHUD.h"
 #import "SVProgressHUD.h"
@@ -199,7 +199,7 @@
 
 //: @property (nonatomic,copy) NSArray *data;
 @property (nonatomic,copy) NSArray *data;
-//: @property (nonatomic,strong) FFFCommonTableDelegate *delegator;
+//: @property (nonatomic,strong) PushCommonTableDelegate *delegator;
 @property (nonatomic,strong) StanzaDelegate *delegator;
 
 //: @end
@@ -222,7 +222,7 @@
     [self viewData];
     //: __weak typeof(self) wself = self;
     __weak typeof(self) wself = self;
-    //: self.delegator = [[FFFCommonTableDelegate alloc] initWithTableData:^NSArray *{
+    //: self.delegator = [[PushCommonTableDelegate alloc] initWithTableData:^NSArray *{
     self.delegator = [[StanzaDelegate alloc] initWithViewBy:^NSArray *{
         //: return wself.data;
         return wself.data;

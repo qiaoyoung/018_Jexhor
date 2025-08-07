@@ -13,19 +13,19 @@
 #import <Foundation/Foundation.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFKitTimerHolder.h"
+//: #import "PushKitTimerHolder.h"
 #import "TouchMax.h"
 
 //: @class NIMKitFirerInfo;
 @class JointMax;
 
-//: @interface FFFKitNotificationFirer : NSObject<FFFKitTimerHolderDelegate>
+//: @interface PushKitNotificationFirer : NSObject<PushKitTimerHolderDelegate>
 @interface Firer : NSObject<TempDelegate>
 
 //: @property (nonatomic,strong) NSMutableDictionary *cachedInfo;
 @property (nonatomic,strong) NSMutableDictionary *cachedInfo;
 
-//: @property (nonatomic,strong) FFFKitTimerHolder *timer;
+//: @property (nonatomic,strong) PushKitTimerHolder *timer;
 @property (nonatomic,strong) TouchMax *timer;
 
 //: @property (nonatomic,assign) NSTimeInterval timeInterval;

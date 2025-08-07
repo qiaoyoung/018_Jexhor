@@ -18,7 +18,7 @@
 #import "ReadUtil.h"
 //: #import "UIView+NTES.h"
 #import "UIView+SearchedTeam.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "PushAvatarImageView.h"
 #import "ImageView.h"
 
 //: CGFloat SearchCellTitleFontSize = 13.f;
@@ -51,7 +51,7 @@ CGFloat mainVersionTitle = 15.f; //cell的高度是由文本高度决定的。�
 //: @interface NTESSearchMessageContentCell()
 @interface ManhuntView()
 
-//: @property (nonatomic,strong) FFFAvatarImageView *avatar;
+//: @property (nonatomic,strong) PushAvatarImageView *avatar;
 @property (nonatomic,strong) ImageView *avatar;
 
 //: @property (nonatomic,strong) UILabel *titleLabel;
@@ -78,7 +78,7 @@ CGFloat mainVersionTitle = 15.f; //cell的高度是由文本高度决定的。�
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     //: if (self) {
     if (self) {
-        //: _avatar = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+        //: _avatar = [[PushAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
         _avatar = [[ImageView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
         //: [self.contentView addSubview:_avatar];
         [self.contentView addSubview:_avatar];
@@ -115,7 +115,7 @@ CGFloat mainVersionTitle = 15.f; //cell的高度是由文本高度决定的。�
     self.object = object;
     //: NIMMessage *message = object.message;
     NIMMessage *message = object.message;
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:message.from option:nil];
+    //: PushKitInfo *info = [[MyUserKit sharedKit] infoByUser:message.from option:nil];
     DataTeam *info = [[Secret highlight] infoAndStraddleOption:message.from item:nil];
     //: NSURL *avatarURL;
     NSURL *avatarURL;

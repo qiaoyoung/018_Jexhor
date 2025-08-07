@@ -45,39 +45,39 @@ Byte mTerritoryName[] = {50, 31, 6, 239, 65, 81, 115, 100, 110, 101, 105, 114, 1
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactSelectViewController.h"
+//: #import "PushContactSelectViewController.h"
 #import "SwitchlyViewController.h"
-//: #import "FFFContactSelectTabView.h"
+//: #import "PushContactSelectTabView.h"
 #import "MakeView.h"
-//: #import "FFFContactPickedView.h"
+//: #import "PushContactPickedView.h"
 #import "MissiveView.h"
-//: #import "FFFGroupedUsrInfo.h"
-#import "FFFGroupedUsrInfo.h"
+//: #import "PushGroupedUsrInfo.h"
+#import "PushGroupedUsrInfo.h"
 //: #import "UserGroupedData.h"
 #import "SizeSoulData.h"
-//: #import "FFFContactDataCell.h"
+//: #import "PushContactDataCell.h"
 #import "BackgroundViewCell.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFSetGroupNameView.h"
+//: #import "PushKitDependency.h"
+#import "PushKitDependency.h"
+//: #import "PushGlobalMacro.h"
+#import "PushGlobalMacro.h"
+//: #import "PushSetGroupNameView.h"
 #import "ShowView.h"
-//: #import "FFFGroupAvatarViewController.h"
+//: #import "PushGroupAvatarViewController.h"
 #import "RaceViewController.h"
 
-//: @interface FFFContactSelectViewController ()<UITableViewDataSource, UITableViewDelegate, FFFContactPickedViewDelegate>{
+//: @interface PushContactSelectViewController ()<UITableViewDataSource, UITableViewDelegate, PushContactPickedViewDelegate>{
 @interface SwitchlyViewController ()<UITableViewDataSource, UITableViewDelegate, DeviceDelegate>{
     //: NSMutableArray *_selectecContacts;
     NSMutableArray *_selectecContacts;
 }
 //: @property (strong, nonatomic) UITableView *tableView;
 @property (strong, nonatomic) UITableView *tableView;
-//: @property(nonatomic, strong) FFFSetGroupNameView *setGroupnameView;
+//: @property(nonatomic, strong) PushSetGroupNameView *setGroupnameView;
 @property(nonatomic, strong) ShowView *setGroupnameView;
 //: @property(nonatomic, strong) UIView *headerview;
 @property(nonatomic, strong) UIView *headerview;
@@ -88,7 +88,7 @@ Byte mTerritoryName[] = {50, 31, 6, 239, 65, 81, 115, 100, 110, 101, 105, 114, 1
 //: @property(nonatomic, strong) UIImage *headPortrait;
 @property(nonatomic, strong) UIImage *headPortrait;
 
-//: @property (strong, nonatomic) FFFContactSelectTabView *selectIndicatorView;
+//: @property (strong, nonatomic) PushContactSelectTabView *selectIndicatorView;
 @property (strong, nonatomic) MakeView *selectIndicatorView;
 
 //: @property (nonatomic, assign) NSInteger maxSelectCount;
@@ -105,7 +105,7 @@ Byte mTerritoryName[] = {50, 31, 6, 239, 65, 81, 115, 100, 110, 101, 105, 114, 1
 //: @end
 @end
 
-//: @implementation FFFContactSelectViewController
+//: @implementation PushContactSelectViewController
 @implementation SwitchlyViewController
 
 //: - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -122,7 +122,7 @@ Byte mTerritoryName[] = {50, 31, 6, 239, 65, 81, 115, 100, 110, 101, 105, 114, 1
     return self;
 }
 
-//: - (instancetype)initWithConfig:(id<FFFContactSelectConfig>) config{
+//: - (instancetype)initWithConfig:(id<PushContactSelectConfig>) config{
 - (instancetype)initWithBarBottom:(id<ReadConfig>) config{
     //: self = [self initWithNibName:nil bundle:nil];
     self = [self initWithNibName:nil bundle:nil];
@@ -221,7 +221,7 @@ Byte mTerritoryName[] = {50, 31, 6, 239, 65, 81, 115, 100, 110, 101, 105, 114, 1
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"select_contact"];
+    //: labtitle.text = [PushLanguageManager getTextWithKey:@"select_contact"];
     labtitle.text = [BackgroundRandomAttribute content:StringFromBlankData(mainAffairKey)];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -343,7 +343,7 @@ Byte mTerritoryName[] = {50, 31, 6, 239, 65, 81, 115, 100, 110, 101, 105, 114, 1
     [vc presentViewController:[[UINavigationController alloc] initWithRootViewController:self] animated:YES completion:nil];
 }
 
-//: - (void)setConfig:(id<FFFContactSelectConfig>)config{
+//: - (void)setConfig:(id<PushContactSelectConfig>)config{
 - (void)setConfig:(id<ReadConfig>)config{
     //: _config = config;
     _config = config;
@@ -385,7 +385,7 @@ Byte mTerritoryName[] = {50, 31, 6, 239, 65, 81, 115, 100, 110, 101, 105, 114, 1
 
     //: if (_selectecContacts.count == 0) {
     if (_selectecContacts.count == 0) {
-        //: [SVProgressHUD showMessage:[FFFLanguageManager getTextWithKey:@"main_activity_choose_least_one"]];
+        //: [SVProgressHUD showMessage:[PushLanguageManager getTextWithKey:@"main_activity_choose_least_one"]];
         [SVProgressHUD packetMessage:[BackgroundRandomAttribute content:StringFromBlankData(showVotingUrl)]];
         //: return;
         return;
@@ -415,7 +415,7 @@ Byte mTerritoryName[] = {50, 31, 6, 239, 65, 81, 115, 100, 110, 101, 105, 114, 1
                         [self.delegate endSelect:_selectecContacts];
                     }
 
-                    //: FFFGroupAvatarViewController *vc = [[FFFGroupAvatarViewController alloc]init];
+                    //: PushGroupAvatarViewController *vc = [[PushGroupAvatarViewController alloc]init];
                     RaceViewController *vc = [[RaceViewController alloc]init];
                     //: vc.groupName = groupName;
                     vc.groupName = groupName;
@@ -539,7 +539,7 @@ Byte mTerritoryName[] = {50, 31, 6, 239, 65, 81, 115, 100, 110, 101, 105, 114, 1
     _selectecContacts = _selectecContacts.count ? _selectecContacts : [NSMutableArray array];
     //: for (NSString *selectId in _selectecContacts) {
     for (NSString *selectId in _selectecContacts) {
-        //: FFFKitInfo *info;
+        //: PushKitInfo *info;
         DataTeam *info;
         //: info = [self.config getInfoById:selectId];
         info = [self.config perspective:selectId];
@@ -578,11 +578,11 @@ Byte mTerritoryName[] = {50, 31, 6, 239, 65, 81, 115, 100, 110, 101, 105, 114, 1
     //: id<NIMGroupMemberProtocol> contactItem = arr[indexPath.row];
     id<ToolTextEnablely> contactItem = arr[indexPath.row];
 
-    //: FFFContactDataCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SelectContactCellID"];
+    //: PushContactDataCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SelectContactCellID"];
     BackgroundViewCell *cell = [tableView dequeueReusableCellWithIdentifier:StringFromBlankData(dream_reinforceKey)];
     //: if (cell == nil) {
     if (cell == nil) {
-        //: cell = [[FFFContactDataCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"SelectContactCellID"];
+        //: cell = [[PushContactDataCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"SelectContactCellID"];
         cell = [[BackgroundViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:StringFromBlankData(dream_reinforceKey)];
     }
     //: cell.accessoryBtn.hidden = NO;
@@ -622,9 +622,9 @@ Byte mTerritoryName[] = {50, 31, 6, 239, 65, 81, 115, 100, 110, 101, 105, 114, 1
 
     //: NSString *memberId = [(id<NIMGroupMemberProtocol>)member memberId];
     NSString *memberId = [(id<ToolTextEnablely>)member memberId];
-    //: FFFContactDataCell *cell = (FFFContactDataCell *)[tableView cellForRowAtIndexPath:indexPath];
+    //: PushContactDataCell *cell = (PushContactDataCell *)[tableView cellForRowAtIndexPath:indexPath];
     BackgroundViewCell *cell = (BackgroundViewCell *)[tableView cellForRowAtIndexPath:indexPath];
-    //: FFFKitInfo *info;
+    //: PushKitInfo *info;
     DataTeam *info;
     //: info = [self.config getInfoById:memberId];
     info = [self.config perspective:memberId];
@@ -678,7 +678,7 @@ Byte mTerritoryName[] = {50, 31, 6, 239, 65, 81, 115, 100, 110, 101, 105, 114, 1
 //: #pragma mark - Private
 #pragma mark - Private
 
-//: - (FFFContactSelectTabView *)selectIndicatorView{
+//: - (PushContactSelectTabView *)selectIndicatorView{
 - (MakeView *)selectIndicatorView{
     //: if (_selectIndicatorView) {
     if (_selectIndicatorView) {
@@ -686,7 +686,7 @@ Byte mTerritoryName[] = {50, 31, 6, 239, 65, 81, 115, 100, 110, 101, 105, 114, 1
         return _selectIndicatorView;
     }
 
-    //: _selectIndicatorView = [[FFFContactSelectTabView alloc] initWithFrame:CGRectMake(0, (44.0f + [UIDevice vg_statusBarHeight]), [[UIScreen mainScreen] bounds].size.width, 64)];
+    //: _selectIndicatorView = [[PushContactSelectTabView alloc] initWithFrame:CGRectMake(0, (44.0f + [UIDevice vg_statusBarHeight]), [[UIScreen mainScreen] bounds].size.width, 64)];
     _selectIndicatorView = [[MakeView alloc] initWithFrame:CGRectMake(0, (44.0f + [UIDevice title]), [[UIScreen mainScreen] bounds].size.width, 64)];
     //: _selectIndicatorView.doneButton.hidden = YES;
     _selectIndicatorView.doneButton.hidden = YES;
@@ -694,11 +694,11 @@ Byte mTerritoryName[] = {50, 31, 6, 239, 65, 81, 115, 100, 110, 101, 105, 114, 1
     return _selectIndicatorView;
 }
 
-//: - (FFFSetGroupNameView *)setGroupnameView{
+//: - (PushSetGroupNameView *)setGroupnameView{
 - (ShowView *)setGroupnameView{
     //: if(!_setGroupnameView){
     if(!_setGroupnameView){
-        //: _setGroupnameView = [[FFFSetGroupNameView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
+        //: _setGroupnameView = [[PushSetGroupNameView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
         _setGroupnameView = [[ShowView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
     }
     //: return _setGroupnameView;

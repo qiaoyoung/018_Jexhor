@@ -27,7 +27,7 @@
 //: @end
 @end
 
-//: @interface FFFInputAtCache : NSObject
+//: @interface PushInputAtCache : NSObject
 @interface VoiceSharedCache : NSObject
 
 //: - (NSArray *)allAtUid:(NSString *)sendText;

@@ -109,24 +109,24 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputToolBar.h"
+//: #import "PushInputToolBar.h"
 #import "GildTheLilyView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
-//: #import "FFFInputBarItemType.h"
-#import "FFFInputBarItemType.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "PushInputBarItemType.h"
+#import "PushInputBarItemType.h"
+//: #import "PushInputEmoticonManager.h"
 #import "DirectorManager.h"
 //: #import "YYText.h"
 #import "YYText.h"
-//: #import "FFFTextHighlight.h"
+//: #import "PushTextHighlight.h"
 #import "NeedTitleHighlight.h"
-//: #import "FFFKitKeyboardInfo.h"
+//: #import "PushKitKeyboardInfo.h"
 #import "TitleRandom.h"
 
-//: @interface FFFInputToolBar()<FFFGrowingTextViewDelegate>
+//: @interface PushInputToolBar()<PushGrowingTextViewDelegate>
 @interface GildTheLilyView()<SignDelegate>
 
 //: @property (nonatomic,copy) NSArray<NSNumber *> *types;
@@ -141,7 +141,7 @@
 //: @end
 @end
 
-//: @implementation FFFInputToolBar
+//: @implementation PushInputToolBar
 @implementation GildTheLilyView
 
 //: - (instancetype)initWithFrame:(CGRect)frame{
@@ -212,7 +212,7 @@
 //        _inputTextBkgImage = [[UIImageView alloc] initWithFrame:CGRectZero];
 //        [_inputTextBkgImage setImage:[[UIImage imageNamed:@"icon_input_text_bg_"] resizableImageWithCapInsets:UIEdgeInsetsMake(15,80,15,80) resizingMode:UIImageResizingModeStretch]];
 
-        //: _inputTextView = [[FFFGrowingTextView alloc] initWithFrame:CGRectZero];
+        //: _inputTextView = [[PushGrowingTextView alloc] initWithFrame:CGRectZero];
         _inputTextView = [[ContentShouldScrollView alloc] initWithFrame:CGRectZero];
         //: _inputTextView.font = [UIFont systemFontOfSize:14.0f];
         _inputTextView.font = [UIFont systemFontOfSize:14.0f];
@@ -251,13 +251,13 @@
 
         //: self.types = @[
         self.types = @[
-//            @(FFFInputBarItemTypeMore),
-//            @(FFFInputBarItemTypeEmoticon),
-//                         @(FFFInputBarItemTypeVoice),
-                         //: @(FFFInputBarItemTypeTextAndRecord),
-                         @(FFFInputBarItemTypeTextAndRecord),
-                         //: @(FFFInputBarItemTypeSend),
-                         @(FFFInputBarItemTypeSend),
+//            @(PushInputBarItemTypeMore),
+//            @(PushInputBarItemTypeEmoticon),
+//                         @(PushInputBarItemTypeVoice),
+                         //: @(PushInputBarItemTypeTextAndRecord),
+                         @(PushInputBarItemTypeTextAndRecord),
+                         //: @(PushInputBarItemTypeSend),
+                         @(PushInputBarItemTypeSend),
 
                        //: ];
                        ];
@@ -336,7 +336,7 @@
 {
 //    CGFloat textViewWidth = 0;
 //    for (NSNumber *type in self.types) {
-//        if (type.integerValue == FFFInputBarItemTypeTextAndRecord) {
+//        if (type.integerValue == PushInputBarItemTypeTextAndRecord) {
 //            continue;
 //        }
 //        UIView *view = [self subViewForType:type.integerValue];
@@ -413,8 +413,8 @@
 //: - (void)adjustTextAndRecordView
 - (void)can
 {
-    //: if ([self.types containsObject:@(FFFInputBarItemTypeTextAndRecord)])
-    if ([self.types containsObject:@(FFFInputBarItemTypeTextAndRecord)])
+    //: if ([self.types containsObject:@(PushInputBarItemTypeTextAndRecord)])
+    if ([self.types containsObject:@(PushInputBarItemTypeTextAndRecord)])
     {
 //        self.inputTextView.center  = self.inputTextBkgImage.center;
 
@@ -505,7 +505,7 @@
 }
 
 
-//: #pragma mark - FFFGrowingTextViewDelegate
+//: #pragma mark - PushGrowingTextViewDelegate
 #pragma mark - SignDelegate
 //: - (BOOL)shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)replacementText
 - (BOOL)text:(NSRange)range table:(NSString *)replacementText
@@ -522,7 +522,7 @@
 }
 
 
-//: - (BOOL)textViewShouldBeginEditing:(FFFGrowingTextView *)growingTextView
+//: - (BOOL)textViewShouldBeginEditing:(PushGrowingTextView *)growingTextView
 - (BOOL)wordsBack:(ContentShouldScrollView *)growingTextView
 {
     //: BOOL should = YES;
@@ -536,7 +536,7 @@
     return should;
 }
 
-//: - (void)textViewDidEndEditing:(FFFGrowingTextView *)growingTextView
+//: - (void)textViewDidEndEditing:(PushGrowingTextView *)growingTextView
 - (void)nameBegin:(ContentShouldScrollView *)growingTextView
 {
     //: if ([self.delegate respondsToSelector:@selector(textViewDidEndEditing)]) {
@@ -547,7 +547,7 @@
 }
 
 
-//: - (void)textViewDidChange:(FFFGrowingTextView *)growingTextView
+//: - (void)textViewDidChange:(PushGrowingTextView *)growingTextView
 - (void)messageShould:(ContentShouldScrollView *)growingTextView
 {
     //: if ([self.delegate respondsToSelector:@selector(textViewDidChange)]) {
@@ -613,19 +613,19 @@
 
 //: #pragma mark - Get
 #pragma mark - Get
-//: - (UIView *)subViewForType:(FFFInputBarItemType)type{
-- (UIView *)containerTap:(FFFInputBarItemType)type{
+//: - (UIView *)subViewForType:(PushInputBarItemType)type{
+- (UIView *)containerTap:(PushInputBarItemType)type{
     //: if (!_dict) {
     if (!_dict) {
         //: _dict = @{
         _dict = @{
-//                  @(FFFInputBarItemTypeVoice) : self.voiceButton,
-//                  @(FFFInputBarItemTypeTextAndRecord)  : self.inputTextBkgImage,
-                  //: @(FFFInputBarItemTypeEmoticon) : self.emoticonBtn,
-                  @(FFFInputBarItemTypeEmoticon) : self.emoticonBtn,
-//                  @(FFFInputBarItemTypeMore)     : self.moreMediaBtn,
-                  //: @(FFFInputBarItemTypeSend) : self.sendButton,
-                  @(FFFInputBarItemTypeSend) : self.sendButton,
+//                  @(PushInputBarItemTypeVoice) : self.voiceButton,
+//                  @(PushInputBarItemTypeTextAndRecord)  : self.inputTextBkgImage,
+                  //: @(PushInputBarItemTypeEmoticon) : self.emoticonBtn,
+                  @(PushInputBarItemTypeEmoticon) : self.emoticonBtn,
+//                  @(PushInputBarItemTypeMore)     : self.moreMediaBtn,
+                  //: @(PushInputBarItemTypeSend) : self.sendButton,
+                  @(PushInputBarItemTypeSend) : self.sendButton,
                 //: };
                 };
     }
@@ -651,7 +651,7 @@
 @end
 
 
-//: @implementation FFFInputToolBar(InputText)
+//: @implementation PushInputToolBar(InputText)
 @implementation GildTheLilyView(InputText)
 
 //: - (NSRange)selectedRange
@@ -789,7 +789,7 @@
     //: NSMutableAttributedString *attributedStringM = [[NSMutableAttributedString alloc] initWithAttributedString:self.inputTextView.attributedText];
     NSMutableAttributedString *attributedStringM = [[NSMutableAttributedString alloc] initWithAttributedString:self.inputTextView.attributedText];
 
-    //: NIMInputEmoticon *emoticon = [[FFFInputEmoticonManager sharedManager] emoticonByTag:text];
+    //: NIMInputEmoticon *emoticon = [[PushInputEmoticonManager sharedManager] emoticonByTag:text];
     TextEmoticon *emoticon = [[DirectorManager statusFor] status:text];
     //: UIImage *image = nil;
     UIImage *image = nil;
@@ -822,10 +822,10 @@
         //: [attributedStringM insertAttributedString:emojiAtt atIndex:_inputTextView.selectedRange.location];
         [attributedStringM insertAttributedString:emojiAtt atIndex:_inputTextView.selectedRange.location];
 
-        //: FFFTextHighlight *highlight = [[FFFTextHighlight alloc] init];
+        //: PushTextHighlight *highlight = [[PushTextHighlight alloc] init];
         NeedTitleHighlight *highlight = [[NeedTitleHighlight alloc] init];
-        //: highlight.type = FFFTextHighlightTypeEmoji;
-        highlight.type = FFFTextHighlightTypeEmoji;
+        //: highlight.type = PushTextHighlightTypeEmoji;
+        highlight.type = PushTextHighlightTypeEmoji;
         //: highlight.text = emoticon.tag;
         highlight.text = emoticon.tag;
 
@@ -847,10 +847,10 @@
         //: [attributedStringM insertAttributedString:emojiAtt atIndex:_inputTextView.selectedRange.location];
         [attributedStringM insertAttributedString:emojiAtt atIndex:_inputTextView.selectedRange.location];
 
-        //: FFFTextHighlight *highlight = [[FFFTextHighlight alloc] init];
+        //: PushTextHighlight *highlight = [[PushTextHighlight alloc] init];
         NeedTitleHighlight *highlight = [[NeedTitleHighlight alloc] init];
-        //: highlight.type = FFFTextHighlightTypeEmoji;
-        highlight.type = FFFTextHighlightTypeEmoji;
+        //: highlight.type = PushTextHighlightTypeEmoji;
+        highlight.type = PushTextHighlightTypeEmoji;
         //: highlight.text = emoticon.tag;
         highlight.text = emoticon.tag;
 

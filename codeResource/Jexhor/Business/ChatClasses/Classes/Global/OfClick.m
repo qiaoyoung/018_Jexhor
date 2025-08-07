@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitIndependentModeExtraInfo.h"
+//: #import "PushKitIndependentModeExtraInfo.h"
 #import "OfClick.h"
 
-//: @implementation FFFKitIndependentModeExtraInfo
+//: @implementation PushKitIndependentModeExtraInfo
 @implementation OfClick
 
 //: @end

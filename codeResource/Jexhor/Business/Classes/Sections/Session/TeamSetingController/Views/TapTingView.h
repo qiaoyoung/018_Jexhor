@@ -13,10 +13,10 @@
 #import <UIKit/UIKit.h>
 //: #import "MyUserKit.h"
 #import "Secret.h"
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "PushCardDataSourceProtocol.h"
+#import "PushCardDataSourceProtocol.h"
 
-//: @class FFFAvatarImageView;
+//: @class PushAvatarImageView;
 @class ImageView;
 
 
@@ -35,7 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-//: @interface FFFGroupMemberTableViewCell : UITableViewCell
+//: @interface PushGroupMemberTableViewCell : UITableViewCell
 @interface TapTingView : UITableViewCell
 
 

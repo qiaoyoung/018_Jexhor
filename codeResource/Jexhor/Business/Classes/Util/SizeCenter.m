@@ -259,7 +259,7 @@ NSString *m_versionQuickStr = @"m_versionQuickStr";
     BOOL needPlay = YES;
     //: for (UIViewController *vc in nav.viewControllers) {
     for (UIViewController *vc in nav.viewControllers) {
-        //: if ([vc isKindOfClass:[FFFSessionViewController class]])
+        //: if ([vc isKindOfClass:[PushSessionViewController class]])
         if ([vc isKindOfClass:[CenterBuildViewController class]])
         {
             //: needPlay = NO;
@@ -396,7 +396,7 @@ NSString *m_versionQuickStr = @"m_versionQuickStr";
         if ([vc isKindOfClass:[BlockViewController class]]
             //: && [vc.session.sessionId isEqualToString:notification.session.sessionId]) {
             && [vc.session.sessionId isEqualToString:notification.session.sessionId]) {
-            //: FFFMessageModel *model = [vc uiDeleteMessage:notification.message];
+            //: PushMessageModel *model = [vc uiDeleteMessage:notification.message];
             PurseModel *model = [vc radiogram:notification.message];
             //: if (notification.notificationType == NIMRevokeMessageNotificationTypeP2POneWay ||
             if (notification.notificationType == NIMRevokeMessageNotificationTypeP2POneWay ||
@@ -595,7 +595,7 @@ NSString *m_versionQuickStr = @"m_versionQuickStr";
 {
     //: NSString *text = @"你收到了一个白板请求".ntes_localized;
     NSString *text = [[TerritoryData sharedInstance] appDogUrl].ting;
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:caller option:nil];
+    //: PushKitInfo *info = [[MyUserKit sharedKit] infoByUser:caller option:nil];
     DataTeam *info = [[Secret highlight] infoAndStraddleOption:caller item:nil];
     //: if ([info.showName length])
     if ([info.showName length])
@@ -669,7 +669,7 @@ NSString *m_versionQuickStr = @"m_versionQuickStr";
     return should;
 }
 
-//: - (FFFSessionViewController *)currentSessionViewController
+//: - (PushSessionViewController *)currentSessionViewController
 - (CenterBuildViewController *)skullSession
 {
     //: UINavigationController *nav = [NTESMainTabController instance].selectedViewController;
@@ -677,10 +677,10 @@ NSString *m_versionQuickStr = @"m_versionQuickStr";
     //: for (UIViewController *vc in nav.viewControllers)
     for (UIViewController *vc in nav.viewControllers)
     {
-        //: if ([vc isKindOfClass:[FFFSessionViewController class]])
+        //: if ([vc isKindOfClass:[PushSessionViewController class]])
         if ([vc isKindOfClass:[CenterBuildViewController class]])
         {
-            //: return (FFFSessionViewController *)vc;
+            //: return (PushSessionViewController *)vc;
             return (CenterBuildViewController *)vc;
         }
     }

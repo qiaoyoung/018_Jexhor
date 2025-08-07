@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitInfo.h"
+//: #import "PushKitInfo.h"
 #import "DataTeam.h"
 
-//: @implementation FFFKitInfo
+//: @implementation PushKitInfo
 @implementation DataTeam
 
 //: @end

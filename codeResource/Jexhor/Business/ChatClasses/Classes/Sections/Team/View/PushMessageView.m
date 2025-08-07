@@ -35,21 +35,21 @@ SeizeData main_economicalPath = (SeizeData){175, (Byte []){74, 39, 52, 74, 20, 2
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCardHeaderView.h"
+//: #import "PushTeamCardHeaderView.h"
 #import "PushMessageView.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "PushAvatarImageView.h"
 #import "ImageView.h"
-//: #import "FFFKitUtil.h"
+//: #import "PushKitUtil.h"
 #import "KitUtil.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
 
-//: @interface FFFTeamCardHeaderView ()
+//: @interface PushTeamCardHeaderView ()
 @interface PushMessageView ()
 
-//: @property (nonatomic,strong) FFFAvatarImageView *avatar;
+//: @property (nonatomic,strong) PushAvatarImageView *avatar;
 @property (nonatomic,strong) ImageView *avatar;
 
 //: @property (nonatomic,strong) UILabel *titleLabel;
@@ -64,7 +64,7 @@ SeizeData main_economicalPath = (SeizeData){175, (Byte []){74, 39, 52, 74, 20, 2
 //: @end
 @end
 
-//: @implementation FFFTeamCardHeaderView
+//: @implementation PushTeamCardHeaderView
 @implementation PushMessageView
 
 //: - (instancetype)initWithFrame:(CGRect)frame {
@@ -189,11 +189,11 @@ SeizeData main_economicalPath = (SeizeData){175, (Byte []){74, 39, 52, 74, 20, 2
 
 //: #pragma mark - Getter
 #pragma mark - Getter
-//: - (FFFAvatarImageView *)avatar {
+//: - (PushAvatarImageView *)avatar {
 - (ImageView *)avatar {
     //: if (!_avatar) {
     if (!_avatar) {
-        //: _avatar = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+        //: _avatar = [[PushAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
         _avatar = [[ImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
         //: [_avatar addTarget:self
         [_avatar addTarget:self

@@ -207,7 +207,7 @@ typedef struct {
 #import "AttachmentOn.h"
 //: #import "NTESFileLocationHelper.h"
 #import "BarVideo.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "PushKitInfoFetchOption.h"
 #import "AttributeQuantityOption.h"
 //: #import "NSDictionary+NTESJson.h"
 #import "NSDictionary+Bar.h"
@@ -215,7 +215,7 @@ typedef struct {
 #import "InsertView+Secret.h"
 //: #import "NTESMessageUtil.h"
 #import "PushData.h"
-//: #import "FFFInputEmoticonParser.h"
+//: #import "PushInputEmoticonParser.h"
 #import "CrewParser.h"
 
 //: @interface NTESMultiRetweetAttachment ()
@@ -554,13 +554,13 @@ typedef struct {
     }
     //: NTESMessageAbstract *ret = [[NTESMessageAbstract alloc] init];
     MessageAdd *ret = [[MessageAdd alloc] init];
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: PushKitInfoFetchOption *option = [[PushKitInfoFetchOption alloc] init];
     AttributeQuantityOption *option = [[AttributeQuantityOption alloc] init];
     //: option.session = message.session;
     option.session = message.session;
     //: option.message = message;
     option.message = message;
-    //: FFFKitInfo *info = [[MyUserKit sharedKit].provider infoByUser:message.from option:option];
+    //: PushKitInfo *info = [[MyUserKit sharedKit].provider infoByUser:message.from option:option];
     DataTeam *info = [[Secret highlight].provider infoAndStraddleOption:message.from item:option];
     //: ret.sender = info.showName ?: @"null";
     ret.sender = info.showName ?: [[BlueLeaveData sharedInstance] show_withId];
@@ -595,7 +595,7 @@ typedef struct {
     NSMutableString *ret = [NSMutableString string];
     //: if (msg.length > (32)) {
     if (msg.length > (32)) {
-        //: NSArray *tokens = [[FFFInputEmoticonParser currentParser] tokens:msg];
+        //: NSArray *tokens = [[PushInputEmoticonParser currentParser] tokens:msg];
         NSArray *tokens = [[CrewParser will] event:msg];
         //: for (NIMInputTextToken *token in tokens) { 
         for (ModelBubble *token in tokens) { //防止emoji表情被截断

@@ -9,13 +9,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMediaItem.h"
+//: #import "PushMediaItem.h"
 #import "RecordAlbumItem.h"
 
-//: @implementation FFFMediaItem
+//: @implementation PushMediaItem
 @implementation RecordAlbumItem
 
-//: + (FFFMediaItem *)item:(NSString *)selector
+//: + (PushMediaItem *)item:(NSString *)selector
 + (RecordAlbumItem *)record:(NSString *)selector
            //: normalImage:(UIImage *)normalImage
            reloadByCount:(UIImage *)normalImage
@@ -24,7 +24,7 @@
                  //: title:(NSString *)title
                  provider:(NSString *)title
 {
-    //: FFFMediaItem *item = [[FFFMediaItem alloc] init];
+    //: PushMediaItem *item = [[PushMediaItem alloc] init];
     RecordAlbumItem *item = [[RecordAlbumItem alloc] init];
     //: item.selctor = NSSelectorFromString(selector);
     item.selctor = NSSelectorFromString(selector);

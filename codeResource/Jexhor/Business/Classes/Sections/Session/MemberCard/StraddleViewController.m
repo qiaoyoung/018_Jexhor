@@ -37,7 +37,7 @@ Byte showMainUrl[] = {4, 7, 7, 10, 57, 181, 114, 93, 144, 161, 104, 106, 106, 11
 //: personcart_profile_bg
 Byte main_randomKey[] = {96, 21, 50, 4, 162, 151, 164, 165, 161, 160, 149, 147, 164, 166, 145, 162, 164, 161, 152, 155, 158, 151, 145, 148, 153, 230};
 
-//: #ffffff
+//: #fffPush
 Byte noti_cellData[] = {83, 7, 58, 6, 1, 242, 93, 160, 160, 160, 160, 160, 160, 184};
 
 //: #8A8E98
@@ -111,34 +111,34 @@ Byte appActorIdent[] = {89, 12, 98, 11, 171, 180, 174, 174, 220, 173, 146, 202, 
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamMemberCardViewController.h"
+//: #import "PushTeamMemberCardViewController.h"
 #import "StraddleViewController.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
-//: #import "FFFCommonTableDelegate.h"
+//: #import "PushCommonTableData.h"
+#import "PushCommonTableData.h"
+//: #import "PushCommonTableDelegate.h"
 #import "StanzaDelegate.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "PushAvatarImageView.h"
 #import "ImageView.h"
-//: #import "FFFTeamCardMemberItem.h"
+//: #import "PushTeamCardMemberItem.h"
 #import "CardSession.h"
-//: #import "FFFKitUtil.h"
+//: #import "PushKitUtil.h"
 #import "KitUtil.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "PushKitDependency.h"
+#import "PushKitDependency.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
 //: #import "ZMONSetGroupNickNameView.h"
 #import "EnablelyView.h"
-//: #import "FFFKitColorButtonCell.h"
+//: #import "PushKitColorButtonCell.h"
 #import "SachetEnableCompartmentView.h"
-//: #import "FFFKitSwitcherCell.h"
+//: #import "PushKitSwitcherCell.h"
 #import "WorkInView.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "PushKitInfoFetchOption.h"
 #import "AttributeQuantityOption.h"
-//: #import "FFFTeamHelper.h"
+//: #import "PushTeamHelper.h"
 #import "ShowHelper.h"
 
-//: @interface FFFTeamMemberCardViewController ()<NIMUserManagerDelegate>
+//: @interface PushTeamMemberCardViewController ()<NIMUserManagerDelegate>
 @interface StraddleViewController ()<NIMUserManagerDelegate>
 
 //: @property (nonatomic, strong) ZMONSetGroupNickNameView *groupNickNameView;
@@ -147,10 +147,10 @@ Byte appActorIdent[] = {89, 12, 98, 11, 171, 180, 174, 174, 220, 173, 146, 202, 
 //: @property (nonatomic,strong) NIMUser *user;
 @property (nonatomic,strong) NIMUser *user;
 
-//: @property (nonatomic,strong) FFFCommonTableDelegate *delegator;
+//: @property (nonatomic,strong) PushCommonTableDelegate *delegator;
 @property (nonatomic,strong) StanzaDelegate *delegator;
 
-//: @property (nonatomic,weak) id <FFFTeamMemberListDataSource> dataSource;
+//: @property (nonatomic,weak) id <PushTeamMemberListDataSource> dataSource;
 @property (nonatomic,weak) id <ShouldBackground> dataSource;
 
 //: @property (nonatomic,strong) NSArray *data;
@@ -205,7 +205,7 @@ Byte appActorIdent[] = {89, 12, 98, 11, 171, 180, 174, 174, 220, 173, 146, 202, 
 //: @end
 @end
 
-//: @implementation FFFTeamMemberCardViewController
+//: @implementation PushTeamMemberCardViewController
 @implementation StraddleViewController
 
 //: - (void)dealloc {
@@ -353,11 +353,11 @@ Byte appActorIdent[] = {89, 12, 98, 11, 171, 180, 174, 174, 220, 173, 146, 202, 
         NSString *msg = nil;
         //: if (!error) {
         if (!error) {
-            //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+            //: msg = [PushLanguageManager getTextWithKey:@"modify_activity_modify_success"];
             msg = [BackgroundRandomAttribute content:StringFromInsideDirectIconData(mJumpContent)];
         //: }else{
         }else{
-            //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+            //: msg = [PushLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
             msg = [BackgroundRandomAttribute content:StringFromInsideDirectIconData(kActorPath)];
             //: switcher.on = !mute;
             switcher.on = !mute;
@@ -550,7 +550,7 @@ Byte appActorIdent[] = {89, 12, 98, 11, 171, 180, 174, 174, 220, 173, 146, 202, 
         self.labTitleRemark.font = [UIFont systemFontOfSize:14.f];
         //: self.labTitleRemark.textColor = [UIColor colorWithHexString:@"#2C3042"];
         self.labTitleRemark.textColor = [UIColor user:StringFromInsideDirectIconData(dreamResembleNameMessage)];
-        //: self.labTitleRemark.text = [FFFLanguageManager getTextWithKey:@"message_remark_name"];
+        //: self.labTitleRemark.text = [PushLanguageManager getTextWithKey:@"message_remark_name"];
         self.labTitleRemark.text = [BackgroundRandomAttribute content:StringFromInsideDirectIconData(m_termsKey)];
         //: [nameView addSubview:self.labTitleRemark];
         [nameView addSubview:self.labTitleRemark];
@@ -593,7 +593,7 @@ Byte appActorIdent[] = {89, 12, 98, 11, 171, 180, 174, 174, 220, 173, 146, 202, 
         lab2.font = [UIFont systemFontOfSize:14];
         //: lab2.textColor = [UIColor colorWithHexString:@"#2C3042"];
         lab2.textColor = [UIColor user:StringFromInsideDirectIconData(dreamResembleNameMessage)];
-        //: lab2.text = [FFFLanguageManager getTextWithKey:@"activity_group_member_info2_shenfen"];
+        //: lab2.text = [PushLanguageManager getTextWithKey:@"activity_group_member_info2_shenfen"];
         lab2.text = [BackgroundRandomAttribute content:StringFromInsideDirectIconData(app_errText)];
         //: [box2 addSubview:lab2];
         [box2 addSubview:lab2];
@@ -603,7 +603,7 @@ Byte appActorIdent[] = {89, 12, 98, 11, 171, 180, 174, 174, 220, 173, 146, 202, 
         sublab2.font = [UIFont systemFontOfSize:12];
         //: sublab2.textColor = [UIColor colorWithHexString:@"#05D481"];
         sublab2.textColor = [UIColor user:StringFromInsideDirectIconData(mainSustainAffairBelowFormat)];
-        //: sublab2.text = [FFFTeamHelper memberTypeText:self.member.type];
+        //: sublab2.text = [PushTeamHelper memberTypeText:self.member.type];
         sublab2.text = [ShowHelper view:self.member.type];
         //: [box2 addSubview:sublab2];
         [box2 addSubview:sublab2];
@@ -636,7 +636,7 @@ Byte appActorIdent[] = {89, 12, 98, 11, 171, 180, 174, 174, 220, 173, 146, 202, 
         lab3.font = [UIFont systemFontOfSize:14];
         //: lab3.textColor = [UIColor colorWithHexString:@"#2C3042"];
         lab3.textColor = [UIColor user:StringFromInsideDirectIconData(dreamResembleNameMessage)];
-        //: lab3.text = [FFFLanguageManager getTextWithKey:@"activity_group_member_info2_inviter"];
+        //: lab3.text = [PushLanguageManager getTextWithKey:@"activity_group_member_info2_inviter"];
         lab3.text = [BackgroundRandomAttribute content:StringFromInsideDirectIconData(noti_statKey)];
         //: [box3 addSubview:lab3];
         [box3 addSubview:lab3];
@@ -679,7 +679,7 @@ Byte appActorIdent[] = {89, 12, 98, 11, 171, 180, 174, 174, 220, 173, 146, 202, 
         lab4.font = [UIFont systemFontOfSize:14];
         //: lab4.textColor = [UIColor colorWithHexString:@"#2C3042"];
         lab4.textColor = [UIColor user:StringFromInsideDirectIconData(dreamResembleNameMessage)];
-        //: lab4.text = [FFFLanguageManager getTextWithKey:@"group_member_info_activity_mute_msg"];
+        //: lab4.text = [PushLanguageManager getTextWithKey:@"group_member_info_activity_mute_msg"];
         lab4.text = [BackgroundRandomAttribute content:StringFromInsideDirectIconData(k_cancelId)];
         //: [box4 addSubview:lab4];
         [box4 addSubview:lab4];
@@ -695,7 +695,7 @@ Byte appActorIdent[] = {89, 12, 98, 11, 171, 180, 174, 174, 220, 173, 146, 202, 
         [box4 addSubview:pushSwitch];
 
 
-        //: BOOL canEdit = [FFFKitUtil canEditTeamInfo:self.teamListManager.myTeamInfo];
+        //: BOOL canEdit = [PushKitUtil canEditTeamInfo:self.teamListManager.myTeamInfo];
         BOOL canEdit = [KitUtil aTeam:self.teamListManager.myTeamInfo];
         //: if(canEdit){
         if(canEdit){
@@ -711,7 +711,7 @@ Byte appActorIdent[] = {89, 12, 98, 11, 171, 180, 174, 174, 220, 173, 146, 202, 
             [self.btnDelete setTitle:StringFromInsideDirectIconData(appGoingMessage).minIn forState:UIControlStateNormal];
             //: [self.btnDelete addTarget:self action:@selector(removeMember) forControlEvents:UIControlEventTouchUpInside];
             [self.btnDelete addTarget:self action:@selector(keyMemberMonth) forControlEvents:UIControlEventTouchUpInside];
-            //: self.btnDelete.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+            //: self.btnDelete.backgroundColor = [UIColor colorWithHexString:@"#fffPush"];
             self.btnDelete.backgroundColor = [UIColor user:StringFromInsideDirectIconData(noti_cellData)];
             //: self.btnDelete.layer.borderWidth = 1;
             self.btnDelete.layer.borderWidth = 1;

@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFGrowingInternalTextView.h"
+//: #import "PushGrowingInternalTextView.h"
 #import "ProlusionTouchTextView.h"
 
-//: @interface FFFGrowingInternalTextView()
+//: @interface PushGrowingInternalTextView()
 @interface ProlusionTouchTextView()
 
 //: @property (nonatomic,assign) BOOL displayPlaceholder;
@@ -21,7 +21,7 @@
 //: @end
 @end
 
-//: @implementation FFFGrowingInternalTextView
+//: @implementation PushGrowingInternalTextView
 @implementation ProlusionTouchTextView
 
 //: - (instancetype)initWithFrame:(CGRect)frame textContainer:(NSTextContainer *)textContainer

@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitSetting.h"
+//: #import "PushKitSetting.h"
 #import "SchoolbagTaskSurroundingsBlock.h"
 
-//: @class FFFKitSettings;
+//: @class PushKitSettings;
 @class InputSignalSettings;
 //: @class NIMMessage;
 @class NIMMessage;
@@ -31,7 +31,7 @@ typedef NS_ENUM(NSInteger,NIMKitAvatarType) {
 //: };
 };
 
-//: @interface FFFKitConfig : NSObject
+//: @interface PushKitConfig : NSObject
 @interface CoverRandomConfig : NSObject
 
 
@@ -114,13 +114,13 @@ typedef NS_ENUM(NSInteger,NIMKitAvatarType) {
 /**
  *  左侧气泡设置
  */
-//: @property (nonatomic, strong) FFFKitSettings *leftBubbleSettings;
+//: @property (nonatomic, strong) PushKitSettings *leftBubbleSettings;
 @property (nonatomic, strong) InputSignalSettings *leftBubbleSettings;
 
 /**
  *  右侧气泡设置
  */
-//: @property (nonatomic, strong) FFFKitSettings *rightBubbleSettings;
+//: @property (nonatomic, strong) PushKitSettings *rightBubbleSettings;
 @property (nonatomic, strong) InputSignalSettings *rightBubbleSettings;
 
 
@@ -138,13 +138,13 @@ typedef NS_ENUM(NSInteger,NIMKitAvatarType) {
 
 /*根据消息取到配置*/
 
-//: - (FFFKitSetting *)setting:(NIMMessage *)message;
+//: - (PushKitSetting *)setting:(NIMMessage *)message;
 - (SchoolbagTaskSurroundingsBlock *)click:(NIMMessage *)message;
 
 
 /*被回复消息取到配置*/
 
-//: - (FFFKitSetting *)repliedSetting:(NIMMessage *)message;
+//: - (PushKitSetting *)repliedSetting:(NIMMessage *)message;
 - (SchoolbagTaskSurroundingsBlock *)select:(NIMMessage *)message;
 
 //: @end
@@ -156,91 +156,91 @@ typedef NS_ENUM(NSInteger,NIMKitAvatarType) {
 /**
  *  组件 UI 设置
  */
-//: @interface FFFKitSettings : NSObject
+//: @interface PushKitSettings : NSObject
 @interface InputSignalSettings : NSObject
 
 /**
  *  文本类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *textSetting;
+//: @property (nonatomic, strong) PushKitSetting *textSetting;
 @property (nonatomic, strong) SchoolbagTaskSurroundingsBlock *textSetting;
 
 /**
  *  音频类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *audioSetting;
+//: @property (nonatomic, strong) PushKitSetting *audioSetting;
 @property (nonatomic, strong) SchoolbagTaskSurroundingsBlock *audioSetting;
 
 /**
  *  视频类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *videoSetting;
+//: @property (nonatomic, strong) PushKitSetting *videoSetting;
 @property (nonatomic, strong) SchoolbagTaskSurroundingsBlock *videoSetting;
 
 /**
  *  文件类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *fileSetting;
+//: @property (nonatomic, strong) PushKitSetting *fileSetting;
 @property (nonatomic, strong) SchoolbagTaskSurroundingsBlock *fileSetting;
 
 /**
  *  图片类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *imageSetting;
+//: @property (nonatomic, strong) PushKitSetting *imageSetting;
 @property (nonatomic, strong) SchoolbagTaskSurroundingsBlock *imageSetting;
 
 /**
  *  地理位置类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *locationSetting;
+//: @property (nonatomic, strong) PushKitSetting *locationSetting;
 @property (nonatomic, strong) SchoolbagTaskSurroundingsBlock *locationSetting;
 
 /**
  *  提示类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *tipSetting;
+//: @property (nonatomic, strong) PushKitSetting *tipSetting;
 @property (nonatomic, strong) SchoolbagTaskSurroundingsBlock *tipSetting;
 
 /**
  *  Rtc话单类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *rtcCallRecordSetting;
+//: @property (nonatomic, strong) PushKitSetting *rtcCallRecordSetting;
 @property (nonatomic, strong) SchoolbagTaskSurroundingsBlock *rtcCallRecordSetting;
 
 /**
  *  无法识别类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *unsupportSetting;
+//: @property (nonatomic, strong) PushKitSetting *unsupportSetting;
 @property (nonatomic, strong) SchoolbagTaskSurroundingsBlock *unsupportSetting;
 
 /**
  *  群组通知类型通知消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *teamNotificationSetting;
+//: @property (nonatomic, strong) PushKitSetting *teamNotificationSetting;
 @property (nonatomic, strong) SchoolbagTaskSurroundingsBlock *teamNotificationSetting;
 
 /**
  *  群组通知类型通知消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *superTeamNotificationSetting;
+//: @property (nonatomic, strong) PushKitSetting *superTeamNotificationSetting;
 @property (nonatomic, strong) SchoolbagTaskSurroundingsBlock *superTeamNotificationSetting;
 
 /**
  *  聊天室类型类型通知消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *chatroomNotificationSetting;
+//: @property (nonatomic, strong) PushKitSetting *chatroomNotificationSetting;
 @property (nonatomic, strong) SchoolbagTaskSurroundingsBlock *chatroomNotificationSetting;
 
 /**
  *  网络电话类型类型通知消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *netcallNotificationSetting;
+//: @property (nonatomic, strong) PushKitSetting *netcallNotificationSetting;
 @property (nonatomic, strong) SchoolbagTaskSurroundingsBlock *netcallNotificationSetting;
 
 /**
  *  被回复消息的设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *repliedSetting;
+//: @property (nonatomic, strong) PushKitSetting *repliedSetting;
 @property (nonatomic, strong) SchoolbagTaskSurroundingsBlock *repliedSetting;
 
 

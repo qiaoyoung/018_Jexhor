@@ -9,18 +9,18 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitDevice.h"
+//: #import "PushKitDevice.h"
 #import "SizeBackground.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "PushGlobalMacro.h"
+#import "PushGlobalMacro.h"
 
-//: @interface FFFKitDevice ()
+//: @interface PushKitDevice ()
 @interface SizeBackground ()
 
 //: @end
 @end
 
-//: @implementation FFFKitDevice
+//: @implementation PushKitDevice
 @implementation SizeBackground
 
 //: - (instancetype)init
@@ -36,15 +36,15 @@
 }
 
 
-//: + (FFFKitDevice *)currentDevice{
+//: + (PushKitDevice *)currentDevice{
 + (SizeBackground *)topDevice{
-    //: static FFFKitDevice *instance = nil;
+    //: static PushKitDevice *instance = nil;
     static SizeBackground *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFKitDevice alloc] init];
+        //: instance = [[PushKitDevice alloc] init];
         instance = [[SizeBackground alloc] init];
     //: });
     });

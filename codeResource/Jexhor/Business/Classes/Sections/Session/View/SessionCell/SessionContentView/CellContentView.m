@@ -128,7 +128,7 @@ NSString *const mainNameStr = @"NIMDemoEventNameCloseSnapPicture";
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)model{
+//: - (void)refresh:(PushMessageModel *)model{
 - (void)name:(PurseModel *)model{
     //: [super refresh:model];
     [super name:model];
@@ -143,7 +143,7 @@ NSString *const mainNameStr = @"NIMDemoEventNameCloseSnapPicture";
     //: self.longpressGesture.enabled = !attachment.isFired;
     self.longpressGesture.enabled = !attachment.isFired;
 
-    //禁用掉FFFMessageCell中的长按手势，防止手势冲突
+    //禁用掉PushMessageCell中的长按手势，防止手势冲突
     //: [self disableMessageCellGesture:!attachment.isFired];
     [self picture:!attachment.isFired];
 }
@@ -230,7 +230,7 @@ NSString *const mainNameStr = @"NIMDemoEventNameCloseSnapPicture";
 - (void)vertical{
     //: if ([self.delegate respondsToSelector:@selector(onCatchEvent:)]) {
     if ([self.delegate respondsToSelector:@selector(parametering:)]) {
-        //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+        //: PushKitEvent *event = [[PushKitEvent alloc] init];
         BeforeEvent *event = [[BeforeEvent alloc] init];
         //: event.eventName = NIMDemoEventNameOpenSnapPicture;
         event.eventName = showFlexibleCenterMacId;
@@ -247,7 +247,7 @@ NSString *const mainNameStr = @"NIMDemoEventNameCloseSnapPicture";
 - (void)spectrum{
     //: if ([self.delegate respondsToSelector:@selector(onCatchEvent:)]) {
     if ([self.delegate respondsToSelector:@selector(parametering:)]) {
-        //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+        //: PushKitEvent *event = [[PushKitEvent alloc] init];
         BeforeEvent *event = [[BeforeEvent alloc] init];
         //: event.eventName = NIMDemoEventNameCloseSnapPicture;
         event.eventName = mainNameStr;

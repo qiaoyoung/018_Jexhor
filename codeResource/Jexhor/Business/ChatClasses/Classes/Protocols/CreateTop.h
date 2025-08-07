@@ -9,26 +9,26 @@
 //
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFMediaItem.h"
+//: #import "PushMediaItem.h"
 #import "RecordAlbumItem.h"
-//: #import "FFFCellConfig.h"
-#import "FFFCellConfig.h"
-//: #import "FFFKitMessageProvider.h"
+//: #import "PushCellConfig.h"
+#import "PushCellConfig.h"
+//: #import "PushKitMessageProvider.h"
 #import "CountProvider.h"
-//: #import "FFFInputBarItemType.h"
-#import "FFFInputBarItemType.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "PushInputBarItemType.h"
+#import "PushInputBarItemType.h"
+//: #import "PushInputEmoticonManager.h"
 #import "DirectorManager.h"
 
 // __M_A_C_R_O__
 
-//: @protocol FFFSessionConfig <NSObject>
+//: @protocol PushSessionConfig <NSObject>
 @protocol CreateTop <NSObject>
 //: @optional
 @optional
 
 /**
- *  输入按钮类型，请填入 FFFInputBarItemType 枚举，按顺序排列。不实现则按默认排列。
+ *  输入按钮类型，请填入 PushInputBarItemType 枚举，按顺序排列。不实现则按默认排列。
  */
 //: - (NSArray<NSNumber *> *)inputBarItemTypes;
 - (NSArray<NSNumber *> *)ignitionKey;
@@ -37,13 +37,13 @@
 /**
  *  可以显示在点击输入框“+”按钮之后的多媒体按钮
  */
-//: - (NSArray<FFFMediaItem *> *)mediaItems;
+//: - (NSArray<PushMediaItem *> *)mediaItems;
 - (NSArray<RecordAlbumItem *> *)noName;
 
 /**
  *  菜单选项
  */
-//: - (NSArray<FFFMediaItem *> *)menuItemsWithMessage:(NIMMessage *)message;
+//: - (NSArray<PushMediaItem *> *)menuItemsWithMessage:(NIMMessage *)message;
 - (NSArray<RecordAlbumItem *> *)completeMessage:(NIMMessage *)message;
 
 /**
@@ -159,7 +159,7 @@
  *
  *  @return 消息数据提供者，如果不实现则读取本地聊天记录
  */
-//: - (id<FFFKitMessageProvider>)messageDataProvider;
+//: - (id<PushKitMessageProvider>)messageDataProvider;
 - (id<CountProvider>)sizeProvider;
 
 /**

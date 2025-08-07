@@ -69,8 +69,8 @@ typedef struct {
 #import "MessageChange.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "InsertView+Secret.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "PushGlobalMacro.h"
+#import "PushGlobalMacro.h"
 
 //: @interface NTESChatroomTextContentConfig()
 @interface MessageChange()

@@ -99,7 +99,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitProgressHUD.h"
+//: #import "PushKitProgressHUD.h"
 #import "CoverView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
@@ -108,7 +108,7 @@
 //: #import "MyUserKit.h"
 #import "Secret.h"
 
-//: @interface FFFKitProgressHUD()
+//: @interface PushKitProgressHUD()
 @interface CoverView()
 
 //: @property (nonatomic, strong) CAShapeLayer *indefiniteAnimatedLayer;
@@ -117,19 +117,19 @@
 //: @end
 @end
 
-//: @implementation FFFKitProgressHUD
+//: @implementation PushKitProgressHUD
 @implementation CoverView
 
 //: + (instancetype)sharedView
 + (instancetype)direct
 {
-    //: static FFFKitProgressHUD *instance = nil;
+    //: static PushKitProgressHUD *instance = nil;
     static CoverView *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFKitProgressHUD alloc] initWithFrame:CGRectMake(0, 0, 84, 84)];
+        //: instance = [[PushKitProgressHUD alloc] initWithFrame:CGRectMake(0, 0, 84, 84)];
         instance = [[CoverView alloc] initWithFrame:CGRectMake(0, 0, 84, 84)];
     //: });
     });
@@ -172,7 +172,7 @@
 //: + (void)show
 + (void)input
 {
-    //: [[FFFKitProgressHUD sharedView] showInView:[UIApplication sharedApplication].windows.firstObject];
+    //: [[PushKitProgressHUD sharedView] showInView:[UIApplication sharedApplication].windows.firstObject];
     [[CoverView direct] sourceLanguage:[UIApplication sharedApplication].windows.firstObject];
 }
 
@@ -181,9 +181,9 @@
 {
     //: dispatch_async(dispatch_get_main_queue(), ^{
     dispatch_async(dispatch_get_main_queue(), ^{
-        //: [[FFFKitProgressHUD sharedView] removeFromSuperview];
+        //: [[PushKitProgressHUD sharedView] removeFromSuperview];
         [[CoverView direct] removeFromSuperview];
-        //: [[FFFKitProgressHUD sharedView].indefiniteAnimatedLayer removeFromSuperlayer];
+        //: [[PushKitProgressHUD sharedView].indefiniteAnimatedLayer removeFromSuperlayer];
         [[CoverView direct].indefiniteAnimatedLayer removeFromSuperlayer];
     //: });
     });

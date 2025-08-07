@@ -241,7 +241,7 @@
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"activity_wallet_zhuan"];
+    //: labtitle.text = [PushLanguageManager getTextWithKey:@"activity_wallet_zhuan"];
     labtitle.text = [BackgroundRandomAttribute content:[[TitleUpData sharedInstance] userYinMsg]];
     //: [navView addSubview:labtitle];
     [navView addSubview:labtitle];
@@ -272,7 +272,7 @@
     _btnfriend.titleLabel.font = [UIFont systemFontOfSize:14];
     //: [_btnfriend setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [_btnfriend setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [_btnfriend setTitle:[FFFLanguageManager getTextWithKey:@"contact_fragment_friend"] forState:UIControlStateNormal];
+    //: [_btnfriend setTitle:[PushLanguageManager getTextWithKey:@"contact_fragment_friend"] forState:UIControlStateNormal];
     [_btnfriend setTitle:[BackgroundRandomAttribute content:[[TitleUpData sharedInstance] showEconomicMessage]] forState:UIControlStateNormal];
     //: [_btnfriend addTarget:self action:@selector(sliderButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [_btnfriend addTarget:self action:@selector(limitItemClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -291,7 +291,7 @@
     _btngroup.titleLabel.font = [UIFont systemFontOfSize:14];
     //: [_btngroup setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
     [_btngroup setTitleColor:[UIColor user:[[TitleUpData sharedInstance] noti_stressId]] forState:UIControlStateNormal];
-    //: [_btngroup setTitle:[FFFLanguageManager getTextWithKey:@"contact_fragment_group"] forState:UIControlStateNormal];
+    //: [_btngroup setTitle:[PushLanguageManager getTextWithKey:@"contact_fragment_group"] forState:UIControlStateNormal];
     [_btngroup setTitle:[BackgroundRandomAttribute content:[[TitleUpData sharedInstance] showYinMsg]] forState:UIControlStateNormal];
     //: [_btngroup addTarget:self action:@selector(sliderButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [_btngroup addTarget:self action:@selector(limitItemClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -406,7 +406,7 @@
         }];
     //: }else{
     }else{
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2.0 position:CSToastPositionCenter];
+        //: [self.view makeToast:[PushLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2.0 position:CSToastPositionCenter];
         [self.view makeToast:[BackgroundRandomAttribute content:[[TitleUpData sharedInstance] main_randomValue]] duration:2.0 position:CSToastPositionCenter];
     }
 

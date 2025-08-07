@@ -31,7 +31,7 @@ Byte userVeteranJuryMessage[] = {79, 7, 75, 7, 98, 197, 63, 110, 123, 123, 123, 
 //: contact_tag_fragment_cancel
 Byte show_maxIdent[] = {92, 27, 20, 11, 134, 5, 92, 68, 219, 236, 218, 119, 131, 130, 136, 117, 119, 136, 115, 136, 117, 123, 115, 122, 134, 117, 123, 129, 121, 130, 136, 115, 119, 117, 130, 119, 121, 128, 230};
 
-//: #ffffff
+//: #fffPush
 Byte appActorValue[] = {11, 7, 19, 10, 149, 228, 116, 96, 61, 67, 54, 121, 121, 121, 121, 121, 121, 9};
 
 //: user_info_avtivity_keep
@@ -133,7 +133,7 @@ Byte dreamSlatData[] = {78, 24, 25, 14, 116, 239, 5, 227, 95, 70, 244, 38, 127, 
     CGFloat totalwidth = 295;
     //: _box = [[UIView alloc]initWithFrame:CGRectMake(([[UIScreen mainScreen] bounds].size.width-totalwidth)/2, ([[UIScreen mainScreen] bounds].size.height-250)/2, totalwidth, 250)];
     _box = [[UIView alloc]initWithFrame:CGRectMake(([[UIScreen mainScreen] bounds].size.width-totalwidth)/2, ([[UIScreen mainScreen] bounds].size.height-250)/2, totalwidth, 250)];
-    //: _box.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+    //: _box.backgroundColor = [UIColor colorWithHexString:@"#fffPush"];
     _box.backgroundColor = [UIColor user:StringFromSlatData(appActorValue)];
     //: _box.layer.cornerRadius = 20;
     _box.layer.cornerRadius = 20;
@@ -187,7 +187,7 @@ Byte dreamSlatData[] = {78, 24, 25, 14, 116, 239, 5, 227, 95, 70, 244, 38, 127, 
     _labUnknow.textColor = [UIColor user:StringFromSlatData(dream_elitePath)];
     //: _labUnknow.textAlignment = NSTextAlignmentCenter;
     _labUnknow.textAlignment = NSTextAlignmentCenter;
-    //: _labUnknow.text = [FFFLanguageManager getTextWithKey:@"friend_info_activity_xu"];
+    //: _labUnknow.text = [PushLanguageManager getTextWithKey:@"friend_info_activity_xu"];
     _labUnknow.text = [BackgroundRandomAttribute content:StringFromSlatData(notiVileIdent)];
     //: [view1 addSubview:_labUnknow];
     [view1 addSubview:_labUnknow];
@@ -233,7 +233,7 @@ Byte dreamSlatData[] = {78, 24, 25, 14, 116, 239, 5, 227, 95, 70, 244, 38, 127, 
     _labMan.textColor = [UIColor blackColor];
     //: _labMan.textAlignment = NSTextAlignmentCenter;
     _labMan.textAlignment = NSTextAlignmentCenter;
-    //: _labMan.text = [FFFLanguageManager getTextWithKey:@"friend_info_activity_nan"];
+    //: _labMan.text = [PushLanguageManager getTextWithKey:@"friend_info_activity_nan"];
     _labMan.text = [BackgroundRandomAttribute content:StringFromSlatData(main_dentValue)];
     //: [view2 addSubview:_labMan];
     [view2 addSubview:_labMan];
@@ -278,7 +278,7 @@ Byte dreamSlatData[] = {78, 24, 25, 14, 116, 239, 5, 227, 95, 70, 244, 38, 127, 
     _labWoman.textColor = [UIColor blackColor];
     //: _labWoman.textAlignment = NSTextAlignmentCenter;
     _labWoman.textAlignment = NSTextAlignmentCenter;
-    //: _labWoman.text = [FFFLanguageManager getTextWithKey:@"friend_info_activity_nv"];
+    //: _labWoman.text = [PushLanguageManager getTextWithKey:@"friend_info_activity_nv"];
     _labWoman.text = [BackgroundRandomAttribute content:StringFromSlatData(show_nuclearId)];
     //: [view3 addSubview:_labWoman];
     [view3 addSubview:_labWoman];
@@ -416,7 +416,7 @@ Byte dreamSlatData[] = {78, 24, 25, 14, 116, 239, 5, 227, 95, 70, 244, 38, 127, 
         //: _titleLabel.textColor = [UIColor colorWithHexString:@"#000000"];
         _titleLabel.textColor = [UIColor user:StringFromSlatData(userVeteranJuryMessage)];
 //        _titleLabel.textAlignment = NSTextAlignmentCenter;
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"activity_friend_info_sex"];
+        //: _titleLabel.text = [PushLanguageManager getTextWithKey:@"activity_friend_info_sex"];
         _titleLabel.text = [BackgroundRandomAttribute content:StringFromSlatData(dreamSlatData)];
     }
     //: return _titleLabel;
@@ -436,9 +436,9 @@ Byte dreamSlatData[] = {78, 24, 25, 14, 116, 239, 5, 227, 95, 70, 244, 38, 127, 
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:16];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor user:StringFromSlatData(kFrankText)] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[BackgroundRandomAttribute content:StringFromSlatData(show_maxIdent)] forState:UIControlStateNormal];
-        //: _closeBtn.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: _closeBtn.backgroundColor = [UIColor colorWithHexString:@"#fffPush"];
         _closeBtn.backgroundColor = [UIColor user:StringFromSlatData(appActorValue)];
         //: _closeBtn.layer.cornerRadius = 22;
         _closeBtn.layer.cornerRadius = 22;
@@ -459,9 +459,9 @@ Byte dreamSlatData[] = {78, 24, 25, 14, 116, 239, 5, 227, 95, 70, 244, 38, 127, 
         [_sureBtn addTarget:self action:@selector(highQueryed) forControlEvents:UIControlEventTouchUpInside];
         //: _sureBtn.titleLabel.font = [UIFont systemFontOfSize:16];
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:16];
-        //: [_sureBtn setTitleColor:[UIColor colorWithHexString:@"#ffffff"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitleColor:[UIColor colorWithHexString:@"#fffPush"] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor user:StringFromSlatData(appActorValue)] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[PushLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[BackgroundRandomAttribute content:StringFromSlatData(app_storageMessage)] forState:UIControlStateNormal];
         //: CGFloat width = (295-60)/2;
         CGFloat width = (295-60)/2;

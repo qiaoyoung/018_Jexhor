@@ -36,9 +36,9 @@ Byte k_jumpAncientData[] = {19, 12, 61, 14, 30, 185, 118, 169, 116, 128, 111, 15
 #import <UIKit/UIKit.h>
 //: #import "MyUserKit.h"
 #import "Secret.h"
-//: #import "FFFKitDataProviderImpl.h"
+//: #import "PushKitDataProviderImpl.h"
 #import "MerelyImpl.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "PushKitInfoFetchOption.h"
 #import "AttributeQuantityOption.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
@@ -170,7 +170,7 @@ Byte k_jumpAncientData[] = {19, 12, 61, 14, 30, 185, 118, 169, 116, 128, 111, 15
 //: #pragma mark - data provider impl
 #pragma mark - data provider impl
 
-//: @interface FFFKitDataProviderImpl()<NIMUserManagerDelegate,
+//: @interface PushKitDataProviderImpl()<NIMUserManagerDelegate,
 @interface MerelyImpl()<NIMUserManagerDelegate,
                                     //: NIMTeamManagerDelegate,
                                     NIMTeamManagerDelegate,
@@ -192,7 +192,7 @@ Byte k_jumpAncientData[] = {19, 12, 61, 14, 30, 185, 118, 169, 116, 128, 111, 15
 @end
 
 
-//: @implementation FFFKitDataProviderImpl
+//: @implementation PushKitDataProviderImpl
 @implementation MerelyImpl
 
 //: - (instancetype)init{
@@ -232,27 +232,27 @@ Byte k_jumpAncientData[] = {19, 12, 61, 14, 30, 185, 118, 169, 116, 128, 111, 15
 
 //: #pragma mark - public api
 #pragma mark - public api
-//: - (FFFKitInfo *)infoByUser:(NSString *)userId
+//: - (PushKitInfo *)infoByUser:(NSString *)userId
 - (DataTeam *)infoAndStraddleOption:(NSString *)userId
-                    //: option:(FFFKitInfoFetchOption *)option
+                    //: option:(PushKitInfoFetchOption *)option
                     item:(AttributeQuantityOption *)option
 {
     //: NIMSession *session = option.message.session?:option.session;
     NIMSession *session = option.message.session?:option.session;
-    //: FFFKitInfo *info = [self infoByUser:userId session:session option:option];
+    //: PushKitInfo *info = [self infoByUser:userId session:session option:option];
     DataTeam *info = [self doValueClose:userId adopter:session familyContent:option];
     //: return info;
     return info;
 }
 
-//: - (FFFKitInfo *)infoByTeam:(NSString *)teamId
+//: - (PushKitInfo *)infoByTeam:(NSString *)teamId
 - (DataTeam *)show:(NSString *)teamId
-                    //: option:(FFFKitInfoFetchOption *)option
+                    //: option:(PushKitInfoFetchOption *)option
                     corner:(AttributeQuantityOption *)option
 {
     //: NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:teamId];
     NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:teamId];
-    //: FFFKitInfo *info = [[FFFKitInfo alloc] init];
+    //: PushKitInfo *info = [[PushKitInfo alloc] init];
     DataTeam *info = [[DataTeam alloc] init];
     //: info.showName = team.teamName;
     info.showName = team.teamName;
@@ -266,14 +266,14 @@ Byte k_jumpAncientData[] = {19, 12, 61, 14, 30, 185, 118, 169, 116, 128, 111, 15
     return info;
 }
 
-//: - (FFFKitInfo *)infoBySuperTeam:(NSString *)teamId
+//: - (PushKitInfo *)infoBySuperTeam:(NSString *)teamId
 - (DataTeam *)of:(NSString *)teamId
-                         //: option:(FFFKitInfoFetchOption *)option
+                         //: option:(PushKitInfoFetchOption *)option
                          enableence_strong:(AttributeQuantityOption *)option
 {
     //: NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:teamId];
     NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:teamId];
-    //: FFFKitInfo *info = [[FFFKitInfo alloc] init];
+    //: PushKitInfo *info = [[PushKitInfo alloc] init];
     DataTeam *info = [[DataTeam alloc] init];
     //: info.showName = team.teamName;
     info.showName = team.teamName;
@@ -294,11 +294,11 @@ Byte k_jumpAncientData[] = {19, 12, 61, 14, 30, 185, 118, 169, 116, 128, 111, 15
     NIMMessageType messageType = replyedMessage.messageType;
     //: NSString *content = @"未知消息".nim_localized;
     NSString *content = StringFromLanceData(show_containerIdent).minIn;
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: PushKitInfoFetchOption *option = [[PushKitInfoFetchOption alloc] init];
     AttributeQuantityOption *option = [[AttributeQuantityOption alloc] init];
     //: option.message = replyedMessage;
     option.message = replyedMessage;
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:replyedMessage.from option:option];
+    //: PushKitInfo *info = [[MyUserKit sharedKit] infoByUser:replyedMessage.from option:option];
     DataTeam *info = [[Secret highlight] infoAndStraddleOption:replyedMessage.from item:option];
     //: NSString *from = info.showName;
     NSString *from = info.showName;
@@ -375,16 +375,16 @@ Byte k_jumpAncientData[] = {19, 12, 61, 14, 30, 185, 118, 169, 116, 128, 111, 15
 //: #pragma mark - 用户信息拼装
 #pragma mark - 用户信息拼装
 //会话中用户信息
-//: - (FFFKitInfo *)infoByUser:(NSString *)userId
+//: - (PushKitInfo *)infoByUser:(NSString *)userId
 - (DataTeam *)doValueClose:(NSString *)userId
                    //: session:(NIMSession *)session
                    adopter:(NIMSession *)session
-                    //: option:(FFFKitInfoFetchOption *)option
+                    //: option:(PushKitInfoFetchOption *)option
                     familyContent:(AttributeQuantityOption *)option
 {
     //: NIMSessionType sessionType = session.sessionType;
     NIMSessionType sessionType = session.sessionType;
-    //: FFFKitInfo *info;
+    //: PushKitInfo *info;
     DataTeam *info;
 
     //: switch (sessionType) {
@@ -444,7 +444,7 @@ Byte k_jumpAncientData[] = {19, 12, 61, 14, 30, 185, 118, 169, 116, 128, 111, 15
             [self.request button:@[userId]];
         }
 
-        //: info = [[FFFKitInfo alloc] init];
+        //: info = [[PushKitInfo alloc] init];
         info = [[DataTeam alloc] init];
         //: info.infoId = userId;
         info.infoId = userId;
@@ -461,21 +461,21 @@ Byte k_jumpAncientData[] = {19, 12, 61, 14, 30, 185, 118, 169, 116, 128, 111, 15
 
 //: #pragma mark - P2P 用户信息
 #pragma mark - P2P 用户信息
-//: - (FFFKitInfo *)userInfoInP2P:(NSString *)userId
+//: - (PushKitInfo *)userInfoInP2P:(NSString *)userId
 - (DataTeam *)streetwiseCenter:(NSString *)userId
-                       //: option:(FFFKitInfoFetchOption *)option
+                       //: option:(PushKitInfoFetchOption *)option
                        inwards_strong:(AttributeQuantityOption *)option
 {
     //: NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:userId];
     NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:userId];
     //: NIMUserInfo *userInfo = user.userInfo;
     NIMUserInfo *userInfo = user.userInfo;
-    //: FFFKitInfo *info;
+    //: PushKitInfo *info;
     DataTeam *info;
     //: if (userInfo)
     if (userInfo)
     {
-        //: info = [[FFFKitInfo alloc] init];
+        //: info = [[PushKitInfo alloc] init];
         info = [[DataTeam alloc] init];
         //: info.infoId = userId;
         info.infoId = userId;
@@ -499,11 +499,11 @@ Byte k_jumpAncientData[] = {19, 12, 61, 14, 30, 185, 118, 169, 116, 128, 111, 15
 
 //: #pragma mark - 群组用户信息
 #pragma mark - 群组用户信息
-//: - (FFFKitInfo *)userInfo:(NSString *)userId
+//: - (PushKitInfo *)userInfo:(NSString *)userId
 - (DataTeam *)inwards:(NSString *)userId
                   //: inTeam:(NSString *)teamId
                   view:(NSString *)teamId
-                  //: option:(FFFKitInfoFetchOption *)option
+                  //: option:(PushKitInfoFetchOption *)option
                   table:(AttributeQuantityOption *)option
 {
     //: NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:userId];
@@ -515,13 +515,13 @@ Byte k_jumpAncientData[] = {19, 12, 61, 14, 30, 185, 118, 169, 116, 128, 111, 15
                                                                  //: inTeam:teamId];
                                                                  inTeam:teamId];
 
-    //: FFFKitInfo *info;
+    //: PushKitInfo *info;
     DataTeam *info;
 
     //: if (userInfo || member)
     if (userInfo || member)
     {
-        //: info = [[FFFKitInfo alloc] init];
+        //: info = [[PushKitInfo alloc] init];
         info = [[DataTeam alloc] init];
         //: info.infoId = userId;
         info.infoId = userId;
@@ -545,11 +545,11 @@ Byte k_jumpAncientData[] = {19, 12, 61, 14, 30, 185, 118, 169, 116, 128, 111, 15
 
 //: #pragma mark - 超大群用户信息
 #pragma mark - 超大群用户信息
-//: - (FFFKitInfo *)userInfo:(NSString *)userId
+//: - (PushKitInfo *)userInfo:(NSString *)userId
 - (DataTeam *)shareOption:(NSString *)userId
              //: inSuperTeam:(NSString *)teamId
              disable:(NSString *)teamId
-                  //: option:(FFFKitInfoFetchOption *)option
+                  //: option:(PushKitInfoFetchOption *)option
                   pastQuick:(AttributeQuantityOption *)option
 {
     //: NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:userId];
@@ -561,13 +561,13 @@ Byte k_jumpAncientData[] = {19, 12, 61, 14, 30, 185, 118, 169, 116, 128, 111, 15
                                                                       //: inTeam:teamId];
                                                                       inTeam:teamId];
 
-    //: FFFKitInfo *info;
+    //: PushKitInfo *info;
     DataTeam *info;
 
     //: if (userInfo || member)
     if (userInfo || member)
     {
-        //: info = [[FFFKitInfo alloc] init];
+        //: info = [[PushKitInfo alloc] init];
         info = [[DataTeam alloc] init];
         //: info.infoId = userId;
         info.infoId = userId;
@@ -592,14 +592,14 @@ Byte k_jumpAncientData[] = {19, 12, 61, 14, 30, 185, 118, 169, 116, 128, 111, 15
 
 //: #pragma mark - 聊天室用户信息
 #pragma mark - 聊天室用户信息
-//: - (FFFKitInfo *)userInfo:(NSString *)userId
+//: - (PushKitInfo *)userInfo:(NSString *)userId
 - (DataTeam *)labelLab:(NSString *)userId
               //: inChatroom:(NSString *)roomId
               length:(NSString *)roomId
-                  //: option:(FFFKitInfoFetchOption *)option
+                  //: option:(PushKitInfoFetchOption *)option
                   drop:(AttributeQuantityOption *)option
 {
-    //: FFFKitInfo *info = [[FFFKitInfo alloc] init];
+    //: PushKitInfo *info = [[PushKitInfo alloc] init];
     DataTeam *info = [[DataTeam alloc] init];
     //: info.infoId = userId;
     info.infoId = userId;
@@ -668,7 +668,7 @@ Byte k_jumpAncientData[] = {19, 12, 61, 14, 30, 185, 118, 169, 116, 128, 111, 15
 - (NSString *)dateOption:(NIMUser *)user
                           //: nick:(NSString *)nick
                           doing:(NSString *)nick
-                        //: option:(FFFKitInfoFetchOption *)option
+                        //: option:(PushKitInfoFetchOption *)option
                         elite_strong:(AttributeQuantityOption *)option
 {
     //: NSString *name = nil;

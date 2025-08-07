@@ -14,15 +14,15 @@
 
 //: @class NIMQuickComment;
 @class NIMQuickComment;
-//: @class FFFMessageModel;
+//: @class PushMessageModel;
 @class PurseModel;
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFQuickCommentCell : UICollectionViewCell
+//: @interface PushQuickCommentCell : UICollectionViewCell
 @interface CompartmentView : UICollectionViewCell
 
-//: - (void)refreshWithData:(NSArray *)comment model:(FFFMessageModel *)data;
+//: - (void)refreshWithData:(NSArray *)comment model:(PushMessageModel *)data;
 - (void)assemblageWith:(NSArray *)comment backgroundContent:(PurseModel *)data;
 
 //: @end

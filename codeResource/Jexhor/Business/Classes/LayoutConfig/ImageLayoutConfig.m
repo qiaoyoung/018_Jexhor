@@ -147,9 +147,9 @@
     //: return self;
     return self;
 }
-//: #pragma mark - FFFCellLayoutConfig
+//: #pragma mark - PushCellLayoutConfig
 #pragma mark - MessageImageContainer
-//: - (CGSize)contentSize:(FFFMessageModel *)model cellWidth:(CGFloat)width{
+//: - (CGSize)contentSize:(PushMessageModel *)model cellWidth:(CGFloat)width{
 - (CGSize)item:(PurseModel *)model user:(CGFloat)width{
 
     //: NIMMessage *message = model.message;
@@ -178,7 +178,7 @@
 
 }
 
-//: - (NSString *)cellContent:(FFFMessageModel *)model{
+//: - (NSString *)cellContent:(PushMessageModel *)model{
 - (NSString *)mark:(PurseModel *)model{
 
     //: NIMMessage *message = model.message;
@@ -202,7 +202,7 @@
     return [super mark:model];
 }
 
-//: - (UIEdgeInsets)contentViewInsets:(FFFMessageModel *)model
+//: - (UIEdgeInsets)contentViewInsets:(PushMessageModel *)model
 - (UIEdgeInsets)dataCellInput:(PurseModel *)model
 {
     //: NIMMessage *message = model.message;
@@ -226,7 +226,7 @@
     return [super dataCellInput:model];
 }
 
-//: - (UIEdgeInsets)cellInsets:(FFFMessageModel *)model
+//: - (UIEdgeInsets)cellInsets:(PushMessageModel *)model
 - (UIEdgeInsets)tap:(PurseModel *)model
 {
     //: NIMMessage *message = model.message;
@@ -248,7 +248,7 @@
 
 
 
-//: - (BOOL)shouldShowAvatar:(FFFMessageModel *)model
+//: - (BOOL)shouldShowAvatar:(PushMessageModel *)model
 - (BOOL)buttonTitle:(PurseModel *)model
 {
     //: if ([self isSupportedChatroomMessage:model.message]) {
@@ -270,7 +270,7 @@
     return [super buttonTitle:model];
 }
 
-//: - (BOOL)shouldShowLeft:(FFFMessageModel *)model{
+//: - (BOOL)shouldShowLeft:(PushMessageModel *)model{
 - (BOOL)showOption:(PurseModel *)model{
     //: if ([self isSupportedChatroomMessage:model.message]) {
     if ([self closeBack:model.message]) {
@@ -282,7 +282,7 @@
 }
 
 
-//: - (BOOL)shouldShowNickName:(FFFMessageModel *)model{
+//: - (BOOL)shouldShowNickName:(PushMessageModel *)model{
 - (BOOL)show:(PurseModel *)model{
     //: if ([self isSupportedChatroomMessage:model.message]) {
     if ([self closeBack:model.message]) {
@@ -298,7 +298,7 @@
     return [super show:model];
 }
 
-//: - (CGPoint)nickNameMargin:(FFFMessageModel *)model{
+//: - (CGPoint)nickNameMargin:(PushMessageModel *)model{
 - (CGPoint)size:(PurseModel *)model{
 
     //: if ([self isSupportedChatroomMessage:model.message]) {
@@ -328,7 +328,7 @@
     return [super size:model];
 }
 
-//: - (NSArray *)customViews:(FFFMessageModel *)model
+//: - (NSArray *)customViews:(PushMessageModel *)model
 - (NSArray *)electViews:(PurseModel *)model
 {
     //: if ([self isSupportedChatroomMessage:model.message]) {
@@ -388,7 +388,7 @@
 }
 
 
-//: - (BOOL)disableRetryButton:(FFFMessageModel *)model
+//: - (BOOL)disableRetryButton:(PushMessageModel *)model
 - (BOOL)remotes:(PurseModel *)model
 {
     //: if ([model.message.localExt.allKeys containsObject:@"NTESMessageRefusedTag"])
@@ -469,7 +469,7 @@
     return NO;
 }
 
-//: - (BOOL)shouldDisplayBubbleBackground:(FFFMessageModel *)model
+//: - (BOOL)shouldDisplayBubbleBackground:(PushMessageModel *)model
 - (BOOL)extra:(PurseModel *)model
 {
     //: NIMMessage *message = model.message;

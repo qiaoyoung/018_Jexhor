@@ -18,9 +18,9 @@ Byte m_buttonText[] = {35, 16, 91, 14, 120, 66, 78, 27, 147, 47, 215, 18, 144, 6
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitUrlManager.h"
+//: #import "PushKitUrlManager.h"
 #import "CenterManager.h"
-//: #import "FFFKitTimerHolder.h"
+//: #import "PushKitTimerHolder.h"
 #import "TouchMax.h"
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
@@ -30,13 +30,13 @@ Byte m_buttonText[] = {35, 16, 91, 14, 120, 66, 78, 27, 147, 47, 215, 18, 144, 6
 //: NSString *const kNIMKitUrlDataKey = @"kNIMKitUrlDataKey";
 NSString *const k_imageBoxIdent = @"kNIMKitUrlDataKey";
 
-//: @interface FFFKitUrlManager ()<FFFKitTimerHolderDelegate>
+//: @interface PushKitUrlManager ()<PushKitTimerHolderDelegate>
 @interface CenterManager ()<TempDelegate>
 
 //: @property (nonatomic, strong) NSMutableDictionary *dic;
 @property (nonatomic, strong) NSMutableDictionary *dic;
 
-//: @property (nonatomic, strong) FFFKitTimerHolder *timer;
+//: @property (nonatomic, strong) PushKitTimerHolder *timer;
 @property (nonatomic, strong) TouchMax *timer;
 
 //: @property (nonatomic, assign) BOOL needSync;
@@ -45,7 +45,7 @@ NSString *const k_imageBoxIdent = @"kNIMKitUrlDataKey";
 //: @end
 @end
 
-//: @implementation FFFKitUrlManager
+//: @implementation PushKitUrlManager
 @implementation CenterManager
 
 //: + (instancetype)shareManager {
@@ -56,7 +56,7 @@ NSString *const k_imageBoxIdent = @"kNIMKitUrlDataKey";
     static id instance = nil;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFKitUrlManager alloc] init];
+        //: instance = [[PushKitUrlManager alloc] init];
         instance = [[CenterManager alloc] init];
     //: });
     });
@@ -75,7 +75,7 @@ NSString *const k_imageBoxIdent = @"kNIMKitUrlDataKey";
             //: _dic = [NSMutableDictionary dictionary];
             _dic = [NSMutableDictionary dictionary];
         }
-        //: _timer = [[FFFKitTimerHolder alloc] init];
+        //: _timer = [[PushKitTimerHolder alloc] init];
         _timer = [[TouchMax alloc] init];
         //: [_timer startTimer:5.0f delegate:self repeats:YES];
         [_timer repeats:5.0f eigenvalueOfASquareMatrix:self size:YES];
@@ -200,7 +200,7 @@ NSString *const k_imageBoxIdent = @"kNIMKitUrlDataKey";
     }
 }
 
-//: - (void)onNIMKitTimerFired:(FFFKitTimerHolder *)holder {
+//: - (void)onNIMKitTimerFired:(PushKitTimerHolder *)holder {
 - (void)alongAndEnable:(TouchMax *)holder {
     //: if (holder != _timer) {
     if (holder != _timer) {

@@ -140,7 +140,7 @@ Byte k_equalKey[] = {77, 4, 32, 10, 30, 4, 58, 134, 245, 64, 148, 153, 144, 133,
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"activity_safe_setting_modify"];
+    //: labtitle.text = [PushLanguageManager getTextWithKey:@"activity_safe_setting_modify"];
     labtitle.text = [BackgroundRandomAttribute content:StringFromPhotographyData(notiWithPath)];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -174,7 +174,7 @@ Byte k_equalKey[] = {77, 4, 32, 10, 30, 4, 58, 134, 245, 64, 148, 153, 144, 133,
     self.textfile_1.font = [UIFont systemFontOfSize:16];
     //: self.textfile_1.textColor = [UIColor colorWithHexString:@"#333333"];
     self.textfile_1.textColor = [UIColor user:StringFromPhotographyData(mTermsId)];
-    //: self.textfile_1.placeholder = [FFFLanguageManager getTextWithKey:@"activity_modify_old"];
+    //: self.textfile_1.placeholder = [PushLanguageManager getTextWithKey:@"activity_modify_old"];
     self.textfile_1.placeholder = [BackgroundRandomAttribute content:StringFromPhotographyData(main_deadHeroIdent)];
     //: self.textfile_1.delegate = self;
     self.textfile_1.delegate = self;
@@ -206,7 +206,7 @@ Byte k_equalKey[] = {77, 4, 32, 10, 30, 4, 58, 134, 245, 64, 148, 153, 144, 133,
     self.textfile_2.font = [UIFont systemFontOfSize:16];
     //: self.textfile_2.textColor = [UIColor colorWithHexString:@"#333333"];
     self.textfile_2.textColor = [UIColor user:StringFromPhotographyData(mTermsId)];
-    //: self.textfile_2.placeholder = [FFFLanguageManager getTextWithKey:@"activity_modify_new"];
+    //: self.textfile_2.placeholder = [PushLanguageManager getTextWithKey:@"activity_modify_new"];
     self.textfile_2.placeholder = [BackgroundRandomAttribute content:StringFromPhotographyData(dream_versionFormat)];
     //: self.textfile_2.delegate = self;
     self.textfile_2.delegate = self;
@@ -244,7 +244,7 @@ Byte k_equalKey[] = {77, 4, 32, 10, 30, 4, 58, 134, 245, 64, 148, 153, 144, 133,
     self.textfile_3.font = [UIFont systemFontOfSize:16];
     //: self.textfile_3.textColor = [UIColor colorWithHexString:@"#333333"];
     self.textfile_3.textColor = [UIColor user:StringFromPhotographyData(mTermsId)];
-    //: self.textfile_3.placeholder = [FFFLanguageManager getTextWithKey:@"activity_modify_new"];
+    //: self.textfile_3.placeholder = [PushLanguageManager getTextWithKey:@"activity_modify_new"];
     self.textfile_3.placeholder = [BackgroundRandomAttribute content:StringFromPhotographyData(dream_versionFormat)];
     //: self.textfile_3.delegate = self;
     self.textfile_3.delegate = self;
@@ -261,7 +261,7 @@ Byte k_equalKey[] = {77, 4, 32, 10, 30, 4, 58, 134, 245, 64, 148, 153, 144, 133,
     emptyButton.titleLabel.font = [UIFont systemFontOfSize:16];
     //: [emptyButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [emptyButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [emptyButton setTitle:[FFFLanguageManager getTextWithKey:@"sure_edit"] forState:UIControlStateNormal];
+    //: [emptyButton setTitle:[PushLanguageManager getTextWithKey:@"sure_edit"] forState:UIControlStateNormal];
     [emptyButton setTitle:[BackgroundRandomAttribute content:StringFromPhotographyData(mDistinctionKey)] forState:UIControlStateNormal];
     //: [emptyButton addTarget:self action:@selector(commitButtonClick) forControlEvents:UIControlEventTouchUpInside];
     [emptyButton addTarget:self action:@selector(clickText) forControlEvents:UIControlEventTouchUpInside];

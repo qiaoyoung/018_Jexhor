@@ -59,12 +59,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFUnsupportContentConfig.h"
+//: #import "PushUnsupportContentConfig.h"
 #import "ViewRandom.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
 
-//: @interface FFFUnsupportContentConfig ()
+//: @interface PushUnsupportContentConfig ()
 @interface ViewRandom ()
 
 //: @property (nonatomic,strong) UILabel *label;
@@ -73,7 +73,7 @@
 //: @end
 @end
 
-//: @implementation FFFUnsupportContentConfig
+//: @implementation PushUnsupportContentConfig
 @implementation ViewRandom
 
 //: - (instancetype)init
@@ -105,21 +105,21 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)session:(NIMMessage *)message
 {
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:message];
+    //: PushKitSetting *setting = [[MyUserKit sharedKit].config setting:message];
     SchoolbagTaskSurroundingsBlock *setting = [[Secret highlight].config click:message];
     //: self.label.textColor = setting.textColor;
     self.label.textColor = setting.textColor;
     //: self.label.font = setting.font;
     self.label.font = setting.font;
 
-    //: return @"FFFSessionUnknowContentView";
+    //: return @"PushSessionUnknowContentView";
     return @"ShouldControl";
 }
 
 //: - (UIEdgeInsets)contentViewInsets:(NIMMessage *)message
 - (UIEdgeInsets)messageUser:(NIMMessage *)message
 {
-    //: FFFKitSettings *settings = message.isOutgoingMsg? [MyUserKit sharedKit].config.rightBubbleSettings : [MyUserKit sharedKit].config.leftBubbleSettings;
+    //: PushKitSettings *settings = message.isOutgoingMsg? [MyUserKit sharedKit].config.rightBubbleSettings : [MyUserKit sharedKit].config.leftBubbleSettings;
     InputSignalSettings *settings = message.isOutgoingMsg? [Secret highlight].config.rightBubbleSettings : [Secret highlight].config.leftBubbleSettings;
     //: return settings.unsupportSetting.contentInsets;
     return settings.unsupportSetting.contentInsets;

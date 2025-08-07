@@ -9,18 +9,18 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionViewController.h"
+//: #import "PushSessionViewController.h"
 #import "CenterBuildViewController.h"
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
+//: #import "PushSessionConfigurateProtocol.h"
+#import "PushSessionConfigurateProtocol.h"
 
-//: @class FFFSessionViewController;
+//: @class PushSessionViewController;
 @class CenterBuildViewController;
 
-//: @interface FFFSessionConfigurator : NSObject
+//: @interface PushSessionConfigurator : NSObject
 @interface ClincherControl : NSObject
 
-//: - (void)setup:(FFFSessionViewController *)vc;
+//: - (void)setup:(PushSessionViewController *)vc;
 - (void)big:(CenterBuildViewController *)vc;
 
 //: @end

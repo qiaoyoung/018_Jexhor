@@ -9,15 +9,15 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFXMLReader.h"
+//: #import "PushXMLReader.h"
 #import "ShowReader.h"
 
-//: NSString *const kFFFXMLReaderTextNodeKey = @"text";
+//: NSString *const kPushXMLReaderTextNodeKey = @"text";
 NSString *const kKeyStateMessage = @"text";
-//: NSString *const kFFFXMLReaderAttributePrefix = @"@";
+//: NSString *const kPushXMLReaderAttributePrefix = @"@";
 NSString *const k_managerName = @"@";
 
-//: @interface FFFXMLReader ()
+//: @interface PushXMLReader ()
 @interface ShowReader ()
 
 //: @property (nonatomic, strong) NSMutableArray *dictionaryStack;
@@ -31,7 +31,7 @@ NSString *const k_managerName = @"@";
 @end
 
 
-//: @implementation FFFXMLReader
+//: @implementation PushXMLReader
 @implementation ShowReader
 
 //: #pragma mark - Public methods
@@ -40,7 +40,7 @@ NSString *const k_managerName = @"@";
 //: + (NSDictionary *)dictionaryForXMLData:(NSData *)data error:(NSError **)error
 + (NSDictionary *)executiveSessionItem:(NSData *)data originShowShared:(NSError **)error
 {
-    //: FFFXMLReader *reader = [[FFFXMLReader alloc] initWithError:error];
+    //: PushXMLReader *reader = [[PushXMLReader alloc] initWithError:error];
     ShowReader *reader = [[ShowReader alloc] initWithCell:error];
     //: NSDictionary *rootDictionary = [reader objectWithData:data options:0];
     NSDictionary *rootDictionary = [reader min:data label:0];
@@ -53,14 +53,14 @@ NSString *const k_managerName = @"@";
 {
     //: NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
     NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
-    //: return [FFFXMLReader dictionaryForXMLData:data error:error];
+    //: return [PushXMLReader dictionaryForXMLData:data error:error];
     return [ShowReader executiveSessionItem:data originShowShared:error];
 }
 
-//: + (NSDictionary *)dictionaryForXMLData:(NSData *)data options:(FFFXMLReaderOptions)options error:(NSError **)error
-+ (NSDictionary *)fileIn:(NSData *)data read:(FFFXMLReaderOptions)options label:(NSError **)error
+//: + (NSDictionary *)dictionaryForXMLData:(NSData *)data options:(PushXMLReaderOptions)options error:(NSError **)error
++ (NSDictionary *)fileIn:(NSData *)data read:(PushXMLReaderOptions)options label:(NSError **)error
 {
-    //: FFFXMLReader *reader = [[FFFXMLReader alloc] initWithError:error];
+    //: PushXMLReader *reader = [[PushXMLReader alloc] initWithError:error];
     ShowReader *reader = [[ShowReader alloc] initWithCell:error];
     //: NSDictionary *rootDictionary = [reader objectWithData:data options:options];
     NSDictionary *rootDictionary = [reader min:data label:options];
@@ -68,12 +68,12 @@ NSString *const k_managerName = @"@";
     return rootDictionary;
 }
 
-//: + (NSDictionary *)dictionaryForXMLString:(NSString *)string options:(FFFXMLReaderOptions)options error:(NSError **)error
-+ (NSDictionary *)hideDoing:(NSString *)string bottom:(FFFXMLReaderOptions)options infoChalkLine:(NSError **)error
+//: + (NSDictionary *)dictionaryForXMLString:(NSString *)string options:(PushXMLReaderOptions)options error:(NSError **)error
++ (NSDictionary *)hideDoing:(NSString *)string bottom:(PushXMLReaderOptions)options infoChalkLine:(NSError **)error
 {
     //: NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
     NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
-    //: return [FFFXMLReader dictionaryForXMLData:data options:options error:error];
+    //: return [PushXMLReader dictionaryForXMLData:data options:options error:error];
     return [ShowReader fileIn:data read:options label:error];
 }
 
@@ -96,8 +96,8 @@ NSString *const k_managerName = @"@";
     return self;
 }
 
-//: - (NSDictionary *)objectWithData:(NSData *)data options:(FFFXMLReaderOptions)options
-- (NSDictionary *)min:(NSData *)data label:(FFFXMLReaderOptions)options
+//: - (NSDictionary *)objectWithData:(NSData *)data options:(PushXMLReaderOptions)options
+- (NSDictionary *)min:(NSData *)data label:(PushXMLReaderOptions)options
 {
     // Clear out any old data
     //: self.dictionaryStack = [[NSMutableArray alloc] init];
@@ -113,12 +113,12 @@ NSString *const k_managerName = @"@";
     //: NSXMLParser *parser = [[NSXMLParser alloc] initWithData:data];
     NSXMLParser *parser = [[NSXMLParser alloc] initWithData:data];
 
-    //: [parser setShouldProcessNamespaces:(options & FFFXMLReaderOptionsProcessNamespaces)];
-    [parser setShouldProcessNamespaces:(options & FFFXMLReaderOptionsProcessNamespaces)];
-    //: [parser setShouldReportNamespacePrefixes:(options & FFFXMLReaderOptionsReportNamespacePrefixes)];
-    [parser setShouldReportNamespacePrefixes:(options & FFFXMLReaderOptionsReportNamespacePrefixes)];
-    //: [parser setShouldResolveExternalEntities:(options & FFFXMLReaderOptionsResolveExternalEntities)];
-    [parser setShouldResolveExternalEntities:(options & FFFXMLReaderOptionsResolveExternalEntities)];
+    //: [parser setShouldProcessNamespaces:(options & PushXMLReaderOptionsProcessNamespaces)];
+    [parser setShouldProcessNamespaces:(options & PushXMLReaderOptionsProcessNamespaces)];
+    //: [parser setShouldReportNamespacePrefixes:(options & PushXMLReaderOptionsReportNamespacePrefixes)];
+    [parser setShouldReportNamespacePrefixes:(options & PushXMLReaderOptionsReportNamespacePrefixes)];
+    //: [parser setShouldResolveExternalEntities:(options & PushXMLReaderOptionsResolveExternalEntities)];
+    [parser setShouldResolveExternalEntities:(options & PushXMLReaderOptionsResolveExternalEntities)];
 
     //: parser.delegate = self;
     parser.delegate = self;
@@ -216,7 +216,7 @@ NSString *const k_managerName = @"@";
         // trim after concatenating
         //: NSString *trimmedString = [self.textInProgress stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
         NSString *trimmedString = [self.textInProgress stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-        //: [dictInProgress setObject:[trimmedString mutableCopy] forKey:kFFFXMLReaderTextNodeKey];
+        //: [dictInProgress setObject:[trimmedString mutableCopy] forKey:kPushXMLReaderTextNodeKey];
         [dictInProgress setObject:[trimmedString mutableCopy] forKey:kKeyStateMessage];
 
         // Reset the text

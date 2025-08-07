@@ -303,7 +303,7 @@ typedef struct {
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor user:[InvestorData noti_rumMsg]] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"reject"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[PushLanguageManager getTextWithKey:@"reject"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[BackgroundRandomAttribute content:[InvestorData dreamEssentialMessage]] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -334,7 +334,7 @@ typedef struct {
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"agree"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[PushLanguageManager getTextWithKey:@"agree"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[BackgroundRandomAttribute content:[InvestorData show_quipRestedVillageKey]] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#05D481"];
         _sureBtn.backgroundColor = [UIColor user:[InvestorData user_roughMessage]];

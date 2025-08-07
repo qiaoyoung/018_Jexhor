@@ -210,7 +210,7 @@
     labsubLabel.textColor = [UIColor user:[UpData sharedInstance].userPickValue];
     //: labsubLabel.numberOfLines = 0;
     labsubLabel.numberOfLines = 0;
-    //: labsubLabel.text = [FFFLanguageManager getTextWithKey:@"report_next_select_black"];
+    //: labsubLabel.text = [PushLanguageManager getTextWithKey:@"report_next_select_black"];
     labsubLabel.text = [BackgroundRandomAttribute content:[UpData sharedInstance].m_showKey];
     //: [_box addSubview:labsubLabel];
     [_box addSubview:labsubLabel];
@@ -269,7 +269,7 @@
         _titleLabel.textColor = [UIColor blackColor];
         //: _titleLabel.textAlignment = NSTextAlignmentCenter;
         _titleLabel.textAlignment = NSTextAlignmentCenter;
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"activity_group_chat_avatar_add_black"];
+        //: _titleLabel.text = [PushLanguageManager getTextWithKey:@"activity_group_chat_avatar_add_black"];
         _titleLabel.text = [BackgroundRandomAttribute content:[UpData sharedInstance].show_blueChartUnderIdent];
     }
     //: return _titleLabel;
@@ -287,7 +287,7 @@
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor user:[UpData sharedInstance].mainTextFormat] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[BackgroundRandomAttribute content:[UpData sharedInstance].m_fabricErrMessage] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -314,7 +314,7 @@
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[BackgroundRandomAttribute content:[UpData sharedInstance].main_randomIdent] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#05D481"];
         _sureBtn.backgroundColor = [UIColor user:[UpData sharedInstance].k_investorKey];

@@ -69,7 +69,7 @@
 #import "UIView+SearchedTeam.h"
 //: #import "M80AttributedLabel.h"
 #import "InsertView.h"
-//: #import "FFFKitUtil.h"
+//: #import "PushKitUtil.h"
 #import "KitUtil.h"
 //: #import "NTESWhiteboardAttachment.h"
 #import "DoingAttachment.h"
@@ -115,7 +115,7 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data{
+//: - (void)refresh:(PushMessageModel *)data{
 - (void)name:(PurseModel *)data{
     //: [super refresh:data];
     [super name:data];

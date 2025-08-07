@@ -17,7 +17,7 @@ extern NSString *const showFlexibleCenterMacId; //自定义消息阅后即焚，
 //: extern NSString *const NIMDemoEventNameCloseSnapPicture; 
 extern NSString *const mainNameStr; //自定义消息阅后即焚，关闭阅后即焚预览窗口
 
-//: @interface NTESSessionSnapchatContentView : FFFSessionMessageContentView
+//: @interface NTESSessionSnapchatContentView : PushSessionMessageContentView
 @interface CellContentView : MoldControl
 
 //: @end

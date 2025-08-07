@@ -9,7 +9,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitKeyboardInfo.h"
+//: #import "PushKitKeyboardInfo.h"
 #import "TitleRandom.h"
 
 //: NSNotificationName const NIMKitKeyboardWillChangeFrameNotification = @"NIMKitKeyboardWillChangeFrameNotification";
@@ -17,7 +17,7 @@ NSNotificationName const noti_toFieldFormat = @"NIMKitKeyboardWillChangeFrameNot
 //: NSNotificationName const NIMKitKeyboardWillHideNotification = @"NIMKitKeyboardWillHideNotification";
 NSNotificationName const appBubbleViewPath = @"NIMKitKeyboardWillHideNotification";
 
-//: @implementation FFFKitKeyboardInfo
+//: @implementation PushKitKeyboardInfo
 @implementation TitleRandom
 
 //: @synthesize keyboardHeight = _keyboardHeight;
@@ -26,13 +26,13 @@ NSNotificationName const appBubbleViewPath = @"NIMKitKeyboardWillHideNotificatio
 //: + (instancetype)instance
 + (instancetype)with
 {
-    //: static FFFKitKeyboardInfo *instance;
+    //: static PushKitKeyboardInfo *instance;
     static TitleRandom *instance;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFKitKeyboardInfo alloc] init];
+        //: instance = [[PushKitKeyboardInfo alloc] init];
         instance = [[TitleRandom alloc] init];
     //: });
     });

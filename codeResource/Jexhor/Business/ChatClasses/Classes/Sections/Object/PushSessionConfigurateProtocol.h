@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFSessionConfigurateProtocol.h
+//  PushSessionConfigurateProtocol.h
 // Secret
 //
 //  Created by chris on 2016/11/7.
@@ -9,7 +9,7 @@
 //
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFMessageModel.h"
+//: #import "PushMessageModel.h"
 #import "PurseModel.h"
 
 // __M_A_C_R_O__
@@ -90,10 +90,10 @@ typedef NS_ENUM(NSUInteger, NIMKitSessionState) {
 //: - (void)insertMessages:(NSArray *)messages;
 - (void)background:(NSArray *)messages;
 
-//: - (FFFMessageModel *)updateMessage:(NIMMessage *)message;
+//: - (PushMessageModel *)updateMessage:(NIMMessage *)message;
 - (PurseModel *)device:(NIMMessage *)message;
 
-//: - (FFFMessageModel *)deleteMessage:(NIMMessage *)message;
+//: - (PushMessageModel *)deleteMessage:(NIMMessage *)message;
 - (PurseModel *)itemInAdd:(NIMMessage *)message;
 
 //: - (void)addPinForMessage:(NIMMessage *)message;
@@ -109,7 +109,7 @@ typedef NS_ENUM(NSUInteger, NIMKitSessionState) {
 //: - (void)markRead:(BOOL)needMarkDataModel;
 - (void)characteriseSizeRead:(BOOL)needMarkDataModel;
 
-//: - (FFFMessageModel *)findMessageModel:(NIMMessage *)message;
+//: - (PushMessageModel *)findMessageModel:(NIMMessage *)message;
 - (PurseModel *)select:(NIMMessage *)message;
 
 //: - (BOOL)shouldHandleReceipt;
@@ -136,7 +136,7 @@ typedef NS_ENUM(NSUInteger, NIMKitSessionState) {
 //: - (void)loadMessagePins:(void (^)(NSError *error))handler;
 - (void)value:(void (^)(NSError *error))handler;
 
-//: - (void)willDisplayMessageModel:(FFFMessageModel *)model;
+//: - (void)willDisplayMessageModel:(PushMessageModel *)model;
 - (void)origin:(PurseModel *)model;
 
 //排版接口
@@ -154,7 +154,7 @@ typedef NS_ENUM(NSUInteger, NIMKitSessionState) {
 - (void)statisticalTable;
 
 //按钮响应接口
-//: - (void)mediaAudioPressed:(FFFMessageModel *)messageModel;
+//: - (void)mediaAudioPressed:(PushMessageModel *)messageModel;
 - (void)pin:(PurseModel *)messageModel;
 
 //: - (void)mediaPicturePressed;

@@ -175,7 +175,7 @@ Byte notiInputData[] = {5, 7, 13, 130, 92, 71, 17, 31, 59, 210, 224, 237, 104, 5
     _mesBtn.titleLabel.font = [UIFont systemFontOfSize:14];
     //: [_mesBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [_mesBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [_mesBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_my_tag_activity_my_friend"] forState:UIControlStateNormal];
+    //: [_mesBtn setTitle:[PushLanguageManager getTextWithKey:@"contact_my_tag_activity_my_friend"] forState:UIControlStateNormal];
     [_mesBtn setTitle:[BackgroundRandomAttribute content:StringFromBlueData(notiDownMsg)] forState:UIControlStateNormal];
     //: [_mesBtn addTarget:self action:@selector(sliderButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [_mesBtn addTarget:self action:@selector(limitItemClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -195,7 +195,7 @@ Byte notiInputData[] = {5, 7, 13, 130, 92, 71, 17, 31, 59, 210, 224, 237, 104, 5
     _resqBtn.titleLabel.font = [UIFont systemFontOfSize:14];
     //: [_resqBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
     [_resqBtn setTitleColor:[UIColor user:StringFromBlueData(notiInputData)] forState:UIControlStateNormal];
-    //: [_resqBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_fragment_group"] forState:UIControlStateNormal];
+    //: [_resqBtn setTitle:[PushLanguageManager getTextWithKey:@"contact_fragment_group"] forState:UIControlStateNormal];
     [_resqBtn setTitle:[BackgroundRandomAttribute content:StringFromBlueData(userViewValue)] forState:UIControlStateNormal];
     //: [_resqBtn addTarget:self action:@selector(sliderButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [_resqBtn addTarget:self action:@selector(limitItemClick:) forControlEvents:UIControlEventTouchUpInside];

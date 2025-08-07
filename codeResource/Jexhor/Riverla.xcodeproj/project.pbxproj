@@ -73,7 +73,7 @@
 		428016162B1849A6003A9CAD /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428016152B1849A6003A9CAD /* Photos.framework */; };
 		429D418B299A79F500354206 /* SwitchlyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D401A299A79F400354206 /* SwitchlyViewController.m */; };
 		429D418C299A79F500354206 /* SizeSoulData.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D401D299A79F400354206 /* SizeSoulData.m */; };
-		429D418D299A79F500354206 /* FFFGroupedUsrInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D401E299A79F400354206 /* FFFGroupedUsrInfo.m */; };
+		429D418D299A79F500354206 /* PushGroupedUsrInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D401E299A79F400354206 /* PushGroupedUsrInfo.m */; };
 		429D418E299A79F500354206 /* BackgroundViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4022299A79F400354206 /* BackgroundViewCell.m */; };
 		429D418F299A79F500354206 /* MissiveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4025299A79F400354206 /* MissiveView.m */; };
 		429D4190299A79F500354206 /* MakeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4028299A79F400354206 /* MakeView.m */; };
@@ -122,7 +122,7 @@
 		429D41BF299A79F500354206 /* MaxCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4095299A79F500354206 /* MaxCreate.m */; };
 		429D41C0299A79F500354206 /* CardSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4096299A79F500354206 /* CardSession.m */; };
 		429D41C1299A79F500354206 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4097299A79F500354206 /* Item.m */; };
-		429D41C2299A79F500354206 /* FFFUsrInfoData.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D409A299A79F500354206 /* FFFUsrInfoData.m */; };
+		429D41C2299A79F500354206 /* PushUsrInfoData.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D409A299A79F500354206 /* PushUsrInfoData.m */; };
 		429D41C3299A79F500354206 /* ToInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D409F299A79F500354206 /* ToInput.m */; };
 		429D41C4299A79F500354206 /* ReminiscenceSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D40A1299A79F500354206 /* ReminiscenceSession.m */; };
 		429D41C5299A79F500354206 /* SaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D40A3299A79F500354206 /* SaveView.m */; };
@@ -150,7 +150,7 @@
 		429D41DC299A79F500354206 /* ViewRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D40D9299A79F500354206 /* ViewRandom.m */; };
 		429D41DD299A79F500354206 /* EliteCross.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D40DC299A79F500354206 /* EliteCross.m */; };
 		429D41DE299A79F500354206 /* CypherConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D40DD299A79F500354206 /* CypherConfig.m */; };
-		429D41DF299A79F500354206 /* FFFBaseSessionContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D40E0299A79F500354206 /* FFFBaseSessionContentConfig.m */; };
+		429D41DF299A79F500354206 /* PushBaseSessionContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D40E0299A79F500354206 /* PushBaseSessionContentConfig.m */; };
 		429D41E0299A79F500354206 /* MessageImageContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D40E1299A79F500354206 /* MessageImageContainer.m */; };
 		429D41E1299A79F500354206 /* TeamImageUimanager.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D40E4299A79F500354206 /* TeamImageUimanager.m */; };
 		429D41E2299A79F500354206 /* ColorBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D40E6299A79F500354206 /* ColorBackground.m */; };
@@ -192,7 +192,7 @@
 		429D420F299A79F500354206 /* AVAsset+Secret.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D414E299A79F500354206 /* AVAsset+Secret.m */; };
 		429D4210299A79F500354206 /* NSString+Secret.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D414F299A79F500354206 /* NSString+Secret.m */; };
 		429D4211299A79F500354206 /* UITableView+NIMScrollToBottom.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4153299A79F500354206 /* UITableView+NIMScrollToBottom.m */; };
-		429D4212299A79F500354206 /* FFFExtensionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4154299A79F500354206 /* FFFExtensionHelper.m */; };
+		429D4212299A79F500354206 /* PushExtensionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4154299A79F500354206 /* PushExtensionHelper.m */; };
 		429D4213299A79F500354206 /* UIButton+Secret.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4155299A79F500354206 /* UIButton+Secret.m */; };
 		429D4214299A79F500354206 /* UIViewNimKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4157299A79F500354206 /* UIViewNimKit.m */; };
 		429D4215299A79F500354206 /* InsertView+Secret.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4159299A79F500354206 /* InsertView+Secret.m */; };
@@ -202,7 +202,7 @@
 		429D4219299A79F500354206 /* SchoolbagTaskSurroundingsBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D416A299A79F500354206 /* SchoolbagTaskSurroundingsBlock.m */; };
 		429D421A299A79F500354206 /* CenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D416C299A79F500354206 /* CenterManager.m */; };
 		429D421B299A79F500354206 /* StanzaDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D416E299A79F500354206 /* StanzaDelegate.m */; };
-		429D421C299A79F500354206 /* FFFCommonTableData.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4170299A79F500354206 /* FFFCommonTableData.m */; };
+		429D421C299A79F500354206 /* PushCommonTableData.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4170299A79F500354206 /* PushCommonTableData.m */; };
 		429D421D299A79F500354206 /* WorkInView.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4173299A79F500354206 /* WorkInView.m */; };
 		429D421E299A79F500354206 /* CoverRandomConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4176299A79F500354206 /* CoverRandomConfig.m */; };
 		429D421F299A79F500354206 /* SachetEnableCompartmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4178299A79F500354206 /* SachetEnableCompartmentView.m */; };
@@ -608,13 +608,13 @@
 		429D4018299A79F400354206 /* MissiveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissiveView.h; sourceTree = "<group>"; };
 		429D4019299A79F400354206 /* MakeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakeView.h; sourceTree = "<group>"; };
 		429D401A299A79F400354206 /* SwitchlyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchlyViewController.m; sourceTree = "<group>"; };
-		429D401C299A79F400354206 /* FFFGroupedUsrInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFGroupedUsrInfo.h; sourceTree = "<group>"; };
+		429D401C299A79F400354206 /* PushGroupedUsrInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushGroupedUsrInfo.h; sourceTree = "<group>"; };
 		429D401D299A79F400354206 /* SizeSoulData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SizeSoulData.m; sourceTree = "<group>"; };
-		429D401E299A79F400354206 /* FFFGroupedUsrInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFFGroupedUsrInfo.m; sourceTree = "<group>"; };
+		429D401E299A79F400354206 /* PushGroupedUsrInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushGroupedUsrInfo.m; sourceTree = "<group>"; };
 		429D401F299A79F400354206 /* SizeSoulData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SizeSoulData.h; sourceTree = "<group>"; };
 		429D4020299A79F400354206 /* ReadConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadConfig.h; sourceTree = "<group>"; };
 		429D4022299A79F400354206 /* BackgroundViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundViewCell.m; sourceTree = "<group>"; };
-		429D4023299A79F400354206 /* FFFContactDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFContactDefines.h; sourceTree = "<group>"; };
+		429D4023299A79F400354206 /* PushContactDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushContactDefines.h; sourceTree = "<group>"; };
 		429D4024299A79F400354206 /* BackgroundViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundViewCell.h; sourceTree = "<group>"; };
 		429D4025299A79F400354206 /* MissiveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MissiveView.m; sourceTree = "<group>"; };
 		429D4027299A79F400354206 /* SwitchlyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchlyViewController.h; sourceTree = "<group>"; };
@@ -653,11 +653,11 @@
 		429D404E299A79F400354206 /* DirectorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectorManager.m; sourceTree = "<group>"; };
 		429D4050299A79F400354206 /* VoiceSharedCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceSharedCache.m; sourceTree = "<group>"; };
 		429D4051299A79F400354206 /* CrewParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrewParser.h; sourceTree = "<group>"; };
-		429D4052299A79F400354206 /* FFFInputBarItemType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFInputBarItemType.h; sourceTree = "<group>"; };
+		429D4052299A79F400354206 /* PushInputBarItemType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushInputBarItemType.h; sourceTree = "<group>"; };
 		429D4053299A79F400354206 /* GildTheLilyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GildTheLilyView.m; sourceTree = "<group>"; };
 		429D4054299A79F400354206 /* GhbView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GhbView.h; sourceTree = "<group>"; };
 		429D4055299A79F400354206 /* MainContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainContainerView.h; sourceTree = "<group>"; };
-		429D4056299A79F400354206 /* FFFInputEmoticonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFInputEmoticonDefine.h; sourceTree = "<group>"; };
+		429D4056299A79F400354206 /* PushInputEmoticonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushInputEmoticonDefine.h; sourceTree = "<group>"; };
 		429D4057299A79F400354206 /* GoopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoopView.h; sourceTree = "<group>"; };
 		429D4058299A79F400354206 /* CrossView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrossView.m; sourceTree = "<group>"; };
 		429D4059299A79F400354206 /* SignalingWithShirtButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalingWithShirtButton.m; sourceTree = "<group>"; };
@@ -711,12 +711,12 @@
 		429D4097299A79F500354206 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		429D4098299A79F500354206 /* ToInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToInput.h; sourceTree = "<group>"; };
 		429D4099299A79F500354206 /* ReminiscenceSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminiscenceSession.h; sourceTree = "<group>"; };
-		429D409A299A79F500354206 /* FFFUsrInfoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFFUsrInfoData.m; sourceTree = "<group>"; };
+		429D409A299A79F500354206 /* PushUsrInfoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushUsrInfoData.m; sourceTree = "<group>"; };
 		429D409B299A79F500354206 /* MaxCreate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaxCreate.h; sourceTree = "<group>"; };
 		429D409C299A79F500354206 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
 		429D409D299A79F500354206 /* CardSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardSession.h; sourceTree = "<group>"; };
 		429D409F299A79F500354206 /* ToInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToInput.m; sourceTree = "<group>"; };
-		429D40A0299A79F500354206 /* FFFUsrInfoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFUsrInfoData.h; sourceTree = "<group>"; };
+		429D40A0299A79F500354206 /* PushUsrInfoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushUsrInfoData.h; sourceTree = "<group>"; };
 		429D40A1299A79F500354206 /* ReminiscenceSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminiscenceSession.m; sourceTree = "<group>"; };
 		429D40A3299A79F500354206 /* SaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveView.m; sourceTree = "<group>"; };
 		429D40A4299A79F500354206 /* DoinglyTouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoinglyTouchView.h; sourceTree = "<group>"; };
@@ -758,7 +758,7 @@
 		429D40D1299A79F500354206 /* VoiceConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceConfig.m; sourceTree = "<group>"; };
 		429D40D2299A79F500354206 /* CypherConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CypherConfig.h; sourceTree = "<group>"; };
 		429D40D3299A79F500354206 /* EliteCross.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EliteCross.h; sourceTree = "<group>"; };
-		429D40D4299A79F500354206 /* FFFBaseSessionContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFBaseSessionContentConfig.h; sourceTree = "<group>"; };
+		429D40D4299A79F500354206 /* PushBaseSessionContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushBaseSessionContentConfig.h; sourceTree = "<group>"; };
 		429D40D5299A79F500354206 /* TextMake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextMake.m; sourceTree = "<group>"; };
 		429D40D6299A79F500354206 /* NameConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameConfig.m; sourceTree = "<group>"; };
 		429D40D7299A79F500354206 /* EarlierData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarlierData.m; sourceTree = "<group>"; };
@@ -770,7 +770,7 @@
 		429D40DD299A79F500354206 /* CypherConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CypherConfig.m; sourceTree = "<group>"; };
 		429D40DE299A79F500354206 /* VoiceConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceConfig.h; sourceTree = "<group>"; };
 		429D40DF299A79F500354206 /* TextMake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextMake.h; sourceTree = "<group>"; };
-		429D40E0299A79F500354206 /* FFFBaseSessionContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFFBaseSessionContentConfig.m; sourceTree = "<group>"; };
+		429D40E0299A79F500354206 /* PushBaseSessionContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushBaseSessionContentConfig.m; sourceTree = "<group>"; };
 		429D40E1299A79F500354206 /* MessageImageContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageImageContainer.m; sourceTree = "<group>"; };
 		429D40E3299A79F500354206 /* TeamImageUimanager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamImageUimanager.h; sourceTree = "<group>"; };
 		429D40E4299A79F500354206 /* TeamImageUimanager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamImageUimanager.m; sourceTree = "<group>"; };
@@ -781,12 +781,12 @@
 		429D40EA299A79F500354206 /* PushOutCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushOutCenter.m; sourceTree = "<group>"; };
 		429D40EB299A79F500354206 /* BoundaryOnly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoundaryOnly.m; sourceTree = "<group>"; };
 		429D40EC299A79F500354206 /* PossibilityImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PossibilityImpl.h; sourceTree = "<group>"; };
-		429D40ED299A79F500354206 /* FFFSessionConfigurateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFSessionConfigurateProtocol.h; sourceTree = "<group>"; };
+		429D40ED299A79F500354206 /* PushSessionConfigurateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushSessionConfigurateProtocol.h; sourceTree = "<group>"; };
 		429D40EE299A79F500354206 /* ClincherControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClincherControl.m; sourceTree = "<group>"; };
 		429D40EF299A79F500354206 /* TeamDataAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamDataAdapter.h; sourceTree = "<group>"; };
 		429D40F0299A79F500354206 /* ColorBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorBackground.h; sourceTree = "<group>"; };
 		429D40F1299A79F500354206 /* PushOutCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushOutCenter.h; sourceTree = "<group>"; };
-		429D40F2299A79F500354206 /* FFFSessionPrivateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFSessionPrivateProtocol.h; sourceTree = "<group>"; };
+		429D40F2299A79F500354206 /* PushSessionPrivateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushSessionPrivateProtocol.h; sourceTree = "<group>"; };
 		429D40F3299A79F500354206 /* ToTapDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToTapDatasource.h; sourceTree = "<group>"; };
 		429D40F4299A79F500354206 /* PossibilityImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PossibilityImpl.m; sourceTree = "<group>"; };
 		429D40F5299A79F500354206 /* BoundaryOnly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoundaryOnly.h; sourceTree = "<group>"; };
@@ -848,7 +848,7 @@
 		429D4145299A79F500354206 /* UIImage+Secret.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Secret.m"; sourceTree = "<group>"; };
 		429D4146299A79F500354206 /* NSBundle+Secret.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Secret.m"; sourceTree = "<group>"; };
 		429D4147299A79F500354206 /* UIButton+Secret.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Secret.h"; sourceTree = "<group>"; };
-		429D4148299A79F500354206 /* FFFExtensionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFExtensionHelper.h; sourceTree = "<group>"; };
+		429D4148299A79F500354206 /* PushExtensionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushExtensionHelper.h; sourceTree = "<group>"; };
 		429D4149299A79F500354206 /* UIColor+Secret.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Secret.h"; sourceTree = "<group>"; };
 		429D414A299A79F500354206 /* UIViewNimKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewNimKit.h; sourceTree = "<group>"; };
 		429D414B299A79F500354206 /* UIView+Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Task.m"; sourceTree = "<group>"; };
@@ -859,7 +859,7 @@
 		429D4151299A79F500354206 /* NSDictionary+Secret.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Secret.h"; sourceTree = "<group>"; };
 		429D4152299A79F500354206 /* UIImage+Secret.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Secret.h"; sourceTree = "<group>"; };
 		429D4153299A79F500354206 /* UITableView+NIMScrollToBottom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+NIMScrollToBottom.m"; sourceTree = "<group>"; };
-		429D4154299A79F500354206 /* FFFExtensionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFFExtensionHelper.m; sourceTree = "<group>"; };
+		429D4154299A79F500354206 /* PushExtensionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushExtensionHelper.m; sourceTree = "<group>"; };
 		429D4155299A79F500354206 /* UIButton+Secret.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Secret.m"; sourceTree = "<group>"; };
 		429D4157299A79F500354206 /* UIViewNimKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewNimKit.m; sourceTree = "<group>"; };
 		429D4158299A79F500354206 /* UIView+Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Task.h"; sourceTree = "<group>"; };
@@ -868,11 +868,11 @@
 		429D415B299A79F500354206 /* NSString+Secret.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Secret.h"; sourceTree = "<group>"; };
 		429D415C299A79F500354206 /* AVAsset+Secret.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAsset+Secret.h"; sourceTree = "<group>"; };
 		429D415D299A79F500354206 /* Secret.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Secret.h; sourceTree = "<group>"; };
-		429D415F299A79F500354206 /* FFFChatUIManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFChatUIManagerProtocol.h; sourceTree = "<group>"; };
-		429D4160299A79F500354206 /* FFFInputProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFInputProtocol.h; sourceTree = "<group>"; };
-		429D4161299A79F500354206 /* FFFCellConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFCellConfig.h; sourceTree = "<group>"; };
+		429D415F299A79F500354206 /* PushChatUIManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushChatUIManagerProtocol.h; sourceTree = "<group>"; };
+		429D4160299A79F500354206 /* PushInputProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushInputProtocol.h; sourceTree = "<group>"; };
+		429D4161299A79F500354206 /* PushCellConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushCellConfig.h; sourceTree = "<group>"; };
 		429D4162299A79F500354206 /* CountProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountProvider.h; sourceTree = "<group>"; };
-		429D4163299A79F500354206 /* FFFMessageCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFMessageCellProtocol.h; sourceTree = "<group>"; };
+		429D4163299A79F500354206 /* PushMessageCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushMessageCellProtocol.h; sourceTree = "<group>"; };
 		429D4164299A79F500354206 /* BarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarModel.h; sourceTree = "<group>"; };
 		429D4165299A79F500354206 /* CreateTop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateTop.h; sourceTree = "<group>"; };
 		429D4167299A79F500354206 /* WorkInView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkInView.h; sourceTree = "<group>"; };
@@ -884,20 +884,20 @@
 		429D416D299A79F500354206 /* OfClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfClick.h; sourceTree = "<group>"; };
 		429D416E299A79F500354206 /* StanzaDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StanzaDelegate.m; sourceTree = "<group>"; };
 		429D416F299A79F500354206 /* SachetEnableCompartmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SachetEnableCompartmentView.h; sourceTree = "<group>"; };
-		429D4170299A79F500354206 /* FFFCommonTableData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFFCommonTableData.m; sourceTree = "<group>"; };
+		429D4170299A79F500354206 /* PushCommonTableData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushCommonTableData.m; sourceTree = "<group>"; };
 		429D4171299A79F500354206 /* CoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverView.h; sourceTree = "<group>"; };
 		429D4172299A79F500354206 /* MerelyImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MerelyImpl.h; sourceTree = "<group>"; };
 		429D4173299A79F500354206 /* WorkInView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkInView.m; sourceTree = "<group>"; };
 		429D4174299A79F500354206 /* CenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterManager.h; sourceTree = "<group>"; };
-		429D4175299A79F500354206 /* FFFGlobalMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFGlobalMacro.h; sourceTree = "<group>"; };
+		429D4175299A79F500354206 /* PushGlobalMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushGlobalMacro.h; sourceTree = "<group>"; };
 		429D4176299A79F500354206 /* CoverRandomConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoverRandomConfig.m; sourceTree = "<group>"; };
 		429D4177299A79F500354206 /* SchoolbagTaskSurroundingsBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchoolbagTaskSurroundingsBlock.h; sourceTree = "<group>"; };
 		429D4178299A79F500354206 /* SachetEnableCompartmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SachetEnableCompartmentView.m; sourceTree = "<group>"; };
 		429D4179299A79F500354206 /* StanzaDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StanzaDelegate.h; sourceTree = "<group>"; };
 		429D417A299A79F500354206 /* OfClick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfClick.m; sourceTree = "<group>"; };
 		429D417B299A79F500354206 /* ViewTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewTitle.h; sourceTree = "<group>"; };
-		429D417C299A79F500354206 /* FFFKitDependency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFKitDependency.h; sourceTree = "<group>"; };
-		429D417D299A79F500354206 /* FFFCommonTableData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFCommonTableData.h; sourceTree = "<group>"; };
+		429D417C299A79F500354206 /* PushKitDependency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushKitDependency.h; sourceTree = "<group>"; };
+		429D417D299A79F500354206 /* PushCommonTableData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushCommonTableData.h; sourceTree = "<group>"; };
 		429D417E299A79F500354206 /* Secret.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Secret.m; sourceTree = "<group>"; };
 		429D4180299A79F500354206 /* BackgroundRandomAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundRandomAttribute.h; sourceTree = "<group>"; };
 		429D4181299A79F500354206 /* ShowReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowReader.h; sourceTree = "<group>"; };
@@ -1128,7 +1128,7 @@
 		B1F189722E011C6E00E24425 /* SharedContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SharedContentView.m; sourceTree = "<group>"; };
 		B1F189732E011C6E00E24425 /* UIImage+Assemblage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Assemblage.h"; sourceTree = "<group>"; };
 		B1F189742E011C6E00E24425 /* UIImage+Assemblage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Assemblage.m"; sourceTree = "<group>"; };
-		B1F189772E01214F00E24425 /* FFFCardDataSourceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFFCardDataSourceProtocol.h; sourceTree = "<group>"; };
+		B1F189772E01214F00E24425 /* PushCardDataSourceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushCardDataSourceProtocol.h; sourceTree = "<group>"; };
 		B808E73C26F23E3D00E302F6 /* EnableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnableViewController.h; sourceTree = "<group>"; };
 		B808E73D26F23E3D00E302F6 /* EnableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnableViewController.m; sourceTree = "<group>"; };
 		B808E74D26F48B1000E302F6 /* ShouldTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShouldTo.h; sourceTree = "<group>"; };
@@ -1624,8 +1624,8 @@
 			children = (
 				429D401F299A79F400354206 /* SizeSoulData.h */,
 				429D401D299A79F400354206 /* SizeSoulData.m */,
-				429D401C299A79F400354206 /* FFFGroupedUsrInfo.h */,
-				429D401E299A79F400354206 /* FFFGroupedUsrInfo.m */,
+				429D401C299A79F400354206 /* PushGroupedUsrInfo.h */,
+				429D401E299A79F400354206 /* PushGroupedUsrInfo.m */,
 			);
 			path = ContactGroup;
 			sourceTree = "<group>";
@@ -1635,7 +1635,7 @@
 			children = (
 				429D4024299A79F400354206 /* BackgroundViewCell.h */,
 				429D4022299A79F400354206 /* BackgroundViewCell.m */,
-				429D4023299A79F400354206 /* FFFContactDefines.h */,
+				429D4023299A79F400354206 /* PushContactDefines.h */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1679,12 +1679,12 @@
 				429D405B299A79F400354206 /* GrowingTextView */,
 				429D4042299A79F400354206 /* VoiceSharedCache.h */,
 				429D4050299A79F400354206 /* VoiceSharedCache.m */,
-				429D4052299A79F400354206 /* FFFInputBarItemType.h */,
+				429D4052299A79F400354206 /* PushInputBarItemType.h */,
 				429D404A299A79F400354206 /* SignalingWithShirtButton.h */,
 				429D4059299A79F400354206 /* SignalingWithShirtButton.m */,
 				429D404B299A79F400354206 /* CrossView.h */,
 				429D4058299A79F400354206 /* CrossView.m */,
-				429D4056299A79F400354206 /* FFFInputEmoticonDefine.h */,
+				429D4056299A79F400354206 /* PushInputEmoticonDefine.h */,
 				429D4044299A79F400354206 /* DirectorManager.h */,
 				429D404E299A79F400354206 /* DirectorManager.m */,
 				429D4051299A79F400354206 /* CrewParser.h */,
@@ -1825,8 +1825,8 @@
 				429D4096299A79F500354206 /* CardSession.m */,
 				429D409C299A79F500354206 /* Item.h */,
 				429D4097299A79F500354206 /* Item.m */,
-				429D40A0299A79F500354206 /* FFFUsrInfoData.h */,
-				429D409A299A79F500354206 /* FFFUsrInfoData.m */,
+				429D40A0299A79F500354206 /* PushUsrInfoData.h */,
+				429D409A299A79F500354206 /* PushUsrInfoData.m */,
 				429D4098299A79F500354206 /* ToInput.h */,
 				429D409F299A79F500354206 /* ToInput.m */,
 				429D4099299A79F500354206 /* ReminiscenceSession.h */,
@@ -1933,8 +1933,8 @@
 			children = (
 				429D40CE299A79F500354206 /* NameConfig.h */,
 				429D40D6299A79F500354206 /* NameConfig.m */,
-				429D40D4299A79F500354206 /* FFFBaseSessionContentConfig.h */,
-				429D40E0299A79F500354206 /* FFFBaseSessionContentConfig.m */,
+				429D40D4299A79F500354206 /* PushBaseSessionContentConfig.h */,
+				429D40E0299A79F500354206 /* PushBaseSessionContentConfig.m */,
 				429D40DB299A79F500354206 /* CreateConfig.h */,
 				429D40D0299A79F500354206 /* CreateConfig.m */,
 				429D40D2299A79F500354206 /* CypherConfig.h */,
@@ -1973,7 +1973,7 @@
 			children = (
 				429D40F1299A79F500354206 /* PushOutCenter.h */,
 				429D40EA299A79F500354206 /* PushOutCenter.m */,
-				429D40ED299A79F500354206 /* FFFSessionConfigurateProtocol.h */,
+				429D40ED299A79F500354206 /* PushSessionConfigurateProtocol.h */,
 				429D40E8299A79F500354206 /* ClincherControl.h */,
 				429D40EE299A79F500354206 /* ClincherControl.m */,
 				429D40F0299A79F500354206 /* ColorBackground.h */,
@@ -1984,7 +1984,7 @@
 				429D40EB299A79F500354206 /* BoundaryOnly.m */,
 				429D40F3299A79F500354206 /* ToTapDatasource.h */,
 				429D40E9299A79F500354206 /* ToTapDatasource.m */,
-				429D40F2299A79F500354206 /* FFFSessionPrivateProtocol.h */,
+				429D40F2299A79F500354206 /* PushSessionPrivateProtocol.h */,
 				429D40EF299A79F500354206 /* TeamDataAdapter.h */,
 				429D40E7299A79F500354206 /* TeamDataAdapter.m */,
 				42CF9E8529CC6CA90037B562 /* UIImage+SearchedControl.h */,
@@ -2110,8 +2110,8 @@
 				429D4153299A79F500354206 /* UITableView+NIMScrollToBottom.m */,
 				429D4151299A79F500354206 /* NSDictionary+Secret.h */,
 				429D4144299A79F500354206 /* NSDictionary+Secret.m */,
-				429D4148299A79F500354206 /* FFFExtensionHelper.h */,
-				429D4154299A79F500354206 /* FFFExtensionHelper.m */,
+				429D4148299A79F500354206 /* PushExtensionHelper.h */,
+				429D4154299A79F500354206 /* PushExtensionHelper.m */,
 				429D4158299A79F500354206 /* UIView+Task.h */,
 				429D414B299A79F500354206 /* UIView+Task.m */,
 				429D414C299A79F500354206 /* InsertView+Secret.h */,
@@ -2137,11 +2137,11 @@
 		429D415E299A79F500354206 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				429D415F299A79F500354206 /* FFFChatUIManagerProtocol.h */,
-				429D4160299A79F500354206 /* FFFInputProtocol.h */,
-				429D4161299A79F500354206 /* FFFCellConfig.h */,
+				429D415F299A79F500354206 /* PushChatUIManagerProtocol.h */,
+				429D4160299A79F500354206 /* PushInputProtocol.h */,
+				429D4161299A79F500354206 /* PushCellConfig.h */,
 				429D4162299A79F500354206 /* CountProvider.h */,
-				429D4163299A79F500354206 /* FFFMessageCellProtocol.h */,
+				429D4163299A79F500354206 /* PushMessageCellProtocol.h */,
 				429D4164299A79F500354206 /* BarModel.h */,
 				429D4165299A79F500354206 /* CreateTop.h */,
 			);
@@ -2151,19 +2151,19 @@
 		429D4166299A79F500354206 /* Global */ = {
 			isa = PBXGroup;
 			children = (
-				429D417D299A79F500354206 /* FFFCommonTableData.h */,
-				429D4170299A79F500354206 /* FFFCommonTableData.m */,
+				429D417D299A79F500354206 /* PushCommonTableData.h */,
+				429D4170299A79F500354206 /* PushCommonTableData.m */,
 				429D4179299A79F500354206 /* StanzaDelegate.h */,
 				429D416E299A79F500354206 /* StanzaDelegate.m */,
 				429D417B299A79F500354206 /* ViewTitle.h */,
-				429D4175299A79F500354206 /* FFFGlobalMacro.h */,
+				429D4175299A79F500354206 /* PushGlobalMacro.h */,
 				429D416F299A79F500354206 /* SachetEnableCompartmentView.h */,
 				429D4178299A79F500354206 /* SachetEnableCompartmentView.m */,
 				429D416B299A79F500354206 /* CoverRandomConfig.h */,
 				429D4176299A79F500354206 /* CoverRandomConfig.m */,
 				429D4172299A79F500354206 /* MerelyImpl.h */,
 				429D4169299A79F500354206 /* MerelyImpl.m */,
-				429D417C299A79F500354206 /* FFFKitDependency.h */,
+				429D417C299A79F500354206 /* PushKitDependency.h */,
 				429D416D299A79F500354206 /* OfClick.h */,
 				429D417A299A79F500354206 /* OfClick.m */,
 				429D4171299A79F500354206 /* CoverView.h */,
@@ -2211,7 +2211,7 @@
 				42AC19FC2A63ADC400BA1584 /* SAMKeychain.m */,
 				42AC19FB2A63ADC400BA1584 /* SAMKeychainQuery.h */,
 				42AC19F92A63ADC400BA1584 /* SAMKeychainQuery.m */,
-				B1F189772E01214F00E24425 /* FFFCardDataSourceProtocol.h */,
+				B1F189772E01214F00E24425 /* PushCardDataSourceProtocol.h */,
 			);
 			path = COKeychain;
 			sourceTree = "<group>";
@@ -3811,7 +3811,7 @@
 				BC4DF4BE2C54C2CC00FBD937 /* ToView.m in Sources */,
 				E48988E81DE42353001CF6C5 /* ImageLayoutConfig.m in Sources */,
 				429D419B299A79F500354206 /* ViewCenter.m in Sources */,
-				429D4212299A79F500354206 /* FFFExtensionHelper.m in Sources */,
+				429D4212299A79F500354206 /* PushExtensionHelper.m in Sources */,
 				429D41AE299A79F500354206 /* TitleView.m in Sources */,
 				B808E75226F494E400E302F6 /* MessageViewController.m in Sources */,
 				BC2676C62C58868100ED339D /* MarginViewController.m in Sources */,
@@ -3825,7 +3825,7 @@
 				429D4193299A79F500354206 /* SecretHelper.m in Sources */,
 				BC4DF5052C54CF7C00FBD937 /* TopQuantityContainer.m in Sources */,
 				04CAF0882DA3A3CA00E4CE9D /* MaxViewCell.m in Sources */,
-				429D421C299A79F500354206 /* FFFCommonTableData.m in Sources */,
+				429D421C299A79F500354206 /* PushCommonTableData.m in Sources */,
 				429D4204299A79F500354206 /* FullBlownManager.m in Sources */,
 				87E9754D23A9F29200336165 /* TotalUpView.m in Sources */,
 				BC99AF9B2C579F5100D66AC8 /* ShouldView.m in Sources */,
@@ -3965,7 +3965,7 @@
 				B89A942226E8F9E7007C1DE6 /* MakeQuantityervalViewController.m in Sources */,
 				429D4215299A79F500354206 /* InsertView+Secret.m in Sources */,
 				834DC5CC1F1C9F2A00C9E0B3 /* TouchShakedownObject.m in Sources */,
-				429D41C2299A79F500354206 /* FFFUsrInfoData.m in Sources */,
+				429D41C2299A79F500354206 /* PushUsrInfoData.m in Sources */,
 				BC2D87D92C5CCD42003E6A4A /* ImageShapeLayer.m in Sources */,
 				61E4711A1B7D963E00F4A1BF /* ImageOnly.m in Sources */,
 				B89A93E426E6FCA5007C1DE6 /* BackgroundView.m in Sources */,
@@ -3986,7 +3986,7 @@
 				BC130F302C2EC1F9006A1916 /* UIButton+Searched.m in Sources */,
 				AE5882EB1A6F47E10070536A /* main.m in Sources */,
 				429D41B4299A79F500354206 /* Firer.m in Sources */,
-				429D418D299A79F500354206 /* FFFGroupedUsrInfo.m in Sources */,
+				429D418D299A79F500354206 /* PushGroupedUsrInfo.m in Sources */,
 				429D41E7299A79F500354206 /* ClincherControl.m in Sources */,
 				BC2676CC2C58BB3E00ED339D /* LabelViewController.m in Sources */,
 				834DC5A81F1C64E000C9E0B3 /* IndexView.m in Sources */,
@@ -4111,7 +4111,7 @@
 				BC121A772C3013FB00783618 /* TingView.m in Sources */,
 				BC12F7E92D5492B1009209E4 /* MainInsertView.m in Sources */,
 				04A76B8C2DA64C0F00EB697C /* InputMessageViewController.m in Sources */,
-				429D41DF299A79F500354206 /* FFFBaseSessionContentConfig.m in Sources */,
+				429D41DF299A79F500354206 /* PushBaseSessionContentConfig.m in Sources */,
 				423FC58E2B285DCB001C3367 /* SaveManager.m in Sources */,
 				18E2EC4521BF7F2700E0E773 /* DoinglyOfView.m in Sources */,
 			);

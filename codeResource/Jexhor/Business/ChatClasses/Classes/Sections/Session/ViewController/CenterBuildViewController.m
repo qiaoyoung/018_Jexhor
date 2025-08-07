@@ -422,68 +422,68 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
+//: #import "PushSessionConfigurateProtocol.h"
+#import "PushSessionConfigurateProtocol.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
-//: #import "FFFMessageCellProtocol.h"
-#import "FFFMessageCellProtocol.h"
-//: #import "FFFMessageModel.h"
+//: #import "PushMessageCellProtocol.h"
+#import "PushMessageCellProtocol.h"
+//: #import "PushMessageModel.h"
 #import "PurseModel.h"
-//: #import "FFFKitUtil.h"
+//: #import "PushKitUtil.h"
 #import "KitUtil.h"
-//: #import "FFFBadgeView.h"
+//: #import "PushBadgeView.h"
 #import "AccumulationCellView.h"
 //: #import "UITableView+NIMScrollToBottom.h"
 #import "UITableView+NIMScrollToBottom.h"
-//: #import "FFFMessageMaker.h"
+//: #import "PushMessageMaker.h"
 #import "AddEnablely.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFSessionConfigurator.h"
+//: #import "PushSessionConfigurator.h"
 #import "ClincherControl.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "PushKitInfoFetchOption.h"
 #import "AttributeQuantityOption.h"
-//: #import "FFFKitTitleView.h"
+//: #import "PushKitTitleView.h"
 #import "TitleView.h"
-//: #import "FFFKitKeyboardInfo.h"
+//: #import "PushKitKeyboardInfo.h"
 #import "TitleRandom.h"
-//: #import "FFFReplyContentView.h"
+//: #import "PushReplyContentView.h"
 #import "GoopView.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
-//: #import "FFFKitQuickCommentUtil.h"
+//: #import "PushKitDependency.h"
+#import "PushKitDependency.h"
+//: #import "PushKitQuickCommentUtil.h"
 #import "MakeUtil.h"
-//: #import "FFFBubbleMenuView.h"
+//: #import "PushBubbleMenuView.h"
 #import "PushEventView.h"
-//: #import "FFFTextView.h"
+//: #import "PushTextView.h"
 #import "PositionScrollView.h"
 //: #import "AppDelegate.h"
 #import "AppDelegate.h"
 //: #import "NSObject+tyl_internalIdentifier.h"
 #import "NSObject+Cover.h"
-//: #import "FFFBubbleMenuView.h"
+//: #import "PushBubbleMenuView.h"
 #import "PushEventView.h"
-//: #import "FFFBubbleButtonModel.h"
+//: #import "PushBubbleButtonModel.h"
 #import "SessionModel.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
-//: #import "FFFInputAudioView.h"
+//: #import "PushInputEmoticonDefine.h"
+#import "PushInputEmoticonDefine.h"
+//: #import "PushInputAudioView.h"
 #import "MemorySignView.h"
 //: #import "UIView+NTES.h"
 #import "UIView+SearchedTeam.h"
 //: #import "NTESPersonalCardViewController.h"
 #import "AdHominemBubbleViewController.h"
-//: #import "FFFTeamCardViewController.h"
+//: #import "PushTeamCardViewController.h"
 #import "HarmViewController.h"
-//: #import "FFFAdvancedTeamCardViewController.h"
+//: #import "PushAdvancedTeamCardViewController.h"
 #import "PothouseViewController.h"
 //: #import "PhotoContainerView.h"
 #import "MoveView.h"
 //: #import "SSZipArchiveManager.h"
 #import "SharedContentView.h"
 
-//: @interface FFFSessionViewController ()<NIMMediaManagerDelegate,NIMInputDelegate,FFFTeamCardViewControllerDelegate,NIMConversationManagerDelegate,CustomUISeletePhotosDelegate,UIGestureRecognizerDelegate>
+//: @interface PushSessionViewController ()<NIMMediaManagerDelegate,NIMInputDelegate,PushTeamCardViewControllerDelegate,NIMConversationManagerDelegate,CustomUISeletePhotosDelegate,UIGestureRecognizerDelegate>
 @interface CenterBuildViewController ()<NIMMediaManagerDelegate,LayerIndexDelegate,TempSecret,NIMConversationManagerDelegate,ProduceTop,UIGestureRecognizerDelegate>
 
 //: @property (nonatomic,readwrite) NIMMessage *messageForMenu;
@@ -498,7 +498,7 @@
 //: @property (nonatomic,strong) NSIndexPath *lastVisibleIndexPathBeforeRotation;
 @property (nonatomic,strong) NSIndexPath *lastVisibleIndexPathBeforeRotation;
 
-//: @property (nonatomic,strong) FFFSessionConfigurator *configurator;
+//: @property (nonatomic,strong) PushSessionConfigurator *configurator;
 @property (nonatomic,strong) ClincherControl *configurator;
 
 //: @property (nonatomic,strong) UITapGestureRecognizer *tableViewTapGesture;
@@ -506,7 +506,7 @@
 
 //: @property (nonatomic,assign) NSInteger sessionUnreadCount;
 @property (nonatomic,assign) NSInteger sessionUnreadCount;
-//: @property (nonatomic,strong) FFFBadgeView *badgeView;
+//: @property (nonatomic,strong) PushBadgeView *badgeView;
 @property (nonatomic,strong) AccumulationCellView *badgeView;
 //: @property (nonatomic,strong) UIImageView *headerImage;
 @property (nonatomic,strong) UIImageView *headerImage;
@@ -521,7 +521,7 @@
 @property (nonatomic, strong) UIView *topview;
 //: @property (nonatomic, strong) UIButton *btnAudio;
 @property (nonatomic, strong) UIButton *btnAudio;
-//: @property (nonatomic, strong) FFFInputAudioView *audioContent;
+//: @property (nonatomic, strong) PushInputAudioView *audioContent;
 @property (nonatomic, strong) MemorySignView *audioContent;
 
 //: @property (nonatomic, strong) UIView *photopicview;
@@ -533,7 +533,7 @@
 //: @end
 @end
 
-//: @implementation FFFSessionViewController
+//: @implementation PushSessionViewController
 @implementation CenterBuildViewController
 
 //: - (instancetype)initWithSession:(NIMSession *)session{
@@ -803,7 +803,7 @@
 
     //: self.sessionUnreadCount = [NIMSDK sharedSDK].conversationManager.allUnreadCount;
     self.sessionUnreadCount = [NIMSDK sharedSDK].conversationManager.allUnreadCount;
-     //: _badgeView = [FFFBadgeView viewWithBadgeTip:@""];
+     //: _badgeView = [PushBadgeView viewWithBadgeTip:@""];
      _badgeView = [AccumulationCellView tagTip:@""];
     //: _badgeView.frame = CGRectMake(backBtn.right+5, backBtn.top+8, 24, 24);
     _badgeView.frame = CGRectMake(backBtn.right+5, backBtn.top+8, 24, 24);
@@ -920,7 +920,7 @@
             [SVProgressHUD dismiss];
             //: if (error) {
             if (error) {
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2.0f position:CSToastPositionCenter];
+                //: [wself.view makeToast:[PushLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2.0f position:CSToastPositionCenter];
                 [wself.view makeToast:[BackgroundRandomAttribute content:[CenterData sharedInstance].mainLittleUrl] duration:2.0f position:CSToastPositionCenter];
             }
         //: }];
@@ -937,9 +937,9 @@
 }
 //: - (void)enterTeamCard:(id)sender {
 - (void)teams:(id)sender {
-    //: FFFTeamCardViewController *vc = nil;
+    //: PushTeamCardViewController *vc = nil;
     HarmViewController *vc = nil;
-    //: FFFTeamCardViewControllerOption *option = [[FFFTeamCardViewControllerOption alloc] init];
+    //: PushTeamCardViewControllerOption *option = [[PushTeamCardViewControllerOption alloc] init];
     OrientationBackground *option = [[OrientationBackground alloc] init];
     //: option.isTop = [NIMSDK.sharedSDK.chatExtendManager stickTopInfoForSession:self.session] != nil;
     option.isTop = [NIMSDK.sharedSDK.chatExtendManager stickTopInfoForSession:self.session] != nil;
@@ -948,7 +948,7 @@
     NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.session.sessionId];
     //: if(team.type == NIMTeamTypeAdvanced){
     if(team.type == NIMTeamTypeAdvanced){
-            //: vc = [[FFFAdvancedTeamCardViewController alloc] initWithTeam:team
+            //: vc = [[PushAdvancedTeamCardViewController alloc] initWithTeam:team
             vc = [[PothouseViewController alloc] initWithNumberChild:team
                                                                  //: session:self.session
                                                                  change:self.session
@@ -1026,7 +1026,7 @@
     //: if ([self shouldShowInputView])
     if ([self classForefrontView])
     {
-        //: self.sessionInputView = [[FFFInputView alloc] initWithFrame:CGRectMake(0, 0, self.view.nim_width,0) config:self.sessionConfig];
+        //: self.sessionInputView = [[PushInputView alloc] initWithFrame:CGRectMake(0, 0, self.view.nim_width,0) config:self.sessionConfig];
         self.sessionInputView = [[MainContainerView alloc] initWithTitle:CGRectMake(0, 0, self.view.nim_width,0) emptySessionConfig:self.sessionConfig];
         //: self.sessionInputView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
         self.sessionInputView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
@@ -1052,7 +1052,7 @@
 //: - (void)setupConfigurator
 - (void)minimum
 {
-    //: _configurator = [[FFFSessionConfigurator alloc] init];
+    //: _configurator = [[PushSessionConfigurator alloc] init];
     _configurator = [[ClincherControl alloc] init];
     //: [_configurator setup:self];
     [_configurator big:self];
@@ -1091,7 +1091,7 @@
     //: [self.sessionInputView endEditing:YES];
     [self.sessionInputView endEditing:YES];
     // 隐藏长按弹窗
-    //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+    //: [PushBubbleMenuView.shareMenuView removeFromSuperview];
     [PushEventView.viewQuick removeFromSuperview];
     //: [self.navigationController.navigationBar setHidden:NO];
     [self.navigationController.navigationBar setHidden:NO];
@@ -1121,7 +1121,7 @@
 //: - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 //    [self.serviceContentTextView hideTextSelection];
-    //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+    //: [PushBubbleMenuView.shareMenuView removeFromSuperview];
     [PushEventView.viewQuick removeFromSuperview];
     //: [self.view endEditing:YES];
     [self.view endEditing:YES];
@@ -1131,7 +1131,7 @@
 - (void)dataMessage:(UIScrollView *)scrollView {
     //: if ([scrollView isKindOfClass:[UITextView class]]) {
     if ([scrollView isKindOfClass:[UITextView class]]) {
-        //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+        //: [PushBubbleMenuView.shareMenuView removeFromSuperview];
         [PushEventView.viewQuick removeFromSuperview];
     }
     //: [self.view endEditing:YES];
@@ -1180,8 +1180,8 @@
 }
 
 
-//: #pragma mark - FFFSessionConfiguratorDelegate
-#pragma mark - FFFSessionConfiguratorDelegate
+//: #pragma mark - PushSessionConfiguratorDelegate
+#pragma mark - PushSessionConfiguratorDelegate
 
 //: - (void)didFetchMessageData
 - (void)messageData
@@ -1231,7 +1231,7 @@
             break;
         //: case NIMSessionTypeP2P:{
         case NIMSessionTypeP2P:{
-            //: title = [FFFKitUtil showNick:self.session.sessionId inSession:self.session];
+            //: title = [PushKitUtil showNick:self.session.sessionId inSession:self.session];
             title = [KitUtil streetwise:self.session.sessionId tip:self.session];
         }
             //: break;
@@ -1321,7 +1321,7 @@
             //: NSString *urlString = imageObject.url;
             NSString *urlString = imageObject.url;
 
-            //: NSMutableDictionary *dic = [[FFFConfig sharedConfig] Gdic];
+            //: NSMutableDictionary *dic = [[PushConfig sharedConfig] Gdic];
             NSMutableDictionary *dic = [[AlongTemp frameConfig] Gdic];
             //: NSData *data = [dic objectForKey:message.messageId];
             NSData *data = [dic objectForKey:message.messageId];
@@ -1389,7 +1389,7 @@
 
         //: UIViewController *topvc = [self getTopMostController];
         UIViewController *topvc = [self along];
-        //: if (![topvc isKindOfClass:NSClassFromString(@"NTESSessionViewController")] && ![topvc isKindOfClass:[FFFSessionViewController class]]) {
+        //: if (![topvc isKindOfClass:NSClassFromString(@"NTESSessionViewController")] && ![topvc isKindOfClass:[PushSessionViewController class]]) {
         if (![topvc isKindOfClass:NSClassFromString(@"BlockViewController")] && ![topvc isKindOfClass:[CenterBuildViewController class]]) {
             //: return;
             return;
@@ -1480,7 +1480,7 @@
 - (void)setKeyPlaceholder:(BOOL)ban {
     //: if (ban){
     if (ban){
-        //: [self.sessionInputView setInputTextPlaceHolder:[FFFLanguageManager getTextWithKey:@"message_administrator_speak"] color:[UIColor redColor]];
+        //: [self.sessionInputView setInputTextPlaceHolder:[PushLanguageManager getTextWithKey:@"message_administrator_speak"] color:[UIColor redColor]];
         [self.sessionInputView value:[BackgroundRandomAttribute content:[CenterData sharedInstance].appSpeculateData] key:[UIColor redColor]];
         //: self.sessionInputView.userInteractionEnabled = NO;
         self.sessionInputView.userInteractionEnabled = NO;
@@ -1488,7 +1488,7 @@
         self.canTapVoiceBtn = NO;
     //: } else {
     } else {
-        //: [self.sessionInputView setInputTextPlaceHolder:[FFFLanguageManager getTextWithKey:@"message_please_enter_content"] color:[UIColor grayColor]];
+        //: [self.sessionInputView setInputTextPlaceHolder:[PushLanguageManager getTextWithKey:@"message_please_enter_content"] color:[UIColor grayColor]];
         [self.sessionInputView value:[BackgroundRandomAttribute content:[CenterData sharedInstance].notiBelowTouchName] key:[UIColor grayColor]];
         //: self.sessionInputView.userInteractionEnabled = YES;
         self.sessionInputView.userInteractionEnabled = YES;
@@ -1557,7 +1557,7 @@
     //: if ([message.session isEqual:_session])
     if ([message.session isEqual:_session])
     {
-        //: FFFMessageModel *model = [self.interactor findMessageModel:message];
+        //: PushMessageModel *model = [self.interactor findMessageModel:message];
         PurseModel *model = [self.interactor select:message];
         //下完缩略图之后，因为比例有变化，重新刷下宽高。
         //: [model cleanCache];
@@ -1663,7 +1663,7 @@
     if(!error) {
         //: if ([self recordFileCanBeSend:filePath]) {
         if ([self with:filePath]) {
-            //: [self sendMessage:[FFFMessageMaker msgWithAudio:filePath]];
+            //: [self sendMessage:[PushMessageMaker msgWithAudio:filePath]];
             [self heliogramMoveMessage:[AddEnablely image:filePath]];
         //: }else{
         }else{
@@ -1744,7 +1744,7 @@
                 //: if (error)
                 if (error)
                 {
-                    //: [weakSelf.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
+                    //: [weakSelf.view makeToast:[PushLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
                     [weakSelf.view makeToast:[BackgroundRandomAttribute content:[CenterData sharedInstance].mainLittleUrl] duration:2 position:CSToastPositionCenter];
                 }
 
@@ -1754,7 +1754,7 @@
             }];
 
 }
-//: - (BOOL)onTapMediaItem:(FFFMediaItem *)item{
+//: - (BOOL)onTapMediaItem:(PushMediaItem *)item{
 - (BOOL)shareMedia:(RecordAlbumItem *)item{
     //: SEL sel = item.selctor;
     SEL sel = item.selctor;
@@ -1790,7 +1790,7 @@
         [users addObject:self.session.sessionId];
     }
 
-    //: NIMMessage *message = [FFFMessageMaker msgWithText:text];
+    //: NIMMessage *message = [PushMessageMaker msgWithText:text];
     NIMMessage *message = [AddEnablely margin:text];
     //: if (atUsers.count)
     if (atUsers.count)
@@ -1802,7 +1802,7 @@
         //: apnsOption.forcePush = YES;
         apnsOption.forcePush = YES;
 
-        //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+        //: PushKitInfoFetchOption *option = [[PushKitInfoFetchOption alloc] init];
         AttributeQuantityOption *option = [[AttributeQuantityOption alloc] init];
         //: option.session = self.session;
         option.session = self.session;
@@ -1831,7 +1831,7 @@
         [users addObject:self.session.sessionId];
     }
 
-    //: NIMMessage *message = [FFFMessageMaker msgWithText:text];
+    //: NIMMessage *message = [PushMessageMaker msgWithText:text];
     NIMMessage *message = [AddEnablely margin:text];
     //: NSString *type = @"";
     NSString *type = @"";
@@ -1873,11 +1873,11 @@
         contents = [NSString stringWithFormat:@"%zd\"",(NSInteger)((audioObject.duration+500)/1000)];
     }
 
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: PushKitInfoFetchOption *option = [[PushKitInfoFetchOption alloc] init];
     AttributeQuantityOption *option = [[AttributeQuantityOption alloc] init];
     //: option.message = replymessage;
     option.message = replymessage;
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:replymessage.from option:option];
+    //: PushKitInfo *info = [[MyUserKit sharedKit] infoByUser:replymessage.from option:option];
     DataTeam *info = [[Secret highlight] infoAndStraddleOption:replymessage.from item:option];
 
     //: NSDictionary *dic = @{
@@ -1906,7 +1906,7 @@
         //: apnsOption.forcePush = YES;
         apnsOption.forcePush = YES;
 
-        //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+        //: PushKitInfoFetchOption *option = [[PushKitInfoFetchOption alloc] init];
         AttributeQuantityOption *option = [[AttributeQuantityOption alloc] init];
         //: option.session = self.session;
         option.session = self.session;
@@ -1948,7 +1948,7 @@
                       //: compltion:^(NSMapTable *result)
                       custom:^(NSMapTable *result)
      {
-        //: NIMQuickComment *oldComment = [FFFKitQuickCommentUtil myCommentFromComments:0 keys:@[@(number)] comments:result];
+        //: NIMQuickComment *oldComment = [PushKitQuickCommentUtil myCommentFromComments:0 keys:@[@(number)] comments:result];
         NIMQuickComment *oldComment = [MakeUtil link:0 doingWith:@[@(number)] item:result];
         //: BOOL contains = oldComment ? YES : NO;
         BOOL contains = oldComment ? YES : NO;
@@ -1964,7 +1964,7 @@
                 //: if (error)
                 if (error)
                 {
-                    //: [weakSelf.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
+                    //: [weakSelf.view makeToast:[PushLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
                     [weakSelf.view makeToast:[BackgroundRandomAttribute content:[CenterData sharedInstance].mainLittleUrl] duration:2 position:CSToastPositionCenter];
                 }
 
@@ -1987,7 +1987,7 @@
                 //: if (error)
                 if (error)
                 {
-                    //: [weakSelf.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
+                    //: [weakSelf.view makeToast:[PushLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
                     [weakSelf.view makeToast:[BackgroundRandomAttribute content:[CenterData sharedInstance].mainLittleUrl] duration:2 position:CSToastPositionCenter];
                 }
 
@@ -2041,10 +2041,10 @@
 //    [self sendMessage:message];
 //
 
-    //: NIMMessage *message = [FFFMessageMaker msgWithImageData:imageData extension:@""];
+    //: NIMMessage *message = [PushMessageMaker msgWithImageData:imageData extension:@""];
     NIMMessage *message = [AddEnablely success:imageData cancel:@""];
 //    message.messageSubType = 77;//标记gif用
-    //: NSMutableDictionary *dic = [[FFFConfig sharedConfig] Gdic];
+    //: NSMutableDictionary *dic = [[PushConfig sharedConfig] Gdic];
     NSMutableDictionary *dic = [[AlongTemp frameConfig] Gdic];
 //    NSData *imageData = UIImagePNGRepresentation(image);
     //: [dic setObject:imageData forKey:message.messageId];
@@ -2053,7 +2053,7 @@
     //: [self sendMessage:message];
     [self heliogramMoveMessage:message];
 
-    //: [self.sessionInputView.toolBar setPlaceHolder:[FFFLanguageManager getTextWithKey:@"message_please_enter_content"]];
+    //: [self.sessionInputView.toolBar setPlaceHolder:[PushLanguageManager getTextWithKey:@"message_please_enter_content"]];
     [self.sessionInputView.toolBar setView:[BackgroundRandomAttribute content:[CenterData sharedInstance].notiBelowTouchName]];
 
 //    [self.sessionInputView endEditing:YES];
@@ -2131,15 +2131,15 @@
     [self comment:message];
 }
 
-//: #pragma mark - FFFMessageCellDelegate
+//: #pragma mark - PushMessageCellDelegate
 #pragma mark - SharedOnly
-//: - (BOOL)onTapCell:(FFFKitEvent *)event{
+//: - (BOOL)onTapCell:(PushKitEvent *)event{
 - (BOOL)takeOut:(BeforeEvent *)event{
     //: BOOL handle = NO;
     BOOL handle = NO;
     //: NSString *eventName = event.eventName;
     NSString *eventName = event.eventName;
-    //: if ([eventName isEqualToString:FFFKitEventNameTapAudio])
+    //: if ([eventName isEqualToString:PushKitEventNameTapAudio])
     if ([eventName isEqualToString:appAssetIdent])
     {
         //: [self.interactor mediaAudioPressed:event.messageModel];
@@ -2190,7 +2190,7 @@
     //: if ([self shouldShowMenuByMessage:message])
     if ([self backgroundSub:message])
     {
-        //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+        //: [PushBubbleMenuView.shareMenuView removeFromSuperview];
         [PushEventView.viewQuick removeFromSuperview];
         //: [self showMenuWithMessage:message withView:view];
         [self colorView:message image:view];
@@ -2285,7 +2285,7 @@
                 //: return;
                 return;
             }
-            //: [weakSelf.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
+            //: [weakSelf.view makeToast:[PushLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
             [weakSelf.view makeToast:[BackgroundRandomAttribute content:[CenterData sharedInstance].mainLittleUrl] duration:2 position:CSToastPositionCenter];
         //: }];
         }];
@@ -2309,7 +2309,7 @@
                 //: return;
                 return;
             }
-            //: [weakSelf.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
+            //: [weakSelf.view makeToast:[PushLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
             [weakSelf.view makeToast:[BackgroundRandomAttribute content:[CenterData sharedInstance].mainLittleUrl] duration:2 position:CSToastPositionCenter];
         //: }];
         }];
@@ -2319,7 +2319,7 @@
 
 //: #pragma mark - 配置项
 #pragma mark - 配置项
-//: - (id<FFFSessionConfig>)sessionConfig
+//: - (id<PushSessionConfig>)sessionConfig
 - (id<CreateTop>)sessionConfig
 {
     //: return nil; 
@@ -2467,7 +2467,7 @@
     [UIMenuController sharedMenuController].menuItems = nil;
 }
 
-//: - (void)onTapMenuItemCopy:(FFFMediaItem *)item
+//: - (void)onTapMenuItemCopy:(PushMediaItem *)item
 - (void)onTapMenuItemCopy:(RecordAlbumItem *)item
 {
     //: NIMMessage *message = [self messageForMenu];
@@ -2488,7 +2488,7 @@
     }
 }
 
-//: - (void)onTapMenuItemDelete:(FFFMediaItem *)item
+//: - (void)onTapMenuItemDelete:(PushMediaItem *)item
 - (void)menu:(RecordAlbumItem *)item
 {
     //: NIMMessage *message = [self messageForMenu];
@@ -2515,9 +2515,9 @@
     [self.interactor background:messages];
 }
 
-//: - (FFFMessageModel *)uiDeleteMessage:(NIMMessage *)message{
+//: - (PushMessageModel *)uiDeleteMessage:(NIMMessage *)message{
 - (PurseModel *)radiogram:(NIMMessage *)message{
-    //: FFFMessageModel *model = [self.interactor deleteMessage:message];
+    //: PushMessageModel *model = [self.interactor deleteMessage:message];
     PurseModel *model = [self.interactor itemInAdd:message];
     //: if (model.shouldShowReadLabel && model.message.session.sessionType == NIMSessionTypeP2P)
     if (model.shouldShowReadLabel && model.message.session.sessionType == NIMSessionTypeP2P)
@@ -2569,7 +2569,7 @@
     [self.customAlbumView.albumPickerView.selectedAssets removeAllObjects];
     //: [self.customAlbumView.albumPickerView.collectionView reloadData];
     [self.customAlbumView.albumPickerView.collectionView reloadData];
-    //: [self.customAlbumView.confirmButton setTitle:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_send"] forState:UIControlStateNormal];
+    //: [self.customAlbumView.confirmButton setTitle:[PushLanguageManager getTextWithKey:@"user_profile_avtivity_send"] forState:UIControlStateNormal];
     [self.customAlbumView.confirmButton setTitle:[BackgroundRandomAttribute content:[CenterData sharedInstance].showViewText] forState:UIControlStateNormal];
     //: [self.customAlbumView animationShow];
     [self.customAlbumView tapShow];
@@ -2612,7 +2612,7 @@
                 if (path) {
                     //: NSLog(@"视频路径: %@", path);
                     // 使用路径...
-                    //: NIMMessage *message = [FFFMessageMaker msgWithVideo:path];
+                    //: NIMMessage *message = [PushMessageMaker msgWithVideo:path];
                     NIMMessage *message = [AddEnablely user:path];
                     //: [self sendMessage:message];
                     [self heliogramMoveMessage:message];
@@ -2633,10 +2633,10 @@
             [self getIndependent:asset record:^(UIImage *image) {
                 //: if (image) {
                 if (image) {
-                    //: NIMMessage *message = [FFFMessageMaker msgWithImage:image];
+                    //: NIMMessage *message = [PushMessageMaker msgWithImage:image];
                     NIMMessage *message = [AddEnablely session:image];
 
-                    //: NSMutableDictionary *dic = [[FFFConfig sharedConfig] Gdic];
+                    //: NSMutableDictionary *dic = [[PushConfig sharedConfig] Gdic];
                     NSMutableDictionary *dic = [[AlongTemp frameConfig] Gdic];
                     //: NSData *imageData = UIImagePNGRepresentation(image);
                     NSData *imageData = UIImagePNGRepresentation(image);
@@ -2829,21 +2829,21 @@
 
 //: #pragma mark - NIMMeidaButton
 #pragma mark - NIMMeidaButton
-//: - (void)onTapMediaItemPicture:(FFFMediaItem *)item
+//: - (void)onTapMediaItemPicture:(PushMediaItem *)item
 - (void)picture:(RecordAlbumItem *)item
 {
     //: [self.interactor mediaPicturePressed];
     [self.interactor marginWithPressed];
 }
 
-//: - (void)onTapMediaItemShoot:(FFFMediaItem *)item
+//: - (void)onTapMediaItemShoot:(PushMediaItem *)item
 - (void)recordAlbum:(RecordAlbumItem *)item
 {
     //: [self.interactor mediaShootPressed];
     [self.interactor title];
 }
 
-//: - (void)onTapMediaItemLocation:(FFFMediaItem *)item
+//: - (void)onTapMediaItemLocation:(PushMediaItem *)item
 - (void)click:(RecordAlbumItem *)item
 {
 //    [self.interactor mediaLocationPressed];
@@ -2861,7 +2861,7 @@
 {
 //    PushEventView.shareMenuView.praiseView.hidden = YES;
 //    PushEventView.shareMenuView.buttonsBgView.hidden = NO;
-    //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+    //: [PushBubbleMenuView.shareMenuView removeFromSuperview];
     [PushEventView.viewQuick removeFromSuperview];
     //: [self.sessionInputView endEditing:YES];
     [self.sessionInputView endEditing:YES];
@@ -2969,12 +2969,12 @@
 //: - (void)setUpTitleView
 - (void)hideItem
 {
-    //: FFFKitTitleView *titleView = (FFFKitTitleView *)self.navigationItem.titleView;
+    //: PushKitTitleView *titleView = (PushKitTitleView *)self.navigationItem.titleView;
     TitleView *titleView = (TitleView *)self.navigationItem.titleView;
-    //: if (!titleView || ![titleView isKindOfClass:[FFFKitTitleView class]])
+    //: if (!titleView || ![titleView isKindOfClass:[PushKitTitleView class]])
     if (!titleView || ![titleView isKindOfClass:[TitleView class]])
     {
-        //: titleView = [[FFFKitTitleView alloc] initWithFrame:CGRectZero];
+        //: titleView = [[PushKitTitleView alloc] initWithFrame:CGRectZero];
         titleView = [[TitleView alloc] initWithFrame:CGRectZero];
         //: self.navigationItem.titleView = titleView;
         self.navigationItem.titleView = titleView;
@@ -3103,7 +3103,7 @@
 //: - (void)showMenuWithMessage:(NIMMessage *)message withView:(UIView *)view {
 - (void)colorView:(NIMMessage *)message image:(UIView *)view {
 
-    //: [[FFFBubbleMenuView shareMenuView] removeFromSuperview];
+    //: [[PushBubbleMenuView shareMenuView] removeFromSuperview];
     [[PushEventView viewQuick] removeFromSuperview];
 
     //: NSArray *btns = [self genMediaButtonsWithMessage:message];
@@ -3121,7 +3121,7 @@
          //: autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
          autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
                       ;
-        //: [[FFFBubbleMenuView shareMenuView] showViewWithButtonModels:btns cursorStartRect:cursorStartRectToWindow selectionTextRectInWindow:tempRect selectBlock:^(FFFMediaItem *item) {
+        //: [[PushBubbleMenuView shareMenuView] showViewWithButtonModels:btns cursorStartRect:cursorStartRectToWindow selectionTextRectInWindow:tempRect selectBlock:^(PushMediaItem *item) {
         [[PushEventView viewQuick] valuate:btns someMore:cursorStartRectToWindow user:tempRect text:^(RecordAlbumItem *item) {
             @
              //: try{} @finally{} __typeof__(self) self = __weak_self__;
@@ -3130,7 +3130,7 @@
             //: [self onTapMediaItem:item];
             [self shareMedia:item];
 
-            //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+            //: [PushBubbleMenuView.shareMenuView removeFromSuperview];
             [PushEventView.viewQuick removeFromSuperview];
         //: }praiseBlock:^(NSInteger tag) {
         }optionDoing:^(NSInteger tag) {
@@ -3154,7 +3154,7 @@
                       //: compltion:^(NSMapTable *result)
                       custom:^(NSMapTable *result)
      {
-        //: NIMQuickComment *oldComment = [FFFKitQuickCommentUtil myCommentFromComments:0 keys:@[@(index)] comments:result];
+        //: NIMQuickComment *oldComment = [PushKitQuickCommentUtil myCommentFromComments:0 keys:@[@(index)] comments:result];
         NIMQuickComment *oldComment = [MakeUtil link:0 doingWith:@[@(index)] item:result];
         //: BOOL contains = oldComment ? YES : NO;
         BOOL contains = oldComment ? YES : NO;
@@ -3168,7 +3168,7 @@
                 //: if (error)
                 if (error)
                 {
-                    //: [weakSelf.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
+                    //: [weakSelf.view makeToast:[PushLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
                     [weakSelf.view makeToast:[BackgroundRandomAttribute content:[CenterData sharedInstance].mainLittleUrl] duration:2 position:CSToastPositionCenter];
                 }
 
@@ -3191,7 +3191,7 @@
                 //: if (error)
                 if (error)
                 {
-                    //: [weakSelf.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
+                    //: [weakSelf.view makeToast:[PushLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
                     [weakSelf.view makeToast:[BackgroundRandomAttribute content:[CenterData sharedInstance].mainLittleUrl] duration:2 position:CSToastPositionCenter];
                 }
 
@@ -3224,10 +3224,10 @@
         items = [self.sessionConfig completeMessage:message];
     }
 
-    //: [items enumerateObjectsUsingBlock:^(FFFMediaItem *item, NSUInteger idx, BOOL *stop) {
+    //: [items enumerateObjectsUsingBlock:^(PushMediaItem *item, NSUInteger idx, BOOL *stop) {
     [items enumerateObjectsUsingBlock:^(RecordAlbumItem *item, NSUInteger idx, BOOL *stop) {
 
-        //: FFFBubbleButtonModel *model = [[FFFBubbleButtonModel alloc] init];
+        //: PushBubbleButtonModel *model = [[PushBubbleButtonModel alloc] init];
         SessionModel *model = [[SessionModel alloc] init];
         //: model.normalImage = item.normalImage;
         model.normalImage = item.normalImage;
@@ -3396,7 +3396,7 @@
         btnAlbum.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [btnAlbum setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [btnAlbum setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        //: [btnAlbum setTitle:[FFFLanguageManager getTextWithKey:@"message_send_album"] forState:UIControlStateNormal];
+        //: [btnAlbum setTitle:[PushLanguageManager getTextWithKey:@"message_send_album"] forState:UIControlStateNormal];
         [btnAlbum setTitle:[BackgroundRandomAttribute content:[CenterData sharedInstance].dreamDoingUrl] forState:UIControlStateNormal];
         //: [btnAlbum layoutButtonWithEdgeInsetsStyle:(MKButtonEdgeInsetsStyleTop) imageTitleSpace:10];
         [btnAlbum putUp:(MKButtonEdgeInsetsStyleTop) line:10];
@@ -3417,7 +3417,7 @@
         btnShot.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [btnShot setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [btnShot setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        //: [btnShot setTitle:[FFFLanguageManager getTextWithKey:@"message_send_camera"] forState:UIControlStateNormal];
+        //: [btnShot setTitle:[PushLanguageManager getTextWithKey:@"message_send_camera"] forState:UIControlStateNormal];
         [btnShot setTitle:[BackgroundRandomAttribute content:[CenterData sharedInstance].k_viewMsg] forState:UIControlStateNormal];
         //: [btnShot layoutButtonWithEdgeInsetsStyle:(MKButtonEdgeInsetsStyleTop) imageTitleSpace:10];
         [btnShot putUp:(MKButtonEdgeInsetsStyleTop) line:10];
@@ -3428,12 +3428,12 @@
     return _photopicview;
 }
 
-//: - (FFFInputAudioView *)audioContent
+//: - (PushInputAudioView *)audioContent
 - (MemorySignView *)audioContent
 {
     //: if(!_audioContent){
     if(!_audioContent){
-        //: _audioContent = [[FFFInputAudioView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
+        //: _audioContent = [[PushInputAudioView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
         _audioContent = [[MemorySignView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
 //        _audioContent.hidden = YES;
     }

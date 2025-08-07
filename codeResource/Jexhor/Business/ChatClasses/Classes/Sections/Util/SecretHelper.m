@@ -28,14 +28,14 @@ DioramaData user_constrainTextStr = (DioramaData){114, (Byte []){27, 31, 19, 21,
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitFileLocationHelper.h"
+//: #import "PushKitFileLocationHelper.h"
 #import "SecretHelper.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
 //: #import <sys/stat.h>
 #import <sys/stat.h>
 
-//: @interface FFFKitFileLocationHelper ()
+//: @interface PushKitFileLocationHelper ()
 @interface SecretHelper ()
 //: + (NSString *)filepathForDir: (NSString *)dirname filename: (NSString *)filename;
 + (NSString *)fullCount: (NSString *)dirname boldFilename: (NSString *)filename;
@@ -43,7 +43,7 @@ DioramaData user_constrainTextStr = (DioramaData){114, (Byte []){27, 31, 19, 21,
 @end
 
 
-//: @implementation FFFKitFileLocationHelper
+//: @implementation PushKitFileLocationHelper
 @implementation SecretHelper
 //: + (BOOL)addSkipBackupAttributeToItemAtURL:(NSURL *)URL
 + (BOOL)recent:(NSURL *)URL
@@ -96,7 +96,7 @@ DioramaData user_constrainTextStr = (DioramaData){114, (Byte []){27, 31, 19, 21,
                                                             //: error:nil];
                                                             error:nil];
         }
-        //: [FFFKitFileLocationHelper addSkipBackupAttributeToItemAtURL:[NSURL fileURLWithPath:appDocumentPath]];
+        //: [PushKitFileLocationHelper addSkipBackupAttributeToItemAtURL:[NSURL fileURLWithPath:appDocumentPath]];
         [SecretHelper recent:[NSURL fileURLWithPath:appDocumentPath]];
     //: });
     });
@@ -115,7 +115,7 @@ DioramaData user_constrainTextStr = (DioramaData){114, (Byte []){27, 31, 19, 21,
 //: + (NSString *)userDirectory
 + (NSString *)openNoticeVisible
 {
-    //: NSString *documentPath = [FFFKitFileLocationHelper getAppDocumentPath];
+    //: NSString *documentPath = [PushKitFileLocationHelper getAppDocumentPath];
     NSString *documentPath = [SecretHelper domain];
     //: NSString *userID = [NIMSDK sharedSDK].loginManager.currentAccount;
     NSString *userID = [NIMSDK sharedSDK].loginManager.currentAccount;
@@ -146,7 +146,7 @@ DioramaData user_constrainTextStr = (DioramaData){114, (Byte []){27, 31, 19, 21,
 //: + (NSString *)resourceDir: (NSString *)resouceName
 + (NSString *)complete: (NSString *)resouceName
 {
-    //: NSString *dir = [[FFFKitFileLocationHelper userDirectory] stringByAppendingPathComponent:resouceName];
+    //: NSString *dir = [[PushKitFileLocationHelper userDirectory] stringByAppendingPathComponent:resouceName];
     NSString *dir = [[SecretHelper openNoticeVisible] stringByAppendingPathComponent:resouceName];
     //: if (![[NSFileManager defaultManager] fileExistsAtPath:dir])
     if (![[NSFileManager defaultManager] fileExistsAtPath:dir])
@@ -168,7 +168,7 @@ DioramaData user_constrainTextStr = (DioramaData){114, (Byte []){27, 31, 19, 21,
 //: + (NSString *)filepathForVideo:(NSString *)filename
 + (NSString *)key:(NSString *)filename
 {
-    //: return [FFFKitFileLocationHelper filepathForDir:@"video"
+    //: return [PushKitFileLocationHelper filepathForDir:@"video"
     return [SecretHelper fullCount:StringFromDioramaData(&dream_collapseStr)
                                          //: filename:filename];
                                          boldFilename:filename];
@@ -177,7 +177,7 @@ DioramaData user_constrainTextStr = (DioramaData){114, (Byte []){27, 31, 19, 21,
 //: + (NSString *)filepathForImage:(NSString *)filename
 + (NSString *)sizeOffShared:(NSString *)filename
 {
-    //: return [FFFKitFileLocationHelper filepathForDir:@"image"
+    //: return [PushKitFileLocationHelper filepathForDir:@"image"
     return [SecretHelper fullCount:StringFromDioramaData(&user_constrainTextStr)
                                          //: filename:filename];
                                          boldFilename:filename];
@@ -208,7 +208,7 @@ DioramaData user_constrainTextStr = (DioramaData){114, (Byte []){27, 31, 19, 21,
                     //: filename:(NSString *)filename
                     boldFilename:(NSString *)filename
 {
-    //: return [[FFFKitFileLocationHelper resourceDir:dirname] stringByAppendingPathComponent:filename];
+    //: return [[PushKitFileLocationHelper resourceDir:dirname] stringByAppendingPathComponent:filename];
     return [[SecretHelper complete:dirname] stringByAppendingPathComponent:filename];
 }
 

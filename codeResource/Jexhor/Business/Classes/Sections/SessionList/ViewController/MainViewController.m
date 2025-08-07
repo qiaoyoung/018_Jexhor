@@ -406,7 +406,7 @@
     return user_wooViewMessage;
 }
 
-//: #ffffff
+//: #fffPush
 - (NSString *)userAtKey {
     /* static */ NSString *userAtKey = nil;
     if (!userAtKey) {
@@ -559,7 +559,7 @@
 #import "TotalViewController.h"
 //: #import "CCCContactScanViewController.h"
 #import "MessageViewController.h"
-//: #import "FFFContactSelectViewController.h"
+//: #import "PushContactSelectViewController.h"
 #import "SwitchlyViewController.h"
 //: #import "NTESSystemSignNotificationSheet.h"
 #import "InnerCityView.h"
@@ -567,11 +567,11 @@
 #import "ZCHttpInterfacedConst.h"
 //: #import <YYText.h>
 #import <YYText.h>
-//: #import "FFFTextHighlight.h"
+//: #import "PushTextHighlight.h"
 #import "NeedTitleHighlight.h"
-//: #import "FFFInputEmoticonParser.h"
+//: #import "PushInputEmoticonParser.h"
 #import "CrewParser.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "PushInputEmoticonManager.h"
 #import "DirectorManager.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
@@ -579,7 +579,7 @@
 #import "NSString+Secret.h"
 //: #import <objc/runtime.h>
 #import <objc/runtime.h>
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "PushKitInfoFetchOption.h"
 #import "AttributeQuantityOption.h"
 //: #import "NTESSystemNotificationViewController.h"
 #import "ReadViewController.h"
@@ -591,7 +591,7 @@
 #import "TempCellViewController.h"
 //: #import "NTESMainTabController.h"
 #import "BecharmBarController.h"
-//: #import "FFFKitFileLocationHelper.h"
+//: #import "PushKitFileLocationHelper.h"
 #import "SecretHelper.h"
 //: #import "ZMONPrivacyPolicyView.h"
 #import "HeadingView.h"
@@ -711,7 +711,7 @@
 
     //: UIView *contentView = [[UIView alloc]initWithFrame:CGRectMake(0, [UIDevice vg_statusBarHeight]+190, [[UIScreen mainScreen] bounds].size.width, ([[UIScreen mainScreen] bounds].size.height - (44.0f + [UIDevice vg_statusBarHeight]) - (({UIEdgeInsets i; if(@available(iOS 11.0, *)) {i = [[[UIApplication sharedApplication] delegate] window].safeAreaInsets;} else {i = UIEdgeInsetsZero;} i;}).bottom))-190)];
     UIView *contentView = [[UIView alloc]initWithFrame:CGRectMake(0, [UIDevice title]+190, [[UIScreen mainScreen] bounds].size.width, ([[UIScreen mainScreen] bounds].size.height - (44.0f + [UIDevice title]) - (({UIEdgeInsets i; if(@available(iOS 11.0, *)) {i = [[[UIApplication sharedApplication] delegate] window].safeAreaInsets;} else {i = UIEdgeInsetsZero;} i;}).bottom))-190)];
-    //: contentView.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+    //: contentView.backgroundColor = [UIColor colorWithHexString:@"#fffPush"];
     contentView.backgroundColor = [UIColor user:[[DownData sharedInstance] userAtKey]];
     //: contentView.layer.cornerRadius = 34;
     contentView.layer.cornerRadius = 34;
@@ -762,7 +762,7 @@
     self.emptyTipLabel = [[UILabel alloc] init];
     //: self.emptyTipLabel.hidden = YES;
     self.emptyTipLabel.hidden = YES;
-    //: self.emptyTipLabel.text = [FFFLanguageManager getTextWithKey:@"no_conversation"];
+    //: self.emptyTipLabel.text = [PushLanguageManager getTextWithKey:@"no_conversation"];
     self.emptyTipLabel.text = [BackgroundRandomAttribute content:[[DownData sharedInstance] k_buildId]];//@"还没有会话，在通讯录中找个人聊聊吧".ntes_localized;
     //: self.emptyTipLabel.numberOfLines = 0;
     self.emptyTipLabel.numberOfLines = 0;
@@ -909,7 +909,7 @@
     labtitle.textColor = [UIColor whiteColor];
     //: labtitle.font = [UIFont boldSystemFontOfSize:18];
     labtitle.font = [UIFont boldSystemFontOfSize:18];
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"activity_user_profile_chat"];
+    //: labtitle.text = [PushLanguageManager getTextWithKey:@"activity_user_profile_chat"];
     labtitle.text = [BackgroundRandomAttribute content:[[DownData sharedInstance] main_spaceValue]];
     //: [topview addSubview:labtitle];
     [topview addSubview:labtitle];
@@ -964,7 +964,7 @@
 //    label12.textAlignment = NSTextAlignmentCenter;
     //: label12.textColor = [UIColor whiteColor];
     label12.textColor = [UIColor whiteColor];
-    //: label12.text = [FFFLanguageManager getTextWithKey:@"add_friend_activity_add_friend"];
+    //: label12.text = [PushLanguageManager getTextWithKey:@"add_friend_activity_add_friend"];
     label12.text = [BackgroundRandomAttribute content:[[DownData sharedInstance] app_coverMainName]];
     //: label12.numberOfLines = 0;
     label12.numberOfLines = 0;
@@ -997,7 +997,7 @@
 //    label2.textAlignment = NSTextAlignmentCenter;
     //: label2.textColor = [UIColor whiteColor];
     label2.textColor = [UIColor whiteColor];
-    //: label2.text = [FFFLanguageManager getTextWithKey:@"activity_create_group_name_create_group"];
+    //: label2.text = [PushLanguageManager getTextWithKey:@"activity_create_group_name_create_group"];
     label2.text = [BackgroundRandomAttribute content:[[DownData sharedInstance] main_blueIdent]];
     //: [box2 addSubview:label2];
     [box2 addSubview:label2];
@@ -1033,7 +1033,7 @@
 //    label2.textAlignment = NSTextAlignmentCenter;
     //: label3.textColor = [UIColor whiteColor];
     label3.textColor = [UIColor whiteColor];
-    //: label3.text = [FFFLanguageManager getTextWithKey:@"notification"];
+    //: label3.text = [PushLanguageManager getTextWithKey:@"notification"];
     label3.text = [BackgroundRandomAttribute content:[[DownData sharedInstance] app_threadData]];
     //: [box4 addSubview:label3];
     [box4 addSubview:label3];
@@ -1227,7 +1227,7 @@
 //: - (void)onDisnodistrubRecentAtIndexPath:(NIMRecentSession *)recent isDis:(BOOL)isDis
 - (void)historicalRecord:(NIMRecentSession *)recent referDis:(BOOL)isDis
 {
-    //: FFFKitInfo *info = nil;
+    //: PushKitInfo *info = nil;
     DataTeam *info = nil;
     //: if (recent.session.sessionType == NIMSessionTypeTeam) {
     if (recent.session.sessionType == NIMSessionTypeTeam) {
@@ -1246,7 +1246,7 @@
         }];
     //: } else if (recent.session.sessionType == NIMSessionTypeP2P) {
     } else if (recent.session.sessionType == NIMSessionTypeP2P) {
-        //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+        //: PushKitInfoFetchOption *option = [[PushKitInfoFetchOption alloc] init];
         AttributeQuantityOption *option = [[AttributeQuantityOption alloc] init];
         //: option.session = recent.session;
         option.session = recent.session;
@@ -1291,7 +1291,7 @@
 - (NSString *)byBuild:(NIMRecentSession *)recent{
     //: if ([recent.session.sessionId isEqualToString:[[NIMSDK sharedSDK].loginManager currentAccount]]) {
     if ([recent.session.sessionId isEqualToString:[[NIMSDK sharedSDK].loginManager currentAccount]]) {
-        //: return [FFFLanguageManager getTextWithKey:@"my_computer"];
+        //: return [PushLanguageManager getTextWithKey:@"my_computer"];
         return [BackgroundRandomAttribute content:[[DownData sharedInstance] dream_farInfoId]];
     }
     //: return [super nameForRecentSession:recent];
@@ -1502,7 +1502,7 @@
 
     //: BOOL isDisnodistrub = NO;
     BOOL isDisnodistrub = NO;
-    //: FFFKitInfo *info = nil;
+    //: PushKitInfo *info = nil;
     DataTeam *info = nil;
     //: if (recentSession.session.sessionType == NIMSessionTypeTeam) {
     if (recentSession.session.sessionType == NIMSessionTypeTeam) {
@@ -1515,7 +1515,7 @@
 
     //: } else if (recentSession.session.sessionType == NIMSessionTypeP2P) {
     } else if (recentSession.session.sessionType == NIMSessionTypeP2P) {
-        //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+        //: PushKitInfoFetchOption *option = [[PushKitInfoFetchOption alloc] init];
         AttributeQuantityOption *option = [[AttributeQuantityOption alloc] init];
         //: option.session = recentSession.session;
         option.session = recentSession.session;
@@ -1758,7 +1758,7 @@
     {
         //: NIMMessage *msg = recent.lastMessage;
         NIMMessage *msg = recent.lastMessage;
-        //: if ([recent.lastMessage.text containsString:[FFFLanguageManager getTextWithKey:@"retracted_message"]]) {
+        //: if ([recent.lastMessage.text containsString:[PushLanguageManager getTextWithKey:@"retracted_message"]]) {
         if ([recent.lastMessage.text containsString:[BackgroundRandomAttribute content:[[DownData sharedInstance] appThreadText]]]) {
             //: msg = [self lastMessageWithNoRevocationMessage:recent.lastMessage];
             msg = [self at:recent.lastMessage];
@@ -1864,7 +1864,7 @@
             //: NSString *emoString = [attrM.string substringWithRange:range];
             NSString *emoString = [attrM.string substringWithRange:range];
 
-            //: NIMInputEmoticon *emoticon = [[FFFInputEmoticonManager sharedManager] emoticonByTag:emoString];
+            //: NIMInputEmoticon *emoticon = [[PushInputEmoticonManager sharedManager] emoticonByTag:emoString];
             TextEmoticon *emoticon = [[DirectorManager statusFor] status:emoString];
 
             //: UIImage *image = [UIImage nim_emoticonInKit:emoticon.filename];
@@ -1896,10 +1896,10 @@
                 [emoText yy_setAttribute:NSKernAttributeName value:@(-1)];
             }
 
-            //: FFFTextHighlight *highlight = [[FFFTextHighlight alloc] init];
+            //: PushTextHighlight *highlight = [[PushTextHighlight alloc] init];
             NeedTitleHighlight *highlight = [[NeedTitleHighlight alloc] init];
-            //: highlight.type = FFFTextHighlightTypeEmoji;
-            highlight.type = FFFTextHighlightTypeEmoji;
+            //: highlight.type = PushTextHighlightTypeEmoji;
+            highlight.type = PushTextHighlightTypeEmoji;
             //: highlight.text = emoString;
             highlight.text = emoString;
             //: [emoText yy_setTextHighlight:highlight range:NSMakeRange(0, emoText.length)];
@@ -2014,7 +2014,7 @@
     //: config.showSelectHeaderview = YES;
     config.showSelectHeaderview = YES;
     //初始化联系人选择器
-    //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+    //: PushContactSelectViewController *vc = [[PushContactSelectViewController alloc] initWithConfig:config];
     SwitchlyViewController *vc = [[SwitchlyViewController alloc] initWithBarBottom:config];
     //回调处理
     //: vc.finshBlock = block;
@@ -2044,7 +2044,7 @@
     //: config.showSelectHeaderview = NO;
     config.showSelectHeaderview = NO;
     //初始化联系人选择器
-    //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+    //: PushContactSelectViewController *vc = [[PushContactSelectViewController alloc] initWithConfig:config];
     SwitchlyViewController *vc = [[SwitchlyViewController alloc] initWithBarBottom:config];
     //回调处理
     //: vc.finshBlock = block;
@@ -2133,7 +2133,7 @@
 //: - (NSArray *)getMenuModelsArray {
 - (NSArray *)currentMenuArray {
     //菜单模型0
-    //: NSString *add_friend = [FFFLanguageManager getTextWithKey:@"add_friend_activity_add_friend"];
+    //: NSString *add_friend = [PushLanguageManager getTextWithKey:@"add_friend_activity_add_friend"];
     NSString *add_friend = [BackgroundRandomAttribute content:[[DownData sharedInstance] app_coverMainName]];
     //: FFDropDownMenuModel *menuModel0 = [FFDropDownMenuModel ff_DropDownMenuModelWithMenuItemTitle:add_friend menuItemIconName:@"ic_add_fiend" menuBlock:^{
     FFDropDownMenuModel *menuModel0 = [FFDropDownMenuModel ff_DropDownMenuModelWithMenuItemTitle:add_friend menuItemIconName:[[DownData sharedInstance] m_nameKey] menuBlock:^{
@@ -2144,7 +2144,7 @@
     //: }];
     }];
 
-    //: NSString *activity = [FFFLanguageManager getTextWithKey:@"activity_create_group_name_create_group"];
+    //: NSString *activity = [PushLanguageManager getTextWithKey:@"activity_create_group_name_create_group"];
     NSString *activity = [BackgroundRandomAttribute content:[[DownData sharedInstance] main_blueIdent]];
 
     //菜单模型1
@@ -2152,7 +2152,7 @@
     FFDropDownMenuModel *menuModel1 = [FFDropDownMenuModel ff_DropDownMenuModelWithMenuItemTitle:activity menuItemIconName:[[DownData sharedInstance] noti_textName] menuBlock:^{
         //: if (_creatTeam.integerValue != 0) {
         if (_creatTeam.integerValue != 0) {
-            //: [SVProgressHUD showMessage:[FFFLanguageManager getTextWithKey:@"please_contact_your_administrator"]];
+            //: [SVProgressHUD showMessage:[PushLanguageManager getTextWithKey:@"please_contact_your_administrator"]];
             [SVProgressHUD packetMessage:[BackgroundRandomAttribute content:[[DownData sharedInstance] userUpMessage]]];
         //: }else{
         }else{
@@ -2167,7 +2167,7 @@
      //: autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
      autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
                   ;
-    //: FFDropDownMenuModel *menuModel3 = [FFDropDownMenuModel ff_DropDownMenuModelWithMenuItemTitle:[FFFLanguageManager getTextWithKey:@"fragment_contact_new_scan"] menuItemIconName:@"ic_scan" menuBlock:^{
+    //: FFDropDownMenuModel *menuModel3 = [FFDropDownMenuModel ff_DropDownMenuModelWithMenuItemTitle:[PushLanguageManager getTextWithKey:@"fragment_contact_new_scan"] menuItemIconName:@"ic_scan" menuBlock:^{
     FFDropDownMenuModel *menuModel3 = [FFDropDownMenuModel ff_DropDownMenuModelWithMenuItemTitle:[BackgroundRandomAttribute content:[[DownData sharedInstance] showMaxFormat]] menuItemIconName:[[DownData sharedInstance] k_statText] menuBlock:^{
         @
          //: try{} @finally{} __typeof__(self) self = __weak_self__;
@@ -2239,13 +2239,13 @@
 //        if( [[UIApplication sharedApplication] canOpenURL:url]) {
 //            [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
 //        }
-        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
+        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[PushLanguageManager getTextWithKey:@"warm_prompt"] message:[PushLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
         UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[BackgroundRandomAttribute content:[[DownData sharedInstance] notiInfluentialText]] message:[BackgroundRandomAttribute content:[[DownData sharedInstance] dreamEliteStr]] preferredStyle:UIAlertControllerStyleAlert];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[BackgroundRandomAttribute content:[[DownData sharedInstance] dreamAlienName]] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         //: }])];
         }])];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[PushLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[BackgroundRandomAttribute content:[[DownData sharedInstance] showLaverId]] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
             NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
@@ -2300,7 +2300,7 @@
             option.type = NIMTeamTypeAdvanced;
             //: option.joinMode = NIMTeamJoinModeNoAuth;
             option.joinMode = NIMTeamJoinModeNoAuth;
-            //: option.postscript = [FFFLanguageManager getTextWithKey:@"invite_you_group"];
+            //: option.postscript = [PushLanguageManager getTextWithKey:@"invite_you_group"];
             option.postscript = [BackgroundRandomAttribute content:[[DownData sharedInstance] main_requirementData]];
 //            [SVProgressHUD show];
 
@@ -2324,7 +2324,7 @@
                     [self on:option.name year:teamId];
                 //: }else{
                 }else{
-                    //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
+                    //: [self.view makeToast:[PushLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
                     [self.view makeToast:[BackgroundRandomAttribute content:[[DownData sharedInstance] noti_iconUrl]] duration:2.0 position:CSToastPositionCenter];
                 }
             //: }];
@@ -2354,9 +2354,9 @@
 
     //: UIImage *imageForAvatarUpload = [image imageByScalingAndCroppingForSize:CGSizeMake(375, 375)];
     UIImage *imageForAvatarUpload = [image disableSize:CGSizeMake(375, 375)];
-    //: NSString *fileName = [FFFKitFileLocationHelper genFilenameWithExt:@"jpg"];
+    //: NSString *fileName = [PushKitFileLocationHelper genFilenameWithExt:@"jpg"];
     NSString *fileName = [SecretHelper show:[[DownData sharedInstance] k_storageMsg]];
-    //: NSString *filePath = [[FFFKitFileLocationHelper getAppDocumentPath] stringByAppendingPathComponent:fileName];
+    //: NSString *filePath = [[PushKitFileLocationHelper getAppDocumentPath] stringByAppendingPathComponent:fileName];
     NSString *filePath = [[SecretHelper domain] stringByAppendingPathComponent:fileName];
     //: NSData *data = UIImageJPEGRepresentation(imageForAvatarUpload, 0.3);
     NSData *data = UIImageJPEGRepresentation(imageForAvatarUpload, 0.3);
@@ -2377,7 +2377,7 @@
 
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
+                //: [wself.view makeToast:[PushLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
                 [wself.view makeToast:[BackgroundRandomAttribute content:[[DownData sharedInstance] showMessageUrl]]
                              //: duration:2
                              duration:2
@@ -2391,7 +2391,7 @@
         }];
     //: }else{
     }else{
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
+        //: [self.view makeToast:[PushLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
         [self.view makeToast:[BackgroundRandomAttribute content:[[DownData sharedInstance] showMessageUrl]]
                     //: duration:2
                     duration:2
@@ -2483,7 +2483,7 @@
             option.type = NIMTeamTypeAdvanced;
             //: option.joinMode = NIMTeamJoinModeNoAuth;
             option.joinMode = NIMTeamJoinModeNoAuth;
-            //: option.postscript = [FFFLanguageManager getTextWithKey:@"invite_you_group"];
+            //: option.postscript = [PushLanguageManager getTextWithKey:@"invite_you_group"];
             option.postscript = [BackgroundRandomAttribute content:[[DownData sharedInstance] main_requirementData]];
 //            [SVProgressHUD show];
 
@@ -2507,7 +2507,7 @@
                     [self on:option.name year:teamId];
                 //: }else{
                 }else{
-                    //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
+                    //: [self.view makeToast:[PushLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
                     [self.view makeToast:[BackgroundRandomAttribute content:[[DownData sharedInstance] noti_iconUrl]] duration:2.0 position:CSToastPositionCenter];
                 }
             //: }];
@@ -2593,7 +2593,7 @@
         _QuickChatBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_QuickChatBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_QuickChatBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_QuickChatBtn setTitle:[FFFLanguageManager getTextWithKey:@"quickchat"] forState:UIControlStateNormal];
+        //: [_QuickChatBtn setTitle:[PushLanguageManager getTextWithKey:@"quickchat"] forState:UIControlStateNormal];
         [_QuickChatBtn setTitle:[BackgroundRandomAttribute content:[[DownData sharedInstance] main_blueText]] forState:UIControlStateNormal];
         //: [_QuickChatBtn layoutButtonWithEdgeInsetsStyle:(MKButtonEdgeInsetsStyleLeft) imageTitleSpace:10];
         [_QuickChatBtn putUp:(MKButtonEdgeInsetsStyleLeft) line:10];

@@ -9,13 +9,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionViewController.h"
+//: #import "PushSessionViewController.h"
 #import "CenterBuildViewController.h"
 
 //: extern NSString *kNTESDemoRevokeMessageFromMeNotication;
 extern NSString *dreamWordReleaseMessage;
 
-//: @interface NTESSessionViewController : FFFSessionViewController
+//: @interface NTESSessionViewController : PushSessionViewController
 @interface BlockViewController : CenterBuildViewController
 
 //: @property (nonatomic,assign) BOOL disableCommandTyping; 

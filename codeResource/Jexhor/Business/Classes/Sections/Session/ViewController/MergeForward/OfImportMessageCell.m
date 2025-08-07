@@ -60,11 +60,11 @@
 // __M_A_C_R_O__
 //: #import "NTESMergeMessageCell.h"
 #import "OfImportMessageCell.h"
-//: #import "FFFBadgeView.h"
+//: #import "PushBadgeView.h"
 #import "AccumulationCellView.h"
-//: #import "FFFSessionTextContentView.h"
+//: #import "PushSessionTextContentView.h"
 #import "CellTempView.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "PushAvatarImageView.h"
 #import "ImageView.h"
 //: #import "M80AttributedLabel.h"
 #import "InsertView.h"
@@ -168,7 +168,7 @@
     return _timeLab;
 }
 
-//: - (void)refreshData:(FFFMessageModel *)data {
+//: - (void)refreshData:(PushMessageModel *)data {
 - (void)message:(PurseModel *)data {
     //: [super refreshData:data];
     [super message:data];
@@ -187,8 +187,8 @@
         //: _timeLab.text = timeInfo ?: @"00:00";
         _timeLab.text = timeInfo ?: [StatHeroData dream_ourSnapFormat];
 
-        //: self.bubbleView.layoutStyle = FFFSessionMessageContentViewLayoutLeft;
-        self.bubbleView.layoutStyle = FFFSessionMessageContentViewLayoutLeft;
+        //: self.bubbleView.layoutStyle = PushSessionMessageContentViewLayoutLeft;
+        self.bubbleView.layoutStyle = PushSessionMessageContentViewLayoutLeft;
     }
 
     //: self.bubbleView.bubbleImageView.hidden = YES;
@@ -200,9 +200,9 @@
 
     //: id bubbleView = self.bubbleView;
     id bubbleView = self.bubbleView;
-    //: if ([bubbleView isKindOfClass:[FFFSessionTextContentView class]]) {
+    //: if ([bubbleView isKindOfClass:[PushSessionTextContentView class]]) {
     if ([bubbleView isKindOfClass:[CellTempView class]]) {
-        //: ((FFFSessionTextContentView *)bubbleView).textView.textColor = [UIColor blackColor];
+        //: ((PushSessionTextContentView *)bubbleView).textView.textColor = [UIColor blackColor];
         ((CellTempView *)bubbleView).textView.textColor = [UIColor blackColor];
     }
 }

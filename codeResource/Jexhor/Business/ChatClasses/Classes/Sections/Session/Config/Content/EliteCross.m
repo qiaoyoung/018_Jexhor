@@ -9,14 +9,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTextContentConfig.h"
+//: #import "PushTextContentConfig.h"
 #import "EliteCross.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "InsertView+Secret.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
 
-//: @interface FFFTextContentConfig()
+//: @interface PushTextContentConfig()
 @interface EliteCross()
 
 //: @property (nonatomic,strong) M80AttributedLabel *label;
@@ -26,7 +26,7 @@
 @end
 
 
-//: @implementation FFFTextContentConfig
+//: @implementation PushTextContentConfig
 @implementation EliteCross
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
@@ -61,7 +61,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)session:(NIMMessage *)message
 {
-    //: return @"FFFSessionTextContentView";
+    //: return @"PushSessionTextContentView";
     return @"CellTempView";
 }
 

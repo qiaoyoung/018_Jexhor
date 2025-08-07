@@ -419,7 +419,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFRegisterViewController.h"
+//: #import "PushRegisterViewController.h"
 #import "RandomSecretViewController.h"
 //: #import "NTESMainTabController.h"
 #import "BecharmBarController.h"
@@ -437,12 +437,12 @@
 #import "SizeCenter.h"
 //: #import "UIActionSheet+NTESBlock.h"
 #import "UIActionSheet+Collection.h"
-//: #import "FFFRegisterViewController.h"
+//: #import "PushRegisterViewController.h"
 #import "RandomSecretViewController.h"
 //: #import "NTESRegistConfigManager.h"
 #import "MakeManager.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "PushGlobalMacro.h"
+#import "PushGlobalMacro.h"
 //: #import "AppDelegate.h"
 #import "AppDelegate.h"
 //: #import "CCCAutoLoginManager.h"
@@ -454,7 +454,7 @@
 //: #import "ZMONPolicyPrivacyViewController.h"
 #import "MarginViewController.h"
 
-//: @interface FFFRegisterViewController () <UITextFieldDelegate>
+//: @interface PushRegisterViewController () <UITextFieldDelegate>
 @interface RandomSecretViewController () <UITextFieldDelegate>
 
 //: @property (strong, nonatomic) UIImageView *logoImageView;
@@ -483,7 +483,7 @@
 //: @end
 @end
 
-//: @implementation FFFRegisterViewController
+//: @implementation PushRegisterViewController
 @implementation RandomSecretViewController
 
 //: - (void)viewDidLoad {
@@ -536,7 +536,7 @@
 
     //: UILabel *labtitle = [[UILabel alloc]initWithFrame:CGRectMake(0, _logoImageView.bottom, [[UIScreen mainScreen] bounds].size.width, 30)];
     UILabel *labtitle = [[UILabel alloc]initWithFrame:CGRectMake(0, _logoImageView.bottom, [[UIScreen mainScreen] bounds].size.width, 30)];
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"register_account"];
+    //: labtitle.text = [PushLanguageManager getTextWithKey:@"register_account"];
     labtitle.text = [BackgroundRandomAttribute content:[GovernData dreamNameUrl]];
     //: labtitle.textColor = [UIColor blackColor];
     labtitle.textColor = [UIColor blackColor];
@@ -573,7 +573,7 @@
     _usernameTextField.textColor = [UIColor user:[GovernData mEnableFormat]];
     //    _usernameTextField.keyboardType = UIKeyboardTypeASCIICapable;
 //    _usernameTextField.delegate = self;
-    //: NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc]initWithString:[FFFLanguageManager getTextWithKey:@"user_tip"] attributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#999999"]}];
+    //: NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc]initWithString:[PushLanguageManager getTextWithKey:@"user_tip"] attributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#999999"]}];
     NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc]initWithString:[BackgroundRandomAttribute content:[GovernData userWarIdent]] attributes:@{NSForegroundColorAttributeName:[UIColor user:[GovernData kEliteLightName]]}];
     //: _usernameTextField.attributedPlaceholder = attrString;
     _usernameTextField.attributedPlaceholder = attrString;
@@ -606,7 +606,7 @@
     _passwordTextField.textColor = [UIColor user:[GovernData mEnableFormat]];
 //    _passwordTextField.secureTextEntry = YES;
 //    self.passwordTextField.delegate = self;
-    //: NSMutableAttributedString *attrString1 = [[NSMutableAttributedString alloc]initWithString:[FFFLanguageManager getTextWithKey:@"pass_tip"] attributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#999999"]}];
+    //: NSMutableAttributedString *attrString1 = [[NSMutableAttributedString alloc]initWithString:[PushLanguageManager getTextWithKey:@"pass_tip"] attributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#999999"]}];
     NSMutableAttributedString *attrString1 = [[NSMutableAttributedString alloc]initWithString:[BackgroundRandomAttribute content:[GovernData show_goingKeyId]] attributes:@{NSForegroundColorAttributeName:[UIColor user:[GovernData kEliteLightName]]}];
     //: _passwordTextField.attributedPlaceholder = attrString1;
     _passwordTextField.attributedPlaceholder = attrString1;
@@ -635,7 +635,7 @@
     _loginButton.titleLabel.font = [UIFont systemFontOfSize:16];
     //: [_loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [_loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [_loginButton setTitle:[FFFLanguageManager getTextWithKey:@"activity_register_next"] forState:UIControlStateNormal];
+    //: [_loginButton setTitle:[PushLanguageManager getTextWithKey:@"activity_register_next"] forState:UIControlStateNormal];
     [_loginButton setTitle:[BackgroundRandomAttribute content:[GovernData m_emotionFormat]] forState:UIControlStateNormal];
     //: [_loginButton addTarget:self action:@selector(doLogin) forControlEvents:UIControlEventTouchUpInside];
     [_loginButton addTarget:self action:@selector(fromLogin) forControlEvents:UIControlEventTouchUpInside];
@@ -662,7 +662,7 @@
     [_registerButton addTarget:self action:@selector(stickDisable) forControlEvents:UIControlEventTouchUpInside];
     //: NSDictionary *attributes = @{NSUnderlineStyleAttributeName: @(NSUnderlineStyleSingle)};
     NSDictionary *attributes = @{NSUnderlineStyleAttributeName: @(NSUnderlineStyleSingle)};
-    //: NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:[FFFLanguageManager getTextWithKey:@"activity_login_login"] attributes:attributes];
+    //: NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:[PushLanguageManager getTextWithKey:@"activity_login_login"] attributes:attributes];
     NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:[BackgroundRandomAttribute content:[GovernData appParticipatePath]] attributes:attributes];
     //: [_registerButton setAttributedTitle:attributedString forState:UIControlStateNormal];
     [_registerButton setAttributedTitle:attributedString forState:UIControlStateNormal];
@@ -701,7 +701,7 @@
 //    _registerButton.frame = CGRectMake(SCREEN_WIDTH-136, SCREEN_STATUS_HEIGHT+20, 146, 32);
 //    _registerButton.backgroundColor = ThemeColor;
 //    _registerButton.titleLabel.font = [UIFont systemFontOfSize:16];
-//    [_registerButton setTitleColor:RGB_COLOR_String(@"#ffffff") forState:UIControlStateNormal];
+//    [_registerButton setTitleColor:RGB_COLOR_String(@"#fffPush") forState:UIControlStateNormal];
 //    [_registerButton setTitle:[NSString stringWithFormat:@"%@,%@",LangKey(@"activity_register_account_has_account"),LangKey(@"activity_login_login")] forState:UIControlStateNormal];
 //    [_registerButton addTarget:self action:@selector(goBack) forControlEvents:UIControlEventTouchUpInside];
 //    [self.view addSubview:_registerButton];
@@ -753,7 +753,7 @@
 - (YYLabel *)protocolLabel {
     //: if (!_protocolLabel) {
     if (!_protocolLabel) {
-        //: NSString *originText = [FFFLanguageManager getTextWithKey:@"activity_register_agree"];
+        //: NSString *originText = [PushLanguageManager getTextWithKey:@"activity_register_agree"];
         NSString *originText = [BackgroundRandomAttribute content:[GovernData userOnSpaceStr]];
         //: NSMutableAttributedString *text1 = [[NSMutableAttributedString alloc] initWithString:originText];
         NSMutableAttributedString *text1 = [[NSMutableAttributedString alloc] initWithString:originText];
@@ -774,7 +774,7 @@
          {
             //: ZMONPolicyPrivacyViewController *vc = [[ZMONPolicyPrivacyViewController alloc] init];
             MarginViewController *vc = [[MarginViewController alloc] init];
-            //: vc.webTitle = [FFFLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
+            //: vc.webTitle = [PushLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
             vc.webTitle = [BackgroundRandomAttribute content:[GovernData notiYinData]];
             //: vc.urlString = [NIMUserDefaults standardUserDefaults].yshref;
             vc.urlString = [CrossShouldBlock towardScaleOfMeasurement].yshref;
@@ -892,7 +892,7 @@
 
     //: if (self.agreementButton.selected == NO) {
     if (self.agreementButton.selected == NO) {
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"Read_agree_agreement"] duration:2.0 position:CSToastPositionCenter];
+        //: [self.view makeToast:[PushLanguageManager getTextWithKey:@"Read_agree_agreement"] duration:2.0 position:CSToastPositionCenter];
         [self.view makeToast:[BackgroundRandomAttribute content:[GovernData mainSlatPath]] duration:2.0 position:CSToastPositionCenter];
         //: return;
         return;
@@ -905,7 +905,7 @@
 
     //: if (_usernameTextField.text && _usernameTextField.text.length <= 0){
     if (_usernameTextField.text && _usernameTextField.text.length <= 0){
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"register_account_activity_account"] duration:2.0 position:CSToastPositionCenter];
+        //: [self.view makeToast:[PushLanguageManager getTextWithKey:@"register_account_activity_account"] duration:2.0 position:CSToastPositionCenter];
         [self.view makeToast:[BackgroundRandomAttribute content:[GovernData k_contentValue]] duration:2.0 position:CSToastPositionCenter];
         //: return;
         return;
@@ -913,7 +913,7 @@
 
     //: if (_passwordTextField.text && _passwordTextField.text.length <= 0){
     if (_passwordTextField.text && _passwordTextField.text.length <= 0){
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"register_account_activity_psw"] duration:2.0 position:CSToastPositionCenter];
+        //: [self.view makeToast:[PushLanguageManager getTextWithKey:@"register_account_activity_psw"] duration:2.0 position:CSToastPositionCenter];
         [self.view makeToast:[BackgroundRandomAttribute content:[GovernData mLaverUrl]] duration:2.0 position:CSToastPositionCenter];
         //: return;
         return;
@@ -931,7 +931,7 @@
 
     //: if ([_usernameTextField.text isEqualToString:_passwordTextField.text]){
     if ([_usernameTextField.text isEqualToString:_passwordTextField.text]){
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"pass_user"] duration:2.0 position:CSToastPositionCenter];
+        //: [self.view makeToast:[PushLanguageManager getTextWithKey:@"pass_user"] duration:2.0 position:CSToastPositionCenter];
         [self.view makeToast:[BackgroundRandomAttribute content:[GovernData show_viewKey]] duration:2.0 position:CSToastPositionCenter];
         //: return;
         return;

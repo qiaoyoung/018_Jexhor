@@ -158,10 +158,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputEmoticonManager.h"
+//: #import "PushInputEmoticonManager.h"
 #import "DirectorManager.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
+//: #import "PushInputEmoticonDefine.h"
+#import "PushInputEmoticonDefine.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+Secret.h"
 //: #import "MyUserKit.h"
@@ -264,26 +264,26 @@
 //: @end
 @end
 
-//: @interface FFFInputEmoticonManager ()
+//: @interface PushInputEmoticonManager ()
 @interface DirectorManager ()
 //: @property (nonatomic,strong) NSArray *catalogs;
 @property (nonatomic,strong) NSArray *catalogs;
 //: @end
 @end
 
-//: @implementation FFFInputEmoticonManager
+//: @implementation PushInputEmoticonManager
 @implementation DirectorManager
 
 //: + (instancetype)sharedManager
 + (instancetype)statusFor
 {
-    //: static FFFInputEmoticonManager *instance = nil;
+    //: static PushInputEmoticonManager *instance = nil;
     static DirectorManager *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFInputEmoticonManager alloc]init];
+        //: instance = [[PushInputEmoticonManager alloc]init];
         instance = [[DirectorManager alloc]init];
     //: });
     });

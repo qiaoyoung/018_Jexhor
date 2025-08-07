@@ -30,23 +30,23 @@ Byte m_pickData[] = {1, 3, 74, 12, 15, 137, 208, 25, 54, 238, 191, 80, 29, 31, 2
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputEmoticonContainerView.h"
+//: #import "PushInputEmoticonContainerView.h"
 #import "CrossView.h"
-//: #import "FFFPageView.h"
+//: #import "PushPageView.h"
 #import "PageShowWorldView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFInputEmoticonButton.h"
+//: #import "PushInputEmoticonButton.h"
 #import "SignalingWithShirtButton.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "PushInputEmoticonManager.h"
 #import "DirectorManager.h"
-//: #import "FFFInputEmoticonTabView.h"
+//: #import "PushInputEmoticonTabView.h"
 #import "CapsuleControl.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
+//: #import "PushInputEmoticonDefine.h"
+#import "PushInputEmoticonDefine.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
-//: #import "FFFMessageMaker.h"
+//: #import "PushMessageMaker.h"
 #import "AddEnablely.h"
 
 //: NSInteger NIMCustomPageControlHeight = 36;
@@ -54,20 +54,20 @@ NSInteger notiSelectedMakeMsg = 36;
 //: NSInteger NIMCustomPageViewHeight = 159;
 NSInteger user_lineDateTitle = 159;
 
-//: @interface FFFInputEmoticonContainerView()<NIMEmoticonButtonTouchDelegate,NIMInputEmoticonTabDelegate>
+//: @interface PushInputEmoticonContainerView()<NIMEmoticonButtonTouchDelegate,NIMInputEmoticonTabDelegate>
 @interface CrossView()<IndexDelegate,CellMargin>
 
 //: @property (nonatomic,strong) NSMutableArray *pageData;
 @property (nonatomic,strong) NSMutableArray *pageData;
 
-//: @property (nonatomic,strong) FFFInputEmoticonButton* deleteIcon;
+//: @property (nonatomic,strong) PushInputEmoticonButton* deleteIcon;
 @property (nonatomic,strong) SignalingWithShirtButton* deleteIcon;
 
 //: @end
 @end
 
 
-//: @implementation FFFInputEmoticonContainerView
+//: @implementation PushInputEmoticonContainerView
 @implementation CrossView
 
 //: - (instancetype)initWithFrame:(CGRect)frame
@@ -89,7 +89,7 @@ NSInteger user_lineDateTitle = 159;
     self.backgroundColor = [UIColor user:StringFromContainerVileData(mPractitionerMessage)];
 }
 
-//: - (void)setConfig:(id<FFFSessionConfig>)config{
+//: - (void)setConfig:(id<PushSessionConfig>)config{
 - (void)setConfig:(id<CreateTop>)config{
     //: _config = config;
     _config = config;
@@ -241,7 +241,7 @@ NSInteger user_lineDateTitle = 159;
             //: NIMInputEmoticon *data = [self.currentCatalogData.emoticons objectAtIndex:index];
             TextEmoticon *data = [self.currentCatalogData.emoticons objectAtIndex:index];
 
-            //: FFFInputEmoticonButton *button = [FFFInputEmoticonButton iconButtonWithData:data catalogID:self.currentCatalogData.catalogID delegate:self];
+            //: PushInputEmoticonButton *button = [PushInputEmoticonButton iconButtonWithData:data catalogID:self.currentCatalogData.catalogID delegate:self];
             SignalingWithShirtButton *button = [SignalingWithShirtButton accountImageLength:data showDelegate:self.currentCatalogData.catalogID title:self];
             //计算表情位置
             //: rowIndex = indexInPage / self.currentCatalogData.layout.columes;
@@ -284,7 +284,7 @@ NSInteger user_lineDateTitle = 159;
 }
 
 
-//: - (UIView*)emojPageView:(FFFPageView*)pageView inEmoticonCatalog:(NIMInputEmoticonCatalog *)emoticon page:(NSInteger)page
+//: - (UIView*)emojPageView:(PushPageView*)pageView inEmoticonCatalog:(NIMInputEmoticonCatalog *)emoticon page:(NSInteger)page
 - (UIView*)clearPage:(PageShowWorldView*)pageView blueish:(SizeCatalog *)emoticon retort:(NSInteger)page
 {
     //: UIView *subView = [[UIView alloc] init];
@@ -315,7 +315,7 @@ NSInteger user_lineDateTitle = 159;
         //: NIMInputEmoticon *data = [emoticon.emoticons objectAtIndex:index];
         TextEmoticon *data = [emoticon.emoticons objectAtIndex:index];
 
-        //: FFFInputEmoticonButton *button = [FFFInputEmoticonButton iconButtonWithData:data catalogID:emoticon.catalogID delegate:self];
+        //: PushInputEmoticonButton *button = [PushInputEmoticonButton iconButtonWithData:data catalogID:emoticon.catalogID delegate:self];
         SignalingWithShirtButton *button = [SignalingWithShirtButton accountImageLength:data showDelegate:emoticon.catalogID title:self];
         //计算表情位置
         //: rowIndex = indexInPage / emoticon.layout.columes;
@@ -367,7 +367,7 @@ NSInteger user_lineDateTitle = 159;
                 //: inEmoticonCatalog:(NIMInputEmoticonCatalog *)emoticon
                 digitizer:(SizeCatalog *)emoticon
 {
-    //: FFFInputEmoticonButton* deleteIcon = [[FFFInputEmoticonButton alloc] init];
+    //: PushInputEmoticonButton* deleteIcon = [[PushInputEmoticonButton alloc] init];
     SignalingWithShirtButton* deleteIcon = [[SignalingWithShirtButton alloc] init];
     //: deleteIcon.delegate = self;
     deleteIcon.delegate = self;
@@ -405,14 +405,14 @@ NSInteger user_lineDateTitle = 159;
 
 //: #pragma mark - pageviewDelegate
 #pragma mark - pageviewDelegate
-//: - (NSInteger)numberOfPages: (FFFPageView *)pageView
+//: - (NSInteger)numberOfPages: (PushPageView *)pageView
 - (NSInteger)ranges: (PageShowWorldView *)pageView
 {
     //: return [self sumPages];
     return [self pages];
 }
 
-//: - (UIView *)pageView:(FFFPageView *)pageView viewInPage:(NSInteger)index
+//: - (UIView *)pageView:(PushPageView *)pageView viewInPage:(NSInteger)index
 - (UIView *)teamValue:(PageShowWorldView *)pageView addWith:(NSInteger)index
 {
     //: NSInteger page = 0;
@@ -439,7 +439,7 @@ NSInteger user_lineDateTitle = 159;
 //: - (NIMInputEmoticonCatalog*)loadDefaultCatalog
 - (SizeCatalog*)temp
 {
-    //: NIMInputEmoticonCatalog *emoticonCatalog = [[FFFInputEmoticonManager sharedManager] emoticonCatalog:@"default"];
+    //: NIMInputEmoticonCatalog *emoticonCatalog = [[PushInputEmoticonManager sharedManager] emoticonCatalog:@"default"];
     SizeCatalog *emoticonCatalog = [[DirectorManager statusFor] emoticonNameData:StringFromContainerVileData(k_toPenaltyTitle)];
     //: if (emoticonCatalog) {
     if (emoticonCatalog) {
@@ -457,7 +457,7 @@ NSInteger user_lineDateTitle = 159;
 //: - (NIMInputEmoticonCatalog*)loadGifCatalog
 - (SizeCatalog*)ladeCatalog
 {
-    //: NIMInputEmoticonCatalog *emoticonCatalog = [[FFFInputEmoticonManager sharedManager] emoticonCatalog:@"gif"];
+    //: NIMInputEmoticonCatalog *emoticonCatalog = [[PushInputEmoticonManager sharedManager] emoticonCatalog:@"gif"];
     SizeCatalog *emoticonCatalog = [[DirectorManager statusFor] emoticonNameData:StringFromContainerVileData(m_pickData)];
     //: if (emoticonCatalog) {
     if (emoticonCatalog) {
@@ -564,7 +564,7 @@ NSInteger user_lineDateTitle = 159;
     }
 }
 
-//: - (void)pageViewScrollEnd: (FFFPageView *)pageView
+//: - (void)pageViewScrollEnd: (PushPageView *)pageView
 - (void)appear: (PageShowWorldView *)pageView
              //: currentIndex: (NSInteger)index
              red: (NSInteger)index
@@ -636,7 +636,7 @@ NSInteger user_lineDateTitle = 159;
 
 //: #pragma mark - InputEmoticonTabDelegate
 #pragma mark - InputEmoticonTabDelegate
-//: - (void)tabView:(FFFInputEmoticonTabView *)tabView didSelectTabIndex:(NSInteger) index{
+//: - (void)tabView:(PushInputEmoticonTabView *)tabView didSelectTabIndex:(NSInteger) index{
 - (void)nameSize:(CapsuleControl *)tabView doingTap:(NSInteger) index{
     //: self.currentCatalogData = self.totalCatalogData[index];
     self.currentCatalogData = self.totalCatalogData[index];
@@ -679,12 +679,12 @@ NSInteger user_lineDateTitle = 159;
 
 //: #pragma mark - Get
 #pragma mark - Get
-//: - (FFFInputEmoticonTabView *)tabView
+//: - (PushInputEmoticonTabView *)tabView
 - (CapsuleControl *)tabView
 {
     //: if (!_tabView) {
     if (!_tabView) {
-        //: _tabView = [[FFFInputEmoticonTabView alloc] initWithFrame:CGRectMake(0, 0, self.nim_width, 0)];
+        //: _tabView = [[PushInputEmoticonTabView alloc] initWithFrame:CGRectMake(0, 0, self.nim_width, 0)];
         _tabView = [[CapsuleControl alloc] initWithFrame:CGRectMake(0, 0, self.nim_width, 0)];
         //: _tabView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         _tabView.autoresizingMask = UIViewAutoresizingFlexibleWidth;

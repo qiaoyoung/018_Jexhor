@@ -11,10 +11,10 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFCommonTableViewCell.h"
+//: #import "PushCommonTableViewCell.h"
 #import "ViewTitle.h"
 
-//: @interface NTESCardPortraitCell : UITableViewCell<FFFCommonTableViewCell>
+//: @interface NTESCardPortraitCell : UITableViewCell<PushCommonTableViewCell>
 @interface PunchedCardViewCell : UITableViewCell<ViewTitle>
 
 //: @end

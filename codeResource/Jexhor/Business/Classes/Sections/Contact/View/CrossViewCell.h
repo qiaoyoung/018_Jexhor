@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactDataCell.h"
+//: #import "PushContactDataCell.h"
 #import "BackgroundViewCell.h"
 
-//: @interface NTESContactDataCell : FFFContactDataCell
+//: @interface NTESContactDataCell : PushContactDataCell
 @interface CrossViewCell : BackgroundViewCell
 
 //: @end

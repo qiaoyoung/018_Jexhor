@@ -12,7 +12,7 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @interface FFFMediaItem : NSObject
+//: @interface PushMediaItem : NSObject
 @interface RecordAlbumItem : NSObject
 
 //: @property (nonatomic,assign) SEL selctor;
@@ -27,7 +27,7 @@
 //: @property (nonatomic,copy) NSString *title;
 @property (nonatomic,copy) NSString *title;
 
-//: + (FFFMediaItem *)item:(NSString *)selector
+//: + (PushMediaItem *)item:(NSString *)selector
 + (RecordAlbumItem *)record:(NSString *)selector
            //: normalImage:(UIImage *)normalImage
            reloadByCount:(UIImage *)normalImage

@@ -9,7 +9,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMessageCellFactory.h"
+//: #import "PushMessageCellFactory.h"
 #import "ConcealedVideo.h"
 //: #import "NTESTimestampCell.h"
 #import "HeritageViewCell.h"
@@ -19,17 +19,17 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface NTESMessageCellFactory : FFFMessageCellFactory
+//: @interface NTESMessageCellFactory : PushMessageCellFactory
 @interface EliteCellFactory : ConcealedVideo
 
 //: - (NTESMergeMessageCell *)ntesCellInTable:(UITableView*)tableView
 - (OfImportMessageCell *)earlier:(UITableView*)tableView
-                           //: forMessageMode:(FFFMessageModel *)model;
+                           //: forMessageMode:(PushMessageModel *)model;
                            plant:(PurseModel *)model;
 
 //: - (NTESTimestampCell *)ntesCellInTable:(UITableView *)tableView
 - (HeritageViewCell *)immobiliseModel:(UITableView *)tableView
-                          //: forTimeModel:(FFFTimestampModel *)model;
+                          //: forTimeModel:(PushTimestampModel *)model;
                           cellModel:(PushSharedNeed *)model;
 
 //: @end

@@ -170,7 +170,7 @@ Byte dream_whichValue[] = {19, 19, 4, 111, 119, 101, 110, 95, 121, 102, 105, 100
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"activity_safe_setting_modify"];
+    //: labtitle.text = [PushLanguageManager getTextWithKey:@"activity_safe_setting_modify"];
     labtitle.text = [BackgroundRandomAttribute content:StringFromJumpData(m_venueFormat)];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -198,7 +198,7 @@ Byte dream_whichValue[] = {19, 19, 4, 111, 119, 101, 110, 95, 121, 102, 105, 100
     self.textfile_1.font = [UIFont systemFontOfSize:16];
     //: self.textfile_1.textColor = [UIColor colorWithHexString:@"#333333"];
     self.textfile_1.textColor = [UIColor user:StringFromJumpData(kNorthernNameTitle)];
-    //: self.textfile_1.placeholder = [FFFLanguageManager getTextWithKey:@"register_account_activity_account"];
+    //: self.textfile_1.placeholder = [PushLanguageManager getTextWithKey:@"register_account_activity_account"];
     self.textfile_1.placeholder = [BackgroundRandomAttribute content:StringFromJumpData(mainUserName)];
 //    self.textfile_1.delegate = self;
     //: [view1 addSubview:self.textfile_1];
@@ -227,7 +227,7 @@ Byte dream_whichValue[] = {19, 19, 4, 111, 119, 101, 110, 95, 121, 102, 105, 100
     self.textfile_2.font = [UIFont systemFontOfSize:16];
     //: self.textfile_2.textColor = [UIColor colorWithHexString:@"#333333"];
     self.textfile_2.textColor = [UIColor user:StringFromJumpData(kNorthernNameTitle)];
-    //: self.textfile_2.placeholder = [FFFLanguageManager getTextWithKey:@"activity_modify_new"];
+    //: self.textfile_2.placeholder = [PushLanguageManager getTextWithKey:@"activity_modify_new"];
     self.textfile_2.placeholder = [BackgroundRandomAttribute content:StringFromJumpData(dream_whichValue)];
 //    self.textfile_2.delegate = self;
     //: self.textfile_2.secureTextEntry = YES;
@@ -272,7 +272,7 @@ Byte dream_whichValue[] = {19, 19, 4, 111, 119, 101, 110, 95, 121, 102, 105, 100
     self.textfile_3.font = [UIFont systemFontOfSize:16];
     //: self.textfile_3.textColor = [UIColor colorWithHexString:@"#333333"];
     self.textfile_3.textColor = [UIColor user:StringFromJumpData(kNorthernNameTitle)];
-    //: self.textfile_3.placeholder = [FFFLanguageManager getTextWithKey:@"activity_modify_new_again"];
+    //: self.textfile_3.placeholder = [PushLanguageManager getTextWithKey:@"activity_modify_new_again"];
     self.textfile_3.placeholder = [BackgroundRandomAttribute content:StringFromJumpData(dream_keyName)];
 //    self.textfile_3.delegate = self;
     //: self.textfile_3.secureTextEntry = YES;
@@ -302,7 +302,7 @@ Byte dream_whichValue[] = {19, 19, 4, 111, 119, 101, 110, 95, 121, 102, 105, 100
     emptyButton.titleLabel.font = [UIFont systemFontOfSize:15];
     //: [emptyButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [emptyButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [emptyButton setTitle:[FFFLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
+    //: [emptyButton setTitle:[PushLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
     [emptyButton setTitle:[BackgroundRandomAttribute content:StringFromJumpData(mainDepartMsg)] forState:UIControlStateNormal];
     //: [emptyButton addTarget:self action:@selector(commitButtonClick) forControlEvents:UIControlEventTouchUpInside];
     [emptyButton addTarget:self action:@selector(clickText) forControlEvents:UIControlEventTouchUpInside];
@@ -389,7 +389,7 @@ Byte dream_whichValue[] = {19, 19, 4, 111, 119, 101, 110, 95, 121, 102, 105, 100
         style.imageSize = CGSizeMake(20, 20);
         //: style.messageColor = [UIColor colorWithHexString:@"#5D5F66"];
         style.messageColor = [UIColor user:StringFromJumpData(dreamKeyContent)];
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"modify_activity_psw_no_same"] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:@"login_error"] style:style completion:nil];
+        //: [self.view makeToast:[PushLanguageManager getTextWithKey:@"modify_activity_psw_no_same"] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:@"login_error"] style:style completion:nil];
         [self.view makeToast:[BackgroundRandomAttribute content:StringFromJumpData(show_detectiveName)] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:StringFromJumpData(notiSodValue)] style:style completion:nil];
         //: return;
         return;
@@ -456,7 +456,7 @@ Byte dream_whichValue[] = {19, 19, 4, 111, 119, 101, 110, 95, 121, 102, 105, 100
         style.imageSize = CGSizeMake(20, 20);
         //: style.messageColor = [UIColor colorWithHexString:@"#5D5F66"];
         style.messageColor = [UIColor user:StringFromJumpData(dreamKeyContent)];
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:@"login_error"] style:style completion:nil];
+        //: [self.view makeToast:[PushLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:@"login_error"] style:style completion:nil];
         [self.view makeToast:[BackgroundRandomAttribute content:StringFromJumpData(userImageDismissName)] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:StringFromJumpData(notiSodValue)] style:style completion:nil];
     //: }];
     }];

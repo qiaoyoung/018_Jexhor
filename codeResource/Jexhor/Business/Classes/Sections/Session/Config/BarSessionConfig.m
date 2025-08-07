@@ -48,7 +48,7 @@
     return self;
 }
 
-//: - (id<FFFKitMessageProvider>)messageDataProvider
+//: - (id<PushKitMessageProvider>)messageDataProvider
 - (id<CountProvider>)sizeProvider
 {
     //: return self.provider;

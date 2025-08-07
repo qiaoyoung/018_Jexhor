@@ -46,7 +46,7 @@ PractitionerData showUnderStr = (PractitionerData){87, (Byte []){116, 17, 97, 17
 // __M_A_C_R_O__
 //: #import "NTESBlackListTableViewCell.h"
 #import "TingView.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "PushAvatarImageView.h"
 #import "ImageView.h"
 //: #import "UIView+NTES.h"
 #import "UIView+SearchedTeam.h"
@@ -134,7 +134,7 @@ PractitionerData showUnderStr = (PractitionerData){87, (Byte []){116, 17, 97, 17
 //         _cancleBtn.titleLabel.textAlignment = NSTextAlignmentRight;
     //: _cancleBtn.titleLabel.font = [UIFont systemFontOfSize:14];
     _cancleBtn.titleLabel.font = [UIFont systemFontOfSize:14];
-    //: [_cancleBtn setTitle:[FFFLanguageManager getTextWithKey:@"black_list_item_remove"] forState:(UIControlStateNormal)];
+    //: [_cancleBtn setTitle:[PushLanguageManager getTextWithKey:@"black_list_item_remove"] forState:(UIControlStateNormal)];
     [_cancleBtn setTitle:[BackgroundRandomAttribute content:StringFromPractitionerData(&dreamInputMessage)] forState:(UIControlStateNormal)];//移除
     //: [_cancleBtn addTarget:self action:@selector(onTouchButton) forControlEvents:(UIControlEventTouchUpInside)];
     [_cancleBtn addTarget:self action:@selector(searchedOption) forControlEvents:(UIControlEventTouchUpInside)];
@@ -187,7 +187,7 @@ PractitionerData showUnderStr = (PractitionerData){87, (Byte []){116, 17, 97, 17
 //    [_avatarImageView sd_setImageWithURL:[NSURL URLWithString:data.imageUrl] placeholderImage:nil];
 //    self.labName.text = data.nickname;
 
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:data.userId option:nil];
+    //: PushKitInfo *info = [[MyUserKit sharedKit] infoByUser:data.userId option:nil];
     DataTeam *info = [[Secret highlight] infoAndStraddleOption:data.userId item:nil];
     //: self.labName.text = info.showName;
     self.labName.text = info.showName;

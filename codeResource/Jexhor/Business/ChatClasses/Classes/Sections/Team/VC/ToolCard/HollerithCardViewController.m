@@ -30,18 +30,18 @@ Byte user_stormValue[] = {49, 13, 8, 12, 131, 170, 120, 187, 108, 98, 95, 119, 1
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCardSelectedViewController.h"
+//: #import "PushTeamCardSelectedViewController.h"
 #import "HollerithCardViewController.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFTeamCartSetTableViewCell.h"
+//: #import "PushGlobalMacro.h"
+#import "PushGlobalMacro.h"
+//: #import "PushTeamCartSetTableViewCell.h"
 #import "ToolHorseCartView.h"
 
-//: @interface FFFTeamCardSelectedViewController ()<UITableViewDelegate, UITableViewDataSource>
+//: @interface PushTeamCardSelectedViewController ()<UITableViewDelegate, UITableViewDataSource>
 @interface HollerithCardViewController ()<UITableViewDelegate, UITableViewDataSource>
 
-//: @property (nonatomic, strong) NSMutableArray <id <FFFKitSelectCardData>> *datas;
-@property (nonatomic, strong) NSMutableArray <id <FFFKitSelectCardData>> *datas;
+//: @property (nonatomic, strong) NSMutableArray <id <PushKitSelectCardData>> *datas;
+@property (nonatomic, strong) NSMutableArray <id <PushKitSelectCardData>> *datas;
 
 //: @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UITableView *tableView;
@@ -58,16 +58,16 @@ Byte user_stormValue[] = {49, 13, 8, 12, 131, 170, 120, 187, 108, 98, 95, 119, 1
 //: @end
 @end
 
-//: @implementation FFFTeamCardSelectedViewController
+//: @implementation PushTeamCardSelectedViewController
 @implementation HollerithCardViewController
 
 //: + (instancetype)instanceWithTitle:(NSString *)title
 + (instancetype)date:(NSString *)title
-                            //: items:(NSMutableArray <id <FFFKitSelectCardData>> *)items
-                            with:(NSMutableArray <id <FFFKitSelectCardData>> *)items
+                            //: items:(NSMutableArray <id <PushKitSelectCardData>> *)items
+                            with:(NSMutableArray <id <PushKitSelectCardData>> *)items
                            //: result:(NIMSelectedCompletion)result {
                            elite:(NIMSelectedCompletion)result {
-    //: FFFTeamCardSelectedViewController *vc = [[FFFTeamCardSelectedViewController alloc] initWithItems:items];
+    //: PushTeamCardSelectedViewController *vc = [[PushTeamCardSelectedViewController alloc] initWithItems:items];
     HollerithCardViewController *vc = [[HollerithCardViewController alloc] initWithContent:items];
     //: vc.titleString = title ?: @"";
     vc.titleString = title ?: @"";
@@ -77,8 +77,8 @@ Byte user_stormValue[] = {49, 13, 8, 12, 131, 170, 120, 187, 108, 98, 95, 119, 1
     return vc;
 }
 
-//: - (instancetype)initWithItems:(NSMutableArray <id <FFFKitSelectCardData>> *)items {
-- (instancetype)initWithContent:(NSMutableArray <id <FFFKitSelectCardData>> *)items {
+//: - (instancetype)initWithItems:(NSMutableArray <id <PushKitSelectCardData>> *)items {
+- (instancetype)initWithContent:(NSMutableArray <id <PushKitSelectCardData>> *)items {
     //: if (self = [super init]) {
     if (self = [super init]) {
         //: _datas = items;
@@ -87,8 +87,8 @@ Byte user_stormValue[] = {49, 13, 8, 12, 131, 170, 120, 187, 108, 98, 95, 119, 1
         _selectedIndex = -1;
         //: __weak typeof(self) weakSelf = self;
         __weak typeof(self) weakSelf = self;
-        //: [items enumerateObjectsUsingBlock:^(id<FFFKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        [items enumerateObjectsUsingBlock:^(id<FFFKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        //: [items enumerateObjectsUsingBlock:^(id<PushKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [items enumerateObjectsUsingBlock:^(id<PushKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             //: if (obj.selected) {
             if (obj.selected) {
                 //: weakSelf.selectedIndex = idx;
@@ -184,8 +184,8 @@ Byte user_stormValue[] = {49, 13, 8, 12, 131, 170, 120, 187, 108, 98, 95, 119, 1
 - (void)existTag{
     //: if (_oriSelectedIndex != _selectedIndex) {
     if (_oriSelectedIndex != _selectedIndex) {
-        //: id <FFFKitSelectCardData> bodyData = _datas[_selectedIndex];
-        id <FFFKitSelectCardData> bodyData = _datas[_selectedIndex];
+        //: id <PushKitSelectCardData> bodyData = _datas[_selectedIndex];
+        id <PushKitSelectCardData> bodyData = _datas[_selectedIndex];
         //: if (_resultHandle) {
         if (_resultHandle) {
             //: _resultHandle(bodyData);
@@ -325,18 +325,18 @@ Byte user_stormValue[] = {49, 13, 8, 12, 131, 170, 120, 187, 108, 98, 95, 119, 1
 
 //: - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    //: id <FFFKitSelectCardData> bodyData = _datas[indexPath.section];
-    id <FFFKitSelectCardData> bodyData = _datas[indexPath.section];
+    //: id <PushKitSelectCardData> bodyData = _datas[indexPath.section];
+    id <PushKitSelectCardData> bodyData = _datas[indexPath.section];
 
 //    ToolHorseCartView *cell = [ToolHorseCartView cellWithTableView:tableView];
     //: NSString *identifier = [NSString stringWithFormat:@"ZMONTeamCartSet%ld",(long)indexPath.row];
     NSString *identifier = [NSString stringWithFormat:StringFromStormData(noti_snapData),(long)indexPath.row];
-    //: FFFTeamCartSetTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    //: PushTeamCartSetTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     ToolHorseCartView *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     //: if (!cell)
     if (!cell)
     {
-        //: cell = [[FFFTeamCartSetTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        //: cell = [[PushTeamCartSetTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         cell = [[ToolHorseCartView alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
 
@@ -359,8 +359,8 @@ Byte user_stormValue[] = {49, 13, 8, 12, 131, 170, 120, 187, 108, 98, 95, 119, 1
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     //: _selectedIndex = indexPath.section;
     _selectedIndex = indexPath.section;
-    //: [_datas enumerateObjectsUsingBlock:^(id<FFFKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-    [_datas enumerateObjectsUsingBlock:^(id<FFFKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    //: [_datas enumerateObjectsUsingBlock:^(id<PushKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [_datas enumerateObjectsUsingBlock:^(id<PushKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         //: BOOL selected = (idx == indexPath.section);
         BOOL selected = (idx == indexPath.section);
         //: [obj setSelected:selected];
@@ -407,7 +407,7 @@ Byte user_stormValue[] = {49, 13, 8, 12, 131, 170, 120, 187, 108, 98, 95, 119, 1
 //        btnClear.layer.cornerRadius = 24;
         //: btnClear.frame = CGRectMake(0, 20, [[UIScreen mainScreen] bounds].size.width-30, 48);
         btnClear.frame = CGRectMake(0, 20, [[UIScreen mainScreen] bounds].size.width-30, 48);
-        //: [btnClear setTitle:[FFFLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
+        //: [btnClear setTitle:[PushLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
         [btnClear setTitle:[BackgroundRandomAttribute content:StringFromStormData(kCenterText)] forState:UIControlStateNormal];
         //: [btnClear addTarget:self action:@selector(onDone) forControlEvents:UIControlEventTouchUpInside];
         [btnClear addTarget:self action:@selector(existTag) forControlEvents:UIControlEventTouchUpInside];

@@ -9,25 +9,25 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionConfigurator.h"
+//: #import "PushSessionConfigurator.h"
 #import "ClincherControl.h"
-//: #import "FFFSessionMsgDatasource.h"
+//: #import "PushSessionMsgDatasource.h"
 #import "ToTapDatasource.h"
-//: #import "FFFSessionInteractorImpl.h"
+//: #import "PushSessionInteractorImpl.h"
 #import "PossibilityImpl.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFMessageModel.h"
+//: #import "PushMessageModel.h"
 #import "PurseModel.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFSessionInteractorImpl.h"
+//: #import "PushGlobalMacro.h"
+#import "PushGlobalMacro.h"
+//: #import "PushSessionInteractorImpl.h"
 #import "PossibilityImpl.h"
-//: #import "FFFSessionDataSourceImpl.h"
+//: #import "PushSessionDataSourceImpl.h"
 #import "ColorBackground.h"
-//: #import "FFFSessionLayoutImpl.h"
+//: #import "PushSessionLayoutImpl.h"
 #import "BoundaryOnly.h"
-//: #import "FFFSessionTableAdapter.h"
+//: #import "PushSessionTableAdapter.h"
 #import "TeamDataAdapter.h"
 
 /*
@@ -57,36 +57,36 @@
             .......................................................................
  */
 
-//: @interface FFFSessionConfigurator()
+//: @interface PushSessionConfigurator()
 @interface ClincherControl()
 
-//: @property (nonatomic,strong) FFFSessionInteractorImpl *interactor;
+//: @property (nonatomic,strong) PushSessionInteractorImpl *interactor;
 @property (nonatomic,strong) PossibilityImpl *interactor;
 
-//: @property (nonatomic,strong) FFFSessionTableAdapter *tableAdapter;
+//: @property (nonatomic,strong) PushSessionTableAdapter *tableAdapter;
 @property (nonatomic,strong) TeamDataAdapter *tableAdapter;
 
 //: @end
 @end
 
-//: @implementation FFFSessionConfigurator
+//: @implementation PushSessionConfigurator
 @implementation ClincherControl
 
-//: - (void)setup:(FFFSessionViewController *)vc
+//: - (void)setup:(PushSessionViewController *)vc
 - (void)big:(CenterBuildViewController *)vc
 {
     //: NIMSession *session = vc.session;
     NIMSession *session = vc.session;
-    //: id<FFFSessionConfig> sessionConfig = vc.sessionConfig;
+    //: id<PushSessionConfig> sessionConfig = vc.sessionConfig;
     id<CreateTop> sessionConfig = vc.sessionConfig;
     //: UITableView *tableView = vc.tableView;
     UITableView *tableView = vc.tableView;
-    //: FFFInputView *inputView = vc.sessionInputView;
+    //: PushInputView *inputView = vc.sessionInputView;
     MainContainerView *inputView = vc.sessionInputView;
 
-    //: FFFSessionDataSourceImpl *datasource = [[FFFSessionDataSourceImpl alloc] initWithSession:session config:sessionConfig];
+    //: PushSessionDataSourceImpl *datasource = [[PushSessionDataSourceImpl alloc] initWithSession:session config:sessionConfig];
     ColorBackground *datasource = [[ColorBackground alloc] initWithDomain:session size:sessionConfig];
-    //: FFFSessionLayoutImpl *layout = [[FFFSessionLayoutImpl alloc] initWithSession:session config:sessionConfig];
+    //: PushSessionLayoutImpl *layout = [[PushSessionLayoutImpl alloc] initWithSession:session config:sessionConfig];
     BoundaryOnly *layout = [[BoundaryOnly alloc] initWithMoreConfig:session assemblage:sessionConfig];
     //: layout.tableView = tableView;
     layout.tableView = tableView;
@@ -94,7 +94,7 @@
     layout.inputView = inputView;
 
 
-    //: _interactor = [[FFFSessionInteractorImpl alloc] initWithSession:session config:sessionConfig];
+    //: _interactor = [[PushSessionInteractorImpl alloc] initWithSession:session config:sessionConfig];
     _interactor = [[PossibilityImpl alloc] initWithLengthConfig:session can:sessionConfig];
     //: _interactor.delegate = vc;
     _interactor.delegate = vc;
@@ -106,7 +106,7 @@
     //: [layout setDelegate:_interactor];
     [layout setDelegate:_interactor];
 
-    //: _tableAdapter = [[FFFSessionTableAdapter alloc] init];
+    //: _tableAdapter = [[PushSessionTableAdapter alloc] init];
     _tableAdapter = [[TeamDataAdapter alloc] init];
     //: _tableAdapter.interactor = _interactor;
     _tableAdapter.interactor = _interactor;

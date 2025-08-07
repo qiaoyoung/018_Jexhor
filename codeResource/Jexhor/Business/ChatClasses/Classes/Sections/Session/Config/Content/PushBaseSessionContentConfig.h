@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFBaseSessionContentConfig.h
+//  PushBaseSessionContentConfig.h
 // Secret
 //
 //  Created by amao on 9/15/15.
@@ -13,8 +13,8 @@
 #import <Foundation/Foundation.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "PushGlobalMacro.h"
+#import "PushGlobalMacro.h"
 
 //: @protocol CCCSessionContentConfig <NSObject>
 @protocol RawDataVoice <NSObject>
@@ -39,7 +39,7 @@
 //: @end
 @end
 
-//: @interface FFFSessionContentConfigFactory : NSObject
+//: @interface PushSessionContentConfigFactory : NSObject
 @interface OffdSessionFactory : NSObject
 //: + (instancetype)sharedFacotry;
 + (instancetype)nearContent;

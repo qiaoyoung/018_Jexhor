@@ -9,7 +9,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "PushSessionMessageContentView.h"
 #import "MoldControl.h"
 
 //: @class M80AttributedLabel;
@@ -17,7 +17,7 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFReplyedTextContentView : FFFSessionMessageContentView
+//: @interface PushReplyedTextContentView : PushSessionMessageContentView
 @interface TextNameView : MoldControl
 
 //: @property (nonatomic, strong) M80AttributedLabel *textLabel;

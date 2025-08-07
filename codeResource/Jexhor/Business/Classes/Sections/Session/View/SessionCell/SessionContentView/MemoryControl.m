@@ -121,7 +121,7 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)model{
+//: - (void)refresh:(PushMessageModel *)model{
 - (void)name:(PurseModel *)model{
     //: [super refresh:model];
     [super name:model];
@@ -190,7 +190,7 @@
 {
     //: if ([self.delegate respondsToSelector:@selector(onCatchEvent:)]) {
     if ([self.delegate respondsToSelector:@selector(parametering:)]) {
-        //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+        //: PushKitEvent *event = [[PushKitEvent alloc] init];
         BeforeEvent *event = [[BeforeEvent alloc] init];
         //: event.eventName = NTESShowRedPacketDetailEvent;
         event.eventName = main_dataValue;

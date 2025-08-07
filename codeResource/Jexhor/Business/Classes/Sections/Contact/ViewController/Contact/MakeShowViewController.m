@@ -23,7 +23,7 @@
 //: back_arrow_bl
 @property (nonatomic, copy) NSString *m_randomTitle;
 
-//: #FFF6CF
+//: #Push6CF
 @property (nonatomic, copy) NSString *main_statusMsg;
 
 //: #999999
@@ -120,7 +120,7 @@
     return _appInsideContentCropFormat;
 }
 
-//: #FFF6CF
+//: #Push6CF
 - (NSString *)main_statusMsg {
     if (!_main_statusMsg) {
         Byte value[] = {7, 8, 12, 37, 24, 206, 89, 85, 70, 67, 54, 70, 70, 70, 35, 72};
@@ -211,7 +211,7 @@
 #import "MakeShowViewController.h"
 //: #import "UIView+Toast.h"
 #import "UIView+Toast.h"
-//: #import "FFFContactSelectViewController.h"
+//: #import "PushContactSelectViewController.h"
 #import "SwitchlyViewController.h"
 //: #import "UIView+NTES.h"
 #import "UIView+SearchedTeam.h"
@@ -299,7 +299,7 @@
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"black_list_activity_black"];
+    //: labtitle.text = [PushLanguageManager getTextWithKey:@"black_list_activity_black"];
     labtitle.text = [BackgroundRandomAttribute content:[GammaHydroxybutyrateData sharedInstance].notiCenterInsidePath];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -481,7 +481,7 @@
             }
         //: }else{
         }else{
-            //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_delete_fail"] duration:2.0f position:CSToastPositionCenter];
+            //: [wself.view makeToast:[PushLanguageManager getTextWithKey:@"friend_delete_fail"] duration:2.0f position:CSToastPositionCenter];
             [wself.view makeToast:[BackgroundRandomAttribute content:[GammaHydroxybutyrateData sharedInstance].kNameMessage] duration:2.0f position:CSToastPositionCenter];
         }
     //: }];
@@ -503,7 +503,7 @@
     config.filterIds = users;
     //: config.showSelectHeaderview = NO;
     config.showSelectHeaderview = NO;
-    //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+    //: PushContactSelectViewController *vc = [[PushContactSelectViewController alloc] initWithConfig:config];
     SwitchlyViewController *vc = [[SwitchlyViewController alloc] initWithBarBottom:config];
     //: vc.delegate = self;
     vc.delegate = self;
@@ -524,7 +524,7 @@
         [[NIMSDK sharedSDK].userManager addToBlackList:selectedContacts.firstObject completion:^(NSError *error) {
             //: if (!error) {
             if (!error) {
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"group_chat_avatar_activity_add_black_success"] duration:2.0 position:CSToastPositionCenter];
+                //: [wself.view makeToast:[PushLanguageManager getTextWithKey:@"group_chat_avatar_activity_add_black_success"] duration:2.0 position:CSToastPositionCenter];
                 [wself.view makeToast:[BackgroundRandomAttribute content:[GammaHydroxybutyrateData sharedInstance].main_contentIconKey] duration:2.0 position:CSToastPositionCenter];
                 //: wself.data = wself.myBlackListUser;
                 wself.data = wself.outLanguage;
@@ -532,7 +532,7 @@
                 [wself.tableView reloadData];
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2.0 position:CSToastPositionCenter];
+                //: [wself.view makeToast:[PushLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2.0 position:CSToastPositionCenter];
                 [wself.view makeToast:[BackgroundRandomAttribute content:[GammaHydroxybutyrateData sharedInstance].show_underContent] duration:2.0 position:CSToastPositionCenter];
             }
         //: }];
@@ -556,7 +556,7 @@
     for (NIMUser *user in [NIMSDK sharedSDK].userManager.myBlackList) {
         //: NTESContactDataMember *member = [[NTESContactDataMember alloc] init];
         InformationMember *member = [[InformationMember alloc] init];
-        //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:user.userId option:nil];
+        //: PushKitInfo *info = [[MyUserKit sharedKit] infoByUser:user.userId option:nil];
         DataTeam *info = [[Secret highlight] infoAndStraddleOption:user.userId item:nil];
         //: member.info = info;
         member.info = info;
@@ -575,7 +575,7 @@
     if(!_box){
         //: _box = [[UIView alloc]initWithFrame:CGRectMake(0, (44.0f + [UIDevice vg_statusBarHeight]), [[UIScreen mainScreen] bounds].size.width, 26)];
         _box = [[UIView alloc]initWithFrame:CGRectMake(0, (44.0f + [UIDevice title]), [[UIScreen mainScreen] bounds].size.width, 26)];
-        //: _box.backgroundColor = [UIColor colorWithHexString:@"#FFF6CF"];
+        //: _box.backgroundColor = [UIColor colorWithHexString:@"#Push6CF"];
         _box.backgroundColor = [UIColor user:[GammaHydroxybutyrateData sharedInstance].main_statusMsg];
 
         //: UIImageView *defImg = [[UIImageView alloc]initWithFrame:CGRectMake(15, 6, 14, 14)];
@@ -592,7 +592,7 @@
         //: subtitleLabel.textColor = [UIColor colorWithHexString:@"#FF483D"];
         subtitleLabel.textColor = [UIColor user:[GammaHydroxybutyrateData sharedInstance].appIconPath];
 //        subtitleLabel.textAlignment = NSTextAlignmentLeft;
-        //: subtitleLabel.text = [FFFLanguageManager getTextWithKey:@"black_list_activity_black_list_tip"];
+        //: subtitleLabel.text = [PushLanguageManager getTextWithKey:@"black_list_activity_black_list_tip"];
         subtitleLabel.text = [BackgroundRandomAttribute content:[GammaHydroxybutyrateData sharedInstance].dream_threadPath];
         //: [_box addSubview:subtitleLabel];
         [_box addSubview:subtitleLabel];
@@ -627,7 +627,7 @@
         emptyTipLabel.textAlignment = NSTextAlignmentCenter;
         //: [_defView addSubview:emptyTipLabel];
         [_defView addSubview:emptyTipLabel];
-        //: emptyTipLabel.text = [FFFLanguageManager getTextWithKey:@"group_info_activity_without"];
+        //: emptyTipLabel.text = [PushLanguageManager getTextWithKey:@"group_info_activity_without"];
         emptyTipLabel.text = [BackgroundRandomAttribute content:[GammaHydroxybutyrateData sharedInstance].dream_equalImageMessageName];
 
 

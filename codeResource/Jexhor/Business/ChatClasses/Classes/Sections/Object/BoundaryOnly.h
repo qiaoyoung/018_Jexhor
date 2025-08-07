@@ -9,23 +9,23 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionConfigurator.h"
+//: #import "PushSessionConfigurator.h"
 #import "ClincherControl.h"
-//: #import "FFFSessionPrivateProtocol.h"
-#import "FFFSessionPrivateProtocol.h"
+//: #import "PushSessionPrivateProtocol.h"
+#import "PushSessionPrivateProtocol.h"
 
-//: @interface FFFSessionLayoutImpl : NSObject<NIMSessionLayout>
+//: @interface PushSessionLayoutImpl : NSObject<NIMSessionLayout>
 @interface BoundaryOnly : NSObject<DeviceLayout>
 
 //: @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) UITableView *tableView;
 
-//: @property (nonatomic,strong) FFFInputView *inputView;
+//: @property (nonatomic,strong) PushInputView *inputView;
 @property (nonatomic,strong) MainContainerView *inputView;
 
 //: - (instancetype)initWithSession:(NIMSession *)session
 - (instancetype)initWithMoreConfig:(NIMSession *)session
-                         //: config:(id<FFFSessionConfig>)sessionConfig;
+                         //: config:(id<PushSessionConfig>)sessionConfig;
                          assemblage:(id<CreateTop>)sessionConfig;
 
 //: @end

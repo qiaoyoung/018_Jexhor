@@ -9,14 +9,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTimestampModel.h"
+//: #import "PushTimestampModel.h"
 #import "PushSharedNeed.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "InsertView+Secret.h"
-//: #import "FFFKitUtil.h"
+//: #import "PushKitUtil.h"
 #import "KitUtil.h"
 
-//: @implementation FFFTimestampModel
+//: @implementation PushTimestampModel
 @implementation PushSharedNeed
 
 //: - (instancetype)init{

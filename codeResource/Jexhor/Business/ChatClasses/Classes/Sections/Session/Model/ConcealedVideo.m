@@ -52,7 +52,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFMessageCellMaker.m
+//  PushMessageCellMaker.m
 // Secret
 //
 //  Created by chris.
@@ -60,28 +60,28 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMessageCellFactory.h"
+//: #import "PushMessageCellFactory.h"
 #import "ConcealedVideo.h"
-//: #import "FFFMessageModel.h"
+//: #import "PushMessageModel.h"
 #import "PurseModel.h"
-//: #import "FFFTimestampModel.h"
+//: #import "PushTimestampModel.h"
 #import "PushSharedNeed.h"
-//: #import "FFFSessionAudioContentView.h"
+//: #import "PushSessionAudioContentView.h"
 #import "ReadControl.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
-//: #import "FFFKitAudioCenter.h"
+//: #import "PushKitAudioCenter.h"
 #import "PushOutCenter.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 
-//: @interface FFFMessageCellFactory()
+//: @interface PushMessageCellFactory()
 @interface ConcealedVideo()
 
 //: @end
 @end
 
-//: @implementation FFFMessageCellFactory
+//: @implementation PushMessageCellFactory
 @implementation ConcealedVideo
 
 //: - (instancetype)init
@@ -102,42 +102,42 @@
 
 }
 
-//: - (FFFMessageCell *)cellInTable:(UITableView*)tableView
+//: - (PushMessageCell *)cellInTable:(UITableView*)tableView
 - (BroadcastTouchCellView *)view:(UITableView*)tableView
-                 //: forMessageMode:(FFFMessageModel *)model
+                 //: forMessageMode:(PushMessageModel *)model
                  secret:(PurseModel *)model
 {
-    //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+    //: id<PushCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
     id<MessageImageContainer> layoutConfig = [[Secret highlight] layoutConfig];
     //: NSString *identity = [layoutConfig cellContent:model];
     NSString *identity = [layoutConfig mark:model];
-    //: FFFMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
+    //: PushMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
     BroadcastTouchCellView *cell = [tableView dequeueReusableCellWithIdentifier:identity];
     //: if (!cell) {
     if (!cell) {
-        //: NSString *clz = @"FFFAdvancedMessageCell";
+        //: NSString *clz = @"PushAdvancedMessageCell";
         NSString *clz = @"GetAcrossView";
         //: [tableView registerClass:NSClassFromString(clz) forCellReuseIdentifier:identity];
         [tableView registerClass:NSClassFromString(clz) forCellReuseIdentifier:identity];
         //: cell = [tableView dequeueReusableCellWithIdentifier:identity];
         cell = [tableView dequeueReusableCellWithIdentifier:identity];
     }
-    //: return (FFFMessageCell *)cell;
+    //: return (PushMessageCell *)cell;
     return (BroadcastTouchCellView *)cell;
 }
 
-//: - (FFFSessionTimestampCell *)cellInTable:(UITableView *)tableView
+//: - (PushSessionTimestampCell *)cellInTable:(UITableView *)tableView
 - (NeedView *)hideDown:(UITableView *)tableView
-                            //: forTimeModel:(FFFTimestampModel *)model
+                            //: forTimeModel:(PushTimestampModel *)model
                             color:(PushSharedNeed *)model
 {
     //: NSString *identity = @"time";
     NSString *identity = [[DismissData sharedInstance] notiTossPath];
-    //: FFFSessionTimestampCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
+    //: PushSessionTimestampCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
     NeedView *cell = [tableView dequeueReusableCellWithIdentifier:identity];
     //: if (!cell) {
     if (!cell) {
-        //: NSString *clz = @"FFFSessionTimestampCell";
+        //: NSString *clz = @"PushSessionTimestampCell";
         NSString *clz = @"NeedView";
         //: [tableView registerClass:NSClassFromString(clz) forCellReuseIdentifier:identity];
         [tableView registerClass:NSClassFromString(clz) forCellReuseIdentifier:identity];
@@ -146,7 +146,7 @@
     }
     //: [cell refreshData:model];
     [cell transitionData:model];
-    //: return (FFFSessionTimestampCell *)cell;
+    //: return (PushSessionTimestampCell *)cell;
     return (NeedView *)cell;
 }
 

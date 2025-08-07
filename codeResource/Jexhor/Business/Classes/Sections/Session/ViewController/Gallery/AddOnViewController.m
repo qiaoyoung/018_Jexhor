@@ -179,7 +179,7 @@ typedef struct {
 #import "UIView+Toast.h"
 //: #import "UIAlertView+NTESBlock.h"
 #import "UIAlertView+Collection.h"
-//: #import "FFFKitAuthorizationTool.h"
+//: #import "PushKitAuthorizationTool.h"
 #import "BuildEnableTool.h"
 //: #import <SDWebImageFLPlugin/SDWebImageFLPlugin.h>
 #import <SDWebImageFLPlugin/SDWebImageFLPlugin.h>
@@ -638,27 +638,27 @@ typedef struct {
 //    }else{
         //: UIImage *image = [self imageWithPath:self.imagePath];
         UIImage *image = [self name:self.imagePath];
-        //: [FFFKitAuthorizationTool requestPhotoLibraryAuthorization:^(FFFKitAuthorizationStatus status) {
-        [BuildEnableTool groupDiscussion:^(FFFKitAuthorizationStatus status) {
+        //: [PushKitAuthorizationTool requestPhotoLibraryAuthorization:^(PushKitAuthorizationStatus status) {
+        [BuildEnableTool groupDiscussion:^(PushKitAuthorizationStatus status) {
             //: switch (status) {
             switch (status) {
-                //: case FFFKitAuthorizationStatusAuthorized:
-                case FFFKitAuthorizationStatusAuthorized:
+                //: case PushKitAuthorizationStatusAuthorized:
+                case PushKitAuthorizationStatusAuthorized:
                     //: UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), NULL);
                     UIImageWriteToSavedPhotosAlbum(image, self, @selector(value:ting:extra:), NULL);
                     //: break;
                     break;
                 //: default:
                 default:
-                    //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"setting_privacy"] duration:2.0 position:CSToastPositionCenter];
+                    //: [self.view makeToast:[PushLanguageManager getTextWithKey:@"setting_privacy"] duration:2.0 position:CSToastPositionCenter];
                     [self.view makeToast:[BackgroundRandomAttribute content:[ChildData sharedInstance].show_childMsg] duration:2.0 position:CSToastPositionCenter];
-                    //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy"] preferredStyle:UIAlertControllerStyleAlert];
+                    //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[PushLanguageManager getTextWithKey:@"warm_prompt"] message:[PushLanguageManager getTextWithKey:@"setting_privacy"] preferredStyle:UIAlertControllerStyleAlert];
                     UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[BackgroundRandomAttribute content:[ChildData sharedInstance].mainButtTitle] message:[BackgroundRandomAttribute content:[ChildData sharedInstance].show_childMsg] preferredStyle:UIAlertControllerStyleAlert];
-                    //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+                    //: [alertControl addAction:([UIAlertAction actionWithTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
                     [alertControl addAction:([UIAlertAction actionWithTitle:[BackgroundRandomAttribute content:[ChildData sharedInstance].notiAllyPressedIdent] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
                     //: }])];
                     }])];
-                    //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                    //: [alertControl addAction:([UIAlertAction actionWithTitle:[PushLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                     [alertControl addAction:([UIAlertAction actionWithTitle:[BackgroundRandomAttribute content:[ChildData sharedInstance].mMilkTitle] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                         //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
                         NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
@@ -685,7 +685,7 @@ typedef struct {
 //: - (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo
 - (void)value:(UIImage *)image ting:(NSError *)error extra:(void *)contextInfo
 {
-    //: NSString *toast = (!image || error)?[FFFLanguageManager getTextWithKey:@"group_info_activity_update_success"] :[FFFLanguageManager getTextWithKey:@"group_info_activity_update_failed"];
+    //: NSString *toast = (!image || error)?[PushLanguageManager getTextWithKey:@"group_info_activity_update_success"] :[PushLanguageManager getTextWithKey:@"group_info_activity_update_failed"];
     NSString *toast = (!image || error)?[BackgroundRandomAttribute content:[ChildData sharedInstance].mainCustodyMsg] :[BackgroundRandomAttribute content:[ChildData sharedInstance].m_empireData];
     //: [self.view makeToast:toast duration:2.0 position:CSToastPositionCenter];
     [self.view makeToast:toast duration:2.0 position:CSToastPositionCenter];

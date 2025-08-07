@@ -12,7 +12,7 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @interface FFFKitKeyboardInfo : NSObject
+//: @interface PushKitKeyboardInfo : NSObject
 @interface TitleRandom : NSObject
 
 //是否可见

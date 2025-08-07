@@ -9,12 +9,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "PushSessionMessageContentView.h"
 #import "MoldControl.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "PushKitDependency.h"
+#import "PushKitDependency.h"
 
-//: @interface FFFSessionNetChatNotifyContentView : FFFSessionMessageContentView
+//: @interface PushSessionNetChatNotifyContentView : PushSessionMessageContentView
 @interface ControlView : MoldControl
 
 //: @property (nonatomic, strong) M80AttributedLabel *textLabel;

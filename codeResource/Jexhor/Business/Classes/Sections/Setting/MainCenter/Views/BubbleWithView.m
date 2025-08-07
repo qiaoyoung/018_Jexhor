@@ -246,7 +246,7 @@ typedef struct {
         _titleLabel.textColor = [UIColor user:[ResembleData mainEmotionId]];
         //: _titleLabel.textAlignment = NSTextAlignmentCenter;
         _titleLabel.textAlignment = NSTextAlignmentCenter;
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"];
+        //: _titleLabel.text = [PushLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"];
         _titleLabel.text = [BackgroundRandomAttribute content:[ResembleData kNorthernValue]];
     }
     //: return _titleLabel;
@@ -270,7 +270,7 @@ typedef struct {
         labtitle1.font = [UIFont systemFontOfSize:14.f];
         //: labtitle1.textColor = [UIColor colorWithHexString:@"#333333"];
         labtitle1.textColor = [UIColor user:[ResembleData app_cellName]];
-        //: labtitle1.text = [FFFLanguageManager getTextWithKey:@"account_delete_tip1"];
+        //: labtitle1.text = [PushLanguageManager getTextWithKey:@"account_delete_tip1"];
         labtitle1.text = [BackgroundRandomAttribute content:[ResembleData notiWonderfulPath]];
         //: labtitle1.numberOfLines = 0;
         labtitle1.numberOfLines = 0;
@@ -285,7 +285,7 @@ typedef struct {
         labsubtitle1.font = [UIFont systemFontOfSize:14.f];
         //: labsubtitle1.textColor = [UIColor colorWithHexString:@"#333333"];
         labsubtitle1.textColor = [UIColor user:[ResembleData app_cellName]];
-        //: labsubtitle1.text = [FFFLanguageManager getTextWithKey:@"account_delete_tip2"];
+        //: labsubtitle1.text = [PushLanguageManager getTextWithKey:@"account_delete_tip2"];
         labsubtitle1.text = [BackgroundRandomAttribute content:[ResembleData user_infoEthnicName]];
         //: labsubtitle1.numberOfLines = 0;
         labsubtitle1.numberOfLines = 0;
@@ -311,7 +311,7 @@ typedef struct {
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor user:[ResembleData user_recipientUrl]] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[BackgroundRandomAttribute content:[ResembleData dreamTheaterDisplayMessage]] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -338,7 +338,7 @@ typedef struct {
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[BackgroundRandomAttribute content:[ResembleData dreamButtonPath]] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#FF483D"];
         _sureBtn.backgroundColor = [UIColor user:[ResembleData showJuryPath]];

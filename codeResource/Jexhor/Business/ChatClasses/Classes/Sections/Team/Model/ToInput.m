@@ -67,12 +67,12 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamInfoData.h"
+//: #import "PushTeamInfoData.h"
 #import "ToInput.h"
-//: #import "FFFSpellingCenter.h"
+//: #import "PushSpellingCenter.h"
 #import "ViewCenter.h"
 
-//: @implementation FFFTeamInfoData
+//: @implementation PushTeamInfoData
 @implementation ToInput
 
 //: - (instancetype)initWithTeam:(NIMTeam *)team{
@@ -94,7 +94,7 @@ typedef struct {
 
 //: - (NSString *)groupTitle{
 - (NSString *)groupTitle{
-    //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.teamName].capitalizedString;
+    //: NSString *title = [[PushSpellingCenter sharedCenter] firstLetter:self.teamName].capitalizedString;
     NSString *title = [[ViewCenter centerStage] premierCurrentDeadLetter:self.teamName].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
@@ -118,7 +118,7 @@ typedef struct {
 
 //: - (id)sortKey{
 - (id)sortKey{
-    //: return [[FFFSpellingCenter sharedCenter] spellingForString:self.teamName].shortSpelling;
+    //: return [[PushSpellingCenter sharedCenter] spellingForString:self.teamName].shortSpelling;
     return [[ViewCenter centerStage] total:self.teamName].shortSpelling;
 }
 

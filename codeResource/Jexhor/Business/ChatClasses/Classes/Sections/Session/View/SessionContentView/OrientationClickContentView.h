@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "PushSessionMessageContentView.h"
 #import "MoldControl.h"
 
-//: @interface FFFSessionNotificationContentView : FFFSessionMessageContentView
+//: @interface PushSessionNotificationContentView : PushSessionMessageContentView
 @interface OrientationClickContentView : MoldControl
 
 //: @property (strong, nonatomic) UILabel *label;

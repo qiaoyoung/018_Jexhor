@@ -110,12 +110,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitSetting.h"
+//: #import "PushKitSetting.h"
 #import "SchoolbagTaskSurroundingsBlock.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
 
-//: @implementation FFFKitSetting
+//: @implementation PushKitSetting
 @implementation SchoolbagTaskSurroundingsBlock
 
 //: - (instancetype)init:(BOOL)isRight

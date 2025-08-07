@@ -360,7 +360,7 @@ typedef struct {
     addBtn.titleLabel.font = [UIFont systemFontOfSize:16];
     //: [addBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [addBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [addBtn setTitle:[FFFLanguageManager getTextWithKey:@"add_friend_activity_add_friend"] forState:UIControlStateNormal];
+    //: [addBtn setTitle:[PushLanguageManager getTextWithKey:@"add_friend_activity_add_friend"] forState:UIControlStateNormal];
     [addBtn setTitle:[BackgroundRandomAttribute content:[MotData userJumpTheaterText]] forState:UIControlStateNormal];
     //: addBtn.backgroundColor = [UIColor colorWithHexString:@"#05D481"];
     addBtn.backgroundColor = [UIColor user:[MotData user_centerName]];
@@ -409,7 +409,7 @@ typedef struct {
             NSDictionary *data = [resultDict already:[MotData kMessageText]];
             //: NSString *account = [data newStringValueForKey:@"account"];
             NSString *account = [data index:[MotData userViewKey]];
-            //: self.account.text = [NSString stringWithFormat:@"%@%@",[FFFLanguageManager getTextWithKey:@"friend_info_activity_account"], account];
+            //: self.account.text = [NSString stringWithFormat:@"%@%@",[PushLanguageManager getTextWithKey:@"friend_info_activity_account"], account];
             self.account.text = [NSString stringWithFormat:@"%@%@",[BackgroundRandomAttribute content:[MotData noti_buildMsg]], account];
         }
 
@@ -438,13 +438,13 @@ typedef struct {
     //: request.message = tempVerificationInfo.length > 0 ? tempVerificationInfo : @"";
     request.message = tempVerificationInfo.length > 0 ? tempVerificationInfo : @"";
 
-    //: NSString *contact_tag_fragment_add_success = [FFFLanguageManager getTextWithKey:@"contact_tag_fragment_add_success"];
+    //: NSString *contact_tag_fragment_add_success = [PushLanguageManager getTextWithKey:@"contact_tag_fragment_add_success"];
     NSString *contact_tag_fragment_add_success = [BackgroundRandomAttribute content:[MotData m_custodyVoiceMsg]];//@"添加成功".ntes_localized
-    //: NSString *request_successful = [FFFLanguageManager getTextWithKey:@"request_successful"];
+    //: NSString *request_successful = [PushLanguageManager getTextWithKey:@"request_successful"];
     NSString *request_successful = [BackgroundRandomAttribute content:[MotData user_chiefDistractName]];//@"请求成功".ntes_localized
-    //: NSString *add_friend_add_fail = [FFFLanguageManager getTextWithKey:@"add_friend_add_fail"];
+    //: NSString *add_friend_add_fail = [PushLanguageManager getTextWithKey:@"add_friend_add_fail"];
     NSString *add_friend_add_fail = [BackgroundRandomAttribute content:[MotData noti_infoMsg]];//@"添加失败".ntes_localized
-    //: NSString *add_friend_request_fail = [FFFLanguageManager getTextWithKey:@"add_friend_request_fail"];
+    //: NSString *add_friend_request_fail = [PushLanguageManager getTextWithKey:@"add_friend_request_fail"];
     NSString *add_friend_request_fail = [BackgroundRandomAttribute content:[MotData mainContainerPath]];//@"请求失败".ntes_localized
     //: NSString *successText = request.operation == NIMUserOperationAdd ? contact_tag_fragment_add_success: request_successful;
     NSString *successText = request.operation == NIMUserOperationAdd ? contact_tag_fragment_add_success: request_successful;

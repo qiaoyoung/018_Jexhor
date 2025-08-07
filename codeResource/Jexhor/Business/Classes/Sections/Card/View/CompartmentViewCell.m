@@ -84,8 +84,8 @@
 #import "CompartmentViewCell.h"
 //: #import "UIView+NTES.h"
 #import "UIView+SearchedTeam.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "PushCommonTableData.h"
+#import "PushCommonTableData.h"
 
 //: @interface NTESColorButtonCell()
 @interface CompartmentViewCell()

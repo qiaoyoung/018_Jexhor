@@ -9,20 +9,20 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionNotificationContentView.h"
+//: #import "PushSessionNotificationContentView.h"
 #import "OrientationClickContentView.h"
-//: #import "FFFMessageModel.h"
+//: #import "PushMessageModel.h"
 #import "PurseModel.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFKitUtil.h"
+//: #import "PushKitUtil.h"
 #import "KitUtil.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
 
-//: @implementation FFFSessionNotificationContentView
+//: @implementation PushSessionNotificationContentView
 @implementation OrientationClickContentView
 
 //: - (instancetype)initSessionMessageContentView
@@ -41,14 +41,14 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)model
+//: - (void)refresh:(PushMessageModel *)model
 - (void)name:(PurseModel *)model
 {
     //: [super refresh:model];
     [super name:model];
-    //: self.label.text = [FFFKitUtil messageTipContent:model.message];
+    //: self.label.text = [PushKitUtil messageTipContent:model.message];
     self.label.text = [KitUtil with:model.message];
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:model.message];
+    //: PushKitSetting *setting = [[MyUserKit sharedKit].config setting:model.message];
     SchoolbagTaskSurroundingsBlock *setting = [[Secret highlight].config click:model.message];
 
     //: self.label.textColor = setting.textColor;

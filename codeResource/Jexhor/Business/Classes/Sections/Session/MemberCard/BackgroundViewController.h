@@ -13,9 +13,9 @@
 #import <UIKit/UIKit.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFTeamMemberListDataSource.h"
+//: #import "PushTeamMemberListDataSource.h"
 #import "ShouldBackground.h"
-//: #import "FFFTeamListDataManager.h"
+//: #import "PushTeamListDataManager.h"
 #import "MainRead.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 //: @interface TeamMemberNormalViewController : UIViewController
 @interface BackgroundViewController : UIViewController
 
-//: @property (nonatomic,strong) FFFTeamListDataManager *teamListManager;
+//: @property (nonatomic,strong) PushTeamListDataManager *teamListManager;
 @property (nonatomic,strong) MainRead *teamListManager;
 
 //: @end

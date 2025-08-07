@@ -54,7 +54,7 @@ Byte notiPickFormat[] = {44, 4, 95, 9, 24, 107, 236, 85, 72, 195, 192, 211, 192,
 #import "ReadUtil.h"
 //: #import "M80AttributedLabel.h"
 #import "InsertView.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "PushKitInfoFetchOption.h"
 #import "AttributeQuantityOption.h"
 
 //: @interface NTESRedPacketTipAttachment()
@@ -141,7 +141,7 @@ Byte notiPickFormat[] = {44, 4, 95, 9, 24, 107, 236, 85, 72, 195, 192, 211, 192,
     //: NSString * currentUserId = [[NIMSDK sharedSDK].loginManager currentAccount];
     NSString * currentUserId = [[NIMSDK sharedSDK].loginManager currentAccount];
     // 领取别人的红包
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: PushKitInfoFetchOption *option = [[PushKitInfoFetchOption alloc] init];
     AttributeQuantityOption *option = [[AttributeQuantityOption alloc] init];
     //: option.message = self.message;
     option.message = self.message;
@@ -165,7 +165,7 @@ Byte notiPickFormat[] = {44, 4, 95, 9, 24, 107, 236, 85, 72, 195, 192, 211, 192,
     //: else if ([currentUserId isEqualToString:self.openPacketId])
     else if ([currentUserId isEqualToString:self.openPacketId])
     {
-        //: FFFKitInfo * sendUserInfo = [[MyUserKit sharedKit] infoByUser:self.sendPacketId option:option];
+        //: PushKitInfo * sendUserInfo = [[MyUserKit sharedKit] infoByUser:self.sendPacketId option:option];
         DataTeam * sendUserInfo = [[Secret highlight] infoAndStraddleOption:self.sendPacketId item:option];
         //: NSString * name = sendUserInfo.showName;
         NSString * name = sendUserInfo.showName;
@@ -183,7 +183,7 @@ Byte notiPickFormat[] = {44, 4, 95, 9, 24, 107, 236, 85, 72, 195, 192, 211, 192,
     //: else if ([currentUserId isEqualToString:self.sendPacketId])
     else if ([currentUserId isEqualToString:self.sendPacketId])
     {
-        //: FFFKitInfo * openUserInfo = [[MyUserKit sharedKit] infoByUser:self.openPacketId option:option];
+        //: PushKitInfo * openUserInfo = [[MyUserKit sharedKit] infoByUser:self.openPacketId option:option];
         DataTeam * openUserInfo = [[Secret highlight] infoAndStraddleOption:self.openPacketId item:option];
         //: NSString * name = openUserInfo.showName;
         NSString * name = openUserInfo.showName;

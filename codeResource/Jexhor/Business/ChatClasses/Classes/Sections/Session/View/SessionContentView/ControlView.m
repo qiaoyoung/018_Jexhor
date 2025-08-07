@@ -9,20 +9,20 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionNetChatNotifyContentView.h"
+//: #import "PushSessionNetChatNotifyContentView.h"
 #import "ControlView.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "InsertView+Secret.h"
-//: #import "FFFMessageModel.h"
+//: #import "PushMessageModel.h"
 #import "PurseModel.h"
-//: #import "FFFKitUtil.h"
+//: #import "PushKitUtil.h"
 #import "KitUtil.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
 
-//: @implementation FFFSessionNetChatNotifyContentView
+//: @implementation PushSessionNetChatNotifyContentView
 @implementation ControlView
 
 //: -(instancetype)initSessionMessageContentView
@@ -47,15 +47,15 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data
+//: - (void)refresh:(PushMessageModel *)data
 - (void)name:(PurseModel *)data
 {
     //: [super refresh:data];
     [super name:data];
-    //: NSString *text = [FFFKitUtil messageTipContent:data.message];
+    //: NSString *text = [PushKitUtil messageTipContent:data.message];
     NSString *text = [KitUtil with:data.message];
 
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
+    //: PushKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
     SchoolbagTaskSurroundingsBlock *setting = [[Secret highlight].config click:data.message];
     //: self.textLabel.textColor = setting.textColor;;
     self.textLabel.textColor = setting.textColor;;

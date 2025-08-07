@@ -15,7 +15,7 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @protocol FFFKitMediaPickerDelegate <NSObject>
+//: @protocol PushKitMediaPickerDelegate <NSObject>
 @protocol AddDelegate <NSObject>
 
 //: - (void)onPickerSelectedWithType:(PHAssetMediaType)type

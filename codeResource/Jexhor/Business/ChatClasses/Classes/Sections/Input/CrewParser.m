@@ -18,9 +18,9 @@ Byte noti_milkText[] = {76, 29, 64, 4, 28, 27, 27, 33, 237, 58, 1, 237, 26, 240,
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputEmoticonParser.h"
+//: #import "PushInputEmoticonParser.h"
 #import "CrewParser.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "PushInputEmoticonManager.h"
 #import "DirectorManager.h"
 
 //: @implementation NIMInputTextToken
@@ -28,7 +28,7 @@ Byte noti_milkText[] = {76, 29, 64, 4, 28, 27, 27, 33, 237, 58, 1, 237, 26, 240,
 //: @end
 @end
 
-//: @interface FFFInputEmoticonParser ()
+//: @interface PushInputEmoticonParser ()
 @interface CrewParser ()
 //: @property (nonatomic,strong) NSCache *tokens;
 @property (nonatomic,strong) NSCache *tokens;
@@ -36,18 +36,18 @@ Byte noti_milkText[] = {76, 29, 64, 4, 28, 27, 27, 33, 237, 58, 1, 237, 26, 240,
 @end
 
 
-//: @implementation FFFInputEmoticonParser
+//: @implementation PushInputEmoticonParser
 @implementation CrewParser
 //: + (instancetype)currentParser
 + (instancetype)will
 {
-    //: static FFFInputEmoticonParser *instance = nil;
+    //: static PushInputEmoticonParser *instance = nil;
     static CrewParser *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFInputEmoticonParser alloc] init];
+        //: instance = [[PushInputEmoticonParser alloc] init];
         instance = [[CrewParser alloc] init];
     //: });
     });
@@ -124,7 +124,7 @@ Byte noti_milkText[] = {76, 29, 64, 4, 28, 27, 27, 33, 237, 58, 1, 237, 26, 240,
                        usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop) {
                            //: NSString *rangeText = [text substringWithRange:result.range];
                            NSString *rangeText = [text substringWithRange:result.range];
-                           //: if ([[FFFInputEmoticonManager sharedManager] emoticonByTag:rangeText])
+                           //: if ([[PushInputEmoticonManager sharedManager] emoticonByTag:rangeText])
                            if ([[DirectorManager statusFor] status:rangeText])
                            {
                                //: if (result.range.location > index)

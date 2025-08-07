@@ -33,11 +33,11 @@ Byte mainRecommendValue[] = {16, 17, 11, 172, 97, 57, 194, 220, 221, 43, 235, 10
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionTableAdapter.h"
+//: #import "PushSessionTableAdapter.h"
 #import "TeamDataAdapter.h"
-//: #import "FFFMessageModel.h"
+//: #import "PushMessageModel.h"
 #import "PurseModel.h"
-//: #import "FFFMessageCellFactory.h"
+//: #import "PushMessageCellFactory.h"
 #import "ConcealedVideo.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
@@ -46,16 +46,16 @@ Byte mainRecommendValue[] = {16, 17, 11, 172, 97, 57, 194, 220, 221, 43, 235, 10
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "InsertView+Secret.h"
 
-//: @interface FFFSessionTableAdapter()
+//: @interface PushSessionTableAdapter()
 @interface TeamDataAdapter()
 
-//: @property (nonatomic,strong) FFFMessageCellFactory *cellFactory;
+//: @property (nonatomic,strong) PushMessageCellFactory *cellFactory;
 @property (nonatomic,strong) ConcealedVideo *cellFactory;
 
 //: @end
 @end
 
-//: @implementation FFFSessionTableAdapter
+//: @implementation PushSessionTableAdapter
 @implementation TeamDataAdapter
 
 //: - (instancetype)init
@@ -65,7 +65,7 @@ Byte mainRecommendValue[] = {16, 17, 11, 172, 97, 57, 194, 220, 221, 43, 235, 10
     self = [super init];
     //: if (self) {
     if (self) {
-        //: _cellFactory = [[FFFMessageCellFactory alloc] init];
+        //: _cellFactory = [[PushMessageCellFactory alloc] init];
         _cellFactory = [[ConcealedVideo alloc] init];
     }
     //: return self;
@@ -93,20 +93,20 @@ Byte mainRecommendValue[] = {16, 17, 11, 172, 97, 57, 194, 220, 221, 43, 235, 10
     UITableViewCell *cell = nil;
     //: id model = [[self.interactor items] objectAtIndex:indexPath.row];
     id model = [[self.interactor ofItems] objectAtIndex:indexPath.row];
-    //: if ([model isKindOfClass:[FFFMessageModel class]]) {
+    //: if ([model isKindOfClass:[PushMessageModel class]]) {
     if ([model isKindOfClass:[PurseModel class]]) {
         //: cell = [self.cellFactory cellInTable:tableView
         cell = [self.cellFactory view:tableView
                                    //: forMessageMode:model];
                                    secret:model];
-        //: [(FFFMessageCell *)cell setDelegate:self.delegate];
+        //: [(PushMessageCell *)cell setDelegate:self.delegate];
         [(BroadcastTouchCellView *)cell setDelegate:self.delegate];
         //: [self.interactor willDisplayMessageModel:model];
         [self.interactor origin:model];
-        //: [(FFFMessageCell *)cell refreshData:model];
+        //: [(PushMessageCell *)cell refreshData:model];
         [(BroadcastTouchCellView *)cell message:model];
     }
-    //: else if ([model isKindOfClass:[FFFTimestampModel class]])
+    //: else if ([model isKindOfClass:[PushTimestampModel class]])
     else if ([model isKindOfClass:[PushSharedNeed class]])
     {
         //: cell = [self.cellFactory cellInTable:tableView
@@ -156,10 +156,10 @@ Byte mainRecommendValue[] = {16, 17, 11, 172, 97, 57, 194, 220, 221, 43, 235, 10
     CGFloat cellHeight = 0;
     //: id modelInArray = [[self.interactor items] objectAtIndex:indexPath.row];
     id modelInArray = [[self.interactor ofItems] objectAtIndex:indexPath.row];
-    //: if ([modelInArray isKindOfClass:[FFFMessageModel class]])
+    //: if ([modelInArray isKindOfClass:[PushMessageModel class]])
     if ([modelInArray isKindOfClass:[PurseModel class]])
     {
-        //: FFFMessageModel *model = (FFFMessageModel *)modelInArray;
+        //: PushMessageModel *model = (PushMessageModel *)modelInArray;
         PurseModel *model = (PurseModel *)modelInArray;
 
         // 撤回的消息 发送自定义消息
@@ -272,10 +272,10 @@ Byte mainRecommendValue[] = {16, 17, 11, 172, 97, 57, 194, 220, 221, 43, 235, 10
 
 
     }
-    //: else if ([modelInArray isKindOfClass:[FFFTimestampModel class]])
+    //: else if ([modelInArray isKindOfClass:[PushTimestampModel class]])
     else if ([modelInArray isKindOfClass:[PushSharedNeed class]])
     {
-        //: cellHeight = [(FFFTimestampModel *)modelInArray height];
+        //: cellHeight = [(PushTimestampModel *)modelInArray height];
         cellHeight = [(PushSharedNeed *)modelInArray height];
     }
     //: else

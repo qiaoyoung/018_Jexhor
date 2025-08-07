@@ -606,11 +606,11 @@
         return [NSDate showFormatter:self by:[[FrozenData sharedInstance] kViewTitle]];
     //: } else if ([components day] >= 2) {
     } else if ([components day] >= 2) {
-        //: return [FFFLanguageManager getTextWithKey:@"before_yesterday"];
+        //: return [PushLanguageManager getTextWithKey:@"before_yesterday"];
         return [BackgroundRandomAttribute content:[[FrozenData sharedInstance] userReinforceText]];
     //: } else if ([components day] >= 1) {
     } else if ([components day] >= 1) {
-        //: return [FFFLanguageManager getTextWithKey:@"yesterday"];
+        //: return [PushLanguageManager getTextWithKey:@"yesterday"];
         return [BackgroundRandomAttribute content:[[FrozenData sharedInstance] main_versionMilkFormat]];
     //: } else if ([components hour] > 0) {
     } else if ([components hour] > 0) {

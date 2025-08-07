@@ -11,20 +11,20 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFInputProtocol.h"
-#import "FFFInputProtocol.h"
-//: #import "FFFSessionConfig.h"
+//: #import "PushInputProtocol.h"
+#import "PushInputProtocol.h"
+//: #import "PushSessionConfig.h"
 #import "CreateTop.h"
-//: #import "FFFInputToolBar.h"
+//: #import "PushInputToolBar.h"
 #import "GildTheLilyView.h"
-//: #import "FFFInputAtCache.h"
+//: #import "PushInputAtCache.h"
 #import "VoiceSharedCache.h"
 
-//: @class FFFInputMoreContainerView;
+//: @class PushInputMoreContainerView;
 @class GhbView;
-//: @class FFFInputEmoticonContainerView;
+//: @class PushInputEmoticonContainerView;
 @class CrossView;
-//: @class FFFReplyContentView;
+//: @class PushReplyContentView;
 @class GoopView;
 
 
@@ -56,7 +56,7 @@ typedef NS_ENUM(NSInteger, NIMAudioRecordPhase) {
 //: @end
 @end
 
-//: @interface FFFInputView : UIView
+//: @interface PushInputView : UIView
 @interface MainContainerView : UIView
 
 //: @property (nonatomic, strong) NIMSession *session;
@@ -68,24 +68,24 @@ typedef NS_ENUM(NSInteger, NIMAudioRecordPhase) {
 //: @property (assign, nonatomic, getter=isRecording) BOOL recording;
 @property (assign, nonatomic, getter=isRecording) BOOL recording;
 
-//: @property (strong, nonatomic) FFFInputToolBar *toolBar;
+//: @property (strong, nonatomic) PushInputToolBar *toolBar;
 @property (strong, nonatomic) GildTheLilyView *toolBar;
-//: @property (strong, nonatomic) FFFInputMoreContainerView *moreContainer;
+//: @property (strong, nonatomic) PushInputMoreContainerView *moreContainer;
 @property (strong, nonatomic) GhbView *moreContainer;
 //: @property (strong, nonatomic) UIView *emoticonContainer;
 @property (strong, nonatomic) UIView *emoticonContainer;
 
-//: @property (nonatomic, strong) FFFReplyContentView *replyedContent;
+//: @property (nonatomic, strong) PushReplyContentView *replyedContent;
 @property (nonatomic, strong) GoopView *replyedContent;
 
 //: @property (nonatomic, assign) NIMInputStatus status;
 @property (nonatomic, assign) NIMInputStatus status;
-//: @property (nonatomic, strong) FFFInputAtCache *atCache;
+//: @property (nonatomic, strong) PushInputAtCache *atCache;
 @property (nonatomic, strong) VoiceSharedCache *atCache;
 
 //: - (instancetype)initWithFrame:(CGRect)frame
 - (instancetype)initWithTitle:(CGRect)frame
-                       //: config:(id<FFFSessionConfig>)config;
+                       //: config:(id<PushSessionConfig>)config;
                        emptySessionConfig:(id<CreateTop>)config;
 
 //: - (void)reset;

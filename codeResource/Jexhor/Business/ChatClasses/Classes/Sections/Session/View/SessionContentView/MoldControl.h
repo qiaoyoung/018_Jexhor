@@ -11,17 +11,17 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFKitEvent.h"
+//: #import "PushKitEvent.h"
 #import "BeforeEvent.h"
 
-//: typedef NS_ENUM (NSInteger, FFFSessionMessageContentViewLayout){
-typedef NS_ENUM (NSInteger, FFFSessionMessageContentViewLayout){
-    //: FFFSessionMessageContentViewLayoutAuto = 0, 
-    FFFSessionMessageContentViewLayoutAuto = 0, //根据消息自动布局
-    //: FFFSessionMessageContentViewLayoutLeft, 
-    FFFSessionMessageContentViewLayoutLeft, //左边布局
-    //: FFFSessionMessageContentViewLayoutRight, 
-    FFFSessionMessageContentViewLayoutRight, //右边布局
+//: typedef NS_ENUM (NSInteger, PushSessionMessageContentViewLayout){
+typedef NS_ENUM (NSInteger, PushSessionMessageContentViewLayout){
+    //: PushSessionMessageContentViewLayoutAuto = 0, 
+    PushSessionMessageContentViewLayoutAuto = 0, //根据消息自动布局
+    //: PushSessionMessageContentViewLayoutLeft, 
+    PushSessionMessageContentViewLayoutLeft, //左边布局
+    //: PushSessionMessageContentViewLayoutRight, 
+    PushSessionMessageContentViewLayoutRight, //右边布局
 //: };
 };
 
@@ -31,7 +31,7 @@ typedef NS_ENUM (NSInteger, FFFSessionMessageContentViewLayout){
 //: @protocol NIMMessageContentViewDelegate <NSObject>
 @protocol TapColor <NSObject>
 
-//: - (void)onCatchEvent:(FFFKitEvent *)event;
+//: - (void)onCatchEvent:(PushKitEvent *)event;
 - (void)parametering:(BeforeEvent *)event;
 
 //: - (void)disableLongPress:(BOOL)disable;
@@ -49,20 +49,20 @@ typedef NS_ENUM (NSInteger, FFFSessionMessageContentViewLayout){
 //: @end
 @end
 
-//: @class FFFMessageModel;
+//: @class PushMessageModel;
 @class PurseModel;
 
-//: @interface FFFSessionMessageContentView : UIControl
+//: @interface PushSessionMessageContentView : UIControl
 @interface MoldControl : UIControl
 
-//: @property (nonatomic,strong,readonly) FFFMessageModel *model;
+//: @property (nonatomic,strong,readonly) PushMessageModel *model;
 @property (nonatomic,strong,readonly) PurseModel *model;
 
 //: @property (nonatomic,strong) UIImageView * bubbleImageView;
 @property (nonatomic,strong) UIImageView * bubbleImageView;
 
-//: @property (nonatomic,assign) FFFSessionMessageContentViewLayout layoutStyle;
-@property (nonatomic,assign) FFFSessionMessageContentViewLayout layoutStyle;
+//: @property (nonatomic,assign) PushSessionMessageContentViewLayout layoutStyle;
+@property (nonatomic,assign) PushSessionMessageContentViewLayout layoutStyle;
 
 //: @property (nonatomic,weak) id<NIMMessageContentViewDelegate> delegate;
 @property (nonatomic,weak) id<TapColor> delegate;
@@ -81,7 +81,7 @@ typedef NS_ENUM (NSInteger, FFFSessionMessageContentViewLayout){
  *  @param data 刷新数据
  *
  */
-//: - (void)refresh:(FFFMessageModel*)data;
+//: - (void)refresh:(PushMessageModel*)data;
 - (void)name:(PurseModel*)data;
 
 

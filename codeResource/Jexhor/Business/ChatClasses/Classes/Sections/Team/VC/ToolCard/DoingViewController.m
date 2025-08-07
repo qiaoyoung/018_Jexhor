@@ -182,20 +182,20 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCreateTeamAnnouncement.h"
+//: #import "PushCreateTeamAnnouncement.h"
 #import "DoingViewController.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFKitKeyboardInfo.h"
+//: #import "PushGlobalMacro.h"
+#import "PushGlobalMacro.h"
+//: #import "PushKitKeyboardInfo.h"
 #import "TitleRandom.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
 //: #import "UITextView+Util.h"
 #import "UITextView+Util.h"
 
-//: @interface FFFCreateTeamAnnouncement () <UITextFieldDelegate, UITextViewDelegate>
+//: @interface PushCreateTeamAnnouncement () <UITextFieldDelegate, UITextViewDelegate>
 @interface DoingViewController () <UITextFieldDelegate, UITextViewDelegate>
 //: @property (strong, nonatomic) UITextField *titleTextField;
 @property (strong, nonatomic) UITextField *titleTextField;
@@ -210,7 +210,7 @@
 //: @end
 @end
 
-//: @implementation FFFCreateTeamAnnouncement
+//: @implementation PushCreateTeamAnnouncement
 @implementation DoingViewController
 
 //: - (void)viewWillAppear:(BOOL)animated{
@@ -268,7 +268,7 @@
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"Group_description"];
+    //: labtitle.text = [PushLanguageManager getTextWithKey:@"Group_description"];
     labtitle.text = [BackgroundRandomAttribute content:[QuipData sharedInstance].k_weaknessMsg];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -313,7 +313,7 @@
 
     //: self.titleTextField = [[UITextField alloc] initWithFrame:CGRectMake(15, 10, [[UIScreen mainScreen] bounds].size.width-60, 30)];
     self.titleTextField = [[UITextField alloc] initWithFrame:CGRectMake(15, 10, [[UIScreen mainScreen] bounds].size.width-60, 30)];
-    //: self.titleTextField.placeholder = [FFFLanguageManager getTextWithKey:@"Announcement_title"];
+    //: self.titleTextField.placeholder = [PushLanguageManager getTextWithKey:@"Announcement_title"];
     self.titleTextField.placeholder = [BackgroundRandomAttribute content:[QuipData sharedInstance].mInputTitle];
     //: self.titleTextField.font = [UIFont systemFontOfSize:18.f];
     self.titleTextField.font = [UIFont systemFontOfSize:18.f];
@@ -341,7 +341,7 @@
     self.contentTextView.font = [UIFont systemFontOfSize:14.f];
     //: self.contentTextView.delegate = self;
     self.contentTextView.delegate = self;
-    //: self.contentTextView.placeholder = [FFFLanguageManager getTextWithKey:@"Please_enter_content"];
+    //: self.contentTextView.placeholder = [PushLanguageManager getTextWithKey:@"Please_enter_content"];
     self.contentTextView.placeholder = [BackgroundRandomAttribute content:[QuipData sharedInstance].mWinnerConstitutionTitle];
     //: self.contentTextView.text = self.defaultContent;
     self.contentTextView.text = self.defaultContent;
@@ -360,7 +360,7 @@
     submitButton.titleLabel.font = [UIFont boldSystemFontOfSize:16];
     //: [submitButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [submitButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [submitButton setTitle:[FFFLanguageManager getTextWithKey:@"feedback_activity_submit"] forState:UIControlStateNormal];
+    //: [submitButton setTitle:[PushLanguageManager getTextWithKey:@"feedback_activity_submit"] forState:UIControlStateNormal];
     [submitButton setTitle:[BackgroundRandomAttribute content:[QuipData sharedInstance].dream_stickUrl] forState:UIControlStateNormal];
     //: [submitButton addTarget:self action:@selector(onSave:) forControlEvents:UIControlEventTouchUpInside];
     [submitButton addTarget:self action:@selector(mediaed:) forControlEvents:UIControlEventTouchUpInside];

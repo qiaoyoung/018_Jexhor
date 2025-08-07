@@ -103,10 +103,10 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFGroupEditTableViewCell.h"
+//: #import "PushGroupEditTableViewCell.h"
 #import "DoinglyViewCell.h"
 
-//: @implementation FFFGroupEditTableViewCell
+//: @implementation PushGroupEditTableViewCell
 @implementation DoinglyViewCell
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{

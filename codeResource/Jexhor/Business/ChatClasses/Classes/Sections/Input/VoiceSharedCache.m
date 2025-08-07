@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputAtCache.h"
+//: #import "PushInputAtCache.h"
 #import "VoiceSharedCache.h"
 
-//: @interface FFFInputAtCache()
+//: @interface PushInputAtCache()
 @interface VoiceSharedCache()
 
 //: @property (nonatomic,strong) NSMutableArray *items;
@@ -21,7 +21,7 @@
 //: @end
 @end
 
-//: @implementation FFFInputAtCache
+//: @implementation PushInputAtCache
 @implementation VoiceSharedCache
 
 //: - (instancetype)init

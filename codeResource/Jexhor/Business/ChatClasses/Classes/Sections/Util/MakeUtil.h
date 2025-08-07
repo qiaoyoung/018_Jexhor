@@ -29,7 +29,7 @@ extern const CGFloat showQuickValue;
 extern NSString * const showImageDataIdent;
 
 
-//: @interface FFFKitQuickCommentUtil : NSObject
+//: @interface PushKitQuickCommentUtil : NSObject
 @interface MakeUtil : NSObject
 
 //: + (UIFont *)commentFont;

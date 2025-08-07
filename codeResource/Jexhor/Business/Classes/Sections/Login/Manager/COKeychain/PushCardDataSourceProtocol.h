@@ -1,5 +1,5 @@
 //
-//  FFFCardDataSourceProtocol.h
+//  PushCardDataSourceProtocol.h
 //  NIM
 //
 //  Created by chris on 15/3/5.
@@ -10,9 +10,9 @@
 #import <UIKit/UIKit.h>
 #import <NIMSDK/NIMSDK.h>
 
-@protocol FFFKitSelectCardData;
+@protocol PushKitSelectCardData;
 
-typedef void(^NIMTeamCardRowSelectedBlock)(id <FFFKitSelectCardData> item);
+typedef void(^NIMTeamCardRowSelectedBlock)(id <PushKitSelectCardData> item);
 
 typedef NS_ENUM(NSInteger, NIMKitCardHeaderOpeator){
     CardHeaderOpeatorNone   = 0,
@@ -29,7 +29,7 @@ typedef NS_ENUM(NSInteger, NIMKitTeamCardRowItemType) {
     TeamCardRowItemTypeSelected,
 };
 
-@protocol FFFKitCardHeaderData <NSObject>
+@protocol PushKitCardHeaderData <NSObject>
 
 - (NSString*)teamId;
 
@@ -55,7 +55,7 @@ typedef NS_ENUM(NSInteger, NIMKitTeamCardRowItemType) {
 
 @end
 
-@protocol FFFKitSelectCardData <NSObject>
+@protocol PushKitSelectCardData <NSObject>
 
 - (id)value;
 
@@ -81,7 +81,7 @@ typedef NS_ENUM(NSInteger, NIMKitTeamCardRowItemType) {
 
 - (NIMTeamCardRowSelectedBlock)selectedBlock;
 
-- (NSMutableArray <id <FFFKitSelectCardData>> *)optionItems;
+- (NSMutableArray <id <PushKitSelectCardData>> *)optionItems;
 
 @optional
 - (NSString*)subTitle;

@@ -188,7 +188,7 @@ typedef struct {
     tip.textColor = [UIColor blackColor];
     //: tip.textAlignment = NSTextAlignmentCenter;
     tip.textAlignment = NSTextAlignmentCenter;
-    //: tip.text = [FFFLanguageManager getTextWithKey:@"warm_prompt"];
+    //: tip.text = [PushLanguageManager getTextWithKey:@"warm_prompt"];
     tip.text = [BackgroundRandomAttribute content:[VerdictData sharedInstance].app_imageFormat];
     //: [_box addSubview:tip];
     [_box addSubview:tip];
@@ -264,7 +264,7 @@ typedef struct {
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor user:[VerdictData sharedInstance].app_nameTitle] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[BackgroundRandomAttribute content:[VerdictData sharedInstance].show_marginTitle] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -291,7 +291,7 @@ typedef struct {
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[BackgroundRandomAttribute content:[VerdictData sharedInstance].k_milkStr] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#FF483D"];
         _sureBtn.backgroundColor = [UIColor user:[VerdictData sharedInstance].show_iconPath];

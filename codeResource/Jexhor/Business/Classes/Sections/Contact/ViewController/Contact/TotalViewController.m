@@ -434,7 +434,7 @@
     labNavtitle.textColor = [UIColor blackColor];
     //: labNavtitle.font = [UIFont boldSystemFontOfSize:16];
     labNavtitle.font = [UIFont boldSystemFontOfSize:16];
-    //: labNavtitle.text = [FFFLanguageManager getTextWithKey:@"add_friend_activity_add_friend"];
+    //: labNavtitle.text = [PushLanguageManager getTextWithKey:@"add_friend_activity_add_friend"];
     labNavtitle.text = [BackgroundRandomAttribute content:[[SizeData sharedInstance] user_atMarginMsg]];
     //: labNavtitle.textAlignment = NSTextAlignmentCenter;
     labNavtitle.textAlignment = NSTextAlignmentCenter;
@@ -516,7 +516,7 @@
     labRecommended.font = [UIFont systemFontOfSize:14.f];
     //: labRecommended.textColor = [UIColor colorWithHexString:@"#2C3042"];
     labRecommended.textColor = [UIColor user:[[SizeData sharedInstance] noti_viewMessage]];
-    //: labRecommended.text = [FFFLanguageManager getTextWithKey:@"hot_guys"];
+    //: labRecommended.text = [PushLanguageManager getTextWithKey:@"hot_guys"];
     labRecommended.text = [BackgroundRandomAttribute content:[[SizeData sharedInstance] show_insideMsg]];
     //: [self.view addSubview:labRecommended];
     [self.view addSubview:labRecommended];
@@ -749,13 +749,13 @@
     //: request.message = tempVerificationInfo.length > 0 ? tempVerificationInfo : @"";
     request.message = tempVerificationInfo.length > 0 ? tempVerificationInfo : @"";
 
-    //: NSString *contact_tag_fragment_add_success = [FFFLanguageManager getTextWithKey:@"contact_tag_fragment_add_success"];
+    //: NSString *contact_tag_fragment_add_success = [PushLanguageManager getTextWithKey:@"contact_tag_fragment_add_success"];
     NSString *contact_tag_fragment_add_success = [BackgroundRandomAttribute content:[[SizeData sharedInstance] kButtonInputValue]];//@"添加成功".
-    //: NSString *request_successful = [FFFLanguageManager getTextWithKey:@"request_successful"];
+    //: NSString *request_successful = [PushLanguageManager getTextWithKey:@"request_successful"];
     NSString *request_successful = [BackgroundRandomAttribute content:[[SizeData sharedInstance] notiMaxSizeStr]];//@"请求成功".
-    //: NSString *add_friend_add_fail = [FFFLanguageManager getTextWithKey:@"add_friend_add_fail"];
+    //: NSString *add_friend_add_fail = [PushLanguageManager getTextWithKey:@"add_friend_add_fail"];
     NSString *add_friend_add_fail = [BackgroundRandomAttribute content:[[SizeData sharedInstance] noti_centerButtonDisplayFormat]];//@"添加失败".
-    //: NSString *add_friend_request_fail = [FFFLanguageManager getTextWithKey:@"add_friend_request_fail"];
+    //: NSString *add_friend_request_fail = [PushLanguageManager getTextWithKey:@"add_friend_request_fail"];
     NSString *add_friend_request_fail = [BackgroundRandomAttribute content:[[SizeData sharedInstance] userKeyTapContainerFormat]];//@"请求失败".
     //: NSString *successText = request.operation == NIMUserOperationAdd ? contact_tag_fragment_add_success: request_successful;
     NSString *successText = request.operation == NIMUserOperationAdd ? contact_tag_fragment_add_success: request_successful;
@@ -799,7 +799,7 @@
     if(!_textField){
         //: _textField = [[UITextField alloc]init];
         _textField = [[UITextField alloc]init];
-        //: _textField.placeholder = [FFFLanguageManager getTextWithKey:@"add_friend_activity_input_account"];
+        //: _textField.placeholder = [PushLanguageManager getTextWithKey:@"add_friend_activity_input_account"];
         _textField.placeholder = [BackgroundRandomAttribute content:[[SizeData sharedInstance] dreamVoiceKey]];
         //: _textField.textColor = [UIColor colorWithHexString:@"#333333"];
         _textField.textColor = [UIColor user:[[SizeData sharedInstance] show_pathText]];
@@ -874,7 +874,7 @@
         }else{
             //: if (wself) {
             if (wself) {
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_number_no"] duration:2.0 position:CSToastPositionCenter];
+                //: [wself.view makeToast:[PushLanguageManager getTextWithKey:@"group_info_activity_number_no"] duration:2.0 position:CSToastPositionCenter];
                 [wself.view makeToast:[BackgroundRandomAttribute content:[[SizeData sharedInstance] appMarginTitleCropFormat]] duration:2.0 position:CSToastPositionCenter];
             }
         }
@@ -923,12 +923,12 @@
 
         //: }else{
         }else{
-            //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"please_contact_your_administrator"] duration:2.0 position:CSToastPositionCenter];
+            //: [wself.view makeToast:[PushLanguageManager getTextWithKey:@"please_contact_your_administrator"] duration:2.0 position:CSToastPositionCenter];
             [wself.view makeToast:[BackgroundRandomAttribute content:[[SizeData sharedInstance] noti_contentFormat]] duration:2.0 position:CSToastPositionCenter];
         }
     //: } failed:^(id responseObject, NSError *error) {
     } file:^(id responseObject, NSError *error) {
-        //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"please_contact_your_administrator"] duration:2.0 position:CSToastPositionCenter];
+        //: [wself.view makeToast:[PushLanguageManager getTextWithKey:@"please_contact_your_administrator"] duration:2.0 position:CSToastPositionCenter];
         [wself.view makeToast:[BackgroundRandomAttribute content:[[SizeData sharedInstance] noti_contentFormat]] duration:2.0 position:CSToastPositionCenter];
     //: }];
     }];

@@ -18,7 +18,7 @@ Byte dreamSeizeFormat[] = {50, 33, 54, 11, 165, 243, 214, 61, 9, 179, 224, 51, 5
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitNotificationFirer.h"
+//: #import "PushKitNotificationFirer.h"
 #import "Firer.h"
 
 //: NSString *const k_contactPath = @"k_contactPath";
@@ -37,7 +37,7 @@ NSString *const main_buttonValueMsg = @"main_buttonValueMsg";
 //: NSString *const show_resultTouchCustomContent = @"InfoId";
 NSString *const show_resultTouchCustomContent = @"InfoId";
 
-//: @implementation FFFKitNotificationFirer
+//: @implementation PushKitNotificationFirer
 @implementation Firer
 
 //: - (instancetype)init{
@@ -46,7 +46,7 @@ NSString *const show_resultTouchCustomContent = @"InfoId";
     self = [super init];
     //: if (self) {
     if (self) {
-        //: _timer = [[FFFKitTimerHolder alloc] init];
+        //: _timer = [[PushKitTimerHolder alloc] init];
         _timer = [[TouchMax alloc] init];
         //: _timeInterval = 1.0f;
         _timeInterval = 1.0f;
@@ -70,10 +70,10 @@ NSString *const show_resultTouchCustomContent = @"InfoId";
     [self.cachedInfo setObject:info forKey:info.team];
 }
 
-//: #pragma mark - FFFKitTimerHolderDelegate
+//: #pragma mark - PushKitTimerHolderDelegate
 #pragma mark - TempDelegate
 
-//: - (void)onNIMKitTimerFired:(FFFKitTimerHolder *)holder{
+//: - (void)onNIMKitTimerFired:(PushKitTimerHolder *)holder{
 - (void)alongAndEnable:(TouchMax *)holder{
     //: NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];

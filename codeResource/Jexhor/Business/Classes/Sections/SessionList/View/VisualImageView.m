@@ -225,7 +225,7 @@ Byte showDetectiveName[] = {42, 19, 79, 12, 231, 62, 254, 140, 174, 20, 101, 105
             [[NIMSDK sharedSDK].teamManager passApplyToTeam:notification.targetID userId:notification.sourceID completion:^(NSError *error, NIMTeamApplyStatus applyStatus) {
                 //: if (!error) {
                 if (!error) {
-                    //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"message_helper_already_ok"]
+                    //: [wself makeToast:[PushLanguageManager getTextWithKey:@"message_helper_already_ok"]
                     [wself makeToast:[BackgroundRandomAttribute content:StringFromItselfData(mainVersionJumpData)]
                                                       //: duration:2
                                                       duration:2
@@ -239,7 +239,7 @@ Byte showDetectiveName[] = {42, 19, 79, 12, 231, 62, 254, 140, 174, 20, 101, 105
                 }else {
                     //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        //: [wself makeToast:[PushLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                         [wself makeToast:[BackgroundRandomAttribute content:StringFromItselfData(m_maxStr)]
                                                           //: duration:2
                                                           duration:2
@@ -264,7 +264,7 @@ Byte showDetectiveName[] = {42, 19, 79, 12, 231, 62, 254, 140, 174, 20, 101, 105
             [[NIMSDK sharedSDK].superTeamManager passApplyToTeam:notification.targetID userId:notification.sourceID completion:^(NSError *error, NIMTeamApplyStatus applyStatus) {
                 //: if (!error) {
                 if (!error) {
-                    //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"message_helper_already_ok"]
+                    //: [wself makeToast:[PushLanguageManager getTextWithKey:@"message_helper_already_ok"]
                     [wself makeToast:[BackgroundRandomAttribute content:StringFromItselfData(mainVersionJumpData)]
                                                       //: duration:2
                                                       duration:2
@@ -282,7 +282,7 @@ Byte showDetectiveName[] = {42, 19, 79, 12, 231, 62, 254, 140, 174, 20, 101, 105
                 }else {
                     //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        //: [wself makeToast:[PushLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                         [wself makeToast:[BackgroundRandomAttribute content:StringFromItselfData(m_maxStr)]
                                                           //: duration:2
                                                           duration:2
@@ -325,7 +325,7 @@ Byte showDetectiveName[] = {42, 19, 79, 12, 231, 62, 254, 140, 174, 20, 101, 105
                 }else {
                     //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        //: [wself makeToast:[PushLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                         [wself makeToast:[BackgroundRandomAttribute content:StringFromItselfData(m_maxStr)]
                                                           //: duration:2
                                                           duration:2
@@ -334,7 +334,7 @@ Byte showDetectiveName[] = {42, 19, 79, 12, 231, 62, 254, 140, 174, 20, 101, 105
                     }
                     //: else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
                     else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_team_not_exist"]
+                        //: [wself makeToast:[PushLanguageManager getTextWithKey:@"group_info_activity_team_not_exist"]
                         [wself makeToast:[BackgroundRandomAttribute content:StringFromItselfData(notiProfessionId)]
                                                           //: duration:2
                                                           duration:2
@@ -379,7 +379,7 @@ Byte showDetectiveName[] = {42, 19, 79, 12, 231, 62, 254, 140, 174, 20, 101, 105
                 }else {
                     //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        //: [wself makeToast:[PushLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                         [wself makeToast:[BackgroundRandomAttribute content:StringFromItselfData(m_maxStr)]
                                                           //: duration:2
                                                           duration:2
@@ -388,7 +388,7 @@ Byte showDetectiveName[] = {42, 19, 79, 12, 231, 62, 254, 140, 174, 20, 101, 105
                     }
                     //: else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
                     else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_team_not_exist"]
+                        //: [wself makeToast:[PushLanguageManager getTextWithKey:@"group_info_activity_team_not_exist"]
                         [wself makeToast:[BackgroundRandomAttribute content:StringFromItselfData(notiProfessionId)]
                                                           //: duration:2
                                                           duration:2
@@ -424,7 +424,7 @@ Byte showDetectiveName[] = {42, 19, 79, 12, 231, 62, 254, 140, 174, 20, 101, 105
                                                  completion:^(NSError *error) {
                                                      //: if (!error) {
                                                      if (!error) {
-                                                         //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"successful_authentication"]//@"验证成功".ntes_localized
+                                                         //: [wself makeToast:[PushLanguageManager getTextWithKey:@"successful_authentication"]//@"验证成功".ntes_localized
                                                          [wself makeToast:[BackgroundRandomAttribute content:StringFromItselfData(mainMarginSustainPath)]//@"验证成功".ntes_localized
                                                                                            //: duration:2
                                                                                            duration:2
@@ -456,7 +456,7 @@ Byte showDetectiveName[] = {42, 19, 79, 12, 231, 62, 254, 140, 174, 20, 101, 105
                                                      //: else
                                                      else
                                                      {
-                                                         //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"fail_authentication"]//@"验证失败,请重试".ntes_localized
+                                                         //: [wself makeToast:[PushLanguageManager getTextWithKey:@"fail_authentication"]//@"验证失败,请重试".ntes_localized
                                                          [wself makeToast:[BackgroundRandomAttribute content:StringFromItselfData(showDetectiveName)]//@"验证失败,请重试".ntes_localized
                                                                                            //: duration:2
                                                                                            duration:2
@@ -498,7 +498,7 @@ Byte showDetectiveName[] = {42, 19, 79, 12, 231, 62, 254, 140, 174, 20, 101, 105
             [[NIMSDK sharedSDK].teamManager rejectApplyToTeam:notification.targetID userId:notification.sourceID rejectReason:@"" completion:^(NSError *error) {
                 //: if (!error) {
                 if (!error) {
-                    //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"message_helper_already_no"]
+                    //: [wself makeToast:[PushLanguageManager getTextWithKey:@"message_helper_already_no"]
                     [wself makeToast:[BackgroundRandomAttribute content:StringFromItselfData(notiItemUrl)]
                                                       //: duration:2
                                                       duration:2
@@ -516,7 +516,7 @@ Byte showDetectiveName[] = {42, 19, 79, 12, 231, 62, 254, 140, 174, 20, 101, 105
                 }else {
                     //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        //: [wself makeToast:[PushLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                         [wself makeToast:[BackgroundRandomAttribute content:StringFromItselfData(m_maxStr)]
                                                           //: duration:2
                                                           duration:2
@@ -541,7 +541,7 @@ Byte showDetectiveName[] = {42, 19, 79, 12, 231, 62, 254, 140, 174, 20, 101, 105
             [[NIMSDK sharedSDK].superTeamManager rejectApplyToTeam:notification.targetID userId:notification.sourceID rejectReason:@"" completion:^(NSError *error) {
                 //: if (!error) {
                 if (!error) {
-                    //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"message_helper_already_no"]
+                    //: [wself makeToast:[PushLanguageManager getTextWithKey:@"message_helper_already_no"]
                     [wself makeToast:[BackgroundRandomAttribute content:StringFromItselfData(notiItemUrl)]
                                                       //: duration:2
                                                       duration:2
@@ -559,7 +559,7 @@ Byte showDetectiveName[] = {42, 19, 79, 12, 231, 62, 254, 140, 174, 20, 101, 105
                 }else {
                     //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        //: [wself makeToast:[PushLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                         [wself makeToast:[BackgroundRandomAttribute content:StringFromItselfData(m_maxStr)]
                                                           //: duration:2
                                                           duration:2
@@ -584,7 +584,7 @@ Byte showDetectiveName[] = {42, 19, 79, 12, 231, 62, 254, 140, 174, 20, 101, 105
             [[NIMSDK sharedSDK].teamManager rejectInviteWithTeam:notification.targetID invitorId:notification.sourceID rejectReason:@"" completion:^(NSError *error) {
                 //: if (!error) {
                 if (!error) {
-                    //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"message_helper_already_no"]
+                    //: [wself makeToast:[PushLanguageManager getTextWithKey:@"message_helper_already_no"]
                     [wself makeToast:[BackgroundRandomAttribute content:StringFromItselfData(notiItemUrl)]
                                                       //: duration:2
                                                       duration:2
@@ -602,7 +602,7 @@ Byte showDetectiveName[] = {42, 19, 79, 12, 231, 62, 254, 140, 174, 20, 101, 105
                 }else {
                     //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        //: [wself makeToast:[PushLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                         [wself makeToast:[BackgroundRandomAttribute content:StringFromItselfData(m_maxStr)]
                                                           //: duration:2
                                                           duration:2
@@ -611,7 +611,7 @@ Byte showDetectiveName[] = {42, 19, 79, 12, 231, 62, 254, 140, 174, 20, 101, 105
                     }
                     //: else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
                     else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_team_not_exist"]
+                        //: [wself makeToast:[PushLanguageManager getTextWithKey:@"group_info_activity_team_not_exist"]
                         [wself makeToast:[BackgroundRandomAttribute content:StringFromItselfData(notiProfessionId)]
                                                           //: duration:2
                                                           duration:2
@@ -637,7 +637,7 @@ Byte showDetectiveName[] = {42, 19, 79, 12, 231, 62, 254, 140, 174, 20, 101, 105
             [[NIMSDK sharedSDK].superTeamManager rejectInviteWithTeam:notification.targetID invitorId:notification.sourceID rejectReason:@"" completion:^(NSError *error) {
                 //: if (!error) {
                 if (!error) {
-                    //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"message_helper_already_no"]
+                    //: [wself makeToast:[PushLanguageManager getTextWithKey:@"message_helper_already_no"]
                     [wself makeToast:[BackgroundRandomAttribute content:StringFromItselfData(notiItemUrl)]
                                                       //: duration:2
                                                       duration:2
@@ -655,7 +655,7 @@ Byte showDetectiveName[] = {42, 19, 79, 12, 231, 62, 254, 140, 174, 20, 101, 105
                 }else {
                     //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        //: [wself makeToast:[PushLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                         [wself makeToast:[BackgroundRandomAttribute content:StringFromItselfData(m_maxStr)]
                                                           //: duration:2
                                                           duration:2
@@ -664,7 +664,7 @@ Byte showDetectiveName[] = {42, 19, 79, 12, 231, 62, 254, 140, 174, 20, 101, 105
                     }
                     //: else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
                     else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_team_not_exist"]
+                        //: [wself makeToast:[PushLanguageManager getTextWithKey:@"group_info_activity_team_not_exist"]
                         [wself makeToast:[BackgroundRandomAttribute content:StringFromItselfData(notiProfessionId)]
                                                           //: duration:2
                                                           duration:2
@@ -700,7 +700,7 @@ Byte showDetectiveName[] = {42, 19, 79, 12, 231, 62, 254, 140, 174, 20, 101, 105
                                                  completion:^(NSError *error) {
                                                      //: if (!error) {
                                                      if (!error) {
-                                                         //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"message_helper_already_no"]
+                                                         //: [wself makeToast:[PushLanguageManager getTextWithKey:@"message_helper_already_no"]
                                                          [wself makeToast:[BackgroundRandomAttribute content:StringFromItselfData(notiItemUrl)]
                                                                                            //: duration:2
                                                                                            duration:2

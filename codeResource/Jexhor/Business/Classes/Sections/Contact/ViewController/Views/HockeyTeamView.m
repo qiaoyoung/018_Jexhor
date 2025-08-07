@@ -151,7 +151,7 @@
     //: }];
     }];
 
-    //: NSString *my_account = [FFFLanguageManager getTextWithKey:@"activity_add_friend_my_account"];
+    //: NSString *my_account = [PushLanguageManager getTextWithKey:@"activity_add_friend_my_account"];
     NSString *my_account = [BackgroundRandomAttribute content:[[WithData sharedInstance] app_userKey]];
     //: NSString *myCodeStr = [NSString stringWithFormat:@"%@:%@",my_account,[NIMUserDefaults standardUserDefaults].accountName];
     NSString *myCodeStr = [NSString stringWithFormat:@"%@:%@",my_account,[CrossShouldBlock towardScaleOfMeasurement].accountName];

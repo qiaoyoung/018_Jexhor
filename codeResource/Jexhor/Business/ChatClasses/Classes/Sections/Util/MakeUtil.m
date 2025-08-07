@@ -18,19 +18,19 @@ Byte m_richAspectName[] = {49, 10, 9, 247, 180, 160, 138, 98, 149, 186, 186, 228
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitQuickCommentUtil.h"
+//: #import "PushKitQuickCommentUtil.h"
 #import "MakeUtil.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "InsertView+Secret.h"
-//: #import "FFFKitUtil.h"
+//: #import "PushKitUtil.h"
 #import "KitUtil.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "PushInputEmoticonManager.h"
 #import "DirectorManager.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "PushKitInfoFetchOption.h"
 #import "AttributeQuantityOption.h"
 
 //: static const CGFloat kHeightPerRow = 25.0;
@@ -45,7 +45,7 @@ const CGFloat showQuickValue = 5.f;
 NSString * const showImageDataIdent = @"emoticon_emoji_%02ld";
 
 
-//: @implementation FFFKitQuickCommentUtil
+//: @implementation PushKitQuickCommentUtil
 @implementation MakeUtil
 
 //: + (void)initialize
@@ -96,7 +96,7 @@ NSString * const showImageDataIdent = @"emoticon_emoji_%02ld";
 {
     //: NSString *ID = [NSString stringWithFormat:NIMKitQuickCommentFormat, (long)comment.replyType];
     NSString *ID = [NSString stringWithFormat:showImageDataIdent, (long)comment.replyType];
-    //: NIMInputEmoticon *emoticon = [[FFFInputEmoticonManager sharedManager] emoticonByID:ID];
+    //: NIMInputEmoticon *emoticon = [[PushInputEmoticonManager sharedManager] emoticonByID:ID];
     TextEmoticon *emoticon = [[DirectorManager statusFor] past:ID];
     //: NSString *content = nil;
     NSString *content = nil;
@@ -296,13 +296,13 @@ NSString * const showImageDataIdent = @"emoticon_emoji_%02ld";
 //: + (NSString *)showNameWithCommentFrom:(NIMQuickComment *)comment
 + (NSString *)comment:(NIMQuickComment *)comment
 {
-    //: FFFKitInfo *info = nil;
+    //: PushKitInfo *info = nil;
     DataTeam *info = nil;
     //: NIMChatExtendBasicInfo *basicInfo = comment.basicInfo;
     NIMChatExtendBasicInfo *basicInfo = comment.basicInfo;
     //: NIMSession *session = basicInfo.session;
     NIMSession *session = basicInfo.session;
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: PushKitInfoFetchOption *option = [[PushKitInfoFetchOption alloc] init];
     AttributeQuantityOption *option = [[AttributeQuantityOption alloc] init];
     //: option.session = session;
     option.session = session;

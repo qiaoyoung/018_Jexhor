@@ -29,13 +29,13 @@ Byte appJustifyMessage[] = {93, 5, 5, 143, 225, 115, 101, 116, 110, 95, 153};
 
 //: - (NTESMergeMessageCell *)ntesCellInTable:(UITableView*)tableView
 - (OfImportMessageCell *)earlier:(UITableView*)tableView
-                         //: forMessageMode:(FFFMessageModel *)model {
+                         //: forMessageMode:(PushMessageModel *)model {
                          plant:(PurseModel *)model {
-    //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+    //: id<PushCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
     id<MessageImageContainer> layoutConfig = [[Secret highlight] layoutConfig];
     //: NSString *identity = [[layoutConfig cellContent:model] stringByAppendingString:@"_ntes"];
     NSString *identity = [[layoutConfig mark:model] stringByAppendingString:StringFromPrData(appJustifyMessage)];
-    //: FFFMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
+    //: PushMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
     BroadcastTouchCellView *cell = [tableView dequeueReusableCellWithIdentifier:identity];
     //: if (!cell) {
     if (!cell) {
@@ -52,7 +52,7 @@ Byte appJustifyMessage[] = {93, 5, 5, 143, 225, 115, 101, 116, 110, 95, 153};
 
 //: - (NTESTimestampCell *)ntesCellInTable:(UITableView *)tableView
 - (HeritageViewCell *)immobiliseModel:(UITableView *)tableView
-                            //: forTimeModel:(FFFTimestampModel *)model {
+                            //: forTimeModel:(PushTimestampModel *)model {
                             cellModel:(PushSharedNeed *)model {
     //: NSString *identity = @"time_ntes";
     NSString *identity = StringFromPrData(app_discoveryPath);

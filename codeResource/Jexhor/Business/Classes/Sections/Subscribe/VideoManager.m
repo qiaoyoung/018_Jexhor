@@ -15,8 +15,8 @@
 #import "NTESSubscribeDefine.h"
 //: #import "NTESDevice.h"
 #import "MemoryDevice.h"
-//: #import "FFFExtensionHelper.h"
-#import "FFFExtensionHelper.h"
+//: #import "PushExtensionHelper.h"
+#import "PushExtensionHelper.h"
 
 //: NSString *const NTESSubscribeNetState = @"net_state";
 NSString *const noti_videoUnitMsg = @"net_state";

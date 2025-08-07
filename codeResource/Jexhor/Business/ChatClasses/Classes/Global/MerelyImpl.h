@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitDataProvider.h"
+//: #import "PushKitDataProvider.h"
 #import "BarModel.h"
 
-//: @interface FFFKitDataProviderImpl : NSObject<FFFKitDataProvider>
+//: @interface PushKitDataProviderImpl : NSObject<PushKitDataProvider>
 @interface MerelyImpl : NSObject<BarModel>
 
 //: @end

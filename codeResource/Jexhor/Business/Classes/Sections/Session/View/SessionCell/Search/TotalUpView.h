@@ -11,13 +11,13 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFCommonTableViewCell.h"
+//: #import "PushCommonTableViewCell.h"
 #import "ViewTitle.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface NTESKeyWordMessageCell : UITableViewCell <FFFCommonTableViewCell>
+//: @interface NTESKeyWordMessageCell : UITableViewCell <PushCommonTableViewCell>
 @interface TotalUpView : UITableViewCell <ViewTitle>
 
 //: @end

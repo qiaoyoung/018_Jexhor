@@ -9,13 +9,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "PushSessionMessageContentView.h"
 #import "MoldControl.h"
 
 //: @class M80AttributedLabel;
 @class InsertView;
 
-//: @interface FFFSessionTextContentView : FFFSessionMessageContentView
+//: @interface PushSessionTextContentView : PushSessionMessageContentView
 @interface CellTempView : MoldControl
 
 //: @property (nonatomic, strong) M80AttributedLabel *textView;

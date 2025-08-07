@@ -9,12 +9,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitAudioCenter.h"
+//: #import "PushKitAudioCenter.h"
 #import "PushOutCenter.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
 
-//: @interface FFFKitAudioCenter()<NIMMediaManagerDelegate>
+//: @interface PushKitAudioCenter()<NIMMediaManagerDelegate>
 @interface PushOutCenter()<NIMMediaManagerDelegate>
 
 //: @property (nonatomic,assign) NSInteger retryCount;
@@ -23,19 +23,19 @@
 //: @end
 @end
 
-//: @implementation FFFKitAudioCenter
+//: @implementation PushKitAudioCenter
 @implementation PushOutCenter
 
 //: + (instancetype)instance
 + (instancetype)colorTemp
 {
-    //: static FFFKitAudioCenter *instance;
+    //: static PushKitAudioCenter *instance;
     static PushOutCenter *instance;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFKitAudioCenter alloc] init];
+        //: instance = [[PushKitAudioCenter alloc] init];
         instance = [[PushOutCenter alloc] init];
     //: });
     });

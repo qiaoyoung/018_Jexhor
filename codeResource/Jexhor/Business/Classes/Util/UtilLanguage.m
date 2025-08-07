@@ -101,8 +101,8 @@
 // __M_A_C_R_O__
 //: #import "NTESNoticationUtil.h"
 #import "UtilLanguage.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "PushGlobalMacro.h"
+#import "PushGlobalMacro.h"
 
 //: @implementation NTESNoticationUtil
 @implementation UtilLanguage

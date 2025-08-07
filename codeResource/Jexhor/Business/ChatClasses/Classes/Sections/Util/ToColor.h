@@ -18,7 +18,7 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFMessageUtil : NSObject
+//: @interface PushMessageUtil : NSObject
 @interface ToColor : NSObject
 
 //: + (NSString *)messageContent:(NIMMessage*)message;

@@ -12,7 +12,7 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @interface FFFKitTitleView : UIView
+//: @interface PushKitTitleView : UIView
 @interface TitleView : UIView
 
 //: @property (nonatomic, strong) UILabel *titleLabel;

@@ -11,10 +11,10 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFCommonTableViewCell.h"
+//: #import "PushCommonTableViewCell.h"
 #import "ViewTitle.h"
 
-//: @interface FFFKitSwitcherCell : UITableViewCell<FFFCommonTableViewCell>
+//: @interface PushKitSwitcherCell : UITableViewCell<PushCommonTableViewCell>
 @interface WorkInView : UITableViewCell<ViewTitle>
 
 //: @property(nonatomic,strong,readonly) UISwitch *switcher;

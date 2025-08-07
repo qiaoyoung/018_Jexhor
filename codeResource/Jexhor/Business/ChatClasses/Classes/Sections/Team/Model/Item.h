@@ -11,13 +11,13 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "PushCardDataSourceProtocol.h"
+#import "PushCardDataSourceProtocol.h"
 
-//: typedef void(^NIMTeamCardRowSelectedBlock)(id <FFFKitSelectCardData> item);
-typedef void(^NIMTeamCardRowSelectedBlock)(id <FFFKitSelectCardData> item);
+//: typedef void(^NIMTeamCardRowSelectedBlock)(id <PushKitSelectCardData> item);
+typedef void(^NIMTeamCardRowSelectedBlock)(id <PushKitSelectCardData> item);
 
-//: @interface FFFTeamCardRowItem : NSObject
+//: @interface PushTeamCardRowItem : NSObject
 @interface Item : NSObject
 
 //: @property(nonatomic,copy) NSString *title;
@@ -53,8 +53,8 @@ typedef void(^NIMTeamCardRowSelectedBlock)(id <FFFKitSelectCardData> item);
 //: @property(nonatomic,assign) NSInteger identify;
 @property(nonatomic,assign) NSInteger identify;
 
-//: @property(nonatomic,strong) NSMutableArray <id <FFFKitSelectCardData>> *optionItems;
-@property(nonatomic,strong) NSMutableArray <id <FFFKitSelectCardData>> *optionItems;
+//: @property(nonatomic,strong) NSMutableArray <id <PushKitSelectCardData>> *optionItems;
+@property(nonatomic,strong) NSMutableArray <id <PushKitSelectCardData>> *optionItems;
 
 //: @property(nonatomic,strong) NIMTeamCardRowSelectedBlock selectedBlock;
 @property(nonatomic,strong) NIMTeamCardRowSelectedBlock selectedBlock;

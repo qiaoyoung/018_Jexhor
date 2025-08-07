@@ -111,7 +111,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFMessageMaker.m
+//  PushMessageMaker.m
 // Secret
 //
 //  Created by chris.
@@ -119,13 +119,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMessageMaker.h"
+//: #import "PushMessageMaker.h"
 #import "AddEnablely.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+Secret.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
-//: #import "FFFInputAtCache.h"
+//: #import "PushInputAtCache.h"
 #import "VoiceSharedCache.h"
 
 //: NSString * generateUUID(void) {
@@ -143,7 +143,7 @@ NSString * remoteInput(void) {
     return uuidString;
 }
 
-//: @implementation FFFMessageMaker
+//: @implementation PushMessageMaker
 @implementation AddEnablely
 
 //: + (NIMMessage*)msgWithText:(NSString*)text
@@ -209,7 +209,7 @@ NSString * remoteInput(void) {
     option.compressQuality = 0.7;
     //: imageObject.option = option;
     imageObject.option = option;
-    //: return [FFFMessageMaker generateImageMessage:imageObject];
+    //: return [PushMessageMaker generateImageMessage:imageObject];
     return [AddEnablely cell:imageObject];
 }
 
@@ -218,7 +218,7 @@ NSString * remoteInput(void) {
 {
     //: NIMImageObject * imageObject = [[NIMImageObject alloc] initWithFilepath:path];
     NIMImageObject * imageObject = [[NIMImageObject alloc] initWithFilepath:path];
-    //: return [FFFMessageMaker generateImageMessage:imageObject];
+    //: return [PushMessageMaker generateImageMessage:imageObject];
     return [AddEnablely cell:imageObject];
 }
 
@@ -227,7 +227,7 @@ NSString * remoteInput(void) {
 {
     //: NIMImageObject *imageObject = [[NIMImageObject alloc] initWithData:data extension:extension];
     NIMImageObject *imageObject = [[NIMImageObject alloc] initWithData:data extension:extension];
-    //: return [FFFMessageMaker generateImageMessage:imageObject];
+    //: return [PushMessageMaker generateImageMessage:imageObject];
     return [AddEnablely cell:imageObject];
 }
 
@@ -243,7 +243,7 @@ NSString * remoteInput(void) {
     NIMMessage *message = [[NIMMessage alloc] init];
     //: message.messageObject = imageObject;
     message.messageObject = imageObject;
-    //: message.apnsContent = [FFFLanguageManager getTextWithKey:@"init_manager_nim_status_bar_image_message"];
+    //: message.apnsContent = [PushLanguageManager getTextWithKey:@"init_manager_nim_status_bar_image_message"];
     message.apnsContent = [BackgroundRandomAttribute content:[RequirementData user_smileIdent]];
     //: [self setupMessage:message];
     [self input:message];

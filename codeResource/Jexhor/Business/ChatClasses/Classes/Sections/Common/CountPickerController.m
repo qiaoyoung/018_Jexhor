@@ -39,20 +39,20 @@ Byte kTingFarUrl[] = {57, 7, 72, 13, 250, 50, 248, 31, 100, 222, 227, 253, 247, 
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitMediaPickerController.h"
+//: #import "PushKitMediaPickerController.h"
 #import "CountPickerController.h"
-//: #import "FFFKitProgressHUD.h"
+//: #import "PushKitProgressHUD.h"
 #import "CoverView.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFKitFileLocationHelper.h"
+//: #import "PushKitDependency.h"
+#import "PushKitDependency.h"
+//: #import "PushGlobalMacro.h"
+#import "PushGlobalMacro.h"
+//: #import "PushKitFileLocationHelper.h"
 #import "SecretHelper.h"
 //: #import <MobileCoreServices/MobileCoreServices.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 
-//: @interface FFFKitMediaPickerController ()<TZImagePickerControllerDelegate>
+//: @interface PushKitMediaPickerController ()<TZImagePickerControllerDelegate>
 @interface CountPickerController ()<TZImagePickerControllerDelegate>
 
 //: @property (nonatomic, assign) UIStatusBarStyle myStatusBarStyle;
@@ -61,7 +61,7 @@ Byte kTingFarUrl[] = {57, 7, 72, 13, 250, 50, 248, 31, 100, 222, 227, 253, 247, 
 //: @end
 @end
 
-//: @implementation FFFKitMediaPickerController
+//: @implementation PushKitMediaPickerController
 @implementation CountPickerController
 
 //: - (instancetype)initWithMaxImagesCount:(NSInteger)maxImagesCount {
@@ -185,11 +185,11 @@ Byte kTingFarUrl[] = {57, 7, 72, 13, 250, 50, 248, 31, 100, 222, 227, 253, 247, 
 
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [FFFKitProgressHUD show];
+    //: [PushKitProgressHUD show];
     [CoverView input];
     //: [self requestAsset:assets.firstObject handler:^(NSString *path, PHAssetMediaType type) {
     [self by:assets.firstObject emptyHandler:^(NSString *path, PHAssetMediaType type) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [PushKitProgressHUD dismiss];
         [CoverView pressed];
         //: if ([weakSelf.nim_delegate respondsToSelector:@selector(onPickerSelectedWithType:images:path:)]) {
         if ([weakSelf.nim_delegate respondsToSelector:@selector(stop:eliteArray:imageNoticeText:)]) {
@@ -240,9 +240,9 @@ Byte kTingFarUrl[] = {57, 7, 72, 13, 250, 50, 248, 31, 100, 222, 227, 253, 247, 
                 } else {
                     //: AVURLAsset *URLAsset = (AVURLAsset *)assetR;
                     AVURLAsset *URLAsset = (AVURLAsset *)assetR;
-                    //: NSString *outputFileName = [FFFKitFileLocationHelper genFilenameWithExt:@"mp4"];
+                    //: NSString *outputFileName = [PushKitFileLocationHelper genFilenameWithExt:@"mp4"];
                     NSString *outputFileName = [SecretHelper show:StringFromCostlyAllyData(m_marginName)];
-                    //: outputPath = [FFFKitFileLocationHelper filepathForVideo:outputFileName];
+                    //: outputPath = [PushKitFileLocationHelper filepathForVideo:outputFileName];
                     outputPath = [SecretHelper key:outputFileName];
                     //: BOOL fileExist = [[NSFileManager defaultManager] fileExistsAtPath:URLAsset.URL.path];
                     BOOL fileExist = [[NSFileManager defaultManager] fileExistsAtPath:URLAsset.URL.path];

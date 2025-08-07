@@ -9,22 +9,22 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionUnknowContentView.h"
+//: #import "PushSessionUnknowContentView.h"
 #import "ShouldControl.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "InsertView+Secret.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFMessageModel.h"
+//: #import "PushMessageModel.h"
 #import "PurseModel.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+Secret.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "PushGlobalMacro.h"
+#import "PushGlobalMacro.h"
 
-//: @interface FFFSessionUnknowContentView()
+//: @interface PushSessionUnknowContentView()
 @interface ShouldControl()
 
 //: @property (nonatomic,strong) UILabel *label;
@@ -33,7 +33,7 @@
 //: @end
 @end
 
-//: @implementation FFFSessionUnknowContentView
+//: @implementation PushSessionUnknowContentView
 @implementation ShouldControl
 
 //: -(instancetype)initSessionMessageContentView
@@ -54,14 +54,14 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data{
+//: - (void)refresh:(PushMessageModel *)data{
 - (void)name:(PurseModel *)data{
     //: [super refresh:data];
     [super name:data];
     //: NSString *text = @"";
     NSString *text = @"";
 //    NSString *text = @"未知类型消息".nim_localized;
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
+    //: PushKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
     SchoolbagTaskSurroundingsBlock *setting = [[Secret highlight].config click:data.message];
 
     //: self.label.textColor = setting.textColor;

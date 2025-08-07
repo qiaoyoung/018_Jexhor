@@ -9,11 +9,11 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFGroupedUsrInfo.h"
-#import "FFFGroupedUsrInfo.h"
-//: #import "FFFSpellingCenter.h"
+//: #import "PushGroupedUsrInfo.h"
+#import "PushGroupedUsrInfo.h"
+//: #import "PushSpellingCenter.h"
 #import "ViewCenter.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "PushKitInfoFetchOption.h"
 #import "AttributeQuantityOption.h"
 
 //: @interface NIMGroupUser()
@@ -21,7 +21,7 @@
 
 //: @property (nonatomic,copy) NSString *userId;
 @property (nonatomic,copy) NSString *userId;
-//: @property (nonatomic,strong) FFFKitInfo *info;
+//: @property (nonatomic,strong) PushKitInfo *info;
 @property (nonatomic,strong) DataTeam *info;
 
 //: @end
@@ -47,7 +47,7 @@
 
 //: - (NSString *)groupTitle{
 - (NSString *)groupTitle{
-    //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.info.showName].capitalizedString;
+    //: NSString *title = [[PushSpellingCenter sharedCenter] firstLetter:self.info.showName].capitalizedString;
     NSString *title = [[ViewCenter centerStage] premierCurrentDeadLetter:self.info.showName].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
@@ -76,7 +76,7 @@
 
 //: - (id)sortKey{
 - (id)sortKey{
-    //: return [[FFFSpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
+    //: return [[PushSpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
     return [[ViewCenter centerStage] total:self.info.showName].shortSpelling;
 }
 
@@ -102,7 +102,7 @@
 
 //: @property (nonatomic,copy) NSString *userId;
 @property (nonatomic,copy) NSString *userId;
-//: @property (nonatomic,strong) FFFKitInfo *info;
+//: @property (nonatomic,strong) PushKitInfo *info;
 @property (nonatomic,strong) DataTeam *info;
 
 //: @end
@@ -121,7 +121,7 @@
     if (self) {
         //: _userId = userId;
         _userId = userId;
-        //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+        //: PushKitInfoFetchOption *option = [[PushKitInfoFetchOption alloc] init];
         AttributeQuantityOption *option = [[AttributeQuantityOption alloc] init];
         //: option.session = session;
         option.session = session;
@@ -134,7 +134,7 @@
 
 //: - (NSString *)groupTitle{
 - (NSString *)groupTitle{
-    //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.showName].capitalizedString;
+    //: NSString *title = [[PushSpellingCenter sharedCenter] firstLetter:self.showName].capitalizedString;
     NSString *title = [[ViewCenter centerStage] premierCurrentDeadLetter:self.showName].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
@@ -151,7 +151,7 @@
 
 //: - (id)sortKey{
 - (id)sortKey{
-    //: return [[FFFSpellingCenter sharedCenter] spellingForString:self.showName].shortSpelling;
+    //: return [[PushSpellingCenter sharedCenter] spellingForString:self.showName].shortSpelling;
     return [[ViewCenter centerStage] total:self.showName].shortSpelling;
 }
 
@@ -187,7 +187,7 @@
 
 //: @property (nonatomic,copy) NSString *teamId;
 @property (nonatomic,copy) NSString *teamId;
-//: @property (nonatomic,strong) FFFKitInfo *info;
+//: @property (nonatomic,strong) PushKitInfo *info;
 @property (nonatomic,strong) DataTeam *info;
 
 //: @end
@@ -222,7 +222,7 @@
 
 //: - (NSString *)groupTitle{
 - (NSString *)groupTitle{
-    //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.showName].capitalizedString;
+    //: NSString *title = [[PushSpellingCenter sharedCenter] firstLetter:self.showName].capitalizedString;
     NSString *title = [[ViewCenter centerStage] premierCurrentDeadLetter:self.showName].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
@@ -239,7 +239,7 @@
 
 //: - (id)sortKey{
 - (id)sortKey{
-    //: return [[FFFSpellingCenter sharedCenter] spellingForString:[self showName]].shortSpelling;
+    //: return [[PushSpellingCenter sharedCenter] spellingForString:[self showName]].shortSpelling;
     return [[ViewCenter centerStage] total:[self showName]].shortSpelling;
 }
 

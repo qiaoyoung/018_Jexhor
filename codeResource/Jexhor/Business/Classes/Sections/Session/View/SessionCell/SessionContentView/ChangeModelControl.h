@@ -11,7 +11,7 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFSessionMessageContentView.h"
+//: #import "PushSessionMessageContentView.h"
 #import "MoldControl.h"
 
 //: @class M80AttributedLabel;
@@ -20,7 +20,7 @@
 
 
 
-//: @interface NTESSessionWhiteBoardContentView : FFFSessionMessageContentView
+//: @interface NTESSessionWhiteBoardContentView : PushSessionMessageContentView
 @interface ChangeModelControl : MoldControl
 
 //: @property (nonatomic, strong) M80AttributedLabel *textLabel;

@@ -70,7 +70,7 @@ typedef struct {
 // __M_A_C_R_O__
 //: #import "NTESUserUtil.h"
 #import "BackgroundUtil.h"
-//: #import "FFFKitUtil.h"
+//: #import "PushKitUtil.h"
 #import "KitUtil.h"
 
 //: @implementation NTESUserUtil
@@ -84,19 +84,19 @@ typedef struct {
     switch (gender) {
         //: case NIMUserGenderMale:
         case NIMUserGenderMale:
-            //: genderStr = [FFFLanguageManager getTextWithKey:@"friend_info_activity_nan"];
+            //: genderStr = [PushLanguageManager getTextWithKey:@"friend_info_activity_nan"];
             genderStr = [BackgroundRandomAttribute content:[WonderfulRemarkData mainButtonTitle]];
             //: break;
             break;
         //: case NIMUserGenderFemale:
         case NIMUserGenderFemale:
-            //: genderStr = [FFFLanguageManager getTextWithKey:@"friend_info_activity_nv"];
+            //: genderStr = [PushLanguageManager getTextWithKey:@"friend_info_activity_nv"];
             genderStr = [BackgroundRandomAttribute content:[WonderfulRemarkData userRecipientCoverPath]];
             //: break;
             break;
         //: case NIMUserGenderUnknown:
         case NIMUserGenderUnknown:
-            //: genderStr = [FFFLanguageManager getTextWithKey:@"friend_info_activity_xu"];
+            //: genderStr = [PushLanguageManager getTextWithKey:@"friend_info_activity_xu"];
             genderStr = [BackgroundRandomAttribute content:[WonderfulRemarkData k_sunnyIdent]];
         //: default:
         default:

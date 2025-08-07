@@ -4,7 +4,7 @@
 NSString *StringFromXerographyData(Byte *data);        
 
 
-//: #ffffff
+//: #fffPush
 Byte dreamHolderIdent[] = {74, 7, 53, 12, 251, 182, 57, 25, 69, 181, 110, 172, 238, 49, 49, 49, 49, 49, 49, 253};
 
 //: user_id
@@ -227,10 +227,10 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
 // __M_A_C_R_O__
 //: #import "NTESPersonalCardViewController.h"
 #import "AdHominemBubbleViewController.h"
-//: #import "FFFCommonTableDelegate.h"
+//: #import "PushCommonTableDelegate.h"
 #import "StanzaDelegate.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "PushCommonTableData.h"
+#import "PushCommonTableData.h"
 //: #import "UIView+Toast.h"
 #import "UIView+Toast.h"
 //: #import "SVProgressHUD.h"
@@ -249,7 +249,7 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
 #import "BackgroundUtil.h"
 //: #import "HMDataPicker.h"
 #import "DeviceView.h"
-//: #import "FFFRemarksView.h"
+//: #import "PushRemarksView.h"
 #import "DataView.h"
 //: #import "NTESOpinionBackViewController.h"
 #import "MaxViewController.h"
@@ -273,15 +273,15 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
 #import "EventViewController.h"
 //: #import "CCCContactsViewController.h"
 #import "TempCellViewController.h"
-//: #import "FFFContactSelectViewController.h"
+//: #import "PushContactSelectViewController.h"
 #import "SwitchlyViewController.h"
-//: #import "FFFKitFileLocationHelper.h"
+//: #import "PushKitFileLocationHelper.h"
 #import "SecretHelper.h"
 
 //: @interface NTESPersonalCardViewController ()<NIMUserManagerDelegate,HMDataPickerDelegate,NTESReportDelegate,NTESReportNextDelegate>
 @interface AdHominemBubbleViewController ()<NIMUserManagerDelegate,ShowDelegate,ReadTeam,TaskTitle>
 
-//: @property (nonatomic,strong) FFFCommonTableDelegate *delegator;
+//: @property (nonatomic,strong) PushCommonTableDelegate *delegator;
 @property (nonatomic,strong) StanzaDelegate *delegator;
 
 //: @property (nonatomic,copy ) NSArray *data;
@@ -349,7 +349,7 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
 
 //: @property (nonatomic, strong) ZMONReportUserView *reprotView;
 @property (nonatomic, strong) MainInsertView *reprotView;
-//: @property (nonatomic, strong) FFFRemarksView *changeRemarksView;
+//: @property (nonatomic, strong) PushRemarksView *changeRemarksView;
 @property (nonatomic, strong) DataView *changeRemarksView;
 //: @property (nonatomic, strong) ZMONCustomLoadingView *loadingView;
 @property (nonatomic, strong) ShowRandomView *loadingView;
@@ -458,7 +458,7 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
             //: NSString *avatar = [data newStringValueForKey:@"avatar"];
             NSString *avatar = [data index:StringFromXerographyData(k_nimName)];
 
-            //: NSString *str = [NSString stringWithFormat:@"%@:%@",[FFFLanguageManager getTextWithKey:@"register_avtivity_account"],self.userAcount];
+            //: NSString *str = [NSString stringWithFormat:@"%@:%@",[PushLanguageManager getTextWithKey:@"register_avtivity_account"],self.userAcount];
             NSString *str = [NSString stringWithFormat:@"%@:%@",[BackgroundRandomAttribute content:StringFromXerographyData(dream_nuclearEconomicPath)],self.userAcount];
             //: self.accountId.text = str;
             self.accountId.text = str;
@@ -576,9 +576,9 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
                     //: self.switchNotice.on = needNotify;
                     self.switchNotice.on = needNotify;
 
-                    //: self.labRemark.text = self.user.alias.length ? self.user.alias : [FFFLanguageManager getTextWithKey:@"未设置"];
+                    //: self.labRemark.text = self.user.alias.length ? self.user.alias : [PushLanguageManager getTextWithKey:@"未设置"];
                     self.labRemark.text = self.user.alias.length ? self.user.alias : [BackgroundRandomAttribute content:StringFromXerographyData(dreamCellMessage)];
-                    //: self.labSign.text = self.user.userInfo.sign.length ? self.user.userInfo.sign : [FFFLanguageManager getTextWithKey:@"未设置"];
+                    //: self.labSign.text = self.user.userInfo.sign.length ? self.user.userInfo.sign : [PushLanguageManager getTextWithKey:@"未设置"];
                     self.labSign.text = self.user.userInfo.sign.length ? self.user.userInfo.sign : [BackgroundRandomAttribute content:StringFromXerographyData(dreamCellMessage)];
 
                     //: if(isMyFriend){
@@ -653,7 +653,7 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
 //        [SVProgressHUD dismiss];
         //: [self.loadingView animationClose];
         [self.loadingView nearAdd];
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"add_friend_request_fail"]
+        //: [self.view makeToast:[PushLanguageManager getTextWithKey:@"add_friend_request_fail"]
         [self.view makeToast:[BackgroundRandomAttribute content:StringFromXerographyData(appShowChartPath)]
                     //: duration:2.0
                     duration:2.0
@@ -749,11 +749,11 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
             [self.loadingView nearAdd];
             //: if (!error) {
             if (!error) {
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"group_chat_avatar_activity_add_black_success"] duration:2.0f position:CSToastPositionCenter];
+                //: [wself.view makeToast:[PushLanguageManager getTextWithKey:@"group_chat_avatar_activity_add_black_success"] duration:2.0f position:CSToastPositionCenter];
                 [wself.view makeToast:[BackgroundRandomAttribute content:StringFromXerographyData(noti_blackUserData)] duration:2.0f position:CSToastPositionCenter];
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"black_list_activity_add_black_failed"] duration:2.0f position:CSToastPositionCenter];
+                //: [wself.view makeToast:[PushLanguageManager getTextWithKey:@"black_list_activity_add_black_failed"] duration:2.0f position:CSToastPositionCenter];
                 [wself.view makeToast:[BackgroundRandomAttribute content:StringFromXerographyData(mainNuclearWithUrl)] duration:2.0f position:CSToastPositionCenter];
                 //: [wself refresh];
                 [wself cropCenterRefresh];
@@ -769,11 +769,11 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
             [self.loadingView nearAdd];
             //: if (!error) {
             if (!error) {
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"black_list_activity_remove_black"] duration:2.0f position:CSToastPositionCenter];
+                //: [wself.view makeToast:[PushLanguageManager getTextWithKey:@"black_list_activity_remove_black"] duration:2.0f position:CSToastPositionCenter];
                 [wself.view makeToast:[BackgroundRandomAttribute content:StringFromXerographyData(k_tapIdent)] duration:2.0f position:CSToastPositionCenter];
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"black_list_activity_remove_black_failed"] duration:2.0f position:CSToastPositionCenter];
+                //: [wself.view makeToast:[PushLanguageManager getTextWithKey:@"black_list_activity_remove_black_failed"] duration:2.0f position:CSToastPositionCenter];
                 [wself.view makeToast:[BackgroundRandomAttribute content:StringFromXerographyData(userDownKey)] duration:2.0f position:CSToastPositionCenter];
                 //: [wself refresh];
                 [wself cropCenterRefresh];
@@ -799,7 +799,7 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
         [self.loadingView nearAdd];
         //: if (error) {
         if (error) {
-            //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2.0f position:CSToastPositionCenter];
+            //: [wself.view makeToast:[PushLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2.0f position:CSToastPositionCenter];
             [wself.view makeToast:[BackgroundRandomAttribute content:StringFromXerographyData(app_tingData)] duration:2.0f position:CSToastPositionCenter];
             //: [wself refresh];
             [wself cropCenterRefresh];
@@ -865,7 +865,7 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
             option.type = NIMTeamTypeAdvanced;
             //: option.joinMode = NIMTeamJoinModeNoAuth;
             option.joinMode = NIMTeamJoinModeNoAuth;
-            //: option.postscript = [FFFLanguageManager getTextWithKey:@"invite_you_group"];
+            //: option.postscript = [PushLanguageManager getTextWithKey:@"invite_you_group"];
             option.postscript = [BackgroundRandomAttribute content:StringFromXerographyData(noti_wipeName)];
 //            [SVProgressHUD show];
 
@@ -885,7 +885,7 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
                     [self.navigationController pushViewController:vc animated:YES];
                 //: }else{
                 }else{
-                    //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
+                    //: [self.view makeToast:[PushLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
                     [self.view makeToast:[BackgroundRandomAttribute content:StringFromXerographyData(show_eliteDepartMessage)] duration:2.0 position:CSToastPositionCenter];
                 }
             //: }];
@@ -925,7 +925,7 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
     //: config.showSelectHeaderview = YES;
     config.showSelectHeaderview = YES;
     //初始化联系人选择器
-    //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+    //: PushContactSelectViewController *vc = [[PushContactSelectViewController alloc] initWithConfig:config];
     SwitchlyViewController *vc = [[SwitchlyViewController alloc] initWithBarBottom:config];
     //回调处理
     //: vc.finshBlock = block;
@@ -946,9 +946,9 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
 
     //: UIImage *imageForAvatarUpload = [image imageByScalingAndCroppingForSize:CGSizeMake(375, 375)];
     UIImage *imageForAvatarUpload = [image disableSize:CGSizeMake(375, 375)];
-    //: NSString *fileName = [FFFKitFileLocationHelper genFilenameWithExt:@"jpg"];
+    //: NSString *fileName = [PushKitFileLocationHelper genFilenameWithExt:@"jpg"];
     NSString *fileName = [SecretHelper show:StringFromXerographyData(dreamViewName)];
-    //: NSString *filePath = [[FFFKitFileLocationHelper getAppDocumentPath] stringByAppendingPathComponent:fileName];
+    //: NSString *filePath = [[PushKitFileLocationHelper getAppDocumentPath] stringByAppendingPathComponent:fileName];
     NSString *filePath = [[SecretHelper domain] stringByAppendingPathComponent:fileName];
     //: NSData *data = UIImageJPEGRepresentation(imageForAvatarUpload, 0.3);
     NSData *data = UIImageJPEGRepresentation(imageForAvatarUpload, 0.3);
@@ -969,7 +969,7 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
 
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
+                //: [wself.view makeToast:[PushLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
                 [wself.view makeToast:[BackgroundRandomAttribute content:StringFromXerographyData(main_venuePath)]
                              //: duration:2
                              duration:2
@@ -983,7 +983,7 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
         }];
     //: }else{
     }else{
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
+        //: [self.view makeToast:[PushLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
         [self.view makeToast:[BackgroundRandomAttribute content:StringFromXerographyData(main_venuePath)]
                     //: duration:2
                     duration:2
@@ -1007,7 +1007,7 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
         NSString *canAddFriend = [_teamSetingConfig index:StringFromXerographyData(main_wakeName)];
         //: if (canAddFriend.integerValue <= 0) {
         if (canAddFriend.integerValue <= 0) {
-            //: [SVProgressHUD showMessage:[FFFLanguageManager getTextWithKey:@"please_contact_your_administrator"]];
+            //: [SVProgressHUD showMessage:[PushLanguageManager getTextWithKey:@"please_contact_your_administrator"]];
             [SVProgressHUD packetMessage:[BackgroundRandomAttribute content:StringFromXerographyData(k_whichStr)]];
             //: return;
             return;
@@ -1034,13 +1034,13 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
     //: request.message = tempVerificationInfo.length > 0 ? tempVerificationInfo : @"";
     request.message = tempVerificationInfo.length > 0 ? tempVerificationInfo : @"";
 
-    //: NSString *contact_tag_fragment_add_success = [FFFLanguageManager getTextWithKey:@"contact_tag_fragment_add_success"];
+    //: NSString *contact_tag_fragment_add_success = [PushLanguageManager getTextWithKey:@"contact_tag_fragment_add_success"];
     NSString *contact_tag_fragment_add_success = [BackgroundRandomAttribute content:StringFromXerographyData(kSaveValue)];//@"添加成功"
-    //: NSString *request_successful = [FFFLanguageManager getTextWithKey:@"request_successful"];
+    //: NSString *request_successful = [PushLanguageManager getTextWithKey:@"request_successful"];
     NSString *request_successful = [BackgroundRandomAttribute content:StringFromXerographyData(k_showMessage)];//@"请求成功"
-    //: NSString *add_friend_add_fail = [FFFLanguageManager getTextWithKey:@"add_friend_add_fail"];
+    //: NSString *add_friend_add_fail = [PushLanguageManager getTextWithKey:@"add_friend_add_fail"];
     NSString *add_friend_add_fail = [BackgroundRandomAttribute content:StringFromXerographyData(mAmData)];//@"添加失败"
-    //: NSString *add_friend_request_fail = [FFFLanguageManager getTextWithKey:@"add_friend_request_fail"];
+    //: NSString *add_friend_request_fail = [PushLanguageManager getTextWithKey:@"add_friend_request_fail"];
     NSString *add_friend_request_fail = [BackgroundRandomAttribute content:StringFromXerographyData(appShowChartPath)];//@"请求失败"
     //: NSString *successText = request.operation == NIMUserOperationAdd ? contact_tag_fragment_add_success: request_successful;
     NSString *successText = request.operation == NIMUserOperationAdd ? contact_tag_fragment_add_success: request_successful;
@@ -1114,7 +1114,7 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
 - (void)dataWith{
     //: __weak typeof(self) wself = self;
     __weak typeof(self) wself = self;//@"删除好友后，将同时解除双方的好友关系"
-    //: UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend"] message:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend_tip"] delegate:nil cancelButtonTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] otherButtonTitles:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"], nil];
+    //: UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[PushLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend"] message:[PushLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend_tip"] delegate:nil cancelButtonTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] otherButtonTitles:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_sure"], nil];
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[BackgroundRandomAttribute content:StringFromXerographyData(appSizeSessionValue)] message:[BackgroundRandomAttribute content:StringFromXerographyData(dreamDirectName)] delegate:nil cancelButtonTitle:[BackgroundRandomAttribute content:StringFromXerographyData(dreamEliteId)] otherButtonTitles:[BackgroundRandomAttribute content:StringFromXerographyData(userPathMessage)], nil];
     //: [alert showAlertWithCompletionHandler:^(NSInteger index) {
     [alert ransackedModel:^(NSInteger index) {
@@ -1137,7 +1137,7 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
                 [self.loadingView nearAdd];
                 //: if (!error) {
                 if (!error) {
-                    //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_delete_success"] duration:2.0f position:CSToastPositionCenter];
+                    //: [wself.view makeToast:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_delete_success"] duration:2.0f position:CSToastPositionCenter];
                     [wself.view makeToast:[BackgroundRandomAttribute content:StringFromXerographyData(dreamWithKey)] duration:2.0f position:CSToastPositionCenter];
                     //: [wself refresh];
                     [wself cropCenterRefresh];
@@ -1145,7 +1145,7 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
                     [self greenMax];
                 //: }else{
                 }else{
-                    //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_delete_fail"] duration:2.0f position:CSToastPositionCenter];
+                    //: [wself.view makeToast:[PushLanguageManager getTextWithKey:@"friend_delete_fail"] duration:2.0f position:CSToastPositionCenter];
                     [wself.view makeToast:[BackgroundRandomAttribute content:StringFromXerographyData(dreamItselfMessage)] duration:2.0f position:CSToastPositionCenter];
                 }
             //: }];
@@ -1406,9 +1406,9 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
             [_messageBtn addTarget:self action:@selector(magnitudeMy) forControlEvents:UIControlEventTouchUpInside];
             //: _messageBtn.titleLabel.font = [UIFont systemFontOfSize:12];
             _messageBtn.titleLabel.font = [UIFont systemFontOfSize:12];
-            //: [_messageBtn setTitleColor:[UIColor colorWithHexString:@"#ffffff"] forState:UIControlStateNormal];
+            //: [_messageBtn setTitleColor:[UIColor colorWithHexString:@"#fffPush"] forState:UIControlStateNormal];
             [_messageBtn setTitleColor:[UIColor user:StringFromXerographyData(dreamHolderIdent)] forState:UIControlStateNormal];
-            //: [_messageBtn setTitle:[FFFLanguageManager getTextWithKey:@"message_info_activity_message_info"] forState:UIControlStateNormal];
+            //: [_messageBtn setTitle:[PushLanguageManager getTextWithKey:@"message_info_activity_message_info"] forState:UIControlStateNormal];
             [_messageBtn setTitle:[BackgroundRandomAttribute content:StringFromXerographyData(appButtUrl)] forState:UIControlStateNormal];
             //: _messageBtn.layer.cornerRadius = 22;
             _messageBtn.layer.cornerRadius = 22;
@@ -1425,9 +1425,9 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
             [_groupBtn addTarget:self action:@selector(tableBar) forControlEvents:UIControlEventTouchUpInside];
             //: _groupBtn.titleLabel.font = [UIFont systemFontOfSize:12];
             _groupBtn.titleLabel.font = [UIFont systemFontOfSize:12];
-            //: [_groupBtn setTitleColor:[UIColor colorWithHexString:@"#ffffff"] forState:UIControlStateNormal];
+            //: [_groupBtn setTitleColor:[UIColor colorWithHexString:@"#fffPush"] forState:UIControlStateNormal];
             [_groupBtn setTitleColor:[UIColor user:StringFromXerographyData(dreamHolderIdent)] forState:UIControlStateNormal];
-            //: [_groupBtn setTitle:[FFFLanguageManager getTextWithKey:@"Group_chat"] forState:UIControlStateNormal];
+            //: [_groupBtn setTitle:[PushLanguageManager getTextWithKey:@"Group_chat"] forState:UIControlStateNormal];
             [_groupBtn setTitle:[BackgroundRandomAttribute content:StringFromXerographyData(kFabricTeamTitle)] forState:UIControlStateNormal];
             //: _groupBtn.layer.cornerRadius = 22;
             _groupBtn.layer.cornerRadius = 22;
@@ -1497,7 +1497,7 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
         self.labTitlenotice.font = [UIFont systemFontOfSize:16.f];
         //: self.labTitlenotice.textColor = [UIColor blackColor];
         self.labTitlenotice.textColor = [UIColor blackColor];
-        //: self.labTitlenotice.text = [FFFLanguageManager getTextWithKey:@"message_info_activity_msg_notice"];
+        //: self.labTitlenotice.text = [PushLanguageManager getTextWithKey:@"message_info_activity_msg_notice"];
         self.labTitlenotice.text = [BackgroundRandomAttribute content:StringFromXerographyData(dream_coverMsg)];
         //: [noticeView addSubview:self.labTitlenotice];
         [noticeView addSubview:self.labTitlenotice];
@@ -1532,7 +1532,7 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
         self.labTitleBlack.font = [UIFont systemFontOfSize:16.f];
         //: self.labTitleBlack.textColor = [UIColor blackColor];
         self.labTitleBlack.textColor = [UIColor blackColor];
-        //: self.labTitleBlack.text = [FFFLanguageManager getTextWithKey:@"func_viewholder_black"];
+        //: self.labTitleBlack.text = [PushLanguageManager getTextWithKey:@"func_viewholder_black"];
         self.labTitleBlack.text = [BackgroundRandomAttribute content:StringFromXerographyData(mDelicateKey)];
         //: [blackView addSubview:self.labTitleBlack];
         [blackView addSubview:self.labTitleBlack];
@@ -1547,7 +1547,7 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
         blackBtn.titleLabel.font = [UIFont systemFontOfSize:12];
         //: [blackBtn setTitleColor:[UIColor colorWithHexString:@"#05D481"] forState:UIControlStateNormal];
         [blackBtn setTitleColor:[UIColor user:StringFromXerographyData(kContentGovernMessage)] forState:UIControlStateNormal];
-        //: [blackBtn setTitle:[FFFLanguageManager getTextWithKey:@"gotoBlacklist"] forState:UIControlStateNormal];
+        //: [blackBtn setTitle:[PushLanguageManager getTextWithKey:@"gotoBlacklist"] forState:UIControlStateNormal];
         [blackBtn setTitle:[BackgroundRandomAttribute content:StringFromXerographyData(userBornKeyMsg)] forState:UIControlStateNormal];
         //: [blackView addSubview:blackBtn];
         [blackView addSubview:blackBtn];
@@ -1622,7 +1622,7 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
         self.labTitleRemark.font = [UIFont systemFontOfSize:16.f];
         //: self.labTitleRemark.textColor = [UIColor blackColor];
         self.labTitleRemark.textColor = [UIColor blackColor];
-        //: self.labTitleRemark.text = [FFFLanguageManager getTextWithKey:@"message_remark_name"];
+        //: self.labTitleRemark.text = [PushLanguageManager getTextWithKey:@"message_remark_name"];
         self.labTitleRemark.text = [BackgroundRandomAttribute content:StringFromXerographyData(notiViewFormat)];
         //: [nameView addSubview:self.labTitleRemark];
         [nameView addSubview:self.labTitleRemark];
@@ -1689,7 +1689,7 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
         self.labTitleResport.font = [UIFont systemFontOfSize:16.f];
         //: self.labTitleResport.textColor = [UIColor blackColor];
         self.labTitleResport.textColor = [UIColor blackColor];
-        //: self.labTitleResport.text = [FFFLanguageManager getTextWithKey:@"report_activity_title"];
+        //: self.labTitleResport.text = [PushLanguageManager getTextWithKey:@"report_activity_title"];
         self.labTitleResport.text = [BackgroundRandomAttribute content:StringFromXerographyData(dream_iconStr)];
         //: [reportView addSubview:self.labTitleResport];
         [reportView addSubview:self.labTitleResport];
@@ -1709,11 +1709,11 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
         self.btnAdd.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [self.btnAdd setTitleColor:[UIColor colorWithHexString:@"#FF483D"] forState:UIControlStateNormal];
         [self.btnAdd setTitleColor:[UIColor user:StringFromXerographyData(main_fabricPhotographyKey)] forState:UIControlStateNormal];
-        //: [self.btnAdd setTitle:[FFFLanguageManager getTextWithKey:@"add_friend_activity_add_friend"] forState:UIControlStateNormal];
+        //: [self.btnAdd setTitle:[PushLanguageManager getTextWithKey:@"add_friend_activity_add_friend"] forState:UIControlStateNormal];
         [self.btnAdd setTitle:[BackgroundRandomAttribute content:StringFromXerographyData(userDeviceFormat)] forState:UIControlStateNormal];
         //: [self.btnAdd addTarget:self action:@selector(addFriend) forControlEvents:UIControlEventTouchUpInside];
         [self.btnAdd addTarget:self action:@selector(lifeHistory) forControlEvents:UIControlEventTouchUpInside];
-        //: self.btnAdd.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: self.btnAdd.backgroundColor = [UIColor colorWithHexString:@"#fffPush"];
         self.btnAdd.backgroundColor = [UIColor user:StringFromXerographyData(dreamHolderIdent)];
         //: self.btnAdd.layer.borderWidth = 1;
         self.btnAdd.layer.borderWidth = 1;
@@ -1732,11 +1732,11 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
         self.btnDelete.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [self.btnDelete setTitleColor:[UIColor colorWithHexString:@"#FF483D"] forState:UIControlStateNormal];
         [self.btnDelete setTitleColor:[UIColor user:StringFromXerographyData(main_fabricPhotographyKey)] forState:UIControlStateNormal];
-        //: [self.btnDelete setTitle:[FFFLanguageManager getTextWithKey:@"friend_circle_adapter_delete"] forState:UIControlStateNormal];
+        //: [self.btnDelete setTitle:[PushLanguageManager getTextWithKey:@"friend_circle_adapter_delete"] forState:UIControlStateNormal];
         [self.btnDelete setTitle:[BackgroundRandomAttribute content:StringFromXerographyData(noti_abortPickName)] forState:UIControlStateNormal];
         //: [self.btnDelete addTarget:self action:@selector(deleteFriend) forControlEvents:UIControlEventTouchUpInside];
         [self.btnDelete addTarget:self action:@selector(dataWith) forControlEvents:UIControlEventTouchUpInside];
-        //: self.btnDelete.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: self.btnDelete.backgroundColor = [UIColor colorWithHexString:@"#fffPush"];
         self.btnDelete.backgroundColor = [UIColor user:StringFromXerographyData(dreamHolderIdent)];
         //: self.btnDelete.layer.borderWidth = 1;
         self.btnDelete.layer.borderWidth = 1;
@@ -1751,12 +1751,12 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
     return _personView;
 }
 
-//: - (FFFRemarksView *)changeRemarksView
+//: - (PushRemarksView *)changeRemarksView
 - (DataView *)changeRemarksView
 {
     //: if(!_changeRemarksView){
     if(!_changeRemarksView){
-        //: _changeRemarksView = [[FFFRemarksView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
+        //: _changeRemarksView = [[PushRemarksView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
         _changeRemarksView = [[DataView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
 //        _changeRemarksView.hidden = YES;
 
@@ -1846,11 +1846,11 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
 
                    //: if (!error) {
                    if (!error) {
-                       //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"group_chat_avatar_activity_add_black_success"] duration:2.0f position:CSToastPositionCenter];
+                       //: [self.view makeToast:[PushLanguageManager getTextWithKey:@"group_chat_avatar_activity_add_black_success"] duration:2.0f position:CSToastPositionCenter];
                        [self.view makeToast:[BackgroundRandomAttribute content:StringFromXerographyData(noti_blackUserData)] duration:2.0f position:CSToastPositionCenter];
                    //: }else{
                    }else{
-                       //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"black_list_activity_add_black_failed"] duration:2.0f position:CSToastPositionCenter];
+                       //: [self.view makeToast:[PushLanguageManager getTextWithKey:@"black_list_activity_add_black_failed"] duration:2.0f position:CSToastPositionCenter];
                        [self.view makeToast:[BackgroundRandomAttribute content:StringFromXerographyData(mainNuclearWithUrl)] duration:2.0f position:CSToastPositionCenter];
 
                    }
@@ -1904,11 +1904,11 @@ Byte main_fabricPhotographyKey[] = {98, 7, 67, 8, 124, 230, 56, 188, 224, 3, 3, 
 
             //: if (!error) {
             if (!error) {
-                //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_delete_success"] duration:2.0f position:CSToastPositionCenter];
+                //: [self.view makeToast:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_delete_success"] duration:2.0f position:CSToastPositionCenter];
                 [self.view makeToast:[BackgroundRandomAttribute content:StringFromXerographyData(dreamWithKey)] duration:2.0f position:CSToastPositionCenter];
             //: }else{
             }else{
-                //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_delete_fail"] duration:2.0f position:CSToastPositionCenter];
+                //: [self.view makeToast:[PushLanguageManager getTextWithKey:@"friend_delete_fail"] duration:2.0f position:CSToastPositionCenter];
                 [self.view makeToast:[BackgroundRandomAttribute content:StringFromXerographyData(dreamItselfMessage)] duration:2.0f position:CSToastPositionCenter];
             }
         //: }];

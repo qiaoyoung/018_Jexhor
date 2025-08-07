@@ -12,9 +12,9 @@
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-//: @class FFFSessionConfig;
+//: @class PushSessionConfig;
 @class CreateTop;
-//: @interface NTESSessionConfig : NSObject<FFFSessionConfig>
+//: @interface NTESSessionConfig : NSObject<PushSessionConfig>
 @interface EnablelyTask : NSObject<CreateTop>
 //: @property (nonatomic,strong) NIMSession *session;
 @property (nonatomic,strong) NIMSession *session;

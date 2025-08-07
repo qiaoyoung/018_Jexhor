@@ -26,15 +26,15 @@ Byte dream_offenseText[] = {11, 6, 12, 127, 159, 201, 21, 170, 94, 105, 254, 197
 //#import "WMPlayer.h"
 
 // __M_A_C_R_O__
-//: #import "FFFSessionVideoContentView.h"
+//: #import "PushSessionVideoContentView.h"
 #import "CenterView.h"
-//: #import "FFFMessageModel.h"
+//: #import "PushMessageModel.h"
 #import "PurseModel.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
-//: #import "FFFLoadProgressView.h"
+//: #import "PushLoadProgressView.h"
 #import "GeorgiaHomeBoyView.h"
 //: #import "NTESAVMoivePlayerController.h"
 #import "PushController.h"
@@ -44,7 +44,7 @@ Byte dream_offenseText[] = {11, 6, 12, 127, 159, 201, 21, 170, 94, 105, 254, 197
 //: static void *KVO_AVPlayerItem_state = &KVO_AVPlayerItem_state;
 static void *showMessageStr = &showMessageStr;
 
-//: @interface FFFSessionVideoContentView()
+//: @interface PushSessionVideoContentView()
 @interface CenterView()
 
 //: @property (nonatomic,strong,readwrite) UIImageView * imageView;
@@ -53,7 +53,7 @@ static void *showMessageStr = &showMessageStr;
 //: @property (nonatomic,strong) UIButton *playBtn;
 @property (nonatomic,strong) UIButton *playBtn;
 
-//: @property (nonatomic,strong) FFFLoadProgressView * progressView;
+//: @property (nonatomic,strong) PushLoadProgressView * progressView;
 @property (nonatomic,strong) GeorgiaHomeBoyView * progressView;
 
 //: @property (nonatomic, strong) NSURL *fileURL;
@@ -74,7 +74,7 @@ static void *showMessageStr = &showMessageStr;
 //: @end
 @end
 
-//: @implementation FFFSessionVideoContentView
+//: @implementation PushSessionVideoContentView
 @implementation CenterView
 
 //: - (instancetype)initSessionMessageContentView{
@@ -112,7 +112,7 @@ static void *showMessageStr = &showMessageStr;
         //: [self addSubview:_playBtn];
         [self addSubview:_playBtn];
 
-        //: _progressView = [[FFFLoadProgressView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
+        //: _progressView = [[PushLoadProgressView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
         _progressView = [[GeorgiaHomeBoyView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
         //: _progressView.maxProgress = 1.0;
         _progressView.maxProgress = 1.0;
@@ -151,7 +151,7 @@ static void *showMessageStr = &showMessageStr;
    }
 }
 
-//: - (void)refresh:(FFFMessageModel *)data{
+//: - (void)refresh:(PushMessageModel *)data{
 - (void)name:(PurseModel *)data{
     //: [super refresh:data];
     [super name:data];
@@ -344,9 +344,9 @@ static void *showMessageStr = &showMessageStr;
 //: - (void)onTouchUpInside:(id)sender
 - (void)played:(id)sender
 {
-    //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+    //: PushKitEvent *event = [[PushKitEvent alloc] init];
     BeforeEvent *event = [[BeforeEvent alloc] init];
-    //: event.eventName = FFFKitEventNameTapContent;
+    //: event.eventName = PushKitEventNameTapContent;
     event.eventName = dream_makeMsg;
     //: event.messageModel = self.model;
     event.messageModel = self.model;

@@ -9,7 +9,7 @@
 //  群组操作
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCardViewController.h"
+//: #import "PushTeamCardViewController.h"
 #import "HarmViewController.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 //: #pragma mark - 外部配置项
 #pragma mark - 外部配置项
-//: @interface FFFTeamCardViewControllerOption : NSObject
+//: @interface PushTeamCardViewControllerOption : NSObject
 @interface OrientationBackground : NSObject
 
 //: @property (nonatomic, assign) BOOL isTop;
@@ -26,15 +26,15 @@ NS_ASSUME_NONNULL_BEGIN
 //: @end
 @end
 
-//: @interface FFFTeamCardOperationViewController : FFFTeamCardViewController
+//: @interface PushTeamCardOperationViewController : PushTeamCardViewController
 @interface PushViewController : HarmViewController
 
 //外部配置
-//: @property (nonatomic,strong) FFFTeamCardViewControllerOption *option;
+//: @property (nonatomic,strong) PushTeamCardViewControllerOption *option;
 @property (nonatomic,strong) OrientationBackground *option;
 
 //群组管理
-//: @property (nonatomic,strong) FFFTeamListDataManager *teamListManager;
+//: @property (nonatomic,strong) PushTeamListDataManager *teamListManager;
 @property (nonatomic,strong) MainRead *teamListManager;
 
 
@@ -43,10 +43,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithNumberChild:(NIMTeam *)team
                      //: session:(NIMSession *)session
                      change:(NIMSession *)session
-                      //: option:(FFFTeamCardViewControllerOption * _Nullable)option;
+                      //: option:(PushTeamCardViewControllerOption * _Nullable)option;
                       at:(OrientationBackground * _Nullable)option;
 //查询全部群成员
-//: - (void)didFetchTeamMember:(nullable FFFMembersFetchOption *)option;
+//: - (void)didFetchTeamMember:(nullable PushMembersFetchOption *)option;
 - (void)rangeMember:(nullable ReminiscenceSession *)option;
 
 //加人

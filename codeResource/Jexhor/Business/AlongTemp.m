@@ -119,7 +119,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFConfig.h"
+//: #import "PushConfig.h"
 #import "AlongTemp.h"
 //: #import "RestUtil.h"
 #import "EquilibriumModel.h"
@@ -129,7 +129,7 @@ static NSString *const main_messageName = @"https://apple.akunjapan0206chat.com"
 //: static NSString *const kSavedDomainKey = @"SavedDomainKey";
 static NSString *const dream_modelValue = @"SavedDomainKey";
 
-//: @interface FFFConfig ()
+//: @interface PushConfig ()
 @interface AlongTemp ()
 
 //: @property (nonatomic,copy) NSString *hostFrom;
@@ -140,19 +140,19 @@ static NSString *const dream_modelValue = @"SavedDomainKey";
 //: @end
 @end
 
-//: @implementation FFFConfig
+//: @implementation PushConfig
 @implementation AlongTemp
 
 //: + (instancetype)sharedConfig
 + (instancetype)frameConfig
 {
-    //: static FFFConfig *instance = nil;
+    //: static PushConfig *instance = nil;
     static AlongTemp *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFConfig alloc] init];
+        //: instance = [[PushConfig alloc] init];
         instance = [[AlongTemp alloc] init];
     //: });
     });
@@ -172,7 +172,7 @@ static NSString *const dream_modelValue = @"SavedDomainKey";
 
         //        _apnsCername = @"DEVELOPER";
         //: _apnsCername = @"pushDev";
-        _apnsCername = [ProlusionData appTingSkyKey];
+        _apnsCername = @"push_Jexhor_release";
         //: _pkCername = @"pushkit_voice_test";
         _pkCername = [ProlusionData dream_aidUrl];
         //: _allowAutoLogin = YES; 

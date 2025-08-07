@@ -18,9 +18,9 @@ Byte showRequirementLegallyIdent[] = {95, 17, 85, 9, 149, 152, 152, 208, 169, 20
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSpellingCenter.h"
+//: #import "PushSpellingCenter.h"
 #import "ViewCenter.h"
-//: #import "FFFPinyinConverter.h"
+//: #import "PushPinyinConverter.h"
 #import "TaskConverter.h"
 //: #import "YYModel/YYModel.h"
 #import "YYModel/YYModel.h"
@@ -33,7 +33,7 @@ Byte showRequirementLegallyIdent[] = {95, 17, 85, 9, 149, 152, 152, 208, 169, 20
 //: @end
 @end
 
-//: @interface FFFSpellingCenter ()
+//: @interface PushSpellingCenter ()
 @interface ViewCenter ()
 //: - (NIMSpellingUnit *)calcSpellingOfString: (NSString *)source;
 - (TempColor *)viewInfo: (NSString *)source;
@@ -41,18 +41,18 @@ Byte showRequirementLegallyIdent[] = {95, 17, 85, 9, 149, 152, 152, 208, 169, 20
 @end
 
 
-//: @implementation FFFSpellingCenter
+//: @implementation PushSpellingCenter
 @implementation ViewCenter
-//: + (FFFSpellingCenter *)sharedCenter
+//: + (PushSpellingCenter *)sharedCenter
 + (ViewCenter *)centerStage
 {
-    //: static FFFSpellingCenter *instance = nil;
+    //: static PushSpellingCenter *instance = nil;
     static ViewCenter *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFSpellingCenter alloc]init];
+        //: instance = [[PushSpellingCenter alloc]init];
         instance = [[ViewCenter alloc]init];
     //: });
     });
@@ -173,7 +173,7 @@ Byte showRequirementLegallyIdent[] = {95, 17, 85, 9, 149, 152, 152, 208, 169, 20
     {
         //: NSString *word = [source substringWithRange:NSMakeRange(i, 1)];
         NSString *word = [source substringWithRange:NSMakeRange(i, 1)];
-        //: NSString *pinyin = [[FFFPinyinConverter sharedInstance] toPinyin:word];
+        //: NSString *pinyin = [[PushPinyinConverter sharedInstance] toPinyin:word];
         NSString *pinyin = [[TaskConverter can] exist:word];
 
         //: if ([pinyin length])

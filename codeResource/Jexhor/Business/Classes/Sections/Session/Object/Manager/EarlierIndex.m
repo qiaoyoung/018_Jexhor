@@ -78,7 +78,7 @@
 #import "AttachmentOn.h"
 //: #import "NTESSessionMsgConverter.h"
 #import "SessionDevice.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "PushKitInfoFetchOption.h"
 #import "AttributeQuantityOption.h"
 
 //: typedef void(^NTESMergeForwardTaskResult)(uint64_t identifier, NSError * _Nonnull error, NIMMessage * _Nonnull message);
@@ -248,11 +248,11 @@ typedef void(^NTESMergeForwardTaskResult)(uint64_t identifier, NSError * _Nonnul
                 //show name
                 //: NIMSession *fromSession = [weakSelf.messages firstObject].session;
                 NIMSession *fromSession = [weakSelf.messages firstObject].session;
-                //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+                //: PushKitInfoFetchOption *option = [[PushKitInfoFetchOption alloc] init];
                 AttributeQuantityOption *option = [[AttributeQuantityOption alloc] init];
                 //: option.session = fromSession;
                 option.session = fromSession;
-                //: FFFKitInfo *info = nil;
+                //: PushKitInfo *info = nil;
                 DataTeam *info = nil;
                 //: if (fromSession.sessionType == NIMSessionTypeP2P) {
                 if (fromSession.sessionType == NIMSessionTypeP2P) {

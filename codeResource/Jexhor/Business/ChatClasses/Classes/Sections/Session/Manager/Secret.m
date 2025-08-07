@@ -71,21 +71,21 @@ typedef struct {
 // __M_A_C_R_O__
 //: #import "MyUserKit.h"
 #import "Secret.h"
-//: #import "FFFKitTimerHolder.h"
+//: #import "PushKitTimerHolder.h"
 #import "TouchMax.h"
-//: #import "FFFKitNotificationFirer.h"
+//: #import "PushKitNotificationFirer.h"
 #import "Firer.h"
-//: #import "FFFKitDataProviderImpl.h"
+//: #import "PushKitDataProviderImpl.h"
 #import "MerelyImpl.h"
-//: #import "FFFCellLayoutConfig.h"
+//: #import "PushCellLayoutConfig.h"
 #import "MessageImageContainer.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "PushKitInfoFetchOption.h"
 #import "AttributeQuantityOption.h"
 //: #import "NSBundle+MyUserKit.h"
 #import "NSBundle+Secret.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+Secret.h"
-//: #import "FFFChatUIManager.h"
+//: #import "PushChatUIManager.h"
 #import "TeamImageUimanager.h"
 
 //: extern NSString *const k_contactPath;
@@ -99,9 +99,9 @@ extern NSString *const k_frameStr;
     //: NSRegularExpression *_urlRegex;
     NSRegularExpression *_urlRegex;
 }
-//: @property (nonatomic,strong) FFFKitNotificationFirer *firer;
+//: @property (nonatomic,strong) PushKitNotificationFirer *firer;
 @property (nonatomic,strong) Firer *firer;
-//: @property (nonatomic,strong) id<FFFCellLayoutConfig> layoutConfig;
+//: @property (nonatomic,strong) id<PushCellLayoutConfig> layoutConfig;
 @property (nonatomic,strong) id<MessageImageContainer> layoutConfig;
 //: @end
 @end
@@ -114,11 +114,11 @@ extern NSString *const k_frameStr;
 {
     //: if (self = [super init]) {
     if (self = [super init]) {
-        //: _firer = [[FFFKitNotificationFirer alloc] init];
+        //: _firer = [[PushKitNotificationFirer alloc] init];
         _firer = [[Firer alloc] init];
-        //: _provider = [[FFFKitDataProviderImpl alloc] init]; 
+        //: _provider = [[PushKitDataProviderImpl alloc] init]; 
         _provider = [[MerelyImpl alloc] init]; //默认使用 Secret 的实现
-        //: _layoutConfig = [[FFFCellLayoutConfig alloc] init];
+        //: _layoutConfig = [[PushCellLayoutConfig alloc] init];
         _layoutConfig = [[MessageImageContainer alloc] init];
         //: [self preloadNIMKitBundleResource];
         [self redImage];
@@ -144,10 +144,10 @@ extern NSString *const k_frameStr;
     return instance;
 }
 
-//: - (void)registerLayoutConfig:(FFFCellLayoutConfig *)layoutConfig
+//: - (void)registerLayoutConfig:(PushCellLayoutConfig *)layoutConfig
 - (void)nameTag:(MessageImageContainer *)layoutConfig
 {
-    //: if ([layoutConfig isKindOfClass:[FFFCellLayoutConfig class]])
+    //: if ([layoutConfig isKindOfClass:[PushCellLayoutConfig class]])
     if ([layoutConfig isKindOfClass:[MessageImageContainer class]])
     {
         //: self.layoutConfig = layoutConfig;
@@ -183,28 +183,28 @@ extern NSString *const k_frameStr;
     return _languageBundle;
 }
 
-//: - (id<FFFChatUIManager>)chatUIManager
+//: - (id<PushChatUIManager>)chatUIManager
 - (id<TeamImageUimanager>)chatUIManager
 {
-    //: return FFFChatUIManager.sharedManager;
+    //: return PushChatUIManager.sharedManager;
     return TeamImageUimanager.cell;
 }
 
-//: - (id<FFFCellLayoutConfig>)layoutConfig
+//: - (id<PushCellLayoutConfig>)layoutConfig
 - (id<MessageImageContainer>)layoutConfig
 {
     //: return _layoutConfig;
     return _layoutConfig;
 }
 
-//: - (FFFKitConfig *)config
+//: - (PushKitConfig *)config
 - (CoverRandomConfig *)config
 {
     //不要放在 Secret 初始化里面，因为 UIConfig 初始化会使用 NIMKit, 防止死循环
     //: if (!_config)
     if (!_config)
     {
-        //: _config = [[FFFKitConfig alloc] init];
+        //: _config = [[PushKitConfig alloc] init];
         _config = [[CoverRandomConfig alloc] init];
     }
     //: return _config;
@@ -289,10 +289,10 @@ extern NSString *const k_frameStr;
     [self.firer textOf:info];
 }
 
-//: - (FFFKitInfo *)infoByUser:(NSString *)userId option:(FFFKitInfoFetchOption *)option
+//: - (PushKitInfo *)infoByUser:(NSString *)userId option:(PushKitInfoFetchOption *)option
 - (DataTeam *)infoAndStraddleOption:(NSString *)userId item:(AttributeQuantityOption *)option
 {
-    //: FFFKitInfo *info = nil;
+    //: PushKitInfo *info = nil;
     DataTeam *info = nil;
     //: if (self.provider && [self.provider respondsToSelector:@selector(infoByUser:option:)]) {
     if (self.provider && [self.provider respondsToSelector:@selector(infoAndStraddleOption:item:)]) {
@@ -303,10 +303,10 @@ extern NSString *const k_frameStr;
     return info;
 }
 
-//: - (FFFKitInfo *)infoByTeam:(NSString *)teamId option:(FFFKitInfoFetchOption *)option
+//: - (PushKitInfo *)infoByTeam:(NSString *)teamId option:(PushKitInfoFetchOption *)option
 - (DataTeam *)show:(NSString *)teamId corner:(AttributeQuantityOption *)option
 {
-    //: FFFKitInfo *info = nil;
+    //: PushKitInfo *info = nil;
     DataTeam *info = nil;
     //: if (self.provider && [self.provider respondsToSelector:@selector(infoByTeam:option:)]) {
     if (self.provider && [self.provider respondsToSelector:@selector(show:corner:)]) {
@@ -318,10 +318,10 @@ extern NSString *const k_frameStr;
 
 }
 
-//: - (FFFKitInfo *)infoBySuperTeam:(NSString *)teamId option:(FFFKitInfoFetchOption *)option
+//: - (PushKitInfo *)infoBySuperTeam:(NSString *)teamId option:(PushKitInfoFetchOption *)option
 - (DataTeam *)of:(NSString *)teamId enableence_strong:(AttributeQuantityOption *)option
 {
-    //: FFFKitInfo *info = nil;
+    //: PushKitInfo *info = nil;
     DataTeam *info = nil;
     //: if (self.provider && [self.provider respondsToSelector:@selector(infoBySuperTeam:option:)]) {
     if (self.provider && [self.provider respondsToSelector:@selector(of:enableence_strong:)]) {
@@ -337,7 +337,7 @@ extern NSString *const k_frameStr;
 - (void)redImage {
     //: dispatch_async(dispatch_get_main_queue(), ^{
     dispatch_async(dispatch_get_main_queue(), ^{
-        //: [[FFFInputEmoticonManager sharedManager] start];
+        //: [[PushInputEmoticonManager sharedManager] start];
         [[DirectorManager statusFor] holderRed];
     //: });
     });

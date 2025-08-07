@@ -89,14 +89,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCardOperationItem.h"
+//: #import "PushCardOperationItem.h"
 #import "MaxCreate.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "PushGlobalMacro.h"
+#import "PushGlobalMacro.h"
 
-//: @interface FFFCardOperationItem()
+//: @interface PushCardOperationItem()
 @interface MaxCreate()
 
 //: @property(nonatomic,assign) NIMKitCardHeaderOpeator opera;
@@ -105,7 +105,7 @@
 //: @end
 @end
 
-//: @implementation FFFCardOperationItem
+//: @implementation PushCardOperationItem
 @implementation MaxCreate
 
 //: - (instancetype)initWithOperation:(NIMKitCardHeaderOpeator)opera{

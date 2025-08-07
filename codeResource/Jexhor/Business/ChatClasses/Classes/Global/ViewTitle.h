@@ -15,7 +15,7 @@
 //: @class NIMCommonTableRow;
 @class DeviceRow;
 
-//: @protocol FFFCommonTableViewCell <NSObject>
+//: @protocol PushCommonTableViewCell <NSObject>
 @protocol ViewTitle <NSObject>
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier;

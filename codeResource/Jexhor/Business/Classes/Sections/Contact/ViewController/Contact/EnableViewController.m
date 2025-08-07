@@ -234,7 +234,7 @@ Byte show_imageUrl[] = {89, 9, 83, 11, 149, 96, 8, 135, 8, 59, 248, 16, 28, 26, 
     contentLabel.textColor = [UIColor user:StringFromButtonThreadData(m_versionId)];
     //: contentLabel.textAlignment = NSTextAlignmentCenter;
     contentLabel.textAlignment = NSTextAlignmentCenter;
-    //: contentLabel.text = [FFFLanguageManager getTextWithKey:@"activity_qrcode_scan_me"];
+    //: contentLabel.text = [PushLanguageManager getTextWithKey:@"activity_qrcode_scan_me"];
     contentLabel.text = [BackgroundRandomAttribute content:StringFromButtonThreadData(user_viewMessage)];//@"扫描二维码，加我为好友";
     //: [contentView addSubview:contentLabel];
     [contentView addSubview:contentLabel];
@@ -409,7 +409,7 @@ Byte show_imageUrl[] = {89, 9, 83, 11, 149, 96, 8, 135, 8, 59, 248, 16, 28, 26, 
           if (error) {
               //: dispatch_async(dispatch_get_main_queue(), ^{
               dispatch_async(dispatch_get_main_queue(), ^{
-                  //: NSString *failed = [FFFLanguageManager getTextWithKey:@"group_info_activity_update_failed"];
+                  //: NSString *failed = [PushLanguageManager getTextWithKey:@"group_info_activity_update_failed"];
                   NSString *failed = [BackgroundRandomAttribute content:StringFromButtonThreadData(notiBlueText)];//@"保存失败"
                   //: [SVProgressHUD showMessage:failed];
                   [SVProgressHUD packetMessage:failed];
@@ -417,7 +417,7 @@ Byte show_imageUrl[] = {89, 9, 83, 11, 149, 96, 8, 135, 8, 59, 248, 16, 28, 26, 
               });
           //: } else {
           } else {
-              //: NSString *success = [FFFLanguageManager getTextWithKey:@"group_info_activity_update_success"];
+              //: NSString *success = [PushLanguageManager getTextWithKey:@"group_info_activity_update_success"];
               NSString *success = [BackgroundRandomAttribute content:StringFromButtonThreadData(main_userPath)];//保存成功
               //: dispatch_async(dispatch_get_main_queue(), ^{
               dispatch_async(dispatch_get_main_queue(), ^{

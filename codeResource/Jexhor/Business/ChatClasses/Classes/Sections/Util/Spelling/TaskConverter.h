@@ -12,10 +12,10 @@
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-//: @interface FFFPinyinConverter : NSObject
+//: @interface PushPinyinConverter : NSObject
 @interface TaskConverter : NSObject
 
-//: + (FFFPinyinConverter *)sharedInstance;
+//: + (PushPinyinConverter *)sharedInstance;
 + (TaskConverter *)can;
 
 //: - (NSString *)toPinyin: (NSString *)source;

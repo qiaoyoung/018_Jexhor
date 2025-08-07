@@ -127,13 +127,13 @@ Byte main_rendName[] = {68, 7, 3, 47, 47, 58, 101, 110, 105, 108, 133};
 // __M_A_C_R_O__
 //: #import "AppDelegate.h"
 #import "AppDelegate.h"
-//: #import "FFFLoginViewController.h"
+//: #import "PushLoginViewController.h"
 #import "TapMaxViewController.h"
 //: #import "UIView+Toast.h"
 #import "UIView+Toast.h"
 //: #import "NTESNotificationCenter.h"
 #import "SizeCenter.h"
-//: #import "FFFConfig.h"
+//: #import "PushConfig.h"
 #import "AlongTemp.h"
 //: #import "NTESSessionUtil.h"
 #import "ReadUtil.h"
@@ -181,7 +181,7 @@ Byte main_rendName[] = {68, 7, 3, 47, 47, 58, 101, 110, 105, 108, 133};
 #import <objc/runtime.h>
 //: #import "TYLNoticeRequest.h"
 #import "AreaRequest.h"
-//: #import "FFFKitDevice.h"
+//: #import "PushKitDevice.h"
 #import "SizeBackground.h"
 //: #import <UMCommon/UMCommon.h>
 #import <UMCommon/UMCommon.h>
@@ -258,14 +258,14 @@ NSString *showCommentUrl = @"NotificationLogout";
 //: - (void)addRootViewController {
 - (void)video {
     // 检查并更新域名
-    //: [[FFFConfig sharedConfig] fetchLatestDomainWithCompletion:^(BOOL success) {
+    //: [[PushConfig sharedConfig] fetchLatestDomainWithCompletion:^(BOOL success) {
     [[AlongTemp frameConfig] beforeMessageCompletion:^(BOOL success) {
         //: if (success) {
         if (success) {
-            //: NSLog(@"域名更新成功: %@", [[FFFConfig sharedConfig] getCurrentDomain]);
+            //: NSLog(@"域名更新成功: %@", [[PushConfig sharedConfig] getCurrentDomain]);
         //: } else {
         } else {
-            //: NSLog(@"使用默认域名: %@", [[FFFConfig sharedConfig] getCurrentDomain]);
+            //: NSLog(@"使用默认域名: %@", [[PushConfig sharedConfig] getCurrentDomain]);
         }
     //: }];
     }];
@@ -453,7 +453,7 @@ NSString *showCommentUrl = @"NotificationLogout";
 - (void)beyondCollection
 {
 
-    //: NSString *langType = [FFFKitDevice language];
+    //: NSString *langType = [PushKitDevice language];
     NSString *langType = [SizeBackground place];
     //: NSLog(@"langType : %@",langType);
     NSLog(StringFromHardWaterData(mainListContentFormat),langType);//zh-Hant-TW 中文繁体（台湾）
@@ -956,7 +956,7 @@ NSString *showCommentUrl = @"NotificationLogout";
     MaxVoice *data = [[MessageImage frameManager] currentLoginData];
 
     //如果有缓存用户名密码推荐使用自动登录
-    //: BOOL allow = [FFFConfig sharedConfig].allowAutoLogin;
+    //: BOOL allow = [PushConfig sharedConfig].allowAutoLogin;
     BOOL allow = [AlongTemp frameConfig].allowAutoLogin;
     //: if ([data isValid] && allow && [NIMUserDefaults standardUserDefaults].loginToken)
     if ([data recordAcrossValid] && allow && [CrossShouldBlock towardScaleOfMeasurement].loginToken)
@@ -1012,7 +1012,7 @@ NSString *showCommentUrl = @"NotificationLogout";
 {
     //: [self.window.rootViewController dismissViewControllerAnimated:YES completion:nil];
     [self.window.rootViewController dismissViewControllerAnimated:YES completion:nil];
-    //: FFFLoginViewController *loginController = [[FFFLoginViewController alloc] init];
+    //: PushLoginViewController *loginController = [[PushLoginViewController alloc] init];
     TapMaxViewController *loginController = [[TapMaxViewController alloc] init];
     //: UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:loginController];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:loginController];
@@ -1170,13 +1170,13 @@ NSString *showCommentUrl = @"NotificationLogout";
     //appkey 是应用的标识，不同应用之间的数据（用户、消息、群组等）是完全隔离的。
     //如需打网易云信 Demo 包，请勿修改 appkey ，开发自己的应用时，请替换为自己的 appkey 。
     //并请对应更换 Demo 代码中的获取好友列表、个人信息等网易云信 SDK 未提供的接口。
-    //: NSString *appKey = [[FFFConfig sharedConfig] appKey];
+    //: NSString *appKey = [[PushConfig sharedConfig] appKey];
     NSString *appKey = [[AlongTemp frameConfig] appKey];
     //: NIMSDKOption *option = [NIMSDKOption optionWithAppKey:appKey];
     NIMSDKOption *option = [NIMSDKOption optionWithAppKey:appKey];
-    //: option.apnsCername = [[FFFConfig sharedConfig] apnsCername];
+    //: option.apnsCername = [[PushConfig sharedConfig] apnsCername];
     option.apnsCername = [[AlongTemp frameConfig] apnsCername];
-    //: option.pkCername = [[FFFConfig sharedConfig] pkCername];
+    //: option.pkCername = [[PushConfig sharedConfig] pkCername];
     option.pkCername = [[AlongTemp frameConfig] pkCername];
 
     //: [[NIMSDK sharedSDK] registerWithOption:option];
@@ -1257,7 +1257,7 @@ NSString *showCommentUrl = @"NotificationLogout";
         [vc addAction:retryAction];
     }
 
-    //: UIAlertAction *logoutAction = [UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"]
+    //: UIAlertAction *logoutAction = [UIAlertAction actionWithTitle:[PushLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"]
     UIAlertAction *logoutAction = [UIAlertAction actionWithTitle:[BackgroundRandomAttribute content:StringFromHardWaterData(show_touchPreserveMsg)]
                                                            //: style:UIAlertActionStyleDestructive
                                                            style:UIAlertActionStyleDestructive
@@ -1359,7 +1359,7 @@ NSString *showCommentUrl = @"NotificationLogout";
             //: action.type = LEEActionTypeCancel;
             action.type = LEEActionTypeCancel;
 
-            //: action.title = [FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"];
+            //: action.title = [PushLanguageManager getTextWithKey:@"contact_tag_fragment_sure"];
             action.title = [BackgroundRandomAttribute content:StringFromHardWaterData(app_skyContent)];
 
             //: action.titleColor = [UIColor whiteColor];

@@ -24,20 +24,20 @@ Byte noti_cramUrl[] = {63, 7, 5, 122, 20, 56, 65, 69, 57, 66, 57, 35, 248};
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionListCell.h"
+//: #import "PushSessionListCell.h"
 #import "VoiceCenterView.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "PushAvatarImageView.h"
 #import "ImageView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFKitUtil.h"
+//: #import "PushKitUtil.h"
 #import "KitUtil.h"
 //: #import "NTESBadgeView.h"
 #import "ModelMainView.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "PushKitInfoFetchOption.h"
 #import "AttributeQuantityOption.h"
 
-//: @implementation FFFSessionListCell
+//: @implementation PushSessionListCell
 @implementation VoiceCenterView
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -68,7 +68,7 @@ Byte noti_cramUrl[] = {63, 7, 5, 122, 20, 56, 65, 69, 57, 66, 57, 35, 248};
         //: self.layer.shadowRadius = 3;
         self.layer.shadowRadius = 3;
 
-        //: _avatarImageView = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+        //: _avatarImageView = [[PushAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
         _avatarImageView = [[ImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
         //: [self.contentView addSubview:_avatarImageView];
         [self.contentView addSubview:_avatarImageView];
@@ -139,7 +139,7 @@ Byte noti_cramUrl[] = {63, 7, 5, 122, 20, 56, 65, 69, 57, 66, 57, 35, 248};
 //    }else{
 //        self.badgeView.hidden = YES;
 
-        //: FFFKitInfo *info = nil;
+        //: PushKitInfo *info = nil;
         DataTeam *info = nil;
         //: if (recent.session.sessionType == NIMSessionTypeTeam) {
         if (recent.session.sessionType == NIMSessionTypeTeam) {
@@ -167,7 +167,7 @@ Byte noti_cramUrl[] = {63, 7, 5, 122, 20, 56, 65, 69, 57, 66, 57, 35, 248};
 
         //: } else if (recent.session.sessionType == NIMSessionTypeP2P) {
         } else if (recent.session.sessionType == NIMSessionTypeP2P) {
-            //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+            //: PushKitInfoFetchOption *option = [[PushKitInfoFetchOption alloc] init];
             AttributeQuantityOption *option = [[AttributeQuantityOption alloc] init];
             //: option.session = recent.session;
             option.session = recent.session;

@@ -9,66 +9,66 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCellLayoutConfig.h"
+//: #import "PushCellLayoutConfig.h"
 #import "MessageImageContainer.h"
-//: #import "FFFSessionMessageContentView.h"
+//: #import "PushSessionMessageContentView.h"
 #import "MoldControl.h"
-//: #import "FFFSessionUnknowContentView.h"
+//: #import "PushSessionUnknowContentView.h"
 #import "ShouldControl.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "InsertView+Secret.h"
-//: #import "FFFKitUtil.h"
+//: #import "PushKitUtil.h"
 #import "KitUtil.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
-//: #import "FFFMessageModel.h"
+//: #import "PushMessageModel.h"
 #import "PurseModel.h"
-//: #import "FFFBaseSessionContentConfig.h"
-#import "FFFBaseSessionContentConfig.h"
+//: #import "PushBaseSessionContentConfig.h"
+#import "PushBaseSessionContentConfig.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
 
-//: @interface FFFCellLayoutConfig()
+//: @interface PushCellLayoutConfig()
 @interface MessageImageContainer()
 
 //: @end
 @end
 
-//: @implementation FFFCellLayoutConfig
+//: @implementation PushCellLayoutConfig
 @implementation MessageImageContainer
 
-//: - (CGSize)contentSize:(FFFMessageModel *)model cellWidth:(CGFloat)cellWidth{
+//: - (CGSize)contentSize:(PushMessageModel *)model cellWidth:(CGFloat)cellWidth{
 - (CGSize)item:(PurseModel *)model user:(CGFloat)cellWidth{
-    //: id<CCCSessionContentConfig>config = [[FFFSessionContentConfigFactory sharedFacotry] configBy:model.message];
+    //: id<CCCSessionContentConfig>config = [[PushSessionContentConfigFactory sharedFacotry] configBy:model.message];
     id<RawDataVoice>config = [[OffdSessionFactory nearContent] end:model.message];
     //: return [config contentSize:cellWidth message:model.message];
     return [config tap:cellWidth button:model.message];
 }
 
-//: - (NSString *)cellContent:(FFFMessageModel *)model{
+//: - (NSString *)cellContent:(PushMessageModel *)model{
 - (NSString *)mark:(PurseModel *)model{
-    //: id<CCCSessionContentConfig>config = [[FFFSessionContentConfigFactory sharedFacotry] configBy:model.message];
+    //: id<CCCSessionContentConfig>config = [[PushSessionContentConfigFactory sharedFacotry] configBy:model.message];
     id<RawDataVoice>config = [[OffdSessionFactory nearContent] end:model.message];
     //: NSString *cellContent = [config cellContent:model.message];
     NSString *cellContent = [config session:model.message];
-    //: return cellContent.length ? cellContent : @"FFFSessionUnknowContentView";
+    //: return cellContent.length ? cellContent : @"PushSessionUnknowContentView";
     return cellContent.length ? cellContent : @"ShouldControl";
 }
 
 
-//: - (UIEdgeInsets)contentViewInsets:(FFFMessageModel *)model{
+//: - (UIEdgeInsets)contentViewInsets:(PushMessageModel *)model{
 - (UIEdgeInsets)dataCellInput:(PurseModel *)model{
-    //: id<CCCSessionContentConfig>config = [[FFFSessionContentConfigFactory sharedFacotry] configBy:model.message];
+    //: id<CCCSessionContentConfig>config = [[PushSessionContentConfigFactory sharedFacotry] configBy:model.message];
     id<RawDataVoice>config = [[OffdSessionFactory nearContent] end:model.message];
     //: return [config contentViewInsets:model.message];
     return [config messageUser:model.message];
 }
 
 
-//: - (UIEdgeInsets)cellInsets:(FFFMessageModel *)model
+//: - (UIEdgeInsets)cellInsets:(PushMessageModel *)model
 - (UIEdgeInsets)tap:(PurseModel *)model
 {
-    //: if ([[self cellContent:model] isEqualToString:@"FFFSessionNotificationContentView"]) {
+    //: if ([[self cellContent:model] isEqualToString:@"PushSessionNotificationContentView"]) {
     if ([[self mark:model] isEqualToString:@"OrientationClickContentView"]) {
         //: return UIEdgeInsetsZero;
         return UIEdgeInsetsZero;
@@ -99,19 +99,19 @@
 
 }
 
-//: - (UIEdgeInsets)replyContentViewInsets:(FFFMessageModel *)model{
+//: - (UIEdgeInsets)replyContentViewInsets:(PushMessageModel *)model{
 - (UIEdgeInsets)item:(PurseModel *)model{
-    //: id<CCCSessionContentConfig>config = [[FFFSessionContentConfigFactory sharedFacotry] replyConfigBy:model.repliedMessage];
+    //: id<CCCSessionContentConfig>config = [[PushSessionContentConfigFactory sharedFacotry] replyConfigBy:model.repliedMessage];
     id<RawDataVoice>config = [[OffdSessionFactory nearContent] shouldBy:model.repliedMessage];
     //: return [config contentViewInsets:model.repliedMessage];
     return [config messageUser:model.repliedMessage];
 }
 
 
-//: - (UIEdgeInsets)replyCellInsets:(FFFMessageModel *)model
+//: - (UIEdgeInsets)replyCellInsets:(PushMessageModel *)model
 - (UIEdgeInsets)ting:(PurseModel *)model
 {
-    //: if ([[self cellContent:model] isEqualToString:@"FFFSessionNotificationContentView"]) {
+    //: if ([[self cellContent:model] isEqualToString:@"PushSessionNotificationContentView"]) {
     if ([[self mark:model] isEqualToString:@"OrientationClickContentView"]) {
         //: return UIEdgeInsetsZero;
         return UIEdgeInsetsZero;
@@ -142,25 +142,25 @@
 
 }
 
-//: - (CGSize)replyContentSize:(FFFMessageModel *)model cellWidth:(CGFloat)cellWidth {
+//: - (CGSize)replyContentSize:(PushMessageModel *)model cellWidth:(CGFloat)cellWidth {
 - (CGSize)temp:(PurseModel *)model length:(CGFloat)cellWidth {
-    //: id<CCCSessionContentConfig>config = [[FFFSessionContentConfigFactory sharedFacotry] replyConfigBy:model.repliedMessage];
+    //: id<CCCSessionContentConfig>config = [[PushSessionContentConfigFactory sharedFacotry] replyConfigBy:model.repliedMessage];
     id<RawDataVoice>config = [[OffdSessionFactory nearContent] shouldBy:model.repliedMessage];
     //: return [config contentSize:cellWidth message:model.repliedMessage];
     return [config tap:cellWidth button:model.repliedMessage];
 }
 
-//: - (NSString *)replyContent:(FFFMessageModel *)model {
+//: - (NSString *)replyContent:(PushMessageModel *)model {
 - (NSString *)atDisable:(PurseModel *)model {
-    //: id<CCCSessionContentConfig>config = [[FFFSessionContentConfigFactory sharedFacotry] replyConfigBy:model.repliedMessage];
+    //: id<CCCSessionContentConfig>config = [[PushSessionContentConfigFactory sharedFacotry] replyConfigBy:model.repliedMessage];
     id<RawDataVoice>config = [[OffdSessionFactory nearContent] shouldBy:model.repliedMessage];
     //: NSString *cellContent = [config cellContent:model.repliedMessage];
     NSString *cellContent = [config session:model.repliedMessage];
-    //: return cellContent.length ? cellContent : @"FFFSessionUnknowContentView";
+    //: return cellContent.length ? cellContent : @"PushSessionUnknowContentView";
     return cellContent.length ? cellContent : @"ShouldControl";
 }
 
-//: - (BOOL)shouldShowAvatar:(FFFMessageModel *)model
+//: - (BOOL)shouldShowAvatar:(PushMessageModel *)model
 - (BOOL)buttonTitle:(PurseModel *)model
 {
     //: return [[MyUserKit sharedKit].config setting:model.message].showAvatar;
@@ -168,7 +168,7 @@
 }
 
 
-//: - (BOOL)shouldShowNickName:(FFFMessageModel *)model{
+//: - (BOOL)shouldShowNickName:(PushMessageModel *)model{
 - (BOOL)show:(PurseModel *)model{
     //: NIMMessage *message = model.message;
     NIMMessage *message = model.message;
@@ -198,28 +198,28 @@
 }
 
 
-//: - (BOOL)shouldShowLeft:(FFFMessageModel *)model
+//: - (BOOL)shouldShowLeft:(PushMessageModel *)model
 - (BOOL)showOption:(PurseModel *)model
 {
     //: return !model.message.isOutgoingMsg;
     return !model.message.isOutgoingMsg;
 }
 
-//: - (CGPoint)avatarMargin:(FFFMessageModel *)model
+//: - (CGPoint)avatarMargin:(PushMessageModel *)model
 - (CGPoint)progressOf:(PurseModel *)model
 {
     //: return CGPointMake(8.f, 0.f);
     return CGPointMake(8.f, 0.f);
 }
 
-//: - (CGSize)avatarSize:(FFFMessageModel *)model
+//: - (CGSize)avatarSize:(PushMessageModel *)model
 - (CGSize)gray:(PurseModel *)model
 {
     //: return CGSizeMake(36, 36);
     return CGSizeMake(36, 36);
 }
 
-//: - (CGPoint)nickNameMargin:(FFFMessageModel *)model
+//: - (CGPoint)nickNameMargin:(PushMessageModel *)model
 - (CGPoint)size:(PurseModel *)model
 {
     //: return [self shouldShowAvatar:model] ? CGPointMake([self avatarSize:model].width + 15.f, -3.f) : CGPointMake(10.f, -3.f);
@@ -227,21 +227,21 @@
 }
 
 
-//: - (NSArray *)customViews:(FFFMessageModel *)model
+//: - (NSArray *)customViews:(PushMessageModel *)model
 - (NSArray *)electViews:(PurseModel *)model
 {
     //: return nil;
     return nil;
 }
 
-//: - (BOOL)disableRetryButton:(FFFMessageModel *)model
+//: - (BOOL)disableRetryButton:(PushMessageModel *)model
 - (BOOL)remotes:(PurseModel *)model
 {
 
     //: if (model.message.session.sessionType == NIMSessionTypeTeam)
     if (model.message.session.sessionType == NIMSessionTypeTeam)
     {
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<PushCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<MessageImageContainer> layoutConfig = [[Secret highlight] layoutConfig];
         //: BOOL left = [layoutConfig shouldShowLeft:model];
         BOOL left = [layoutConfig showOption:model];
@@ -261,7 +261,7 @@
     //: else if (model.message.session.sessionType == NIMSessionTypeSuperTeam)
     else if (model.message.session.sessionType == NIMSessionTypeSuperTeam)
     {
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<PushCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<MessageImageContainer> layoutConfig = [[Secret highlight] layoutConfig];
         //: BOOL left = [layoutConfig shouldShowLeft:model];
         BOOL left = [layoutConfig showOption:model];
@@ -294,10 +294,10 @@
     }
 }
 
-//: - (BOOL)shouldDisplayBubbleBackground:(FFFMessageModel *)model
+//: - (BOOL)shouldDisplayBubbleBackground:(PushMessageModel *)model
 - (BOOL)extra:(PurseModel *)model
 {
-    //: id<CCCSessionContentConfig> config = [[FFFSessionContentConfigFactory sharedFacotry] configBy:model.message];
+    //: id<CCCSessionContentConfig> config = [[PushSessionContentConfigFactory sharedFacotry] configBy:model.message];
     id<RawDataVoice> config = [[OffdSessionFactory nearContent] end:model.message];
     //: if ([config respondsToSelector:@selector(enableBackgroundBubbleView:)])
     if ([config respondsToSelector:@selector(linked:)])

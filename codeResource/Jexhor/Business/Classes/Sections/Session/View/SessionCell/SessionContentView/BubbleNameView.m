@@ -170,7 +170,7 @@ NSString *const m_addTitle = @"NIMDemoEventNameOpenMergeMessage";
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data{
+//: - (void)refresh:(PushMessageModel *)data{
 - (void)name:(PurseModel *)data{
     //: [super refresh:data];
     [super name:data];
@@ -256,7 +256,7 @@ NSString *const m_addTitle = @"NIMDemoEventNameOpenMergeMessage";
 - (void)users:(UIButton *)sender {
     //: if ([self.delegate respondsToSelector:@selector(onCatchEvent:)]) {
     if ([self.delegate respondsToSelector:@selector(parametering:)]) {
-        //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+        //: PushKitEvent *event = [[PushKitEvent alloc] init];
         BeforeEvent *event = [[BeforeEvent alloc] init];
         //: event.eventName = NIMDemoEventNameOpenMergeMessage;
         event.eventName = m_addTitle;

@@ -60,31 +60,31 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionTimestampCell.h"
+//: #import "PushSessionTimestampCell.h"
 #import "NeedView.h"
-//: #import "FFFCellConfig.h"
-#import "FFFCellConfig.h"
+//: #import "PushCellConfig.h"
+#import "PushCellConfig.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFTimestampModel.h"
+//: #import "PushTimestampModel.h"
 #import "PushSharedNeed.h"
-//: #import "FFFKitUtil.h"
+//: #import "PushKitUtil.h"
 #import "KitUtil.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
 
-//: @interface FFFSessionTimestampCell()
+//: @interface PushSessionTimestampCell()
 @interface NeedView()
 
-//: @property (nonatomic,strong) FFFTimestampModel *model;
+//: @property (nonatomic,strong) PushTimestampModel *model;
 @property (nonatomic,strong) PushSharedNeed *model;
 
 //: @end
 @end
 
-//: @implementation FFFSessionTimestampCell
+//: @implementation PushSessionTimestampCell
 @implementation NeedView
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -132,7 +132,7 @@
 }
 
 
-//: - (void)refreshData:(FFFTimestampModel *)data{
+//: - (void)refreshData:(PushTimestampModel *)data{
 - (void)transitionData:(PushSharedNeed *)data{
     //: if (self.model == data) {
     if (self.model == data) {
@@ -143,16 +143,16 @@
     self.model = data;
     //: if([self checkData]){
     if([self sharedData]){
-        //: FFFTimestampModel *model = (FFFTimestampModel *)data;
+        //: PushTimestampModel *model = (PushTimestampModel *)data;
         PushSharedNeed *model = (PushSharedNeed *)data;
-        //: [_timeLabel setText:[FFFKitUtil showTime:model.messageTime showDetail:YES]];
+        //: [_timeLabel setText:[PushKitUtil showTime:model.messageTime showDetail:YES]];
         [_timeLabel setText:[KitUtil tally:model.messageTime roundHighBack:YES]];
     }
 }
 
 //: - (BOOL)checkData{
 - (BOOL)sharedData{
-    //: return [self.model isKindOfClass:[FFFTimestampModel class]];
+    //: return [self.model isKindOfClass:[PushTimestampModel class]];
     return [self.model isKindOfClass:[PushSharedNeed class]];
 }
 

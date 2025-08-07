@@ -125,7 +125,7 @@
 //: - (void)refreshWithModel:(NIMTeamMember *)member
 - (void)enableView:(NIMTeamMember *)member
 {
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:member.userId option:nil];
+    //: PushKitInfo *info = [[MyUserKit sharedKit] infoByUser:member.userId option:nil];
     DataTeam *info = [[Secret highlight] infoAndStraddleOption:member.userId item:nil];
     //: self.titleLabel.text = info.showName;
     self.titleLabel.text = info.showName;

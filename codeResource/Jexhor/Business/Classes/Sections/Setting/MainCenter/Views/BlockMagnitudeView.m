@@ -97,7 +97,7 @@
     return show_deadUrl;
 }
 
-//: #ffffff
+//: #fffPush
 - (NSString *)m_viewName {
     /* static */ NSString *m_viewName = nil;
     if (!m_viewName) {
@@ -313,7 +313,7 @@
         labtitle1.font = [UIFont systemFontOfSize:11.f];
         //: labtitle1.textColor = [UIColor blackColor];
         labtitle1.textColor = [UIColor blackColor];
-        //: labtitle1.text = [FFFLanguageManager getTextWithKey:@"Read_agree_agreement"];
+        //: labtitle1.text = [PushLanguageManager getTextWithKey:@"Read_agree_agreement"];
         labtitle1.text = [BackgroundRandomAttribute content:[[FrigidnessData sharedInstance] main_centerPath]];
         //: labtitle1.numberOfLines = 2;
         labtitle1.numberOfLines = 2;
@@ -338,7 +338,7 @@
         labtitle2.font = [UIFont systemFontOfSize:11.f];
         //: labtitle2.textColor = [UIColor blackColor];
         labtitle2.textColor = [UIColor blackColor];
-        //: labtitle2.text = [FFFLanguageManager getTextWithKey:@"Vertify_login_password"];
+        //: labtitle2.text = [PushLanguageManager getTextWithKey:@"Vertify_login_password"];
         labtitle2.text = [BackgroundRandomAttribute content:[[FrigidnessData sharedInstance] notiSnapKey]];
         //: labtitle2.numberOfLines = 2;
         labtitle2.numberOfLines = 2;
@@ -363,7 +363,7 @@
         labtitle3.font = [UIFont systemFontOfSize:11.f];
         //: labtitle3.textColor = [UIColor blackColor];
         labtitle3.textColor = [UIColor blackColor];
-        //: labtitle3.text = [FFFLanguageManager getTextWithKey:@"Complete_operation"];
+        //: labtitle3.text = [PushLanguageManager getTextWithKey:@"Complete_operation"];
         labtitle3.text = [BackgroundRandomAttribute content:[[FrigidnessData sharedInstance] notiAspectStr]];
         //: labtitle3.numberOfLines = 2;
         labtitle3.numberOfLines = 2;
@@ -420,7 +420,7 @@
         [_sureBtn addTarget:self action:@selector(requestButton) forControlEvents:UIControlEventTouchUpInside];
         //: _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
-        //: [_sureBtn setTitleColor:[UIColor colorWithHexString:@"#ffffff"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitleColor:[UIColor colorWithHexString:@"#fffPush"] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor user:[[FrigidnessData sharedInstance] m_viewName]] forState:UIControlStateNormal];
         //: [_sureBtn setTitle:@"OK" forState:UIControlStateNormal];
         [_sureBtn setTitle:@"OK" forState:UIControlStateNormal];

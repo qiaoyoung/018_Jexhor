@@ -13,22 +13,22 @@
 #import <UIKit/UIKit.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFSessionConfig.h"
+//: #import "PushSessionConfig.h"
 #import "CreateTop.h"
-//: #import "FFFMessageCellProtocol.h"
-#import "FFFMessageCellProtocol.h"
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
-//: #import "FFFInputView.h"
+//: #import "PushMessageCellProtocol.h"
+#import "PushMessageCellProtocol.h"
+//: #import "PushSessionConfigurateProtocol.h"
+#import "PushSessionConfigurateProtocol.h"
+//: #import "PushInputView.h"
 #import "MainContainerView.h"
 
-//: @interface FFFSessionViewController : UIViewController<NIMSessionInteractorDelegate,NIMInputActionDelegate,FFFMessageCellDelegate,NIMChatManagerDelegate,NIMConversationManagerDelegate,NIMChatExtendManagerDelegate>
+//: @interface PushSessionViewController : UIViewController<NIMSessionInteractorDelegate,NIMInputActionDelegate,PushMessageCellDelegate,NIMChatManagerDelegate,NIMConversationManagerDelegate,NIMChatExtendManagerDelegate>
 @interface CenterBuildViewController : UIViewController<DeviceSecret,SizeDelegate,SharedOnly,NIMChatManagerDelegate,NIMConversationManagerDelegate,NIMChatExtendManagerDelegate>
 
 //: @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UITableView *tableView;
 
-//: @property (nonatomic, strong) FFFInputView *sessionInputView;
+//: @property (nonatomic, strong) PushInputView *sessionInputView;
 @property (nonatomic, strong) MainContainerView *sessionInputView;
 //: @property (nonatomic, assign) BOOL canTapVoiceBtn; 
 @property (nonatomic, assign) BOOL canTapVoiceBtn; // 能够点击语音按钮
@@ -144,7 +144,7 @@
 /**
  *  会话页详细配置
  */
-//: - (id<FFFSessionConfig>)sessionConfig;
+//: - (id<PushSessionConfig>)sessionConfig;
 - (id<CreateTop>)sessionConfig;
 
 
@@ -234,7 +234,7 @@
  *
  *  @discussion 不会触发 DB 操作，请手动调用 SDK 里 deleteMessage: 接口
  */
-//: - (FFFMessageModel *)uiDeleteMessage:(NIMMessage *)message;
+//: - (PushMessageModel *)uiDeleteMessage:(NIMMessage *)message;
 - (PurseModel *)radiogram:(NIMMessage *)message;
 
 /**

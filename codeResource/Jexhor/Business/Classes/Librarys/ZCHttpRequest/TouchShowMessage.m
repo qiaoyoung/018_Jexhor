@@ -556,7 +556,7 @@
     AFHTTPSessionManager *manager = [TouchShowMessage top].manager;
 
     //添加请求头
-    //: NSString *appKey = [[FFFConfig sharedConfig] appKey];
+    //: NSString *appKey = [[PushConfig sharedConfig] appKey];
     NSString *appKey = [[AlongTemp frameConfig] appKey];
     //: [manager.requestSerializer setValue:appKey forHTTPHeaderField:@"AppKey"];
     [manager.requestSerializer setValue:appKey forHTTPHeaderField:[WaterSkyData appEliteInfoValue]];
@@ -1096,7 +1096,7 @@
                 //: success:(void(^)(NSString *filePath))success
                 hide:(void(^)(NSString *filePath))success
                  //: failed:(ResponseFailed)failed{
-                 offFailed:(ResponseFailed)failed{
+                 oPushailed:(ResponseFailed)failed{
 
 
     //: if (![URL containsString:@"http"]){

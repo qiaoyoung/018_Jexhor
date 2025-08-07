@@ -13,8 +13,8 @@
 #import <UIKit/UIKit.h>
 //: #import "NTESContactDataMember.h"
 #import "InformationMember.h"
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "PushCardDataSourceProtocol.h"
+#import "PushCardDataSourceProtocol.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN

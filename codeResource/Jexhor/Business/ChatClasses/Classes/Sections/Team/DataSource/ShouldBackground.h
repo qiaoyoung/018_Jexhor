@@ -9,22 +9,22 @@
 //
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFTeamCardMemberItem.h"
+//: #import "PushTeamCardMemberItem.h"
 #import "CardSession.h"
-//: #import "FFFMembersFetchOption.h"
+//: #import "PushMembersFetchOption.h"
 #import "ReminiscenceSession.h"
 
 // __M_A_C_R_O__
 
 //: typedef void(^NIMTeamListDataBlock)(NSError * _Nullable error, NSString * _Nullable msg);
 typedef void(^NIMTeamListDataBlock)(NSError * _Nullable error, NSString * _Nullable msg);
-//: typedef void(^NIMTeamMuteListDataBlock)(NSError * _Nullable error, NSMutableArray<FFFTeamCardMemberItem *> * _Nullable members);
+//: typedef void(^NIMTeamMuteListDataBlock)(NSError * _Nullable error, NSMutableArray<PushTeamCardMemberItem *> * _Nullable members);
 typedef void(^NIMTeamMuteListDataBlock)(NSError * _Nullable error, NSMutableArray<CardSession *> * _Nullable members);
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
 
-//: @protocol FFFTeamOperation <NSObject>
+//: @protocol PushTeamOperation <NSObject>
 @protocol BeforeImage <NSObject>
 
 //加人
@@ -144,7 +144,7 @@ NS_ASSUME_NONNULL_BEGIN
                  random:(NIMTeamListDataBlock)completion;
 
 //查询群成员
-//: - (void)fetchTeamMembersWithOption:(FFFMembersFetchOption * _Nullable )option
+//: - (void)fetchTeamMembersWithOption:(PushMembersFetchOption * _Nullable )option
 - (void)at:(ReminiscenceSession * _Nullable )option
                         //: completion:(NIMTeamListDataBlock)completion;
                         teamShared:(NIMTeamListDataBlock)completion;
@@ -166,7 +166,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-//: @protocol FFFTeamMemberListDataSource <FFFTeamOperation>
+//: @protocol PushTeamMemberListDataSource <PushTeamOperation>
 @protocol ShouldBackground <BeforeImage>
 
 //: - (NIMTeam *)team;
@@ -178,13 +178,13 @@ NS_ASSUME_NONNULL_BEGIN
 //: - (NSInteger)memberNumber;
 - (NSInteger)associate;
 
-//: - (NSMutableArray <FFFTeamCardMemberItem *> *)members;
+//: - (NSMutableArray <PushTeamCardMemberItem *> *)members;
 - (NSMutableArray <CardSession *> *)popDelete;
 
-//: - (FFFTeamCardMemberItem *)myCard;
+//: - (PushTeamCardMemberItem *)myCard;
 - (CardSession *)alter;
 
-//: - (FFFTeamCardMemberItem *)memberWithUserId:(NSString *)userId;
+//: - (PushTeamCardMemberItem *)memberWithUserId:(NSString *)userId;
 - (CardSession *)inputTo:(NSString *)userId;
 
 //: @end

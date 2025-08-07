@@ -434,7 +434,7 @@ static MakeManager *user_teamMessage = nil;
 
     //: } failed:^(id responseObject, NSError *error) {
     } touch:^(id responseObject, NSError *error) {
-        //: !complete ? : complete(NO,[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]);
+        //: !complete ? : complete(NO,[PushLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]);
         !complete ? : complete(NO,[BackgroundRandomAttribute content:[CourtData sharedInstance].noti_chartText]);
     //: }];
     }];
@@ -588,7 +588,7 @@ static MakeManager *user_teamMessage = nil;
 
         //: } failed:^(id responseObject, NSError *error) {
         } button:^(id responseObject, NSError *error) {
-            //: [SVProgressHUD showMessage:[FFFLanguageManager getTextWithKey:@"register_avtivity3_register_fail"]];
+            //: [SVProgressHUD showMessage:[PushLanguageManager getTextWithKey:@"register_avtivity3_register_fail"]];
             [SVProgressHUD packetMessage:[BackgroundRandomAttribute content:[CourtData sharedInstance].noti_generallyName]];
 
         //: }];

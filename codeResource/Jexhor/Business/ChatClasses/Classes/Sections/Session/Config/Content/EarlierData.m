@@ -79,18 +79,18 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFNotificationContentConfig.h"
+//: #import "PushNotificationContentConfig.h"
 #import "EarlierData.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "InsertView+Secret.h"
-//: #import "FFFKitUtil.h"
+//: #import "PushKitUtil.h"
 #import "KitUtil.h"
-//: #import "FFFUnsupportContentConfig.h"
+//: #import "PushUnsupportContentConfig.h"
 #import "ViewRandom.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
 
-//: @implementation FFFNotificationContentConfig
+//: @implementation PushNotificationContentConfig
 @implementation EarlierData
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
 - (CGSize)tap:(CGFloat)cellWidth button:(NIMMessage *)message
@@ -116,7 +116,7 @@ typedef struct {
             CGFloat TeamNotificationMessageWidth = cellWidth;
             //: UILabel *label = [[UILabel alloc] init];
             UILabel *label = [[UILabel alloc] init];
-            //: label.text = [FFFKitUtil messageTipContent:message];
+            //: label.text = [PushKitUtil messageTipContent:message];
             label.text = [KitUtil with:message];
             //: label.font = [[MyUserKit sharedKit].config setting:message].font;
             label.font = [[Secret highlight].config click:message].font;
@@ -141,7 +141,7 @@ typedef struct {
             label.autoDetectLinks = NO;
             //: label.font = [[MyUserKit sharedKit].config setting:message].font;
             label.font = [[Secret highlight].config click:message].font;
-            //: NSString *text = [FFFKitUtil messageTipContent:message];
+            //: NSString *text = [PushKitUtil messageTipContent:message];
             NSString *text = [KitUtil with:message];
             //: [label nim_setText:text];
             [label viewTap:text];
@@ -162,7 +162,7 @@ typedef struct {
         //: default:
         default:
         {
-            //: FFFUnsupportContentConfig *config = [[FFFUnsupportContentConfig alloc] init];
+            //: PushUnsupportContentConfig *config = [[PushUnsupportContentConfig alloc] init];
             ViewRandom *config = [[ViewRandom alloc] init];
             //: contentSize = [config contentSize:cellWidth message:message];
             contentSize = [config tap:cellWidth button:message];
@@ -192,15 +192,15 @@ typedef struct {
         case NIMNotificationTypeSuperTeam:
         //: case NIMNotificationTypeChatroom:
         case NIMNotificationTypeChatroom:
-            //: return @"FFFSessionNotificationContentView";
+            //: return @"PushSessionNotificationContentView";
             return @"OrientationClickContentView";
         //: case NIMNotificationTypeNetCall:
         case NIMNotificationTypeNetCall:
-            //: return @"FFFSessionNetChatNotifyContentView";
+            //: return @"PushSessionNetChatNotifyContentView";
             return @"ControlView";
         //: case NIMNotificationTypeUnsupport:
         case NIMNotificationTypeUnsupport:
-            //: return @"FFFSessionUnknowContentView";
+            //: return @"PushSessionUnknowContentView";
             return @"ShouldControl";
         //: default:
         default:

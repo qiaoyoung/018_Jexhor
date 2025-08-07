@@ -201,7 +201,7 @@
 // __M_A_C_R_O__
 //: #import "NTESSessionConfig.h"
 #import "EnablelyTask.h"
-//: #import "FFFMediaItem.h"
+//: #import "PushMediaItem.h"
 #import "RecordAlbumItem.h"
 //: #import "NTESBundleSetting.h"
 #import "SettingImage.h"
@@ -213,13 +213,13 @@
 #import "SettingImage.h"
 //: #import "NSString+NTES.h"
 #import "NSString+SearchedTeam.h"
-//: #import "FFFSessionConfig.h"
+//: #import "PushSessionConfig.h"
 #import "CreateTop.h"
 //: #import "NTESSessionUtil.h"
 #import "ReadUtil.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "PushInputEmoticonManager.h"
 #import "DirectorManager.h"
-//: #import "FFFKitUtil.h"
+//: #import "PushKitUtil.h"
 #import "KitUtil.h"
 
 //: @interface NTESSessionConfig()
@@ -315,18 +315,18 @@
 }
 
 
-//: - (NSArray<FFFMediaItem *> *)menuItemsWithMessage:(NIMMessage *)message {
+//: - (NSArray<PushMediaItem *> *)menuItemsWithMessage:(NIMMessage *)message {
 - (NSArray<RecordAlbumItem *> *)completeMessage:(NIMMessage *)message {
     //: NSMutableArray *items = [NSMutableArray array];
     NSMutableArray *items = [NSMutableArray array];
 
-    //: FFFMediaItem *Praise = [FFFMediaItem item:@"onTapMenuItemPraise:"
+    //: PushMediaItem *Praise = [PushMediaItem item:@"onTapMenuItemPraise:"
     RecordAlbumItem *Praise = [RecordAlbumItem record:[HolderData m_imageMsg]
                                  //: normalImage:[UIImage imageNamed:@"menu_praise"]
                                  reloadByCount:[UIImage imageNamed:[HolderData mExplosionNuclearStr]]
                                //: selectedImage:nil
                                team:nil
-                                       //: title:[FFFLanguageManager getTextWithKey:@"friend_circle_adapter_like"]];
+                                       //: title:[PushLanguageManager getTextWithKey:@"friend_circle_adapter_like"]];
                                        provider:[BackgroundRandomAttribute content:[HolderData k_collectionPath]]];
 
 //    RecordAlbumItem *reply = [RecordAlbumItem item:@"onTapMenuItemReply:"
@@ -334,22 +334,22 @@
 //                               selectedImage:nil
 //                                       title:LangKey(@"回复")];
 
-    //: FFFMediaItem *copy = [FFFMediaItem item:@"onTapMenuItemCopy:"
+    //: PushMediaItem *copy = [PushMediaItem item:@"onTapMenuItemCopy:"
     RecordAlbumItem *copy = [RecordAlbumItem record:[HolderData user_influentialTingMsg]
                                 //: normalImage:[UIImage imageNamed:@"menu_copy"]
                                 reloadByCount:[UIImage imageNamed:[HolderData kJumpName]]
                               //: selectedImage:nil
                               team:nil
-                                      //: title:[FFFLanguageManager getTextWithKey:@"复制"]];
+                                      //: title:[PushLanguageManager getTextWithKey:@"复制"]];
                                       provider:[BackgroundRandomAttribute content:@"复制"]];
 
-    //: FFFMediaItem *forword = [FFFMediaItem item:@"onTapMenuItemForword:"
+    //: PushMediaItem *forword = [PushMediaItem item:@"onTapMenuItemForword:"
     RecordAlbumItem *forword = [RecordAlbumItem record:[HolderData k_infoStr]
                                    //: normalImage:[UIImage imageNamed:@"menu_forword"]
                                    reloadByCount:[UIImage imageNamed:[HolderData mHostileMessage]]
                                  //: selectedImage:nil
                                  team:nil
-                                         //: title:[FFFLanguageManager getTextWithKey:@"转发"]];
+                                         //: title:[PushLanguageManager getTextWithKey:@"转发"]];
                                          provider:[BackgroundRandomAttribute content:@"转发"]];
 
 //    RecordAlbumItem *mark = [RecordAlbumItem item:@"onTapMenuItemMark:"
@@ -365,40 +365,40 @@
 //                             selectedImage:nil
 //                                     title:pinTitle];
 
-    //: FFFMediaItem *report = [FFFMediaItem item:@"onTapMenuItemReport:"
+    //: PushMediaItem *report = [PushMediaItem item:@"onTapMenuItemReport:"
     RecordAlbumItem *report = [RecordAlbumItem record:[HolderData m_amKey]
                                   //: normalImage:[UIImage imageNamed:@"menu_report"]
                                   reloadByCount:[UIImage imageNamed:[HolderData user_sustainId]]
                                 //: selectedImage:nil
                                 team:nil
-                                        //: title:[FFFLanguageManager getTextWithKey:@"report_Content"]];
+                                        //: title:[PushLanguageManager getTextWithKey:@"report_Content"]];
                                         provider:[BackgroundRandomAttribute content:[HolderData noti_aspectBlackKey]]];
 
-    //: FFFMediaItem *translation = [FFFMediaItem item:@"onTapMenuItemTranslation:"
+    //: PushMediaItem *translation = [PushMediaItem item:@"onTapMenuItemTranslation:"
     RecordAlbumItem *translation = [RecordAlbumItem record:[HolderData k_economicalPath]
                                   //: normalImage:[UIImage imageNamed:@"menu_translation"]
                                   reloadByCount:[UIImage imageNamed:[HolderData notiDetectiveCellWithValue]]
                                 //: selectedImage:nil
                                 team:nil
-                                        //: title:[FFFLanguageManager getTextWithKey:@"翻译"]];
+                                        //: title:[PushLanguageManager getTextWithKey:@"翻译"]];
                                         provider:[BackgroundRandomAttribute content:@"翻译"]];
 
-    //: FFFMediaItem *revoke = [FFFMediaItem item:@"onTapMenuItemRevoke:"
+    //: PushMediaItem *revoke = [PushMediaItem item:@"onTapMenuItemRevoke:"
     RecordAlbumItem *revoke = [RecordAlbumItem record:[HolderData noti_rangeVoiceKey]
                                   //: normalImage:[UIImage imageNamed:@"menu_revoke"]
                                   reloadByCount:[UIImage imageNamed:[HolderData userImageDirectMsg]]
                                 //: selectedImage:nil
                                 team:nil
-                                        //: title:[FFFLanguageManager getTextWithKey:@"撤回"]];
+                                        //: title:[PushLanguageManager getTextWithKey:@"撤回"]];
                                         provider:[BackgroundRandomAttribute content:@"撤回"]];
 
-    //: FFFMediaItem *delete = [FFFMediaItem item:@"onTapMenuItemDelete:"
+    //: PushMediaItem *delete = [PushMediaItem item:@"onTapMenuItemDelete:"
     RecordAlbumItem *delete = [RecordAlbumItem record:[HolderData appJumpMsg]
                                   //: normalImage:[UIImage imageNamed:@"menu_del"]
                                   reloadByCount:[UIImage imageNamed:[HolderData showWipeMessage]]
                                 //: selectedImage:nil
                                 team:nil
-                                        //: title:[FFFLanguageManager getTextWithKey:@"删除"]];
+                                        //: title:[PushLanguageManager getTextWithKey:@"删除"]];
                                         provider:[BackgroundRandomAttribute content:@"删除"]];
 
 //    RecordAlbumItem *mutiSelect = [RecordAlbumItem item:@"onTapMenuItemMutiSelect:"
@@ -485,7 +485,7 @@
     {
         //: NSString * ID = [NSString stringWithFormat:NIMKitQuickCommentFormat, [index integerValue]];
         NSString * ID = [NSString stringWithFormat:showImageDataIdent, [index integerValue]];
-        //: NIMInputEmoticon *item = [[FFFInputEmoticonManager sharedManager] emoticonByID:ID];
+        //: NIMInputEmoticon *item = [[PushInputEmoticonManager sharedManager] emoticonByID:ID];
         TextEmoticon *item = [[DirectorManager statusFor] past:ID];
         //: if (item)
         if (item)
@@ -509,13 +509,13 @@
 - (NSArray<NSNumber *> *)ignitionKey{
     //: return @[
     return @[
-//        @(FFFInputBarItemTypeMore),
-//        @(FFFInputBarItemTypeEmoticon),
-//             @(FFFInputBarItemTypeVoice),
-             //: @(FFFInputBarItemTypeTextAndRecord),
-             @(FFFInputBarItemTypeTextAndRecord),
-        //: @(FFFInputBarItemTypeSend),
-        @(FFFInputBarItemTypeSend),
+//        @(PushInputBarItemTypeMore),
+//        @(PushInputBarItemTypeEmoticon),
+//             @(PushInputBarItemTypeVoice),
+             //: @(PushInputBarItemTypeTextAndRecord),
+             @(PushInputBarItemTypeTextAndRecord),
+        //: @(PushInputBarItemTypeSend),
+        @(PushInputBarItemTypeSend),
             //: ];
             ];
 }

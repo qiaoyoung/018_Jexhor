@@ -9,24 +9,24 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionLayoutImpl.h"
+//: #import "PushSessionLayoutImpl.h"
 #import "BoundaryOnly.h"
 //: #import "UITableView+NIMScrollToBottom.h"
 #import "UITableView+NIMScrollToBottom.h"
-//: #import "FFFMessageCell.h"
+//: #import "PushMessageCell.h"
 #import "BroadcastTouchCellView.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFSessionTableAdapter.h"
+//: #import "PushGlobalMacro.h"
+#import "PushGlobalMacro.h"
+//: #import "PushSessionTableAdapter.h"
 #import "TeamDataAdapter.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFKitKeyboardInfo.h"
+//: #import "PushKitKeyboardInfo.h"
 #import "TitleRandom.h"
-//: #import "FFFReplyContentView.h"
+//: #import "PushReplyContentView.h"
 #import "GoopView.h"
 
-//: @interface FFFSessionLayoutImpl()
+//: @interface PushSessionLayoutImpl()
 @interface BoundaryOnly()
 {
     //: NSMutableArray *_inserts;
@@ -41,7 +41,7 @@
 //: @property (nonatomic,strong) NIMSession *session;
 @property (nonatomic,strong) NIMSession *session;
 
-//: @property (nonatomic,strong) id<FFFSessionConfig> sessionConfig;
+//: @property (nonatomic,strong) id<PushSessionConfig> sessionConfig;
 @property (nonatomic,strong) id<CreateTop> sessionConfig;
 
 //: @property (nonatomic,weak) id<NIMSessionLayoutDelegate> delegate;
@@ -50,12 +50,12 @@
 //: @end
 @end
 
-//: @implementation FFFSessionLayoutImpl
+//: @implementation PushSessionLayoutImpl
 @implementation BoundaryOnly
 
 //: - (instancetype)initWithSession:(NIMSession *)session
 - (instancetype)initWithMoreConfig:(NIMSession *)session
-                         //: config:(id<FFFSessionConfig>)sessionConfig
+                         //: config:(id<PushSessionConfig>)sessionConfig
                          assemblage:(id<CreateTop>)sessionConfig
 {
     //: self = [super init];
@@ -235,7 +235,7 @@
 //: #pragma mark - Private
 #pragma mark - Private
 
-//: - (void)calculateContent:(FFFMessageModel *)model{
+//: - (void)calculateContent:(PushMessageModel *)model{
 - (void)need:(PurseModel *)model{
     //: if ([NSThread isMainThread]) {^{ [model contentSize:self.tableView.nim_width]; }();} else {dispatch_sync(dispatch_get_main_queue(), ^{ [model contentSize:self.tableView.nim_width]; });};
     if ([NSThread isMainThread]) {^{ [model victoryQuery:self.tableView.nim_width]; }();} else {dispatch_sync(dispatch_get_main_queue(), ^{ [model victoryQuery:self.tableView.nim_width]; });};
@@ -400,7 +400,7 @@
 //: - (void)update:(NSIndexPath *)indexPath
 - (void)given:(NSIndexPath *)indexPath
 {
-    //: FFFMessageCell *cell = (FFFMessageCell *)[self.tableView cellForRowAtIndexPath:indexPath];
+    //: PushMessageCell *cell = (PushMessageCell *)[self.tableView cellForRowAtIndexPath:indexPath];
     BroadcastTouchCellView *cell = (BroadcastTouchCellView *)[self.tableView cellForRowAtIndexPath:indexPath];
     //: if (cell) {
     if (cell) {

@@ -413,7 +413,7 @@
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"feedback_activity_title"];
+    //: labtitle.text = [PushLanguageManager getTextWithKey:@"feedback_activity_title"];
     labtitle.text = [BackgroundRandomAttribute content:[FabricData sharedInstance].m_wakeFormat];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -433,7 +433,7 @@
 
     //: _textView = [[UITextView alloc] initWithFrame:CGRectMake(15, 15, [[UIScreen mainScreen] bounds].size.width-60, 230)];
     _textView = [[UITextView alloc] initWithFrame:CGRectMake(15, 15, [[UIScreen mainScreen] bounds].size.width-60, 230)];
-    //: _textView.placeholder = [FFFLanguageManager getTextWithKey:@"report_info"];
+    //: _textView.placeholder = [PushLanguageManager getTextWithKey:@"report_info"];
     _textView.placeholder = [BackgroundRandomAttribute content:[FabricData sharedInstance].notiUserUrl];//@"请输入您的举报信息";
     //: _textView.backgroundColor = [UIColor whiteColor];
     _textView.backgroundColor = [UIColor whiteColor];
@@ -456,7 +456,7 @@
     lab.font = [UIFont systemFontOfSize:16.f];
     //: lab.textColor = [UIColor colorWithHexString:@"#2C3042"];
     lab.textColor = [UIColor user:[FabricData sharedInstance].show_dentName];
-    //: lab.text = [FFFLanguageManager getTextWithKey:@"upload_picture"];
+    //: lab.text = [PushLanguageManager getTextWithKey:@"upload_picture"];
     lab.text = [BackgroundRandomAttribute content:[FabricData sharedInstance].dreamDeviceIdent];
     //: [self.view addSubview:lab];
     [self.view addSubview:lab];
@@ -486,7 +486,7 @@
     submitButton.titleLabel.font = [UIFont systemFontOfSize:16];
     //: [submitButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [submitButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [submitButton setTitle:[FFFLanguageManager getTextWithKey:@"feedback_activity_submit"] forState:UIControlStateNormal];
+    //: [submitButton setTitle:[PushLanguageManager getTextWithKey:@"feedback_activity_submit"] forState:UIControlStateNormal];
     [submitButton setTitle:[BackgroundRandomAttribute content:[FabricData sharedInstance].app_explosionIdent] forState:UIControlStateNormal];
     //: submitButton.backgroundColor = [UIColor colorWithHexString:@"#05D481"];
     submitButton.backgroundColor = [UIColor user:[FabricData sharedInstance].kRageValue];
@@ -571,7 +571,7 @@
 //        [SVProgressHUD dismiss];
         //: [self.loadingView animationClose];
         [self.loadingView nearAdd];
-        //: [SVProgressHUD showMessage:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"]];
+        //: [SVProgressHUD showMessage:[PushLanguageManager getTextWithKey:@"group_info_activity_op_failed"]];
         [SVProgressHUD packetMessage:[BackgroundRandomAttribute content:[FabricData sharedInstance].appInfoPath]];
     //: }];
     }];

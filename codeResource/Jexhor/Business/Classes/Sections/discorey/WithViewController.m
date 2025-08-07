@@ -77,7 +77,7 @@
     return m_rangeTitle;
 }
 
-//: #ffffff
+//: #fffPush
 - (NSString *)showCellName {
     /* static */ NSString *showCellName = nil;
     if (!showCellName) {
@@ -165,14 +165,14 @@
     labtitle.textColor = [UIColor whiteColor];
     //: labtitle.font = [UIFont boldSystemFontOfSize:18];
     labtitle.font = [UIFont boldSystemFontOfSize:18];
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"discovery"];
+    //: labtitle.text = [PushLanguageManager getTextWithKey:@"discovery"];
     labtitle.text = [BackgroundRandomAttribute content:[[MessageData sharedInstance] notiImageKey]];
     //: [topview addSubview:labtitle];
     [topview addSubview:labtitle];
 
     //: UIView *contentView = [[UIView alloc]initWithFrame:CGRectMake(0, (44.0f + [UIDevice vg_statusBarHeight])+10, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height-(44.0f + [UIDevice vg_statusBarHeight]))];
     UIView *contentView = [[UIView alloc]initWithFrame:CGRectMake(0, (44.0f + [UIDevice title])+10, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height-(44.0f + [UIDevice title]))];
-    //: contentView.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+    //: contentView.backgroundColor = [UIColor colorWithHexString:@"#fffPush"];
     contentView.backgroundColor = [UIColor user:[[MessageData sharedInstance] showCellName]];
     //: contentView.layer.cornerRadius = 34;
     contentView.layer.cornerRadius = 34;
@@ -209,7 +209,7 @@
         emptyTipLabel.textAlignment = NSTextAlignmentCenter;
         //: [_defView addSubview:emptyTipLabel];
         [_defView addSubview:emptyTipLabel];
-        //: emptyTipLabel.text = [FFFLanguageManager getTextWithKey:@"group_info_activity_without"];
+        //: emptyTipLabel.text = [PushLanguageManager getTextWithKey:@"group_info_activity_without"];
         emptyTipLabel.text = [BackgroundRandomAttribute content:[[MessageData sharedInstance] showRequirementCenterKey]];
 
 

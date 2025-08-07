@@ -12,7 +12,7 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @class FFFAvatarImageView;
+//: @class PushAvatarImageView;
 @class ImageView;
 //: @class NTESContactDataMember;
 @class InformationMember;
@@ -30,7 +30,7 @@
 //: @interface NTESUserListCell : UITableViewCell
 @interface ShouldViewCell : UITableViewCell
 
-//: @property (nonatomic,strong) FFFAvatarImageView * avatarImageView;
+//: @property (nonatomic,strong) PushAvatarImageView * avatarImageView;
 @property (nonatomic,strong) ImageView * avatarImageView;
 
 //: @property (nonatomic,weak) id<NTESUserListCellDelegate> delegate;

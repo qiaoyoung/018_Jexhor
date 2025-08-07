@@ -67,25 +67,25 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamMemberCardHeaderCell.h"
+//: #import "PushTeamMemberCardHeaderCell.h"
 #import "BuildView.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "PushAvatarImageView.h"
 #import "ImageView.h"
-//: #import "FFFUsrInfoData.h"
-#import "FFFUsrInfoData.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "PushUsrInfoData.h"
+#import "PushUsrInfoData.h"
+//: #import "PushCommonTableData.h"
+#import "PushCommonTableData.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFKitUtil.h"
+//: #import "PushKitUtil.h"
 #import "KitUtil.h"
 
-//: @interface FFFTeamMemberCardHeaderCell()
+//: @interface PushTeamMemberCardHeaderCell()
 @interface BuildView()
 
-//: @property (nonatomic,strong) FFFAvatarImageView *avatarView;
+//: @property (nonatomic,strong) PushAvatarImageView *avatarView;
 @property (nonatomic,strong) ImageView *avatarView;
 
 //: @property (nonatomic,strong) UILabel *nickLabel;
@@ -94,7 +94,7 @@ typedef struct {
 //: @end
 @end
 
-//: @implementation FFFTeamMemberCardHeaderCell
+//: @implementation PushTeamMemberCardHeaderCell
 @implementation BuildView
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -115,7 +115,7 @@ typedef struct {
 
 //: - (void)refreshData:(NIMCommonTableRow *)rowData tableView:(UITableView *)tableView;{
 - (void)receive:(DeviceRow *)rowData extra:(UITableView *)tableView;{
-    //: FFFKitInfo *userInfo = rowData.extraInfo[@"user"];
+    //: PushKitInfo *userInfo = rowData.extraInfo[@"user"];
     DataTeam *userInfo = rowData.extraInfo[[ParquetData sharedInstance].kTextMessage];
     //: NSLog(@"userInfo===%@",userInfo);
     //: NSURL *avatarURL;
@@ -151,12 +151,12 @@ typedef struct {
 }
 
 
-//: - (FFFAvatarImageView *)avatarView
+//: - (PushAvatarImageView *)avatarView
 - (ImageView *)avatarView
 {
     //: if (!_avatarView) {
     if (!_avatarView) {
-        //: _avatarView = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(125, 52, 70, 70)];
+        //: _avatarView = [[PushAvatarImageView alloc] initWithFrame:CGRectMake(125, 52, 70, 70)];
         _avatarView = [[ImageView alloc] initWithFrame:CGRectMake(125, 52, 70, 70)];
         //: _avatarView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
         _avatarView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;

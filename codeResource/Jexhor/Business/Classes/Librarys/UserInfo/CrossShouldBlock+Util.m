@@ -227,7 +227,7 @@
 
     //: userDefaults.language = lang;
     userDefaults.language = lang;
-    //: [[FFFLanguageManager shareInstance] setLanguagre:lang];
+    //: [[PushLanguageManager shareInstance] setLanguagre:lang];
     [[BackgroundRandomAttribute disable] setInfoTeam:lang];
 
     //: [MyUserKit sharedKit].languageBundle = nil;

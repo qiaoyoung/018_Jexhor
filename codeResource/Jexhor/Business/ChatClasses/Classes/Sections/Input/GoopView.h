@@ -17,7 +17,7 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @protocol FFFReplyContentViewDelegate <NSObject>
+//: @protocol PushReplyContentViewDelegate <NSObject>
 @protocol CellTotalerval <NSObject>
 
 //: @optional
@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 //: @end
 @end
 
-//: @interface FFFReplyContentView : UIView
+//: @interface PushReplyContentView : UIView
 @interface GoopView : UIView
 
 //: @property (nonatomic,strong) UIButton *closeButton;
@@ -49,7 +49,7 @@ NS_ASSUME_NONNULL_BEGIN
 //: @property (nonatomic,strong) NIMMessage *replymessage;
 @property (nonatomic,strong) NIMMessage *replymessage;
 
-//: @property (nonatomic,weak) id<FFFReplyContentViewDelegate> delegate;
+//: @property (nonatomic,weak) id<PushReplyContentViewDelegate> delegate;
 @property (nonatomic,weak) id<CellTotalerval> delegate;
 
 //: - (void)dismiss;

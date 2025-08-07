@@ -12,19 +12,19 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: typedef NS_ENUM(NSInteger, FFFKitColorButtonCellStyle){
-typedef NS_ENUM(NSInteger, FFFKitColorButtonCellStyle){
-    //: FFFKitColorButtonCellStyleRed,
-    FFFKitColorButtonCellStyleRed,
-    //: FFFKitColorButtonCellStyleBlue,
-    FFFKitColorButtonCellStyleBlue,
+//: typedef NS_ENUM(NSInteger, PushKitColorButtonCellStyle){
+typedef NS_ENUM(NSInteger, PushKitColorButtonCellStyle){
+    //: PushKitColorButtonCellStyleRed,
+    PushKitColorButtonCellStyleRed,
+    //: PushKitColorButtonCellStyleBlue,
+    PushKitColorButtonCellStyleBlue,
 //: };
 };
 
 //: @class NIMKitColorButton;
 @class SumTingView;
 
-//: @interface FFFKitColorButtonCell : UITableViewCell
+//: @interface PushKitColorButtonCell : UITableViewCell
 @interface SachetEnableCompartmentView : UITableViewCell
 
 //: @property (nonatomic,strong) NIMKitColorButton *button;
@@ -38,8 +38,8 @@ typedef NS_ENUM(NSInteger, FFFKitColorButtonCellStyle){
 //: @interface NIMKitColorButton : UIButton
 @interface SumTingView : UIButton
 
-//: @property (nonatomic,assign) FFFKitColorButtonCellStyle style;
-@property (nonatomic,assign) FFFKitColorButtonCellStyle style;
+//: @property (nonatomic,assign) PushKitColorButtonCellStyle style;
+@property (nonatomic,assign) PushKitColorButtonCellStyle style;
 
 //: @end
 @end

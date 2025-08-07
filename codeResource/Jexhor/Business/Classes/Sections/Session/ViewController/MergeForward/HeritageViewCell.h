@@ -9,13 +9,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionTimestampCell.h"
+//: #import "PushSessionTimestampCell.h"
 #import "NeedView.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface NTESTimestampCell : FFFSessionTimestampCell
+//: @interface NTESTimestampCell : PushSessionTimestampCell
 @interface HeritageViewCell : NeedView
 
 //: @end

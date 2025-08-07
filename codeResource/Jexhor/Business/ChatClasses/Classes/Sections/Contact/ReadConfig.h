@@ -11,10 +11,10 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFKitInfo.h"
+//: #import "PushKitInfo.h"
 #import "DataTeam.h"
-//: #import "FFFGroupedUsrInfo.h"
-#import "FFFGroupedUsrInfo.h"
+//: #import "PushGroupedUsrInfo.h"
+#import "PushGroupedUsrInfo.h"
 
 /**
  *  联系人选择器数据回调
@@ -22,7 +22,7 @@
 //: typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *titles);
 typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *titles);
 
-//: @protocol FFFContactSelectConfig <NSObject>
+//: @protocol PushContactSelectConfig <NSObject>
 @protocol ReadConfig <NSObject>
 
 //: @optional
@@ -81,7 +81,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
 /**
  *  提供联系人id、显示名、头像等信息
  */
-//: - (FFFKitInfo *)getInfoById:(NSString *)selectedId;
+//: - (PushKitInfo *)getInfoById:(NSString *)selectedId;
 - (DataTeam *)perspective:(NSString *)selectedId;
 
 /// 是否显示头部的群头像 群名字headerview
@@ -94,7 +94,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
 /**
  *  内置配置-选择好友
  */
-//: @interface NIMContactFriendSelectConfig : NSObject<FFFContactSelectConfig>
+//: @interface NIMContactFriendSelectConfig : NSObject<PushContactSelectConfig>
 @interface CheckedConfig : NSObject<ReadConfig>
 
 //: @property (nonatomic,assign) BOOL needMutiSelected;
@@ -121,7 +121,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
 /**
  *  内置配置-选择群成员
  */
-//: @interface NIMContactTeamMemberSelectConfig : NSObject<FFFContactSelectConfig>
+//: @interface NIMContactTeamMemberSelectConfig : NSObject<PushContactSelectConfig>
 @interface OfTo : NSObject<ReadConfig>
 
 //: @property (nonatomic,copy) NSString *teamId;
@@ -158,7 +158,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
 /**
  *  内置配置-选择群
  */
-//: @interface NIMContactTeamSelectConfig : NSObject<FFFContactSelectConfig>
+//: @interface NIMContactTeamSelectConfig : NSObject<PushContactSelectConfig>
 @interface MessageConfig : NSObject<ReadConfig>
 
 //: @property (nonatomic,assign) NIMKitTeamType teamType;

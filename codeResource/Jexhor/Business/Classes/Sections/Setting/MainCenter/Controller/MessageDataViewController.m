@@ -195,7 +195,7 @@
     labtitle.textColor = [UIColor user:[[EconomicData sharedInstance] k_viewImageStr]];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"my_log"];
+    //: labtitle.text = [PushLanguageManager getTextWithKey:@"my_log"];
     labtitle.text = [BackgroundRandomAttribute content:[[EconomicData sharedInstance] user_pathKey]];
     //: [self.view addSubview:labtitle];
     [self.view addSubview:labtitle];
@@ -356,7 +356,7 @@
         emptyTipLabel.textAlignment = NSTextAlignmentCenter;
         //: [_defView addSubview:emptyTipLabel];
         [_defView addSubview:emptyTipLabel];
-        //: emptyTipLabel.text = [FFFLanguageManager getTextWithKey:@"group_info_activity_without"];
+        //: emptyTipLabel.text = [PushLanguageManager getTextWithKey:@"group_info_activity_without"];
         emptyTipLabel.text = [BackgroundRandomAttribute content:[[EconomicData sharedInstance] dreamSlatId]];
     }
     //: return _defView;

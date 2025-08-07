@@ -114,7 +114,7 @@ Byte mainAmName[] = {28, 23, 84, 10, 121, 198, 46, 144, 206, 111, 198, 185, 187,
 
         //: _textField = [[UITextField alloc] init];
         _textField = [[UITextField alloc] init];
-        //: _textField.placeholder = [FFFLanguageManager getTextWithKey:@"register_avtivity3_nick"];
+        //: _textField.placeholder = [PushLanguageManager getTextWithKey:@"register_avtivity3_nick"];
         _textField.placeholder = [BackgroundRandomAttribute content:StringFromSkullSessionData(mainAmName)];
         //: [backGroundView addSubview:_textField];
         [backGroundView addSubview:_textField];
@@ -155,7 +155,7 @@ Byte mainAmName[] = {28, 23, 84, 10, 121, 198, 46, 144, 206, 111, 198, 185, 187,
         UIButton *knowButton = [UIButton buttonWithType:UIButtonTypeCustom];
         //: knowButton.titleLabel.font = [UIFont systemFontOfSize:16];
         knowButton.titleLabel.font = [UIFont systemFontOfSize:16];
-        //: [knowButton setTitle:[FFFLanguageManager getTextWithKey:@"activity_register_next"] forState:UIControlStateNormal];
+        //: [knowButton setTitle:[PushLanguageManager getTextWithKey:@"activity_register_next"] forState:UIControlStateNormal];
         [knowButton setTitle:[BackgroundRandomAttribute content:StringFromSkullSessionData(showEpidemicUrl)] forState:UIControlStateNormal];
         //: [knowButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [knowButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];

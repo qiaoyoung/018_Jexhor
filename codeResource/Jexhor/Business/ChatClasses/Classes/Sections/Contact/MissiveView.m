@@ -21,11 +21,11 @@ Byte noti_economicalTitle[] = {97, 14, 9, 88, 133, 30, 37, 77, 233, 112, 117, 11
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactPickedView.h"
+//: #import "PushContactPickedView.h"
 #import "MissiveView.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "PushAvatarImageView.h"
 #import "ImageView.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
@@ -40,7 +40,7 @@ enum RefreshType
 //: };
 };
 
-//: @interface NIMContactSelectAvatarView : FFFAvatarImageView
+//: @interface NIMContactSelectAvatarView : PushAvatarImageView
 @interface TaskControl : ImageView
 
 //: @property (nonatomic, strong) NSString *userId;
@@ -76,7 +76,7 @@ enum RefreshType
 @end
 
 
-//: @interface FFFContactPickedView()
+//: @interface PushContactPickedView()
 @interface MissiveView()
 
 //: @property (nonatomic, strong) UIScrollView *scrollView;
@@ -91,7 +91,7 @@ enum RefreshType
 //: @end
 @end
 
-//: @implementation FFFContactPickedView
+//: @implementation PushContactPickedView
 @implementation MissiveView
 
 //: - (instancetype)initWithCoder:(NSCoder *)aDecoder {
@@ -235,7 +235,7 @@ enum RefreshType
 }
 
 
-//: - (void)addMemberInfo:(FFFKitInfo *)info
+//: - (void)addMemberInfo:(PushKitInfo *)info
 - (void)fast:(DataTeam *)info
 {
 
@@ -251,7 +251,7 @@ enum RefreshType
     [self object:avatar];
 }
 
-//: - (void)removeMemberInfo:(FFFKitInfo *)info
+//: - (void)removeMemberInfo:(PushKitInfo *)info
 - (void)allowByInfo:(DataTeam *)info
 {
     //: NSInteger i = 0;

@@ -84,11 +84,11 @@ Byte notiSinePath[] = {28, 18, 37, 7, 90, 122, 29, 148, 147, 121, 134, 149, 114,
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitConfig.h"
+//: #import "PushKitConfig.h"
 #import "CoverRandomConfig.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFMediaItem.h"
+//: #import "PushGlobalMacro.h"
+#import "PushGlobalMacro.h"
+//: #import "PushMediaItem.h"
 #import "RecordAlbumItem.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
@@ -97,7 +97,7 @@ Byte notiSinePath[] = {28, 18, 37, 7, 90, 122, 29, 148, 147, 121, 134, 149, 114,
 //: #import "MyUserKit.h"
 #import "Secret.h"
 
-//: @interface FFFKitSettings()
+//: @interface PushKitSettings()
 @interface InputSignalSettings()
 {
     //: BOOL _isRight;
@@ -111,7 +111,7 @@ Byte notiSinePath[] = {28, 18, 37, 7, 90, 122, 29, 148, 147, 121, 134, 149, 114,
 @end
 
 
-//: @implementation FFFKitConfig
+//: @implementation PushKitConfig
 @implementation CoverRandomConfig
 
 //: - (instancetype) init
@@ -132,31 +132,31 @@ Byte notiSinePath[] = {28, 18, 37, 7, 90, 122, 29, 148, 147, 121, 134, 149, 114,
 //: - (NSArray *)defaultMediaItems
 - (NSArray *)name
 {
-    //: return @[[FFFMediaItem item:@"onTapMediaItemPicture:"
+    //: return @[[PushMediaItem item:@"onTapMediaItemPicture:"
     return @[[RecordAlbumItem record:StringFromEatingOffdData(showStatuteStr)
            //: normalImage:[UIImage imageNamed:@"bk_media_picture_normal"]
            reloadByCount:[UIImage imageNamed:StringFromEatingOffdData(noti_littleFightMessage)]
          //: selectedImage:[UIImage imageNamed:@"bk_media_picture_normal"]
          team:[UIImage imageNamed:StringFromEatingOffdData(noti_littleFightMessage)]
-                 //: title:[FFFLanguageManager getTextWithKey:@"message_send_album"]],//@"相册".
+                 //: title:[PushLanguageManager getTextWithKey:@"message_send_album"]],//@"相册".
                  provider:[BackgroundRandomAttribute content:StringFromEatingOffdData(m_legislatureValue)]],//@"相册".
 
-    //: [FFFMediaItem item:@"onTapMediaItemShoot:"
+    //: [PushMediaItem item:@"onTapMediaItemShoot:"
     [RecordAlbumItem record:StringFromEatingOffdData(show_apologizeIdent)
            //: normalImage:[UIImage imageNamed:@"bk_media_shoot_normal"]
            reloadByCount:[UIImage imageNamed:StringFromEatingOffdData(user_scapeStr)]
          //: selectedImage:[UIImage imageNamed:@"bk_media_shoot_normal"]
          team:[UIImage imageNamed:StringFromEatingOffdData(user_scapeStr)]
-                 //: title:[FFFLanguageManager getTextWithKey:@"message_send_camera"]],//@"拍摄".
+                 //: title:[PushLanguageManager getTextWithKey:@"message_send_camera"]],//@"拍摄".
                  provider:[BackgroundRandomAttribute content:StringFromEatingOffdData(m_shootId)]],//@"拍摄".
 
-    //: [FFFMediaItem item:@"onTapMediaItemLocation:"
+    //: [PushMediaItem item:@"onTapMediaItemLocation:"
     [RecordAlbumItem record:StringFromEatingOffdData(kPearGravTitle)
            //: normalImage:[UIImage imageNamed:@"bk_media_position_normal"]
            reloadByCount:[UIImage imageNamed:StringFromEatingOffdData(mJustifyStrawPath)]
          //: selectedImage:[UIImage imageNamed:@"bk_media_position_normal"]
          team:[UIImage imageNamed:StringFromEatingOffdData(mJustifyStrawPath)]
-                 //: title:[FFFLanguageManager getTextWithKey:@"Audios"]],//@"位置".
+                 //: title:[PushLanguageManager getTextWithKey:@"Audios"]],//@"位置".
                  provider:[BackgroundRandomAttribute content:StringFromEatingOffdData(notiHospitalIdent)]],//@"位置".
 
     //: ];
@@ -171,13 +171,13 @@ Byte notiSinePath[] = {28, 18, 37, 7, 90, 122, 29, 148, 147, 121, 134, 149, 114,
     //: if (message.messageType == NIMMessageTypeText)
     if (message.messageType == NIMMessageTypeText)
     {
-        //: [menuItems addObject:[FFFMediaItem item:@"onTapMenuItemCopy:"
+        //: [menuItems addObject:[PushMediaItem item:@"onTapMenuItemCopy:"
         [menuItems addObject:[RecordAlbumItem record:StringFromEatingOffdData(notiSinePath)
                                     //: normalImage:[UIImage imageNamed:@"bk_media_picture_normal"]
                                     reloadByCount:[UIImage imageNamed:StringFromEatingOffdData(noti_littleFightMessage)]
                                   //: selectedImage:[UIImage imageNamed:@"bk_media_picture_pressed"]
                                   team:[UIImage imageNamed:StringFromEatingOffdData(show_bathReminderFormat)]
-                                          //: title:[FFFLanguageManager getTextWithKey:@"复制"]]];
+                                          //: title:[PushLanguageManager getTextWithKey:@"复制"]]];
                                           provider:[BackgroundRandomAttribute content:@"复制"]]];
     }
 
@@ -207,7 +207,7 @@ Byte notiSinePath[] = {28, 18, 37, 7, 90, 122, 29, 148, 147, 121, 134, 149, 114,
     _messageLimit = 20;
     //: _recordMaxDuration = 60.f;
     _recordMaxDuration = 60.f;
-    //: _placeholder = [FFFLanguageManager getTextWithKey:@"message_please_enter_content"];
+    //: _placeholder = [PushLanguageManager getTextWithKey:@"message_please_enter_content"];
     _placeholder = [BackgroundRandomAttribute content:StringFromEatingOffdData(mPressedVenueName)];//@"请输入消息".;
     //: _inputMaxLength = 1000;
     _inputMaxLength = 1000;
@@ -223,16 +223,16 @@ Byte notiSinePath[] = {28, 18, 37, 7, 90, 122, 29, 148, 147, 121, 134, 149, 114,
     _avatarType = NIMKitAvatarTypeRounded;
     //: _cellBackgroundColor = [UIColor colorWithRed:((float)((0xE4E7EC & 0xFF0000) >> 16))/255.0 green:((float)((0xE4E7EC & 0x00FF00) >> 8))/255.0 blue:((float)(0xE4E7EC & 0x0000FF))/255.0 alpha:1.0];
     _cellBackgroundColor = [UIColor colorWithRed:((float)((0xE4E7EC & 0xFF0000) >> 16))/255.0 green:((float)((0xE4E7EC & 0x00FF00) >> 8))/255.0 blue:((float)(0xE4E7EC & 0x0000FF))/255.0 alpha:1.0];
-    //: _leftBubbleSettings = [[FFFKitSettings alloc] init:NO];
+    //: _leftBubbleSettings = [[PushKitSettings alloc] init:NO];
     _leftBubbleSettings = [[InputSignalSettings alloc] initPrimrosePath:NO];
-    //: _rightBubbleSettings = [[FFFKitSettings alloc] init:YES];
+    //: _rightBubbleSettings = [[PushKitSettings alloc] init:YES];
     _rightBubbleSettings = [[InputSignalSettings alloc] initPrimrosePath:YES];
 }
 
-//: - (FFFKitSetting *)setting:(NIMMessage *)message
+//: - (PushKitSetting *)setting:(NIMMessage *)message
 - (SchoolbagTaskSurroundingsBlock *)click:(NIMMessage *)message
 {
-    //: FFFKitSettings *settings = message.isOutgoingMsg? self.rightBubbleSettings : self.leftBubbleSettings;
+    //: PushKitSettings *settings = message.isOutgoingMsg? self.rightBubbleSettings : self.leftBubbleSettings;
     InputSignalSettings *settings = message.isOutgoingMsg? self.rightBubbleSettings : self.leftBubbleSettings;
     //: switch (message.messageType) {
     switch (message.messageType) {
@@ -309,10 +309,10 @@ Byte notiSinePath[] = {28, 18, 37, 7, 90, 122, 29, 148, 147, 121, 134, 149, 114,
     return settings.unsupportSetting;
 }
 
-//: - (FFFKitSetting *)repliedSetting:(NIMMessage *)message
+//: - (PushKitSetting *)repliedSetting:(NIMMessage *)message
 - (SchoolbagTaskSurroundingsBlock *)select:(NIMMessage *)message
 {
-    //: FFFKitSettings *settings = message.isOutgoingMsg? self.rightBubbleSettings : self.leftBubbleSettings;
+    //: PushKitSettings *settings = message.isOutgoingMsg? self.rightBubbleSettings : self.leftBubbleSettings;
     InputSignalSettings *settings = message.isOutgoingMsg? self.rightBubbleSettings : self.leftBubbleSettings;
     //: return settings.repliedSetting;
     return settings.repliedSetting;
@@ -322,7 +322,7 @@ Byte notiSinePath[] = {28, 18, 37, 7, 90, 122, 29, 148, 147, 121, 134, 149, 114,
 @end
 
 
-//: @implementation FFFKitSettings
+//: @implementation PushKitSettings
 @implementation InputSignalSettings
 
 //: - (instancetype)init:(BOOL)isRight
@@ -378,7 +378,7 @@ Byte notiSinePath[] = {28, 18, 37, 7, 90, 122, 29, 148, 147, 121, 134, 149, 114,
 //: - (void)applyDefaultRepliedSettings
 - (void)question
 {
-    //: _repliedSetting = [[FFFKitSetting alloc] init];
+    //: _repliedSetting = [[PushKitSetting alloc] init];
     _repliedSetting = [[SchoolbagTaskSurroundingsBlock alloc] init];
     //: _repliedSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{8,12,8,12}") : UIEdgeInsetsFromString(@"{8,12,8,12}");
     _repliedSetting.contentInsets = _isRight? UIEdgeInsetsFromString(StringFromEatingOffdData(notiExposeUrl)) : UIEdgeInsetsFromString(StringFromEatingOffdData(notiExposeUrl));
@@ -393,7 +393,7 @@ Byte notiSinePath[] = {28, 18, 37, 7, 90, 122, 29, 148, 147, 121, 134, 149, 114,
 //: - (void)applyDefaultTextSettings
 - (void)bottomSession
 {
-    //: _textSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _textSetting = [[PushKitSetting alloc] init:_isRight];
     _textSetting = [[SchoolbagTaskSurroundingsBlock alloc] initGray:_isRight];
     //: _textSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{8,12,8,12}") : UIEdgeInsetsFromString(@"{8,12,8,12}");
     _textSetting.contentInsets = _isRight? UIEdgeInsetsFromString(StringFromEatingOffdData(notiExposeUrl)) : UIEdgeInsetsFromString(StringFromEatingOffdData(notiExposeUrl));
@@ -408,7 +408,7 @@ Byte notiSinePath[] = {28, 18, 37, 7, 90, 122, 29, 148, 147, 121, 134, 149, 114,
 //: - (void)applyDefaultAudioSettings
 - (void)inscription
 {
-    //: _audioSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _audioSetting = [[PushKitSetting alloc] init:_isRight];
     _audioSetting = [[SchoolbagTaskSurroundingsBlock alloc] initGray:_isRight];
     //: _audioSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{8,12,8,12}") : UIEdgeInsetsFromString(@"{8,12,8,12}");
     _audioSetting.contentInsets = _isRight? UIEdgeInsetsFromString(StringFromEatingOffdData(notiExposeUrl)) : UIEdgeInsetsFromString(StringFromEatingOffdData(notiExposeUrl));
@@ -423,7 +423,7 @@ Byte notiSinePath[] = {28, 18, 37, 7, 90, 122, 29, 148, 147, 121, 134, 149, 114,
 //: - (void)applyDefaultVideoSettings
 - (void)messageSettings
 {
-    //: _videoSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _videoSetting = [[PushKitSetting alloc] init:_isRight];
     _videoSetting = [[SchoolbagTaskSurroundingsBlock alloc] initGray:_isRight];
     //: _videoSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{3,3,3,8}") : UIEdgeInsetsFromString(@"{3,8,3,3}");
     _videoSetting.contentInsets = _isRight? UIEdgeInsetsFromString(StringFromEatingOffdData(dream_professTitle)) : UIEdgeInsetsFromString(StringFromEatingOffdData(m_dramaticallyStr));
@@ -436,7 +436,7 @@ Byte notiSinePath[] = {28, 18, 37, 7, 90, 122, 29, 148, 147, 121, 134, 149, 114,
 //: - (void)applyDefaultFileSettings
 - (void)state
 {
-    //: _fileSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _fileSetting = [[PushKitSetting alloc] init:_isRight];
     _fileSetting = [[SchoolbagTaskSurroundingsBlock alloc] initGray:_isRight];
     //: _fileSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{3,3,3,8}") : UIEdgeInsetsFromString(@"{3,8,3,3}");
     _fileSetting.contentInsets = _isRight? UIEdgeInsetsFromString(StringFromEatingOffdData(dream_professTitle)) : UIEdgeInsetsFromString(StringFromEatingOffdData(m_dramaticallyStr));
@@ -449,7 +449,7 @@ Byte notiSinePath[] = {28, 18, 37, 7, 90, 122, 29, 148, 147, 121, 134, 149, 114,
 //: - (void)applyDefaultImageSettings
 - (void)ofSettings
 {
-    //: _imageSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _imageSetting = [[PushKitSetting alloc] init:_isRight];
     _imageSetting = [[SchoolbagTaskSurroundingsBlock alloc] initGray:_isRight];
     //: _imageSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{3,3,3,8}") : UIEdgeInsetsFromString(@"{3,8,3,3}");
     _imageSetting.contentInsets = _isRight? UIEdgeInsetsFromString(StringFromEatingOffdData(dream_professTitle)) : UIEdgeInsetsFromString(StringFromEatingOffdData(m_dramaticallyStr));
@@ -460,7 +460,7 @@ Byte notiSinePath[] = {28, 18, 37, 7, 90, 122, 29, 148, 147, 121, 134, 149, 114,
 //: - (void)applyDefaultLocationSettings
 - (void)stochasticProcess
 {
-    //: _locationSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _locationSetting = [[PushKitSetting alloc] init:_isRight];
     _locationSetting = [[SchoolbagTaskSurroundingsBlock alloc] initGray:_isRight];
     //: _locationSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{3,3,3,8}") : UIEdgeInsetsFromString(@"{3,8,3,3}");
     _locationSetting.contentInsets = _isRight? UIEdgeInsetsFromString(StringFromEatingOffdData(dream_professTitle)) : UIEdgeInsetsFromString(StringFromEatingOffdData(m_dramaticallyStr));
@@ -475,7 +475,7 @@ Byte notiSinePath[] = {28, 18, 37, 7, 90, 122, 29, 148, 147, 121, 134, 149, 114,
 //: - (void)applyDefaultTipSettings
 - (void)net
 {
-    //: _tipSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _tipSetting = [[PushKitSetting alloc] init:_isRight];
     _tipSetting = [[SchoolbagTaskSurroundingsBlock alloc] initGray:_isRight];
     //: _tipSetting.contentInsets = UIEdgeInsetsZero;
     _tipSetting.contentInsets = UIEdgeInsetsZero;
@@ -496,7 +496,7 @@ Byte notiSinePath[] = {28, 18, 37, 7, 90, 122, 29, 148, 147, 121, 134, 149, 114,
 //: - (void)applyDefaultRtcCallRecordSettings
 - (void)recordDown
 {
-    //: _rtcCallRecordSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _rtcCallRecordSetting = [[PushKitSetting alloc] init:_isRight];
     _rtcCallRecordSetting = [[SchoolbagTaskSurroundingsBlock alloc] initGray:_isRight];
     //: _rtcCallRecordSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{9,11,9,15}") : UIEdgeInsetsFromString(@"{9,15,9,9}");
     _rtcCallRecordSetting.contentInsets = _isRight? UIEdgeInsetsFromString(StringFromEatingOffdData(k_statusPath)) : UIEdgeInsetsFromString(StringFromEatingOffdData(showHareUrl));
@@ -512,7 +512,7 @@ Byte notiSinePath[] = {28, 18, 37, 7, 90, 122, 29, 148, 147, 121, 134, 149, 114,
 //: - (void)applyDefaultUnsupportSettings
 - (void)pastLast
 {
-    //: _unsupportSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _unsupportSetting = [[PushKitSetting alloc] init:_isRight];
     _unsupportSetting = [[SchoolbagTaskSurroundingsBlock alloc] initGray:_isRight];
     //: _unsupportSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{10,10,10,10}") : UIEdgeInsetsFromString(@"{10,10,10,10}");
     _unsupportSetting.contentInsets = _isRight? UIEdgeInsetsFromString(StringFromEatingOffdData(notiApproveRandomFormat)) : UIEdgeInsetsFromString(StringFromEatingOffdData(notiApproveRandomFormat));
@@ -528,7 +528,7 @@ Byte notiSinePath[] = {28, 18, 37, 7, 90, 122, 29, 148, 147, 121, 134, 149, 114,
 //: - (void)applyDefaultTeamNotificationSettings
 - (void)greenMode
 {
-    //: _teamNotificationSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _teamNotificationSetting = [[PushKitSetting alloc] init:_isRight];
     _teamNotificationSetting = [[SchoolbagTaskSurroundingsBlock alloc] initGray:_isRight];
     //: _teamNotificationSetting.contentInsets = UIEdgeInsetsZero;
     _teamNotificationSetting.contentInsets = UIEdgeInsetsZero;
@@ -549,7 +549,7 @@ Byte notiSinePath[] = {28, 18, 37, 7, 90, 122, 29, 148, 147, 121, 134, 149, 114,
 //: - (void)applyDefaultSuperTeamNotificationSettings
 - (void)nameOf
 {
-    //: _superTeamNotificationSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _superTeamNotificationSetting = [[PushKitSetting alloc] init:_isRight];
     _superTeamNotificationSetting = [[SchoolbagTaskSurroundingsBlock alloc] initGray:_isRight];
     //: _superTeamNotificationSetting.contentInsets = UIEdgeInsetsZero;
     _superTeamNotificationSetting.contentInsets = UIEdgeInsetsZero;
@@ -570,7 +570,7 @@ Byte notiSinePath[] = {28, 18, 37, 7, 90, 122, 29, 148, 147, 121, 134, 149, 114,
 //: - (void)applyDefaultChatroomNotificationSettings
 - (void)minWith
 {
-    //: _chatroomNotificationSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _chatroomNotificationSetting = [[PushKitSetting alloc] init:_isRight];
     _chatroomNotificationSetting = [[SchoolbagTaskSurroundingsBlock alloc] initGray:_isRight];
     //: _chatroomNotificationSetting.contentInsets = UIEdgeInsetsZero;
     _chatroomNotificationSetting.contentInsets = UIEdgeInsetsZero;
@@ -591,7 +591,7 @@ Byte notiSinePath[] = {28, 18, 37, 7, 90, 122, 29, 148, 147, 121, 134, 149, 114,
 //: - (void)applyDefaultNetcallNotificationSettings
 - (void)handle
 {
-    //: _netcallNotificationSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _netcallNotificationSetting = [[PushKitSetting alloc] init:_isRight];
     _netcallNotificationSetting = [[SchoolbagTaskSurroundingsBlock alloc] initGray:_isRight];
     //: _netcallNotificationSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{11,11,9,15}") : UIEdgeInsetsFromString(@"{11,15,9,9}");
     _netcallNotificationSetting.contentInsets = _isRight? UIEdgeInsetsFromString(StringFromEatingOffdData(notiRabbitId)) : UIEdgeInsetsFromString(StringFromEatingOffdData(user_bankKey));

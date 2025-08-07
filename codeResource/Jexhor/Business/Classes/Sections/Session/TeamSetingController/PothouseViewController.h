@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCardOperationViewController.h"
+//: #import "PushTeamCardOperationViewController.h"
 #import "PushViewController.h"
 
-//: @interface FFFAdvancedTeamCardViewController : FFFTeamCardOperationViewController
+//: @interface PushAdvancedTeamCardViewController : PushTeamCardOperationViewController
 @interface PothouseViewController : PushViewController
 
 

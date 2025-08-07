@@ -241,7 +241,7 @@
         //: [self initUI];
         [self initParentWithinView];
 
-        //: self.selectButtons = @[[FFFLanguageManager getTextWithKey:@"report_reasons7"],[FFFLanguageManager getTextWithKey:@"report_reasons8"],[FFFLanguageManager getTextWithKey:@"report_reasons9"],[FFFLanguageManager getTextWithKey:@"report_reasons10"],[FFFLanguageManager getTextWithKey:@"report_reasons6"]];
+        //: self.selectButtons = @[[PushLanguageManager getTextWithKey:@"report_reasons7"],[PushLanguageManager getTextWithKey:@"report_reasons8"],[PushLanguageManager getTextWithKey:@"report_reasons9"],[PushLanguageManager getTextWithKey:@"report_reasons10"],[PushLanguageManager getTextWithKey:@"report_reasons6"]];
         self.selectButtons = @[[BackgroundRandomAttribute content:[[DirectData sharedInstance] show_coldTitle]],[BackgroundRandomAttribute content:[[DirectData sharedInstance] app_motData]],[BackgroundRandomAttribute content:[[DirectData sharedInstance] noti_directStr]],[BackgroundRandomAttribute content:[[DirectData sharedInstance] main_downContent]],[BackgroundRandomAttribute content:[[DirectData sharedInstance] mJuryFormat]]];
         //: self.index = 0;
         self.index = 0;
@@ -276,7 +276,7 @@
     labsub.textColor = [UIColor user:[[DirectData sharedInstance] notiPositionIdent]];
     //: labsub.numberOfLines = 0;
     labsub.numberOfLines = 0;
-    //: labsub.text = [FFFLanguageManager getTextWithKey:@"report_Tip"];
+    //: labsub.text = [PushLanguageManager getTextWithKey:@"report_Tip"];
     labsub.text = [BackgroundRandomAttribute content:[[DirectData sharedInstance] mainSessionIdent]];
     //: [_box addSubview:labsub];
     [_box addSubview:labsub];
@@ -322,7 +322,7 @@
 //        _titleLabel.textAlignment = NSTextAlignmentCenter;
 //        _titleLabel.numberOfLines = 0;
 //        _titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"report_Content"];
+        //: _titleLabel.text = [PushLanguageManager getTextWithKey:@"report_Content"];
         _titleLabel.text = [BackgroundRandomAttribute content:[[DirectData sharedInstance] dream_panMessage]];
     }
     //: return _titleLabel;
@@ -361,7 +361,7 @@
         [Btn1 setImage:[UIImage imageNamed:[[DirectData sharedInstance] mainPinValue]] forState:UIControlStateNormal];
         //: [Btn1 setImage:[UIImage imageNamed:@"icon_accessory_selected"] forState:UIControlStateSelected];
         [Btn1 setImage:[UIImage imageNamed:[[DirectData sharedInstance] mPractitionerContent]] forState:UIControlStateSelected];
-        //: [Btn1 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons7"] forState:UIControlStateNormal];
+        //: [Btn1 setTitle:[PushLanguageManager getTextWithKey:@"report_reasons7"] forState:UIControlStateNormal];
         [Btn1 setTitle:[BackgroundRandomAttribute content:[[DirectData sharedInstance] show_coldTitle]] forState:UIControlStateNormal];
         //: Btn1.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn1.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -389,7 +389,7 @@
         [Btn2 setImage:[UIImage imageNamed:[[DirectData sharedInstance] mainPinValue]] forState:UIControlStateNormal];
         //: [Btn2 setImage:[UIImage imageNamed:@"icon_accessory_selected"] forState:UIControlStateSelected];
         [Btn2 setImage:[UIImage imageNamed:[[DirectData sharedInstance] mPractitionerContent]] forState:UIControlStateSelected];
-        //: [Btn2 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons8"] forState:UIControlStateNormal];
+        //: [Btn2 setTitle:[PushLanguageManager getTextWithKey:@"report_reasons8"] forState:UIControlStateNormal];
         [Btn2 setTitle:[BackgroundRandomAttribute content:[[DirectData sharedInstance] app_motData]] forState:UIControlStateNormal];
         //: Btn2.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn2.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -418,7 +418,7 @@
         [Btn3 setImage:[UIImage imageNamed:[[DirectData sharedInstance] mPractitionerContent]] forState:UIControlStateSelected];
         //: [_buttonBox addSubview:Btn3];
         [_buttonBox addSubview:Btn3];
-        //: [Btn3 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons9"] forState:UIControlStateNormal];
+        //: [Btn3 setTitle:[PushLanguageManager getTextWithKey:@"report_reasons9"] forState:UIControlStateNormal];
         [Btn3 setTitle:[BackgroundRandomAttribute content:[[DirectData sharedInstance] noti_directStr]] forState:UIControlStateNormal];
         //: Btn3.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn3.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -445,7 +445,7 @@
         [Btn4 setImage:[UIImage imageNamed:[[DirectData sharedInstance] mPractitionerContent]] forState:UIControlStateSelected];
         //: [_buttonBox addSubview:Btn4];
         [_buttonBox addSubview:Btn4];
-        //: [Btn4 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons10"] forState:UIControlStateNormal];
+        //: [Btn4 setTitle:[PushLanguageManager getTextWithKey:@"report_reasons10"] forState:UIControlStateNormal];
         [Btn4 setTitle:[BackgroundRandomAttribute content:[[DirectData sharedInstance] main_downContent]] forState:UIControlStateNormal];
         //: Btn4.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn4.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -472,7 +472,7 @@
         [Btn5 setImage:[UIImage imageNamed:[[DirectData sharedInstance] mPractitionerContent]] forState:UIControlStateSelected];
         //: [_buttonBox addSubview:Btn5];
         [_buttonBox addSubview:Btn5];
-        //: [Btn5 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons6"] forState:UIControlStateNormal];
+        //: [Btn5 setTitle:[PushLanguageManager getTextWithKey:@"report_reasons6"] forState:UIControlStateNormal];
         [Btn5 setTitle:[BackgroundRandomAttribute content:[[DirectData sharedInstance] mJuryFormat]] forState:UIControlStateNormal];
         //: Btn5.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn5.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -502,7 +502,7 @@
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor user:[[DirectData sharedInstance] m_disappointedTitle]] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[BackgroundRandomAttribute content:[[DirectData sharedInstance] notiRoughData]] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -529,7 +529,7 @@
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[BackgroundRandomAttribute content:[[DirectData sharedInstance] userOnUrl]] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#05D481"];
         _sureBtn.backgroundColor = [UIColor user:[[DirectData sharedInstance] kContentMsg]];

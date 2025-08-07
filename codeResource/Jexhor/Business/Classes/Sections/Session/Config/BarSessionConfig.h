@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 //: @end
 @end
 
-//: @interface NTESThreadDataSourceProvider : NSObject <FFFKitMessageProvider>
+//: @interface NTESThreadDataSourceProvider : NSObject <PushKitMessageProvider>
 @interface PushProvider : NSObject <CountProvider>
 
 //: @property (nonatomic,strong) NIMMessage *threadMessage;

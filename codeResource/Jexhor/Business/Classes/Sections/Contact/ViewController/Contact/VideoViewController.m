@@ -142,7 +142,7 @@
 #import "UIView+Toast.h"
 //: #import "UIView+NTES.h"
 #import "UIView+SearchedTeam.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "PushAvatarImageView.h"
 #import "ImageView.h"
 //: #import "NTESSessionViewController.h"
 #import "BlockViewController.h"
@@ -501,7 +501,7 @@
 
 //: - (NSMutableAttributedString *)showNameWithUser:(NIMUser *)user {
 - (NSMutableAttributedString *)high:(NIMUser *)user {
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:user.userId option:nil];
+    //: PushKitInfo *info = [[MyUserKit sharedKit] infoByUser:user.userId option:nil];
     DataTeam *info = [[Secret highlight] infoAndStraddleOption:user.userId item:nil];
     //: NSMutableAttributedString *ret = [[NSMutableAttributedString alloc] init];
     NSMutableAttributedString *ret = [[NSMutableAttributedString alloc] init];

@@ -33,29 +33,29 @@ Byte dreamTheaterStr[] = {22, 6, 5, 8, 77, 64, 94, 20, 48, 63, 48, 65, 49, 49, 2
 //
 
 // __M_A_C_R_O__
-//: #import "FFFGroupMemberTableViewCell.h"
+//: #import "PushGroupMemberTableViewCell.h"
 #import "TapTingView.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "PushAvatarImageView.h"
 #import "ImageView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
-//: #import "FFFTeamHelper.h"
+//: #import "PushTeamHelper.h"
 #import "ShowHelper.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+Secret.h"
 
-//: @interface FFFGroupMemberTableViewCell()
+//: @interface PushGroupMemberTableViewCell()
 @interface TapTingView()
 
-//: @property (nonatomic,strong) id<FFFKitCardHeaderData> data;
-@property (nonatomic,strong) id<FFFKitCardHeaderData> data;
+//: @property (nonatomic,strong) id<PushKitCardHeaderData> data;
+@property (nonatomic,strong) id<PushKitCardHeaderData> data;
 
 //: @end
 @end
 
-//: @implementation FFFGroupMemberTableViewCell
+//: @implementation PushGroupMemberTableViewCell
 @implementation TapTingView
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -84,14 +84,14 @@ Byte dreamTheaterStr[] = {22, 6, 5, 8, 77, 64, 94, 20, 48, 63, 48, 65, 49, 49, 2
 //: + (instancetype)cellWithTableView:(UITableView *)tableView
 + (instancetype)present:(UITableView *)tableView
 {
-    //: static NSString *identifier = @"FFFGroupMemberTableViewCell";
+    //: static NSString *identifier = @"PushGroupMemberTableViewCell";
     static NSString *identifier = @"TapTingView";
-    //: FFFGroupMemberTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    //: PushGroupMemberTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     TapTingView *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     //: if (!cell)
     if (!cell)
     {
-        //: cell = [[FFFGroupMemberTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        //: cell = [[PushGroupMemberTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         cell = [[TapTingView alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         //: cell.backgroundColor = [UIColor colorWithHexString:@"#F6F6F6"];
         cell.backgroundColor = [UIColor user:StringFromIconData(m_wooValue)];
@@ -152,7 +152,7 @@ Byte dreamTheaterStr[] = {22, 6, 5, 8, 77, 64, 94, 20, 48, 63, 48, 65, 49, 49, 2
     self.userId = UserId;
 }
 
-//: - (void)setUserInfo:(FFFKitInfo *)userInfo
+//: - (void)setUserInfo:(PushKitInfo *)userInfo
 - (void)setUserInfo:(DataTeam *)userInfo
 {
     //: self.userInfo = userInfo;

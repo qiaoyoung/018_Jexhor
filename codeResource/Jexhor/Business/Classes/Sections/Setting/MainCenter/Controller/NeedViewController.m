@@ -332,7 +332,7 @@ typedef struct {
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"safe_setting_activity_title"];
+    //: labtitle.text = [PushLanguageManager getTextWithKey:@"safe_setting_activity_title"];
     labtitle.text = [BackgroundRandomAttribute content:[[ImagePractitionerData sharedInstance] dreamIconViewData]];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -430,7 +430,7 @@ typedef struct {
     if(indexPath.section == 0){
         //: cell.iconImageView.image = [UIImage imageNamed:@"safe_blacklist"];
         cell.iconImageView.image = [UIImage imageNamed:[[ImagePractitionerData sharedInstance] showResemblePath]];
-        //: cell.titleLabel.text = [FFFLanguageManager getTextWithKey:@"black_list_activity_black"];
+        //: cell.titleLabel.text = [PushLanguageManager getTextWithKey:@"black_list_activity_black"];
         cell.titleLabel.text = [BackgroundRandomAttribute content:[[ImagePractitionerData sharedInstance] m_errPath]];
         //: cell.labSubtitle.hidden = YES;
         cell.labSubtitle.hidden = YES;
@@ -439,7 +439,7 @@ typedef struct {
     else if (indexPath.section == 1){
         //: cell.iconImageView.image = [UIImage imageNamed:@"safe_changepsd"];
         cell.iconImageView.image = [UIImage imageNamed:[[ImagePractitionerData sharedInstance] show_collectionIdent]];
-        //: cell.titleLabel.text = [FFFLanguageManager getTextWithKey:@"modify_activity_title"];
+        //: cell.titleLabel.text = [PushLanguageManager getTextWithKey:@"modify_activity_title"];
         cell.titleLabel.text = [BackgroundRandomAttribute content:[[ImagePractitionerData sharedInstance] mVersionTitle]];
         //: cell.labSubtitle.hidden = YES;
         cell.labSubtitle.hidden = YES;
@@ -453,7 +453,7 @@ typedef struct {
     else if (indexPath.section == 2){
         //: cell.iconImageView.image = [UIImage imageNamed:@"safe_accountdelete"];
         cell.iconImageView.image = [UIImage imageNamed:[[ImagePractitionerData sharedInstance] appPenaltyStr]];
-        //: cell.titleLabel.text = [FFFLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"];
+        //: cell.titleLabel.text = [PushLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"];
         cell.titleLabel.text = [BackgroundRandomAttribute content:[[ImagePractitionerData sharedInstance] mainPractitionerMsg]];
         //: cell.labSubtitle.hidden = YES;
         cell.labSubtitle.hidden = YES;
@@ -505,7 +505,7 @@ typedef struct {
 {
     //: [self.view addSubview:self.deactivateNextView];
     [self.view addSubview:self.deactivateNextView];
-    //: [self.deactivateNextView reloadWithNickname:[FFFLanguageManager getTextWithKey:@"deactivate_account"]];
+    //: [self.deactivateNextView reloadWithNickname:[PushLanguageManager getTextWithKey:@"deactivate_account"]];
     [self.deactivateNextView downwards:[BackgroundRandomAttribute content:[[ImagePractitionerData sharedInstance] app_inputId]]];
     //: [self.deactivateNextView animationShow];
     [self.deactivateNextView image];
@@ -531,7 +531,7 @@ typedef struct {
 {
     //: [self.view addSubview:self.deactivateNextView];
     [self.view addSubview:self.deactivateNextView];
-    //: [self.deactivateNextView reloadWithNickname:[FFFLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"]];
+    //: [self.deactivateNextView reloadWithNickname:[PushLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"]];
     [self.deactivateNextView downwards:[BackgroundRandomAttribute content:[[ImagePractitionerData sharedInstance] mainPractitionerMsg]]];
     //: [self.deactivateNextView animationShow];
     [self.deactivateNextView image];

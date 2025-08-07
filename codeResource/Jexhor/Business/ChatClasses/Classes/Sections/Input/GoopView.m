@@ -36,7 +36,7 @@
     return show_dramaticallyKey;
 }
 
-//: #ffffff
+//: #fffPush
 + (NSString *)show_guiltyTouchIdent {
     /* static */ NSString *show_guiltyTouchIdent = nil;
     if (!show_guiltyTouchIdent) {
@@ -89,7 +89,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFReplyContentView.h"
+//: #import "PushReplyContentView.h"
 #import "GoopView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
@@ -98,13 +98,13 @@
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
 
-//: @interface FFFReplyContentView ()
+//: @interface PushReplyContentView ()
 @interface GoopView ()
 
 //: @end
 @end
 
-//: @implementation FFFReplyContentView
+//: @implementation PushReplyContentView
 @implementation GoopView
 
 //: - (instancetype)initWithFrame:(CGRect)frame
@@ -115,7 +115,7 @@
     //: if (self)
     if (self)
     {
-        //: self.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: self.backgroundColor = [UIColor colorWithHexString:@"#fffPush"];
         self.backgroundColor = [UIColor user:[SizeDrawData show_guiltyTouchIdent]];
 
         //: UIView *bg = [[UIView alloc]initWithFrame:CGRectMake(15, 2, [[UIScreen mainScreen] bounds].size.width-30, 48)];

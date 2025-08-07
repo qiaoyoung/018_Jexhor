@@ -80,19 +80,19 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactSelectConfig.h"
+//: #import "PushContactSelectConfig.h"
 #import "ReadConfig.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "PushGlobalMacro.h"
+#import "PushGlobalMacro.h"
 //: #import "UserGroupedData.h"
 #import "SizeSoulData.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "PushKitInfoFetchOption.h"
 #import "AttributeQuantityOption.h"
-//: #import "FFFKitInfo.h"
+//: #import "PushKitInfo.h"
 #import "DataTeam.h"
 
 //: @implementation NIMContactFriendSelectConfig : NSObject
@@ -106,7 +106,7 @@
 
 //: - (NSString *)title{
 - (NSString *)holderColor{
-    //: return [FFFLanguageManager getTextWithKey:@"select_contact"];
+    //: return [PushLanguageManager getTextWithKey:@"select_contact"];
     return [BackgroundRandomAttribute content:[[AcknowledgeData sharedInstance] user_heroSlatButtonName]];
 }
 
@@ -186,9 +186,9 @@
     return nil;
 }
 
-//: - (FFFKitInfo *)getInfoById:(NSString *)selectedId {
+//: - (PushKitInfo *)getInfoById:(NSString *)selectedId {
 - (DataTeam *)perspective:(NSString *)selectedId {
-    //: FFFKitInfo *info = nil;
+    //: PushKitInfo *info = nil;
     DataTeam *info = nil;
     //: info = [[MyUserKit sharedKit] infoByUser:selectedId option:nil];
     info = [[Secret highlight] infoAndStraddleOption:selectedId item:nil];
@@ -217,7 +217,7 @@
 
 //: - (NSString *)title{
 - (NSString *)holderColor{
-    //: return [FFFLanguageManager getTextWithKey:@"select_contact"];
+    //: return [PushLanguageManager getTextWithKey:@"select_contact"];
     return [BackgroundRandomAttribute content:[[AcknowledgeData sharedInstance] user_heroSlatButtonName]];
 }
 
@@ -360,11 +360,11 @@
     return nil;
 }
 
-//: - (FFFKitInfo *)getInfoById:(NSString *)selectedId {
+//: - (PushKitInfo *)getInfoById:(NSString *)selectedId {
 - (DataTeam *)perspective:(NSString *)selectedId {
-    //: FFFKitInfo *info = nil;
+    //: PushKitInfo *info = nil;
     DataTeam *info = nil;
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: PushKitInfoFetchOption *option = [[PushKitInfoFetchOption alloc] init];
     AttributeQuantityOption *option = [[AttributeQuantityOption alloc] init];
     //: option.session = _session;
     option.session = _session;
@@ -486,9 +486,9 @@
     return nil;
 }
 
-//: - (FFFKitInfo *)getInfoById:(NSString *)selectedId {
+//: - (PushKitInfo *)getInfoById:(NSString *)selectedId {
 - (DataTeam *)perspective:(NSString *)selectedId {
-    //: FFFKitInfo *info = nil;
+    //: PushKitInfo *info = nil;
     DataTeam *info = nil;
     //: if (_teamType == NIMKitTeamTypeNomal) {
     if (_teamType == NIMKitTeamTypeNomal) {

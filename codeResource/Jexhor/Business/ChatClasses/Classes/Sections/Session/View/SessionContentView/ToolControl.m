@@ -77,16 +77,16 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionRtcCallRecordContentView.h"
+//: #import "PushSessionRtcCallRecordContentView.h"
 #import "ToolControl.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+Secret.h"
-//: #import "FFFKitUtil.h"
+//: #import "PushKitUtil.h"
 #import "KitUtil.h"
 
-//: @implementation FFFSessionRtcCallRecordContentView
+//: @implementation PushSessionRtcCallRecordContentView
 @implementation ToolControl
 
 //: - (instancetype)initSessionMessageContentView
@@ -113,17 +113,17 @@ typedef struct {
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data {
+//: - (void)refresh:(PushMessageModel *)data {
 - (void)name:(PurseModel *)data {
     //: [super refresh:data];
     [super name:data];
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
+    //: PushKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
     SchoolbagTaskSurroundingsBlock *setting = [[Secret highlight].config click:data.message];
     //: self.textLabel.textColor = setting.textColor;
     self.textLabel.textColor = setting.textColor;
     //: self.textLabel.font = setting.font;
     self.textLabel.font = setting.font;
-    //: self.textLabel.text = [FFFKitUtil messageTipContent:data.message];
+    //: self.textLabel.text = [PushKitUtil messageTipContent:data.message];
     self.textLabel.text = [KitUtil with:data.message];
 
     //: NIMRtcCallRecordObject *record = data.message.messageObject;

@@ -17,7 +17,7 @@
 //: @class NIMMessage;
 @class NIMMessage;
 
-//: @interface FFFKitInfoFetchOption : NSObject
+//: @interface PushKitInfoFetchOption : NSObject
 @interface AttributeQuantityOption : NSObject
 
 /**

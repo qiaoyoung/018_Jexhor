@@ -195,13 +195,13 @@
         case NIMLoginStepLinkFailed:
         //: case NIMLoginStepLoseConnection:
         case NIMLoginStepLoseConnection:
-            //: text = [FFFLanguageManager getTextWithKey:@"home_fragment_net_error"];
+            //: text = [PushLanguageManager getTextWithKey:@"home_fragment_net_error"];
             text = [BackgroundRandomAttribute content:[[ToLightData sharedInstance] dream_resembleVoiceLightStr]];
             //: break;
             break;
         //: case NIMLoginStepLoginFailed:
         case NIMLoginStepLoginFailed:
-            //: text = [FFFLanguageManager getTextWithKey:@"login_activity_login_failed"];
+            //: text = [PushLanguageManager getTextWithKey:@"login_activity_login_failed"];
             text = [BackgroundRandomAttribute content:[[ToLightData sharedInstance] userCompleteMessage]];
             //: break;
             break;
@@ -216,7 +216,7 @@
             //: else
             else
             {
-                //: text = [FFFLanguageManager getTextWithKey:@"home_fragment_net_error"];
+                //: text = [PushLanguageManager getTextWithKey:@"home_fragment_net_error"];
                 text = [BackgroundRandomAttribute content:[[ToLightData sharedInstance] dream_resembleVoiceLightStr]];
             }
         }

@@ -320,9 +320,9 @@ typedef struct {
 #import "TaskView.h"
 //: #import "UIView+NTES.h"
 #import "UIView+SearchedTeam.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "PushAvatarImageView.h"
 #import "ImageView.h"
-//: #import "FFFKitUtil.h"
+//: #import "PushKitUtil.h"
 #import "KitUtil.h"
 
 //: @interface NTESSystemNotificationCell ()
@@ -492,7 +492,7 @@ typedef struct {
         //: [_acceptButton addTarget:self action:@selector(onAcceptBtn) forControlEvents:(UIControlEventTouchUpInside)];
         [_acceptButton addTarget:self action:@selector(messageRange) forControlEvents:(UIControlEventTouchUpInside)];
 //        [_acceptButton setTitleColor:[KEKESkinColorManager shareInstance].skinColor forState:(UIControlStateNormal)];
-//        [_acceptButton setBackgroundColor:RGB_COLOR_String(@"#ffffff")];
+//        [_acceptButton setBackgroundColor:RGB_COLOR_String(@"#fffPush")];
         //: [_acceptButton setImage:[UIImage imageNamed:@"ic_btn_accept"] forState:UIControlStateNormal];
         [_acceptButton setImage:[UIImage imageNamed:[TemperatureData mainLeaveCellId]] forState:UIControlStateNormal];
 //        _acceptButton.layer.cornerRadius = 16;
@@ -519,7 +519,7 @@ typedef struct {
         //: [_refuseButton addTarget:self action:@selector(onRefusebtn) forControlEvents:(UIControlEventTouchUpInside)];
         [_refuseButton addTarget:self action:@selector(beginLength) forControlEvents:(UIControlEventTouchUpInside)];
 //        [_refuseButton setTitleColor:kTextColor_2c3042 forState:(UIControlStateNormal)];
-//        [_refuseButton setBackgroundColor:RGB_COLOR_String(@"#ffffff")];
+//        [_refuseButton setBackgroundColor:RGB_COLOR_String(@"#fffPush")];
         //: [_refuseButton setImage:[UIImage imageNamed:@"ic_btn_disaccept"] forState:UIControlStateNormal];
         [_refuseButton setImage:[UIImage imageNamed:[TemperatureData appViewMessage]] forState:UIControlStateNormal];
 //        _refuseButton.layer.cornerRadius = 16;
@@ -555,25 +555,25 @@ typedef struct {
         switch (self.notification.handleStatus) {
             //: case NotificationHandleTypeOk:
             case NotificationHandleTypeOk:
-                //: self.handleInfoLabel.text = [FFFLanguageManager getTextWithKey:@"message_helper_already_ok"];
+                //: self.handleInfoLabel.text = [PushLanguageManager getTextWithKey:@"message_helper_already_ok"];
                 self.handleInfoLabel.text = [BackgroundRandomAttribute content:[TemperatureData k_contentText]];//@"已同意".nim_localized;
                 //: break;
                 break;
             //: case NotificationHandleTypeNo:
             case NotificationHandleTypeNo:
-                //: self.handleInfoLabel.text = [FFFLanguageManager getTextWithKey:@"message_helper_already_no"];
+                //: self.handleInfoLabel.text = [PushLanguageManager getTextWithKey:@"message_helper_already_no"];
                 self.handleInfoLabel.text = [BackgroundRandomAttribute content:[TemperatureData mTingOnIconMsg]];//@"已拒绝".nim_localized;
                 //: break;
                 break;
             //: case NotificationHandleTypeOutOfDate:
             case NotificationHandleTypeOutOfDate:
-                //: self.handleInfoLabel.text = [FFFLanguageManager getTextWithKey:@"message_helper_already_time"];
+                //: self.handleInfoLabel.text = [PushLanguageManager getTextWithKey:@"message_helper_already_time"];
                 self.handleInfoLabel.text = [BackgroundRandomAttribute content:[TemperatureData noti_theaterId]];//@"已过期".nim_localized;
                 //: break;
                 break;
             //: default:
             default:
-                //: self.handleInfoLabel.text = [FFFLanguageManager getTextWithKey:@"is_read"];
+                //: self.handleInfoLabel.text = [PushLanguageManager getTextWithKey:@"is_read"];
                 self.handleInfoLabel.text = [BackgroundRandomAttribute content:[TemperatureData main_imageStr]];
                 //: break;
                 break;
@@ -585,18 +585,18 @@ typedef struct {
     }
 
 
-    //: self.timeLabel.text = [FFFKitUtil showTime:self.notification.timestamp showDetail:YES];
+    //: self.timeLabel.text = [PushKitUtil showTime:self.notification.timestamp showDetail:YES];
     self.timeLabel.text = [KitUtil tally:self.notification.timestamp roundHighBack:YES];
 
     //: NSString *sourceID = self.notification.sourceID;
     NSString *sourceID = self.notification.sourceID;
-    //: FFFKitInfo *sourceMember = [[MyUserKit sharedKit] infoByUser:sourceID option:nil];
+    //: PushKitInfo *sourceMember = [[MyUserKit sharedKit] infoByUser:sourceID option:nil];
     DataTeam *sourceMember = [[Secret highlight] infoAndStraddleOption:sourceID item:nil];
     //: [self updateSourceMember:sourceMember];
     [self requestMember:sourceMember];
 }
 
-//: - (void)updateSourceMember:(FFFKitInfo *)sourceMember{
+//: - (void)updateSourceMember:(PushKitInfo *)sourceMember{
 - (void)requestMember:(DataTeam *)sourceMember{
 
     //: NIMSystemNotificationType type = self.notification.type;
@@ -620,7 +620,7 @@ typedef struct {
         //: case NIMSystemNotificationTypeTeamApply:
         case NIMSystemNotificationTypeTeamApply:
         {
-            //: NSString *message_helper_apply_to_group = [FFFLanguageManager getTextWithKey:@"message_helper_apply_to_group"];
+            //: NSString *message_helper_apply_to_group = [PushLanguageManager getTextWithKey:@"message_helper_apply_to_group"];
             NSString *message_helper_apply_to_group = [BackgroundRandomAttribute content:[TemperatureData kCellPath]];//@"申请加入群".nim_localized
             //: NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.notification.targetID];
             NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.notification.targetID];
@@ -632,9 +632,9 @@ typedef struct {
         //: case NIMSystemNotificationTypeTeamApplyReject:
         case NIMSystemNotificationTypeTeamApplyReject:
         {
-            //: NSString *contact_fragment_group = [FFFLanguageManager getTextWithKey:@"contact_fragment_group"];
+            //: NSString *contact_fragment_group = [PushLanguageManager getTextWithKey:@"contact_fragment_group"];
             NSString *contact_fragment_group = [BackgroundRandomAttribute content:[TemperatureData dreamMageImageFormat]];//@"群".nim_localized
-            //: NSString *message_helper_refuse_you = [FFFLanguageManager getTextWithKey:@"message_helper_refuse_you"];
+            //: NSString *message_helper_refuse_you = [PushLanguageManager getTextWithKey:@"message_helper_refuse_you"];
             NSString *message_helper_refuse_you = [BackgroundRandomAttribute content:[TemperatureData mStorageMessage]];//@"拒绝你加入".nim_localized
             //: NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.notification.targetID];
             NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.notification.targetID];
@@ -652,9 +652,9 @@ typedef struct {
         //: case NIMSystemNotificationTypeTeamInvite:
         case NIMSystemNotificationTypeTeamInvite:
         {
-            //: NSString *contact_fragment_group = [FFFLanguageManager getTextWithKey:@"contact_fragment_group"];
+            //: NSString *contact_fragment_group = [PushLanguageManager getTextWithKey:@"contact_fragment_group"];
             NSString *contact_fragment_group = [BackgroundRandomAttribute content:[TemperatureData dreamMageImageFormat]];//@"群".nim_localized
-            //: NSString *invite_you_group = [FFFLanguageManager getTextWithKey:@"invite_you_group"];
+            //: NSString *invite_you_group = [PushLanguageManager getTextWithKey:@"invite_you_group"];
             NSString *invite_you_group = [BackgroundRandomAttribute content:[TemperatureData app_showVersionData]];//@"邀请你加入".nim_localized
             //: NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.notification.targetID];
             NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.notification.targetID];
@@ -680,9 +680,9 @@ typedef struct {
         //: case NIMSystemNotificationTypeTeamIviteReject:
         case NIMSystemNotificationTypeTeamIviteReject:
         {
-            //: NSString *message_helper_refuse_group = [FFFLanguageManager getTextWithKey:@"message_helper_refuse_group"];
+            //: NSString *message_helper_refuse_group = [PushLanguageManager getTextWithKey:@"message_helper_refuse_group"];
             NSString *message_helper_refuse_group = [BackgroundRandomAttribute content:[TemperatureData showPathTitle]];
-            //: NSString *message_helper_invite = [FFFLanguageManager getTextWithKey:@"message_helper_invite"];
+            //: NSString *message_helper_invite = [PushLanguageManager getTextWithKey:@"message_helper_invite"];
             NSString *message_helper_invite = [BackgroundRandomAttribute content:[TemperatureData dreamShowSessionUrl]];//@"邀请".nim_localized
             //: NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.notification.targetID];
             NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.notification.targetID];
@@ -700,7 +700,7 @@ typedef struct {
         //: case NIMSystemNotificationTypeSuperTeamApply:
         case NIMSystemNotificationTypeSuperTeamApply:
         {
-            //: NSString *apply_join_supergroup = [FFFLanguageManager getTextWithKey:@"apply_join_supergroup"];
+            //: NSString *apply_join_supergroup = [PushLanguageManager getTextWithKey:@"apply_join_supergroup"];
             NSString *apply_join_supergroup = [BackgroundRandomAttribute content:[TemperatureData mTemperatureText]];//@"申请加入超大群 %@".nim_localized
             //: NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:self.notification.targetID];
             NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:self.notification.targetID];
@@ -712,9 +712,9 @@ typedef struct {
         //: case NIMSystemNotificationTypeSuperTeamApplyReject:
         case NIMSystemNotificationTypeSuperTeamApplyReject:
         {
-            //: NSString *large_group = [FFFLanguageManager getTextWithKey:@"large_group"];
+            //: NSString *large_group = [PushLanguageManager getTextWithKey:@"large_group"];
             NSString *large_group = [BackgroundRandomAttribute content:[TemperatureData dreamDeadItMessage]];//超大群
-            //: NSString *to_deny_entry = [FFFLanguageManager getTextWithKey:@"to_deny_entry"];
+            //: NSString *to_deny_entry = [PushLanguageManager getTextWithKey:@"to_deny_entry"];
             NSString *to_deny_entry = [BackgroundRandomAttribute content:[TemperatureData mDownRoughFormat]];//拒绝你加入
             //: NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:self.notification.targetID];
             NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:self.notification.targetID];
@@ -726,9 +726,9 @@ typedef struct {
         //: case NIMSystemNotificationTypeSuperTeamInvite:
         case NIMSystemNotificationTypeSuperTeamInvite:
         {
-            //: NSString *large_group = [FFFLanguageManager getTextWithKey:@"large_group"];
+            //: NSString *large_group = [PushLanguageManager getTextWithKey:@"large_group"];
             NSString *large_group = [BackgroundRandomAttribute content:[TemperatureData dreamDeadItMessage]];//超大群
-            //: NSString *invite_you_join_us = [FFFLanguageManager getTextWithKey:@"invite_you_join_us"];
+            //: NSString *invite_you_join_us = [PushLanguageManager getTextWithKey:@"invite_you_join_us"];
             NSString *invite_you_join_us = [BackgroundRandomAttribute content:[TemperatureData userTingFormat]];//邀请你加入
             //: NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:self.notification.targetID];
             NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:self.notification.targetID];
@@ -740,7 +740,7 @@ typedef struct {
         //: case NIMSystemNotificationTypeSuperTeamIviteReject:
         case NIMSystemNotificationTypeSuperTeamIviteReject:
         {
-            //: NSString *rejected_group_invitation = [FFFLanguageManager getTextWithKey:@"rejected_group_invitation"];
+            //: NSString *rejected_group_invitation = [PushLanguageManager getTextWithKey:@"rejected_group_invitation"];
             NSString *rejected_group_invitation = [BackgroundRandomAttribute content:[TemperatureData dream_saleValue]];
             //: NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:self.notification.targetID];
             NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:self.notification.targetID];
@@ -767,25 +767,25 @@ typedef struct {
                 switch (operation) {
                     //: case NIMUserOperationAdd:
                     case NIMUserOperationAdd:
-                        //: text = [FFFLanguageManager getTextWithKey:@"message_helper_already_add"];
+                        //: text = [PushLanguageManager getTextWithKey:@"message_helper_already_add"];
                         text = [BackgroundRandomAttribute content:[TemperatureData k_affairStr]];//@"已添加你为好友".nim_localized;
                         //: break;
                         break;
                     //: case NIMUserOperationRequest:
                     case NIMUserOperationRequest:
-                        //: text = [FFFLanguageManager getTextWithKey:@"request_add_you_as_a_friend"];
+                        //: text = [PushLanguageManager getTextWithKey:@"request_add_you_as_a_friend"];
                         text = [BackgroundRandomAttribute content:[TemperatureData mResembleDateName]];//@"请求添加你为好友".nim_localized;
                         //: break;
                         break;
                     //: case NIMUserOperationVerify:
                     case NIMUserOperationVerify:
-                        //: text = [FFFLanguageManager getTextWithKey:@"message_helper_allow_you_apply"];
+                        //: text = [PushLanguageManager getTextWithKey:@"message_helper_allow_you_apply"];
                         text = [BackgroundRandomAttribute content:[TemperatureData user_motData]];//@"通过了你的好友请求".nim_localized;
                         //: break;
                         break;
                     //: case NIMUserOperationReject:
                     case NIMUserOperationReject:
-                        //: text = [FFFLanguageManager getTextWithKey:@"message_helper_refuse_you_apply"];
+                        //: text = [PushLanguageManager getTextWithKey:@"message_helper_refuse_you_apply"];
                         text = [BackgroundRandomAttribute content:[TemperatureData main_penaltyCancelMsg]];//@"拒绝了你的好友请求".nim_localized;
                         //: break;
                         break;

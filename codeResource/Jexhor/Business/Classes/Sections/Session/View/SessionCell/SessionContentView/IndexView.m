@@ -246,7 +246,7 @@ NSString *const appCenterIdent = @"NIMDemoEventNameOpenRedPacket";
 {
     //: if ([self.delegate respondsToSelector:@selector(onCatchEvent:)]) {
     if ([self.delegate respondsToSelector:@selector(parametering:)]) {
-        //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+        //: PushKitEvent *event = [[PushKitEvent alloc] init];
         BeforeEvent *event = [[BeforeEvent alloc] init];
         //: event.eventName = NIMDemoEventNameOpenRedPacket;
         event.eventName = appCenterIdent;
@@ -261,7 +261,7 @@ NSString *const appCenterIdent = @"NIMDemoEventNameOpenRedPacket";
 
 //: #pragma mark - 系统父类方法
 #pragma mark - 系统父类方法
-//: - (void)refresh:(FFFMessageModel*)data{
+//: - (void)refresh:(PushMessageModel*)data{
 - (void)name:(PurseModel*)data{
     //: [super refresh:data];
     [super name:data];

@@ -9,9 +9,9 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "PushSessionMessageContentView.h"
 #import "MoldControl.h"
-//: #import "FFFMessageModel.h"
+//: #import "PushMessageModel.h"
 #import "PurseModel.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
@@ -20,13 +20,13 @@
 //: #import "MyUserKit.h"
 #import "Secret.h"
 
-//: @interface FFFSessionMessageContentView()
+//: @interface PushSessionMessageContentView()
 @interface MoldControl()
 
 //: @end
 @end
 
-//: @implementation FFFSessionMessageContentView
+//: @implementation PushSessionMessageContentView
 @implementation MoldControl
 
 //: - (instancetype)initSessionMessageContentView
@@ -56,7 +56,7 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel*)data
+//: - (void)refresh:(PushMessageModel*)data
 - (void)name:(PurseModel*)data
 {
     //: _model = data;
@@ -107,7 +107,7 @@
 - (UIImage *)link:(UIControlState)state array:(BOOL)outgoing
 {
 
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:self.model.message];
+    //: PushKitSetting *setting = [[MyUserKit sharedKit].config setting:self.model.message];
     SchoolbagTaskSurroundingsBlock *setting = [[Secret highlight].config click:self.model.message];
     //: if (state == UIControlStateNormal)
     if (state == UIControlStateNormal)

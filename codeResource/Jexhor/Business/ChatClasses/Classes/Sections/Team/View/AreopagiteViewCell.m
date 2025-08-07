@@ -74,22 +74,22 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamMemberListCell.h"
+//: #import "PushTeamMemberListCell.h"
 #import "AreopagiteViewCell.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "PushAvatarImageView.h"
 #import "ImageView.h"
-//: #import "FFFKitUtil.h"
+//: #import "PushKitUtil.h"
 #import "KitUtil.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
-//: #import "FFFTeamHelper.h"
+//: #import "PushTeamHelper.h"
 #import "ShowHelper.h"
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "PushCardDataSourceProtocol.h"
+#import "PushCardDataSourceProtocol.h"
 
 //: NSString *const kTeamMember = @"kTeamMember";
 NSString *const appCurrentText = @"kTeamMember";
@@ -101,7 +101,7 @@ NSString *const app_iconStr = @"kTeamMemberInfo";
 
 }
 
-//: @property(nonatomic,strong) FFFAvatarImageView *imageView;
+//: @property(nonatomic,strong) PushAvatarImageView *imageView;
 @property(nonatomic,strong) ImageView *imageView;
 
 //: @property (nonatomic,strong) UIImageView *roleImageView;
@@ -134,7 +134,7 @@ NSString *const app_iconStr = @"kTeamMemberInfo";
         _titleLabel.font = [UIFont systemFontOfSize:12.f];
         //: [self addSubview:_titleLabel];
         [self addSubview:_titleLabel];
-        //: _imageView = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 37, 37)];
+        //: _imageView = [[PushAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 37, 37)];
         _imageView = [[ImageView alloc] initWithFrame:CGRectMake(0, 0, 37, 37)];
         //: [self addSubview:_imageView];
         [self addSubview:_imageView];
@@ -151,10 +151,10 @@ NSString *const app_iconStr = @"kTeamMemberInfo";
 - (void)setMember:(NSDictionary *)member{
     //: _member = member;
     _member = member;
-    //: FFFKitInfo *info = member[kTeamMemberInfo];
+    //: PushKitInfo *info = member[kTeamMemberInfo];
     DataTeam *info = member[app_iconStr];
-    //: id<FFFKitCardHeaderData>user = member[kTeamMember];
-    id<FFFKitCardHeaderData>user = member[appCurrentText];
+    //: id<PushKitCardHeaderData>user = member[kTeamMember];
+    id<PushKitCardHeaderData>user = member[appCurrentText];
     //: NSURL *avatarURL;
     NSURL *avatarURL;
     //: if (info.avatarUrlString.length) {
@@ -169,12 +169,12 @@ NSString *const app_iconStr = @"kTeamMemberInfo";
     NSString *showName = (info.showName ?: @"");
     //: if ([user isMyUserId]) {
     if ([user isMyUserId]) {
-        //: showName = [FFFLanguageManager getTextWithKey:@"Group_Me"];
+        //: showName = [PushLanguageManager getTextWithKey:@"Group_Me"];
         showName = [BackgroundRandomAttribute content:[PenaltyData sharedInstance].main_coalName];//@"我".;
     }
     //: _titleLabel.text = showName;
     _titleLabel.text = showName;
-    //: _roleImageView.image = [FFFTeamHelper imageWithMemberType:user.userType];
+    //: _roleImageView.image = [PushTeamHelper imageWithMemberType:user.userType];
     _roleImageView.image = [ShowHelper notSpace:user.userType];
 }
 
@@ -211,12 +211,12 @@ NSString *const app_iconStr = @"kTeamMemberInfo";
 //: @end
 @end
 
-//: const CGFloat kFFFTeamMemberListCellItemWidth = 49.f;
+//: const CGFloat kPushTeamMemberListCellItemWidth = 49.f;
 const CGFloat mainTextTitle = 49.f;
-//: const CGFloat kFFFTeamMemberListCellItemPadding = 44.f;
+//: const CGFloat kPushTeamMemberListCellItemPadding = 44.f;
 const CGFloat mainButtonName = 44.f;
 
-//: @interface FFFTeamMemberListCell()
+//: @interface PushTeamMemberListCell()
 @interface AreopagiteViewCell()
 
 //: @property(nonatomic,strong) NSMutableArray *icons;
@@ -228,7 +228,7 @@ const CGFloat mainButtonName = 44.f;
 //: @end
 @end
 
-//: @implementation FFFTeamMemberListCell
+//: @implementation PushTeamMemberListCell
 @implementation AreopagiteViewCell
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -255,7 +255,7 @@ const CGFloat mainButtonName = 44.f;
 - (NSInteger)maxShowMemberCount {
     //: CGFloat width = (self.nim_width != [UIScreen mainScreen].bounds.size.width) ? [UIScreen mainScreen].bounds.size.width : self.nim_width;
     CGFloat width = (self.nim_width != [UIScreen mainScreen].bounds.size.width) ? [UIScreen mainScreen].bounds.size.width : self.nim_width;
-    //: NSInteger maxShowCount = (width - kFFFTeamMemberListCellItemPadding) / kFFFTeamMemberListCellItemWidth;
+    //: NSInteger maxShowCount = (width - kPushTeamMemberListCellItemPadding) / kPushTeamMemberListCellItemWidth;
     NSInteger maxShowCount = (width - mainButtonName) / mainTextTitle;
     //: return maxShowCount;
     return maxShowCount;

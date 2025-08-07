@@ -198,7 +198,7 @@
     labsubLabel.textColor = [UIColor user:[ColdData k_wonderfulId]];
     //: labsubLabel.numberOfLines = 0;
     labsubLabel.numberOfLines = 0;
-    //: labsubLabel.text = [FFFLanguageManager getTextWithKey:@"report_next_select"];
+    //: labsubLabel.text = [PushLanguageManager getTextWithKey:@"report_next_select"];
     labsubLabel.text = [BackgroundRandomAttribute content:[ColdData user_delicateData]];
     //: [_box addSubview:labsubLabel];
     [_box addSubview:labsubLabel];
@@ -239,7 +239,7 @@
         _titleLabel.font = [UIFont boldSystemFontOfSize:16.f];
         //: _titleLabel.textColor = [UIColor blackColor];
         _titleLabel.textColor = [UIColor blackColor];
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"report_Content"];
+        //: _titleLabel.text = [PushLanguageManager getTextWithKey:@"report_Content"];
         _titleLabel.text = [BackgroundRandomAttribute content:[ColdData k_deadCancelName]];
 
     }
@@ -271,7 +271,7 @@
         lab.textColor = [UIColor user:[ColdData k_wonderfulId]];
         //: lab.font = [UIFont systemFontOfSize:14];
         lab.font = [UIFont systemFontOfSize:14];
-        //: lab.text = [FFFLanguageManager getTextWithKey:@"activity_group_chat_avatar_add_black"];
+        //: lab.text = [PushLanguageManager getTextWithKey:@"activity_group_chat_avatar_add_black"];
         lab.text = [BackgroundRandomAttribute content:[ColdData show_buttKey]];
         //: [_blockView addSubview:lab];
         [_blockView addSubview:lab];
@@ -308,7 +308,7 @@
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor user:[ColdData k_wonderfulId]] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[BackgroundRandomAttribute content:[ColdData dream_subUrl]] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -335,7 +335,7 @@
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[BackgroundRandomAttribute content:[ColdData main_actorName]] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#05D481"];
         _sureBtn.backgroundColor = [UIColor user:[ColdData user_equalValue]];

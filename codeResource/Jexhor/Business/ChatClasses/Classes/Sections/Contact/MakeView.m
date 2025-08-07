@@ -59,7 +59,7 @@ typedef struct {
     return mCellPath;
 }
 
-//: #ffffff
+//: #fffPush
 + (NSString *)showMessageContent {
     /* static */ NSString *showMessageContent = nil;
     if (!showMessageContent) {
@@ -92,20 +92,20 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactSelectTabView.h"
+//: #import "PushContactSelectTabView.h"
 #import "MakeView.h"
-//: #import "FFFContactPickedView.h"
+//: #import "PushContactPickedView.h"
 #import "MissiveView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "PushGlobalMacro.h"
+#import "PushGlobalMacro.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
 
-//: @implementation FFFContactSelectTabView
+//: @implementation PushContactSelectTabView
 @implementation MakeView
 
 //: - (instancetype)initWithFrame:(CGRect)frame{
@@ -114,7 +114,7 @@ typedef struct {
     self = [super initWithFrame:frame];
     //: if (self) {
     if (self) {
-        //: _pickedView = [[FFFContactPickedView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+        //: _pickedView = [[PushContactPickedView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
         _pickedView = [[MissiveView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
         //: [self addSubview:_pickedView];
         [self addSubview:_pickedView];
@@ -129,7 +129,7 @@ typedef struct {
         [_doneButton setBackgroundImage:doneButtonNormal forState:UIControlStateNormal];
         //: [_doneButton setBackgroundImage:doneButtonHighlighted forState:UIControlStateHighlighted];
         [_doneButton setBackgroundImage:doneButtonHighlighted forState:UIControlStateHighlighted];
-        //: [_doneButton setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_doneButton setTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_doneButton setTitle:[BackgroundRandomAttribute content:[EnableFireData mCellPath]] forState:UIControlStateNormal];
         //: [_doneButton sizeToFit];
         [_doneButton sizeToFit];
@@ -140,7 +140,7 @@ typedef struct {
         //: [self addSubview:_doneButton];
         [self addSubview:_doneButton];
 //        self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"contact_bg"]];
-        //: self.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: self.backgroundColor = [UIColor colorWithHexString:@"#fffPush"];
         self.backgroundColor = [UIColor user:[EnableFireData showMessageContent]];
 
         //: UIView *line = [[UIView alloc]initWithFrame:CGRectMake(0, self.nim_height-1, self.nim_width, 1)];

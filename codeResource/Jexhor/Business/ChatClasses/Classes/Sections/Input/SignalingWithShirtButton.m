@@ -9,29 +9,29 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputEmoticonButton.h"
+//: #import "PushInputEmoticonButton.h"
 #import "SignalingWithShirtButton.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "PushInputEmoticonManager.h"
 #import "DirectorManager.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
+//: #import "PushInputEmoticonDefine.h"
+#import "PushInputEmoticonDefine.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
-//: #import "FFFKitDevice.h"
+//: #import "PushKitDevice.h"
 #import "SizeBackground.h"
 //: #import "NSBundle+MyUserKit.h"
 #import "NSBundle+Secret.h"
 //: #import "SSZipArchiveManager.h"
 #import "SharedContentView.h"
 
-//: @implementation FFFInputEmoticonButton
+//: @implementation PushInputEmoticonButton
 @implementation SignalingWithShirtButton
 
-//: + (FFFInputEmoticonButton*)iconButtonWithData:(NIMInputEmoticon*)data catalogID:(NSString*)catalogID delegate:( id<NIMEmoticonButtonTouchDelegate>)delegate{
+//: + (PushInputEmoticonButton*)iconButtonWithData:(NIMInputEmoticon*)data catalogID:(NSString*)catalogID delegate:( id<NIMEmoticonButtonTouchDelegate>)delegate{
 + (SignalingWithShirtButton*)accountImageLength:(TextEmoticon*)data showDelegate:(NSString*)catalogID title:( id<IndexDelegate>)delegate{
-    //: FFFInputEmoticonButton* icon = [[FFFInputEmoticonButton alloc] init];
+    //: PushInputEmoticonButton* icon = [[PushInputEmoticonButton alloc] init];
     SignalingWithShirtButton* icon = [[SignalingWithShirtButton alloc] init];
     //: [icon addTarget:icon action:@selector(onIconSelected:) forControlEvents:UIControlEventTouchUpInside];
     [icon addTarget:icon action:@selector(custommed:) forControlEvents:UIControlEventTouchUpInside];

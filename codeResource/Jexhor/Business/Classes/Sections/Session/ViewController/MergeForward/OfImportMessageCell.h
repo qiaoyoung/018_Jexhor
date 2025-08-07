@@ -9,13 +9,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFAdvancedMessageCell.h"
+//: #import "PushAdvancedMessageCell.h"
 #import "GetAcrossView.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface NTESMergeMessageCell : FFFAdvancedMessageCell
+//: @interface NTESMergeMessageCell : PushAdvancedMessageCell
 @interface OfImportMessageCell : GetAcrossView
 
 //: @end

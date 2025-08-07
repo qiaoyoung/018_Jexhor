@@ -331,7 +331,7 @@ Byte dream_jumpContent[] = {17, 4, 12, 160, 164, 200, 164, 99, 74, 225, 39, 100,
     labtitle.textColor = [UIColor user:StringFromStyleData(user_voiceInfoId)];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"system_change_language"];
+    //: labtitle.text = [PushLanguageManager getTextWithKey:@"system_change_language"];
     labtitle.text = [BackgroundRandomAttribute content:StringFromStyleData(mAtTitle)];
     //: [self.view addSubview:labtitle];
     [self.view addSubview:labtitle];

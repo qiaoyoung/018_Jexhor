@@ -29,7 +29,7 @@
 //: msg_view_4
 @property (nonatomic, copy) NSString *mDifficultIdent;
 
-//: ffffff
+//: fffPush
 @property (nonatomic, copy) NSString *app_directShootFormat;
 
 //: can not init content view
@@ -90,7 +90,7 @@
     return _notiTemporaryName;
 }
 
-//: ffffff
+//: fffPush
 - (NSString *)app_directShootFormat {
     if (!_app_directShootFormat) {
         Byte value[] = {6, 2, 102, 102, 102, 102, 102, 102, 161};
@@ -229,38 +229,38 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMessageCell.h"
+//: #import "PushMessageCell.h"
 #import "BroadcastTouchCellView.h"
-//: #import "FFFMessageModel.h"
+//: #import "PushMessageModel.h"
 #import "PurseModel.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "PushAvatarImageView.h"
 #import "ImageView.h"
-//: #import "FFFBadgeView.h"
+//: #import "PushBadgeView.h"
 #import "AccumulationCellView.h"
-//: #import "FFFSessionMessageContentView.h"
+//: #import "PushSessionMessageContentView.h"
 #import "MoldControl.h"
-//: #import "FFFKitUtil.h"
+//: #import "PushKitUtil.h"
 #import "KitUtil.h"
-//: #import "FFFSessionAudioContentView.h"
+//: #import "PushSessionAudioContentView.h"
 #import "ReadControl.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "PushKitDependency.h"
+#import "PushKitDependency.h"
 //: #import "M80AttributedLabel.h"
 #import "InsertView.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
-//: #import "FFFSessionUnknowContentView.h"
+//: #import "PushSessionUnknowContentView.h"
 #import "ShouldControl.h"
-//: #import "FFFKitConfig.h"
+//: #import "PushKitConfig.h"
 #import "CoverRandomConfig.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
-//: #import "FFFSessionTextContentView.h"
+//: #import "PushSessionTextContentView.h"
 #import "CellTempView.h"
 
-//: @interface FFFMessageCell()<NIMPlayAudioUIDelegate,NIMMessageContentViewDelegate>
+//: @interface PushMessageCell()<NIMPlayAudioUIDelegate,NIMMessageContentViewDelegate>
 @interface BroadcastTouchCellView()<StanzaUidelegate,TapColor>
 {
     //: UILongPressGestureRecognizer *_longPressGesture;
@@ -269,7 +269,7 @@
     UIMenuController *_menuController;
 }
 
-//: @property (nonatomic,strong) FFFMessageModel *model;
+//: @property (nonatomic,strong) PushMessageModel *model;
 @property (nonatomic,strong) PurseModel *model;
 
 //: @property (nonatomic,copy) NSArray *customViews;
@@ -280,7 +280,7 @@
 
 
 
-//: @implementation FFFMessageCell
+//: @implementation PushMessageCell
 @implementation BroadcastTouchCellView
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -343,7 +343,7 @@
     [self.contentView addSubview:_retryButton];
 
     //audioPlayedIcon
-    //: _audioPlayedIcon = [FFFBadgeView viewWithBadgeTip:@""];
+    //: _audioPlayedIcon = [PushBadgeView viewWithBadgeTip:@""];
     _audioPlayedIcon = [AccumulationCellView tagTip:@""];
 //    _audioPlayedIcon.badgeBackgroundColor = RGB_COLOR_String(@"#612CF9");
 //    [self.contentView addSubview:_audioPlayedIcon];
@@ -355,7 +355,7 @@
     [self.contentView addSubview:_traningActivityIndicator];
 
     //headerView
-    //: _headImageView = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 36, 36)];
+    //: _headImageView = [[PushAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 36, 36)];
     _headImageView = [[ImageView alloc] initWithFrame:CGRectMake(0, 0, 36, 36)];
     //: [_headImageView addTarget:self action:@selector(onTapAvatar:) forControlEvents:UIControlEventTouchUpInside];
     [_headImageView addTarget:self action:@selector(iconTap:) forControlEvents:UIControlEventTouchUpInside];
@@ -447,7 +447,7 @@
     [self addGestureRecognizer:_longPressGesture];
 }
 
-//: - (void)refreshData:(FFFMessageModel *)data
+//: - (void)refreshData:(PushMessageModel *)data
 - (void)message:(PurseModel *)data
 {
     //: self.model = data;
@@ -464,7 +464,7 @@
 
 //: - (BOOL)checkData{
 - (BOOL)soapBubbleData{
-    //: return [self.model isKindOfClass:[FFFMessageModel class]];
+    //: return [self.model isKindOfClass:[PushMessageModel class]];
     return [self.model isKindOfClass:[PurseModel class]];
 }
 
@@ -531,7 +531,7 @@
     //: if([self needShowNickName])
     if([self turn])
     {
-        //: NSString *nick = [FFFKitUtil showNick:self.model.message.from inMessage:self.model.message];
+        //: NSString *nick = [PushKitUtil showNick:self.model.message.from inMessage:self.model.message];
         NSString *nick = [KitUtil backgroundTo:self.model.message.from greenMessage:self.model.message];
         //: [self.nameLabel setText:nick];
         [self.nameLabel setText:nick];
@@ -571,7 +571,7 @@
     //: [self refreshReadButton];
     [self decipherButtonRefresh];
 
-    //: if ([_bubbleView isKindOfClass:[FFFSessionTextContentView class]]) {
+    //: if ([_bubbleView isKindOfClass:[PushSessionTextContentView class]]) {
     if ([_bubbleView isKindOfClass:[CellTempView class]]) {
         //: [self disableLongPress:YES];
         [self duringFrame:YES];
@@ -598,7 +598,7 @@
         _bubblesBackgroundView.hidden = ![[Secret highlight].layoutConfig extra:self.model];
         //: if (self.model.shouldShowLeft){
         if (self.model.shouldShowLeft){
-            //: _bubblesBackgroundView.backgroundColor = [UIColor colorWithHexString:@"ffffff"];
+            //: _bubblesBackgroundView.backgroundColor = [UIColor colorWithHexString:@"fffPush"];
             _bubblesBackgroundView.backgroundColor = [UIColor user:[ConsumeData sharedInstance].app_directShootFormat];
         //: }else{
         }else{
@@ -639,7 +639,7 @@
         //: else if(self.model.message.session.sessionType == NIMSessionTypeTeam)
         else if(self.model.message.session.sessionType == NIMSessionTypeTeam)
         {
-            //: [_readButton setTitle:[NSString stringWithFormat:@"%zd%@",self.model.message.teamReceiptInfo.unreadCount,[FFFLanguageManager getTextWithKey:@"msg_view_4"]] forState:UIControlStateNormal];
+            //: [_readButton setTitle:[NSString stringWithFormat:@"%zd%@",self.model.message.teamReceiptInfo.unreadCount,[PushLanguageManager getTextWithKey:@"msg_view_4"]] forState:UIControlStateNormal];
             [_readButton setTitle:[NSString stringWithFormat:@"%zd%@",self.model.message.teamReceiptInfo.unreadCount,[BackgroundRandomAttribute content:[ConsumeData sharedInstance].mDifficultIdent]] forState:UIControlStateNormal];//人未读".nim_localized
             //: [_readButton sizeToFit];
             [_readButton sizeToFit];
@@ -716,7 +716,7 @@
         //: if (!_replyedBubbleView)
         if (!_replyedBubbleView)
         {
-            //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+            //: id<PushCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
             id<MessageImageContainer> layoutConfig = [[Secret highlight] layoutConfig];
             //: NSString *contentStr = [layoutConfig replyContent:self.model];
             NSString *contentStr = [layoutConfig atDisable:self.model];
@@ -724,7 +724,7 @@
             NSAssert([contentStr length] > 0, [ConsumeData sharedInstance].notiTemporaryName);
             //: Class clazz = NSClassFromString(contentStr);
             Class clazz = NSClassFromString(contentStr);
-            //: FFFSessionMessageContentView *contentView = [[clazz alloc] initSessionMessageContentView];
+            //: PushSessionMessageContentView *contentView = [[clazz alloc] initSessionMessageContentView];
             MoldControl *contentView = [[clazz alloc] initAssemblage];
             //: NSAssert(contentView, @"can not init content view");
             NSAssert(contentView, [ConsumeData sharedInstance].dreamWingMessage);
@@ -757,7 +757,7 @@
     //: if (_bubbleView == nil)
     if (_bubbleView == nil)
     {
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<PushCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<MessageImageContainer> layoutConfig = [[Secret highlight] layoutConfig];
         //: NSString *contentStr = [layoutConfig cellContent:self.model];
         NSString *contentStr = [layoutConfig mark:self.model];
@@ -765,7 +765,7 @@
         NSAssert([contentStr length] > 0, [ConsumeData sharedInstance].notiTemporaryName);
         //: Class clazz = NSClassFromString(contentStr);
         Class clazz = NSClassFromString(contentStr);
-        //: FFFSessionMessageContentView *contentView = [[clazz alloc] initSessionMessageContentView];
+        //: PushSessionMessageContentView *contentView = [[clazz alloc] initSessionMessageContentView];
         MoldControl *contentView = [[clazz alloc] initAssemblage];
         //: NSAssert(contentView, @"can not init content view");
         NSAssert(contentView, [ConsumeData sharedInstance].dreamWingMessage);
@@ -777,7 +777,7 @@
         NIMMessageType messageType = self.model.message.messageType;
         //: if (messageType == NIMMessageTypeAudio) {
         if (messageType == NIMMessageTypeAudio) {
-            //: ((FFFSessionAudioContentView *)_bubbleView).audioUIDelegate = self;
+            //: ((PushSessionAudioContentView *)_bubbleView).audioUIDelegate = self;
             ((ReadControl *)_bubbleView).audioUIDelegate = self;
         }
         //: [self.contentView insertSubview:_bubbleView belowSubview:_selectButtonMask];
@@ -798,7 +798,7 @@
         //: [view removeFromSuperview];
         [view removeFromSuperview];
     }
-    //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+    //: id<PushCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
     id<MessageImageContainer> layoutConfig = [[Secret highlight] layoutConfig];
     //: self.customViews = [layoutConfig customViews:self.model];
     self.customViews = [layoutConfig electViews:self.model];
@@ -1171,7 +1171,7 @@
 
 //: #pragma mark - NIMMessageContentViewDelegate
 #pragma mark - TapColor
-//: - (void)onCatchEvent:(FFFKitEvent *)event{
+//: - (void)onCatchEvent:(PushKitEvent *)event{
 - (void)parametering:(BeforeEvent *)event{
     //: if ([self.delegate respondsToSelector:@selector(onTapCell:)]) {
     if ([self.delegate respondsToSelector:@selector(takeOut:)]) {
@@ -1262,7 +1262,7 @@
 - (UIImage *)unwished:(UIControlState)state
 {
 
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:self.model.message];
+    //: PushKitSetting *setting = [[MyUserKit sharedKit].config setting:self.model.message];
     SchoolbagTaskSurroundingsBlock *setting = [[Secret highlight].config click:self.model.message];
     //: if (state == UIControlStateNormal)
     if (state == UIControlStateNormal)
@@ -1348,7 +1348,7 @@
 //: - (BOOL)retryButtonHidden
 - (BOOL)record
 {
-    //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+    //: id<PushCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
     id<MessageImageContainer> layoutConfig = [[Secret highlight] layoutConfig];
     //: BOOL disable = NO;
     BOOL disable = NO;

@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFBaseSessionContentConfig.h"
-#import "FFFBaseSessionContentConfig.h"
+//: #import "PushBaseSessionContentConfig.h"
+#import "PushBaseSessionContentConfig.h"
 
-//: @interface FFFFileContentConfig : NSObject<CCCSessionContentConfig>
+//: @interface PushFileContentConfig : NSObject<CCCSessionContentConfig>
 @interface CreateConfig : NSObject<RawDataVoice>
 
 //: @end

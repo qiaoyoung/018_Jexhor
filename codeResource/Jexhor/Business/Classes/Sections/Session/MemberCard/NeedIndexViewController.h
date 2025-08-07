@@ -11,18 +11,18 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFTeamMemberListDataSource.h"
+//: #import "PushTeamMemberListDataSource.h"
 #import "ShouldBackground.h"
-//: #import "FFFTeamListDataManager.h"
+//: #import "PushTeamListDataManager.h"
 #import "MainRead.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFTeamMuteMemberListViewController : UIViewController
+//: @interface PushTeamMuteMemberListViewController : UIViewController
 @interface NeedIndexViewController : UIViewController
 
-//: @property (nonatomic,strong) FFFTeamListDataManager *teamListManager;
+//: @property (nonatomic,strong) PushTeamListDataManager *teamListManager;
 @property (nonatomic,strong) MainRead *teamListManager;
 
 //: @end

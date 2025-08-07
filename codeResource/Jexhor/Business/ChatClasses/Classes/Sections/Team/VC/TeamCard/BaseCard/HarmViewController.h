@@ -11,13 +11,13 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFTeamCardRowItem.h"
+//: #import "PushTeamCardRowItem.h"
 #import "Item.h"
-//: #import "FFFTeamMemberListCell.h"
+//: #import "PushTeamMemberListCell.h"
 #import "AreopagiteViewCell.h"
-//: #import "FFFTeamSwitchTableViewCell.h"
+//: #import "PushTeamSwitchTableViewCell.h"
 #import "SaveView.h"
-//: #import "FFFTeamListDataManager.h"
+//: #import "PushTeamListDataManager.h"
 #import "MainRead.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
@@ -39,7 +39,7 @@ typedef NS_ENUM (NSInteger, NIMTeamCardSwithCellType){
 //: typedef void(^NIMTeamCardPickerHandle)(UIImage *image);
 typedef void(^NIMTeamCardPickerHandle)(UIImage *image);
 
-//: @protocol FFFTeamCardViewControllerDelegate <NSObject>
+//: @protocol PushTeamCardViewControllerDelegate <NSObject>
 @protocol TempSecret <NSObject>
 
 //: - (void)NIMTeamCardVCDidSetTop:(BOOL)on;
@@ -53,17 +53,17 @@ typedef void(^NIMTeamCardPickerHandle)(UIImage *image);
 
 //: #pragma mark - UI基类
 #pragma mark - UI基类
-//: @interface FFFTeamCardViewController : UIViewController
+//: @interface PushTeamCardViewController : UIViewController
 @interface HarmViewController : UIViewController
 
-//: @property (nonatomic,weak) id <FFFTeamCardViewControllerDelegate> delegate;
+//: @property (nonatomic,weak) id <PushTeamCardViewControllerDelegate> delegate;
 @property (nonatomic,weak) id <TempSecret> delegate;
 
 //: @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) UITableView *tableView;
 
 //数据源
-//: @property (nonatomic,strong) NSArray <NSArray <FFFTeamCardRowItem *> *> *datas;
+//: @property (nonatomic,strong) NSArray <NSArray <PushTeamCardRowItem *> *> *datas;
 @property (nonatomic,strong) NSArray <NSArray <Item *> *> *datas;
 
 // "canMemberInfo": 1,//0 不允许查看资料 1 是允许
@@ -101,7 +101,7 @@ typedef void(^NIMTeamCardPickerHandle)(UIImage *image);
 - (UIView *)someIndex;
 
 // 子类自定义cell
-//: - (void)didBuildTeamMemberCell:(FFFTeamMemberListCell *)cell;
+//: - (void)didBuildTeamMemberCell:(PushTeamMemberListCell *)cell;
 - (void)backgroundShow:(AreopagiteViewCell *)cell;
 
 // 子类刷新tableview

@@ -25,7 +25,7 @@ Byte userTickMsg[] = {25, 17, 10, 35, 67, 88, 174, 79, 244, 138, 116, 115, 105, 
 //: black_list_activity_black_list_tip
 Byte user_roughText[] = {45, 34, 13, 69, 113, 145, 243, 40, 103, 14, 234, 186, 119, 112, 105, 116, 95, 116, 115, 105, 108, 95, 107, 99, 97, 108, 98, 95, 121, 116, 105, 118, 105, 116, 99, 97, 95, 116, 115, 105, 108, 95, 107, 99, 97, 108, 98, 34};
 
-//: #FFF6CF
+//: #Push6CF
 Byte notiNameWakePath[] = {53, 7, 9, 225, 240, 63, 24, 5, 19, 70, 67, 54, 70, 70, 70, 35, 246};
 
 //: group_info_activity_without
@@ -48,17 +48,17 @@ Byte dream_contentPath[] = {78, 8, 6, 246, 101, 9, 114, 95, 112, 105, 116, 95, 9
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamMuteMemberListViewController.h"
+//: #import "PushTeamMuteMemberListViewController.h"
 #import "NeedIndexViewController.h"
-//: #import "FFFTeamMemberCardViewController.h"
+//: #import "PushTeamMemberCardViewController.h"
 #import "StraddleViewController.h"
-//: #import "FFFCardHeaderCell.h"
+//: #import "PushCardHeaderCell.h"
 #import "CompartmentReusableView.h"
-//: #import "FFFTeamCardMemberItem.h"
+//: #import "PushTeamCardMemberItem.h"
 #import "CardSession.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
-//: #import "FFFKitProgressHUD.h"
+//: #import "PushKitDependency.h"
+#import "PushKitDependency.h"
+//: #import "PushKitProgressHUD.h"
 #import "CoverView.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+Secret.h"
@@ -69,7 +69,7 @@ Byte dream_contentPath[] = {78, 8, 6, 246, 101, 9, 114, 95, 112, 105, 116, 95, 9
 //: #import "NTESBlackListTableViewCell.h"
 #import "TingView.h"
 
-//: @interface FFFTeamMuteMemberListViewController ()<UITableViewDataSource,UITableViewDelegate,NTESUserListCellDelegate>
+//: @interface PushTeamMuteMemberListViewController ()<UITableViewDataSource,UITableViewDelegate,NTESUserListCellDelegate>
 @interface NeedIndexViewController ()<UITableViewDataSource,UITableViewDelegate,VideoTemp>
 
 //: @property (nonatomic,strong) UITableView *tableView;
@@ -85,7 +85,7 @@ Byte dream_contentPath[] = {78, 8, 6, 246, 101, 9, 114, 95, 112, 105, 116, 95, 9
 //: @end
 @end
 
-//: @implementation FFFTeamMuteMemberListViewController
+//: @implementation PushTeamMuteMemberListViewController
 @implementation NeedIndexViewController
 
 
@@ -150,7 +150,7 @@ Byte dream_contentPath[] = {78, 8, 6, 246, 101, 9, 114, 95, 112, 105, 116, 95, 9
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"black_list_activity_black"];
+    //: labtitle.text = [PushLanguageManager getTextWithKey:@"black_list_activity_black"];
     labtitle.text = [BackgroundRandomAttribute content:StringFromFilmingData(show_horrorName)];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -297,7 +297,7 @@ Byte dream_contentPath[] = {78, 8, 6, 246, 101, 9, 114, 95, 112, 105, 116, 95, 9
     //: NIMTeamMember *member = self.memberList[indexPath.section];
     NIMTeamMember *member = self.memberList[indexPath.section];
 
-    //: FFFTeamMemberCardViewController *vc = [[FFFTeamMemberCardViewController alloc] init];
+    //: PushTeamMemberCardViewController *vc = [[PushTeamMemberCardViewController alloc] init];
     StraddleViewController *vc = [[StraddleViewController alloc] init];
     //: vc.teamListManager = self.teamListManager;
     vc.teamListManager = self.teamListManager;
@@ -325,7 +325,7 @@ Byte dream_contentPath[] = {78, 8, 6, 246, 101, 9, 114, 95, 112, 105, 116, 95, 9
 
         //: if(!error) {
         if(!error) {
-            //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"group_chat_avatar_activity_remove_black_success"]
+            //: [self.view makeToast:[PushLanguageManager getTextWithKey:@"group_chat_avatar_activity_remove_black_success"]
             [self.view makeToast:[BackgroundRandomAttribute content:StringFromFilmingData(showButtonTextKey)]
                          //: duration:2
                          duration:2
@@ -372,7 +372,7 @@ Byte dream_contentPath[] = {78, 8, 6, 246, 101, 9, 114, 95, 112, 105, 116, 95, 9
     if(!_box){
         //: _box = [[UIView alloc]initWithFrame:CGRectMake(0, (44.0f + [UIDevice vg_statusBarHeight]), [[UIScreen mainScreen] bounds].size.width, 26)];
         _box = [[UIView alloc]initWithFrame:CGRectMake(0, (44.0f + [UIDevice title]), [[UIScreen mainScreen] bounds].size.width, 26)];
-        //: _box.backgroundColor = [UIColor colorWithHexString:@"#FFF6CF"];
+        //: _box.backgroundColor = [UIColor colorWithHexString:@"#Push6CF"];
         _box.backgroundColor = [UIColor user:StringFromFilmingData(notiNameWakePath)];
 
         //: UIImageView *defImg = [[UIImageView alloc]initWithFrame:CGRectMake(15, 6, 14, 14)];
@@ -389,7 +389,7 @@ Byte dream_contentPath[] = {78, 8, 6, 246, 101, 9, 114, 95, 112, 105, 116, 95, 9
         //: subtitleLabel.textColor = [UIColor colorWithHexString:@"#FF483D"];
         subtitleLabel.textColor = [UIColor user:StringFromFilmingData(notiDentPath)];
 //        subtitleLabel.textAlignment = NSTextAlignmentLeft;
-        //: subtitleLabel.text = [FFFLanguageManager getTextWithKey:@"black_list_activity_black_list_tip"];
+        //: subtitleLabel.text = [PushLanguageManager getTextWithKey:@"black_list_activity_black_list_tip"];
         subtitleLabel.text = [BackgroundRandomAttribute content:StringFromFilmingData(user_roughText)];
         //: [_box addSubview:subtitleLabel];
         [_box addSubview:subtitleLabel];
@@ -424,7 +424,7 @@ Byte dream_contentPath[] = {78, 8, 6, 246, 101, 9, 114, 95, 112, 105, 116, 95, 9
         emptyTipLabel.textAlignment = NSTextAlignmentCenter;
         //: [_defView addSubview:emptyTipLabel];
         [_defView addSubview:emptyTipLabel];
-        //: emptyTipLabel.text = [FFFLanguageManager getTextWithKey:@"group_info_activity_without"];
+        //: emptyTipLabel.text = [PushLanguageManager getTextWithKey:@"group_info_activity_without"];
         emptyTipLabel.text = [BackgroundRandomAttribute content:StringFromFilmingData(mLightText)];
 
 

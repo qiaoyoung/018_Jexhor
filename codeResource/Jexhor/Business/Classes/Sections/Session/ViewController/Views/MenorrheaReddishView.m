@@ -179,7 +179,7 @@ typedef struct {
 // __M_A_C_R_O__
 //: #import "NTESRedPackagePaySheet.h"
 #import "MenorrheaReddishView.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "PushAvatarImageView.h"
 #import "ImageView.h"
 //: #import "TPPasswordTextView.h"
 #import "TapBeforeView.h"
@@ -270,7 +270,7 @@ typedef struct {
         titleLabel_1.textColor = [UIColor user:[CollectionData sharedInstance].noti_aspectFormat];
         //: titleLabel_1.font = [UIFont boldSystemFontOfSize:16];
         titleLabel_1.font = [UIFont boldSystemFontOfSize:16];
-        //: titleLabel_1.text = [FFFLanguageManager getTextWithKey:@"activity_pay_psw_input"];
+        //: titleLabel_1.text = [PushLanguageManager getTextWithKey:@"activity_pay_psw_input"];
         titleLabel_1.text = [BackgroundRandomAttribute content:[CollectionData sharedInstance].dreamPermitData];
         //: titleLabel_1.textAlignment = NSTextAlignmentLeft;
         titleLabel_1.textAlignment = NSTextAlignmentLeft;
@@ -316,7 +316,7 @@ typedef struct {
         title.textColor = [UIColor blackColor];
         //: title.font = [UIFont systemFontOfSize:15];
         title.font = [UIFont systemFontOfSize:15];
-        //: title.text = [FFFLanguageManager getTextWithKey:@"red_packet"];
+        //: title.text = [PushLanguageManager getTextWithKey:@"red_packet"];
         title.text = [BackgroundRandomAttribute content:[CollectionData sharedInstance].user_sessionChiefUrl];
         //: [_backView addSubview:title];
         [_backView addSubview:title];
@@ -453,7 +453,7 @@ typedef struct {
     NSString *userID = [[NIMSDK sharedSDK].loginManager currentAccount];
     //: NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
     NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
+    //: PushKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
     DataTeam *info = [[Secret highlight] infoAndStraddleOption:userID item:nil];
     //: NSString *headerUrl = me.userInfo.avatarUrl;
     NSString *headerUrl = me.userInfo.avatarUrl;

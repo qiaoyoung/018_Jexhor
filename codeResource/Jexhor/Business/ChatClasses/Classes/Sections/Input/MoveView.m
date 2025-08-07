@@ -8,7 +8,7 @@
 //: user_profile_avtivity_send
 @property (nonatomic, copy) NSString *appAlreadyId;
 
-//: #ffffff
+//: #fffPush
 @property (nonatomic, copy) NSString *showGlobKey;
 
 //: #05D481
@@ -49,7 +49,7 @@
     return [NSString stringWithUTF8String:(char *)[self AnjouDataToCache:data]];
 }
 
-//: #ffffff
+//: #fffPush
 - (NSString *)showGlobKey {
     if (!_showGlobKey) {
         Byte value[] = {7, 65, 13, 62, 189, 17, 25, 173, 92, 54, 111, 214, 226, 226, 37, 37, 37, 37, 37, 37, 235};
@@ -246,7 +246,7 @@
 
     //: _viewBg = [[UIView alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height-_minHeight, [[UIScreen mainScreen] bounds].size.width, _minHeight)];
     _viewBg = [[UIView alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height-_minHeight, [[UIScreen mainScreen] bounds].size.width, _minHeight)];
-    //: _viewBg.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+    //: _viewBg.backgroundColor = [UIColor colorWithHexString:@"#fffPush"];
     _viewBg.backgroundColor = [UIColor user:[AnjouData sharedInstance].showGlobKey];
     //: _viewBg.layer.masksToBounds = YES;
     _viewBg.layer.masksToBounds = YES;
@@ -307,7 +307,7 @@
         _confirmButton = [UIButton buttonWithType:UIButtonTypeSystem];
         //: _confirmButton.layer.cornerRadius = 24;
         _confirmButton.layer.cornerRadius = 24;
-        //: [_confirmButton setTitle:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_send"] forState:UIControlStateNormal];
+        //: [_confirmButton setTitle:[PushLanguageManager getTextWithKey:@"user_profile_avtivity_send"] forState:UIControlStateNormal];
         [_confirmButton setTitle:[BackgroundRandomAttribute content:[AnjouData sharedInstance].appAlreadyId] forState:UIControlStateNormal];
         //: [_confirmButton addTarget:self action:@selector(confirmButtonTapped) forControlEvents:UIControlEventTouchUpInside];
         [_confirmButton addTarget:self action:@selector(parentMenu) forControlEvents:UIControlEventTouchUpInside];
@@ -331,7 +331,7 @@
     //: NSLog(@"选择了 %lu 张图片", (unsigned long)assets.count);
     //: self.selectedPhoto = assets;
     self.selectedPhoto = assets;
-    //: [self.confirmButton setTitle:[NSString stringWithFormat:@"%@(%lu)",[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_send"],(unsigned long)self.selectedPhoto.count] forState:UIControlStateNormal];
+    //: [self.confirmButton setTitle:[NSString stringWithFormat:@"%@(%lu)",[PushLanguageManager getTextWithKey:@"user_profile_avtivity_send"],(unsigned long)self.selectedPhoto.count] forState:UIControlStateNormal];
     [self.confirmButton setTitle:[NSString stringWithFormat:@"%@(%lu)",[BackgroundRandomAttribute content:[AnjouData sharedInstance].appAlreadyId],(unsigned long)self.selectedPhoto.count] forState:UIControlStateNormal];
 }
 

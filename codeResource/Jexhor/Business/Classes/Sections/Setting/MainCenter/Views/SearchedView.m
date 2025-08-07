@@ -47,7 +47,7 @@
     return show_itselfAspectInfluentialData;
 }
 
-//: #ffffff
+//: #fffPush
 - (NSString *)mEthnicValue {
     /* static */ NSString *mEthnicValue = nil;
     if (!mEthnicValue) {
@@ -200,7 +200,7 @@
 
     //: _viewBg = [[UIView alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height-278, [[UIScreen mainScreen] bounds].size.width, 278)];
     _viewBg = [[UIView alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height-278, [[UIScreen mainScreen] bounds].size.width, 278)];
-    //: _viewBg.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+    //: _viewBg.backgroundColor = [UIColor colorWithHexString:@"#fffPush"];
     _viewBg.backgroundColor = [UIColor user:[[CombinationData sharedInstance] mEthnicValue]];
     //: _viewBg.layer.masksToBounds = YES;
     _viewBg.layer.masksToBounds = YES;
@@ -300,7 +300,7 @@
         lab.font = [UIFont systemFontOfSize:14];
         //: lab.textColor = [UIColor colorWithHexString:@"#000000"];
         lab.textColor = [UIColor user:[[CombinationData sharedInstance] noti_territoryText]];
-        //: lab.text = [FFFLanguageManager getTextWithKey:@"message_send_camera"];
+        //: lab.text = [PushLanguageManager getTextWithKey:@"message_send_camera"];
         lab.text = [BackgroundRandomAttribute content:[[CombinationData sharedInstance] app_participateId]];
         //: lab.textAlignment = NSTextAlignmentCenter;
         lab.textAlignment = NSTextAlignmentCenter;
@@ -348,7 +348,7 @@
         lab.font = [UIFont systemFontOfSize:14];
         //: lab.textColor = [UIColor colorWithHexString:@"#000000"];
         lab.textColor = [UIColor user:[[CombinationData sharedInstance] noti_territoryText]];
-        //: lab.text = [FFFLanguageManager getTextWithKey:@"message_send_album"];
+        //: lab.text = [PushLanguageManager getTextWithKey:@"message_send_album"];
         lab.text = [BackgroundRandomAttribute content:[[CombinationData sharedInstance] mCenterStatusData]];
         //: lab.textAlignment = NSTextAlignmentCenter;
         lab.textAlignment = NSTextAlignmentCenter;
@@ -381,9 +381,9 @@
         _cancelBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_cancelBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_cancelBtn setTitleColor:[UIColor user:[[CombinationData sharedInstance] notiTingName]] forState:UIControlStateNormal];
-        //: [_cancelBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_cancelBtn setTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_cancelBtn setTitle:[BackgroundRandomAttribute content:[[CombinationData sharedInstance] show_itselfAspectInfluentialData]] forState:UIControlStateNormal];
-        //: _cancelBtn.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: _cancelBtn.backgroundColor = [UIColor colorWithHexString:@"#fffPush"];
         _cancelBtn.backgroundColor = [UIColor user:[[CombinationData sharedInstance] mEthnicValue]];
         //: _cancelBtn.layer.cornerRadius = 22;
         _cancelBtn.layer.cornerRadius = 22;

@@ -122,7 +122,7 @@
 // __M_A_C_R_O__
 //: #import "NTESMessageUtil.h"
 #import "PushData.h"
-//: #import "FFFMessageUtil.h"
+//: #import "PushMessageUtil.h"
 #import "ToColor.h"
 //: #import "NTESShareCardAttachment.h"
 #import "MaxAttachment.h"
@@ -140,7 +140,7 @@
         text = [self message:message];
     //: } else {
     } else {
-        //: text = [FFFMessageUtil messageContent:message];
+        //: text = [PushMessageUtil messageContent:message];
         text = [ToColor old:message];
     }
     //: return text;
@@ -156,25 +156,25 @@
     //: if ([object.attachment isKindOfClass:[NTESSnapchatAttachment class]])
     if ([object.attachment isKindOfClass:[NameAttachment class]])
     {
-        //: text = [FFFLanguageManager getTextWithKey:@"home_fragment_yue"];
+        //: text = [PushLanguageManager getTextWithKey:@"home_fragment_yue"];
         text = [BackgroundRandomAttribute content:[[MessageDogData sharedInstance] appDepartValue]];//@"[阅后即焚]";
     }
     //: else if ([object.attachment isKindOfClass:[NTESJanKenPonAttachment class]])
     else if ([object.attachment isKindOfClass:[SizeAttachment class]])
     {
-        //: text = [FFFLanguageManager getTextWithKey:@"message_guess"];
+        //: text = [PushLanguageManager getTextWithKey:@"message_guess"];
         text = [BackgroundRandomAttribute content:[[MessageDogData sharedInstance] show_custodyMessage]];//@"[猜拳]";
     }
     //: else if ([object.attachment isKindOfClass:[NTESWhiteboardAttachment class]])
     else if ([object.attachment isKindOfClass:[DoingAttachment class]])
     {
-        //: text = [FFFLanguageManager getTextWithKey:@"home_fragment_bai"];
+        //: text = [PushLanguageManager getTextWithKey:@"home_fragment_bai"];
         text = [BackgroundRandomAttribute content:[[MessageDogData sharedInstance] showStatText]];//@"[白板]";
     }
     //: else if ([object.attachment isKindOfClass:[NTESRedPacketAttachment class]])
     else if ([object.attachment isKindOfClass:[PacketImage class]])
     {
-        //: text = [FFFLanguageManager getTextWithKey:@"message_red_packet"];
+        //: text = [PushLanguageManager getTextWithKey:@"message_red_packet"];
         text = [BackgroundRandomAttribute content:[[MessageDogData sharedInstance] mTeamAtName]];//@"[红包消息]";
     }
     //: else if ([object.attachment isKindOfClass:[NTESRedPacketTipAttachment class]])
@@ -188,7 +188,7 @@
     //: else if ([object.attachment isKindOfClass:[NTESMultiRetweetAttachment class]])
     else if ([object.attachment isKindOfClass:[AttachmentOn class]])
     {
-        //: text = [FFFLanguageManager getTextWithKey:@"home_fragment_liao"];
+        //: text = [PushLanguageManager getTextWithKey:@"home_fragment_liao"];
         text = [BackgroundRandomAttribute content:[[MessageDogData sharedInstance] k_hostageMsg]];//@"[聊天记录]";
     }
     //: else if ([object.attachment isKindOfClass:[NTESShareCardAttachment class]])
@@ -198,11 +198,11 @@
         MaxAttachment *cardAtt = (MaxAttachment *)object.attachment;
         //: if ([cardAtt.type boolValue]) {
         if ([cardAtt.type boolValue]) {
-            //: text = [FFFLanguageManager getTextWithKey:@"group_card"];
+            //: text = [PushLanguageManager getTextWithKey:@"group_card"];
             text = [BackgroundRandomAttribute content:[[MessageDogData sharedInstance] show_photographyPenaltyContent]];
         //: } else {
         } else {
-            //: text = [FFFLanguageManager getTextWithKey:@"person_card"];
+            //: text = [PushLanguageManager getTextWithKey:@"person_card"];
             text = [BackgroundRandomAttribute content:[[MessageDogData sharedInstance] k_imagePath]];
         }
     }

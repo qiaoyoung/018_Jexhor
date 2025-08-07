@@ -13,18 +13,18 @@
 #import <UIKit/UIKit.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFTeamMemberListDataSource.h"
+//: #import "PushTeamMemberListDataSource.h"
 #import "ShouldBackground.h"
-//: #import "FFFTeamListDataManager.h"
+//: #import "PushTeamListDataManager.h"
 #import "MainRead.h"
 
 //: @interface CCCTeamMemberListViewController : UIViewController
 @interface ConservativeTouchViewController : UIViewController
 
-//: @property (nonatomic,strong) FFFTeamListDataManager *teamListManager;
+//: @property (nonatomic,strong) PushTeamListDataManager *teamListManager;
 @property (nonatomic,strong) MainRead *teamListManager;
 
-//: - (instancetype)initWithDataSource:(FFFTeamListDataManager *)dataSource;
+//: - (instancetype)initWithDataSource:(PushTeamListDataManager *)dataSource;
 - (instancetype)initWithIcon:(MainRead *)dataSource;
 
 //: @end

@@ -11,13 +11,13 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFCommonTableViewCell.h"
+//: #import "PushCommonTableViewCell.h"
 #import "ViewTitle.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface NTESCardVerificationCell : UITableViewCell<FFFCommonTableViewCell>
+//: @interface NTESCardVerificationCell : UITableViewCell<PushCommonTableViewCell>
 @interface CellReadView : UITableViewCell<ViewTitle>
 //: @property (nonatomic ,strong) UILabel *titleLabel;
 @property (nonatomic ,strong) UILabel *titleLabel;

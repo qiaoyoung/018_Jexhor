@@ -231,7 +231,7 @@
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"activity_set_bio_title"];
+    //: labtitle.text = [PushLanguageManager getTextWithKey:@"activity_set_bio_title"];
     labtitle.text = [BackgroundRandomAttribute content:[AllyData sharedInstance].kColorId];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -320,7 +320,7 @@
             [nav popViewControllerAnimated:NO];
             //: UIViewController *vc = nav.topViewController;
             UIViewController *vc = nav.topViewController;
-            //: [vc.view makeToast:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_success"]
+            //: [vc.view makeToast:[PushLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_success"]
             [vc.view makeToast:[BackgroundRandomAttribute content:[AllyData sharedInstance].main_heavilyName]
                          //: duration:2
                          duration:2
@@ -328,7 +328,7 @@
                          position:CSToastPositionCenter];
         //: }else{
         }else{
-            //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"]
+            //: [wself.view makeToast:[PushLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"]
             [wself.view makeToast:[BackgroundRandomAttribute content:[AllyData sharedInstance].m_farIdent]
                          //: duration:2
                          duration:2
@@ -375,7 +375,7 @@
         _textView.font = [UIFont systemFontOfSize:16.0];
         //: _textView.textColor = [UIColor colorWithHexString:@"#333333"];
         _textView.textColor = [UIColor user:[AllyData sharedInstance].appExplosionId];
-        //: _textView.placeholder = [FFFLanguageManager getTextWithKey:@"activity_set_bio_title"];
+        //: _textView.placeholder = [PushLanguageManager getTextWithKey:@"activity_set_bio_title"];
         _textView.placeholder = [BackgroundRandomAttribute content:[AllyData sharedInstance].kColorId];
         //: _textView.delegate = self;
         _textView.delegate = self;

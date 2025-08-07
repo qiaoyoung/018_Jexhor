@@ -42,10 +42,10 @@ Byte dream_belowValue[] = {48, 34, 11, 14, 140, 223, 84, 207, 248, 169, 78, 115,
 //
 
 // __M_A_C_R_O__
-//: #import "FFFRemarksView.h"
+//: #import "PushRemarksView.h"
 #import "DataView.h"
 
-//: @interface FFFRemarksView ()<UITextFieldDelegate>
+//: @interface PushRemarksView ()<UITextFieldDelegate>
 @interface DataView ()<UITextFieldDelegate>
 
 //: @property (nonatomic,assign) NSInteger inputLimit;
@@ -70,7 +70,7 @@ Byte dream_belowValue[] = {48, 34, 11, 14, 140, 223, 84, 207, 248, 169, 78, 115,
 //: @end
 @end
 
-//: @implementation FFFRemarksView
+//: @implementation PushRemarksView
 @implementation DataView
 
 //: - (instancetype)initWithFrame:(CGRect)frame
@@ -146,7 +146,7 @@ Byte dream_belowValue[] = {48, 34, 11, 14, 140, 223, 84, 207, 248, 169, 78, 115,
 {
     //: self.user = user;
     self.user = user;
-    //: self.titleLabel.text = [FFFLanguageManager getTextWithKey:@"message_remark_name"];
+    //: self.titleLabel.text = [PushLanguageManager getTextWithKey:@"message_remark_name"];
     self.titleLabel.text = [BackgroundRandomAttribute content:StringFromChiefData(m_teamMessage)];
     //: self.searchField.text = user.alias;
     self.searchField.text = user.alias;
@@ -162,7 +162,7 @@ Byte dream_belowValue[] = {48, 34, 11, 14, 140, 223, 84, 207, 248, 169, 78, 115,
 //    self.box.frame = CGRectMake(0, SCREEN_HEIGHT-180, SCREEN_WIDTH, 180);
     //: if (!self.searchField.text.length) {
     if (!self.searchField.text.length) {
-        //: [self makeToast:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_input_beizhu"] duration:2.0 position:CSToastPositionCenter];
+        //: [self makeToast:[PushLanguageManager getTextWithKey:@"user_profile_avtivity_input_beizhu"] duration:2.0 position:CSToastPositionCenter];
         [self makeToast:[BackgroundRandomAttribute content:StringFromChiefData(dream_belowValue)] duration:2.0 position:CSToastPositionCenter];
         //: return;
         return;
@@ -183,7 +183,7 @@ Byte dream_belowValue[] = {48, 34, 11, 14, 140, 223, 84, 207, 248, 169, 78, 115,
         [SVProgressHUD dismiss];
         //: if (!error) {
         if (!error) {
-            //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_success"]
+            //: [wself makeToast:[PushLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_success"]
             [wself makeToast:[BackgroundRandomAttribute content:StringFromChiefData(app_underKey)]
                          //: duration:2
                          duration:2
@@ -195,7 +195,7 @@ Byte dream_belowValue[] = {48, 34, 11, 14, 140, 223, 84, 207, 248, 169, 78, 115,
 
         //: }else{
         }else{
-            //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"]
+            //: [wself makeToast:[PushLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"]
             [wself makeToast:[BackgroundRandomAttribute content:StringFromChiefData(main_ethnicText)]
                          //: duration:2
                          duration:2
@@ -312,7 +312,7 @@ Byte dream_belowValue[] = {48, 34, 11, 14, 140, 223, 84, 207, 248, 169, 78, 115,
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor user:StringFromChiefData(show_empireBelowValue)] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[BackgroundRandomAttribute content:StringFromChiefData(mDetectiveInputTemperatureName)] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -339,7 +339,7 @@ Byte dream_belowValue[] = {48, 34, 11, 14, 140, 223, 84, 207, 248, 169, 78, 115,
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[BackgroundRandomAttribute content:StringFromChiefData(user_buildKey)] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#05D481"];
         _sureBtn.backgroundColor = [UIColor user:StringFromChiefData(appJumpName)];
@@ -377,7 +377,7 @@ Byte dream_belowValue[] = {48, 34, 11, 14, 140, 223, 84, 207, 248, 169, 78, 115,
 
         //: _searchField = [[UITextField alloc]initWithFrame:CGRectMake(15, 6, [[UIScreen mainScreen] bounds].size.width-80-30, 40)];
         _searchField = [[UITextField alloc]initWithFrame:CGRectMake(15, 6, [[UIScreen mainScreen] bounds].size.width-80-30, 40)];
-        //: _searchField.placeholder = [FFFLanguageManager getTextWithKey:@"message_remark_name"];
+        //: _searchField.placeholder = [PushLanguageManager getTextWithKey:@"message_remark_name"];
         _searchField.placeholder = [BackgroundRandomAttribute content:StringFromChiefData(m_teamMessage)];
         //: _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];
         _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];

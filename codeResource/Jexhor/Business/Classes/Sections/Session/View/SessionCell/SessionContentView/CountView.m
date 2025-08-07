@@ -49,7 +49,7 @@ Byte app_cancelMsg[] = {56, 11, 97, 4, 220, 153, 141, 147, 145, 141, 153, 141, 1
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)model{
+//: - (void)refresh:(PushMessageModel *)model{
 - (void)name:(PurseModel *)model{
     //: [super refresh:model];
     [super name:model];

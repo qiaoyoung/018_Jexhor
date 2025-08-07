@@ -9,22 +9,22 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFRtcCallRecordContentConfig.h"
+//: #import "PushRtcCallRecordContentConfig.h"
 #import "MaxConfig.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "InsertView+Secret.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
-//: #import "FFFKitUtil.h"
+//: #import "PushKitUtil.h"
 #import "KitUtil.h"
 
-//: @implementation FFFRtcCallRecordContentConfig
+//: @implementation PushRtcCallRecordContentConfig
 @implementation MaxConfig
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
 - (CGSize)tap:(CGFloat)cellWidth button:(NIMMessage *)message
 {
-    //: NSString *text = [FFFKitUtil messageTipContent:message];
+    //: NSString *text = [PushKitUtil messageTipContent:message];
     NSString *text = [KitUtil with:message];
     //: UIFont *font = [[MyUserKit sharedKit].config setting:message].font;;
     UIFont *font = [[Secret highlight].config click:message].font;;
@@ -48,7 +48,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)session:(NIMMessage *)message
 {
-    //: return @"FFFSessionRtcCallRecordContentView";
+    //: return @"PushSessionRtcCallRecordContentView";
     return @"ToolControl";
 }
 

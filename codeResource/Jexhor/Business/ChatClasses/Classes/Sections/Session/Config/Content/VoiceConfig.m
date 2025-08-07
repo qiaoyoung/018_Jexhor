@@ -9,12 +9,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFLocationContentConfig.h"
+//: #import "PushLocationContentConfig.h"
 #import "VoiceConfig.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
 
-//: @implementation FFFLocationContentConfig
+//: @implementation PushLocationContentConfig
 @implementation VoiceConfig
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
@@ -27,7 +27,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)session:(NIMMessage *)message
 {
-    //: return @"FFFSessionLocationContentView";
+    //: return @"PushSessionLocationContentView";
     return @"NeedImageTextView";
 }
 

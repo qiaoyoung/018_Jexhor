@@ -59,21 +59,21 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionTextContentView.h"
+//: #import "PushSessionTextContentView.h"
 #import "CellTempView.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "InsertView+Secret.h"
-//: #import "FFFMessageModel.h"
+//: #import "PushMessageModel.h"
 #import "PurseModel.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "PushGlobalMacro.h"
+#import "PushGlobalMacro.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
-//: #import "FFFTextView.h"
+//: #import "PushTextView.h"
 #import "PositionScrollView.h"
-//: #import "FFFSessionConfig.h"
+//: #import "PushSessionConfig.h"
 #import "CreateTop.h"
 //: #import "NTESSessionViewController.h"
 #import "BlockViewController.h"
@@ -83,7 +83,7 @@
 //: NSString *const NIMTextMessageLabelLinkData = @"NIMTextMessageLabelLinkData";
 NSString *const dreamTapFormat = @"NIMTextMessageLabelLinkData";
 
-//: @interface FFFSessionTextContentView()<M80AttributedLabelDelegate>
+//: @interface PushSessionTextContentView()<M80AttributedLabelDelegate>
 @interface CellTempView()<TempColorRead>
 
 //: @property (nonatomic, strong) NSString *urlStr;
@@ -94,7 +94,7 @@ NSString *const dreamTapFormat = @"NIMTextMessageLabelLinkData";
 //: @end
 @end
 
-//: @implementation FFFSessionTextContentView
+//: @implementation PushSessionTextContentView
 @implementation CellTempView
 
 //: - (instancetype)initSessionMessageContentView
@@ -125,7 +125,7 @@ NSString *const dreamTapFormat = @"NIMTextMessageLabelLinkData";
          //: autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
          autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
                       ;
-        //: _textView.selectBlock = ^(FFFMediaItem *item) {
+        //: _textView.selectBlock = ^(PushMediaItem *item) {
         _textView.selectBlock = ^(RecordAlbumItem *item) {
             @
              //: try{} @finally{} __typeof__(self) self = __weak_self__;
@@ -222,7 +222,7 @@ NSString *const dreamTapFormat = @"NIMTextMessageLabelLinkData";
     return isUrl;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data
+//: - (void)refresh:(PushMessageModel *)data
 - (void)name:(PurseModel *)data
 {
     //: if (self.model == data) {
@@ -236,7 +236,7 @@ NSString *const dreamTapFormat = @"NIMTextMessageLabelLinkData";
 
     //: NSString *text = self.model.message.text;
     NSString *text = self.model.message.text;
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
+    //: PushKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
     SchoolbagTaskSurroundingsBlock *setting = [[Secret highlight].config click:data.message];
     //: self.textView.textColor = setting.textColor;
     self.textView.textColor = setting.textColor;
@@ -345,9 +345,9 @@ NSString *const dreamTapFormat = @"NIMTextMessageLabelLinkData";
 - (void)sessionText:(InsertView *)label
              //: clickedOnLink:(id)linkData{
              modeReplacement:(id)linkData{
-    //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+    //: PushKitEvent *event = [[PushKitEvent alloc] init];
     BeforeEvent *event = [[BeforeEvent alloc] init];
-    //: event.eventName = FFFKitEventNameTapLabelLink;
+    //: event.eventName = PushKitEventNameTapLabelLink;
     event.eventName = appCenterMsg;
     //: event.messageModel = self.model;
     event.messageModel = self.model;

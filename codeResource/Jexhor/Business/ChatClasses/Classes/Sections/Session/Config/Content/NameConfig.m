@@ -18,12 +18,12 @@ Byte mainMaxiIdent[] = {16, 23, 9, 88, 29, 4, 140, 167, 131, 111, 105, 100, 117,
 //
 
 // __M_A_C_R_O__
-//: #import "FFFAudioContentConfig.h"
+//: #import "PushAudioContentConfig.h"
 #import "NameConfig.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
 
-//: @implementation FFFAudioContentConfig
+//: @implementation PushAudioContentConfig
 @implementation NameConfig
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
@@ -52,7 +52,7 @@ Byte mainMaxiIdent[] = {16, 23, 9, 88, 29, 4, 140, 167, 131, 111, 105, 100, 117,
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)session:(NIMMessage *)message
 {
-    //: return @"FFFSessionAudioContentView";
+    //: return @"PushSessionAudioContentView";
     return @"ReadControl";
 }
 

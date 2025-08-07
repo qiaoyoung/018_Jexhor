@@ -11,18 +11,18 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
-//: #import "FFFMessageCellProtocol.h"
-#import "FFFMessageCellProtocol.h"
+//: #import "PushSessionConfigurateProtocol.h"
+#import "PushSessionConfigurateProtocol.h"
+//: #import "PushMessageCellProtocol.h"
+#import "PushMessageCellProtocol.h"
 
-//: @interface FFFSessionTableAdapter : NSObject<UITableViewDelegate,UITableViewDataSource>
+//: @interface PushSessionTableAdapter : NSObject<UITableViewDelegate,UITableViewDataSource>
 @interface TeamDataAdapter : NSObject<UITableViewDelegate,UITableViewDataSource>
 
 //: @property (nonatomic,weak) id<NIMSessionInteractor> interactor;
 @property (nonatomic,weak) id<LabelCrossSumeractor> interactor;
 
-//: @property (nonatomic,weak) id<FFFMessageCellDelegate> delegate;
+//: @property (nonatomic,weak) id<PushMessageCellDelegate> delegate;
 @property (nonatomic,weak) id<SharedOnly> delegate;
 
 //: @end

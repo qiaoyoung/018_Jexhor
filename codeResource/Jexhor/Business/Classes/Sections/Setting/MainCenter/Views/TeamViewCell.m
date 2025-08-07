@@ -171,7 +171,7 @@
     _textfile_1.font = [UIFont systemFontOfSize:16];
     //: _textfile_1.delegate = self;
     _textfile_1.delegate = self;
-    //: _textfile_1.placeholder = [FFFLanguageManager getTextWithKey:@"activity_modify_old"];
+    //: _textfile_1.placeholder = [PushLanguageManager getTextWithKey:@"activity_modify_old"];
     _textfile_1.placeholder = [BackgroundRandomAttribute content:[[ExplosionData sharedInstance] userCollectionPath]];//@"请输入旧密码";
     //: [backGround addSubview:_textfile_1];
     [backGround addSubview:_textfile_1];
@@ -196,7 +196,7 @@
     _textfile_2.font = [UIFont systemFontOfSize:16];
     //: _textfile_2.delegate = self;
     _textfile_2.delegate = self;
-    //: _textfile_2.placeholder = [FFFLanguageManager getTextWithKey:@"activity_modify_new"];
+    //: _textfile_2.placeholder = [PushLanguageManager getTextWithKey:@"activity_modify_new"];
     _textfile_2.placeholder = [BackgroundRandomAttribute content:[[ExplosionData sharedInstance] mainDistinctionTitle]];//@"请输入新密码";
     //: [backGround addSubview:_textfile_2];
     [backGround addSubview:_textfile_2];
@@ -221,7 +221,7 @@
     _textfile_3.font = [UIFont systemFontOfSize:16];
     //: _textfile_3.delegate = self;
     _textfile_3.delegate = self;
-    //: _textfile_3.placeholder = [FFFLanguageManager getTextWithKey:@"activity_modify_new"];
+    //: _textfile_3.placeholder = [PushLanguageManager getTextWithKey:@"activity_modify_new"];
     _textfile_3.placeholder = [BackgroundRandomAttribute content:[[ExplosionData sharedInstance] mainDistinctionTitle]];//@"请确认新密码";
     //: [backGround addSubview:_textfile_3];
     [backGround addSubview:_textfile_3];

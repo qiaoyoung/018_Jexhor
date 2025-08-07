@@ -15,7 +15,7 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFUserInfoViewController : UIViewController
+//: @interface PushUserInfoViewController : UIViewController
 @interface RandomViewController : UIViewController
 
 //: @end

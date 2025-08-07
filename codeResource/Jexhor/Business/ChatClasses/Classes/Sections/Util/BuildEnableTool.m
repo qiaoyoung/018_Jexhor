@@ -9,7 +9,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitAuthorizationTool.h"
+//: #import "PushKitAuthorizationTool.h"
 #import "BuildEnableTool.h"
 //: #import <AssetsLibrary/AssetsLibrary.h>
 #import <AssetsLibrary/AssetsLibrary.h>
@@ -22,11 +22,11 @@
 //: #import <ContactsUI/ContactsUI.h>
 #import <ContactsUI/ContactsUI.h>
 
-//: @implementation FFFKitAuthorizationTool
+//: @implementation PushKitAuthorizationTool
 @implementation BuildEnableTool
 
-//: + (void)requestPhotoLibraryAuthorization:(void(^)(FFFKitAuthorizationStatus status))callback
-+ (void)groupDiscussion:(void(^)(FFFKitAuthorizationStatus status))callback
+//: + (void)requestPhotoLibraryAuthorization:(void(^)(PushKitAuthorizationStatus status))callback
++ (void)groupDiscussion:(void(^)(PushKitAuthorizationStatus status))callback
 {
     //: if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
@@ -38,42 +38,42 @@
             [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
                 //: if (status == PHAuthorizationStatusAuthorized) {
                 if (status == PHAuthorizationStatusAuthorized) {
-                    //: [self executeCallback:callback status:FFFKitAuthorizationStatusAuthorized];
-                    [self selection:callback status:FFFKitAuthorizationStatusAuthorized];
+                    //: [self executeCallback:callback status:PushKitAuthorizationStatusAuthorized];
+                    [self selection:callback status:PushKitAuthorizationStatusAuthorized];
                 //: } else if (status == PHAuthorizationStatusDenied) {
                 } else if (status == PHAuthorizationStatusDenied) {
-                    //: [self executeCallback:callback status:FFFKitAuthorizationStatusDenied];
-                    [self selection:callback status:FFFKitAuthorizationStatusDenied];
+                    //: [self executeCallback:callback status:PushKitAuthorizationStatusDenied];
+                    [self selection:callback status:PushKitAuthorizationStatusDenied];
                 //: } else if (status == PHAuthorizationStatusRestricted) {
                 } else if (status == PHAuthorizationStatusRestricted) {
-                    //: [self executeCallback:callback status:FFFKitAuthorizationStatusRestricted];
-                    [self selection:callback status:FFFKitAuthorizationStatusRestricted];
+                    //: [self executeCallback:callback status:PushKitAuthorizationStatusRestricted];
+                    [self selection:callback status:PushKitAuthorizationStatusRestricted];
                 }
             //: }];
             }];
         }
         //: else if (authStatus == ALAuthorizationStatusAuthorized) {
         else if (authStatus == ALAuthorizationStatusAuthorized) {
-            //: [self executeCallback:callback status:FFFKitAuthorizationStatusAuthorized];
-            [self selection:callback status:FFFKitAuthorizationStatusAuthorized];
+            //: [self executeCallback:callback status:PushKitAuthorizationStatusAuthorized];
+            [self selection:callback status:PushKitAuthorizationStatusAuthorized];
         //: } else if (authStatus == ALAuthorizationStatusDenied) {
         } else if (authStatus == ALAuthorizationStatusDenied) {
-            //: [self executeCallback:callback status:FFFKitAuthorizationStatusDenied];
-            [self selection:callback status:FFFKitAuthorizationStatusDenied];
+            //: [self executeCallback:callback status:PushKitAuthorizationStatusDenied];
+            [self selection:callback status:PushKitAuthorizationStatusDenied];
         //: } else if (authStatus == ALAuthorizationStatusRestricted) {
         } else if (authStatus == ALAuthorizationStatusRestricted) {
-            //: [self executeCallback:callback status:FFFKitAuthorizationStatusRestricted];
-            [self selection:callback status:FFFKitAuthorizationStatusRestricted];
+            //: [self executeCallback:callback status:PushKitAuthorizationStatusRestricted];
+            [self selection:callback status:PushKitAuthorizationStatusRestricted];
         }
     //: } else {
     } else {
-        //: [self executeCallback:callback status:FFFKitAuthorizationStatusNotSupport];
-        [self selection:callback status:FFFKitAuthorizationStatusNotSupport];
+        //: [self executeCallback:callback status:PushKitAuthorizationStatusNotSupport];
+        [self selection:callback status:PushKitAuthorizationStatusNotSupport];
     }
 }
 
-//: + (void)requestCameraAuthorization:(void(^)(FFFKitAuthorizationStatus status))callback
-+ (void)red:(void(^)(FFFKitAuthorizationStatus status))callback
+//: + (void)requestCameraAuthorization:(void(^)(PushKitAuthorizationStatus status))callback
++ (void)red:(void(^)(PushKitAuthorizationStatus status))callback
 {
     //: if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
@@ -85,37 +85,37 @@
             [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
                 //: if (granted) {
                 if (granted) {
-                    //: [self executeCallback:callback status:FFFKitAuthorizationStatusAuthorized];
-                    [self selection:callback status:FFFKitAuthorizationStatusAuthorized];
+                    //: [self executeCallback:callback status:PushKitAuthorizationStatusAuthorized];
+                    [self selection:callback status:PushKitAuthorizationStatusAuthorized];
                 //: } else {
                 } else {
-                    //: [self executeCallback:callback status:FFFKitAuthorizationStatusDenied];
-                    [self selection:callback status:FFFKitAuthorizationStatusDenied];
+                    //: [self executeCallback:callback status:PushKitAuthorizationStatusDenied];
+                    [self selection:callback status:PushKitAuthorizationStatusDenied];
                 }
             //: }];
             }];
         //: } else if (authStatus == AVAuthorizationStatusAuthorized) {
         } else if (authStatus == AVAuthorizationStatusAuthorized) {
-            //: [self executeCallback:callback status:FFFKitAuthorizationStatusAuthorized];
-            [self selection:callback status:FFFKitAuthorizationStatusAuthorized];
+            //: [self executeCallback:callback status:PushKitAuthorizationStatusAuthorized];
+            [self selection:callback status:PushKitAuthorizationStatusAuthorized];
         //: } else if (authStatus == AVAuthorizationStatusDenied) {
         } else if (authStatus == AVAuthorizationStatusDenied) {
-            //: [self executeCallback:callback status:FFFKitAuthorizationStatusDenied];
-            [self selection:callback status:FFFKitAuthorizationStatusDenied];
+            //: [self executeCallback:callback status:PushKitAuthorizationStatusDenied];
+            [self selection:callback status:PushKitAuthorizationStatusDenied];
         //: } else if (authStatus == AVAuthorizationStatusRestricted) {
         } else if (authStatus == AVAuthorizationStatusRestricted) {
-            //: [self executeCallback:callback status:FFFKitAuthorizationStatusRestricted];
-            [self selection:callback status:FFFKitAuthorizationStatusRestricted];
+            //: [self executeCallback:callback status:PushKitAuthorizationStatusRestricted];
+            [self selection:callback status:PushKitAuthorizationStatusRestricted];
         }
     //: } else {
     } else {
-        //: [self executeCallback:callback status:FFFKitAuthorizationStatusNotSupport];
-        [self selection:callback status:FFFKitAuthorizationStatusNotSupport];
+        //: [self executeCallback:callback status:PushKitAuthorizationStatusNotSupport];
+        [self selection:callback status:PushKitAuthorizationStatusNotSupport];
     }
 }
 
-//: + (void)requestAddressBookAuthorization:(void (^)(FFFKitAuthorizationStatus))callback
-+ (void)title:(void (^)(FFFKitAuthorizationStatus))callback
+//: + (void)requestAddressBookAuthorization:(void (^)(PushKitAuthorizationStatus))callback
++ (void)title:(void (^)(PushKitAuthorizationStatus))callback
 {
     //: ABAuthorizationStatus authStatus = ABAddressBookGetAuthorizationStatus();
     ABAuthorizationStatus authStatus = ABAddressBookGetAuthorizationStatus();
@@ -125,8 +125,8 @@
         __block ABAddressBookRef addressBook = ABAddressBookCreateWithOptions(NULL, NULL);
         //: if (addressBook == NULL) {
         if (addressBook == NULL) {
-            //: [self executeCallback:callback status:FFFKitAuthorizationStatusNotSupport];
-            [self selection:callback status:FFFKitAuthorizationStatusNotSupport];
+            //: [self executeCallback:callback status:PushKitAuthorizationStatusNotSupport];
+            [self selection:callback status:PushKitAuthorizationStatusNotSupport];
             //: return;
             return;
         }
@@ -134,12 +134,12 @@
         ABAddressBookRequestAccessWithCompletion(addressBook, ^(BOOL granted, CFErrorRef error) {
             //: if (granted) {
             if (granted) {
-                //: [self executeCallback:callback status:FFFKitAuthorizationStatusAuthorized];
-                [self selection:callback status:FFFKitAuthorizationStatusAuthorized];
+                //: [self executeCallback:callback status:PushKitAuthorizationStatusAuthorized];
+                [self selection:callback status:PushKitAuthorizationStatusAuthorized];
             //: } else {
             } else {
-                //: [self executeCallback:callback status:FFFKitAuthorizationStatusDenied];
-                [self selection:callback status:FFFKitAuthorizationStatusDenied];
+                //: [self executeCallback:callback status:PushKitAuthorizationStatusDenied];
+                [self selection:callback status:PushKitAuthorizationStatusDenied];
             }
             //: if (addressBook) {
             if (addressBook) {
@@ -154,24 +154,24 @@
         return;
     //: } else if (authStatus == kABAuthorizationStatusAuthorized) {
     } else if (authStatus == kABAuthorizationStatusAuthorized) {
-        //: [self executeCallback:callback status:FFFKitAuthorizationStatusAuthorized];
-        [self selection:callback status:FFFKitAuthorizationStatusAuthorized];
+        //: [self executeCallback:callback status:PushKitAuthorizationStatusAuthorized];
+        [self selection:callback status:PushKitAuthorizationStatusAuthorized];
     //: } else if (authStatus == kABAuthorizationStatusDenied) {
     } else if (authStatus == kABAuthorizationStatusDenied) {
-        //: [self executeCallback:callback status:FFFKitAuthorizationStatusDenied];
-        [self selection:callback status:FFFKitAuthorizationStatusDenied];
+        //: [self executeCallback:callback status:PushKitAuthorizationStatusDenied];
+        [self selection:callback status:PushKitAuthorizationStatusDenied];
     //: } else if (authStatus == kABAuthorizationStatusRestricted) {
     } else if (authStatus == kABAuthorizationStatusRestricted) {
-        //: [self executeCallback:callback status:FFFKitAuthorizationStatusRestricted];
-        [self selection:callback status:FFFKitAuthorizationStatusRestricted];
+        //: [self executeCallback:callback status:PushKitAuthorizationStatusRestricted];
+        [self selection:callback status:PushKitAuthorizationStatusRestricted];
     }
 }
 
 
 //: #pragma mark - callback
 #pragma mark - callback
-//: + (void)executeCallback:(void (^)(FFFKitAuthorizationStatus))callback status:(FFFKitAuthorizationStatus)status {
-+ (void)selection:(void (^)(FFFKitAuthorizationStatus))callback status:(FFFKitAuthorizationStatus)status {
+//: + (void)executeCallback:(void (^)(PushKitAuthorizationStatus))callback status:(PushKitAuthorizationStatus)status {
++ (void)selection:(void (^)(PushKitAuthorizationStatus))callback status:(PushKitAuthorizationStatus)status {
     //: dispatch_async(dispatch_get_main_queue(), ^{
     dispatch_async(dispatch_get_main_queue(), ^{
         //: if (callback) {

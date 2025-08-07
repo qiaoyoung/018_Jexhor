@@ -112,7 +112,7 @@ CoverData kTickName = (CoverData){181, (Byte []){199, 208, 197, 218, 199, 193, 2
         //: [self initUI];
         [self initSmart];
 
-        //: self.selectButtons = @[[FFFLanguageManager getTextWithKey:@"report_reasons1"],[FFFLanguageManager getTextWithKey:@"report_reasons2"],[FFFLanguageManager getTextWithKey:@"report_reasons3"],[FFFLanguageManager getTextWithKey:@"report_reasons4"],[FFFLanguageManager getTextWithKey:@"report_reasons5"],[FFFLanguageManager getTextWithKey:@"report_reasons6"]];
+        //: self.selectButtons = @[[PushLanguageManager getTextWithKey:@"report_reasons1"],[PushLanguageManager getTextWithKey:@"report_reasons2"],[PushLanguageManager getTextWithKey:@"report_reasons3"],[PushLanguageManager getTextWithKey:@"report_reasons4"],[PushLanguageManager getTextWithKey:@"report_reasons5"],[PushLanguageManager getTextWithKey:@"report_reasons6"]];
         self.selectButtons = @[[BackgroundRandomAttribute content:StringFromCoverData(&app_practitionerPath)],[BackgroundRandomAttribute content:StringFromCoverData(&app_abortImageFormat)],[BackgroundRandomAttribute content:StringFromCoverData(&user_buildStr)],[BackgroundRandomAttribute content:StringFromCoverData(&mColdName)],[BackgroundRandomAttribute content:StringFromCoverData(&kTickName)],[BackgroundRandomAttribute content:StringFromCoverData(&notiSizeIdent)]];
         //: self.index = 0;
         self.index = 0;
@@ -147,7 +147,7 @@ CoverData kTickName = (CoverData){181, (Byte []){199, 208, 197, 218, 199, 193, 2
     labsub.textColor = [UIColor user:StringFromCoverData(&noti_theaterImageUrl)];
     //: labsub.numberOfLines = 0;
     labsub.numberOfLines = 0;
-    //: labsub.text = [FFFLanguageManager getTextWithKey:@"report_Tip"];
+    //: labsub.text = [PushLanguageManager getTextWithKey:@"report_Tip"];
     labsub.text = [BackgroundRandomAttribute content:StringFromCoverData(&app_toIdent)];
     //: [_box addSubview:labsub];
     [_box addSubview:labsub];
@@ -193,7 +193,7 @@ CoverData kTickName = (CoverData){181, (Byte []){199, 208, 197, 218, 199, 193, 2
 //        _titleLabel.textAlignment = NSTextAlignmentCenter;
 //        _titleLabel.numberOfLines = 0;
 //        _titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"report_User"];
+        //: _titleLabel.text = [PushLanguageManager getTextWithKey:@"report_User"];
         _titleLabel.text = [BackgroundRandomAttribute content:StringFromCoverData(&notiPractitionerContent)];
     }
     //: return _titleLabel;
@@ -230,7 +230,7 @@ CoverData kTickName = (CoverData){181, (Byte []){199, 208, 197, 218, 199, 193, 2
         [Btn1 setImage:[UIImage imageNamed:StringFromCoverData(&userDisplayMessage)] forState:UIControlStateNormal];
         //: [Btn1 setImage:[UIImage imageNamed:@"icon_accessory_selected"] forState:UIControlStateSelected];
         [Btn1 setImage:[UIImage imageNamed:StringFromCoverData(&userStatusSnapId)] forState:UIControlStateSelected];
-        //: [Btn1 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons1"] forState:UIControlStateNormal];
+        //: [Btn1 setTitle:[PushLanguageManager getTextWithKey:@"report_reasons1"] forState:UIControlStateNormal];
         [Btn1 setTitle:[BackgroundRandomAttribute content:StringFromCoverData(&app_practitionerPath)] forState:UIControlStateNormal];
         //: Btn1.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn1.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -257,7 +257,7 @@ CoverData kTickName = (CoverData){181, (Byte []){199, 208, 197, 218, 199, 193, 2
         [Btn2 setImage:[UIImage imageNamed:StringFromCoverData(&userDisplayMessage)] forState:UIControlStateNormal];
         //: [Btn2 setImage:[UIImage imageNamed:@"icon_accessory_selected"] forState:UIControlStateSelected];
         [Btn2 setImage:[UIImage imageNamed:StringFromCoverData(&userStatusSnapId)] forState:UIControlStateSelected];
-        //: [Btn2 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons2"] forState:UIControlStateNormal];
+        //: [Btn2 setTitle:[PushLanguageManager getTextWithKey:@"report_reasons2"] forState:UIControlStateNormal];
         [Btn2 setTitle:[BackgroundRandomAttribute content:StringFromCoverData(&app_abortImageFormat)] forState:UIControlStateNormal];
         //: Btn2.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn2.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -285,7 +285,7 @@ CoverData kTickName = (CoverData){181, (Byte []){199, 208, 197, 218, 199, 193, 2
         [Btn3 setImage:[UIImage imageNamed:StringFromCoverData(&userStatusSnapId)] forState:UIControlStateSelected];
         //: [_buttonBox addSubview:Btn3];
         [_buttonBox addSubview:Btn3];
-        //: [Btn3 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons3"] forState:UIControlStateNormal];
+        //: [Btn3 setTitle:[PushLanguageManager getTextWithKey:@"report_reasons3"] forState:UIControlStateNormal];
         [Btn3 setTitle:[BackgroundRandomAttribute content:StringFromCoverData(&user_buildStr)] forState:UIControlStateNormal];
         //: Btn3.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn3.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -311,7 +311,7 @@ CoverData kTickName = (CoverData){181, (Byte []){199, 208, 197, 218, 199, 193, 2
         [Btn4 setImage:[UIImage imageNamed:StringFromCoverData(&userStatusSnapId)] forState:UIControlStateSelected];
         //: [_buttonBox addSubview:Btn4];
         [_buttonBox addSubview:Btn4];
-        //: [Btn4 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons4"] forState:UIControlStateNormal];
+        //: [Btn4 setTitle:[PushLanguageManager getTextWithKey:@"report_reasons4"] forState:UIControlStateNormal];
         [Btn4 setTitle:[BackgroundRandomAttribute content:StringFromCoverData(&mColdName)] forState:UIControlStateNormal];
         //: Btn4.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn4.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -337,7 +337,7 @@ CoverData kTickName = (CoverData){181, (Byte []){199, 208, 197, 218, 199, 193, 2
         [Btn5 setImage:[UIImage imageNamed:StringFromCoverData(&userStatusSnapId)] forState:UIControlStateSelected];
         //: [_buttonBox addSubview:Btn5];
         [_buttonBox addSubview:Btn5];
-        //: [Btn5 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons5"] forState:UIControlStateNormal];
+        //: [Btn5 setTitle:[PushLanguageManager getTextWithKey:@"report_reasons5"] forState:UIControlStateNormal];
         [Btn5 setTitle:[BackgroundRandomAttribute content:StringFromCoverData(&kTickName)] forState:UIControlStateNormal];
         //: Btn5.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn5.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -363,7 +363,7 @@ CoverData kTickName = (CoverData){181, (Byte []){199, 208, 197, 218, 199, 193, 2
         [Btn6 setImage:[UIImage imageNamed:StringFromCoverData(&userStatusSnapId)] forState:UIControlStateSelected];
         //: [_buttonBox addSubview:Btn6];
         [_buttonBox addSubview:Btn6];
-        //: [Btn6 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons6"] forState:UIControlStateNormal];
+        //: [Btn6 setTitle:[PushLanguageManager getTextWithKey:@"report_reasons6"] forState:UIControlStateNormal];
         [Btn6 setTitle:[BackgroundRandomAttribute content:StringFromCoverData(&notiSizeIdent)] forState:UIControlStateNormal];
         //: Btn6.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn6.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -394,7 +394,7 @@ CoverData kTickName = (CoverData){181, (Byte []){199, 208, 197, 218, 199, 193, 2
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor user:StringFromCoverData(&appAmStr)] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[BackgroundRandomAttribute content:StringFromCoverData(&userTerritoryData)] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -421,7 +421,7 @@ CoverData kTickName = (CoverData){181, (Byte []){199, 208, 197, 218, 199, 193, 2
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[BackgroundRandomAttribute content:StringFromCoverData(&kPullPath)] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#05D481"];
         _sureBtn.backgroundColor = [UIColor user:StringFromCoverData(&mainDisplayDismissSubPath)];

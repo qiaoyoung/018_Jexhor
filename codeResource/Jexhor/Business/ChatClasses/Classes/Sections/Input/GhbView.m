@@ -79,11 +79,11 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputMoreContainerView.h"
+//: #import "PushInputMoreContainerView.h"
 #import "GhbView.h"
-//: #import "FFFPageView.h"
+//: #import "PushPageView.h"
 #import "PageShowWorldView.h"
-//: #import "FFFMediaItem.h"
+//: #import "PushMediaItem.h"
 #import "RecordAlbumItem.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
@@ -106,7 +106,7 @@ NSInteger main_recentTagData = 11;
 
 
 
-//: @interface FFFInputMoreContainerView() <FFFPageViewDataSource,FFFPageViewDelegate,CustomMediaPickerViewDelegate>
+//: @interface PushInputMoreContainerView() <PushPageViewDataSource,PushPageViewDelegate,CustomMediaPickerViewDelegate>
 @interface GhbView() <TouchContent,MessageCreateAdd,CellDelegate>
 {
     //: NSArray *_mediaButtons;
@@ -116,13 +116,13 @@ NSInteger main_recentTagData = 11;
 }
 
 
-//: @property (nonatomic, strong) FFFPageView *pageView;
+//: @property (nonatomic, strong) PushPageView *pageView;
 @property (nonatomic, strong) PageShowWorldView *pageView;
 
 //: @end
 @end
 
-//: @implementation FFFInputMoreContainerView
+//: @implementation PushInputMoreContainerView
 @implementation GhbView
 
 //: - (instancetype)initWithFrame:(CGRect)frame
@@ -154,7 +154,7 @@ NSInteger main_recentTagData = 11;
     return self;
 }
 
-//: - (void)setConfig:(id<FFFSessionConfig>)config
+//: - (void)setConfig:(id<PushSessionConfig>)config
 - (void)setConfig:(id<CreateTop>)config
 {
     //: _config = config;
@@ -252,7 +252,7 @@ NSInteger main_recentTagData = 11;
         //: items = [self.config mediaItems];
         items = [self.config noName];
     }
-    //: [items enumerateObjectsUsingBlock:^(FFFMediaItem *item, NSUInteger idx, BOOL *stop) {
+    //: [items enumerateObjectsUsingBlock:^(PushMediaItem *item, NSUInteger idx, BOOL *stop) {
     [items enumerateObjectsUsingBlock:^(RecordAlbumItem *item, NSUInteger idx, BOOL *stop) {
         //: [mediaItems addObject:item];
         [mediaItems addObject:item];
@@ -336,7 +336,7 @@ NSInteger main_recentTagData = 11;
 
 //: #pragma mark PageViewDataSource
 #pragma mark PageViewDataSource
-//: - (NSInteger)numberOfPages: (FFFPageView *)pageView
+//: - (NSInteger)numberOfPages: (PushPageView *)pageView
 - (NSInteger)ranges: (PageShowWorldView *)pageView
 {
     //: NSInteger count = [_mediaButtons count] / NIMMaxItemCountInPage;
@@ -347,7 +347,7 @@ NSInteger main_recentTagData = 11;
     return ((count) > (1) ? (count) : (1));
 }
 
-//: - (UIView*)mediaPageView:(FFFPageView*)pageView beginItem:(NSInteger)begin endItem:(NSInteger)end
+//: - (UIView*)mediaPageView:(PushPageView*)pageView beginItem:(NSInteger)begin endItem:(NSInteger)end
 - (UIView*)imageItem:(PageShowWorldView*)pageView color:(NSInteger)begin enable:(NSInteger)end
 {
     //: UIView *subView = [[UIView alloc] init];
@@ -401,7 +401,7 @@ NSInteger main_recentTagData = 11;
     return subView;
 }
 
-//: - (UIView*)oneLineMediaInPageView:(FFFPageView *)pageView
+//: - (UIView*)oneLineMediaInPageView:(PushPageView *)pageView
 - (UIView*)by:(PageShowWorldView *)pageView
                        //: viewInPage: (NSInteger)index
                        dateShow: (NSInteger)index
@@ -431,7 +431,7 @@ NSInteger main_recentTagData = 11;
     return subView;
 }
 
-//: - (UIView *)pageView: (FFFPageView *)pageView viewInPage: (NSInteger)index
+//: - (UIView *)pageView: (PushPageView *)pageView viewInPage: (NSInteger)index
 - (UIView *)teamValue: (PageShowWorldView *)pageView addWith: (NSInteger)index
 {
     //: if ([_mediaButtons count] == 2 || [_mediaButtons count] == 3) 
@@ -470,7 +470,7 @@ NSInteger main_recentTagData = 11;
 {
     //: NSInteger index = [(UIButton *)sender tag];
     NSInteger index = [(UIButton *)sender tag];
-    //: FFFMediaItem *item = _mediaItems[index];
+    //: PushMediaItem *item = _mediaItems[index];
     RecordAlbumItem *item = _mediaItems[index];
     //: if (_actionDelegate && [_actionDelegate respondsToSelector:@selector(onTapMediaItem:)]) {
     if (_actionDelegate && [_actionDelegate respondsToSelector:@selector(shareMedia:)]) {

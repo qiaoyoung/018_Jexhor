@@ -11,13 +11,13 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFChatUIManagerProtocol.h"
-#import "FFFChatUIManagerProtocol.h"
+//: #import "PushChatUIManagerProtocol.h"
+#import "PushChatUIManagerProtocol.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFChatUIManager : NSObject<FFFChatUIManager>
+//: @interface PushChatUIManager : NSObject<PushChatUIManager>
 @interface TeamImageUimanager : NSObject<TeamImageUimanager>
 
 //: + (instancetype)sharedManager;

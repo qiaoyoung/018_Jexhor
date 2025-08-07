@@ -66,7 +66,7 @@
     return m_messageUrl;
 }
 
-//: #ffffff
+//: #fffPush
 - (NSString *)main_standingData {
     /* static */ NSString *main_standingData = nil;
     if (!main_standingData) {
@@ -113,7 +113,7 @@
         //: self.labTitle.frame = CGRectMake(40+32, 0, [[UIScreen mainScreen] bounds].size.width-80, 56);
         self.labTitle.frame = CGRectMake(40+32, 0, [[UIScreen mainScreen] bounds].size.width-80, 56);
 
-        //: self.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: self.backgroundColor = [UIColor colorWithHexString:@"#fffPush"];
         self.backgroundColor = [UIColor user:[[ChartNorthernData sharedInstance] main_standingData]];
         //: self.layer.cornerRadius = 12;
         self.layer.cornerRadius = 12;

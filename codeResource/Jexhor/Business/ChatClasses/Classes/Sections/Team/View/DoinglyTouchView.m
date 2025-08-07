@@ -108,18 +108,18 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamAnnouncementListCell.h"
+//: #import "PushTeamAnnouncementListCell.h"
 #import "DoinglyTouchView.h"
-//: #import "FFFUsrInfoData.h"
-#import "FFFUsrInfoData.h"
-//: #import "FFFKitUtil.h"
+//: #import "PushUsrInfoData.h"
+#import "PushUsrInfoData.h"
+//: #import "PushKitUtil.h"
 #import "KitUtil.h"
 //: #import "M80AttributedLabel.h"
 #import "InsertView.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "InsertView+Secret.h"
 
-//: @interface FFFTeamAnnouncementListCell ()
+//: @interface PushTeamAnnouncementListCell ()
 @interface DoinglyTouchView ()
 //: @property (strong, nonatomic) UILabel *titleLabel;
 @property (strong, nonatomic) UILabel *titleLabel;
@@ -133,7 +133,7 @@ typedef struct {
 //: @end
 @end
 
-//: @implementation FFFTeamAnnouncementListCell
+//: @implementation PushTeamAnnouncementListCell
 @implementation DoinglyTouchView
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -203,7 +203,7 @@ typedef struct {
          //: autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
          autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
                       ;
-        //: _contentLabel.selectBlock = ^(FFFMediaItem *item) {
+        //: _contentLabel.selectBlock = ^(PushMediaItem *item) {
         _contentLabel.selectBlock = ^(RecordAlbumItem *item) {
             @
              //: try{} @finally{} __typeof__(self) self = __weak_self__;

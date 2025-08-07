@@ -9,7 +9,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "PushSessionMessageContentView.h"
 #import "MoldControl.h"
 //: #import "M80AttributedLabel.h"
 #import "InsertView.h"
@@ -18,7 +18,7 @@
 static NSString *const main_dataValue = @"NTESShowRedPacketDetailEvent";
 
 
-//: @interface NTESSessionRedPacketTipContentView : FFFSessionMessageContentView
+//: @interface NTESSessionRedPacketTipContentView : PushSessionMessageContentView
 @interface MemoryControl : MoldControl
 
 //: @property (nonatomic,strong) M80AttributedLabel *label;

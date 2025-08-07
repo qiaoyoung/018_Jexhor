@@ -9,14 +9,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFReplyedTextContentConfig.h"
+//: #import "PushReplyedTextContentConfig.h"
 #import "ShowAttribute.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "InsertView+Secret.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
 
-//: @interface FFFReplyedTextContentConfig ()
+//: @interface PushReplyedTextContentConfig ()
 @interface ShowAttribute ()
 
 //: @property (nonatomic,strong) M80AttributedLabel *label;
@@ -25,7 +25,7 @@
 //: @end
 @end
 
-//: @implementation FFFReplyedTextContentConfig
+//: @implementation PushReplyedTextContentConfig
 @implementation ShowAttribute
 
 
@@ -79,7 +79,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)session:(NIMMessage *)message
 {
-    //: return @"FFFReplyedTextContentView";
+    //: return @"PushReplyedTextContentView";
     return @"TextNameView";
 }
 

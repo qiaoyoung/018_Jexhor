@@ -97,9 +97,9 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactDataCell.h"
+//: #import "PushContactDataCell.h"
 #import "BackgroundViewCell.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "PushAvatarImageView.h"
 #import "ImageView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
@@ -108,13 +108,13 @@
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Secret.h"
 
-//: @interface FFFContactDataCell()
+//: @interface PushContactDataCell()
 @interface BackgroundViewCell()
 
 //: @end
 @end
 
-//: @implementation FFFContactDataCell
+//: @implementation PushContactDataCell
 @implementation BackgroundViewCell
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -134,7 +134,7 @@
         [self.contentView addSubview:bgView];
 
 
-        //: _avatarImageView = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(15, 12, 48, 48)];
+        //: _avatarImageView = [[PushAvatarImageView alloc] initWithFrame:CGRectMake(15, 12, 48, 48)];
         _avatarImageView = [[ImageView alloc] initWithFrame:CGRectMake(15, 12, 48, 48)];
         //: [_avatarImageView addTarget:self action:@selector(onPressAvatar:) forControlEvents:UIControlEventTouchUpInside];
         [_avatarImageView addTarget:self action:@selector(provisionerred:) forControlEvents:UIControlEventTouchUpInside];
@@ -194,7 +194,7 @@
     [self sumernationality:member.showName];
     //: self.memberId = [member memberId];
     self.memberId = [member memberId];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.memberId option:nil];
+    //: PushKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.memberId option:nil];
     DataTeam *info = [[Secret highlight] infoAndStraddleOption:self.memberId item:nil];
     //: [self refreshAvatar:info];
     [self outView:info];
@@ -206,7 +206,7 @@
     [self sumernationality:team.teamName];
     //: self.memberId = [team teamId];
     self.memberId = [team teamId];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByTeam:self.memberId option:nil];
+    //: PushKitInfo *info = [[MyUserKit sharedKit] infoByTeam:self.memberId option:nil];
     DataTeam *info = [[Secret highlight] show:self.memberId corner:nil];
     //: [self refreshAvatar:info];
     [self outView:info];
@@ -218,7 +218,7 @@
     self.labName.text = title;
 }
 
-//: - (void)refreshAvatar:(FFFKitInfo *)info{
+//: - (void)refreshAvatar:(PushKitInfo *)info{
 - (void)outView:(DataTeam *)info{
     //: NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;
     NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;

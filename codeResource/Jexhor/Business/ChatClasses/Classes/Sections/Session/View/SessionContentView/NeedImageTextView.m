@@ -25,9 +25,9 @@ LightData appDismissText = (LightData){245, (Byte []){156, 150, 154, 155, 170, 1
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionLocationContentView.h"
+//: #import "PushSessionLocationContentView.h"
 #import "NeedImageTextView.h"
-//: #import "FFFMessageModel.h"
+//: #import "PushMessageModel.h"
 #import "PurseModel.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
@@ -36,7 +36,7 @@ LightData appDismissText = (LightData){245, (Byte []){156, 150, 154, 155, 170, 1
 //: #import "MyUserKit.h"
 #import "Secret.h"
 
-//: @interface FFFSessionLocationContentView()
+//: @interface PushSessionLocationContentView()
 @interface NeedImageTextView()
 
 //: @property (nonatomic,strong) UIImageView * imageView;
@@ -48,7 +48,7 @@ LightData appDismissText = (LightData){245, (Byte []){156, 150, 154, 155, 170, 1
 //: @end
 @end
 
-//: @implementation FFFSessionLocationContentView
+//: @implementation PushSessionLocationContentView
 @implementation NeedImageTextView
 
 //: - (instancetype)initSessionMessageContentView{
@@ -92,7 +92,7 @@ LightData appDismissText = (LightData){245, (Byte []){156, 150, 154, 155, 170, 1
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data
+//: - (void)refresh:(PushMessageModel *)data
 - (void)name:(PurseModel *)data
 {
     //: [super refresh:data];
@@ -102,7 +102,7 @@ LightData appDismissText = (LightData){245, (Byte []){156, 150, 154, 155, 170, 1
     //: self.titleLabel.text = locationObject.title;
     self.titleLabel.text = locationObject.title;
 
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
+    //: PushKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
     SchoolbagTaskSurroundingsBlock *setting = [[Secret highlight].config click:data.message];
 
     //: self.titleLabel.textColor = setting.textColor;
@@ -114,9 +114,9 @@ LightData appDismissText = (LightData){245, (Byte []){156, 150, 154, 155, 170, 1
 //: - (void)onTouchUpInside:(id)sender
 - (void)played:(id)sender
 {
-    //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+    //: PushKitEvent *event = [[PushKitEvent alloc] init];
     BeforeEvent *event = [[BeforeEvent alloc] init];
-    //: event.eventName = FFFKitEventNameTapContent;
+    //: event.eventName = PushKitEventNameTapContent;
     event.eventName = dream_makeMsg;
     //: event.messageModel = self.model;
     event.messageModel = self.model;

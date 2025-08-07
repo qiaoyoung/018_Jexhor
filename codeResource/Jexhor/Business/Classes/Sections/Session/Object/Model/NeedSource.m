@@ -30,7 +30,7 @@ Byte notiItemIdent[] = {93, 18, 66, 13, 69, 114, 13, 178, 233, 103, 12, 208, 29,
 #import "BubbleSerialization.h"
 //: #import "NTESMessageModel.h"
 #import "TapMessageModel.h"
-//: #import "FFFTimestampModel.h"
+//: #import "PushTimestampModel.h"
 #import "PushSharedNeed.h"
 //: #import "NTESMultiRetweetAttachment.h"
 #import "AttachmentOn.h"
@@ -205,9 +205,9 @@ Byte notiItemIdent[] = {93, 18, 66, 13, 69, 114, 13, 178, 233, 103, 12, 208, 29,
     return model;
 }
 
-//: - (FFFTimestampModel *)setupTimeModel:(NSTimeInterval)timestamp {
+//: - (PushTimestampModel *)setupTimeModel:(NSTimeInterval)timestamp {
 - (PushSharedNeed *)image:(NSTimeInterval)timestamp {
-    //: FFFTimestampModel *ret = [[FFFTimestampModel alloc] init];
+    //: PushTimestampModel *ret = [[PushTimestampModel alloc] init];
     PushSharedNeed *ret = [[PushSharedNeed alloc] init];
     //: ret.messageTime = timestamp;
     ret.messageTime = timestamp;
@@ -230,7 +230,7 @@ Byte notiItemIdent[] = {93, 18, 66, 13, 69, 114, 13, 178, 233, 103, 12, 208, 29,
         if (idx == 0) { //插入时间
             //: weakSelf.currentDay = [weakSelf getDay:obj.timestamp];
             weakSelf.currentDay = [weakSelf charterDay:obj.timestamp];
-            //: FFFTimestampModel *timeModel = [weakSelf setupTimeModel:obj.timestamp];
+            //: PushTimestampModel *timeModel = [weakSelf setupTimeModel:obj.timestamp];
             PushSharedNeed *timeModel = [weakSelf image:obj.timestamp];
             //: [items addObject:timeModel];
             [items addObject:timeModel];
@@ -252,7 +252,7 @@ Byte notiItemIdent[] = {93, 18, 66, 13, 69, 114, 13, 178, 233, 103, 12, 208, 29,
                 model.hiddenSeparatorLine = YES;
             }
 
-            //: FFFTimestampModel *timeModel = [weakSelf setupTimeModel:obj.timestamp];
+            //: PushTimestampModel *timeModel = [weakSelf setupTimeModel:obj.timestamp];
             PushSharedNeed *timeModel = [weakSelf image:obj.timestamp];
             //: [items addObject:timeModel];
             [items addObject:timeModel];
@@ -319,9 +319,9 @@ Byte notiItemIdent[] = {93, 18, 66, 13, 69, 114, 13, 178, 233, 103, 12, 208, 29,
             //: message = item;
             message = item;
         }
-        //: if ([item isKindOfClass:[FFFMessageModel class]]) {
+        //: if ([item isKindOfClass:[PushMessageModel class]]) {
         if ([item isKindOfClass:[PurseModel class]]) {
-            //: message = [(FFFMessageModel *)item message];
+            //: message = [(PushMessageModel *)item message];
             message = [(PurseModel *)item message];
         }
         //: if (message && !message.isOutgoingMsg

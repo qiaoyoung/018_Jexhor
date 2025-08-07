@@ -13,16 +13,16 @@
 #import <Foundation/Foundation.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFMessageModel.h"
+//: #import "PushMessageModel.h"
 #import "PurseModel.h"
 
-//: @interface FFFKitEvent : NSObject
+//: @interface PushKitEvent : NSObject
 @interface BeforeEvent : NSObject
 
 //: @property (nonatomic,copy) NSString *eventName;
 @property (nonatomic,copy) NSString *eventName;
 
-//: @property (nonatomic,strong) FFFMessageModel *messageModel;
+//: @property (nonatomic,strong) PushMessageModel *messageModel;
 @property (nonatomic,strong) PurseModel *messageModel;
 
 //: @property (nonatomic,strong) id data;
@@ -34,12 +34,12 @@
 
 
 
-//: extern NSString *const FFFKitEventNameTapContent;
+//: extern NSString *const PushKitEventNameTapContent;
 extern NSString *const dream_makeMsg;
-//: extern NSString *const FFFKitEventNameTapLabelLink;
+//: extern NSString *const PushKitEventNameTapLabelLink;
 extern NSString *const appCenterMsg;
-//: extern NSString *const FFFKitEventNameTapAudio;
+//: extern NSString *const PushKitEventNameTapAudio;
 extern NSString *const appAssetIdent;
 
-//: extern NSString *const FFFKitEventNameTapRepliedContent;
+//: extern NSString *const PushKitEventNameTapRepliedContent;
 extern NSString *const m_titleMessage;

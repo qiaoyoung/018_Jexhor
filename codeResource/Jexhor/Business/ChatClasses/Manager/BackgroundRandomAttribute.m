@@ -532,35 +532,35 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFLanguageManager.h"
+//: #import "PushLanguageManager.h"
 #import "BackgroundRandomAttribute.h"
-//: #import "FFFXMLReader.h"
+//: #import "PushXMLReader.h"
 #import "ShowReader.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
 //: #import "SSZipArchiveManager.h"
 #import "SharedContentView.h"
 
-//: @interface FFFLanguageManager ()<NSXMLParserDelegate>
+//: @interface PushLanguageManager ()<NSXMLParserDelegate>
 @interface BackgroundRandomAttribute ()<NSXMLParserDelegate>
 //: @property (nonatomic ,strong) NSString *currentElementName;
 @property (nonatomic ,strong) NSString *currentElementName;
 //: @end
 @end
 
-//: @implementation FFFLanguageManager
+//: @implementation PushLanguageManager
 @implementation BackgroundRandomAttribute
 
-//: static FFFLanguageManager *shareInstance = nil;
+//: static PushLanguageManager *shareInstance = nil;
 static BackgroundRandomAttribute *showTaskKey = nil;
 
-//: + (FFFLanguageManager *)shareInstance{
+//: + (PushLanguageManager *)shareInstance{
 + (BackgroundRandomAttribute *)disable{
     //: @synchronized(self) {
     @synchronized(self) {
         //: if (shareInstance == nil) {
         if (showTaskKey == nil) {
-            //: shareInstance = [[FFFLanguageManager alloc] init];
+            //: shareInstance = [[PushLanguageManager alloc] init];
             showTaskKey = [[BackgroundRandomAttribute alloc] init];
             //: shareInstance.langDict = [NSMutableDictionary dictionaryWithCapacity:100];
             showTaskKey.langDict = [NSMutableDictionary dictionaryWithCapacity:100];
@@ -572,7 +572,7 @@ static BackgroundRandomAttribute *showTaskKey = nil;
 
 //: + (NSString *)getTextWithKey:(NSString *)key{
 + (NSString *)content:(NSString *)key{
-    //: NSMutableDictionary *dict = [FFFLanguageManager shareInstance].langDict;
+    //: NSMutableDictionary *dict = [PushLanguageManager shareInstance].langDict;
     NSMutableDictionary *dict = [BackgroundRandomAttribute disable].langDict;
     //: NSString *value = [dict objectForKey:key];
     NSString *value = [dict objectForKey:key];
@@ -777,7 +777,7 @@ static BackgroundRandomAttribute *showTaskKey = nil;
     if (error) {
         //: NSLog(@"error : %@", error);
     }
-    //: NSDictionary *result = [FFFXMLReader dictionaryForXMLData:xmlData error:&error];
+    //: NSDictionary *result = [PushXMLReader dictionaryForXMLData:xmlData error:&error];
     NSDictionary *result = [ShowReader executiveSessionItem:xmlData originShowShared:&error];
 //    NSDictionary *result = [NSDictionary dictionaryWithXML:xmlData];
 

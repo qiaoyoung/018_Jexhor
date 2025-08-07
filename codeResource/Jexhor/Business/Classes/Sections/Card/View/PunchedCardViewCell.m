@@ -135,10 +135,10 @@ typedef struct {
 // __M_A_C_R_O__
 //: #import "NTESCardPortraitCell.h"
 #import "PunchedCardViewCell.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "PushAvatarImageView.h"
 #import "ImageView.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "PushCommonTableData.h"
+#import "PushCommonTableData.h"
 //: #import "UIView+NTES.h"
 #import "UIView+SearchedTeam.h"
 //: #import "NTESSessionUtil.h"
@@ -147,7 +147,7 @@ typedef struct {
 //: @interface NTESCardPortraitCell()
 @interface PunchedCardViewCell()
 
-//: @property (nonatomic,strong) FFFAvatarImageView *avatar;
+//: @property (nonatomic,strong) PushAvatarImageView *avatar;
 @property (nonatomic,strong) ImageView *avatar;
 
 //: @property (nonatomic,strong) UILabel *nameLabel;
@@ -176,7 +176,7 @@ typedef struct {
     if (self) {
         //: CGFloat avatarWidth = 55.f;
         CGFloat avatarWidth = 55.f;
-        //: _avatar = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, avatarWidth, avatarWidth)];
+        //: _avatar = [[PushAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, avatarWidth, avatarWidth)];
         _avatar = [[ImageView alloc] initWithFrame:CGRectMake(0, 0, avatarWidth, avatarWidth)];
         //: [self.contentView addSubview:_avatar];
         [self.contentView addSubview:_avatar];
@@ -224,11 +224,11 @@ typedef struct {
     if ([uid isKindOfClass:[NSString class]]) {
         //: NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:uid];
         NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:uid];
-        //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:uid option:nil];
+        //: PushKitInfo *info = [[MyUserKit sharedKit] infoByUser:uid option:nil];
         DataTeam *info = [[Secret highlight] infoAndStraddleOption:uid item:nil];
         //: self.nameLabel.text = info.showName ;
         self.nameLabel.text = info.showName ;
-        //: NSString *register_avtivity_account = [FFFLanguageManager getTextWithKey:@"register_avtivity_account"];
+        //: NSString *register_avtivity_account = [PushLanguageManager getTextWithKey:@"register_avtivity_account"];
         NSString *register_avtivity_account = [BackgroundRandomAttribute content:[[TeamData sharedInstance] dreamDeviceStr]];
         //: self.accountLabel.text = [NSString stringWithFormat:@"%@：%@",register_avtivity_account, uid];
         self.accountLabel.text = [NSString stringWithFormat:@"%@：%@",register_avtivity_account, uid];
@@ -295,7 +295,7 @@ typedef struct {
             NSString *account = [data index:[[TeamData sharedInstance] kDateValue]];
             //: self.accountLabel.hidden = NO;
             self.accountLabel.hidden = NO;
-            //: NSString *register_avtivity_account = [FFFLanguageManager getTextWithKey:@"register_avtivity_account"];
+            //: NSString *register_avtivity_account = [PushLanguageManager getTextWithKey:@"register_avtivity_account"];
             NSString *register_avtivity_account = [BackgroundRandomAttribute content:[[TeamData sharedInstance] dreamDeviceStr]];
 
             //: self.accountLabel.text = [NSString stringWithFormat:@"%@:%@",register_avtivity_account, account];

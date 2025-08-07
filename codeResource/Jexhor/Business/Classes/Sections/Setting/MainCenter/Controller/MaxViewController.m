@@ -206,7 +206,7 @@ StraddleData user_statusStr = (StraddleData){44, (Byte []){78, 77, 79, 71, 115, 
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"report_activity_title"];
+    //: labtitle.text = [PushLanguageManager getTextWithKey:@"report_activity_title"];
     labtitle.text = [BackgroundRandomAttribute content:StringFromStraddleData(&main_chartStr)];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -236,7 +236,7 @@ StraddleData user_statusStr = (StraddleData){44, (Byte []){78, 77, 79, 71, 115, 
 
     //: _textView = [[UITextView alloc] initWithFrame:CGRectMake(15, (44.0f + [UIDevice vg_statusBarHeight])+15, [[UIScreen mainScreen] bounds].size.width-30, 200)];
     _textView = [[UITextView alloc] initWithFrame:CGRectMake(15, (44.0f + [UIDevice title])+15, [[UIScreen mainScreen] bounds].size.width-30, 200)];
-    //: _textView.placeholder = [FFFLanguageManager getTextWithKey:@"report_info"];
+    //: _textView.placeholder = [PushLanguageManager getTextWithKey:@"report_info"];
     _textView.placeholder = [BackgroundRandomAttribute content:StringFromStraddleData(&dream_threadIdent)];//@"请输入您的举报信息";
     //: _textView.backgroundColor = [UIColor whiteColor];
     _textView.backgroundColor = [UIColor whiteColor];
@@ -373,7 +373,7 @@ StraddleData user_statusStr = (StraddleData){44, (Byte []){78, 77, 79, 71, 115, 
         //: NSLog(@"%@",error);
         //: [SVProgressHUD dismiss];
         [SVProgressHUD dismiss];
-        //: [SVProgressHUD showMessage:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"]];
+        //: [SVProgressHUD showMessage:[PushLanguageManager getTextWithKey:@"group_info_activity_op_failed"]];
         [SVProgressHUD packetMessage:[BackgroundRandomAttribute content:StringFromStraddleData(&notiItselfIdent)]];
     //: }];
     }];

@@ -16,24 +16,24 @@
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-//: @class FFFKitTimerHolder;
+//: @class PushKitTimerHolder;
 @class TouchMax;
 
-//: @protocol FFFKitTimerHolderDelegate <NSObject>
+//: @protocol PushKitTimerHolderDelegate <NSObject>
 @protocol TempDelegate <NSObject>
-//: - (void)onNIMKitTimerFired:(FFFKitTimerHolder *)holder;
+//: - (void)onNIMKitTimerFired:(PushKitTimerHolder *)holder;
 - (void)alongAndEnable:(TouchMax *)holder;
 //: @end
 @end
 
-//: @interface FFFKitTimerHolder : NSObject
+//: @interface PushKitTimerHolder : NSObject
 @interface TouchMax : NSObject
-//: @property (nonatomic,weak) id<FFFKitTimerHolderDelegate> timerDelegate;
+//: @property (nonatomic,weak) id<PushKitTimerHolderDelegate> timerDelegate;
 @property (nonatomic,weak) id<TempDelegate> timerDelegate;
 
 //: - (void)startTimer:(NSTimeInterval)seconds
 - (void)repeats:(NSTimeInterval)seconds
-          //: delegate:(id<FFFKitTimerHolderDelegate>)delegate
+          //: delegate:(id<PushKitTimerHolderDelegate>)delegate
           eigenvalueOfASquareMatrix:(id<TempDelegate>)delegate
            //: repeats:(BOOL)repeats;
            size:(BOOL)repeats;

@@ -36,12 +36,12 @@ Byte show_heavilySodFormat[] = {29, 24, 75, 7, 68, 140, 54, 177, 176, 176, 175, 
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamIntroduceViewController.h"
+//: #import "PushTeamIntroduceViewController.h"
 #import "TitleViewController.h"
 //: #import "UITextView+Util.h"
 #import "UITextView+Util.h"
 
-//: @interface FFFTeamIntroduceViewController ()<UITextFieldDelegate, UITextViewDelegate>
+//: @interface PushTeamIntroduceViewController ()<UITextFieldDelegate, UITextViewDelegate>
 @interface TitleViewController ()<UITextFieldDelegate, UITextViewDelegate>
 
 
@@ -59,7 +59,7 @@ Byte show_heavilySodFormat[] = {29, 24, 75, 7, 68, 140, 54, 177, 176, 176, 175, 
 //: @end
 @end
 
-//: @implementation FFFTeamIntroduceViewController
+//: @implementation PushTeamIntroduceViewController
 @implementation TitleViewController
 
 //: - (void)viewWillAppear:(BOOL)animated{
@@ -116,7 +116,7 @@ Byte show_heavilySodFormat[] = {29, 24, 75, 7, 68, 140, 54, 177, 176, 176, 175, 
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"Group_description"];
+    //: labtitle.text = [PushLanguageManager getTextWithKey:@"Group_description"];
     labtitle.text = [BackgroundRandomAttribute content:StringFromPricyData(mainBlackIdent)];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -144,7 +144,7 @@ Byte show_heavilySodFormat[] = {29, 24, 75, 7, 68, 140, 54, 177, 176, 176, 175, 
     self.contentTextView.font = [UIFont systemFontOfSize:16.f];
     //: self.contentTextView.delegate = self;
     self.contentTextView.delegate = self;
-    //: self.contentTextView.placeholder = [FFFLanguageManager getTextWithKey:@"Please_enter_content"];
+    //: self.contentTextView.placeholder = [PushLanguageManager getTextWithKey:@"Please_enter_content"];
     self.contentTextView.placeholder = [BackgroundRandomAttribute content:StringFromPricyData(appWillingIdent)];
     //: self.contentTextView.text = self.defaultContent;
     self.contentTextView.text = self.defaultContent;
@@ -168,7 +168,7 @@ Byte show_heavilySodFormat[] = {29, 24, 75, 7, 68, 140, 54, 177, 176, 176, 175, 
         submitButton.titleLabel.font = [UIFont boldSystemFontOfSize:16];
         //: [submitButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [submitButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [submitButton setTitle:[FFFLanguageManager getTextWithKey:@"feedback_activity_submit"] forState:UIControlStateNormal];
+        //: [submitButton setTitle:[PushLanguageManager getTextWithKey:@"feedback_activity_submit"] forState:UIControlStateNormal];
         [submitButton setTitle:[BackgroundRandomAttribute content:StringFromPricyData(show_heavilySodFormat)] forState:UIControlStateNormal];
         //: [submitButton addTarget:self action:@selector(onSave:) forControlEvents:UIControlEventTouchUpInside];
         [submitButton addTarget:self action:@selector(mediaed:) forControlEvents:UIControlEventTouchUpInside];

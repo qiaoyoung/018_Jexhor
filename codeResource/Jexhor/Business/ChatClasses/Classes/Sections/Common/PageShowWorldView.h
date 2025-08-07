@@ -12,30 +12,30 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @class FFFPageView;
+//: @class PushPageView;
 @class PageShowWorldView;
 
-//: @protocol FFFPageViewDataSource <NSObject>
+//: @protocol PushPageViewDataSource <NSObject>
 @protocol TouchContent <NSObject>
-//: - (NSInteger)numberOfPages: (FFFPageView *)pageView;
+//: - (NSInteger)numberOfPages: (PushPageView *)pageView;
 - (NSInteger)ranges: (PageShowWorldView *)pageView;
-//: - (UIView *)pageView: (FFFPageView *)pageView viewInPage: (NSInteger)index;
+//: - (UIView *)pageView: (PushPageView *)pageView viewInPage: (NSInteger)index;
 - (UIView *)teamValue: (PageShowWorldView *)pageView addWith: (NSInteger)index;
 //: @end
 @end
 
-//: @protocol FFFPageViewDelegate <NSObject>
+//: @protocol PushPageViewDelegate <NSObject>
 @protocol MessageCreateAdd <NSObject>
 //: @optional
 @optional
-//: - (void)pageViewScrollEnd: (FFFPageView *)pageView
+//: - (void)pageViewScrollEnd: (PushPageView *)pageView
 - (void)appear: (PageShowWorldView *)pageView
              //: currentIndex: (NSInteger)index
              red: (NSInteger)index
                //: totolPages: (NSInteger)pages;
                isTitle: (NSInteger)pages;
 
-//: - (void)pageViewDidScroll: (FFFPageView *)pageView;
+//: - (void)pageViewDidScroll: (PushPageView *)pageView;
 - (void)minorLeagueTeam: (PageShowWorldView *)pageView;
 //: - (BOOL)needScrollAnimation;
 - (BOOL)qualifyChild;
@@ -43,13 +43,13 @@
 @end
 
 
-//: @interface FFFPageView : UIView<UIScrollViewDelegate>
+//: @interface PushPageView : UIView<UIScrollViewDelegate>
 @interface PageShowWorldView : UIView<UIScrollViewDelegate>
 //: @property (nonatomic,strong) UIScrollView *scrollView;
 @property (nonatomic,strong) UIScrollView *scrollView;
-//: @property (nonatomic,weak) id<FFFPageViewDataSource> dataSource;
+//: @property (nonatomic,weak) id<PushPageViewDataSource> dataSource;
 @property (nonatomic,weak) id<TouchContent> dataSource;
-//: @property (nonatomic,weak) id<FFFPageViewDelegate> pageViewDelegate;
+//: @property (nonatomic,weak) id<PushPageViewDelegate> pageViewDelegate;
 @property (nonatomic,weak) id<MessageCreateAdd> pageViewDelegate;
 //: - (void)scrollToPage: (NSInteger)pages;
 - (void)scale: (NSInteger)pages;

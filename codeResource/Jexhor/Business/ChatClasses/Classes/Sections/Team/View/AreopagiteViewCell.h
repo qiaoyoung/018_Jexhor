@@ -21,7 +21,7 @@ extern NSString *const appCurrentText;
 //: extern NSString *const kTeamMemberInfo;
 extern NSString *const app_iconStr;
 
-//: @protocol FFFTeamMemberListCellActionDelegate <NSObject>
+//: @protocol PushTeamMemberListCellActionDelegate <NSObject>
 @protocol FullMoonLanguage <NSObject>
 
 //: - (void)didSelectAddOpeartor;
@@ -31,7 +31,7 @@ extern NSString *const app_iconStr;
 @end
 
 
-//: @interface FFFTeamMemberListCell : UITableViewCell
+//: @interface PushTeamMemberListCell : UITableViewCell
 @interface AreopagiteViewCell : UITableViewCell
 
 
@@ -44,7 +44,7 @@ extern NSString *const app_iconStr;
 //: @property(nonatomic, strong) NSMutableArray <NSDictionary *> *infos;
 @property(nonatomic, strong) NSMutableArray <NSDictionary *> *infos;
 
-//: @property(nonatomic, weak) id<FFFTeamMemberListCellActionDelegate>delegate;
+//: @property(nonatomic, weak) id<PushTeamMemberListCellActionDelegate>delegate;
 @property(nonatomic, weak) id<FullMoonLanguage>delegate;
 
 //: @end

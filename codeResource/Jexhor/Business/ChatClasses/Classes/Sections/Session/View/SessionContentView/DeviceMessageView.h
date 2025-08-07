@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "PushSessionMessageContentView.h"
 #import "MoldControl.h"
 
-//: @interface FFFSessionFileTransContentView : FFFSessionMessageContentView
+//: @interface PushSessionFileTransContentView : PushSessionMessageContentView
 @interface DeviceMessageView : MoldControl
 
 //: @property (nonatomic,strong,readonly) UIImageView *imageView;

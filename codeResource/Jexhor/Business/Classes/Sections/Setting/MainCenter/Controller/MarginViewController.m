@@ -126,7 +126,7 @@
 #import "MarginViewController.h"
 //: #import <WebKit/WebKit.h>
 #import <WebKit/WebKit.h>
-//: #import "FFFRegisterViewController.h"
+//: #import "PushRegisterViewController.h"
 #import "RandomSecretViewController.h"
 //: #import "SSZipArchiveManager.h"
 #import "SharedContentView.h"
@@ -210,7 +210,7 @@
 //: - (void)doAgree{
 - (void)lastValue{
 
-    //: FFFRegisterViewController *vc = [[FFFRegisterViewController alloc]init];
+    //: PushRegisterViewController *vc = [[PushRegisterViewController alloc]init];
     RandomSecretViewController *vc = [[RandomSecretViewController alloc]init];
     //: [self.navigationController pushViewController:vc animated:YES];
     [self.navigationController pushViewController:vc animated:YES];

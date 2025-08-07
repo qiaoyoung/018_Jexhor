@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFPageView.h"
+//: #import "PushPageView.h"
 #import "PageShowWorldView.h"
 
-//: @interface FFFPageView ()
+//: @interface PushPageView ()
 @interface PageShowWorldView ()
 {
     //: NSInteger _currentPage;
@@ -37,7 +37,7 @@
 //: @end
 @end
 
-//: @implementation FFFPageView
+//: @implementation PushPageView
 @implementation PageShowWorldView
 
 //: - (id)initWithFrame:(CGRect)frame

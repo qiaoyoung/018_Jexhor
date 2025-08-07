@@ -63,17 +63,17 @@
 // __M_A_C_R_O__
 //: #import "NTESKeyWordMessageCell.h"
 #import "TotalUpView.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "PushAvatarImageView.h"
 #import "ImageView.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "PushCommonTableData.h"
+#import "PushCommonTableData.h"
 //: #import "UIView+NTES.h"
 #import "UIView+SearchedTeam.h"
 
 //: @interface NTESKeyWordMessageCell ()
 @interface TotalUpView ()
 
-//: @property (nonatomic,strong) FFFAvatarImageView * avatar;
+//: @property (nonatomic,strong) PushAvatarImageView * avatar;
 @property (nonatomic,strong) ImageView * avatar;
 
 //: @property (nonatomic,strong) UILabel * nickL;
@@ -156,7 +156,7 @@
     //: if ([message isKindOfClass:[NIMMessage class]])
     if ([message isKindOfClass:[NIMMessage class]])
     {
-        //: FFFKitInfo * info = nil;
+        //: PushKitInfo * info = nil;
         DataTeam * info = nil;
         //: NIMSession * session = message.session;
         NIMSession * session = message.session;
@@ -246,13 +246,13 @@
 
 
 
-//: - (FFFAvatarImageView *)avatar
+//: - (PushAvatarImageView *)avatar
 - (ImageView *)avatar
 {
     //: if (!_avatar)
     if (!_avatar)
     {
-        //: _avatar = [[FFFAvatarImageView alloc] init];
+        //: _avatar = [[PushAvatarImageView alloc] init];
         _avatar = [[ImageView alloc] init];
     }
     //: return _avatar;

@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFBaseSessionContentConfig.m
+//  PushBaseSessionContentConfig.m
 // Secret
 //
 //  Created by amao on 9/15/15.
@@ -9,55 +9,55 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFBaseSessionContentConfig.h"
-#import "FFFBaseSessionContentConfig.h"
-//: #import "FFFTextContentConfig.h"
+//: #import "PushBaseSessionContentConfig.h"
+#import "PushBaseSessionContentConfig.h"
+//: #import "PushTextContentConfig.h"
 #import "EliteCross.h"
-//: #import "FFFImageContentConfig.h"
+//: #import "PushImageContentConfig.h"
 #import "CypherConfig.h"
-//: #import "FFFAudioContentConfig.h"
+//: #import "PushAudioContentConfig.h"
 #import "NameConfig.h"
-//: #import "FFFVideoContentConfig.h"
+//: #import "PushVideoContentConfig.h"
 #import "TextMake.h"
-//: #import "FFFFileContentConfig.h"
+//: #import "PushFileContentConfig.h"
 #import "CreateConfig.h"
-//: #import "FFFNotificationContentConfig.h"
+//: #import "PushNotificationContentConfig.h"
 #import "EarlierData.h"
-//: #import "FFFLocationContentConfig.h"
+//: #import "PushLocationContentConfig.h"
 #import "VoiceConfig.h"
-//: #import "FFFUnsupportContentConfig.h"
+//: #import "PushUnsupportContentConfig.h"
 #import "ViewRandom.h"
-//: #import "FFFTipContentConfig.h"
+//: #import "PushTipContentConfig.h"
 #import "AssemblageConfig.h"
-//: #import "FFFReplyedTextContentConfig.h"
+//: #import "PushReplyedTextContentConfig.h"
 #import "ShowAttribute.h"
-//: #import "FFFRtcCallRecordContentConfig.h"
+//: #import "PushRtcCallRecordContentConfig.h"
 #import "MaxConfig.h"
 
-//: @interface FFFSessionContentConfigFactory ()
+//: @interface PushSessionContentConfigFactory ()
 @interface OffdSessionFactory ()
 //: @property (nonatomic,strong) NSDictionary *dict;
 @property (nonatomic,strong) NSDictionary *dict;
 //: @property (nonatomic,strong) NSDictionary *replyDict;
 @property (nonatomic,strong) NSDictionary *replyDict;
-//: @property (nonatomic,strong) FFFUnsupportContentConfig *unsupportConfig;
+//: @property (nonatomic,strong) PushUnsupportContentConfig *unsupportConfig;
 @property (nonatomic,strong) ViewRandom *unsupportConfig;
 //: @end
 @end
 
-//: @implementation FFFSessionContentConfigFactory
+//: @implementation PushSessionContentConfigFactory
 @implementation OffdSessionFactory
 
 //: + (instancetype)sharedFacotry
 + (instancetype)nearContent
 {
-    //: static FFFSessionContentConfigFactory *instance = nil;
+    //: static PushSessionContentConfigFactory *instance = nil;
     static OffdSessionFactory *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFSessionContentConfigFactory alloc] init];
+        //: instance = [[PushSessionContentConfigFactory alloc] init];
         instance = [[OffdSessionFactory alloc] init];
     //: });
     });
@@ -71,28 +71,28 @@
     //: if (self = [super init])
     if (self = [super init])
     {
-        //: _dict = @{@(NIMMessageTypeText) : [FFFTextContentConfig new],
+        //: _dict = @{@(NIMMessageTypeText) : [PushTextContentConfig new],
         _dict = @{@(NIMMessageTypeText) : [EliteCross new],
-                  //: @(NIMMessageTypeImage) : [FFFImageContentConfig new],
+                  //: @(NIMMessageTypeImage) : [PushImageContentConfig new],
                   @(NIMMessageTypeImage) : [CypherConfig new],
-                  //: @(NIMMessageTypeAudio) : [FFFAudioContentConfig new],
+                  //: @(NIMMessageTypeAudio) : [PushAudioContentConfig new],
                   @(NIMMessageTypeAudio) : [NameConfig new],
-                  //: @(NIMMessageTypeVideo) : [FFFVideoContentConfig new],
+                  //: @(NIMMessageTypeVideo) : [PushVideoContentConfig new],
                   @(NIMMessageTypeVideo) : [TextMake new],
-                  //: @(NIMMessageTypeFile) : [FFFFileContentConfig new],
+                  //: @(NIMMessageTypeFile) : [PushFileContentConfig new],
                   @(NIMMessageTypeFile) : [CreateConfig new],
-                  //: @(NIMMessageTypeLocation) : [FFFLocationContentConfig new],
+                  //: @(NIMMessageTypeLocation) : [PushLocationContentConfig new],
                   @(NIMMessageTypeLocation) : [VoiceConfig new],
-                  //: @(NIMMessageTypeNotification) : [FFFNotificationContentConfig new],
+                  //: @(NIMMessageTypeNotification) : [PushNotificationContentConfig new],
                   @(NIMMessageTypeNotification) : [EarlierData new],
-                  //: @(NIMMessageTypeTip) : [FFFTipContentConfig new],
+                  //: @(NIMMessageTypeTip) : [PushTipContentConfig new],
                   @(NIMMessageTypeTip) : [AssemblageConfig new],
-                  //: @(NIMMessageTypeRtcCallRecord): [FFFRtcCallRecordContentConfig new],
+                  //: @(NIMMessageTypeRtcCallRecord): [PushRtcCallRecordContentConfig new],
                   @(NIMMessageTypeRtcCallRecord): [MaxConfig new],
         //: };
         };
 
-        //: FFFReplyedTextContentConfig *replyedTextConfig = [FFFReplyedTextContentConfig new];
+        //: PushReplyedTextContentConfig *replyedTextConfig = [PushReplyedTextContentConfig new];
         ShowAttribute *replyedTextConfig = [ShowAttribute new];
         //: _replyDict = @{
         _replyDict = @{
@@ -120,7 +120,7 @@
             @(NIMMessageTypeRtcCallRecord) : replyedTextConfig,
         //: };
         };
-        //: _unsupportConfig = [[FFFUnsupportContentConfig alloc] init];
+        //: _unsupportConfig = [[PushUnsupportContentConfig alloc] init];
         _unsupportConfig = [[ViewRandom alloc] init];
     }
     //: return self;

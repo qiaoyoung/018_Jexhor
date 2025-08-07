@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "UIView+FFFToast.h"
+//: #import "UIView+PushToast.h"
 #import "UIView+Task.h"
 
-//: @implementation UIView (FFFToast)
+//: @implementation UIView (PushToast)
 @implementation UIView (Task)
 
 //: - (void)nim_showToast:(NSString *)message duration:(CGFloat)duration

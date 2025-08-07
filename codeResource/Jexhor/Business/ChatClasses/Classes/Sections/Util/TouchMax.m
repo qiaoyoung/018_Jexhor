@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitTimerHolder.h"
+//: #import "PushKitTimerHolder.h"
 #import "TouchMax.h"
 
-//: @interface FFFKitTimerHolder ()
+//: @interface PushKitTimerHolder ()
 @interface TouchMax ()
 {
     //: NSTimer *_timer;
@@ -25,7 +25,7 @@
 //: @end
 @end
 
-//: @implementation FFFKitTimerHolder
+//: @implementation PushKitTimerHolder
 @implementation TouchMax
 
 //: - (void)dealloc
@@ -37,7 +37,7 @@
 
 //: - (void)startTimer: (NSTimeInterval)seconds
 - (void)repeats: (NSTimeInterval)seconds
-          //: delegate: (id<FFFKitTimerHolderDelegate>)delegate
+          //: delegate: (id<PushKitTimerHolderDelegate>)delegate
           eigenvalueOfASquareMatrix: (id<TempDelegate>)delegate
            //: repeats: (BOOL)repeats
            size: (BOOL)repeats

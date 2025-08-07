@@ -9,9 +9,9 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCardMemberItem.h"
+//: #import "PushTeamCardMemberItem.h"
 #import "CardSession.h"
-//: #import "FFFKitUtil.h"
+//: #import "PushKitUtil.h"
 #import "KitUtil.h"
 //: #import "MyUserKit.h"
 #import "Secret.h"
@@ -54,7 +54,7 @@
 
 //: - (UIImage *)imageNormal{
 - (UIImage *)imageNormal{
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.userId option:nil];
+    //: PushKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.userId option:nil];
     DataTeam *info = [[Secret highlight] infoAndStraddleOption:self.userId item:nil];
     //: return info.avatarImage;
     return info.avatarImage;
@@ -64,7 +64,7 @@
 - (NSString *)title {
     //: NIMSession *session = [NIMSession session:self.userId type:NIMSessionTypeP2P];
     NIMSession *session = [NIMSession session:self.userId type:NIMSessionTypeP2P];
-    //: return [FFFKitUtil showNick:self.userId inSession:session];
+    //: return [PushKitUtil showNick:self.userId inSession:session];
     return [KitUtil streetwise:self.userId tip:session];
 }
 
@@ -95,7 +95,7 @@
 //: @end
 @end
 
-//: @interface FFFTeamCardMemberItem ()
+//: @interface PushTeamCardMemberItem ()
 @interface CardSession ()
 
 //: @property (nonatomic, strong) NIMTeamMember *member;
@@ -107,7 +107,7 @@
 //: @end
 @end
 
-//: @implementation FFFTeamCardMemberItem
+//: @implementation PushTeamCardMemberItem
 @implementation CardSession
 
 //: - (instancetype)init {
@@ -148,19 +148,19 @@
 
 //: - (BOOL)isEqual:(id)object{
 - (BOOL)isEqual:(id)object{
-    //: if (![object isKindOfClass:[FFFTeamCardMemberItem class]]) {
+    //: if (![object isKindOfClass:[PushTeamCardMemberItem class]]) {
     if (![object isKindOfClass:[CardSession class]]) {
         //: return NO;
         return NO;
     }
-    //: FFFTeamCardMemberItem *obj = (FFFTeamCardMemberItem*)object;
+    //: PushTeamCardMemberItem *obj = (PushTeamCardMemberItem*)object;
     CardSession *obj = (CardSession*)object;
     //: return [obj.userId isEqual:self.userId];
     return [obj.userId isEqual:self.userId];
 }
 
-//: #pragma mark - <FFFKitCardHeaderData>
-#pragma mark - <FFFKitCardHeaderData>
+//: #pragma mark - <PushKitCardHeaderData>
+#pragma mark - <PushKitCardHeaderData>
 //: - (NSString *)teamId {
 - (NSString *)teamId {
     //: return _member.teamId;
@@ -200,7 +200,7 @@
 
 //: - (UIImage *)imageNormal{
 - (UIImage *)imageNormal{
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.userId option:nil];
+    //: PushKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.userId option:nil];
     DataTeam *info = [[Secret highlight] infoAndStraddleOption:self.userId item:nil];
     //: return info.avatarImage;
     return info.avatarImage;
@@ -226,7 +226,7 @@
             session = [NIMSession session:self.teamId type:NIMSessionTypeTeam];
         }
     }
-    //: return [FFFKitUtil showNick:self.userId inSession:session];
+    //: return [PushKitUtil showNick:self.userId inSession:session];
     return [KitUtil streetwise:self.userId tip:session];
 }
 

@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFUsrInfoData.h
+//  PushUsrInfoData.h
 //  NIM
 //
 //  Created by Xuhui on 15/3/19.
@@ -9,16 +9,16 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactDefines.h"
-#import "FFFContactDefines.h"
+//: #import "PushContactDefines.h"
+#import "PushContactDefines.h"
 
-//: @class FFFKitInfo;
+//: @class PushKitInfo;
 @class DataTeam;
 
 //: @interface RiverlaUsrInfo : NSObject <NIMGroupMemberProtocol>
 @interface ShouldInfo : NSObject <ToolTextEnablely>
 
-//: @property (nonatomic,strong) FFFKitInfo *info;
+//: @property (nonatomic,strong) PushKitInfo *info;
 @property (nonatomic,strong) DataTeam *info;
 
 //: - (BOOL)isFriend;

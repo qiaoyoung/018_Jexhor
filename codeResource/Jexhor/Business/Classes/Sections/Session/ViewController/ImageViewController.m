@@ -230,7 +230,7 @@
     return should;
 }
 
-//: - (id<FFFSessionConfig>)sessionConfig
+//: - (id<PushSessionConfig>)sessionConfig
 - (id<CreateTop>)sessionConfig
 {
     //: if (_sessionConfig == nil) {

@@ -139,12 +139,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFRegisterNickNameViewController.h"
+//: #import "PushRegisterNickNameViewController.h"
 #import "BarViewController.h"
-//: #import "FFFRegisterAvatarViewController.h"
+//: #import "PushRegisterAvatarViewController.h"
 #import "AttributeViewController.h"
 
-//: @interface FFFRegisterNickNameViewController ()<UITextFieldDelegate>
+//: @interface PushRegisterNickNameViewController ()<UITextFieldDelegate>
 @interface BarViewController ()<UITextFieldDelegate>
 
 //: @property (nonatomic, strong) UIButton *closeBtn;
@@ -181,7 +181,7 @@
 //: @end
 @end
 
-//: @implementation FFFRegisterNickNameViewController
+//: @implementation PushRegisterNickNameViewController
 @implementation BarViewController
 
 //: - (void)viewDidLoad {
@@ -228,7 +228,7 @@
     titleLabel.textColor = [UIColor blackColor];
     //: titleLabel.font = [UIFont boldSystemFontOfSize:24];
     titleLabel.font = [UIFont boldSystemFontOfSize:24];
-    //: titleLabel.text = [FFFLanguageManager getTextWithKey:@"activity_my_user_info_nick"];
+    //: titleLabel.text = [PushLanguageManager getTextWithKey:@"activity_my_user_info_nick"];
     titleLabel.text = [BackgroundRandomAttribute content:[ChartTingData dream_tapId]];
     //: titleLabel.textAlignment = NSTextAlignmentCenter;
     titleLabel.textAlignment = NSTextAlignmentCenter;
@@ -242,7 +242,7 @@
     self.accountLabel.font = [UIFont systemFontOfSize:14];
     //: self.accountLabel.textColor = [UIColor colorWithHexString:@"#5D5F66"];
     self.accountLabel.textColor = [UIColor user:[ChartTingData dreamYinTitle]];
-    //: self.accountLabel.text = [FFFLanguageManager getTextWithKey:@"register_good_nick"];
+    //: self.accountLabel.text = [PushLanguageManager getTextWithKey:@"register_good_nick"];
     self.accountLabel.text = [BackgroundRandomAttribute content:[ChartTingData k_hostileMessage]];
     //: self.accountLabel.textAlignment = NSTextAlignmentCenter;
     self.accountLabel.textAlignment = NSTextAlignmentCenter;
@@ -280,7 +280,7 @@
     self.accountTextfield.font = [UIFont systemFontOfSize:16];
     //: self.accountTextfield.textColor = [UIColor colorWithHexString:@"#333333"];
     self.accountTextfield.textColor = [UIColor user:[ChartTingData notiHeroName]];
-    //: self.accountTextfield.placeholder = [FFFLanguageManager getTextWithKey:@"register_avtivity3_nick"];
+    //: self.accountTextfield.placeholder = [PushLanguageManager getTextWithKey:@"register_avtivity3_nick"];
     self.accountTextfield.placeholder = [BackgroundRandomAttribute content:[ChartTingData showStandingMessage]];
     //: self.accountTextfield.delegate = self;
     self.accountTextfield.delegate = self;
@@ -309,7 +309,7 @@
     self.registButton.titleLabel.font = [UIFont systemFontOfSize:16];
     //: [self.registButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.registButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [self.registButton setTitle:[FFFLanguageManager getTextWithKey:@"activity_register_next"] forState:UIControlStateNormal];
+    //: [self.registButton setTitle:[PushLanguageManager getTextWithKey:@"activity_register_next"] forState:UIControlStateNormal];
     [self.registButton setTitle:[BackgroundRandomAttribute content:[ChartTingData app_userText]] forState:UIControlStateNormal];
     //: [self.view addSubview:self.registButton];
     [self.view addSubview:self.registButton];
@@ -323,7 +323,7 @@
 {
     //: if (_accountTextfield.text.length == 0) {
     if (_accountTextfield.text.length == 0) {
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"register_avtivity3_nick"]
+        //: [self.view makeToast:[PushLanguageManager getTextWithKey:@"register_avtivity3_nick"]
         [self.view makeToast:[BackgroundRandomAttribute content:[ChartTingData showStandingMessage]]
                     //: duration:2.0
                     duration:2.0
@@ -334,7 +334,7 @@
     }
     //: if ([_accountTextfield.text isEqualToString:self.accountName]) {
     if ([_accountTextfield.text isEqualToString:self.accountName]) {
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"nickname_same_account"]
+        //: [self.view makeToast:[PushLanguageManager getTextWithKey:@"nickname_same_account"]
         [self.view makeToast:[BackgroundRandomAttribute content:[ChartTingData dreamReinforceFormat]]
                     //: duration:2.0
                     duration:2.0
@@ -345,7 +345,7 @@
     }
 
 
-    //: FFFRegisterAvatarViewController *vc = [[FFFRegisterAvatarViewController alloc]init];
+    //: PushRegisterAvatarViewController *vc = [[PushRegisterAvatarViewController alloc]init];
     AttributeViewController *vc = [[AttributeViewController alloc]init];
     //: vc.nickName = self.accountTextfield.text;
     vc.nickName = self.accountTextfield.text;

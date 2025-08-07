@@ -12,7 +12,7 @@
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-//: @interface FFFKitIndependentModeExtraInfo : NSObject
+//: @interface PushKitIndependentModeExtraInfo : NSObject
 @interface OfClick : NSObject
 
 /**

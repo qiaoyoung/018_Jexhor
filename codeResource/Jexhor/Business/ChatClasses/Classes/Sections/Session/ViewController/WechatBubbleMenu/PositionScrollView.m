@@ -24,24 +24,24 @@ Byte main_lemonKey[] = {3, 9, 82, 4, 27, 19, 28, 35, 13, 17, 29, 30, 39, 21};
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTextView.h"
+//: #import "PushTextView.h"
 #import "PositionScrollView.h"
-//: #import "FFFBubbleMenuView.h"
+//: #import "PushBubbleMenuView.h"
 #import "PushEventView.h"
-//: #import "FFFBubbleButtonModel.h"
+//: #import "PushBubbleButtonModel.h"
 #import "SessionModel.h"
 //: #import "AppDelegate.h"
 #import "AppDelegate.h"
-//: #import "FFFMediaItem.h"
+//: #import "PushMediaItem.h"
 #import "RecordAlbumItem.h"
 
-//: @interface FFFTextView()<UITextViewDelegate, UITextInputDelegate>
+//: @interface PushTextView()<UITextViewDelegate, UITextInputDelegate>
 @interface PositionScrollView()<UITextViewDelegate, UITextInputDelegate>
 
 //: @end
 @end
 
-//: @implementation FFFTextView
+//: @implementation PushTextView
 @implementation PositionScrollView
 
 //: - (id)initWithFrame:(CGRect)frame {
@@ -122,7 +122,7 @@ Byte main_lemonKey[] = {3, 9, 82, 4, 27, 19, 28, 35, 13, 17, 29, 30, 39, 21};
     //: CGRect cursorStartRectToWindow = [self convertRect:startRect toView:((AppDelegate*)([UIApplication sharedApplication].delegate)).window];
     CGRect cursorStartRectToWindow = [self convertRect:startRect toView:((AppDelegate*)([UIApplication sharedApplication].delegate)).window];
 
-    //: [[FFFBubbleMenuView shareMenuView] showViewWithButtonModels:self.selectedAllRangeButtons cursorStartRect:cursorStartRectToWindow selectionTextRectInWindow:tempRect selectBlock:^(FFFMediaItem *item) {
+    //: [[PushBubbleMenuView shareMenuView] showViewWithButtonModels:self.selectedAllRangeButtons cursorStartRect:cursorStartRectToWindow selectionTextRectInWindow:tempRect selectBlock:^(PushMediaItem *item) {
     [[PushEventView viewQuick] valuate:self.selectedAllRangeButtons someMore:cursorStartRectToWindow user:tempRect text:^(RecordAlbumItem *item) {
 
         //: !_selectBlock ? : _selectBlock(item);
@@ -130,7 +130,7 @@ Byte main_lemonKey[] = {3, 9, 82, 4, 27, 19, 28, 35, 13, 17, 29, 30, 39, 21};
 
         //: [self hideTextSelection];
         [self message];
-        //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+        //: [PushBubbleMenuView.shareMenuView removeFromSuperview];
         [PushEventView.viewQuick removeFromSuperview];
 
     //: } praiseBlock:^(NSInteger tag) {
@@ -140,7 +140,7 @@ Byte main_lemonKey[] = {3, 9, 82, 4, 27, 19, 28, 35, 13, 17, 29, 30, 39, 21};
 
         //: [self hideTextSelection];
         [self message];
-        //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+        //: [PushBubbleMenuView.shareMenuView removeFromSuperview];
         [PushEventView.viewQuick removeFromSuperview];
     //: }];
     }];
@@ -157,7 +157,7 @@ Byte main_lemonKey[] = {3, 9, 82, 4, 27, 19, 28, 35, 13, 17, 29, 30, 39, 21};
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     //: [self hideTextSelection];
     [self message];
-    //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+    //: [PushBubbleMenuView.shareMenuView removeFromSuperview];
     [PushEventView.viewQuick removeFromSuperview];
     //: [super touchesEnded:touches withEvent:event];
     [super touchesEnded:touches withEvent:event];
@@ -304,10 +304,10 @@ Byte main_lemonKey[] = {3, 9, 82, 4, 27, 19, 28, 35, 13, 17, 29, 30, 39, 21};
         //: items = [self.config menuItemsWithMessage:message];
         items = [self.config completeMessage:message];
     }
-    //: [items enumerateObjectsUsingBlock:^(FFFMediaItem *item, NSUInteger idx, BOOL *stop) {
+    //: [items enumerateObjectsUsingBlock:^(PushMediaItem *item, NSUInteger idx, BOOL *stop) {
     [items enumerateObjectsUsingBlock:^(RecordAlbumItem *item, NSUInteger idx, BOOL *stop) {
 
-        //: FFFBubbleButtonModel *model = [[FFFBubbleButtonModel alloc] init];
+        //: PushBubbleButtonModel *model = [[PushBubbleButtonModel alloc] init];
         SessionModel *model = [[SessionModel alloc] init];
         //: model.normalImage = item.normalImage;
         model.normalImage = item.normalImage;
@@ -344,17 +344,17 @@ Byte main_lemonKey[] = {3, 9, 82, 4, 27, 19, 28, 35, 13, 17, 29, 30, 39, 21};
     NSMutableArray *selectedPartRangeButtons = [NSMutableArray array];
 
 
-    //: FFFMediaItem *copy = [FFFMediaItem item:@"onTapMenuItemCopy:"
+    //: PushMediaItem *copy = [PushMediaItem item:@"onTapMenuItemCopy:"
     RecordAlbumItem *copy = [RecordAlbumItem record:StringFromProgressData(mForwardStr)
                                 //: normalImage:[UIImage imageNamed:@"menu_copy"]
                                 reloadByCount:[UIImage imageNamed:StringFromProgressData(main_lemonKey)]
                               //: selectedImage:nil
                               team:nil
-                                      //: title:[FFFLanguageManager getTextWithKey:@"复制"]];
+                                      //: title:[PushLanguageManager getTextWithKey:@"复制"]];
                                       provider:[BackgroundRandomAttribute content:@"复制"]];
 
 
-    //: FFFBubbleButtonModel *model = [[FFFBubbleButtonModel alloc] init];
+    //: PushBubbleButtonModel *model = [[PushBubbleButtonModel alloc] init];
     SessionModel *model = [[SessionModel alloc] init];
     //: model.normalImage = copy.normalImage;
     model.normalImage = copy.normalImage;

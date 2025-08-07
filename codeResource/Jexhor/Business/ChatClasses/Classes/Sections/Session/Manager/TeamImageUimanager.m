@@ -54,18 +54,18 @@ ActiveData userStormMsg = (ActiveData){36, (Byte []){1, 100, 10, 71, 75, 64, 65,
 //
 
 // __M_A_C_R_O__
-//: #import "FFFChatUIManager.h"
+//: #import "PushChatUIManager.h"
 #import "TeamImageUimanager.h"
-//: #import "FFFContactSelectConfig.h"
+//: #import "PushContactSelectConfig.h"
 #import "ReadConfig.h"
-//: #import "FFFContactSelectViewController.h"
+//: #import "PushContactSelectViewController.h"
 #import "SwitchlyViewController.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "PushKitInfoFetchOption.h"
 #import "AttributeQuantityOption.h"
-//: #import "UIView+FFFToast.h"
+//: #import "UIView+PushToast.h"
 #import "UIView+Task.h"
 
-//: @implementation FFFChatUIManager
+//: @implementation PushChatUIManager
 @implementation TeamImageUimanager
 
 //: + (instancetype)sharedManager
@@ -73,7 +73,7 @@ ActiveData userStormMsg = (ActiveData){36, (Byte []){1, 100, 10, 71, 75, 64, 65,
 {
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
-    //: static FFFChatUIManager *instance;
+    //: static PushChatUIManager *instance;
     static TeamImageUimanager *instance;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
@@ -88,15 +88,15 @@ ActiveData userStormMsg = (ActiveData){36, (Byte []){1, 100, 10, 71, 75, 64, 65,
 //: - (void)forwardMessage:(NIMMessage *)message fromViewController:(UIViewController *)fromVC
 - (void)infoController:(NIMMessage *)message value:(UIViewController *)fromVC
 {
-    //: UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"选择会话类型"] message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    //: UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[PushLanguageManager getTextWithKey:@"选择会话类型"] message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[BackgroundRandomAttribute content:StringFromActiveData(&notiEconomicTheaterStr)] message:nil preferredStyle:UIAlertControllerStyleActionSheet];
-    //: [alertController addAction:[UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"watch_multiretweet_activity_person"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    //: [alertController addAction:[UIAlertAction actionWithTitle:[PushLanguageManager getTextWithKey:@"watch_multiretweet_activity_person"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
     [alertController addAction:[UIAlertAction actionWithTitle:[BackgroundRandomAttribute content:StringFromActiveData(&mainScapeMessage)] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         //: NIMContactFriendSelectConfig *config = [[NIMContactFriendSelectConfig alloc] init];
         CheckedConfig *config = [[CheckedConfig alloc] init];
         //: config.needMutiSelected = NO;
         config.needMutiSelected = NO;
-        //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+        //: PushContactSelectViewController *vc = [[PushContactSelectViewController alloc] initWithConfig:config];
         SwitchlyViewController *vc = [[SwitchlyViewController alloc] initWithBarBottom:config];
         //: vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
         vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
@@ -112,13 +112,13 @@ ActiveData userStormMsg = (ActiveData){36, (Byte []){1, 100, 10, 71, 75, 64, 65,
         [vc metadata];
     //: }]];
     }]];
-    //: [alertController addAction:[UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_fragment_group"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    //: [alertController addAction:[UIAlertAction actionWithTitle:[PushLanguageManager getTextWithKey:@"contact_fragment_group"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
     [alertController addAction:[UIAlertAction actionWithTitle:[BackgroundRandomAttribute content:StringFromActiveData(&mainRequirementValue)] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         //: NIMContactTeamSelectConfig *config = [[NIMContactTeamSelectConfig alloc] init];
         MessageConfig *config = [[MessageConfig alloc] init];
         //: config.teamType = NIMKitTeamTypeNomal;
         config.teamType = NIMKitTeamTypeNomal;
-        //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+        //: PushContactSelectViewController *vc = [[PushContactSelectViewController alloc] initWithConfig:config];
         SwitchlyViewController *vc = [[SwitchlyViewController alloc] initWithBarBottom:config];
         //: vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
         vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
@@ -134,13 +134,13 @@ ActiveData userStormMsg = (ActiveData){36, (Byte []){1, 100, 10, 71, 75, 64, 65,
         [vc metadata];
     //: }]];
     }]];
-    //: [alertController addAction:[UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"message_super_team"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    //: [alertController addAction:[UIAlertAction actionWithTitle:[PushLanguageManager getTextWithKey:@"message_super_team"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
     [alertController addAction:[UIAlertAction actionWithTitle:[BackgroundRandomAttribute content:StringFromActiveData(&user_cageFormat)] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         //: NIMContactTeamSelectConfig *config = [[NIMContactTeamSelectConfig alloc] init];
         MessageConfig *config = [[MessageConfig alloc] init];
         //: config.teamType = NIMKitTeamTypeSuper;
         config.teamType = NIMKitTeamTypeSuper;
-        //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+        //: PushContactSelectViewController *vc = [[PushContactSelectViewController alloc] initWithConfig:config];
         SwitchlyViewController *vc = [[SwitchlyViewController alloc] initWithBarBottom:config];
         //: vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
         vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
@@ -156,7 +156,7 @@ ActiveData userStormMsg = (ActiveData){36, (Byte []){1, 100, 10, 71, 75, 64, 65,
         [vc metadata];
     //: }]];
     }]];
-    //: [alertController addAction:[UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:nil]];
+    //: [alertController addAction:[UIAlertAction actionWithTitle:[PushLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:nil]];
     [alertController addAction:[UIAlertAction actionWithTitle:[BackgroundRandomAttribute content:StringFromActiveData(&showGovernShootFormat)] style:UIAlertActionStyleCancel handler:nil]];
     //: [fromVC presentViewController:alertController animated:YES completion:nil];
     [fromVC presentViewController:alertController animated:YES completion:nil];
@@ -169,7 +169,7 @@ ActiveData userStormMsg = (ActiveData){36, (Byte []){1, 100, 10, 71, 75, 64, 65,
     NSString *name;
     //: if (session.sessionType == NIMSessionTypeP2P) {
     if (session.sessionType == NIMSessionTypeP2P) {
-        //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+        //: PushKitInfoFetchOption *option = [[PushKitInfoFetchOption alloc] init];
         AttributeQuantityOption *option = [[AttributeQuantityOption alloc] init];
         //: option.session = session;
         option.session = session;

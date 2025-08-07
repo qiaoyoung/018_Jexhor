@@ -9,9 +9,9 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFQuickCommentCell.h"
+//: #import "PushQuickCommentCell.h"
 #import "CompartmentView.h"
-//: #import "FFFKitQuickCommentUtil.h"
+//: #import "PushKitQuickCommentUtil.h"
 #import "MakeUtil.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "InsertView+Secret.h"
@@ -22,7 +22,7 @@
 //: #import "UIColor+MyUserKit.h"
 #import "UIColor+Secret.h"
 
-//: @interface FFFQuickCommentCell ()
+//: @interface PushQuickCommentCell ()
 @interface CompartmentView ()
 
 //: @property (nonatomic, strong) M80AttributedLabel *textLabel;
@@ -33,7 +33,7 @@
 //: @end
 @end
 
-//: @implementation FFFQuickCommentCell
+//: @implementation PushQuickCommentCell
 @implementation CompartmentView
 
 
@@ -45,7 +45,7 @@
     //: if (self)
     if (self)
     {
-        //: _textLabel = [FFFKitQuickCommentUtil newCommentLabel];
+        //: _textLabel = [PushKitQuickCommentUtil newCommentLabel];
         _textLabel = [MakeUtil compartmentImage];
         //: [self.contentView addSubview:_textLabel];
         [self.contentView addSubview:_textLabel];
@@ -66,12 +66,12 @@
     return self;
 }
 
-//: - (void)refreshWithData:(NSArray *)comments model:(FFFMessageModel *)data
+//: - (void)refreshWithData:(NSArray *)comments model:(PushMessageModel *)data
 - (void)assemblageWith:(NSArray *)comments backgroundContent:(PurseModel *)data
 {
-    //: self.textLabel.textColor = data.shouldShowLeft ? [UIColor colorWithHex:0x000000 alpha:1] : [UIColor colorWithHex:0xFFFFFF alpha:1];
+    //: self.textLabel.textColor = data.shouldShowLeft ? [UIColor colorWithHex:0x000000 alpha:1] : [UIColor colorWithHex:0xFFFPush alpha:1];
     self.textLabel.textColor = data.shouldShowLeft ? [UIColor by:0x000000 data:1] : [UIColor by:0xFFFFFF data:1];
-    //: [self.textLabel nim_setText:[FFFKitQuickCommentUtil commentsContent:comments]];
+    //: [self.textLabel nim_setText:[PushKitQuickCommentUtil commentsContent:comments]];
     [self.textLabel viewTap:[MakeUtil image:comments]];
 }
 
