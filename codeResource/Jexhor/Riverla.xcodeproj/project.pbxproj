@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		03A4C9FF1AC2B79700E45E03 /* UIAlertView+BottomMagnitude.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A4C9FB1AC2B79700E45E03 /* UIAlertView+BottomMagnitude.m */; };
 		03A4CA001AC2B79700E45E03 /* UIActionSheet+BottomMagnitude.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A4C9FD1AC2B79700E45E03 /* UIActionSheet+BottomMagnitude.m */; };
-		04126DEB2DCC5B6A000E1081 /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 04126DE82DCC5B6A000E1081 /* NSArray+Safe.m */; };
-		04126DEC2DCC5B6A000E1081 /* NSMutableDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 04126DEA2DCC5B6A000E1081 /* NSMutableDictionary+Safe.m */; };
 		043B0B962D9B747400784741 /* VisualizationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043B0B862D9B747400784741 /* VisualizationView.m */; };
 		043B0B972D9B747400784741 /* SelfsameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043B0B902D9B747400784741 /* SelfsameView.m */; };
 		043B0B982D9B747400784741 /* RedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043B0B922D9B747400784741 /* RedView.m */; };
@@ -320,6 +318,8 @@
 		AEA87FE11A81CAD600ACC3BA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA87FE01A81CAD500ACC3BA /* AVFoundation.framework */; };
 		B1DE18B32E0E483700BD7B53 /* FrameworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DE18B22E0E483700BD7B53 /* FrameworkViewController.m */; };
 		B1E0D75A2E38A17C008BB11D /* SendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E0D7592E38A17C008BB11D /* SendViewController.m */; };
+		B1E95ACA2E44B7CC00A97A0D /* NSMutableDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E95AC92E44B7CC00A97A0D /* NSMutableDictionary+Safe.m */; };
+		B1E95ACB2E44B7CC00A97A0D /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E95AC72E44B7CC00A97A0D /* NSArray+Safe.m */; };
 		B1F189702E011C1100E24425 /* StableBehindSuper.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B1F1896F2E011C1100E24425 /* StableBehindSuper.bundle */; };
 		B1F189752E011C6E00E24425 /* ButtonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F189722E011C6E00E24425 /* ButtonManager.m */; };
 		B1F189762E011C6E00E24425 /* UIImage+Rf.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F189742E011C6E00E24425 /* UIImage+Rf.m */; };
@@ -486,10 +486,6 @@
 		03A4C9FC1AC2B79700E45E03 /* UIActionSheet+BottomMagnitude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+BottomMagnitude.h"; sourceTree = "<group>"; };
 		03A4C9FD1AC2B79700E45E03 /* UIActionSheet+BottomMagnitude.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+BottomMagnitude.m"; sourceTree = "<group>"; };
 		03A4C9FE1AC2B79700E45E03 /* UIAlertView+BottomMagnitude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+BottomMagnitude.h"; sourceTree = "<group>"; };
-		04126DE72DCC5B6A000E1081 /* NSArray+Safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Safe.h"; sourceTree = "<group>"; };
-		04126DE82DCC5B6A000E1081 /* NSArray+Safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Safe.m"; sourceTree = "<group>"; };
-		04126DE92DCC5B6A000E1081 /* NSMutableDictionary+Safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Safe.h"; sourceTree = "<group>"; };
-		04126DEA2DCC5B6A000E1081 /* NSMutableDictionary+Safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Safe.m"; sourceTree = "<group>"; };
 		043B0B832D9B747400784741 /* TidyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TidyView.h; sourceTree = "<group>"; };
 		043B0B842D9B747400784741 /* TidyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TidyView.m; sourceTree = "<group>"; };
 		043B0B852D9B747400784741 /* VisualizationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VisualizationView.h; sourceTree = "<group>"; };
@@ -1123,6 +1119,10 @@
 		B1DE18B22E0E483700BD7B53 /* FrameworkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrameworkViewController.m; sourceTree = "<group>"; };
 		B1E0D7582E38A17C008BB11D /* SendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SendViewController.h; sourceTree = "<group>"; };
 		B1E0D7592E38A17C008BB11D /* SendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SendViewController.m; sourceTree = "<group>"; };
+		B1E95AC62E44B7CC00A97A0D /* NSArray+Safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Safe.h"; sourceTree = "<group>"; };
+		B1E95AC72E44B7CC00A97A0D /* NSArray+Safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Safe.m"; sourceTree = "<group>"; };
+		B1E95AC82E44B7CC00A97A0D /* NSMutableDictionary+Safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Safe.h"; sourceTree = "<group>"; };
+		B1E95AC92E44B7CC00A97A0D /* NSMutableDictionary+Safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Safe.m"; sourceTree = "<group>"; };
 		B1F1896F2E011C1100E24425 /* StableBehindSuper.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = StableBehindSuper.bundle; sourceTree = "<group>"; };
 		B1F189712E011C6E00E24425 /* ButtonManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonManager.h; sourceTree = "<group>"; };
 		B1F189722E011C6E00E24425 /* ButtonManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonManager.m; sourceTree = "<group>"; };
@@ -2852,10 +2852,10 @@
 				61A8EF331BB67F0900033FB8 /* UIResponder+MessageNeed.m */,
 				839E2BCD2060F45C00EB1AA7 /* UITextView+Recent.h */,
 				839E2BCE2060F45C00EB1AA7 /* UITextView+Recent.m */,
-				04126DE72DCC5B6A000E1081 /* NSArray+Safe.h */,
-				04126DE82DCC5B6A000E1081 /* NSArray+Safe.m */,
-				04126DE92DCC5B6A000E1081 /* NSMutableDictionary+Safe.h */,
-				04126DEA2DCC5B6A000E1081 /* NSMutableDictionary+Safe.m */,
+				B1E95AC62E44B7CC00A97A0D /* NSArray+Safe.h */,
+				B1E95AC72E44B7CC00A97A0D /* NSArray+Safe.m */,
+				B1E95AC82E44B7CC00A97A0D /* NSMutableDictionary+Safe.h */,
+				B1E95AC92E44B7CC00A97A0D /* NSMutableDictionary+Safe.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -3700,6 +3700,8 @@
 				61E4719C1B7D9C8300F4A1BF /* DisplayAccountViewController.m in Sources */,
 				8351CB721E977D9000DF4866 /* BeView.m in Sources */,
 				61E4714F1B7D963E00F4A1BF /* WordViewController.m in Sources */,
+				B1E95ACA2E44B7CC00A97A0D /* NSMutableDictionary+Safe.m in Sources */,
+				B1E95ACB2E44B7CC00A97A0D /* NSArray+Safe.m in Sources */,
 				429D41E1299A79F500354206 /* WithUimanager.m in Sources */,
 				429D41C9299A79F500354206 /* RankView.m in Sources */,
 				61E4715C1B7D963E00F4A1BF /* LineView.m in Sources */,
@@ -4085,8 +4087,6 @@
 				429D41F7299A79F500354206 /* ComponentContentView.m in Sources */,
 				429D4190299A79F500354206 /* WithColorView.m in Sources */,
 				BCA3CB842C6063B8007C669F /* OpenView.m in Sources */,
-				04126DEB2DCC5B6A000E1081 /* NSArray+Safe.m in Sources */,
-				04126DEC2DCC5B6A000E1081 /* NSMutableDictionary+Safe.m in Sources */,
 				429D41D4299A79F500354206 /* ContentThreadTeam.m in Sources */,
 				429D4198299A79F500354206 /* TeamTing.m in Sources */,
 				B864E62D26E50DD9005B148F /* SVProgressHUD+ZC.m in Sources */,

@@ -181,20 +181,20 @@ Byte appRemoveValue[] = {56, 7, 48, 11, 194, 225, 157, 148, 193, 51, 218, 83, 11
     //: [[NIMSDK sharedSDK].loginManager addDelegate:self];
     [[NIMSDK sharedSDK].loginManager addDelegate:self];
 
-    //: extern NSString *const NIMKitTeamInfoHasUpdatedNotification;
-    extern NSString *const NIMKitTeamInfoHasUpdatedNotification;
-    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTeamInfoHasUpdatedNotification:) name:NIMKitTeamInfoHasUpdatedNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyses:) name:NIMKitTeamInfoHasUpdatedNotification object:nil];
+    //: extern NSString *const userFrameContent;
+    extern NSString *const userFrameContent;
+    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTeamInfoHasUpdatedNotification:) name:userFrameContent object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyses:) name:userFrameContent object:nil];
 
-    //: extern NSString *const NIMKitTeamMembersHasUpdatedNotification;
-    extern NSString *const NIMKitTeamMembersHasUpdatedNotification;
-    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTeamMembersHasUpdatedNotification:) name:NIMKitTeamMembersHasUpdatedNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(linkses:) name:NIMKitTeamMembersHasUpdatedNotification object:nil];
+    //: extern NSString *const mMessageData;
+    extern NSString *const mMessageData;
+    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTeamMembersHasUpdatedNotification:) name:mMessageData object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(linkses:) name:mMessageData object:nil];
 
-    //: extern NSString *const NIMKitUserInfoHasUpdatedNotification;
-    extern NSString *const NIMKitUserInfoHasUpdatedNotification;
-    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onUserInfoHasUpdatedNotification:) name:NIMKitUserInfoHasUpdatedNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fromBy:) name:NIMKitUserInfoHasUpdatedNotification object:nil];
+    //: extern NSString *const dream_versionData;
+    extern NSString *const dream_versionData;
+    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onUserInfoHasUpdatedNotification:) name:dream_versionData object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fromBy:) name:dream_versionData object:nil];
 
     //: [self setupSessions];
     [self forewordSessions];

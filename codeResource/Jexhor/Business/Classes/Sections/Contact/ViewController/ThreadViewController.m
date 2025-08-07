@@ -1653,7 +1653,7 @@ ContactInsertSearchDelegate> {
 
 }
 //: -(void)groupNotification{
--(void)bar{
+-(void)groupNotification{
     //: NTESSystemNotificationViewController *vc = [[NTESSystemNotificationViewController alloc] init];
     WashedViewController *vc = [[WashedViewController alloc] init];
     //: vc.filterType = @"2";

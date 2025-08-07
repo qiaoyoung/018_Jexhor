@@ -18,7 +18,7 @@
 @implementation NSObject (RecentName)
 
 //: - (void)setTyl_internalIdentifier:(NSString *)tyl_internalIdentifier{
-- (void)setTyl_internalIdentifier:(NSString *)RecentName{
+- (void)setRecentName:(NSString *)RecentName {
     //: objc_setAssociatedObject(self, @selector(tyl_internalIdentifier), tyl_internalIdentifier, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     objc_setAssociatedObject(self, @selector(RecentName), RecentName, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }

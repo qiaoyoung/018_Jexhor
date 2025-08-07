@@ -39,7 +39,7 @@ NS_ASSUME_NONNULL_BEGIN
 //: -(void)friendNotification;
 -(void)instanceWith;
 //: -(void)groupNotification;
--(void)idiom;
+-(void)groupNotification;
 //: -(void)deviceList;
 -(void)search;
 //: -(void)blackFriendList;

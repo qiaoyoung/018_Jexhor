@@ -371,7 +371,7 @@
             //: if (self.delegate && [self.delegate respondsToSelector:@selector(friendNotification)]) {
             if (self.delegate && [self.delegate respondsToSelector:@selector(instanceWith)]) {
                 //: [self.delegate groupNotification];
-                [self.delegate idiom];
+                [self.delegate groupNotification];
             }
         }
             //: break;

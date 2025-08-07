@@ -13,7 +13,7 @@
 //: @class NTESCustomNotificationDB;
 @class VideoMessageDb;
 
-//: extern NSString *NTESCustomNotificationCountChanged;
+//: extern NSString *appMakeTitle;
 extern NSString *appMakeTitle;
 
 //: @interface NTESNotificationCenter : NSObject

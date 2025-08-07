@@ -89,9 +89,9 @@
 //: #import "FFFChatUIManager.h"
 #import "WithUimanager.h"
 
-//: extern NSString *const NIMKitUserInfoHasUpdatedNotification;
+//: extern NSString *const dream_versionData;
 extern NSString *const dream_versionData;
-//: extern NSString *const NIMKitTeamInfoHasUpdatedNotification;
+//: extern NSString *const userFrameContent;
 extern NSString *const userFrameContent;
 
 
@@ -227,7 +227,7 @@ extern NSString *const userFrameContent;
         ColorInfo *info = [[ColorInfo alloc] init];
         //: info.session = session;
         info.session = session;
-        //: info.notificationName = NIMKitUserInfoHasUpdatedNotification;
+        //: info.notificationName = dream_versionData;
         info.notificationName = dream_versionData;
         //: [self.firer addFireInfo:info];
         [self.firer imageTemp:info];
@@ -255,7 +255,7 @@ extern NSString *const userFrameContent;
         //: info.session = session;
         info.session = session;
     }
-    //: info.notificationName = NIMKitTeamInfoHasUpdatedNotification;
+    //: info.notificationName = userFrameContent;
     info.notificationName = userFrameContent;
     //: [self.firer addFireInfo:info];
     [self.firer imageTemp:info];
@@ -282,10 +282,10 @@ extern NSString *const userFrameContent;
         //: info.session = session;
         info.session = session;
     }
-    //: extern NSString *NIMKitTeamMembersHasUpdatedNotification;
-    extern NSString *NIMKitTeamMembersHasUpdatedNotification;
-    //: info.notificationName = NIMKitTeamMembersHasUpdatedNotification;
-    info.notificationName = NIMKitTeamMembersHasUpdatedNotification;
+    //: extern NSString *mMessageData;
+    extern NSString *mMessageData;
+    //: info.notificationName = mMessageData;
+    info.notificationName = mMessageData;
     //: [self.firer addFireInfo:info];
     [self.firer imageTemp:info];
 }

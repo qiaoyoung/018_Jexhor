@@ -109,8 +109,8 @@
 //: #import "SSZipArchiveManager.h"
 #import "ButtonManager.h"
 
-//: NSString *NTESCustomNotificationCountChanged = @"NTESCustomNotificationCountChanged";
-NSString *appMakeTitle = @"NTESCustomNotificationCountChanged";
+//: NSString *appMakeTitle = @"appMakeTitle";
+NSString *appMakeTitle = @"appMakeTitle";
 
 //: @interface NTESNotificationCenter () <NIMSystemNotificationManagerDelegate,NIMChatManagerDelegate,NIMBroadcastManagerDelegate, NIMSignalManagerDelegate,NIMConversationManagerDelegate>
 @interface ClickCenter () <NIMSystemNotificationManagerDelegate,NIMChatManagerDelegate,NIMBroadcastManagerDelegate, NIMSignalManagerDelegate,NIMConversationManagerDelegate>
@@ -480,7 +480,7 @@ NSString *appMakeTitle = @"NTESCustomNotificationCountChanged";
                     }
                     //: if (notification.setting.shouldBeCounted) {
                     if (notification.setting.shouldBeCounted) {
-                        //: [[NSNotificationCenter defaultCenter] postNotificationName:NTESCustomNotificationCountChanged object:nil];
+                        //: [[NSNotificationCenter defaultCenter] postNotificationName:appMakeTitle object:nil];
                         [[NSNotificationCenter defaultCenter] postNotificationName:appMakeTitle object:nil];
                     }
                     //: NSString *content = [dict jsonString:@"content"];
