@@ -1,76 +1,52 @@
-// __DEBUG__
-// __CLOSE_PRINT__
 //
 //  NSMutableAttributedString+M80.m
-//  InsertView
+//  M80AttributedLabel
 //
 //  Created by amao on 13-8-31.
 //  Copyright (c) 2013年 www.xiangwangfeng.com. All rights reserved.
 //
 
-// __M_A_C_R_O__
-//: #import "NSMutableAttributedString+M80.h"
 #import "NSMutableAttributedString+M80.h"
 
-//: @implementation NSMutableAttributedString (M80)
 @implementation NSMutableAttributedString (M80)
 
-//: - (void)m80_setTextColor:(UIColor*)color
-- (void)frame:(UIColor*)color
+- (void)m80_setTextColor:(UIColor*)color
 {
-    //: [self m80_setTextColor:color range:NSMakeRange(0, [self length])];
-    [self complete:color view:NSMakeRange(0, [self length])];
+    [self m80_setTextColor:color range:NSMakeRange(0, [self length])];
 }
 
-//: - (void)m80_setTextColor:(UIColor*)color range:(NSRange)range
-- (void)complete:(UIColor*)color view:(NSRange)range
+- (void)m80_setTextColor:(UIColor*)color range:(NSRange)range
 {
-    //: [self addAttributes:@{NSForegroundColorAttributeName:color} range:range];
     [self addAttributes:@{NSForegroundColorAttributeName:color} range:range];
 }
 
 
-//: - (void)m80_setFont:(UIFont*)font
-- (void)cell:(UIFont*)font
+- (void)m80_setFont:(UIFont*)font
 {
-    //: [self m80_setFont:font range:NSMakeRange(0, [self length])];
-    [self pin:font extraDoing:NSMakeRange(0, [self length])];
+    [self m80_setFont:font range:NSMakeRange(0, [self length])];
 }
 
-//: - (void)m80_setFont:(UIFont*)font range:(NSRange)range
-- (void)pin:(UIFont*)font extraDoing:(NSRange)range
+- (void)m80_setFont:(UIFont*)font range:(NSRange)range
 {
-    //: if (font)
     if (font)
     {
-        //: [self addAttributes:@{NSFontAttributeName:font} range:range];
         [self addAttributes:@{NSFontAttributeName:font} range:range];
     }
 }
 
-//: - (void)m80_setUnderlineStyle:(CTUnderlineStyle)style
-- (void)mentalRepresentationTing:(CTUnderlineStyle)style
-                 //: modifier:(CTUnderlineStyleModifiers)modifier
-                 underline:(CTUnderlineStyleModifiers)modifier
+- (void)m80_setUnderlineStyle:(CTUnderlineStyle)style
+                 modifier:(CTUnderlineStyleModifiers)modifier
 {
-    //: [self m80_setUnderlineStyle:style
-    [self underline:style
-                   //: modifier:modifier
-                   color:modifier
-                      //: range:NSMakeRange(0, self.length)];
-                      spacePage:NSMakeRange(0, self.length)];
+    [self m80_setUnderlineStyle:style
+                   modifier:modifier
+                      range:NSMakeRange(0, self.length)];
 }
 
-//: - (void)m80_setUnderlineStyle:(CTUnderlineStyle)style
-- (void)underline:(CTUnderlineStyle)style
-                 //: modifier:(CTUnderlineStyleModifiers)modifier
-                 color:(CTUnderlineStyleModifiers)modifier
-                    //: range:(NSRange)range
-                    spacePage:(NSRange)range
+- (void)m80_setUnderlineStyle:(CTUnderlineStyle)style
+                 modifier:(CTUnderlineStyleModifiers)modifier
+                    range:(NSRange)range
 {
-    //: [self addAttributes:@{NSUnderlineStyleAttributeName :[NSNumber numberWithInt:(style|modifier)]} range:range];
     [self addAttributes:@{NSUnderlineStyleAttributeName :[NSNumber numberWithInt:(style|modifier)]} range:range];
 }
 
-//: @end
 @end

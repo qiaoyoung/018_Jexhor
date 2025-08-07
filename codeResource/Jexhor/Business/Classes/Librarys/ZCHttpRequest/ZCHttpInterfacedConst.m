@@ -1,5 +1,3 @@
-// __DEBUG__
-// __CLOSE_PRINT__
 //
 //  ZCHttpInterfacedConst.m
 //  NIM
@@ -8,24 +6,26 @@
 //  Copyright © 2022 Netease. All rights reserved.
 //
 
-// __M_A_C_R_O__
-//: #import "ZCHttpInterfacedConst.h"
 #import "ZCHttpInterfacedConst.h"
 
-//: NSString * RestApi(NSString *api) {
-NSString * drawRein(NSString *api) {
-    //: NSString* resultApi;
+NSString * RestApi(NSString *api) {
     NSString* resultApi;
-//    resultApi = [[AlongTemp sharedConfig].domainURL stringByAppendingString:api];
-    //: resultApi = [[[PushConfig sharedConfig] getCurrentDomain] stringByAppendingString:api];
-    resultApi = [[[AlongTemp frameConfig] cell] stringByAppendingString:api];
-    //: return resultApi;
+//    resultApi = [[FFFConfig sharedConfig].domainURL stringByAppendingString:api];
+    resultApi = [[[FFFConfig sharedConfig] getCurrentDomain] stringByAppendingString:api];
     return resultApi;
 }
+
+#if DevelopSever
+/** 接口前缀-开发服务器*/
+NSString *const kToken            = @"";
+NSString *const iphone_md5_key    = @"";
+NSString *const wss_msg_prefix    = @"wss://open.ihccs.com/wstest/myHandler/open?token=";
+
+#elif ProductSever
 /** 接口前缀-生产服务器*/
-//: NSString *const kToken = @"";
-NSString *const k_contactData = @"";
-//: NSString *const iphone_md5_key = @"";
-NSString *const m_oldPath = @"";
-//: NSString *const wss_msg_prefix = @"wss://open.ihccs.com/ws/myHandler/open?token=";
-NSString *const noti_cropMessage = @"wss://open.ihccs.com/ws/myHandler/open?token=";
+NSString *const kToken            = @"";
+NSString *const iphone_md5_key    = @"";
+NSString *const wss_msg_prefix    = @"wss://open.ihccs.com/ws/myHandler/open?token=";
+
+
+#endif
