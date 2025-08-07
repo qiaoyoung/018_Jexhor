@@ -16,13 +16,13 @@
 @protocol ToolTextEnablely <NSObject>
 
 //: - (NSString *)groupTitle;
-- (NSString *)view;
+- (NSString *)groupTitle;
 
 //: - (NSString *)memberId;
-- (NSString *)should;
+- (NSString *)memberId;
 
 //: - (NSString *)showName;
-- (NSString *)fullKey;
+- (NSString *)showName;
 
 //: - (NSString *)avatarUrlString;
 - (NSString *)tableTitle;
@@ -31,7 +31,7 @@
 - (UIImage *)custom;
 
 //: - (id)sortKey;
-- (id)sizeTitle;
+- (id)sortKey;
 
 //: @end
 @end

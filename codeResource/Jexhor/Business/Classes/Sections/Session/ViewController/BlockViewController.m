@@ -2175,7 +2175,7 @@ NeedNumbererval>
 //: #pragma mark - 菜单
 #pragma mark - 菜单
 //: - (void)onTapMenuItemReply:(FFFMediaItem *)item
-- (void)alongBlockSumerval:(RecordAlbumItem *)item
+- (void)onTapMenuItemReply:(RecordAlbumItem *)item
 {
     //: NIMMessage *menuMessage = [self messageForMenu];
     NIMMessage *menuMessage = [self messageForMenu];
@@ -2205,7 +2205,7 @@ NeedNumbererval>
 }
 
 //: - (void)onTapMenuItemForword:(FFFMediaItem *)item
-- (void)showForword:(RecordAlbumItem *)item
+- (void)onTapMenuItemForword:(RecordAlbumItem *)item
 {
     //: ZOMNForwardViewController *vc = [[ZOMNForwardViewController alloc]init];
     EventViewController *vc = [[EventViewController alloc]init];
@@ -2216,7 +2216,7 @@ NeedNumbererval>
 }
 
 //: - (void)onTapMenuItemMark:(FFFMediaItem *)item
-- (void)array:(RecordAlbumItem *)item
+- (void)onTapMenuItemMark:(RecordAlbumItem *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self messageForMenu];
@@ -2246,7 +2246,7 @@ NeedNumbererval>
 }
 
 //: - (void)onTapMenuItemPin:(FFFMediaItem *)item
-- (void)model:(RecordAlbumItem *)item
+- (void)onTapMenuItemPin:(RecordAlbumItem *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self messageForMenu];
@@ -2278,7 +2278,7 @@ NeedNumbererval>
 }
 
 //: - (void)onTapMenuItemUnpin:(FFFMediaItem *)item
-- (void)telegram:(RecordAlbumItem *)item
+- (void)onTapMenuItemUnpin:(RecordAlbumItem *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self messageForMenu];
@@ -2311,7 +2311,7 @@ NeedNumbererval>
 }
 
 //: - (void)onTapMenuItemRevoke:(FFFMediaItem *)item
-- (void)byLocation:(RecordAlbumItem *)item
+- (void)onTapMenuItemRevoke:(RecordAlbumItem *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self messageForMenu];
@@ -2361,7 +2361,7 @@ NeedNumbererval>
 
 
 //: - (void)onTapMenuItemReport:(FFFMediaItem *)item
-- (void)eventReport:(RecordAlbumItem *)item
+- (void)onTapMenuItemReport:(RecordAlbumItem *)item
 {
     //: [self.view addSubview:self.translateView];
     [self.view addSubview:self.translateView];
@@ -2370,7 +2370,7 @@ NeedNumbererval>
 }
 
 //: - (void)onTapMenuItemTranslation:(FFFMediaItem *)item
-- (void)userHandle:(RecordAlbumItem *)item
+- (void)onTapMenuItemTranslation:(RecordAlbumItem *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self messageForMenu];
@@ -2625,7 +2625,7 @@ NeedNumbererval>
 }
 
 //: - (void)onTapMenuItemDelete:(FFFMediaItem *)item
-- (void)menu:(RecordAlbumItem *)item
+- (void)onTapMenuItemDelete:(RecordAlbumItem *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self messageForMenu];
@@ -2672,14 +2672,14 @@ NeedNumbererval>
 }
 
 //: - (void)onTapMenuItemMutiSelect:(FFFMediaItem *)item
-- (void)success:(RecordAlbumItem *)item
+- (void)onTapMenuItemMutiSelect:(RecordAlbumItem *)item
 {
     //: [self switchUIWithSessionState:NIMKitSessionStateSelect];
     [self searchedPressed:NIMKitSessionStateSelect];
 }
 
 //: - (void)onTapMenuItemAudio2Text:(FFFMediaItem *)item
-- (void)key2text:(RecordAlbumItem *)item
+- (void)onTapMenuItemAudio2Text:(RecordAlbumItem *)item
 {
 
 }
@@ -2953,7 +2953,7 @@ NeedNumbererval>
 //: #pragma mark - Cell Actions
 #pragma mark - Cell Actions
 //: - (void)showImage:(NIMMessage *)message
-- (void)bottomImage:(NIMMessage *)message
+- (void)showImage:(NIMMessage *)message
 {
     //: NIMImageObject *object = message.messageObject;
     NIMImageObject *object = message.messageObject;
@@ -3001,7 +3001,7 @@ NeedNumbererval>
 }
 
 //: - (void)showVideo:(NIMMessage *)message
-- (void)start:(NIMMessage *)message
+- (void)showVideo:(NIMMessage *)message
 {
     //: NIMVideoObject *object = message.messageObject;
     NIMVideoObject *object = message.messageObject;
@@ -3043,7 +3043,7 @@ NeedNumbererval>
 }
 
 //: - (void)showCustom:(NIMMessage *)message
-- (void)teamCustom:(NIMMessage *)message
+- (void)showCustom:(NIMMessage *)message
 {
    //普通的自定义消息点击事件可以在这里做哦~
 

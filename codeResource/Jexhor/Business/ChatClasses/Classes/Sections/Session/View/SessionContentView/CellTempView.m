@@ -256,7 +256,7 @@ NSString *const dreamTapFormat = @"NIMTextMessageLabelLinkData";
                 //: self.textView.actionDelegate = vc;
                 self.textView.actionDelegate = vc;
                 //: self.textView.config = vc.sessionConfig;
-                self.textView.config = vc.image;
+                self.textView.config = vc.sessionConfig;
             }
         //: }];
         }];

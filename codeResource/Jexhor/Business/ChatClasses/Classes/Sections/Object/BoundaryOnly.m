@@ -86,7 +86,7 @@
 }
 
 //: - (void)reloadTable
-- (void)counterval
+- (void)reloadTable
 {
     //: [self.tableView reloadData];
     [self.tableView reloadData];

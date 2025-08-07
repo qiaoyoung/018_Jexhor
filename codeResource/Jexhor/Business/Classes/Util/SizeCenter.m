@@ -121,8 +121,8 @@
 //: #import "SSZipArchiveManager.h"
 #import "SharedContentView.h"
 
-//: NSString *NTESCustomNotificationCountChanged = @"NTESCustomNotificationCountChanged";
-NSString *m_versionQuickStr = @"NTESCustomNotificationCountChanged";
+//: NSString *m_versionQuickStr = @"m_versionQuickStr";
+NSString *m_versionQuickStr = @"m_versionQuickStr";
 
 //: @interface NTESNotificationCenter () <NIMSystemNotificationManagerDelegate,NIMChatManagerDelegate,NIMBroadcastManagerDelegate, NIMSignalManagerDelegate,NIMConversationManagerDelegate>
 @interface SizeCenter () <NIMSystemNotificationManagerDelegate,NIMChatManagerDelegate,NIMBroadcastManagerDelegate, NIMSignalManagerDelegate,NIMConversationManagerDelegate>
@@ -492,7 +492,7 @@ NSString *m_versionQuickStr = @"NTESCustomNotificationCountChanged";
                     }
                     //: if (notification.setting.shouldBeCounted) {
                     if (notification.setting.shouldBeCounted) {
-                        //: [[NSNotificationCenter defaultCenter] postNotificationName:NTESCustomNotificationCountChanged object:nil];
+                        //: [[NSNotificationCenter defaultCenter] postNotificationName:m_versionQuickStr object:nil];
                         [[NSNotificationCenter defaultCenter] postNotificationName:m_versionQuickStr object:nil];
                     }
                     //: NSString *content = [dict jsonString:@"content"];

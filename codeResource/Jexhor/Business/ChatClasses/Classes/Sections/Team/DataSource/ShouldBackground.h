@@ -173,7 +173,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (NIMTeam *)manager;
 
 //: - (NIMSession *)session;
-- (NIMSession *)birdSEyeView;
+- (NIMSession *)session;
 
 //: - (NSInteger)memberNumber;
 - (NSInteger)associate;

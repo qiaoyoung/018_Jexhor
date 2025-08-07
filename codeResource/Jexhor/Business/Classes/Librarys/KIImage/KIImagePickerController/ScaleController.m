@@ -251,7 +251,6 @@
     return _imagePickerController;
 }
 
-//: - (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
 - (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
     //: if (buttonIndex == 0) {
     if (buttonIndex == 0) {
@@ -422,9 +421,9 @@
 //: - (void)pickImage:(UIImage *)image {
 - (void)current:(UIImage *)image {
     //: if (self.delegate != nil && [self.delegate respondsToSelector:@selector(KIImagePickerController:didFinishPickImage:)]) {
-    if (self.delegate != nil && [self.delegate respondsToSelector:@selector(count:bubble:)]) {
+    if (self.delegate != nil && [self.delegate respondsToSelector:@selector(myCount:bubble:)]) {
         //: [self.delegate KIImagePickerController:self didFinishPickImage:image];
-        [self.delegate count:self bubble:image];
+        [self.delegate myCount:self bubble:image];
     }
     //: [self dismiss];
     [self generateStorage];

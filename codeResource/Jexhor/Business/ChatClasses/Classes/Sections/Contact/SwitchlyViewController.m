@@ -393,7 +393,7 @@ Byte mTerritoryName[] = {50, 31, 6, 239, 65, 81, 115, 100, 110, 101, 105, 114, 1
 
 
     //: if (self.config.showSelectHeaderview) {
-    if (self.config.heritage) {
+    if (self.config.showSelectHeaderview) {
 
         //: [self.view addSubview:self.setGroupnameView];
         [self.view addSubview:self.setGroupnameView];
@@ -588,7 +588,7 @@ Byte mTerritoryName[] = {50, 31, 6, 239, 65, 81, 115, 100, 110, 101, 105, 114, 1
     //: cell.accessoryBtn.hidden = NO;
     cell.accessoryBtn.hidden = NO;
     //: cell.accessoryBtn.selected = [_selectecContacts containsObject:[contactItem memberId]];
-    cell.accessoryBtn.selected = [_selectecContacts containsObject:[contactItem should]];
+    cell.accessoryBtn.selected = [_selectecContacts containsObject:[contactItem memberId]];
     //: [cell refreshItem:contactItem];
     [cell container:contactItem];
     //: return cell;
@@ -621,7 +621,7 @@ Byte mTerritoryName[] = {50, 31, 6, 239, 65, 81, 115, 100, 110, 101, 105, 114, 1
     id<ToolTextEnablely> member = arr[indexPath.row];
 
     //: NSString *memberId = [(id<NIMGroupMemberProtocol>)member memberId];
-    NSString *memberId = [(id<ToolTextEnablely>)member should];
+    NSString *memberId = [(id<ToolTextEnablely>)member memberId];
     //: FFFContactDataCell *cell = (FFFContactDataCell *)[tableView cellForRowAtIndexPath:indexPath];
     BackgroundViewCell *cell = (BackgroundViewCell *)[tableView cellForRowAtIndexPath:indexPath];
     //: FFFKitInfo *info;

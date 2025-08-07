@@ -18,7 +18,7 @@
 @implementation NSObject (Cover)
 
 //: - (void)setTyl_internalIdentifier:(NSString *)tyl_internalIdentifier{
-- (void)setTyl_internalIdentifier:(NSString *)Cover{
+- (void)setCover:(NSString *)Cover {
     //: objc_setAssociatedObject(self, @selector(tyl_internalIdentifier), tyl_internalIdentifier, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     objc_setAssociatedObject(self, @selector(Cover), Cover, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }

@@ -270,9 +270,9 @@ Byte notiInputData[] = {5, 7, 13, 130, 92, 71, 17, 31, 59, 210, 224, 237, 104, 5
 
 
     //: if (self.delegate && [self.delegate respondsToSelector:@selector(sliderWithIndex:)]) {
-    if (self.delegate && [self.delegate respondsToSelector:@selector(edges:)]) {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(sliderWithIndex:)]) {
         //: [self.delegate sliderWithIndex:sender.tag -200];
-        [self.delegate edges:sender.tag -200];
+        [self.delegate sliderWithIndex:sender.tag -200];
     }
 
 }
@@ -300,7 +300,7 @@ Byte notiInputData[] = {5, 7, 13, 130, 92, 71, 17, 31, 59, 210, 224, 237, 104, 5
             //: if (self.delegate && [self.delegate respondsToSelector:@selector(friendNotification)]) {
             if (self.delegate && [self.delegate respondsToSelector:@selector(sizeOn)]) {
                 //: [self.delegate groupNotification];
-                [self.delegate notification];
+                [self.delegate groupNotification];
             }
         }
             //: break;

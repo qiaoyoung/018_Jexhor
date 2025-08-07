@@ -145,7 +145,7 @@
  *  会话页详细配置
  */
 //: - (id<FFFSessionConfig>)sessionConfig;
-- (id<CreateTop>)image;
+- (id<CreateTop>)sessionConfig;
 
 
 //: #pragma mark - 消息接口

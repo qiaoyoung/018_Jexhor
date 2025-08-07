@@ -13,7 +13,7 @@
 #import "SizeSoulData.h"
 
 //: @interface NIMKitPair : NSObject
-@interface Pair : NSObject
+@interface MyUserPair : NSObject
 
 //: @property (nonatomic, strong) id first;
 @property (nonatomic, strong) id first;
@@ -24,7 +24,7 @@
 @end
 
 //: @implementation NIMKitPair
-@implementation Pair
+@implementation MyUserPair
 
 //: - (instancetype)initWithFirst:(id)first second:(id)second {
 - (instancetype)initWithName:(id)first with:(id)second {
@@ -101,12 +101,12 @@
     //: for (id<NIMGroupMemberProtocol>member in members) {
     for (id<ToolTextEnablely>member in members) {
         //: if ([[member memberId] isEqualToString:me]) {
-        if ([[member should] isEqualToString:me]) {
+        if ([[member memberId] isEqualToString:me]) {
             //: continue;
             continue;
         }
         //: NSString *groupTitle = [member groupTitle];
-        NSString *groupTitle = [member view];
+        NSString *groupTitle = [member groupTitle];
         //: NSMutableArray *groupedMembers = [tmp objectForKey:groupTitle];
         NSMutableArray *groupedMembers = [tmp objectForKey:groupTitle];
         //: if(!groupedMembers) {
@@ -140,7 +140,7 @@
                 [_groupTtiles addObject:@"#"];
             }
             //: [_groups addObject:[[NIMKitPair alloc] initWithFirst:groupTitle second:groupedMembers]];
-            [_groups addObject:[[Pair alloc] initWithName:groupTitle with:groupedMembers]];
+            [_groups addObject:[[MyUserPair alloc] initWithName:groupTitle with:groupedMembers]];
         }
     //: }];
     }];
@@ -155,7 +155,7 @@
         //: _specialMembers = specialMembers;
         _specialMembers = specialMembers;
         //: [_groups insertObject:[[NIMKitPair alloc] initWithFirst:@"$" second:specialMembers] atIndex:0];
-        [_groups insertObject:[[Pair alloc] initWithName:@"$" with:specialMembers] atIndex:0];
+        [_groups insertObject:[[MyUserPair alloc] initWithName:@"$" with:specialMembers] atIndex:0];
         //: [self sortGroupMember];
         [self offMember];
         //: [_groupTtiles insertObject:@"$" atIndex:0];
@@ -222,7 +222,7 @@
     //: if(groupIndex >= 0 && groupIndex < _groups.count) {
     if(groupIndex >= 0 && groupIndex < _groups.count) {
         //: NIMKitPair *pair = [_groups objectAtIndex:groupIndex];
-        Pair *pair = [_groups objectAtIndex:groupIndex];
+        MyUserPair *pair = [_groups objectAtIndex:groupIndex];
         //: return pair.second;
         return pair.second;
     }
@@ -245,7 +245,7 @@
     //: [_groupTtiles sortUsingComparator:_groupTitleComparator];
     [_groupTtiles sortUsingComparator:_groupTitleComparator];
     //: [_groups sortUsingComparator:^NSComparisonResult(NIMKitPair *pair1, NIMKitPair *pair2) {
-    [_groups sortUsingComparator:^NSComparisonResult(Pair *pair1, Pair *pair2) {
+    [_groups sortUsingComparator:^NSComparisonResult(MyUserPair *pair1, MyUserPair *pair2) {
         //: return _groupTitleComparator(pair1.first, pair2.first);
         return _groupTitleComparator(pair1.first, pair2.first);
     //: }];
@@ -256,13 +256,13 @@
 - (void)offMember
 {
     //: [_groups enumerateObjectsUsingBlock:^(NIMKitPair *obj, NSUInteger idx, BOOL *stop) {
-    [_groups enumerateObjectsUsingBlock:^(Pair *obj, NSUInteger idx, BOOL *stop) {
+    [_groups enumerateObjectsUsingBlock:^(MyUserPair *obj, NSUInteger idx, BOOL *stop) {
         //: NSMutableArray *groupedMembers = obj.second;
         NSMutableArray *groupedMembers = obj.second;
         //: [groupedMembers sortUsingComparator:^NSComparisonResult(id<NIMGroupMemberProtocol> member1, id<NIMGroupMemberProtocol> member2) {
         [groupedMembers sortUsingComparator:^NSComparisonResult(id<ToolTextEnablely> member1, id<ToolTextEnablely> member2) {
             //: return _groupMemberComparator([member1 sortKey], [member2 sortKey]);
-            return _groupMemberComparator([member1 sizeTitle], [member2 sizeTitle]);
+            return _groupMemberComparator([member1 sortKey], [member2 sortKey]);
         //: }];
         }];
     //: }];

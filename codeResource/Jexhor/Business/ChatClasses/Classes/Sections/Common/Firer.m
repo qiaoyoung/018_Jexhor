@@ -21,20 +21,20 @@ Byte dreamSeizeFormat[] = {50, 33, 54, 11, 165, 243, 214, 61, 9, 179, 224, 51, 5
 //: #import "FFFKitNotificationFirer.h"
 #import "Firer.h"
 
-//: NSString *const NIMKitUserInfoHasUpdatedNotification = @"NIMKitUserInfoHasUpdatedNotification";
-NSString *const k_contactPath = @"NIMKitUserInfoHasUpdatedNotification";
-//: NSString *const NIMKitTeamInfoHasUpdatedNotification = @"NIMKitTeamInfoHasUpdatedNotification";
-NSString *const k_frameStr = @"NIMKitTeamInfoHasUpdatedNotification";
+//: NSString *const k_contactPath = @"k_contactPath";
+NSString *const k_contactPath = @"k_contactPath";
+//: NSString *const k_frameStr = @"k_frameStr";
+NSString *const k_frameStr = @"k_frameStr";
 
 //: NSString *const NIMKitUserBlackListHasUpdatedNotification = @"NIMKitUserBlackListHasUpdatedNotification";
 NSString *const dream_contentName = @"NIMKitUserBlackListHasUpdatedNotification";
 //: NSString *const NIMKitUserMuteListHasUpdatedNotification = @"NIMKitUserMuteListHasUpdatedNotification";
 NSString *const kSubPath = @"NIMKitUserMuteListHasUpdatedNotification";
 
-//: NSString *const NIMKitTeamMembersHasUpdatedNotification = @"NIMKitTeamMembersHasUpdatedNotification";
-NSString *const main_buttonValueMsg = @"NIMKitTeamMembersHasUpdatedNotification";
+//: NSString *const main_buttonValueMsg = @"main_buttonValueMsg";
+NSString *const main_buttonValueMsg = @"main_buttonValueMsg";
 
-//: NSString *const FFFKitInfoKey = @"InfoId";
+//: NSString *const show_resultTouchCustomContent = @"InfoId";
 NSString *const show_resultTouchCustomContent = @"InfoId";
 
 //: @implementation FFFKitNotificationFirer
@@ -97,7 +97,7 @@ NSString *const show_resultTouchCustomContent = @"InfoId";
 
     //: for (NSString *notificationName in dict) {
     for (NSString *notificationName in dict) {
-        //: NSDictionary *userInfo = dict[notificationName]? @{ FFFKitInfoKey:dict[notificationName] } : nil;
+        //: NSDictionary *userInfo = dict[notificationName]? @{ show_resultTouchCustomContent:dict[notificationName] } : nil;
         NSDictionary *userInfo = dict[notificationName]? @{ show_resultTouchCustomContent:dict[notificationName] } : nil;
         //: [[NSNotificationCenter defaultCenter] postNotificationName:notificationName object:nil userInfo:userInfo];
         [[NSNotificationCenter defaultCenter] postNotificationName:notificationName object:nil userInfo:userInfo];

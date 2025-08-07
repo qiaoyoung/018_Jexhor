@@ -93,7 +93,7 @@ typedef struct {
 }
 
 //: - (NSString *)groupTitle{
-- (NSString *)view{
+- (NSString *)groupTitle{
     //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.teamName].capitalizedString;
     NSString *title = [[ViewCenter centerStage] premierCurrentDeadLetter:self.teamName].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
@@ -111,13 +111,13 @@ typedef struct {
 }
 
 //: - (NSString *)memberId{
-- (NSString *)should{
+- (NSString *)memberId{
     //: return self.teamId;
     return self.teamId;
 }
 
 //: - (id)sortKey{
-- (id)sizeTitle{
+- (id)sortKey{
     //: return [[FFFSpellingCenter sharedCenter] spellingForString:self.teamName].shortSpelling;
     return [[ViewCenter centerStage] total:self.teamName].shortSpelling;
 }
@@ -135,7 +135,7 @@ typedef struct {
 }
 
 //: - (NSString *)showName{
-- (NSString *)fullKey{
+- (NSString *)showName{
     //: return self.teamName;
     return self.teamName;
 }

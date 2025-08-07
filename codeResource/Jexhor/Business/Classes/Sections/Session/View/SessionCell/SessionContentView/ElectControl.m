@@ -59,7 +59,7 @@
     //: if ([attachment isKindOfClass:[NTESJanKenPonAttachment class]]) {
     if ([attachment isKindOfClass:[SizeAttachment class]]) {
         //: self.imageView.image = [attachment showCoverImage];
-        self.imageView.image = [attachment text];
+        self.imageView.image = [attachment showCoverImage];
         //: [self.imageView sizeToFit];
         [self.imageView sizeToFit];
     }

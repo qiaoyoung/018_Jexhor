@@ -16,11 +16,11 @@
 @protocol CentreProtocol <NSObject>
 
 //: - (NSString *)groupTitle;
-- (NSString *)policy;
+- (NSString *)groupTitle;
 //: - (NSString *)memberId;
-- (NSString *)examineed;
+- (NSString *)memberId;
 //: - (id)sortKey;
-- (id)key;
+- (id)sortKey;
 
 //: @end
 @end

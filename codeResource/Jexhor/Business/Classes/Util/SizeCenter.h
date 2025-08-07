@@ -13,7 +13,7 @@
 //: @class NTESCustomNotificationDB;
 @class BeforeDb;
 
-//: extern NSString *NTESCustomNotificationCountChanged;
+//: extern NSString *m_versionQuickStr;
 extern NSString *m_versionQuickStr;
 
 //: @interface NTESNotificationCenter : NSObject

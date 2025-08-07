@@ -78,7 +78,7 @@
     //: NIMSession *session = vc.session;
     NIMSession *session = vc.session;
     //: id<FFFSessionConfig> sessionConfig = vc.sessionConfig;
-    id<CreateTop> sessionConfig = vc.image;
+    id<CreateTop> sessionConfig = vc.sessionConfig;
     //: UITableView *tableView = vc.tableView;
     UITableView *tableView = vc.tableView;
     //: FFFInputView *inputView = vc.sessionInputView;
@@ -104,7 +104,7 @@
     _interactor.layout = layout;
 
     //: [layout setDelegate:_interactor];
-    [layout setDraft:_interactor];
+    [layout setDelegate:_interactor];
 
     //: _tableAdapter = [[FFFSessionTableAdapter alloc] init];
     _tableAdapter = [[TeamDataAdapter alloc] init];

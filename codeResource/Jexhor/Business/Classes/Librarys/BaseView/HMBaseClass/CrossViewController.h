@@ -73,7 +73,7 @@
  不重写：不会弹出无网络页面
  */
 //: - (BOOL)canShowNotNetView;
-- (BOOL)count;
+- (BOOL)canShowNotNetView;
 //: - (void)refrushWithNotNet;
 - (void)signNet;
 

@@ -481,7 +481,7 @@ dispatch_queue_t contextQueue()
         //: [self.dataSource refreshMessageModelShowSelect:(sessionState == NIMKitSessionStateSelect)];
         [self.dataSource independentKey:(sessionState == NIMKitSessionStateSelect)];
         //: [self.layout reloadTable];
-        [self.layout counterval];
+        [self.layout reloadTable];
         //: _sessionState = sessionState;
         _sessionState = sessionState;
     }
@@ -658,7 +658,7 @@ dispatch_queue_t contextQueue()
 }
 
 //: - (void)resetLayout
-- (void)info
+- (void)resetLayout
 {
     //: [self.layout resetLayout];
     [self.layout borderOf];
@@ -1046,10 +1046,10 @@ dispatch_queue_t contextQueue()
 - (void)menuAcross:(NSNotification *)notification {
     //: NSDictionary *userInfo = notification.userInfo;
     NSDictionary *userInfo = notification.userInfo;
-    //: extern NSString *FFFKitInfoKey;
-    extern NSString *FFFKitInfoKey;
-    //: NSArray *teamIds = userInfo[FFFKitInfoKey];
-    NSArray *teamIds = userInfo[FFFKitInfoKey];
+    //: extern NSString *show_resultTouchCustomContent;
+    extern NSString *show_resultTouchCustomContent;
+    //: NSArray *teamIds = userInfo[show_resultTouchCustomContent];
+    NSArray *teamIds = userInfo[show_resultTouchCustomContent];
     //: if ((self.session.sessionType == NIMSessionTypeTeam || self.session.sessionType == NIMSessionTypeSuperTeam)
     if ((self.session.sessionType == NIMSessionTypeTeam || self.session.sessionType == NIMSessionTypeSuperTeam)
         //: && ([teamIds containsObject:self.session.sessionId] || [teamIds containsObject:[NSNull null]])) {
@@ -1063,10 +1063,10 @@ dispatch_queue_t contextQueue()
 - (void)userred:(NSNotification *)notification {
     //: NSDictionary *userInfo = notification.userInfo;
     NSDictionary *userInfo = notification.userInfo;
-    //: extern NSString *FFFKitInfoKey;
-    extern NSString *FFFKitInfoKey;
-    //: NSArray *teamIds = userInfo[FFFKitInfoKey];
-    NSArray *teamIds = userInfo[FFFKitInfoKey];
+    //: extern NSString *show_resultTouchCustomContent;
+    extern NSString *show_resultTouchCustomContent;
+    //: NSArray *teamIds = userInfo[show_resultTouchCustomContent];
+    NSArray *teamIds = userInfo[show_resultTouchCustomContent];
 
     //: if ((self.session.sessionType == NIMSessionTypeTeam || self.session.sessionType == NIMSessionTypeSuperTeam)
     if ((self.session.sessionType == NIMSessionTypeTeam || self.session.sessionType == NIMSessionTypeSuperTeam)
@@ -1411,21 +1411,21 @@ dispatch_queue_t contextQueue()
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(commentActive:) name:UIApplicationDidBecomeActiveNotification object:nil];
     //: if (self.session.sessionType == NIMSessionTypeTeam || self.session.sessionType == NIMSessionTypeSuperTeam) {
     if (self.session.sessionType == NIMSessionTypeTeam || self.session.sessionType == NIMSessionTypeSuperTeam) {
-        //: extern NSString *const NIMKitTeamInfoHasUpdatedNotification;
-        extern NSString *const NIMKitTeamInfoHasUpdatedNotification;
-        //: extern NSString *const NIMKitTeamMembersHasUpdatedNotification;
-        extern NSString *const NIMKitTeamMembersHasUpdatedNotification;
+        //: extern NSString *const k_frameStr;
+        extern NSString *const k_frameStr;
+        //: extern NSString *const main_buttonValueMsg;
+        extern NSString *const main_buttonValueMsg;
 
-        //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTeamInfoHasUpdatedNotification:) name:NIMKitTeamInfoHasUpdatedNotification object:nil];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userred:) name:NIMKitTeamInfoHasUpdatedNotification object:nil];
-        //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTeamMembersHasUpdatedNotification:) name:NIMKitTeamMembersHasUpdatedNotification object:nil];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(menuAcross:) name:NIMKitTeamMembersHasUpdatedNotification object:nil];
+        //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTeamInfoHasUpdatedNotification:) name:k_frameStr object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userred:) name:k_frameStr object:nil];
+        //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTeamMembersHasUpdatedNotification:) name:main_buttonValueMsg object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(menuAcross:) name:main_buttonValueMsg object:nil];
     }
 
-    //: extern NSString *const NIMKitUserInfoHasUpdatedNotification;
-    extern NSString *const NIMKitUserInfoHasUpdatedNotification;
-    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onUserInfoHasUpdatedNotification:) name:NIMKitUserInfoHasUpdatedNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(lifelessed:) name:NIMKitUserInfoHasUpdatedNotification object:nil];
+    //: extern NSString *const k_contactPath;
+    extern NSString *const k_contactPath;
+    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onUserInfoHasUpdatedNotification:) name:k_contactPath object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(lifelessed:) name:k_contactPath object:nil];
 }
 
 //: - (void)removeListenner
@@ -2147,7 +2147,7 @@ dispatch_queue_t contextQueue()
     //: } else {
     } else {
         //: [self.layout reloadTable];
-        [self.layout counterval];
+        [self.layout reloadTable];
     }
 }
 

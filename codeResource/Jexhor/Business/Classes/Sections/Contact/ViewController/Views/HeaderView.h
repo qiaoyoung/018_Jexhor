@@ -39,7 +39,7 @@ NS_ASSUME_NONNULL_BEGIN
 //: -(void)friendNotification;
 -(void)sizeOn;
 //: -(void)groupNotification;
--(void)notification;
+-(void)groupNotification;
 //: -(void)deviceList;
 -(void)titleTap;
 //: -(void)blackFriendList;
@@ -52,7 +52,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)doingline;
 
 //: -(void)sliderWithIndex:(NSInteger)index;
--(void)edges:(NSInteger)index;
+-(void)sliderWithIndex:(NSInteger)index;
 
 //: @end
 @end

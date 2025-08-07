@@ -13,7 +13,7 @@
 #import <UIKit/UIKit.h>
 
 //: Class object_getClass(id object);
-Class borderClass(id object);
+Class object_getClass(id object);
 
 //: @protocol HMDatePickerViewDelegate;
 @protocol MessageTap;

@@ -90,7 +90,7 @@
 }
 
 //: - (NSString *)groupTitle {
-- (NSString *)by {
+- (NSString *)groupTitle{
     //: NSString *title = [[NTESSpellingCenter sharedCenter] firstLetter:self.info.showName].capitalizedString;
     NSString *title = [[BeforeCenter tint] phonation:self.info.showName].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
@@ -107,7 +107,7 @@
 }
 
 //: - (NSString *)userId{
-- (NSString *)overIndexView{
+- (NSString *)userId{
     //: return self.info.infoId;
     return self.info.infoId;
 }
@@ -125,7 +125,7 @@
 }
 
 //: - (NSString *)memberId{
-- (NSString *)button{
+- (NSString *)memberId{
     //: return self.info.infoId;
     return self.info.infoId;
 }
@@ -143,7 +143,7 @@
 }
 
 //: - (id)sortKey {
-- (id)imageContent {
+- (id)sortKey {
     //: return [[NTESSpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
     return [[BeforeCenter tint] unwelcome:self.info.showName].shortSpelling;
 }

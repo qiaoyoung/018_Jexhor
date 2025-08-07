@@ -60,7 +60,7 @@ typedef NS_ENUM(NSInteger,NTESCustomMessageType){
 - (NSString *)menuOn;
 
 //: - (UIImage *)showCoverImage;
-- (UIImage *)text;
+- (UIImage *)showCoverImage;
 
 //: - (BOOL)shouldShowAvatar;
 - (BOOL)avatar;

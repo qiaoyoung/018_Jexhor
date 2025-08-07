@@ -75,7 +75,7 @@
 @optional
 
 //: - (void)KIImagePickerController:(KIImagePickerController *)controller didFinishPickImage:(UIImage *)image;
-- (void)count:(ScaleController *)controller bubble:(UIImage *)image;
+- (void)myCount:(ScaleController *)controller bubble:(UIImage *)image;
 
 //: - (void)KIImagePickerController:(KIImagePickerController *)controller didSelectedOtherIndex:(NSUInteger)index;
 - (void)key:(ScaleController *)controller put:(NSUInteger)index;

@@ -36,7 +36,7 @@
 }
 
 //: - (NSString *)groupTitle {
-- (NSString *)view {
+- (NSString *)groupTitle {
     //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.info.showName].capitalizedString;
     NSString *title = [[ViewCenter centerStage] premierCurrentDeadLetter:self.info.showName].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
@@ -53,13 +53,13 @@
 }
 
 //: - (NSString *)memberId{
-- (NSString *)should{
+- (NSString *)memberId{
     //: return self.info.infoId;
     return self.info.infoId;
 }
 
 //: - (NSString *)showName{
-- (NSString *)fullKey{
+- (NSString *)showName{
     //: return self.info.showName;
     return self.info.showName;
 }
@@ -77,7 +77,7 @@
 }
 
 //: - (id)sortKey {
-- (id)sizeTitle {
+- (id)sortKey {
     //: return [[FFFSpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
     return [[ViewCenter centerStage] total:self.info.showName].shortSpelling;
 }

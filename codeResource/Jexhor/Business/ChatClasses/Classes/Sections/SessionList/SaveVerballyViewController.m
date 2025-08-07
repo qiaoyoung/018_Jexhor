@@ -287,20 +287,20 @@
     //: [[NIMSDK sharedSDK].loginManager addDelegate:self];
     [[NIMSDK sharedSDK].loginManager addDelegate:self];
 
-    //: extern NSString *const NIMKitTeamInfoHasUpdatedNotification;
-    extern NSString *const NIMKitTeamInfoHasUpdatedNotification;
-    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTeamInfoHasUpdatedNotification:) name:NIMKitTeamInfoHasUpdatedNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userred:) name:NIMKitTeamInfoHasUpdatedNotification object:nil];
+    //: extern NSString *const k_frameStr;
+    extern NSString *const k_frameStr;
+    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTeamInfoHasUpdatedNotification:) name:k_frameStr object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userred:) name:k_frameStr object:nil];
 
-    //: extern NSString *const NIMKitTeamMembersHasUpdatedNotification;
-    extern NSString *const NIMKitTeamMembersHasUpdatedNotification;
-    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTeamMembersHasUpdatedNotification:) name:NIMKitTeamMembersHasUpdatedNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(menuAcross:) name:NIMKitTeamMembersHasUpdatedNotification object:nil];
+    //: extern NSString *const main_buttonValueMsg;
+    extern NSString *const main_buttonValueMsg;
+    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTeamMembersHasUpdatedNotification:) name:main_buttonValueMsg object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(menuAcross:) name:main_buttonValueMsg object:nil];
 
-    //: extern NSString *const NIMKitUserInfoHasUpdatedNotification;
-    extern NSString *const NIMKitUserInfoHasUpdatedNotification;
-    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onUserInfoHasUpdatedNotification:) name:NIMKitUserInfoHasUpdatedNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(lifelessed:) name:NIMKitUserInfoHasUpdatedNotification object:nil];
+    //: extern NSString *const k_contactPath;
+    extern NSString *const k_contactPath;
+    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onUserInfoHasUpdatedNotification:) name:k_contactPath object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(lifelessed:) name:k_contactPath object:nil];
 
     //: [self setupSessions];
     [self salvage];

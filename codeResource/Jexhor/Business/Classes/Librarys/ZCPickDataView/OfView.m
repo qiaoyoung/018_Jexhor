@@ -264,7 +264,7 @@ Byte dream_statusName[] = {46, 5, 94, 8, 230, 178, 226, 142, 216, 198, 189, 161,
     //: self.delegate = delegate;
     self.delegate = delegate;
     //: delegateClass = object_getClass(delegate);
-    delegateClass = borderClass(delegate);
+    delegateClass = object_getClass(delegate);
 }
 
 //: - (void)datePickerValueChanged{
@@ -410,7 +410,7 @@ Byte dream_statusName[] = {46, 5, 94, 8, 230, 178, 226, 142, 216, 198, 189, 161,
 //: - (void)leftButtonClicked:(id)sender{
 - (void)scaled:(id)sender{
     //: Class currentClass = object_getClass(self.delegate);
-    Class currentClass = borderClass(self.delegate);
+    Class currentClass = object_getClass(self.delegate);
     //: if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(dismissDataPickerView)]) {
     if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(pickerState)]) {
         //: [self.delegate dismissDataPickerView];
@@ -434,7 +434,7 @@ Byte dream_statusName[] = {46, 5, 94, 8, 230, 178, 226, 142, 216, 198, 189, 161,
 //: - (void)rightButtonClicked:(id)sender{
 - (void)quicked:(id)sender{
     //: Class currentClass = object_getClass(self.delegate);
-    Class currentClass = borderClass(self.delegate);
+    Class currentClass = object_getClass(self.delegate);
     //: if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(dismissDataPickerView)]) {
     if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(pickerState)]) {
         //: [self.delegate dismissDataPickerView];

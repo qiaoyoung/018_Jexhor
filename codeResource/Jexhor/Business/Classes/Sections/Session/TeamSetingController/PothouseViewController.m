@@ -745,7 +745,7 @@ CompartmentVcdelegate,EasyLayDelegate,UINavigationControllerDelegate,UIImagePick
         //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
         AttributeQuantityOption *option = [[AttributeQuantityOption alloc] init];
         //: option.session = self.teamListManager.session;
-        option.session = self.teamListManager.birdSEyeView;
+        option.session = self.teamListManager.session;
         //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:obj.userId option:option];
         DataTeam *info = [[Secret highlight] infoAndStraddleOption:obj.userId item:option];
 
@@ -1551,7 +1551,7 @@ CompartmentVcdelegate,EasyLayDelegate,UINavigationControllerDelegate,UIImagePick
     //: NIMContactTeamMemberSelectConfig *config = [[NIMContactTeamMemberSelectConfig alloc] init];
     OfTo *config = [[OfTo alloc] init];
     //: config.session = self.teamListManager.session;
-    config.session = self.teamListManager.birdSEyeView;
+    config.session = self.teamListManager.session;
     //: config.teamType = NIMKitTeamTypeNomal;
     config.teamType = NIMKitTeamTypeNomal;
     //: config.teamId = self.teamListManager.team.teamId;
@@ -1588,7 +1588,7 @@ CompartmentVcdelegate,EasyLayDelegate,UINavigationControllerDelegate,UIImagePick
             //: options.removeOtherClients = YES;
             options.removeOtherClients = YES;
             //: [NIMSDK.sharedSDK.conversationManager deleteAllRemoteMessagesInSession:self.teamListManager.session options:options completion:^(NSError * _Nullable error) {
-            [NIMSDK.sharedSDK.conversationManager deleteAllRemoteMessagesInSession:self.teamListManager.birdSEyeView options:options completion:^(NSError * _Nullable error) {
+            [NIMSDK.sharedSDK.conversationManager deleteAllRemoteMessagesInSession:self.teamListManager.session options:options completion:^(NSError * _Nullable error) {
                 //: if (error) {
                 if (error) {
                     //: return;

@@ -331,7 +331,7 @@
 #pragma mark - 网络异常时调用此方法
 
 //: - (BOOL)canShowNotNetView{
-- (BOOL)count{
+- (BOOL)canShowNotNetView{
     //: return NO;
     return NO;
 }

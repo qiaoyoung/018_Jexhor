@@ -46,7 +46,7 @@
 }
 
 //: - (NSString *)groupTitle{
-- (NSString *)view{
+- (NSString *)groupTitle{
     //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.info.showName].capitalizedString;
     NSString *title = [[ViewCenter centerStage] premierCurrentDeadLetter:self.info.showName].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
@@ -63,19 +63,19 @@
 }
 
 //: - (NSString *)showName{
-- (NSString *)fullKey{
+- (NSString *)showName{
     //: return self.info.showName;
     return self.info.showName;
 }
 
 //: - (NSString *)memberId{
-- (NSString *)should{
+- (NSString *)memberId{
     //: return self.userId;
     return self.userId;
 }
 
 //: - (id)sortKey{
-- (id)sizeTitle{
+- (id)sortKey{
     //: return [[FFFSpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
     return [[ViewCenter centerStage] total:self.info.showName].shortSpelling;
 }
@@ -133,9 +133,9 @@
 }
 
 //: - (NSString *)groupTitle{
-- (NSString *)view{
+- (NSString *)groupTitle{
     //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.showName].capitalizedString;
-    NSString *title = [[ViewCenter centerStage] premierCurrentDeadLetter:self.fullKey].capitalizedString;
+    NSString *title = [[ViewCenter centerStage] premierCurrentDeadLetter:self.showName].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
     //: if (character >= 'A' && character <= 'Z') {
@@ -150,19 +150,19 @@
 }
 
 //: - (id)sortKey{
-- (id)sizeTitle{
+- (id)sortKey{
     //: return [[FFFSpellingCenter sharedCenter] spellingForString:self.showName].shortSpelling;
-    return [[ViewCenter centerStage] total:self.fullKey].shortSpelling;
+    return [[ViewCenter centerStage] total:self.showName].shortSpelling;
 }
 
 //: - (NSString *)showName{
-- (NSString *)fullKey{
+- (NSString *)showName{
     //: return self.info.showName;
     return self.info.showName;
 }
 
 //: - (NSString *)memberId{
-- (NSString *)should{
+- (NSString *)memberId{
     //: return self.userId;
     return self.userId;
 }
@@ -221,9 +221,9 @@
 }
 
 //: - (NSString *)groupTitle{
-- (NSString *)view{
+- (NSString *)groupTitle{
     //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.showName].capitalizedString;
-    NSString *title = [[ViewCenter centerStage] premierCurrentDeadLetter:self.fullKey].capitalizedString;
+    NSString *title = [[ViewCenter centerStage] premierCurrentDeadLetter:self.showName].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
     //: if (character >= 'A' && character <= 'Z') {
@@ -238,19 +238,19 @@
 }
 
 //: - (id)sortKey{
-- (id)sizeTitle{
+- (id)sortKey{
     //: return [[FFFSpellingCenter sharedCenter] spellingForString:[self showName]].shortSpelling;
-    return [[ViewCenter centerStage] total:[self fullKey]].shortSpelling;
+    return [[ViewCenter centerStage] total:[self showName]].shortSpelling;
 }
 
 //: - (NSString *)showName{
-- (NSString *)fullKey{
+- (NSString *)showName{
     //: return self.info.showName;
     return self.info.showName;
 }
 
 //: - (NSString *)memberId{
-- (NSString *)should{
+- (NSString *)memberId{
     //: return self.teamId;
     return self.teamId;
 }

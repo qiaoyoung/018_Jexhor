@@ -879,12 +879,6 @@ static dispatch_once_t appViewMsg;
             });
         }
     }
-
-    //: NSLog(@"KVO_AVPlayerItem_loadedTimeRanges: %d / %d\n",
-          //: bufferedDurationMilli,
-          bufferedDurationMilli,
-          //: (int)kMaxHighWaterMarkMilli);
-          (int)mainStrongIdent);
 }
 
 //拖动

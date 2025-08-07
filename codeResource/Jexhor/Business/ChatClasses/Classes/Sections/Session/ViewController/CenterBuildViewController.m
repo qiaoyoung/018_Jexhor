@@ -1027,7 +1027,7 @@
     if ([self classForefrontView])
     {
         //: self.sessionInputView = [[FFFInputView alloc] initWithFrame:CGRectMake(0, 0, self.view.nim_width,0) config:self.sessionConfig];
-        self.sessionInputView = [[MainContainerView alloc] initWithTitle:CGRectMake(0, 0, self.view.nim_width,0) emptySessionConfig:self.image];
+        self.sessionInputView = [[MainContainerView alloc] initWithTitle:CGRectMake(0, 0, self.view.nim_width,0) emptySessionConfig:self.sessionConfig];
         //: self.sessionInputView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
         self.sessionInputView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
         //: [self.sessionInputView setSession:self.session];
@@ -1115,7 +1115,7 @@
     [super viewDidLayoutSubviews];
 //    [self changeLeftBarBadge:self.conversationManager.allUnreadCount];
     //: [self.interactor resetLayout];
-    [self.interactor info];
+    [self.interactor resetLayout];
 }
 
 //: - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -2006,16 +2006,16 @@
     //: self.messageForMenu = nil;
     self.messageForMenu = nil;
     //: [self.interactor setReferenceMessage:nil];
-    [self.interactor setSpirogram:nil];
+    [self.interactor setReferenceMessage:nil];
 
     //: if ([self.sessionConfig respondsToSelector:@selector(clearThreadMessageAfterSent)])
-    if ([self.image respondsToSelector:@selector(nameView)])
+    if ([self.sessionConfig respondsToSelector:@selector(nameView)])
     {
         //: if ([self.sessionConfig clearThreadMessageAfterSent])
-        if ([self.image nameView])
+        if ([self.sessionConfig nameView])
         {
             //: [self.sessionConfig cleanThreadMessage];
-            [self.image event];
+            [self.sessionConfig event];
         }
     }
 }
@@ -2179,7 +2179,7 @@
     //: _messageForMenu = message;
     _messageForMenu = message;
     //: [self.interactor setReferenceMessage:message];
-    [self.interactor setSpirogram:message];
+    [self.interactor setReferenceMessage:message];
     //: if (![self becomeFirstResponder]) {
     if (![self becomeFirstResponder]) {
         //: handle = NO;
@@ -2208,7 +2208,7 @@
     //: _messageForMenu = message;
     _messageForMenu = message;
     //: [self.interactor setReferenceMessage:message];
-    [self.interactor setSpirogram:message];
+    [self.interactor setReferenceMessage:message];
 
     //: handle = [self shouldShowMenuByMessage:message];
     handle = [self backgroundSub:message];
@@ -2229,7 +2229,7 @@
     //: _messageForMenu = message;
     _messageForMenu = message;
     //: [self.interactor setReferenceMessage:message];
-    [self.interactor setSpirogram:message];
+    [self.interactor setReferenceMessage:message];
     //: if (![self becomeFirstResponder]) {
     if (![self becomeFirstResponder]) {
         //: handle = NO;
@@ -2250,10 +2250,10 @@
     //: BOOL disable = NO;
     BOOL disable = NO;
     //: if ([self.sessionConfig respondsToSelector:@selector(disableAudioPlayedStatusIcon)])
-    if ([self.image respondsToSelector:@selector(noIconRefer)])
+    if ([self.sessionConfig respondsToSelector:@selector(noIconRefer)])
     {
         //: disable = [self.sessionConfig disableAudioPlayedStatusIcon];
-        disable = [self.image noIconRefer];
+        disable = [self.sessionConfig noIconRefer];
     }
     //: return disable;
     return disable;
@@ -2320,7 +2320,7 @@
 //: #pragma mark - 配置项
 #pragma mark - 配置项
 //: - (id<FFFSessionConfig>)sessionConfig
-- (id<CreateTop>)image
+- (id<CreateTop>)sessionConfig
 {
     //: return nil; 
     return nil; //使用默认配置
@@ -2335,9 +2335,9 @@
     //: BOOL should = YES;
     BOOL should = YES;
     //: if ([self.sessionConfig respondsToSelector:@selector(disableReceiveNewMessages)]) {
-    if ([self.image respondsToSelector:@selector(quickReply)]) {
+    if ([self.sessionConfig respondsToSelector:@selector(quickReply)]) {
         //: should = ![self.sessionConfig disableReceiveNewMessages];
-        should = ![self.image quickReply];
+        should = ![self.sessionConfig quickReply];
     }
     //: return should;
     return should;
@@ -2352,9 +2352,9 @@
     //: BOOL should = YES;
     BOOL should = YES;
     //: if ([self.sessionConfig respondsToSelector:@selector(disableInputView)]) {
-    if ([self.image respondsToSelector:@selector(viewTing)]) {
+    if ([self.sessionConfig respondsToSelector:@selector(viewTing)]) {
         //: should = ![self.sessionConfig disableInputView];
-        should = ![self.image viewTing];
+        should = ![self.sessionConfig viewTing];
     }
     //: return should;
     return should;
@@ -2368,9 +2368,9 @@
     //: NIMAudioType type = NIMAudioTypeAAC;
     NIMAudioType type = NIMAudioTypeAAC;
     //: if ([self.sessionConfig respondsToSelector:@selector(recordType)]) {
-    if ([self.image respondsToSelector:@selector(commentMax)]) {
+    if ([self.sessionConfig respondsToSelector:@selector(commentMax)]) {
         //: type = [self.sessionConfig recordType];
-        type = [self.image commentMax];
+        type = [self.sessionConfig commentMax];
     }
     //: return type;
     return type;
@@ -2383,9 +2383,9 @@
     //: BOOL needProximityMonitor = YES;
     BOOL needProximityMonitor = YES;
     //: if ([self.sessionConfig respondsToSelector:@selector(disableProximityMonitor)]) {
-    if ([self.image respondsToSelector:@selector(doingSelected)]) {
+    if ([self.sessionConfig respondsToSelector:@selector(doingSelected)]) {
         //: needProximityMonitor = !self.sessionConfig.disableProximityMonitor;
-        needProximityMonitor = !self.image.doingSelected;
+        needProximityMonitor = !self.sessionConfig.doingSelected;
     }
     //: return needProximityMonitor;
     return needProximityMonitor;
@@ -2468,7 +2468,7 @@
 }
 
 //: - (void)onTapMenuItemCopy:(FFFMediaItem *)item
-- (void)telephoneMessage:(RecordAlbumItem *)item
+- (void)onTapMenuItemCopy:(RecordAlbumItem *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self messageForMenu];
@@ -3212,16 +3212,16 @@
     //: NSArray *items;
     NSArray *items;
     //: if (!self.sessionConfig)
-    if (!self.image)
+    if (!self.sessionConfig)
     {
         //: items = [[MyUserKit sharedKit].config defaultMenuItemsWithMessage:message];
         items = [[Secret highlight].config onMessage:message];
     }
     //: else if([self.sessionConfig respondsToSelector:@selector(menuItemsWithMessage:)])
-    else if([self.image respondsToSelector:@selector(completeMessage:)])
+    else if([self.sessionConfig respondsToSelector:@selector(completeMessage:)])
     {
         //: items = [self.sessionConfig menuItemsWithMessage:message];
-        items = [self.image completeMessage:message];
+        items = [self.sessionConfig completeMessage:message];
     }
 
     //: [items enumerateObjectsUsingBlock:^(FFFMediaItem *item, NSUInteger idx, BOOL *stop) {

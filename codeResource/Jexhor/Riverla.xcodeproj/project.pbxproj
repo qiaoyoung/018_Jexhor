@@ -2207,10 +2207,6 @@
 		42AC19F82A63ADC400BA1584 /* COKeychain */ = {
 			isa = PBXGroup;
 			children = (
-				04126DE72DCC5B6A000E1081 /* NSArray+Safe.h */,
-				04126DE82DCC5B6A000E1081 /* NSArray+Safe.m */,
-				04126DE92DCC5B6A000E1081 /* NSMutableDictionary+Safe.h */,
-				04126DEA2DCC5B6A000E1081 /* NSMutableDictionary+Safe.m */,
 				42AC19FA2A63ADC400BA1584 /* SAMKeychain.h */,
 				42AC19FC2A63ADC400BA1584 /* SAMKeychain.m */,
 				42AC19FB2A63ADC400BA1584 /* SAMKeychainQuery.h */,
@@ -3001,6 +2997,10 @@
 			children = (
 				B1E0D7582E38A17C008BB11D /* WithViewController.h */,
 				B1E0D7592E38A17C008BB11D /* WithViewController.m */,
+				04126DE72DCC5B6A000E1081 /* NSArray+Safe.h */,
+				04126DE82DCC5B6A000E1081 /* NSArray+Safe.m */,
+				04126DE92DCC5B6A000E1081 /* NSMutableDictionary+Safe.h */,
+				04126DEA2DCC5B6A000E1081 /* NSMutableDictionary+Safe.m */,
 			);
 			path = discorey;
 			sourceTree = "<group>";

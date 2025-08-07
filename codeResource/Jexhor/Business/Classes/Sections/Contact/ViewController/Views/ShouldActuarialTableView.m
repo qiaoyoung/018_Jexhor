@@ -217,9 +217,9 @@ typedef struct {
 //: - (void)refreshUser:(id<NIMGroupMemberProtocol>)member{
 - (void)project:(id<ToolTextEnablely>)member{
     //: self.titleLabel.text = member.showName;
-    self.titleLabel.text = member.fullKey;
+    self.titleLabel.text = member.showName;
     //: self.memberId = [member memberId];
-    self.memberId = [member should];
+    self.memberId = [member memberId];
     //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.memberId option:nil];
     DataTeam *info = [[Secret highlight] infoAndStraddleOption:self.memberId item:nil];
     //: NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;

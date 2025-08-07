@@ -179,9 +179,9 @@
 //: - (void)refreshItem:(id<NIMGroupMemberProtocol>)member {
 - (void)container:(id<ToolTextEnablely>)member {
     //: [self refreshTitle:member.showName];
-    [self sumernationality:member.fullKey];
+    [self sumernationality:member.showName];
     //: self.memberId = member.memberId;
-    self.memberId = member.should;
+    self.memberId = member.memberId;
     //: NSURL *url = member.avatarUrlString ? [NSURL URLWithString:member.avatarUrlString] : nil;
     NSURL *url = member.tableTitle ? [NSURL URLWithString:member.tableTitle] : nil;
     //: [_avatarImageView nim_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"head_default"] options:SDWebImageRetryFailed];
@@ -191,9 +191,9 @@
 //: - (void)refreshUser:(id<NIMGroupMemberProtocol>)member{
 - (void)message:(id<ToolTextEnablely>)member{
     //: [self refreshTitle:member.showName];
-    [self sumernationality:member.fullKey];
+    [self sumernationality:member.showName];
     //: self.memberId = [member memberId];
-    self.memberId = [member should];
+    self.memberId = [member memberId];
     //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.memberId option:nil];
     DataTeam *info = [[Secret highlight] infoAndStraddleOption:self.memberId item:nil];
     //: [self refreshAvatar:info];

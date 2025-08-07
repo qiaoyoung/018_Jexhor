@@ -320,7 +320,7 @@ Byte main_lemonKey[] = {3, 9, 82, 4, 27, 19, 28, 35, 13, 17, 29, 30, 39, 21};
         [selectedAllRangeButtons addObject:model];
 
         //: if (item.selctor == @selector(onTapMenuItemCopy:)) {
-        if (item.selctor == @selector(telephoneMessage:)) {
+        if (item.selctor == @selector(onTapMenuItemCopy:)) {
             //: [selectedPartRangeButtons addObject:model];
             [selectedPartRangeButtons addObject:model];
         }

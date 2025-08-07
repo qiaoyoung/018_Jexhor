@@ -31,8 +31,7 @@ static char showCurrentCommentId;
 }
 
 
-//: - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
-- (void)can_strong:(UIAlertView *)alertView anyQuantity:(NSInteger)buttonIndex
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
 {
     //: AlertBlock block = objc_getAssociatedObject(self, &kUIAlertViewBlockAddress);
     AlertBlock block = objc_getAssociatedObject(self, &showCurrentCommentId);

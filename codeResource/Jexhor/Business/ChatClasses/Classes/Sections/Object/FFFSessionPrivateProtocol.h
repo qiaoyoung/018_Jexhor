@@ -128,7 +128,7 @@
 - (void)need:(PurseModel *)model;
 
 //: - (void)reloadTable;
-- (void)counterval;
+- (void)reloadTable;
 
 //: - (void)resetLayout;
 - (void)borderOf;
@@ -137,7 +137,7 @@
 - (void)deceleration:(CGFloat)inputViewHeight;
 
 //: - (void)setDelegate:(id<NIMSessionLayoutDelegate>)delegate;
-- (void)setDraft:(id<TitleCover>)delegate;
+- (void)setDelegate:(id<TitleCover>)delegate;
 
 //: - (void)layoutAfterRefresh;
 - (void)after;

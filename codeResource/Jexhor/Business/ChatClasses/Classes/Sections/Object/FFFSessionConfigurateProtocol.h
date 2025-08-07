@@ -142,7 +142,7 @@ typedef NS_ENUM(NSUInteger, NIMKitSessionState) {
 //排版接口
 
 //: - (void)resetLayout;
-- (void)info;
+- (void)resetLayout;
 
 //: - (void)changeLayout:(CGFloat)inputHeight;
 - (void)system:(CGFloat)inputHeight;
@@ -182,7 +182,7 @@ typedef NS_ENUM(NSUInteger, NIMKitSessionState) {
 - (void)setColor:(NIMKitSessionState)sessionState;
 
 //: - (void)setReferenceMessage:(NIMMessage *)message;
-- (void)setSpirogram:(NIMMessage *)message;
+- (void)setReferenceMessage:(NIMMessage *)message;
 
 //: @end
 @end

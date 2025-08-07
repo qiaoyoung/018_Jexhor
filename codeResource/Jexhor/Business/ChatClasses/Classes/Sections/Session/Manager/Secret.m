@@ -88,9 +88,9 @@ typedef struct {
 //: #import "FFFChatUIManager.h"
 #import "TeamImageUimanager.h"
 
-//: extern NSString *const NIMKitUserInfoHasUpdatedNotification;
+//: extern NSString *const k_contactPath;
 extern NSString *const k_contactPath;
-//: extern NSString *const NIMKitTeamInfoHasUpdatedNotification;
+//: extern NSString *const k_frameStr;
 extern NSString *const k_frameStr;
 
 
@@ -226,7 +226,7 @@ extern NSString *const k_frameStr;
         JointMax *info = [[JointMax alloc] init];
         //: info.session = session;
         info.session = session;
-        //: info.notificationName = NIMKitUserInfoHasUpdatedNotification;
+        //: info.notificationName = k_contactPath;
         info.notificationName = k_contactPath;
         //: [self.firer addFireInfo:info];
         [self.firer textOf:info];
@@ -254,7 +254,7 @@ extern NSString *const k_frameStr;
         //: info.session = session;
         info.session = session;
     }
-    //: info.notificationName = NIMKitTeamInfoHasUpdatedNotification;
+    //: info.notificationName = k_frameStr;
     info.notificationName = k_frameStr;
     //: [self.firer addFireInfo:info];
     [self.firer textOf:info];
@@ -281,10 +281,10 @@ extern NSString *const k_frameStr;
         //: info.session = session;
         info.session = session;
     }
-    //: extern NSString *NIMKitTeamMembersHasUpdatedNotification;
-    extern NSString *NIMKitTeamMembersHasUpdatedNotification;
-    //: info.notificationName = NIMKitTeamMembersHasUpdatedNotification;
-    info.notificationName = NIMKitTeamMembersHasUpdatedNotification;
+    //: extern NSString *main_buttonValueMsg;
+    extern NSString *main_buttonValueMsg;
+    //: info.notificationName = main_buttonValueMsg;
+    info.notificationName = main_buttonValueMsg;
     //: [self.firer addFireInfo:info];
     [self.firer textOf:info];
 }
