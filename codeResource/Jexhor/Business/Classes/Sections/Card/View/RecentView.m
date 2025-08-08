@@ -251,7 +251,7 @@
         //: [self initUI];
         [self initBy];
 
-        //: self.selectButtons = @[[FFFLanguageManager getTextWithKey:@"report_reasons1"],[FFFLanguageManager getTextWithKey:@"report_reasons2"],[FFFLanguageManager getTextWithKey:@"report_reasons3"],[FFFLanguageManager getTextWithKey:@"report_reasons4"],[FFFLanguageManager getTextWithKey:@"report_reasons5"],[FFFLanguageManager getTextWithKey:@"report_reasons6"]];
+        //: self.selectButtons = @[[WorkLanguageManager getTextWithKey:@"report_reasons1"],[WorkLanguageManager getTextWithKey:@"report_reasons2"],[WorkLanguageManager getTextWithKey:@"report_reasons3"],[WorkLanguageManager getTextWithKey:@"report_reasons4"],[WorkLanguageManager getTextWithKey:@"report_reasons5"],[WorkLanguageManager getTextWithKey:@"report_reasons6"]];
         self.selectButtons = @[[InputRed preserve:[[PlaceTableData sharedInstance] noti_maxData]],[InputRed preserve:[[PlaceTableData sharedInstance] showSessionText]],[InputRed preserve:[[PlaceTableData sharedInstance] dream_tagValue]],[InputRed preserve:[[PlaceTableData sharedInstance] kViewFileName]],[InputRed preserve:[[PlaceTableData sharedInstance] dream_byData]],[InputRed preserve:[[PlaceTableData sharedInstance] mainRowData]]];
         //: self.index = 0;
         self.index = 0;
@@ -286,7 +286,7 @@
     labsub.textColor = [UIColor ground:[[PlaceTableData sharedInstance] noti_valueData]];
     //: labsub.numberOfLines = 0;
     labsub.numberOfLines = 0;
-    //: labsub.text = [FFFLanguageManager getTextWithKey:@"report_Tip"];
+    //: labsub.text = [WorkLanguageManager getTextWithKey:@"report_Tip"];
     labsub.text = [InputRed preserve:[[PlaceTableData sharedInstance] show_buttonValue]];
     //: [_box addSubview:labsub];
     [_box addSubview:labsub];
@@ -332,7 +332,7 @@
 //        _titleLabel.textAlignment = NSTextAlignmentCenter;
 //        _titleLabel.numberOfLines = 0;
 //        _titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"report_User"];
+        //: _titleLabel.text = [WorkLanguageManager getTextWithKey:@"report_User"];
         _titleLabel.text = [InputRed preserve:[[PlaceTableData sharedInstance] showSessionTitle]];
     }
     //: return _titleLabel;
@@ -369,7 +369,7 @@
         [Btn1 setImage:[UIImage imageNamed:[[PlaceTableData sharedInstance] notiAddText]] forState:UIControlStateNormal];
         //: [Btn1 setImage:[UIImage imageNamed:@"icon_accessory_selected"] forState:UIControlStateSelected];
         [Btn1 setImage:[UIImage imageNamed:[[PlaceTableData sharedInstance] kSizeName]] forState:UIControlStateSelected];
-        //: [Btn1 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons1"] forState:UIControlStateNormal];
+        //: [Btn1 setTitle:[WorkLanguageManager getTextWithKey:@"report_reasons1"] forState:UIControlStateNormal];
         [Btn1 setTitle:[InputRed preserve:[[PlaceTableData sharedInstance] noti_maxData]] forState:UIControlStateNormal];
         //: Btn1.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn1.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -396,7 +396,7 @@
         [Btn2 setImage:[UIImage imageNamed:[[PlaceTableData sharedInstance] notiAddText]] forState:UIControlStateNormal];
         //: [Btn2 setImage:[UIImage imageNamed:@"icon_accessory_selected"] forState:UIControlStateSelected];
         [Btn2 setImage:[UIImage imageNamed:[[PlaceTableData sharedInstance] kSizeName]] forState:UIControlStateSelected];
-        //: [Btn2 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons2"] forState:UIControlStateNormal];
+        //: [Btn2 setTitle:[WorkLanguageManager getTextWithKey:@"report_reasons2"] forState:UIControlStateNormal];
         [Btn2 setTitle:[InputRed preserve:[[PlaceTableData sharedInstance] showSessionText]] forState:UIControlStateNormal];
         //: Btn2.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn2.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -424,7 +424,7 @@
         [Btn3 setImage:[UIImage imageNamed:[[PlaceTableData sharedInstance] kSizeName]] forState:UIControlStateSelected];
         //: [_buttonBox addSubview:Btn3];
         [_buttonBox addSubview:Btn3];
-        //: [Btn3 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons3"] forState:UIControlStateNormal];
+        //: [Btn3 setTitle:[WorkLanguageManager getTextWithKey:@"report_reasons3"] forState:UIControlStateNormal];
         [Btn3 setTitle:[InputRed preserve:[[PlaceTableData sharedInstance] dream_tagValue]] forState:UIControlStateNormal];
         //: Btn3.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn3.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -450,7 +450,7 @@
         [Btn4 setImage:[UIImage imageNamed:[[PlaceTableData sharedInstance] kSizeName]] forState:UIControlStateSelected];
         //: [_buttonBox addSubview:Btn4];
         [_buttonBox addSubview:Btn4];
-        //: [Btn4 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons4"] forState:UIControlStateNormal];
+        //: [Btn4 setTitle:[WorkLanguageManager getTextWithKey:@"report_reasons4"] forState:UIControlStateNormal];
         [Btn4 setTitle:[InputRed preserve:[[PlaceTableData sharedInstance] kViewFileName]] forState:UIControlStateNormal];
         //: Btn4.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn4.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -476,7 +476,7 @@
         [Btn5 setImage:[UIImage imageNamed:[[PlaceTableData sharedInstance] kSizeName]] forState:UIControlStateSelected];
         //: [_buttonBox addSubview:Btn5];
         [_buttonBox addSubview:Btn5];
-        //: [Btn5 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons5"] forState:UIControlStateNormal];
+        //: [Btn5 setTitle:[WorkLanguageManager getTextWithKey:@"report_reasons5"] forState:UIControlStateNormal];
         [Btn5 setTitle:[InputRed preserve:[[PlaceTableData sharedInstance] dream_byData]] forState:UIControlStateNormal];
         //: Btn5.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn5.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -502,7 +502,7 @@
         [Btn6 setImage:[UIImage imageNamed:[[PlaceTableData sharedInstance] kSizeName]] forState:UIControlStateSelected];
         //: [_buttonBox addSubview:Btn6];
         [_buttonBox addSubview:Btn6];
-        //: [Btn6 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons6"] forState:UIControlStateNormal];
+        //: [Btn6 setTitle:[WorkLanguageManager getTextWithKey:@"report_reasons6"] forState:UIControlStateNormal];
         [Btn6 setTitle:[InputRed preserve:[[PlaceTableData sharedInstance] mainRowData]] forState:UIControlStateNormal];
         //: Btn6.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn6.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -533,7 +533,7 @@
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor ground:[[PlaceTableData sharedInstance] m_imageName]] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[InputRed preserve:[[PlaceTableData sharedInstance] dreamVideoText]] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -560,7 +560,7 @@
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[InputRed preserve:[[PlaceTableData sharedInstance] app_sessionName]] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#05D481"];
         _sureBtn.backgroundColor = [UIColor ground:[[PlaceTableData sharedInstance] main_scaleName]];

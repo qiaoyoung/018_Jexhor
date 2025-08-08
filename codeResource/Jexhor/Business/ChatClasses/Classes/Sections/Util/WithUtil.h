@@ -18,7 +18,7 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFMessageUtil : NSObject
+//: @interface WorkMessageUtil : NSObject
 @interface WithUtil : NSObject
 
 //: + (NSString *)messageContent:(NIMMessage*)message;

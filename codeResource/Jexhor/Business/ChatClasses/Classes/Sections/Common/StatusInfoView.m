@@ -64,15 +64,15 @@
 #pragma mark - ActinideData
 
 // __M_A_C_R_O__
-//: #import "FFFMemberGroupView.h"
+//: #import "WorkMemberGroupView.h"
 #import "StatusInfoView.h"
-//: #import "FFFCardHeaderCell.h"
+//: #import "WorkCardHeaderCell.h"
 #import "NameReusableView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFCardOperationItem.h"
+//: #import "WorkCardOperationItem.h"
 #import "ProviderItem.h"
-//: #import "FFFTeamCardMemberItem.h"
+//: #import "WorkTeamCardMemberItem.h"
 #import "MessageItem.h"
 
 //: @implementation NIMMemebrGroupData
@@ -98,10 +98,10 @@
 //: @end
 @end
 
-//: #pragma mark - FFFMemberGroupView
+//: #pragma mark - WorkMemberGroupView
 #pragma mark - StatusInfoView
 
-//: @interface FFFMemberGroupView()<UICollectionViewDataSource,UICollectionViewDelegate,FFFCardHeaderCellDelegate>
+//: @interface WorkMemberGroupView()<UICollectionViewDataSource,UICollectionViewDelegate,WorkCardHeaderCellDelegate>
 @interface StatusInfoView()<UICollectionViewDataSource,UICollectionViewDelegate,BottomSearchName>
 
 //: @property (nonatomic,strong) NSMutableArray *data;
@@ -113,7 +113,7 @@
 //: @end
 @end
 
-//: @implementation FFFMemberGroupView
+//: @implementation WorkMemberGroupView
 @implementation StatusInfoView
 
 //: - (instancetype)initWithFrame:(CGRect)frame{
@@ -224,7 +224,7 @@
 
 //: - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    //: FFFCardHeaderCell *cell;
+    //: WorkCardHeaderCell *cell;
     NameReusableView *cell;
     //: NIMMemebrGroupData *data = [self dataAtIndexPath:indexPath];
     ActinideData *data = [self send:indexPath];
@@ -253,9 +253,9 @@
     return self.data[index];
 }
 
-//: #pragma mark - FFFCardHeaderCellDelegate
+//: #pragma mark - WorkCardHeaderCellDelegate
 #pragma mark - BottomSearchName
-//: - (void)cellDidSelected:(FFFCardHeaderCell *)cell{
+//: - (void)cellDidSelected:(WorkCardHeaderCell *)cell{
 - (void)userDown:(NameReusableView *)cell{
     //: NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
     NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
@@ -272,7 +272,7 @@
     }
 }
 
-//: - (void)cellShouldBeRemoved:(FFFCardHeaderCell*)cell{
+//: - (void)cellShouldBeRemoved:(WorkCardHeaderCell*)cell{
 - (void)untilImage:(NameReusableView*)cell{
     //: NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
     NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
@@ -324,7 +324,7 @@
         _collectionView.delegate = self;
         //: _collectionView.dataSource = self;
         _collectionView.dataSource = self;
-        //: [_collectionView registerClass:[FFFCardHeaderCell class] forCellWithReuseIdentifier:@"collectionCell"];
+        //: [_collectionView registerClass:[WorkCardHeaderCell class] forCellWithReuseIdentifier:@"collectionCell"];
         [_collectionView registerClass:[NameReusableView class] forCellWithReuseIdentifier:[DomainNameData sharedInstance].dream_preventionTitle];
     }
     //: return _collectionView;
@@ -339,9 +339,9 @@
 
 //: #pragma mark - Private
 #pragma mark - Private
-//: - (FFFCardHeaderCell *)buildUserCell:(NIMMemebrGroupData *)data indexPath:(NSIndexPath *)indexPath{
+//: - (WorkCardHeaderCell *)buildUserCell:(NIMMemebrGroupData *)data indexPath:(NSIndexPath *)indexPath{
 - (NameReusableView *)input:(ActinideData *)data title:(NSIndexPath *)indexPath{
-    //: FFFCardHeaderCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell" forIndexPath:indexPath];
+    //: WorkCardHeaderCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell" forIndexPath:indexPath];
     NameReusableView *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:[DomainNameData sharedInstance].dream_preventionTitle forIndexPath:indexPath];
     //: NIMCardMemberItem *item = [[NIMCardMemberItem alloc] init];
     MinorLeagueTeamTing *item = [[MinorLeagueTeamTing alloc] init];
@@ -356,11 +356,11 @@
     return cell;
 }
 
-//: - (FFFCardHeaderCell *)buildOperatorCell:(NIMKitCardHeaderOpeator)operator indexPath:(NSIndexPath *)indexPath{
+//: - (WorkCardHeaderCell *)buildOperatorCell:(NIMKitCardHeaderOpeator)operator indexPath:(NSIndexPath *)indexPath{
 - (NameReusableView *)graduatedTable:(NIMKitCardHeaderOpeator)operator content:(NSIndexPath *)indexPath{
-    //: FFFCardHeaderCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell" forIndexPath:indexPath];
+    //: WorkCardHeaderCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell" forIndexPath:indexPath];
     NameReusableView *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:[DomainNameData sharedInstance].dream_preventionTitle forIndexPath:indexPath];
-    //: FFFCardOperationItem *item = [[FFFCardOperationItem alloc] initWithOperation:operator];
+    //: WorkCardOperationItem *item = [[WorkCardOperationItem alloc] initWithOperation:operator];
     ProviderItem *item = [[ProviderItem alloc] initWithViewRecord:operator];
     //: if (self.operatorTitle[@(operator)]) {
     if (self.operatorTitle[@(operator)]) {

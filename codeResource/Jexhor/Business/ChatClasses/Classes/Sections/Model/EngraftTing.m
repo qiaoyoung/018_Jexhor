@@ -9,14 +9,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTimestampModel.h"
+//: #import "WorkTimestampModel.h"
 #import "EngraftTing.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "VideoTextView+MessageContent.h"
-//: #import "FFFKitUtil.h"
+//: #import "WorkKitUtil.h"
 #import "WantUtil.h"
 
-//: @implementation FFFTimestampModel
+//: @implementation WorkTimestampModel
 @implementation EngraftTing
 
 //: - (instancetype)init{

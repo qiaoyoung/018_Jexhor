@@ -64,7 +64,7 @@ Byte mainAgainstCrowdedViewValue[] = {65, 13, 8, 127, 172, 206, 17, 177, 103, 98
 //: message_remark_name
 Byte show_thanTitle[] = {78, 19, 11, 30, 93, 126, 113, 169, 38, 46, 116, 101, 109, 97, 110, 95, 107, 114, 97, 109, 101, 114, 95, 101, 103, 97, 115, 115, 101, 109, 82};
 
-//: #ffffff
+//: #fffWork
 Byte mainViseValue[] = {69, 7, 3, 102, 102, 102, 102, 102, 102, 35, 102};
 
 //: #F6F7FA
@@ -111,34 +111,34 @@ Byte dreamAddName[] = {6, 4, 5, 226, 32, 101, 100, 111, 99, 217};
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamMemberCardViewController.h"
+//: #import "WorkTeamMemberCardViewController.h"
 #import "SodalistViewController.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
-//: #import "FFFCommonTableDelegate.h"
+//: #import "WorkCommonTableData.h"
+#import "WorkCommonTableData.h"
+//: #import "WorkCommonTableDelegate.h"
 #import "TableDelegate.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WorkAvatarImageView.h"
 #import "ButtonControl.h"
-//: #import "FFFTeamCardMemberItem.h"
+//: #import "WorkTeamCardMemberItem.h"
 #import "MessageItem.h"
-//: #import "FFFKitUtil.h"
+//: #import "WorkKitUtil.h"
 #import "WantUtil.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "WorkKitDependency.h"
+#import "WorkKitDependency.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
 //: #import "ZMONSetGroupNickNameView.h"
 #import "ActivityView.h"
-//: #import "FFFKitColorButtonCell.h"
+//: #import "WorkKitColorButtonCell.h"
 #import "WithInfoView.h"
-//: #import "FFFKitSwitcherCell.h"
+//: #import "WorkKitSwitcherCell.h"
 #import "CellItemView.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WorkKitInfoFetchOption.h"
 #import "RangeOption.h"
-//: #import "FFFTeamHelper.h"
+//: #import "WorkTeamHelper.h"
 #import "NameSendStyle.h"
 
-//: @interface FFFTeamMemberCardViewController ()<NIMUserManagerDelegate>
+//: @interface WorkTeamMemberCardViewController ()<NIMUserManagerDelegate>
 @interface SodalistViewController ()<NIMUserManagerDelegate>
 
 //: @property (nonatomic, strong) ZMONSetGroupNickNameView *groupNickNameView;
@@ -147,10 +147,10 @@ Byte dreamAddName[] = {6, 4, 5, 226, 32, 101, 100, 111, 99, 217};
 //: @property (nonatomic,strong) NIMUser *user;
 @property (nonatomic,strong) NIMUser *user;
 
-//: @property (nonatomic,strong) FFFCommonTableDelegate *delegator;
+//: @property (nonatomic,strong) WorkCommonTableDelegate *delegator;
 @property (nonatomic,strong) TableDelegate *delegator;
 
-//: @property (nonatomic,weak) id <FFFTeamMemberListDataSource> dataSource;
+//: @property (nonatomic,weak) id <WorkTeamMemberListDataSource> dataSource;
 @property (nonatomic,weak) id <ColorActionClean> dataSource;
 
 //: @property (nonatomic,strong) NSArray *data;
@@ -205,7 +205,7 @@ Byte dreamAddName[] = {6, 4, 5, 226, 32, 101, 100, 111, 99, 217};
 //: @end
 @end
 
-//: @implementation FFFTeamMemberCardViewController
+//: @implementation WorkTeamMemberCardViewController
 @implementation SodalistViewController
 
 //: - (void)dealloc {
@@ -353,11 +353,11 @@ Byte dreamAddName[] = {6, 4, 5, 226, 32, 101, 100, 111, 99, 217};
         NSString *msg = nil;
         //: if (!error) {
         if (!error) {
-            //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+            //: msg = [WorkLanguageManager getTextWithKey:@"modify_activity_modify_success"];
             msg = [InputRed preserve:StringFromMustData(notiDisableName)];
         //: }else{
         }else{
-            //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+            //: msg = [WorkLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
             msg = [InputRed preserve:StringFromMustData(kHandleFortunateName)];
             //: switcher.on = !mute;
             switcher.on = !mute;
@@ -550,7 +550,7 @@ Byte dreamAddName[] = {6, 4, 5, 226, 32, 101, 100, 111, 99, 217};
         self.labTitleRemark.font = [UIFont systemFontOfSize:14.f];
         //: self.labTitleRemark.textColor = [UIColor colorWithHexString:@"#2C3042"];
         self.labTitleRemark.textColor = [UIColor ground:StringFromMustData(kByWeekData)];
-        //: self.labTitleRemark.text = [FFFLanguageManager getTextWithKey:@"message_remark_name"];
+        //: self.labTitleRemark.text = [WorkLanguageManager getTextWithKey:@"message_remark_name"];
         self.labTitleRemark.text = [InputRed preserve:StringFromMustData(show_thanTitle)];
         //: [nameView addSubview:self.labTitleRemark];
         [nameView addSubview:self.labTitleRemark];
@@ -593,7 +593,7 @@ Byte dreamAddName[] = {6, 4, 5, 226, 32, 101, 100, 111, 99, 217};
         lab2.font = [UIFont systemFontOfSize:14];
         //: lab2.textColor = [UIColor colorWithHexString:@"#2C3042"];
         lab2.textColor = [UIColor ground:StringFromMustData(kByWeekData)];
-        //: lab2.text = [FFFLanguageManager getTextWithKey:@"activity_group_member_info2_shenfen"];
+        //: lab2.text = [WorkLanguageManager getTextWithKey:@"activity_group_member_info2_shenfen"];
         lab2.text = [InputRed preserve:StringFromMustData(k_weekContent)];
         //: [box2 addSubview:lab2];
         [box2 addSubview:lab2];
@@ -603,7 +603,7 @@ Byte dreamAddName[] = {6, 4, 5, 226, 32, 101, 100, 111, 99, 217};
         sublab2.font = [UIFont systemFontOfSize:12];
         //: sublab2.textColor = [UIColor colorWithHexString:@"#05D481"];
         sublab2.textColor = [UIColor ground:StringFromMustData(kIllegalData)];
-        //: sublab2.text = [FFFTeamHelper memberTypeText:self.member.type];
+        //: sublab2.text = [WorkTeamHelper memberTypeText:self.member.type];
         sublab2.text = [NameSendStyle name:self.member.type];
         //: [box2 addSubview:sublab2];
         [box2 addSubview:sublab2];
@@ -636,7 +636,7 @@ Byte dreamAddName[] = {6, 4, 5, 226, 32, 101, 100, 111, 99, 217};
         lab3.font = [UIFont systemFontOfSize:14];
         //: lab3.textColor = [UIColor colorWithHexString:@"#2C3042"];
         lab3.textColor = [UIColor ground:StringFromMustData(kByWeekData)];
-        //: lab3.text = [FFFLanguageManager getTextWithKey:@"activity_group_member_info2_inviter"];
+        //: lab3.text = [WorkLanguageManager getTextWithKey:@"activity_group_member_info2_inviter"];
         lab3.text = [InputRed preserve:StringFromMustData(app_drugText)];
         //: [box3 addSubview:lab3];
         [box3 addSubview:lab3];
@@ -679,7 +679,7 @@ Byte dreamAddName[] = {6, 4, 5, 226, 32, 101, 100, 111, 99, 217};
         lab4.font = [UIFont systemFontOfSize:14];
         //: lab4.textColor = [UIColor colorWithHexString:@"#2C3042"];
         lab4.textColor = [UIColor ground:StringFromMustData(kByWeekData)];
-        //: lab4.text = [FFFLanguageManager getTextWithKey:@"group_member_info_activity_mute_msg"];
+        //: lab4.text = [WorkLanguageManager getTextWithKey:@"group_member_info_activity_mute_msg"];
         lab4.text = [InputRed preserve:StringFromMustData(user_scaleContent)];
         //: [box4 addSubview:lab4];
         [box4 addSubview:lab4];
@@ -695,7 +695,7 @@ Byte dreamAddName[] = {6, 4, 5, 226, 32, 101, 100, 111, 99, 217};
         [box4 addSubview:pushSwitch];
 
 
-        //: BOOL canEdit = [FFFKitUtil canEditTeamInfo:self.teamListManager.myTeamInfo];
+        //: BOOL canEdit = [WorkKitUtil canEditTeamInfo:self.teamListManager.myTeamInfo];
         BOOL canEdit = [WantUtil random:self.teamListManager.myTeamInfo];
         //: if(canEdit){
         if(canEdit){
@@ -711,7 +711,7 @@ Byte dreamAddName[] = {6, 4, 5, 226, 32, 101, 100, 111, 99, 217};
             [self.btnDelete setTitle:StringFromMustData(main_messageData).titleBy forState:UIControlStateNormal];
             //: [self.btnDelete addTarget:self action:@selector(removeMember) forControlEvents:UIControlEventTouchUpInside];
             [self.btnDelete addTarget:self action:@selector(customObject) forControlEvents:UIControlEventTouchUpInside];
-            //: self.btnDelete.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+            //: self.btnDelete.backgroundColor = [UIColor colorWithHexString:@"#fffWork"];
             self.btnDelete.backgroundColor = [UIColor ground:StringFromMustData(mainViseValue)];
             //: self.btnDelete.layer.borderWidth = 1;
             self.btnDelete.layer.borderWidth = 1;

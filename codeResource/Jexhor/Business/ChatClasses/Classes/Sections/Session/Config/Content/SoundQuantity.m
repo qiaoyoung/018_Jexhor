@@ -73,18 +73,18 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFNotificationContentConfig.h"
+//: #import "WorkNotificationContentConfig.h"
 #import "SoundQuantity.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "VideoTextView+MessageContent.h"
-//: #import "FFFKitUtil.h"
+//: #import "WorkKitUtil.h"
 #import "WantUtil.h"
-//: #import "FFFUnsupportContentConfig.h"
+//: #import "WorkUnsupportContentConfig.h"
 #import "ContentBottomConfig.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
 
-//: @implementation FFFNotificationContentConfig
+//: @implementation WorkNotificationContentConfig
 @implementation SoundQuantity
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
 - (CGSize)refer:(CGFloat)cellWidth componentPart:(NIMMessage *)message
@@ -110,7 +110,7 @@
             CGFloat TeamNotificationMessageWidth = cellWidth;
             //: UILabel *label = [[UILabel alloc] init];
             UILabel *label = [[UILabel alloc] init];
-            //: label.text = [FFFKitUtil messageTipContent:message];
+            //: label.text = [WorkKitUtil messageTipContent:message];
             label.text = [WantUtil tingAcross:message];
             //: label.font = [[MyUserKit sharedKit].config setting:message].font;
             label.font = [[MessageContent secretResolution].config ofSetting:message].font;
@@ -135,7 +135,7 @@
             label.autoDetectLinks = NO;
             //: label.font = [[MyUserKit sharedKit].config setting:message].font;
             label.font = [[MessageContent secretResolution].config ofSetting:message].font;
-            //: NSString *text = [FFFKitUtil messageTipContent:message];
+            //: NSString *text = [WorkKitUtil messageTipContent:message];
             NSString *text = [WantUtil tingAcross:message];
             //: [label nim_setText:text];
             [label infoCookie:text];
@@ -156,7 +156,7 @@
         //: default:
         default:
         {
-            //: FFFUnsupportContentConfig *config = [[FFFUnsupportContentConfig alloc] init];
+            //: WorkUnsupportContentConfig *config = [[WorkUnsupportContentConfig alloc] init];
             ContentBottomConfig *config = [[ContentBottomConfig alloc] init];
             //: contentSize = [config contentSize:cellWidth message:message];
             contentSize = [config refer:cellWidth componentPart:message];
@@ -186,15 +186,15 @@
         case NIMNotificationTypeSuperTeam:
         //: case NIMNotificationTypeChatroom:
         case NIMNotificationTypeChatroom:
-            //: return @"FFFSessionNotificationContentView";
+            //: return @"WorkSessionNotificationContentView";
             return @"SoundView";
         //: case NIMNotificationTypeNetCall:
         case NIMNotificationTypeNetCall:
-            //: return @"FFFSessionNetChatNotifyContentView";
+            //: return @"WorkSessionNetChatNotifyContentView";
             return @"MessageFactorView";
         //: case NIMNotificationTypeUnsupport:
         case NIMNotificationTypeUnsupport:
-            //: return @"FFFSessionUnknowContentView";
+            //: return @"WorkSessionUnknowContentView";
             return @"ManagingDirectorContentView";
         //: default:
         default:

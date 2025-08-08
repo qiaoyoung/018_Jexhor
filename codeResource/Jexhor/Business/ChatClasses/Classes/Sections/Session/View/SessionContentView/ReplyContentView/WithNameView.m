@@ -54,7 +54,7 @@ AttractiveForceData main_scaleData = (AttractiveForceData){57, (Byte []){109, 12
 //
 
 // __M_A_C_R_O__
-//: #import "FFFReplyedTextContentView.h"
+//: #import "WorkReplyedTextContentView.h"
 #import "WithNameView.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "VideoTextView+MessageContent.h"
@@ -63,12 +63,12 @@ AttractiveForceData main_scaleData = (AttractiveForceData){57, (Byte []){109, 12
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
 
-//: @interface FFFReplyedTextContentView ()<M80AttributedLabelDelegate>
+//: @interface WorkReplyedTextContentView ()<M80AttributedLabelDelegate>
 @interface WithNameView ()<LabelDelegate>
 //: @end
 @end
 
-//: @implementation FFFReplyedTextContentView
+//: @implementation WorkReplyedTextContentView
 @implementation WithNameView
 
 //: - (instancetype)initSessionMessageContentView {
@@ -87,7 +87,7 @@ AttractiveForceData main_scaleData = (AttractiveForceData){57, (Byte []){109, 12
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data {
+//: - (void)refresh:(WorkMessageModel *)data {
 - (void)panorama:(ShowModel *)data {
     //: [super refresh:data];
     [super panorama:data];
@@ -262,7 +262,7 @@ AttractiveForceData main_scaleData = (AttractiveForceData){57, (Byte []){109, 12
 
     }
 
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config repliedSetting:data.message];
+    //: WorkKitSetting *setting = [[MyUserKit sharedKit].config repliedSetting:data.message];
     ViewKey *setting = [[MessageContent secretResolution].config ting:data.message];
     //: self.textLabel.textColor = setting.replyedTextColor;
     self.textLabel.textColor = setting.replyedTextColor;
@@ -378,9 +378,9 @@ AttractiveForceData main_scaleData = (AttractiveForceData){57, (Byte []){109, 12
 - (void)messageValue:(VideoTextView *)label
              //: clickedOnLink:(id)linkData{
              maxAlong:(id)linkData{
-    //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+    //: WorkKitEvent *event = [[WorkKitEvent alloc] init];
     WrittenAccountLab *event = [[WrittenAccountLab alloc] init];
-    //: event.eventName = FFFKitEventNameTapLabelLink;
+    //: event.eventName = WorkKitEventNameTapLabelLink;
     event.eventName = k_onText;
     //: event.messageModel = self.model;
     event.messageModel = self.model;
@@ -395,7 +395,7 @@ AttractiveForceData main_scaleData = (AttractiveForceData){57, (Byte []){109, 12
 - (void)recorded:(id)sender
 {
 //    WrittenAccountLab *event = [[WrittenAccountLab alloc] init];
-//    event.eventName = FFFKitEventNameTapRepliedContent;
+//    event.eventName = WorkKitEventNameTapRepliedContent;
 //    event.messageModel = self.model;
 //    [self.delegate onCatchEvent:event];
 }

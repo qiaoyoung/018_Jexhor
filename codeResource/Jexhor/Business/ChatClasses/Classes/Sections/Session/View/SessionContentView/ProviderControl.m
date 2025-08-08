@@ -60,18 +60,18 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionFileTransContentView.h"
+//: #import "WorkSessionFileTransContentView.h"
 #import "ProviderControl.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFMessageModel.h"
+//: #import "WorkMessageModel.h"
 #import "ShowModel.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
 
-//: @interface FFFSessionFileTransContentView()
+//: @interface WorkSessionFileTransContentView()
 @interface ProviderControl()
 
 //: @property (nonatomic,strong) UIImageView *imageView;
@@ -92,7 +92,7 @@
 //: @end
 @end
 
-//: @implementation FFFSessionFileTransContentView
+//: @implementation WorkSessionFileTransContentView
 @implementation ProviderControl
 
 //: - (instancetype)initSessionMessageContentView{
@@ -148,7 +148,7 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data{
+//: - (void)refresh:(WorkMessageModel *)data{
 - (void)panorama:(ShowModel *)data{
     //: [super refresh:data];
     [super panorama:data];
@@ -261,9 +261,9 @@
 //: - (void)onTouchUpInside:(id)sender
 - (void)recorded:(id)sender
 {
-    //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+    //: WorkKitEvent *event = [[WorkKitEvent alloc] init];
     WrittenAccountLab *event = [[WrittenAccountLab alloc] init];
-    //: event.eventName = FFFKitEventNameTapContent;
+    //: event.eventName = WorkKitEventNameTapContent;
     event.eventName = userTopData;
     //: event.messageModel = self.model;
     event.messageModel = self.model;

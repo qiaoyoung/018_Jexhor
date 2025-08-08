@@ -310,7 +310,7 @@ typedef struct {
     if (!_tipsLab) {
         //: _tipsLab = [[UILabel alloc] init];
         _tipsLab = [[UILabel alloc] init];
-        //: _tipsLab.text = [FFFLanguageManager getTextWithKey:@"activity_qrcode_scan_me"];
+        //: _tipsLab.text = [WorkLanguageManager getTextWithKey:@"activity_qrcode_scan_me"];
         _tipsLab.text = [InputRed preserve:[VanguardData sharedInstance].appOldContent];
 //        _tipsLab.text = @"将二维码放入扫面框内";
         //: _tipsLab.textAlignment = NSTextAlignmentCenter;
@@ -347,7 +347,7 @@ typedef struct {
     if (!_qrcodeLab) {
         //: _qrcodeLab = [[UILabel alloc] init];
         _qrcodeLab = [[UILabel alloc] init];
-        //: _qrcodeLab.text = [FFFLanguageManager getTextWithKey:@"qrcode_activity_title"];
+        //: _qrcodeLab.text = [WorkLanguageManager getTextWithKey:@"qrcode_activity_title"];
         _qrcodeLab.text = [InputRed preserve:[VanguardData sharedInstance].notiRowData];
         //: _qrcodeLab.textAlignment = NSTextAlignmentCenter;
         _qrcodeLab.textAlignment = NSTextAlignmentCenter;
@@ -383,7 +383,7 @@ typedef struct {
     if (!_albumLab) {
         //: _albumLab = [[UILabel alloc] init];
         _albumLab = [[UILabel alloc] init];
-        //: _albumLab.text = [FFFLanguageManager getTextWithKey:@"message_send_album"];
+        //: _albumLab.text = [WorkLanguageManager getTextWithKey:@"message_send_album"];
         _albumLab.text = [InputRed preserve:[VanguardData sharedInstance].appLabelValue];
         //: _albumLab.textAlignment = NSTextAlignmentCenter;
         _albumLab.textAlignment = NSTextAlignmentCenter;

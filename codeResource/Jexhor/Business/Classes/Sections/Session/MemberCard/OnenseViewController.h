@@ -13,18 +13,18 @@
 #import <UIKit/UIKit.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFTeamMemberListDataSource.h"
+//: #import "WorkTeamMemberListDataSource.h"
 #import "ColorActionClean.h"
-//: #import "FFFTeamListDataManager.h"
+//: #import "WorkTeamListDataManager.h"
 #import "ShowManager.h"
 
 //: @interface CCCTeamMemberListViewController : UIViewController
 @interface OnenseViewController : UIViewController
 
-//: @property (nonatomic,strong) FFFTeamListDataManager *teamListManager;
+//: @property (nonatomic,strong) WorkTeamListDataManager *teamListManager;
 @property (nonatomic,strong) ShowManager *teamListManager;
 
-//: - (instancetype)initWithDataSource:(FFFTeamListDataManager *)dataSource;
+//: - (instancetype)initWithDataSource:(WorkTeamListDataManager *)dataSource;
 - (instancetype)initWithName:(ShowManager *)dataSource;
 
 //: @end

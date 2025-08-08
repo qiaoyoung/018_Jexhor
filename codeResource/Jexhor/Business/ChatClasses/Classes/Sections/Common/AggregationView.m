@@ -9,12 +9,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFBadgeView.h"
+//: #import "WorkBadgeView.h"
 #import "AggregationView.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+MessageContent.h"
 
-//: @interface FFFBadgeView ()
+//: @interface WorkBadgeView ()
 @interface AggregationView ()
 
 //: @property (strong) UIColor *badgeBackgroundColor;
@@ -38,7 +38,7 @@
 //: @end
 @end
 
-//: @implementation FFFBadgeView
+//: @implementation WorkBadgeView
 @implementation AggregationView
 
 //: + (instancetype)viewWithBadgeTip:(NSString *)badgeValue{
@@ -48,7 +48,7 @@
         //: badgeValue = @"";
         badgeValue = @"";
     }
-    //: FFFBadgeView *instance = [[FFFBadgeView alloc] init];
+    //: WorkBadgeView *instance = [[WorkBadgeView alloc] init];
     AggregationView *instance = [[AggregationView alloc] init];
     //: instance.frame = [instance frameWithStr:badgeValue];
     instance.frame = [instance styleStr:badgeValue];

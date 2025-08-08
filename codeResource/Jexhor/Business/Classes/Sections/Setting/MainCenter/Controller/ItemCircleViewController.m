@@ -179,7 +179,7 @@ Byte mainOnButtonName[] = {87, 7, 80, 8, 72, 228, 11, 108, 115, 150, 134, 150, 1
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"safe_setting_activity_title"];
+    //: labtitle.text = [WorkLanguageManager getTextWithKey:@"safe_setting_activity_title"];
     labtitle.text = [InputRed preserve:StringFromSuccessData(userSessionTitle)];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -277,7 +277,7 @@ Byte mainOnButtonName[] = {87, 7, 80, 8, 72, 228, 11, 108, 115, 150, 134, 150, 1
     if(indexPath.section == 0){
         //: cell.iconImageView.image = [UIImage imageNamed:@"safe_blacklist"];
         cell.iconImageView.image = [UIImage imageNamed:StringFromSuccessData(userTextValue)];
-        //: cell.titleLabel.text = [FFFLanguageManager getTextWithKey:@"black_list_activity_black"];
+        //: cell.titleLabel.text = [WorkLanguageManager getTextWithKey:@"black_list_activity_black"];
         cell.titleLabel.text = [InputRed preserve:StringFromSuccessData(userHandleButtonName)];
         //: cell.labSubtitle.hidden = YES;
         cell.labSubtitle.hidden = YES;
@@ -286,7 +286,7 @@ Byte mainOnButtonName[] = {87, 7, 80, 8, 72, 228, 11, 108, 115, 150, 134, 150, 1
     else if (indexPath.section == 1){
         //: cell.iconImageView.image = [UIImage imageNamed:@"safe_changepsd"];
         cell.iconImageView.image = [UIImage imageNamed:StringFromSuccessData(kSessionName)];
-        //: cell.titleLabel.text = [FFFLanguageManager getTextWithKey:@"modify_activity_title"];
+        //: cell.titleLabel.text = [WorkLanguageManager getTextWithKey:@"modify_activity_title"];
         cell.titleLabel.text = [InputRed preserve:StringFromSuccessData(main_byName)];
         //: cell.labSubtitle.hidden = YES;
         cell.labSubtitle.hidden = YES;
@@ -300,7 +300,7 @@ Byte mainOnButtonName[] = {87, 7, 80, 8, 72, 228, 11, 108, 115, 150, 134, 150, 1
     else if (indexPath.section == 2){
         //: cell.iconImageView.image = [UIImage imageNamed:@"safe_accountdelete"];
         cell.iconImageView.image = [UIImage imageNamed:StringFromSuccessData(noti_commentTitle)];
-        //: cell.titleLabel.text = [FFFLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"];
+        //: cell.titleLabel.text = [WorkLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"];
         cell.titleLabel.text = [InputRed preserve:StringFromSuccessData(kNeedValue)];
         //: cell.labSubtitle.hidden = YES;
         cell.labSubtitle.hidden = YES;
@@ -352,7 +352,7 @@ Byte mainOnButtonName[] = {87, 7, 80, 8, 72, 228, 11, 108, 115, 150, 134, 150, 1
 {
     //: [self.view addSubview:self.deactivateNextView];
     [self.view addSubview:self.deactivateNextView];
-    //: [self.deactivateNextView reloadWithNickname:[FFFLanguageManager getTextWithKey:@"deactivate_account"]];
+    //: [self.deactivateNextView reloadWithNickname:[WorkLanguageManager getTextWithKey:@"deactivate_account"]];
     [self.deactivateNextView press:[InputRed preserve:StringFromSuccessData(dreamScaleShowCanData)]];
     //: [self.deactivateNextView animationShow];
     [self.deactivateNextView file];
@@ -378,7 +378,7 @@ Byte mainOnButtonName[] = {87, 7, 80, 8, 72, 228, 11, 108, 115, 150, 134, 150, 1
 {
     //: [self.view addSubview:self.deactivateNextView];
     [self.view addSubview:self.deactivateNextView];
-    //: [self.deactivateNextView reloadWithNickname:[FFFLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"]];
+    //: [self.deactivateNextView reloadWithNickname:[WorkLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"]];
     [self.deactivateNextView press:[InputRed preserve:StringFromSuccessData(kNeedValue)]];
     //: [self.deactivateNextView animationShow];
     [self.deactivateNextView file];

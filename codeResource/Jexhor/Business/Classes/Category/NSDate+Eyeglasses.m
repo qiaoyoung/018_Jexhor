@@ -606,11 +606,11 @@
         return [NSDate fundamentalSum:self size:[[InspireMothData sharedInstance] noti_mortalHandleValue]];
     //: } else if ([components day] >= 2) {
     } else if ([components day] >= 2) {
-        //: return [FFFLanguageManager getTextWithKey:@"before_yesterday"];
+        //: return [WorkLanguageManager getTextWithKey:@"before_yesterday"];
         return [InputRed preserve:[[InspireMothData sharedInstance] kAddName]];
     //: } else if ([components day] >= 1) {
     } else if ([components day] >= 1) {
-        //: return [FFFLanguageManager getTextWithKey:@"yesterday"];
+        //: return [WorkLanguageManager getTextWithKey:@"yesterday"];
         return [InputRed preserve:[[InspireMothData sharedInstance] mainPursuitValue]];
     //: } else if ([components hour] > 0) {
     } else if ([components hour] > 0) {

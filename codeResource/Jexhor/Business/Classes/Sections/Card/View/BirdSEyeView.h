@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 //: typedef void(^SpeiceBackBlock) (NSString *nickName);
 typedef void(^SpeiceBackBlock) (NSString *nickName);
 
-//: @interface FFFRemarksView : UIView
+//: @interface WorkRemarksView : UIView
 @interface BirdSEyeView : UIView
 
 //: @property (nonatomic, copy) SpeiceBackBlock speiceBackBlock;

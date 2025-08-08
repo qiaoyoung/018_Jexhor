@@ -9,14 +9,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFReplyedTextContentConfig.h"
+//: #import "WorkReplyedTextContentConfig.h"
 #import "ContentThreadTeam.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "VideoTextView+MessageContent.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
 
-//: @interface FFFReplyedTextContentConfig ()
+//: @interface WorkReplyedTextContentConfig ()
 @interface ContentThreadTeam ()
 
 //: @property (nonatomic,strong) M80AttributedLabel *label;
@@ -25,7 +25,7 @@
 //: @end
 @end
 
-//: @implementation FFFReplyedTextContentConfig
+//: @implementation WorkReplyedTextContentConfig
 @implementation ContentThreadTeam
 
 
@@ -79,7 +79,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)on:(NIMMessage *)message
 {
-    //: return @"FFFReplyedTextContentView";
+    //: return @"WorkReplyedTextContentView";
     return @"WithNameView";
 }
 

@@ -131,7 +131,7 @@
 // __M_A_C_R_O__
 //: #import "NTESCustomSysNotificationSender.h"
 #import "NameBarView.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WorkKitInfoFetchOption.h"
 #import "RangeOption.h"
 //: #import "NTESBundleSetting.h"
 #import "ImageTing.h"
@@ -309,11 +309,11 @@
     notification.sendToOnlineUsersOnly = NO;
     //: notification.env = [[NTESBundleSetting sharedConfig] messageEnv];
     notification.env = [[ImageTing configRefresh] send];
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: WorkKitInfoFetchOption *option = [[WorkKitInfoFetchOption alloc] init];
     RangeOption *option = [[RangeOption alloc] init];
     //: option.session = [NIMSession session:teamId type:NIMSessionTypeTeam];
     option.session = [NIMSession session:teamId type:NIMSessionTypeTeam];
-    //: FFFKitInfo *me = [[MyUserKit sharedKit] infoByUser:[NIMSDK sharedSDK].loginManager.currentAccount option:option];
+    //: WorkKitInfo *me = [[MyUserKit sharedKit] infoByUser:[NIMSDK sharedSDK].loginManager.currentAccount option:option];
     ConfirmationInfo *me = [[MessageContent secretResolution] recent:[NIMSDK sharedSDK].loginManager.currentAccount blue:option];
 
     //: notification.apnsContent = [NSString stringWithFormat:@"%@%@",me.showName,@"正在呼叫您".ntes_localized];

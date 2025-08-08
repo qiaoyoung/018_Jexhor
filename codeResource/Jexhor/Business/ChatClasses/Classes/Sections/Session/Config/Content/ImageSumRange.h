@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFBaseSessionContentConfig.h"
-#import "FFFBaseSessionContentConfig.h"
+//: #import "WorkBaseSessionContentConfig.h"
+#import "WorkBaseSessionContentConfig.h"
 
-//: @interface FFFFileContentConfig : NSObject<CCCSessionContentConfig>
+//: @interface WorkFileContentConfig : NSObject<CCCSessionContentConfig>
 @interface ImageSumRange : NSObject<CellTitleConfig>
 
 //: @end

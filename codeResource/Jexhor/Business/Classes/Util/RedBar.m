@@ -96,17 +96,17 @@
         case NIMLoginClientTypeiOS:
         //: case NIMLoginClientTypeWP:
         case NIMLoginClientTypeWP:
-            //: return [FFFLanguageManager getTextWithKey:@"home_fragment_phone"];
+            //: return [WorkLanguageManager getTextWithKey:@"home_fragment_phone"];
             return [InputRed preserve:[[ComplainData sharedInstance] appImageData]];
         //: case NIMLoginClientTypePC:
         case NIMLoginClientTypePC:
         //: case NIMLoginClientTypemacOS:
         case NIMLoginClientTypemacOS:
-            //: return [FFFLanguageManager getTextWithKey:@"home_fragment_pc"];
+            //: return [WorkLanguageManager getTextWithKey:@"home_fragment_pc"];
             return [InputRed preserve:[[ComplainData sharedInstance] kBotTitle]];
         //: case NIMLoginClientTypeWeb:
         case NIMLoginClientTypeWeb:
-            //: return [FFFLanguageManager getTextWithKey:@"home_fragment_web"];
+            //: return [WorkLanguageManager getTextWithKey:@"home_fragment_web"];
             return [InputRed preserve:[[ComplainData sharedInstance] show_journalistValue]];
         //: default:
         default:

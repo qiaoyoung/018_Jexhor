@@ -9,13 +9,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMessageModel.h"
+//: #import "WorkMessageModel.h"
 #import "ShowModel.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface NTESMessageModel : FFFMessageModel
+//: @interface NTESMessageModel : WorkMessageModel
 @interface ActionMessageModel : ShowModel
 
 //: @property (nonatomic, assign) BOOL hiddenSeparatorLine; 

@@ -9,22 +9,22 @@
 //
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFTeamCardMemberItem.h"
+//: #import "WorkTeamCardMemberItem.h"
 #import "MessageItem.h"
-//: #import "FFFMembersFetchOption.h"
+//: #import "WorkMembersFetchOption.h"
 #import "SameOption.h"
 
 // __M_A_C_R_O__
 
 //: typedef void(^NIMTeamListDataBlock)(NSError * _Nullable error, NSString * _Nullable msg);
 typedef void(^NIMTeamListDataBlock)(NSError * _Nullable error, NSString * _Nullable msg);
-//: typedef void(^NIMTeamMuteListDataBlock)(NSError * _Nullable error, NSMutableArray<FFFTeamCardMemberItem *> * _Nullable members);
+//: typedef void(^NIMTeamMuteListDataBlock)(NSError * _Nullable error, NSMutableArray<WorkTeamCardMemberItem *> * _Nullable members);
 typedef void(^NIMTeamMuteListDataBlock)(NSError * _Nullable error, NSMutableArray<MessageItem *> * _Nullable members);
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
 
-//: @protocol FFFTeamOperation <NSObject>
+//: @protocol WorkTeamOperation <NSObject>
 @protocol ValueName <NSObject>
 
 //加人
@@ -144,7 +144,7 @@ NS_ASSUME_NONNULL_BEGIN
                  marginCompletion:(NIMTeamListDataBlock)completion;
 
 //查询群成员
-//: - (void)fetchTeamMembersWithOption:(FFFMembersFetchOption * _Nullable )option
+//: - (void)fetchTeamMembersWithOption:(WorkMembersFetchOption * _Nullable )option
 - (void)ofTool:(SameOption * _Nullable )option
                         //: completion:(NIMTeamListDataBlock)completion;
                         value:(NIMTeamListDataBlock)completion;
@@ -166,25 +166,25 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-//: @protocol FFFTeamMemberListDataSource <FFFTeamOperation>
+//: @protocol WorkTeamMemberListDataSource <WorkTeamOperation>
 @protocol ColorActionClean <ValueName>
 
 //: - (NIMTeam *)team;
 - (NIMTeam *)show;
 
 //: - (NIMSession *)session;
-- (NIMSession *)nameScale;
+- (NIMSession *)session;
 
 //: - (NSInteger)memberNumber;
 - (NSInteger)marginMessage;
 
-//: - (NSMutableArray <FFFTeamCardMemberItem *> *)members;
+//: - (NSMutableArray <WorkTeamCardMemberItem *> *)members;
 - (NSMutableArray <MessageItem *> *)pressComplete;
 
-//: - (FFFTeamCardMemberItem *)myCard;
+//: - (WorkTeamCardMemberItem *)myCard;
 - (MessageItem *)utilizer;
 
-//: - (FFFTeamCardMemberItem *)memberWithUserId:(NSString *)userId;
+//: - (WorkTeamCardMemberItem *)memberWithUserId:(NSString *)userId;
 - (MessageItem *)source:(NSString *)userId;
 
 //: @end

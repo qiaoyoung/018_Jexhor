@@ -85,7 +85,7 @@
     return showColorValue;
 }
 
-//: #FFF6CF
+//: #Work6CF
 + (NSString *)appEnableTitle {
     /* static */ NSString *appEnableTitle = nil;
     if (!appEnableTitle) {
@@ -174,7 +174,7 @@
 #import "ColorViewController.h"
 //: #import "UIView+Toast.h"
 #import "UIView+Toast.h"
-//: #import "FFFContactSelectViewController.h"
+//: #import "WorkContactSelectViewController.h"
 #import "CompartmentViewController.h"
 //: #import "UIView+NTES.h"
 #import "UIView+Recent.h"
@@ -262,7 +262,7 @@
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"black_list_activity_black"];
+    //: labtitle.text = [WorkLanguageManager getTextWithKey:@"black_list_activity_black"];
     labtitle.text = [InputRed preserve:[HandleData mainInfoValue]];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -444,7 +444,7 @@
             }
         //: }else{
         }else{
-            //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_delete_fail"] duration:2.0f position:CSToastPositionCenter];
+            //: [wself.view makeToast:[WorkLanguageManager getTextWithKey:@"friend_delete_fail"] duration:2.0f position:CSToastPositionCenter];
             [wself.view makeToast:[InputRed preserve:[HandleData main_buttonData]] duration:2.0f position:CSToastPositionCenter];
         }
     //: }];
@@ -466,7 +466,7 @@
     config.filterIds = users;
     //: config.showSelectHeaderview = NO;
     config.showSelectHeaderview = NO;
-    //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+    //: WorkContactSelectViewController *vc = [[WorkContactSelectViewController alloc] initWithConfig:config];
     CompartmentViewController *vc = [[CompartmentViewController alloc] initWithStateAtPull:config];
     //: vc.delegate = self;
     vc.delegate = self;
@@ -487,7 +487,7 @@
         [[NIMSDK sharedSDK].userManager addToBlackList:selectedContacts.firstObject completion:^(NSError *error) {
             //: if (!error) {
             if (!error) {
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"group_chat_avatar_activity_add_black_success"] duration:2.0 position:CSToastPositionCenter];
+                //: [wself.view makeToast:[WorkLanguageManager getTextWithKey:@"group_chat_avatar_activity_add_black_success"] duration:2.0 position:CSToastPositionCenter];
                 [wself.view makeToast:[InputRed preserve:[HandleData mainCommentValue]] duration:2.0 position:CSToastPositionCenter];
                 //: wself.data = wself.myBlackListUser;
                 wself.data = wself.counterval;
@@ -495,7 +495,7 @@
                 [wself.tableView reloadData];
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2.0 position:CSToastPositionCenter];
+                //: [wself.view makeToast:[WorkLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2.0 position:CSToastPositionCenter];
                 [wself.view makeToast:[InputRed preserve:[HandleData main_shouldTitle]] duration:2.0 position:CSToastPositionCenter];
             }
         //: }];
@@ -519,7 +519,7 @@
     for (NIMUser *user in [NIMSDK sharedSDK].userManager.myBlackList) {
         //: NTESContactDataMember *member = [[NTESContactDataMember alloc] init];
         PresentItem *member = [[PresentItem alloc] init];
-        //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:user.userId option:nil];
+        //: WorkKitInfo *info = [[MyUserKit sharedKit] infoByUser:user.userId option:nil];
         ConfirmationInfo *info = [[MessageContent secretResolution] recent:user.userId blue:nil];
         //: member.info = info;
         member.info = info;
@@ -538,7 +538,7 @@
     if(!_box){
         //: _box = [[UIView alloc]initWithFrame:CGRectMake(0, (44.0f + [UIDevice vg_statusBarHeight]), [[UIScreen mainScreen] bounds].size.width, 26)];
         _box = [[UIView alloc]initWithFrame:CGRectMake(0, (44.0f + [UIDevice heightShowStop]), [[UIScreen mainScreen] bounds].size.width, 26)];
-        //: _box.backgroundColor = [UIColor colorWithHexString:@"#FFF6CF"];
+        //: _box.backgroundColor = [UIColor colorWithHexString:@"#Work6CF"];
         _box.backgroundColor = [UIColor ground:[HandleData appEnableTitle]];
 
         //: UIImageView *defImg = [[UIImageView alloc]initWithFrame:CGRectMake(15, 6, 14, 14)];
@@ -555,7 +555,7 @@
         //: subtitleLabel.textColor = [UIColor colorWithHexString:@"#FF483D"];
         subtitleLabel.textColor = [UIColor ground:[HandleData appAtTagValue]];
 //        subtitleLabel.textAlignment = NSTextAlignmentLeft;
-        //: subtitleLabel.text = [FFFLanguageManager getTextWithKey:@"black_list_activity_black_list_tip"];
+        //: subtitleLabel.text = [WorkLanguageManager getTextWithKey:@"black_list_activity_black_list_tip"];
         subtitleLabel.text = [InputRed preserve:[HandleData userMakeValue]];
         //: [_box addSubview:subtitleLabel];
         [_box addSubview:subtitleLabel];
@@ -590,7 +590,7 @@
         emptyTipLabel.textAlignment = NSTextAlignmentCenter;
         //: [_defView addSubview:emptyTipLabel];
         [_defView addSubview:emptyTipLabel];
-        //: emptyTipLabel.text = [FFFLanguageManager getTextWithKey:@"group_info_activity_without"];
+        //: emptyTipLabel.text = [WorkLanguageManager getTextWithKey:@"group_info_activity_without"];
         emptyTipLabel.text = [InputRed preserve:[HandleData dream_bubbleData]];
 
 

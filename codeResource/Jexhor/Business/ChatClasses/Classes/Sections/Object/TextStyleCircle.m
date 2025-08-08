@@ -9,24 +9,24 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionLayoutImpl.h"
+//: #import "WorkSessionLayoutImpl.h"
 #import "TextStyleCircle.h"
 //: #import "UITableView+NIMScrollToBottom.h"
 #import "UITableView+NIMScrollToBottom.h"
-//: #import "FFFMessageCell.h"
+//: #import "WorkMessageCell.h"
 #import "CellView.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFSessionTableAdapter.h"
+//: #import "WorkGlobalMacro.h"
+#import "WorkGlobalMacro.h"
+//: #import "WorkSessionTableAdapter.h"
 #import "ColorAdapter.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFKitKeyboardInfo.h"
+//: #import "WorkKitKeyboardInfo.h"
 #import "TitleFactor.h"
-//: #import "FFFReplyContentView.h"
+//: #import "WorkReplyContentView.h"
 #import "CircleView.h"
 
-//: @interface FFFSessionLayoutImpl()
+//: @interface WorkSessionLayoutImpl()
 @interface TextStyleCircle()
 {
     //: NSMutableArray *_inserts;
@@ -41,7 +41,7 @@
 //: @property (nonatomic,strong) NIMSession *session;
 @property (nonatomic,strong) NIMSession *session;
 
-//: @property (nonatomic,strong) id<FFFSessionConfig> sessionConfig;
+//: @property (nonatomic,strong) id<WorkSessionConfig> sessionConfig;
 @property (nonatomic,strong) id<LineConfig> sessionConfig;
 
 //: @property (nonatomic,weak) id<NIMSessionLayoutDelegate> delegate;
@@ -50,12 +50,12 @@
 //: @end
 @end
 
-//: @implementation FFFSessionLayoutImpl
+//: @implementation WorkSessionLayoutImpl
 @implementation TextStyleCircle
 
 //: - (instancetype)initWithSession:(NIMSession *)session
 - (instancetype)initWithName:(NIMSession *)session
-                         //: config:(id<FFFSessionConfig>)sessionConfig
+                         //: config:(id<WorkSessionConfig>)sessionConfig
                          range:(id<LineConfig>)sessionConfig
 {
     //: self = [super init];
@@ -235,7 +235,7 @@
 //: #pragma mark - Private
 #pragma mark - Private
 
-//: - (void)calculateContent:(FFFMessageModel *)model{
+//: - (void)calculateContent:(WorkMessageModel *)model{
 - (void)title:(ShowModel *)model{
     //: if ([NSThread isMainThread]) {^{ [model contentSize:self.tableView.nim_width]; }();} else {dispatch_sync(dispatch_get_main_queue(), ^{ [model contentSize:self.tableView.nim_width]; });};
     if ([NSThread isMainThread]) {^{ [model all:self.tableView.nim_width]; }();} else {dispatch_sync(dispatch_get_main_queue(), ^{ [model all:self.tableView.nim_width]; });};
@@ -400,7 +400,7 @@
 //: - (void)update:(NSIndexPath *)indexPath
 - (void)electSystem:(NSIndexPath *)indexPath
 {
-    //: FFFMessageCell *cell = (FFFMessageCell *)[self.tableView cellForRowAtIndexPath:indexPath];
+    //: WorkMessageCell *cell = (WorkMessageCell *)[self.tableView cellForRowAtIndexPath:indexPath];
     CellView *cell = (CellView *)[self.tableView cellForRowAtIndexPath:indexPath];
     //: if (cell) {
     if (cell) {

@@ -11,19 +11,19 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
-//: #import "FFFSessionPrivateProtocol.h"
-#import "FFFSessionPrivateProtocol.h"
-//: #import "FFFSessionConfig.h"
+//: #import "WorkSessionConfigurateProtocol.h"
+#import "WorkSessionConfigurateProtocol.h"
+//: #import "WorkSessionPrivateProtocol.h"
+#import "WorkSessionPrivateProtocol.h"
+//: #import "WorkSessionConfig.h"
 #import "LineConfig.h"
 
-//: @interface FFFSessionDataSourceImpl : NSObject<NIMSessionDataSource>
+//: @interface WorkSessionDataSourceImpl : NSObject<NIMSessionDataSource>
 @interface TingCell : NSObject<LabSource>
 
 //: - (instancetype)initWithSession:(NIMSession *)session
 - (instancetype)initWithRead:(NIMSession *)session
-                         //: config:(id<FFFSessionConfig>)sessionConfig;
+                         //: config:(id<WorkSessionConfig>)sessionConfig;
                          voiceSession:(id<LineConfig>)sessionConfig;
 
 //: @end

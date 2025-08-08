@@ -18,19 +18,19 @@ Byte kPicName[] = {35, 10, 8, 243, 236, 198, 255, 20, 186, 186, 228, 100, 122, 3
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitQuickCommentUtil.h"
+//: #import "WorkKitQuickCommentUtil.h"
 #import "MessageUtil.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "VideoTextView+MessageContent.h"
-//: #import "FFFKitUtil.h"
+//: #import "WorkKitUtil.h"
 #import "WantUtil.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "WorkInputEmoticonManager.h"
 #import "RedManager.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WorkKitInfoFetchOption.h"
 #import "RangeOption.h"
 
 //: static const CGFloat kHeightPerRow = 25.0;
@@ -45,7 +45,7 @@ const CGFloat show_spaceNameValue = 5.f;
 NSString * const main_controlData = @"emoticon_emoji_%02ld";
 
 
-//: @implementation FFFKitQuickCommentUtil
+//: @implementation WorkKitQuickCommentUtil
 @implementation MessageUtil
 
 //: + (void)initialize
@@ -96,7 +96,7 @@ NSString * const main_controlData = @"emoticon_emoji_%02ld";
 {
     //: NSString *ID = [NSString stringWithFormat:NIMKitQuickCommentFormat, (long)comment.replyType];
     NSString *ID = [NSString stringWithFormat:main_controlData, (long)comment.replyType];
-    //: NIMInputEmoticon *emoticon = [[FFFInputEmoticonManager sharedManager] emoticonByID:ID];
+    //: NIMInputEmoticon *emoticon = [[WorkInputEmoticonManager sharedManager] emoticonByID:ID];
     FrontwardsCount *emoticon = [[RedManager session] record:ID];
     //: NSString *content = nil;
     NSString *content = nil;
@@ -296,13 +296,13 @@ NSString * const main_controlData = @"emoticon_emoji_%02ld";
 //: + (NSString *)showNameWithCommentFrom:(NIMQuickComment *)comment
 + (NSString *)fromBottom:(NIMQuickComment *)comment
 {
-    //: FFFKitInfo *info = nil;
+    //: WorkKitInfo *info = nil;
     ConfirmationInfo *info = nil;
     //: NIMChatExtendBasicInfo *basicInfo = comment.basicInfo;
     NIMChatExtendBasicInfo *basicInfo = comment.basicInfo;
     //: NIMSession *session = basicInfo.session;
     NIMSession *session = basicInfo.session;
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: WorkKitInfoFetchOption *option = [[WorkKitInfoFetchOption alloc] init];
     RangeOption *option = [[RangeOption alloc] init];
     //: option.session = session;
     option.session = session;

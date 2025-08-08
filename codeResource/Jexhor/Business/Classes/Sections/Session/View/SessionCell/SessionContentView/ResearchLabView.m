@@ -127,7 +127,7 @@ NSString *const mainUserValue = @"NIMDemoEventNameCloseSnapPicture";
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)model{
+//: - (void)refresh:(WorkMessageModel *)model{
 - (void)panorama:(ShowModel *)model{
     //: [super refresh:model];
     [super panorama:model];
@@ -142,7 +142,7 @@ NSString *const mainUserValue = @"NIMDemoEventNameCloseSnapPicture";
     //: self.longpressGesture.enabled = !attachment.isFired;
     self.longpressGesture.enabled = !attachment.isFired;
 
-    //禁用掉FFFMessageCell中的长按手势，防止手势冲突
+    //禁用掉WorkMessageCell中的长按手势，防止手势冲突
     //: [self disableMessageCellGesture:!attachment.isFired];
     [self belowOf:!attachment.isFired];
 }
@@ -229,7 +229,7 @@ NSString *const mainUserValue = @"NIMDemoEventNameCloseSnapPicture";
 - (void)phone{
     //: if ([self.delegate respondsToSelector:@selector(onCatchEvent:)]) {
     if ([self.delegate respondsToSelector:@selector(aboveImage:)]) {
-        //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+        //: WorkKitEvent *event = [[WorkKitEvent alloc] init];
         WrittenAccountLab *event = [[WrittenAccountLab alloc] init];
         //: event.eventName = NIMDemoEventNameOpenSnapPicture;
         event.eventName = dream_crossCornerValue;
@@ -246,7 +246,7 @@ NSString *const mainUserValue = @"NIMDemoEventNameCloseSnapPicture";
 - (void)getAbout{
     //: if ([self.delegate respondsToSelector:@selector(onCatchEvent:)]) {
     if ([self.delegate respondsToSelector:@selector(aboveImage:)]) {
-        //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+        //: WorkKitEvent *event = [[WorkKitEvent alloc] init];
         WrittenAccountLab *event = [[WrittenAccountLab alloc] init];
         //: event.eventName = NIMDemoEventNameCloseSnapPicture;
         event.eventName = mainUserValue;

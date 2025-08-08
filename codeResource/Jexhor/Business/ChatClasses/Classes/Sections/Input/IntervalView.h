@@ -12,19 +12,19 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @class FFFInputEmoticonTabView;
+//: @class WorkInputEmoticonTabView;
 @class IntervalView;
 
 //: @protocol NIMInputEmoticonTabDelegate <NSObject>
 @protocol SignalingSearchDelegateNeed <NSObject>
 
-//: - (void)tabView:(FFFInputEmoticonTabView *)tabView didSelectTabIndex:(NSInteger) index;
+//: - (void)tabView:(WorkInputEmoticonTabView *)tabView didSelectTabIndex:(NSInteger) index;
 - (void)off:(IntervalView *)tabView modeLog:(NSInteger) index;
 
 //: @end
 @end
 
-//: @interface FFFInputEmoticonTabView : UIControl
+//: @interface WorkInputEmoticonTabView : UIControl
 @interface IntervalView : UIControl
 
 //: @property (nonatomic,strong) UIButton * sendButton;

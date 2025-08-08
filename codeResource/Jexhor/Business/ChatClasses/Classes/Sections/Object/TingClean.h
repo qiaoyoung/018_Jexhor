@@ -11,20 +11,20 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFKitMessageProvider.h"
+//: #import "WorkKitMessageProvider.h"
 #import "SpecsText.h"
-//: #import "FFFSessionConfig.h"
+//: #import "WorkSessionConfig.h"
 #import "LineConfig.h"
 
-//: @class FFFMessageModel;
+//: @class WorkMessageModel;
 @class ShowModel;
 
-//: @interface FFFSessionMsgDatasource : NSObject
+//: @interface WorkSessionMsgDatasource : NSObject
 @interface TingClean : NSObject
 
 //: - (instancetype)initWithSession:(NIMSession*)session
 - (instancetype)initWithNascence:(NIMSession*)session
-                         //: config:(id<FFFSessionConfig>)sessionConfig;
+                         //: config:(id<WorkSessionConfig>)sessionConfig;
                          container:(id<LineConfig>)sessionConfig;
 
 
@@ -36,10 +36,10 @@
 @property (nonatomic, readonly) NSInteger messageLimit; //每页消息显示条数
 //: @property (nonatomic, readonly) NSInteger showTimeInterval; 
 @property (nonatomic, readonly) NSInteger showTimeInterval; //两条消息相隔多久显示一条时间戳
-//: @property (nonatomic, weak) id<FFFSessionConfig> sessionConfig;
+//: @property (nonatomic, weak) id<WorkSessionConfig> sessionConfig;
 @property (nonatomic, weak) id<LineConfig> sessionConfig;
 
-//: - (NSInteger)indexAtModelArray:(FFFMessageModel*)model;
+//: - (NSInteger)indexAtModelArray:(WorkMessageModel*)model;
 - (NSInteger)casket:(ShowModel*)model;
 
 //复位消息
@@ -62,7 +62,7 @@
 - (void)marginOf:(void (^)(NSError *))handler;
 
 // 展示message之前做额外配置
-//: - (void)willDisplayMessageModel:(FFFMessageModel *)model;
+//: - (void)willDisplayMessageModel:(WorkMessageModel *)model;
 - (void)ting:(ShowModel *)model;
 
 //添加消息，会根据时间戳插入到相应位置
@@ -74,7 +74,7 @@
 - (NSArray<NSNumber *> *)tagComplete:(NSArray *)models;
 
 //删除消息
-//: - (NSArray<NSNumber *> *)deleteMessageModel:(FFFMessageModel*)model;
+//: - (NSArray<NSNumber *> *)deleteMessageModel:(WorkMessageModel*)model;
 - (NSArray<NSNumber *> *)shadeMargin:(ShowModel*)model;
 
 //根据范围批量删除消息

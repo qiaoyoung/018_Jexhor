@@ -20,7 +20,7 @@ typedef struct {
 //: #2B2F36
 @property (nonatomic, copy) NSString *mainGazeTitle;
 
-//: #ffffff
+//: #fffWork
 @property (nonatomic, copy) NSString *notiHemeTitle;
 
 //: F6F7FA
@@ -95,7 +95,7 @@ typedef struct {
     return _show_leatherBronzeValue;
 }
 
-//: #ffffff
+//: #fffWork
 - (NSString *)notiHemeTitle {
     if (!_notiHemeTitle) {
         StructTypicalPopularityData value = (StructTypicalPopularityData){101, (Byte []){70, 3, 3, 3, 3, 3, 3, 156}, 7, 108, 196, 30};
@@ -117,7 +117,7 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFReplyContentView.h"
+//: #import "WorkReplyContentView.h"
 #import "CircleView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
@@ -126,13 +126,13 @@ typedef struct {
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
 
-//: @interface FFFReplyContentView ()
+//: @interface WorkReplyContentView ()
 @interface CircleView ()
 
 //: @end
 @end
 
-//: @implementation FFFReplyContentView
+//: @implementation WorkReplyContentView
 @implementation CircleView
 
 //: - (instancetype)initWithFrame:(CGRect)frame
@@ -143,7 +143,7 @@ typedef struct {
     //: if (self)
     if (self)
     {
-        //: self.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: self.backgroundColor = [UIColor colorWithHexString:@"#fffWork"];
         self.backgroundColor = [UIColor ground:[TypicalPopularityData sharedInstance].notiHemeTitle];
 
         //: UIView *bg = [[UIView alloc]initWithFrame:CGRectMake(15, 2, [[UIScreen mainScreen] bounds].size.width-30, 48)];

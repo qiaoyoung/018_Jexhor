@@ -9,15 +9,15 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFXMLReader.h"
+//: #import "WorkXMLReader.h"
 #import "VideoReader.h"
 
-//: NSString *const kFFFXMLReaderTextNodeKey = @"text";
+//: NSString *const kWorkXMLReaderTextNodeKey = @"text";
 NSString *const m_infoInsideDataText = @"text";
-//: NSString *const kFFFXMLReaderAttributePrefix = @"@";
+//: NSString *const kWorkXMLReaderAttributePrefix = @"@";
 NSString *const userMovieImageData = @"@";
 
-//: @interface FFFXMLReader ()
+//: @interface WorkXMLReader ()
 @interface VideoReader ()
 
 //: @property (nonatomic, strong) NSMutableArray *dictionaryStack;
@@ -31,7 +31,7 @@ NSString *const userMovieImageData = @"@";
 @end
 
 
-//: @implementation FFFXMLReader
+//: @implementation WorkXMLReader
 @implementation VideoReader
 
 //: #pragma mark - Public methods
@@ -40,7 +40,7 @@ NSString *const userMovieImageData = @"@";
 //: + (NSDictionary *)dictionaryForXMLData:(NSData *)data error:(NSError **)error
 + (NSDictionary *)mode:(NSData *)data user_autoreleasing:(NSError **)error
 {
-    //: FFFXMLReader *reader = [[FFFXMLReader alloc] initWithError:error];
+    //: WorkXMLReader *reader = [[WorkXMLReader alloc] initWithError:error];
     VideoReader *reader = [[VideoReader alloc] initWithError:error];
     //: NSDictionary *rootDictionary = [reader objectWithData:data options:0];
     NSDictionary *rootDictionary = [reader table:data cuttingEdge:0];
@@ -53,14 +53,14 @@ NSString *const userMovieImageData = @"@";
 {
     //: NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
     NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
-    //: return [FFFXMLReader dictionaryForXMLData:data error:error];
+    //: return [WorkXMLReader dictionaryForXMLData:data error:error];
     return [VideoReader mode:data user_autoreleasing:error];
 }
 
-//: + (NSDictionary *)dictionaryForXMLData:(NSData *)data options:(FFFXMLReaderOptions)options error:(NSError **)error
-+ (NSDictionary *)barrelhouse:(NSData *)data options:(FFFXMLReaderOptions)options nonaccomplishment:(NSError **)error
+//: + (NSDictionary *)dictionaryForXMLData:(NSData *)data options:(WorkXMLReaderOptions)options error:(NSError **)error
++ (NSDictionary *)barrelhouse:(NSData *)data options:(WorkXMLReaderOptions)options nonaccomplishment:(NSError **)error
 {
-    //: FFFXMLReader *reader = [[FFFXMLReader alloc] initWithError:error];
+    //: WorkXMLReader *reader = [[WorkXMLReader alloc] initWithError:error];
     VideoReader *reader = [[VideoReader alloc] initWithError:error];
     //: NSDictionary *rootDictionary = [reader objectWithData:data options:options];
     NSDictionary *rootDictionary = [reader table:data cuttingEdge:options];
@@ -68,12 +68,12 @@ NSString *const userMovieImageData = @"@";
     return rootDictionary;
 }
 
-//: + (NSDictionary *)dictionaryForXMLString:(NSString *)string options:(FFFXMLReaderOptions)options error:(NSError **)error
-+ (NSDictionary *)with:(NSString *)string playBackground:(FFFXMLReaderOptions)options notIndex:(NSError **)error
+//: + (NSDictionary *)dictionaryForXMLString:(NSString *)string options:(WorkXMLReaderOptions)options error:(NSError **)error
++ (NSDictionary *)with:(NSString *)string playBackground:(WorkXMLReaderOptions)options notIndex:(NSError **)error
 {
     //: NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
     NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
-    //: return [FFFXMLReader dictionaryForXMLData:data options:options error:error];
+    //: return [WorkXMLReader dictionaryForXMLData:data options:options error:error];
     return [VideoReader barrelhouse:data options:options nonaccomplishment:error];
 }
 
@@ -96,8 +96,8 @@ NSString *const userMovieImageData = @"@";
     return self;
 }
 
-//: - (NSDictionary *)objectWithData:(NSData *)data options:(FFFXMLReaderOptions)options
-- (NSDictionary *)table:(NSData *)data cuttingEdge:(FFFXMLReaderOptions)options
+//: - (NSDictionary *)objectWithData:(NSData *)data options:(WorkXMLReaderOptions)options
+- (NSDictionary *)table:(NSData *)data cuttingEdge:(WorkXMLReaderOptions)options
 {
     // Clear out any old data
     //: self.dictionaryStack = [[NSMutableArray alloc] init];
@@ -113,12 +113,12 @@ NSString *const userMovieImageData = @"@";
     //: NSXMLParser *parser = [[NSXMLParser alloc] initWithData:data];
     NSXMLParser *parser = [[NSXMLParser alloc] initWithData:data];
 
-    //: [parser setShouldProcessNamespaces:(options & FFFXMLReaderOptionsProcessNamespaces)];
-    [parser setShouldProcessNamespaces:(options & FFFXMLReaderOptionsProcessNamespaces)];
-    //: [parser setShouldReportNamespacePrefixes:(options & FFFXMLReaderOptionsReportNamespacePrefixes)];
-    [parser setShouldReportNamespacePrefixes:(options & FFFXMLReaderOptionsReportNamespacePrefixes)];
-    //: [parser setShouldResolveExternalEntities:(options & FFFXMLReaderOptionsResolveExternalEntities)];
-    [parser setShouldResolveExternalEntities:(options & FFFXMLReaderOptionsResolveExternalEntities)];
+    //: [parser setShouldProcessNamespaces:(options & WorkXMLReaderOptionsProcessNamespaces)];
+    [parser setShouldProcessNamespaces:(options & WorkXMLReaderOptionsProcessNamespaces)];
+    //: [parser setShouldReportNamespacePrefixes:(options & WorkXMLReaderOptionsReportNamespacePrefixes)];
+    [parser setShouldReportNamespacePrefixes:(options & WorkXMLReaderOptionsReportNamespacePrefixes)];
+    //: [parser setShouldResolveExternalEntities:(options & WorkXMLReaderOptionsResolveExternalEntities)];
+    [parser setShouldResolveExternalEntities:(options & WorkXMLReaderOptionsResolveExternalEntities)];
 
     //: parser.delegate = self;
     parser.delegate = self;
@@ -216,7 +216,7 @@ NSString *const userMovieImageData = @"@";
         // trim after concatenating
         //: NSString *trimmedString = [self.textInProgress stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
         NSString *trimmedString = [self.textInProgress stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-        //: [dictInProgress setObject:[trimmedString mutableCopy] forKey:kFFFXMLReaderTextNodeKey];
+        //: [dictInProgress setObject:[trimmedString mutableCopy] forKey:kWorkXMLReaderTextNodeKey];
         [dictInProgress setObject:[trimmedString mutableCopy] forKey:m_infoInsideDataText];
 
         // Reset the text

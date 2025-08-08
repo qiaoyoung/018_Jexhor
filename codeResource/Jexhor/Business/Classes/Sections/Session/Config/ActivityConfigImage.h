@@ -12,9 +12,9 @@
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-//: @class FFFSessionConfig;
+//: @class WorkSessionConfig;
 @class LineConfig;
-//: @interface NTESSessionConfig : NSObject<FFFSessionConfig>
+//: @interface NTESSessionConfig : NSObject<WorkSessionConfig>
 @interface ActivityConfigImage : NSObject<LineConfig>
 //: @property (nonatomic,strong) NIMSession *session;
 @property (nonatomic,strong) NIMSession *session;

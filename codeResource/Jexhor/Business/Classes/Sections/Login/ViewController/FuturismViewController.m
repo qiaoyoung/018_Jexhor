@@ -390,7 +390,7 @@ typedef struct {
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"activity_safe_setting_modify"];
+    //: labtitle.text = [WorkLanguageManager getTextWithKey:@"activity_safe_setting_modify"];
     labtitle.text = [InputRed preserve:[[PremiumData sharedInstance] userUndertakeAccountShowData]];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -418,7 +418,7 @@ typedef struct {
     self.textfile_1.font = [UIFont systemFontOfSize:16];
     //: self.textfile_1.textColor = [UIColor colorWithHexString:@"#333333"];
     self.textfile_1.textColor = [UIColor ground:[[PremiumData sharedInstance] k_pursuitTitle]];
-    //: self.textfile_1.placeholder = [FFFLanguageManager getTextWithKey:@"register_account_activity_account"];
+    //: self.textfile_1.placeholder = [WorkLanguageManager getTextWithKey:@"register_account_activity_account"];
     self.textfile_1.placeholder = [InputRed preserve:[[PremiumData sharedInstance] userNovelTagData]];
 //    self.textfile_1.delegate = self;
     //: [view1 addSubview:self.textfile_1];
@@ -447,7 +447,7 @@ typedef struct {
     self.textfile_2.font = [UIFont systemFontOfSize:16];
     //: self.textfile_2.textColor = [UIColor colorWithHexString:@"#333333"];
     self.textfile_2.textColor = [UIColor ground:[[PremiumData sharedInstance] k_pursuitTitle]];
-    //: self.textfile_2.placeholder = [FFFLanguageManager getTextWithKey:@"activity_modify_new"];
+    //: self.textfile_2.placeholder = [WorkLanguageManager getTextWithKey:@"activity_modify_new"];
     self.textfile_2.placeholder = [InputRed preserve:[[PremiumData sharedInstance] userCommentTitle]];
 //    self.textfile_2.delegate = self;
     //: self.textfile_2.secureTextEntry = YES;
@@ -492,7 +492,7 @@ typedef struct {
     self.textfile_3.font = [UIFont systemFontOfSize:16];
     //: self.textfile_3.textColor = [UIColor colorWithHexString:@"#333333"];
     self.textfile_3.textColor = [UIColor ground:[[PremiumData sharedInstance] k_pursuitTitle]];
-    //: self.textfile_3.placeholder = [FFFLanguageManager getTextWithKey:@"activity_modify_new_again"];
+    //: self.textfile_3.placeholder = [WorkLanguageManager getTextWithKey:@"activity_modify_new_again"];
     self.textfile_3.placeholder = [InputRed preserve:[[PremiumData sharedInstance] mUniteText]];
 //    self.textfile_3.delegate = self;
     //: self.textfile_3.secureTextEntry = YES;
@@ -522,7 +522,7 @@ typedef struct {
     emptyButton.titleLabel.font = [UIFont systemFontOfSize:15];
     //: [emptyButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [emptyButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [emptyButton setTitle:[FFFLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
+    //: [emptyButton setTitle:[WorkLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
     [emptyButton setTitle:[InputRed preserve:[[PremiumData sharedInstance] k_countData]] forState:UIControlStateNormal];
     //: [emptyButton addTarget:self action:@selector(commitButtonClick) forControlEvents:UIControlEventTouchUpInside];
     [emptyButton addTarget:self action:@selector(sessionTitle) forControlEvents:UIControlEventTouchUpInside];
@@ -609,7 +609,7 @@ typedef struct {
         style.imageSize = CGSizeMake(20, 20);
         //: style.messageColor = [UIColor colorWithHexString:@"#5D5F66"];
         style.messageColor = [UIColor ground:[[PremiumData sharedInstance] userReadSessionName]];
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"modify_activity_psw_no_same"] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:@"login_error"] style:style completion:nil];
+        //: [self.view makeToast:[WorkLanguageManager getTextWithKey:@"modify_activity_psw_no_same"] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:@"login_error"] style:style completion:nil];
         [self.view makeToast:[InputRed preserve:[[PremiumData sharedInstance] appShouldTitle]] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:[[PremiumData sharedInstance] mainSuccessValue]] style:style completion:nil];
         //: return;
         return;
@@ -676,7 +676,7 @@ typedef struct {
         style.imageSize = CGSizeMake(20, 20);
         //: style.messageColor = [UIColor colorWithHexString:@"#5D5F66"];
         style.messageColor = [UIColor ground:[[PremiumData sharedInstance] userReadSessionName]];
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:@"login_error"] style:style completion:nil];
+        //: [self.view makeToast:[WorkLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:@"login_error"] style:style completion:nil];
         [self.view makeToast:[InputRed preserve:[[PremiumData sharedInstance] user_onContent]] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:[[PremiumData sharedInstance] mainSuccessValue]] style:style completion:nil];
     //: }];
     }];

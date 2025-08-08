@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFUsrInfoData.h
+//  WorkUsrInfoData.h
 //  NIM
 //
 //  Created by Xuhui on 15/3/19.
@@ -9,16 +9,16 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactDefines.h"
-#import "FFFContactDefines.h"
+//: #import "WorkContactDefines.h"
+#import "WorkContactDefines.h"
 
-//: @class FFFKitInfo;
+//: @class WorkKitInfo;
 @class ConfirmationInfo;
 
 //: @interface RiverlaUsrInfo : NSObject <NIMGroupMemberProtocol>
 @interface WithInfo : NSObject <MemberProtocol>
 
-//: @property (nonatomic,strong) FFFKitInfo *info;
+//: @property (nonatomic,strong) WorkKitInfo *info;
 @property (nonatomic,strong) ConfirmationInfo *info;
 
 //: - (BOOL)isFriend;

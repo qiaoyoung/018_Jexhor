@@ -205,7 +205,7 @@ typedef struct {
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"activity_set_bio_title"];
+    //: labtitle.text = [WorkLanguageManager getTextWithKey:@"activity_set_bio_title"];
     labtitle.text = [InputRed preserve:[PictureData main_changeValue]];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -294,7 +294,7 @@ typedef struct {
             [nav popViewControllerAnimated:NO];
             //: UIViewController *vc = nav.topViewController;
             UIViewController *vc = nav.topViewController;
-            //: [vc.view makeToast:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_success"]
+            //: [vc.view makeToast:[WorkLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_success"]
             [vc.view makeToast:[InputRed preserve:[PictureData userSizeText]]
                          //: duration:2
                          duration:2
@@ -302,7 +302,7 @@ typedef struct {
                          position:CSToastPositionCenter];
         //: }else{
         }else{
-            //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"]
+            //: [wself.view makeToast:[WorkLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"]
             [wself.view makeToast:[InputRed preserve:[PictureData mainChangeData]]
                          //: duration:2
                          duration:2
@@ -349,7 +349,7 @@ typedef struct {
         _textView.font = [UIFont systemFontOfSize:16.0];
         //: _textView.textColor = [UIColor colorWithHexString:@"#333333"];
         _textView.textColor = [UIColor ground:[PictureData dreamMessageText]];
-        //: _textView.placeholder = [FFFLanguageManager getTextWithKey:@"activity_set_bio_title"];
+        //: _textView.placeholder = [WorkLanguageManager getTextWithKey:@"activity_set_bio_title"];
         _textView.placeholder = [InputRed preserve:[PictureData main_changeValue]];
         //: _textView.delegate = self;
         _textView.delegate = self;

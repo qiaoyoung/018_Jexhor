@@ -72,21 +72,21 @@
 // __M_A_C_R_O__
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
-//: #import "FFFKitTimerHolder.h"
+//: #import "WorkKitTimerHolder.h"
 #import "ChangeHolder.h"
-//: #import "FFFKitNotificationFirer.h"
+//: #import "WorkKitNotificationFirer.h"
 #import "SessionFirer.h"
-//: #import "FFFKitDataProviderImpl.h"
+//: #import "WorkKitDataProviderImpl.h"
 #import "ColumnLine.h"
-//: #import "FFFCellLayoutConfig.h"
+//: #import "WorkCellLayoutConfig.h"
 #import "TingConfig.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WorkKitInfoFetchOption.h"
 #import "RangeOption.h"
 //: #import "NSBundle+MyUserKit.h"
 #import "NSBundle+MessageContent.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+MessageContent.h"
-//: #import "FFFChatUIManager.h"
+//: #import "WorkChatUIManager.h"
 #import "WithUimanager.h"
 
 //: extern NSString *const dream_versionData;
@@ -100,9 +100,9 @@ extern NSString *const userFrameContent;
     //: NSRegularExpression *_urlRegex;
     NSRegularExpression *_urlRegex;
 }
-//: @property (nonatomic,strong) FFFKitNotificationFirer *firer;
+//: @property (nonatomic,strong) WorkKitNotificationFirer *firer;
 @property (nonatomic,strong) SessionFirer *firer;
-//: @property (nonatomic,strong) id<FFFCellLayoutConfig> layoutConfig;
+//: @property (nonatomic,strong) id<WorkCellLayoutConfig> layoutConfig;
 @property (nonatomic,strong) id<TingConfig> layoutConfig;
 //: @end
 @end
@@ -115,11 +115,11 @@ extern NSString *const userFrameContent;
 {
     //: if (self = [super init]) {
     if (self = [super init]) {
-        //: _firer = [[FFFKitNotificationFirer alloc] init];
+        //: _firer = [[WorkKitNotificationFirer alloc] init];
         _firer = [[SessionFirer alloc] init];
-        //: _provider = [[FFFKitDataProviderImpl alloc] init]; 
+        //: _provider = [[WorkKitDataProviderImpl alloc] init]; 
         _provider = [[ColumnLine alloc] init]; //默认使用 MessageContent 的实现
-        //: _layoutConfig = [[FFFCellLayoutConfig alloc] init];
+        //: _layoutConfig = [[WorkCellLayoutConfig alloc] init];
         _layoutConfig = [[TingConfig alloc] init];
         //: [self preloadNIMKitBundleResource];
         [self tap];
@@ -145,10 +145,10 @@ extern NSString *const userFrameContent;
     return instance;
 }
 
-//: - (void)registerLayoutConfig:(FFFCellLayoutConfig *)layoutConfig
+//: - (void)registerLayoutConfig:(WorkCellLayoutConfig *)layoutConfig
 - (void)fluctuation:(TingConfig *)layoutConfig
 {
-    //: if ([layoutConfig isKindOfClass:[FFFCellLayoutConfig class]])
+    //: if ([layoutConfig isKindOfClass:[WorkCellLayoutConfig class]])
     if ([layoutConfig isKindOfClass:[TingConfig class]])
     {
         //: self.layoutConfig = layoutConfig;
@@ -184,28 +184,28 @@ extern NSString *const userFrameContent;
     return _languageBundle;
 }
 
-//: - (id<FFFChatUIManager>)chatUIManager
+//: - (id<WorkChatUIManager>)chatUIManager
 - (id<WithUimanager>)chatUIManager
 {
-    //: return FFFChatUIManager.sharedManager;
+    //: return WorkChatUIManager.sharedManager;
     return WithUimanager.ting;
 }
 
-//: - (id<FFFCellLayoutConfig>)layoutConfig
+//: - (id<WorkCellLayoutConfig>)layoutConfig
 - (id<TingConfig>)layoutConfig
 {
     //: return _layoutConfig;
     return _layoutConfig;
 }
 
-//: - (FFFKitConfig *)config
+//: - (WorkKitConfig *)config
 - (ModeConfig *)config
 {
     //不要放在 MessageContent 初始化里面，因为 UIConfig 初始化会使用 NIMKit, 防止死循环
     //: if (!_config)
     if (!_config)
     {
-        //: _config = [[FFFKitConfig alloc] init];
+        //: _config = [[WorkKitConfig alloc] init];
         _config = [[ModeConfig alloc] init];
     }
     //: return _config;
@@ -290,10 +290,10 @@ extern NSString *const userFrameContent;
     [self.firer imageTemp:info];
 }
 
-//: - (FFFKitInfo *)infoByUser:(NSString *)userId option:(FFFKitInfoFetchOption *)option
+//: - (WorkKitInfo *)infoByUser:(NSString *)userId option:(WorkKitInfoFetchOption *)option
 - (ConfirmationInfo *)recent:(NSString *)userId blue:(RangeOption *)option
 {
-    //: FFFKitInfo *info = nil;
+    //: WorkKitInfo *info = nil;
     ConfirmationInfo *info = nil;
     //: if (self.provider && [self.provider respondsToSelector:@selector(infoByUser:option:)]) {
     if (self.provider && [self.provider respondsToSelector:@selector(recent:blue:)]) {
@@ -304,10 +304,10 @@ extern NSString *const userFrameContent;
     return info;
 }
 
-//: - (FFFKitInfo *)infoByTeam:(NSString *)teamId option:(FFFKitInfoFetchOption *)option
+//: - (WorkKitInfo *)infoByTeam:(NSString *)teamId option:(WorkKitInfoFetchOption *)option
 - (ConfirmationInfo *)info:(NSString *)teamId comment:(RangeOption *)option
 {
-    //: FFFKitInfo *info = nil;
+    //: WorkKitInfo *info = nil;
     ConfirmationInfo *info = nil;
     //: if (self.provider && [self.provider respondsToSelector:@selector(infoByTeam:option:)]) {
     if (self.provider && [self.provider respondsToSelector:@selector(info:comment:)]) {
@@ -319,10 +319,10 @@ extern NSString *const userFrameContent;
 
 }
 
-//: - (FFFKitInfo *)infoBySuperTeam:(NSString *)teamId option:(FFFKitInfoFetchOption *)option
+//: - (WorkKitInfo *)infoBySuperTeam:(NSString *)teamId option:(WorkKitInfoFetchOption *)option
 - (ConfirmationInfo *)item:(NSString *)teamId pit:(RangeOption *)option
 {
-    //: FFFKitInfo *info = nil;
+    //: WorkKitInfo *info = nil;
     ConfirmationInfo *info = nil;
     //: if (self.provider && [self.provider respondsToSelector:@selector(infoBySuperTeam:option:)]) {
     if (self.provider && [self.provider respondsToSelector:@selector(item:pit:)]) {
@@ -338,7 +338,7 @@ extern NSString *const userFrameContent;
 - (void)tap {
     //: dispatch_async(dispatch_get_main_queue(), ^{
     dispatch_async(dispatch_get_main_queue(), ^{
-        //: [[FFFInputEmoticonManager sharedManager] start];
+        //: [[WorkInputEmoticonManager sharedManager] start];
         [[RedManager session] clean];
     //: });
     });

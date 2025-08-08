@@ -49,12 +49,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamSwitchTableViewCell.h"
+//: #import "WorkTeamSwitchTableViewCell.h"
 #import "KeyStyleView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 
-//: @implementation FFFTeamSwitchTableViewCell
+//: @implementation WorkTeamSwitchTableViewCell
 @implementation KeyStyleView
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{

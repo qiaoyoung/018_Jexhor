@@ -204,7 +204,7 @@ Byte mainViewTitle[] = {19, 7, 13, 170, 118, 106, 57, 103, 54, 197, 166, 19, 195
     labNavtitle.textColor = [UIColor blackColor];
     //: labNavtitle.font = [UIFont boldSystemFontOfSize:16];
     labNavtitle.font = [UIFont boldSystemFontOfSize:16];
-    //: labNavtitle.text = [FFFLanguageManager getTextWithKey:@"add_friend_activity_add_friend"];
+    //: labNavtitle.text = [WorkLanguageManager getTextWithKey:@"add_friend_activity_add_friend"];
     labNavtitle.text = [InputRed preserve:StringFromByData(dream_canEndName)];
     //: labNavtitle.textAlignment = NSTextAlignmentCenter;
     labNavtitle.textAlignment = NSTextAlignmentCenter;
@@ -286,7 +286,7 @@ Byte mainViewTitle[] = {19, 7, 13, 170, 118, 106, 57, 103, 54, 197, 166, 19, 195
     labRecommended.font = [UIFont systemFontOfSize:14.f];
     //: labRecommended.textColor = [UIColor colorWithHexString:@"#2C3042"];
     labRecommended.textColor = [UIColor ground:StringFromByData(kMessageDisableTitle)];
-    //: labRecommended.text = [FFFLanguageManager getTextWithKey:@"hot_guys"];
+    //: labRecommended.text = [WorkLanguageManager getTextWithKey:@"hot_guys"];
     labRecommended.text = [InputRed preserve:StringFromByData(userHideSessionValue)];
     //: [self.view addSubview:labRecommended];
     [self.view addSubview:labRecommended];
@@ -519,13 +519,13 @@ Byte mainViewTitle[] = {19, 7, 13, 170, 118, 106, 57, 103, 54, 197, 166, 19, 195
     //: request.message = tempVerificationInfo.length > 0 ? tempVerificationInfo : @"";
     request.message = tempVerificationInfo.length > 0 ? tempVerificationInfo : @"";
 
-    //: NSString *contact_tag_fragment_add_success = [FFFLanguageManager getTextWithKey:@"contact_tag_fragment_add_success"];
+    //: NSString *contact_tag_fragment_add_success = [WorkLanguageManager getTextWithKey:@"contact_tag_fragment_add_success"];
     NSString *contact_tag_fragment_add_success = [InputRed preserve:StringFromByData(show_thanContent)];//@"添加成功".
-    //: NSString *request_successful = [FFFLanguageManager getTextWithKey:@"request_successful"];
+    //: NSString *request_successful = [WorkLanguageManager getTextWithKey:@"request_successful"];
     NSString *request_successful = [InputRed preserve:StringFromByData(mImageData)];//@"请求成功".
-    //: NSString *add_friend_add_fail = [FFFLanguageManager getTextWithKey:@"add_friend_add_fail"];
+    //: NSString *add_friend_add_fail = [WorkLanguageManager getTextWithKey:@"add_friend_add_fail"];
     NSString *add_friend_add_fail = [InputRed preserve:StringFromByData(app_targetValue)];//@"添加失败".
-    //: NSString *add_friend_request_fail = [FFFLanguageManager getTextWithKey:@"add_friend_request_fail"];
+    //: NSString *add_friend_request_fail = [WorkLanguageManager getTextWithKey:@"add_friend_request_fail"];
     NSString *add_friend_request_fail = [InputRed preserve:StringFromByData(mainLabelValue)];//@"请求失败".
     //: NSString *successText = request.operation == NIMUserOperationAdd ? contact_tag_fragment_add_success: request_successful;
     NSString *successText = request.operation == NIMUserOperationAdd ? contact_tag_fragment_add_success: request_successful;
@@ -569,7 +569,7 @@ Byte mainViewTitle[] = {19, 7, 13, 170, 118, 106, 57, 103, 54, 197, 166, 19, 195
     if(!_textField){
         //: _textField = [[UITextField alloc]init];
         _textField = [[UITextField alloc]init];
-        //: _textField.placeholder = [FFFLanguageManager getTextWithKey:@"add_friend_activity_input_account"];
+        //: _textField.placeholder = [WorkLanguageManager getTextWithKey:@"add_friend_activity_input_account"];
         _textField.placeholder = [InputRed preserve:StringFromByData(dream_limitValue)];
         //: _textField.textColor = [UIColor colorWithHexString:@"#333333"];
         _textField.textColor = [UIColor ground:StringFromByData(noti_targetText)];
@@ -644,7 +644,7 @@ Byte mainViewTitle[] = {19, 7, 13, 170, 118, 106, 57, 103, 54, 197, 166, 19, 195
         }else{
             //: if (wself) {
             if (wself) {
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_number_no"] duration:2.0 position:CSToastPositionCenter];
+                //: [wself.view makeToast:[WorkLanguageManager getTextWithKey:@"group_info_activity_number_no"] duration:2.0 position:CSToastPositionCenter];
                 [wself.view makeToast:[InputRed preserve:StringFromByData(showNameValue)] duration:2.0 position:CSToastPositionCenter];
             }
         }
@@ -693,12 +693,12 @@ Byte mainViewTitle[] = {19, 7, 13, 170, 118, 106, 57, 103, 54, 197, 166, 19, 195
 
         //: }else{
         }else{
-            //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"please_contact_your_administrator"] duration:2.0 position:CSToastPositionCenter];
+            //: [wself.view makeToast:[WorkLanguageManager getTextWithKey:@"please_contact_your_administrator"] duration:2.0 position:CSToastPositionCenter];
             [wself.view makeToast:[InputRed preserve:StringFromByData(app_hideContent)] duration:2.0 position:CSToastPositionCenter];
         }
     //: } failed:^(id responseObject, NSError *error) {
     } jump:^(id responseObject, NSError *error) {
-        //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"please_contact_your_administrator"] duration:2.0 position:CSToastPositionCenter];
+        //: [wself.view makeToast:[WorkLanguageManager getTextWithKey:@"please_contact_your_administrator"] duration:2.0 position:CSToastPositionCenter];
         [wself.view makeToast:[InputRed preserve:StringFromByData(app_hideContent)] duration:2.0 position:CSToastPositionCenter];
     //: }];
     }];

@@ -59,9 +59,9 @@ Byte notiPlaceAmbitionName[] = {17, 63, 39, 11, 104, 85, 253, 155, 209, 85, 39, 
 // __M_A_C_R_O__
 //: #import "NTESMigrateMessageViewController.h"
 #import "StreetSmartViewController.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
-//: #import "FFFCommonTableDelegate.h"
+//: #import "WorkCommonTableData.h"
+#import "WorkCommonTableData.h"
+//: #import "WorkCommonTableDelegate.h"
 #import "TableDelegate.h"
 //: #import "SVProgressHUD.h"
 #import "SVProgressHUD.h"
@@ -77,7 +77,7 @@ Byte notiPlaceAmbitionName[] = {17, 63, 39, 11, 104, 85, 253, 155, 209, 85, 39, 
 
 //: @property (nonatomic,copy) NSArray *data;
 @property (nonatomic,copy) NSArray *data;
-//: @property (nonatomic,strong) FFFCommonTableDelegate *delegator;
+//: @property (nonatomic,strong) WorkCommonTableDelegate *delegator;
 @property (nonatomic,strong) TableDelegate *delegator;
 
 //: @end
@@ -100,7 +100,7 @@ Byte notiPlaceAmbitionName[] = {17, 63, 39, 11, 104, 85, 253, 155, 209, 85, 39, 
     [self constructData];
     //: __weak typeof(self) wself = self;
     __weak typeof(self) wself = self;
-    //: self.delegator = [[FFFCommonTableDelegate alloc] initWithTableData:^NSArray *{
+    //: self.delegator = [[WorkCommonTableDelegate alloc] initWithTableData:^NSArray *{
     self.delegator = [[TableDelegate alloc] initWithMessage:^NSArray *{
         //: return wself.data;
         return wself.data;

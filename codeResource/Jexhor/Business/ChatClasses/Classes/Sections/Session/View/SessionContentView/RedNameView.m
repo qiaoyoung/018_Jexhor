@@ -30,23 +30,23 @@ Byte m_atName[] = {95, 18, 13, 98, 76, 92, 66, 84, 196, 119, 142, 125, 123, 112,
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionShareCardContentView.h"
+//: #import "WorkSessionShareCardContentView.h"
 #import "RedNameView.h"
-//: #import "FFFMessageModel.h"
+//: #import "WorkMessageModel.h"
 #import "ShowModel.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFLoadProgressView.h"
+//: #import "WorkLoadProgressView.h"
 #import "ButtonLoadView.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "WorkKitDependency.h"
+#import "WorkKitDependency.h"
 //: #import <YYImage/YYImage.h>
 #import <YYImage/YYImage.h>
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
-//: #import "FFFKitDataProviderImpl.h"
+//: #import "WorkKitDataProviderImpl.h"
 #import "ColumnLine.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WorkKitInfoFetchOption.h"
 #import "RangeOption.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
@@ -59,7 +59,7 @@ Byte m_atName[] = {95, 18, 13, 98, 76, 92, 66, 84, 196, 119, 142, 125, 123, 112,
 //: #import <objc/message.h>
 #import <objc/message.h>
 
-//: @interface FFFSessionShareCardContentView()
+//: @interface WorkSessionShareCardContentView()
 @interface RedNameView()
 
 //: @property (nonatomic,strong) UIImageView *imageView;
@@ -72,7 +72,7 @@ Byte m_atName[] = {95, 18, 13, 98, 76, 92, 66, 84, 196, 119, 142, 125, 123, 112,
 //: @end
 @end
 
-//: @implementation FFFSessionShareCardContentView
+//: @implementation WorkSessionShareCardContentView
 @implementation RedNameView
 
 //: - (instancetype)initSessionMessageContentView{
@@ -107,7 +107,7 @@ Byte m_atName[] = {95, 18, 13, 98, 76, 92, 66, 84, 196, 119, 142, 125, 123, 112,
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data
+//: - (void)refresh:(WorkMessageModel *)data
 - (void)panorama:(ShowModel *)data
 {
     //: [super refresh:data];
@@ -225,9 +225,9 @@ Byte m_atName[] = {95, 18, 13, 98, 76, 92, 66, 84, 196, 119, 142, 125, 123, 112,
 //: - (void)onTouchUpInside:(id)sender
 - (void)recorded:(id)sender
 {
-    //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+    //: WorkKitEvent *event = [[WorkKitEvent alloc] init];
     WrittenAccountLab *event = [[WrittenAccountLab alloc] init];
-    //: event.eventName = FFFKitEventNameTapContent;
+    //: event.eventName = WorkKitEventNameTapContent;
     event.eventName = userTopData;
     //: event.messageModel = self.model;
     event.messageModel = self.model;

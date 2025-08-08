@@ -9,14 +9,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTipContentConfig.h"
+//: #import "WorkTipContentConfig.h"
 #import "PacketConfig.h"
-//: #import "FFFKitUtil.h"
+//: #import "WorkKitUtil.h"
 #import "WantUtil.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
 
-//: @implementation FFFTipContentConfig
+//: @implementation WorkTipContentConfig
 @implementation PacketConfig
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
@@ -26,7 +26,7 @@
     CGFloat messageWidth = cellWidth;
     //: UILabel *label = [[UILabel alloc] init];
     UILabel *label = [[UILabel alloc] init];
-    //: label.text = [FFFKitUtil messageTipContent:message];
+    //: label.text = [WorkKitUtil messageTipContent:message];
     label.text = [WantUtil tingAcross:message];
     //: label.font = [[MyUserKit sharedKit].config setting:message].font;
     label.font = [[MessageContent secretResolution].config ofSetting:message].font;
@@ -47,7 +47,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)on:(NIMMessage *)message
 {
-    //: return @"FFFSessionNotificationContentView";
+    //: return @"WorkSessionNotificationContentView";
     return @"SoundView";
 }
 

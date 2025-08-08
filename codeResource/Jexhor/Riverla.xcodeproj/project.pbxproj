@@ -71,7 +71,7 @@
 		428016162B1849A6003A9CAD /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428016152B1849A6003A9CAD /* Photos.framework */; };
 		429D418B299A79F500354206 /* CompartmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D401A299A79F400354206 /* CompartmentViewController.m */; };
 		429D418C299A79F500354206 /* SessionCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D401D299A79F400354206 /* SessionCount.m */; };
-		429D418D299A79F500354206 /* FFFGroupedUsrInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D401E299A79F400354206 /* FFFGroupedUsrInfo.m */; };
+		429D418D299A79F500354206 /* WorkGroupedUsrInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D401E299A79F400354206 /* WorkGroupedUsrInfo.m */; };
 		429D418E299A79F500354206 /* AccountingDataViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4022299A79F400354206 /* AccountingDataViewCell.m */; };
 		429D418F299A79F500354206 /* SameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4025299A79F400354206 /* SameView.m */; };
 		429D4190299A79F500354206 /* WithColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4028299A79F400354206 /* WithColorView.m */; };
@@ -120,7 +120,7 @@
 		429D41BF299A79F500354206 /* ProviderItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4095299A79F500354206 /* ProviderItem.m */; };
 		429D41C0299A79F500354206 /* MessageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4096299A79F500354206 /* MessageItem.m */; };
 		429D41C1299A79F500354206 /* CardItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4097299A79F500354206 /* CardItem.m */; };
-		429D41C2299A79F500354206 /* FFFUsrInfoData.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D409A299A79F500354206 /* FFFUsrInfoData.m */; };
+		429D41C2299A79F500354206 /* WorkUsrInfoData.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D409A299A79F500354206 /* WorkUsrInfoData.m */; };
 		429D41C3299A79F500354206 /* NumberData.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D409F299A79F500354206 /* NumberData.m */; };
 		429D41C4299A79F500354206 /* SameOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D40A1299A79F500354206 /* SameOption.m */; };
 		429D41C5299A79F500354206 /* KeyStyleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D40A3299A79F500354206 /* KeyStyleView.m */; };
@@ -148,7 +148,7 @@
 		429D41DC299A79F500354206 /* ContentBottomConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D40D9299A79F500354206 /* ContentBottomConfig.m */; };
 		429D41DD299A79F500354206 /* RecentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D40DC299A79F500354206 /* RecentConfig.m */; };
 		429D41DE299A79F500354206 /* RedSystemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D40DD299A79F500354206 /* RedSystemView.m */; };
-		429D41DF299A79F500354206 /* FFFBaseSessionContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D40E0299A79F500354206 /* FFFBaseSessionContentConfig.m */; };
+		429D41DF299A79F500354206 /* WorkBaseSessionContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D40E0299A79F500354206 /* WorkBaseSessionContentConfig.m */; };
 		429D41E0299A79F500354206 /* TingConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D40E1299A79F500354206 /* TingConfig.m */; };
 		429D41E1299A79F500354206 /* WithUimanager.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D40E4299A79F500354206 /* WithUimanager.m */; };
 		429D41E2299A79F500354206 /* TingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D40E6299A79F500354206 /* TingCell.m */; };
@@ -190,7 +190,7 @@
 		429D420F299A79F500354206 /* AVAsset+MessageContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D414E299A79F500354206 /* AVAsset+MessageContent.m */; };
 		429D4210299A79F500354206 /* NSString+MessageContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D414F299A79F500354206 /* NSString+MessageContent.m */; };
 		429D4211299A79F500354206 /* UITableView+NIMScrollToBottom.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4153299A79F500354206 /* UITableView+NIMScrollToBottom.m */; };
-		429D4212299A79F500354206 /* FFFExtensionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4154299A79F500354206 /* FFFExtensionHelper.m */; };
+		429D4212299A79F500354206 /* WorkExtensionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4154299A79F500354206 /* WorkExtensionHelper.m */; };
 		429D4213299A79F500354206 /* UIButton+MessageContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4155299A79F500354206 /* UIButton+MessageContent.m */; };
 		429D4214299A79F500354206 /* UIViewNimKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4157299A79F500354206 /* UIViewNimKit.m */; };
 		429D4215299A79F500354206 /* VideoTextView+MessageContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4159299A79F500354206 /* VideoTextView+MessageContent.m */; };
@@ -200,7 +200,7 @@
 		429D4219299A79F500354206 /* ViewKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D416A299A79F500354206 /* ViewKey.m */; };
 		429D421A299A79F500354206 /* SessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D416C299A79F500354206 /* SessionManager.m */; };
 		429D421B299A79F500354206 /* TableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D416E299A79F500354206 /* TableDelegate.m */; };
-		429D421C299A79F500354206 /* FFFCommonTableData.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4170299A79F500354206 /* FFFCommonTableData.m */; };
+		429D421C299A79F500354206 /* WorkCommonTableData.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4170299A79F500354206 /* WorkCommonTableData.m */; };
 		429D421D299A79F500354206 /* CellItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4173299A79F500354206 /* CellItemView.m */; };
 		429D421E299A79F500354206 /* ModeConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4176299A79F500354206 /* ModeConfig.m */; };
 		429D421F299A79F500354206 /* WithInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D4178299A79F500354206 /* WithInfoView.m */; };
@@ -604,13 +604,13 @@
 		429D4018299A79F400354206 /* SameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SameView.h; sourceTree = "<group>"; };
 		429D4019299A79F400354206 /* WithColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithColorView.h; sourceTree = "<group>"; };
 		429D401A299A79F400354206 /* CompartmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompartmentViewController.m; sourceTree = "<group>"; };
-		429D401C299A79F400354206 /* FFFGroupedUsrInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFGroupedUsrInfo.h; sourceTree = "<group>"; };
+		429D401C299A79F400354206 /* WorkGroupedUsrInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkGroupedUsrInfo.h; sourceTree = "<group>"; };
 		429D401D299A79F400354206 /* SessionCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionCount.m; sourceTree = "<group>"; };
-		429D401E299A79F400354206 /* FFFGroupedUsrInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFFGroupedUsrInfo.m; sourceTree = "<group>"; };
+		429D401E299A79F400354206 /* WorkGroupedUsrInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkGroupedUsrInfo.m; sourceTree = "<group>"; };
 		429D401F299A79F400354206 /* SessionCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionCount.h; sourceTree = "<group>"; };
 		429D4020299A79F400354206 /* TitleConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleConfig.h; sourceTree = "<group>"; };
 		429D4022299A79F400354206 /* AccountingDataViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountingDataViewCell.m; sourceTree = "<group>"; };
-		429D4023299A79F400354206 /* FFFContactDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFContactDefines.h; sourceTree = "<group>"; };
+		429D4023299A79F400354206 /* WorkContactDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkContactDefines.h; sourceTree = "<group>"; };
 		429D4024299A79F400354206 /* AccountingDataViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountingDataViewCell.h; sourceTree = "<group>"; };
 		429D4025299A79F400354206 /* SameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SameView.m; sourceTree = "<group>"; };
 		429D4027299A79F400354206 /* CompartmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompartmentViewController.h; sourceTree = "<group>"; };
@@ -649,11 +649,11 @@
 		429D404E299A79F400354206 /* RedManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedManager.m; sourceTree = "<group>"; };
 		429D4050299A79F400354206 /* AdministratorCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdministratorCache.m; sourceTree = "<group>"; };
 		429D4051299A79F400354206 /* SignParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignParser.h; sourceTree = "<group>"; };
-		429D4052299A79F400354206 /* FFFInputBarItemType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFInputBarItemType.h; sourceTree = "<group>"; };
+		429D4052299A79F400354206 /* WorkInputBarItemType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkInputBarItemType.h; sourceTree = "<group>"; };
 		429D4053299A79F400354206 /* CoatButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoatButtonView.m; sourceTree = "<group>"; };
 		429D4054299A79F400354206 /* SignalingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalingView.h; sourceTree = "<group>"; };
 		429D4055299A79F400354206 /* TingShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TingShowView.h; sourceTree = "<group>"; };
-		429D4056299A79F400354206 /* FFFInputEmoticonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFInputEmoticonDefine.h; sourceTree = "<group>"; };
+		429D4056299A79F400354206 /* WorkInputEmoticonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkInputEmoticonDefine.h; sourceTree = "<group>"; };
 		429D4057299A79F400354206 /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
 		429D4058299A79F400354206 /* ReferView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReferView.m; sourceTree = "<group>"; };
 		429D4059299A79F400354206 /* KeyControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyControl.m; sourceTree = "<group>"; };
@@ -707,12 +707,12 @@
 		429D4097299A79F500354206 /* CardItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardItem.m; sourceTree = "<group>"; };
 		429D4098299A79F500354206 /* NumberData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberData.h; sourceTree = "<group>"; };
 		429D4099299A79F500354206 /* SameOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SameOption.h; sourceTree = "<group>"; };
-		429D409A299A79F500354206 /* FFFUsrInfoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFFUsrInfoData.m; sourceTree = "<group>"; };
+		429D409A299A79F500354206 /* WorkUsrInfoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkUsrInfoData.m; sourceTree = "<group>"; };
 		429D409B299A79F500354206 /* ProviderItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProviderItem.h; sourceTree = "<group>"; };
 		429D409C299A79F500354206 /* CardItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardItem.h; sourceTree = "<group>"; };
 		429D409D299A79F500354206 /* MessageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageItem.h; sourceTree = "<group>"; };
 		429D409F299A79F500354206 /* NumberData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberData.m; sourceTree = "<group>"; };
-		429D40A0299A79F500354206 /* FFFUsrInfoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFUsrInfoData.h; sourceTree = "<group>"; };
+		429D40A0299A79F500354206 /* WorkUsrInfoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkUsrInfoData.h; sourceTree = "<group>"; };
 		429D40A1299A79F500354206 /* SameOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SameOption.m; sourceTree = "<group>"; };
 		429D40A3299A79F500354206 /* KeyStyleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyStyleView.m; sourceTree = "<group>"; };
 		429D40A4299A79F500354206 /* RankView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankView.h; sourceTree = "<group>"; };
@@ -754,7 +754,7 @@
 		429D40D1299A79F500354206 /* TeamTextDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamTextDisplay.m; sourceTree = "<group>"; };
 		429D40D2299A79F500354206 /* RedSystemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedSystemView.h; sourceTree = "<group>"; };
 		429D40D3299A79F500354206 /* RecentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentConfig.h; sourceTree = "<group>"; };
-		429D40D4299A79F500354206 /* FFFBaseSessionContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFBaseSessionContentConfig.h; sourceTree = "<group>"; };
+		429D40D4299A79F500354206 /* WorkBaseSessionContentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkBaseSessionContentConfig.h; sourceTree = "<group>"; };
 		429D40D5299A79F500354206 /* NeedCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NeedCircle.m; sourceTree = "<group>"; };
 		429D40D6299A79F500354206 /* AccountConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountConfig.m; sourceTree = "<group>"; };
 		429D40D7299A79F500354206 /* SoundQuantity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundQuantity.m; sourceTree = "<group>"; };
@@ -766,7 +766,7 @@
 		429D40DD299A79F500354206 /* RedSystemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedSystemView.m; sourceTree = "<group>"; };
 		429D40DE299A79F500354206 /* TeamTextDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamTextDisplay.h; sourceTree = "<group>"; };
 		429D40DF299A79F500354206 /* NeedCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeedCircle.h; sourceTree = "<group>"; };
-		429D40E0299A79F500354206 /* FFFBaseSessionContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFFBaseSessionContentConfig.m; sourceTree = "<group>"; };
+		429D40E0299A79F500354206 /* WorkBaseSessionContentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkBaseSessionContentConfig.m; sourceTree = "<group>"; };
 		429D40E1299A79F500354206 /* TingConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TingConfig.m; sourceTree = "<group>"; };
 		429D40E3299A79F500354206 /* WithUimanager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithUimanager.h; sourceTree = "<group>"; };
 		429D40E4299A79F500354206 /* WithUimanager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithUimanager.m; sourceTree = "<group>"; };
@@ -777,12 +777,12 @@
 		429D40EA299A79F500354206 /* LineVideoMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineVideoMessage.m; sourceTree = "<group>"; };
 		429D40EB299A79F500354206 /* TextStyleCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextStyleCircle.m; sourceTree = "<group>"; };
 		429D40EC299A79F500354206 /* MessageAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageAccount.h; sourceTree = "<group>"; };
-		429D40ED299A79F500354206 /* FFFSessionConfigurateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFSessionConfigurateProtocol.h; sourceTree = "<group>"; };
+		429D40ED299A79F500354206 /* WorkSessionConfigurateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkSessionConfigurateProtocol.h; sourceTree = "<group>"; };
 		429D40EE299A79F500354206 /* ModeStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModeStatus.m; sourceTree = "<group>"; };
 		429D40EF299A79F500354206 /* ColorAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorAdapter.h; sourceTree = "<group>"; };
 		429D40F0299A79F500354206 /* TingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TingCell.h; sourceTree = "<group>"; };
 		429D40F1299A79F500354206 /* LineVideoMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineVideoMessage.h; sourceTree = "<group>"; };
-		429D40F2299A79F500354206 /* FFFSessionPrivateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFSessionPrivateProtocol.h; sourceTree = "<group>"; };
+		429D40F2299A79F500354206 /* WorkSessionPrivateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkSessionPrivateProtocol.h; sourceTree = "<group>"; };
 		429D40F3299A79F500354206 /* TingClean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TingClean.h; sourceTree = "<group>"; };
 		429D40F4299A79F500354206 /* MessageAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageAccount.m; sourceTree = "<group>"; };
 		429D40F5299A79F500354206 /* TextStyleCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextStyleCircle.h; sourceTree = "<group>"; };
@@ -844,7 +844,7 @@
 		429D4145299A79F500354206 /* UIImage+MessageContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MessageContent.m"; sourceTree = "<group>"; };
 		429D4146299A79F500354206 /* NSBundle+MessageContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+MessageContent.m"; sourceTree = "<group>"; };
 		429D4147299A79F500354206 /* UIButton+MessageContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+MessageContent.h"; sourceTree = "<group>"; };
-		429D4148299A79F500354206 /* FFFExtensionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFExtensionHelper.h; sourceTree = "<group>"; };
+		429D4148299A79F500354206 /* WorkExtensionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkExtensionHelper.h; sourceTree = "<group>"; };
 		429D4149299A79F500354206 /* UIColor+MessageContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MessageContent.h"; sourceTree = "<group>"; };
 		429D414A299A79F500354206 /* UIViewNimKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewNimKit.h; sourceTree = "<group>"; };
 		429D414B299A79F500354206 /* UIView+Factor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Factor.m"; sourceTree = "<group>"; };
@@ -855,7 +855,7 @@
 		429D4151299A79F500354206 /* NSDictionary+MessageContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MessageContent.h"; sourceTree = "<group>"; };
 		429D4152299A79F500354206 /* UIImage+MessageContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MessageContent.h"; sourceTree = "<group>"; };
 		429D4153299A79F500354206 /* UITableView+NIMScrollToBottom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+NIMScrollToBottom.m"; sourceTree = "<group>"; };
-		429D4154299A79F500354206 /* FFFExtensionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFFExtensionHelper.m; sourceTree = "<group>"; };
+		429D4154299A79F500354206 /* WorkExtensionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkExtensionHelper.m; sourceTree = "<group>"; };
 		429D4155299A79F500354206 /* UIButton+MessageContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+MessageContent.m"; sourceTree = "<group>"; };
 		429D4157299A79F500354206 /* UIViewNimKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewNimKit.m; sourceTree = "<group>"; };
 		429D4158299A79F500354206 /* UIView+Factor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Factor.h"; sourceTree = "<group>"; };
@@ -864,11 +864,11 @@
 		429D415B299A79F500354206 /* NSString+MessageContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MessageContent.h"; sourceTree = "<group>"; };
 		429D415C299A79F500354206 /* AVAsset+MessageContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAsset+MessageContent.h"; sourceTree = "<group>"; };
 		429D415D299A79F500354206 /* MessageContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageContent.h; sourceTree = "<group>"; };
-		429D415F299A79F500354206 /* FFFChatUIManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFChatUIManagerProtocol.h; sourceTree = "<group>"; };
-		429D4160299A79F500354206 /* FFFInputProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFInputProtocol.h; sourceTree = "<group>"; };
-		429D4161299A79F500354206 /* FFFCellConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFCellConfig.h; sourceTree = "<group>"; };
+		429D415F299A79F500354206 /* WorkChatUIManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkChatUIManagerProtocol.h; sourceTree = "<group>"; };
+		429D4160299A79F500354206 /* WorkInputProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkInputProtocol.h; sourceTree = "<group>"; };
+		429D4161299A79F500354206 /* WorkCellConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkCellConfig.h; sourceTree = "<group>"; };
 		429D4162299A79F500354206 /* SpecsText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecsText.h; sourceTree = "<group>"; };
-		429D4163299A79F500354206 /* FFFMessageCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFMessageCellProtocol.h; sourceTree = "<group>"; };
+		429D4163299A79F500354206 /* WorkMessageCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkMessageCellProtocol.h; sourceTree = "<group>"; };
 		429D4164299A79F500354206 /* DraftProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraftProvider.h; sourceTree = "<group>"; };
 		429D4165299A79F500354206 /* LineConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineConfig.h; sourceTree = "<group>"; };
 		429D4167299A79F500354206 /* CellItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellItemView.h; sourceTree = "<group>"; };
@@ -880,20 +880,20 @@
 		429D416D299A79F500354206 /* TitleInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleInfo.h; sourceTree = "<group>"; };
 		429D416E299A79F500354206 /* TableDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableDelegate.m; sourceTree = "<group>"; };
 		429D416F299A79F500354206 /* WithInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithInfoView.h; sourceTree = "<group>"; };
-		429D4170299A79F500354206 /* FFFCommonTableData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFFCommonTableData.m; sourceTree = "<group>"; };
+		429D4170299A79F500354206 /* WorkCommonTableData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkCommonTableData.m; sourceTree = "<group>"; };
 		429D4171299A79F500354206 /* KitEffectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KitEffectView.h; sourceTree = "<group>"; };
 		429D4172299A79F500354206 /* ColumnLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColumnLine.h; sourceTree = "<group>"; };
 		429D4173299A79F500354206 /* CellItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellItemView.m; sourceTree = "<group>"; };
 		429D4174299A79F500354206 /* SessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionManager.h; sourceTree = "<group>"; };
-		429D4175299A79F500354206 /* FFFGlobalMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFGlobalMacro.h; sourceTree = "<group>"; };
+		429D4175299A79F500354206 /* WorkGlobalMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkGlobalMacro.h; sourceTree = "<group>"; };
 		429D4176299A79F500354206 /* ModeConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModeConfig.m; sourceTree = "<group>"; };
 		429D4177299A79F500354206 /* ViewKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewKey.h; sourceTree = "<group>"; };
 		429D4178299A79F500354206 /* WithInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithInfoView.m; sourceTree = "<group>"; };
 		429D4179299A79F500354206 /* TableDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableDelegate.h; sourceTree = "<group>"; };
 		429D417A299A79F500354206 /* TitleInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleInfo.m; sourceTree = "<group>"; };
 		429D417B299A79F500354206 /* TeamTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamTitle.h; sourceTree = "<group>"; };
-		429D417C299A79F500354206 /* FFFKitDependency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFKitDependency.h; sourceTree = "<group>"; };
-		429D417D299A79F500354206 /* FFFCommonTableData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFCommonTableData.h; sourceTree = "<group>"; };
+		429D417C299A79F500354206 /* WorkKitDependency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkKitDependency.h; sourceTree = "<group>"; };
+		429D417D299A79F500354206 /* WorkCommonTableData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkCommonTableData.h; sourceTree = "<group>"; };
 		429D417E299A79F500354206 /* MessageContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageContent.m; sourceTree = "<group>"; };
 		429D4180299A79F500354206 /* InputRed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputRed.h; sourceTree = "<group>"; };
 		429D4181299A79F500354206 /* VideoReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoReader.h; sourceTree = "<group>"; };
@@ -1128,7 +1128,7 @@
 		B1F189722E011C6E00E24425 /* ButtonManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonManager.m; sourceTree = "<group>"; };
 		B1F189732E011C6E00E24425 /* UIImage+Rf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Rf.h"; sourceTree = "<group>"; };
 		B1F189742E011C6E00E24425 /* UIImage+Rf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Rf.m"; sourceTree = "<group>"; };
-		B1F189772E01214F00E24425 /* FFFCardDataSourceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFFCardDataSourceProtocol.h; sourceTree = "<group>"; };
+		B1F189772E01214F00E24425 /* WorkCardDataSourceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorkCardDataSourceProtocol.h; sourceTree = "<group>"; };
 		B808E73C26F23E3D00E302F6 /* SameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SameViewController.h; sourceTree = "<group>"; };
 		B808E73D26F23E3D00E302F6 /* SameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SameViewController.m; sourceTree = "<group>"; };
 		B808E74D26F48B1000E302F6 /* ChangeUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeUtil.h; sourceTree = "<group>"; };
@@ -1624,8 +1624,8 @@
 			children = (
 				429D401F299A79F400354206 /* SessionCount.h */,
 				429D401D299A79F400354206 /* SessionCount.m */,
-				429D401C299A79F400354206 /* FFFGroupedUsrInfo.h */,
-				429D401E299A79F400354206 /* FFFGroupedUsrInfo.m */,
+				429D401C299A79F400354206 /* WorkGroupedUsrInfo.h */,
+				429D401E299A79F400354206 /* WorkGroupedUsrInfo.m */,
 			);
 			path = ContactGroup;
 			sourceTree = "<group>";
@@ -1635,7 +1635,7 @@
 			children = (
 				429D4024299A79F400354206 /* AccountingDataViewCell.h */,
 				429D4022299A79F400354206 /* AccountingDataViewCell.m */,
-				429D4023299A79F400354206 /* FFFContactDefines.h */,
+				429D4023299A79F400354206 /* WorkContactDefines.h */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1679,12 +1679,12 @@
 				429D405B299A79F400354206 /* GrowingTextView */,
 				429D4042299A79F400354206 /* AdministratorCache.h */,
 				429D4050299A79F400354206 /* AdministratorCache.m */,
-				429D4052299A79F400354206 /* FFFInputBarItemType.h */,
+				429D4052299A79F400354206 /* WorkInputBarItemType.h */,
 				429D404A299A79F400354206 /* KeyControl.h */,
 				429D4059299A79F400354206 /* KeyControl.m */,
 				429D404B299A79F400354206 /* ReferView.h */,
 				429D4058299A79F400354206 /* ReferView.m */,
-				429D4056299A79F400354206 /* FFFInputEmoticonDefine.h */,
+				429D4056299A79F400354206 /* WorkInputEmoticonDefine.h */,
 				429D4044299A79F400354206 /* RedManager.h */,
 				429D404E299A79F400354206 /* RedManager.m */,
 				429D4051299A79F400354206 /* SignParser.h */,
@@ -1825,8 +1825,8 @@
 				429D4096299A79F500354206 /* MessageItem.m */,
 				429D409C299A79F500354206 /* CardItem.h */,
 				429D4097299A79F500354206 /* CardItem.m */,
-				429D40A0299A79F500354206 /* FFFUsrInfoData.h */,
-				429D409A299A79F500354206 /* FFFUsrInfoData.m */,
+				429D40A0299A79F500354206 /* WorkUsrInfoData.h */,
+				429D409A299A79F500354206 /* WorkUsrInfoData.m */,
 				429D4098299A79F500354206 /* NumberData.h */,
 				429D409F299A79F500354206 /* NumberData.m */,
 				429D4099299A79F500354206 /* SameOption.h */,
@@ -1933,8 +1933,8 @@
 			children = (
 				429D40CE299A79F500354206 /* AccountConfig.h */,
 				429D40D6299A79F500354206 /* AccountConfig.m */,
-				429D40D4299A79F500354206 /* FFFBaseSessionContentConfig.h */,
-				429D40E0299A79F500354206 /* FFFBaseSessionContentConfig.m */,
+				429D40D4299A79F500354206 /* WorkBaseSessionContentConfig.h */,
+				429D40E0299A79F500354206 /* WorkBaseSessionContentConfig.m */,
 				429D40DB299A79F500354206 /* ImageSumRange.h */,
 				429D40D0299A79F500354206 /* ImageSumRange.m */,
 				429D40D2299A79F500354206 /* RedSystemView.h */,
@@ -1973,7 +1973,7 @@
 			children = (
 				429D40F1299A79F500354206 /* LineVideoMessage.h */,
 				429D40EA299A79F500354206 /* LineVideoMessage.m */,
-				429D40ED299A79F500354206 /* FFFSessionConfigurateProtocol.h */,
+				429D40ED299A79F500354206 /* WorkSessionConfigurateProtocol.h */,
 				429D40E8299A79F500354206 /* ModeStatus.h */,
 				429D40EE299A79F500354206 /* ModeStatus.m */,
 				429D40F0299A79F500354206 /* TingCell.h */,
@@ -1984,7 +1984,7 @@
 				429D40EB299A79F500354206 /* TextStyleCircle.m */,
 				429D40F3299A79F500354206 /* TingClean.h */,
 				429D40E9299A79F500354206 /* TingClean.m */,
-				429D40F2299A79F500354206 /* FFFSessionPrivateProtocol.h */,
+				429D40F2299A79F500354206 /* WorkSessionPrivateProtocol.h */,
 				429D40EF299A79F500354206 /* ColorAdapter.h */,
 				429D40E7299A79F500354206 /* ColorAdapter.m */,
 				42CF9E8529CC6CA90037B562 /* UIImage+AddUp.h */,
@@ -2110,8 +2110,8 @@
 				429D4153299A79F500354206 /* UITableView+NIMScrollToBottom.m */,
 				429D4151299A79F500354206 /* NSDictionary+MessageContent.h */,
 				429D4144299A79F500354206 /* NSDictionary+MessageContent.m */,
-				429D4148299A79F500354206 /* FFFExtensionHelper.h */,
-				429D4154299A79F500354206 /* FFFExtensionHelper.m */,
+				429D4148299A79F500354206 /* WorkExtensionHelper.h */,
+				429D4154299A79F500354206 /* WorkExtensionHelper.m */,
 				429D4158299A79F500354206 /* UIView+Factor.h */,
 				429D414B299A79F500354206 /* UIView+Factor.m */,
 				429D414C299A79F500354206 /* VideoTextView+MessageContent.h */,
@@ -2137,11 +2137,11 @@
 		429D415E299A79F500354206 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				429D415F299A79F500354206 /* FFFChatUIManagerProtocol.h */,
-				429D4160299A79F500354206 /* FFFInputProtocol.h */,
-				429D4161299A79F500354206 /* FFFCellConfig.h */,
+				429D415F299A79F500354206 /* WorkChatUIManagerProtocol.h */,
+				429D4160299A79F500354206 /* WorkInputProtocol.h */,
+				429D4161299A79F500354206 /* WorkCellConfig.h */,
 				429D4162299A79F500354206 /* SpecsText.h */,
-				429D4163299A79F500354206 /* FFFMessageCellProtocol.h */,
+				429D4163299A79F500354206 /* WorkMessageCellProtocol.h */,
 				429D4164299A79F500354206 /* DraftProvider.h */,
 				429D4165299A79F500354206 /* LineConfig.h */,
 			);
@@ -2151,19 +2151,19 @@
 		429D4166299A79F500354206 /* Global */ = {
 			isa = PBXGroup;
 			children = (
-				429D417D299A79F500354206 /* FFFCommonTableData.h */,
-				429D4170299A79F500354206 /* FFFCommonTableData.m */,
+				429D417D299A79F500354206 /* WorkCommonTableData.h */,
+				429D4170299A79F500354206 /* WorkCommonTableData.m */,
 				429D4179299A79F500354206 /* TableDelegate.h */,
 				429D416E299A79F500354206 /* TableDelegate.m */,
 				429D417B299A79F500354206 /* TeamTitle.h */,
-				429D4175299A79F500354206 /* FFFGlobalMacro.h */,
+				429D4175299A79F500354206 /* WorkGlobalMacro.h */,
 				429D416F299A79F500354206 /* WithInfoView.h */,
 				429D4178299A79F500354206 /* WithInfoView.m */,
 				429D416B299A79F500354206 /* ModeConfig.h */,
 				429D4176299A79F500354206 /* ModeConfig.m */,
 				429D4172299A79F500354206 /* ColumnLine.h */,
 				429D4169299A79F500354206 /* ColumnLine.m */,
-				429D417C299A79F500354206 /* FFFKitDependency.h */,
+				429D417C299A79F500354206 /* WorkKitDependency.h */,
 				429D416D299A79F500354206 /* TitleInfo.h */,
 				429D417A299A79F500354206 /* TitleInfo.m */,
 				429D4171299A79F500354206 /* KitEffectView.h */,
@@ -2211,7 +2211,7 @@
 				42AC19FC2A63ADC400BA1584 /* SAMKeychain.m */,
 				42AC19FB2A63ADC400BA1584 /* SAMKeychainQuery.h */,
 				42AC19F92A63ADC400BA1584 /* SAMKeychainQuery.m */,
-				B1F189772E01214F00E24425 /* FFFCardDataSourceProtocol.h */,
+				B1F189772E01214F00E24425 /* WorkCardDataSourceProtocol.h */,
 			);
 			path = COKeychain;
 			sourceTree = "<group>";
@@ -3813,7 +3813,7 @@
 				BC4DF4BE2C54C2CC00FBD937 /* MyView.m in Sources */,
 				E48988E81DE42353001CF6C5 /* RangeWithLayoutConfig.m in Sources */,
 				429D419B299A79F500354206 /* ContentRed.m in Sources */,
-				429D4212299A79F500354206 /* FFFExtensionHelper.m in Sources */,
+				429D4212299A79F500354206 /* WorkExtensionHelper.m in Sources */,
 				429D41AE299A79F500354206 /* KitThreadView.m in Sources */,
 				B808E75226F494E400E302F6 /* LabViewController.m in Sources */,
 				BC2676C62C58868100ED339D /* SumViewController.m in Sources */,
@@ -3827,7 +3827,7 @@
 				429D4193299A79F500354206 /* ImageHelper.m in Sources */,
 				BC4DF5052C54CF7C00FBD937 /* MessagePhoto.m in Sources */,
 				04CAF0882DA3A3CA00E4CE9D /* ProviderViewCell.m in Sources */,
-				429D421C299A79F500354206 /* FFFCommonTableData.m in Sources */,
+				429D421C299A79F500354206 /* WorkCommonTableData.m in Sources */,
 				429D4204299A79F500354206 /* CompleteManager.m in Sources */,
 				87E9754D23A9F29200336165 /* ImageViewCell.m in Sources */,
 				BC99AF9B2C579F5100D66AC8 /* UncoloredView.m in Sources */,
@@ -3967,7 +3967,7 @@
 				B89A942226E8F9E7007C1DE6 /* KeyViewController.m in Sources */,
 				429D4215299A79F500354206 /* VideoTextView+MessageContent.m in Sources */,
 				834DC5CC1F1C9F2A00C9E0B3 /* VideoObject.m in Sources */,
-				429D41C2299A79F500354206 /* FFFUsrInfoData.m in Sources */,
+				429D41C2299A79F500354206 /* WorkUsrInfoData.m in Sources */,
 				BC2D87D92C5CCD42003E6A4A /* ButtonShapeLayer.m in Sources */,
 				61E4711A1B7D963E00F4A1BF /* TingChange.m in Sources */,
 				B89A93E426E6FCA5007C1DE6 /* BottomViewCell.m in Sources */,
@@ -3988,7 +3988,7 @@
 				BC130F302C2EC1F9006A1916 /* UIButton+Status.m in Sources */,
 				AE5882EB1A6F47E10070536A /* main.m in Sources */,
 				429D41B4299A79F500354206 /* SessionFirer.m in Sources */,
-				429D418D299A79F500354206 /* FFFGroupedUsrInfo.m in Sources */,
+				429D418D299A79F500354206 /* WorkGroupedUsrInfo.m in Sources */,
 				429D41E7299A79F500354206 /* ModeStatus.m in Sources */,
 				BC2676CC2C58BB3E00ED339D /* InsertViewController.m in Sources */,
 				834DC5A81F1C64E000C9E0B3 /* CleanControl.m in Sources */,
@@ -4111,7 +4111,7 @@
 				BC121A772C3013FB00783618 /* FileView.m in Sources */,
 				BC12F7E92D5492B1009209E4 /* RecentView.m in Sources */,
 				04A76B8C2DA64C0F00EB697C /* ValueViewController.m in Sources */,
-				429D41DF299A79F500354206 /* FFFBaseSessionContentConfig.m in Sources */,
+				429D41DF299A79F500354206 /* WorkBaseSessionContentConfig.m in Sources */,
 				423FC58E2B285DCB001C3367 /* ReferenceTitleManager.m in Sources */,
 				18E2EC4521BF7F2700E0E773 /* InstalmentView.m in Sources */,
 			);

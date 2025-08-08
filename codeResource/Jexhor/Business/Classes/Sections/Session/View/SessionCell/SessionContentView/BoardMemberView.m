@@ -68,7 +68,7 @@
 #import "UIView+Recent.h"
 //: #import "M80AttributedLabel.h"
 #import "VideoTextView.h"
-//: #import "FFFKitUtil.h"
+//: #import "WorkKitUtil.h"
 #import "WantUtil.h"
 //: #import "NTESWhiteboardAttachment.h"
 #import "ClickText.h"
@@ -114,7 +114,7 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data{
+//: - (void)refresh:(WorkMessageModel *)data{
 - (void)panorama:(ShowModel *)data{
     //: [super refresh:data];
     [super panorama:data];

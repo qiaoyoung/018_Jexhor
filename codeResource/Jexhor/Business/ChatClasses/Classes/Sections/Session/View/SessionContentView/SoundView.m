@@ -9,20 +9,20 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionNotificationContentView.h"
+//: #import "WorkSessionNotificationContentView.h"
 #import "SoundView.h"
-//: #import "FFFMessageModel.h"
+//: #import "WorkMessageModel.h"
 #import "ShowModel.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFKitUtil.h"
+//: #import "WorkKitUtil.h"
 #import "WantUtil.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
 
-//: @implementation FFFSessionNotificationContentView
+//: @implementation WorkSessionNotificationContentView
 @implementation SoundView
 
 //: - (instancetype)initSessionMessageContentView
@@ -41,14 +41,14 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)model
+//: - (void)refresh:(WorkMessageModel *)model
 - (void)panorama:(ShowModel *)model
 {
     //: [super refresh:model];
     [super panorama:model];
-    //: self.label.text = [FFFKitUtil messageTipContent:model.message];
+    //: self.label.text = [WorkKitUtil messageTipContent:model.message];
     self.label.text = [WantUtil tingAcross:model.message];
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:model.message];
+    //: WorkKitSetting *setting = [[MyUserKit sharedKit].config setting:model.message];
     ViewKey *setting = [[MessageContent secretResolution].config ofSetting:model.message];
 
     //: self.label.textColor = setting.textColor;

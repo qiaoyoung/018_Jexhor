@@ -111,7 +111,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFMessageMaker.m
+//  WorkMessageMaker.m
 // MessageContent
 //
 //  Created by chris.
@@ -119,13 +119,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMessageMaker.h"
+//: #import "WorkMessageMaker.h"
 #import "EnterName.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+MessageContent.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
-//: #import "FFFInputAtCache.h"
+//: #import "WorkInputAtCache.h"
 #import "AdministratorCache.h"
 
 //: NSString * generateUUID(void) {
@@ -143,7 +143,7 @@ NSString * generateUUID(void) {
     return uuidString;
 }
 
-//: @implementation FFFMessageMaker
+//: @implementation WorkMessageMaker
 @implementation EnterName
 
 //: + (NIMMessage*)msgWithText:(NSString*)text
@@ -209,7 +209,7 @@ NSString * generateUUID(void) {
     option.compressQuality = 0.7;
     //: imageObject.option = option;
     imageObject.option = option;
-    //: return [FFFMessageMaker generateImageMessage:imageObject];
+    //: return [WorkMessageMaker generateImageMessage:imageObject];
     return [EnterName underTime:imageObject];
 }
 
@@ -218,7 +218,7 @@ NSString * generateUUID(void) {
 {
     //: NIMImageObject * imageObject = [[NIMImageObject alloc] initWithFilepath:path];
     NIMImageObject * imageObject = [[NIMImageObject alloc] initWithFilepath:path];
-    //: return [FFFMessageMaker generateImageMessage:imageObject];
+    //: return [WorkMessageMaker generateImageMessage:imageObject];
     return [EnterName underTime:imageObject];
 }
 
@@ -227,7 +227,7 @@ NSString * generateUUID(void) {
 {
     //: NIMImageObject *imageObject = [[NIMImageObject alloc] initWithData:data extension:extension];
     NIMImageObject *imageObject = [[NIMImageObject alloc] initWithData:data extension:extension];
-    //: return [FFFMessageMaker generateImageMessage:imageObject];
+    //: return [WorkMessageMaker generateImageMessage:imageObject];
     return [EnterName underTime:imageObject];
 }
 
@@ -243,7 +243,7 @@ NSString * generateUUID(void) {
     NIMMessage *message = [[NIMMessage alloc] init];
     //: message.messageObject = imageObject;
     message.messageObject = imageObject;
-    //: message.apnsContent = [FFFLanguageManager getTextWithKey:@"init_manager_nim_status_bar_image_message"];
+    //: message.apnsContent = [WorkLanguageManager getTextWithKey:@"init_manager_nim_status_bar_image_message"];
     message.apnsContent = [InputRed preserve:[SessionConsequentData k_countryData]];
     //: [self setupMessage:message];
     [self search:message];

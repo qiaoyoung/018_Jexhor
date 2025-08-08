@@ -246,7 +246,7 @@
     _mesBtn.titleLabel.font = [UIFont systemFontOfSize:14];
     //: [_mesBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [_mesBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [_mesBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_my_tag_activity_my_friend"] forState:UIControlStateNormal];
+    //: [_mesBtn setTitle:[WorkLanguageManager getTextWithKey:@"contact_my_tag_activity_my_friend"] forState:UIControlStateNormal];
     [_mesBtn setTitle:[InputRed preserve:[RemoveData sharedInstance].showAddData] forState:UIControlStateNormal];
     //: [_mesBtn addTarget:self action:@selector(sliderButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [_mesBtn addTarget:self action:@selector(viewFor:) forControlEvents:UIControlEventTouchUpInside];
@@ -266,7 +266,7 @@
     _resqBtn.titleLabel.font = [UIFont systemFontOfSize:14];
     //: [_resqBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
     [_resqBtn setTitleColor:[UIColor ground:[RemoveData sharedInstance].main_imageText] forState:UIControlStateNormal];
-    //: [_resqBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_fragment_group"] forState:UIControlStateNormal];
+    //: [_resqBtn setTitle:[WorkLanguageManager getTextWithKey:@"contact_fragment_group"] forState:UIControlStateNormal];
     [_resqBtn setTitle:[InputRed preserve:[RemoveData sharedInstance].m_colorMaxName] forState:UIControlStateNormal];
     //: [_resqBtn addTarget:self action:@selector(sliderButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [_resqBtn addTarget:self action:@selector(viewFor:) forControlEvents:UIControlEventTouchUpInside];

@@ -48,7 +48,7 @@
     return self;
 }
 
-//: - (id<FFFKitMessageProvider>)messageDataProvider
+//: - (id<WorkKitMessageProvider>)messageDataProvider
 - (id<SpecsText>)imageCover
 {
     //: return self.provider;

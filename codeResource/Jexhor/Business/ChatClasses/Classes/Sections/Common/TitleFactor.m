@@ -9,7 +9,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitKeyboardInfo.h"
+//: #import "WorkKitKeyboardInfo.h"
 #import "TitleFactor.h"
 
 //: NSNotificationName const NIMKitKeyboardWillChangeFrameNotification = @"NIMKitKeyboardWillChangeFrameNotification";
@@ -17,7 +17,7 @@ NSNotificationName const noti_keyTitleContent = @"NIMKitKeyboardWillChangeFrameN
 //: NSNotificationName const NIMKitKeyboardWillHideNotification = @"NIMKitKeyboardWillHideNotification";
 NSNotificationName const dreamFileContent = @"NIMKitKeyboardWillHideNotification";
 
-//: @implementation FFFKitKeyboardInfo
+//: @implementation WorkKitKeyboardInfo
 @implementation TitleFactor
 
 //: @synthesize keyboardHeight = _keyboardHeight;
@@ -26,13 +26,13 @@ NSNotificationName const dreamFileContent = @"NIMKitKeyboardWillHideNotification
 //: + (instancetype)instance
 + (instancetype)action
 {
-    //: static FFFKitKeyboardInfo *instance;
+    //: static WorkKitKeyboardInfo *instance;
     static TitleFactor *instance;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFKitKeyboardInfo alloc] init];
+        //: instance = [[WorkKitKeyboardInfo alloc] init];
         instance = [[TitleFactor alloc] init];
     //: });
     });

@@ -18,12 +18,12 @@ Byte show_cliffRetchBreastName[] = {27, 18, 1, 7, 62, 233, 36, 231, 157, 171, 23
 //
 
 // __M_A_C_R_O__
-//: #import "FFFUnsupportContentConfig.h"
+//: #import "WorkUnsupportContentConfig.h"
 #import "ContentBottomConfig.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
 
-//: @interface FFFUnsupportContentConfig ()
+//: @interface WorkUnsupportContentConfig ()
 @interface ContentBottomConfig ()
 
 //: @property (nonatomic,strong) UILabel *label;
@@ -32,7 +32,7 @@ Byte show_cliffRetchBreastName[] = {27, 18, 1, 7, 62, 233, 36, 231, 157, 171, 23
 //: @end
 @end
 
-//: @implementation FFFUnsupportContentConfig
+//: @implementation WorkUnsupportContentConfig
 @implementation ContentBottomConfig
 
 //: - (instancetype)init
@@ -64,21 +64,21 @@ Byte show_cliffRetchBreastName[] = {27, 18, 1, 7, 62, 233, 36, 231, 157, 171, 23
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)on:(NIMMessage *)message
 {
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:message];
+    //: WorkKitSetting *setting = [[MyUserKit sharedKit].config setting:message];
     ViewKey *setting = [[MessageContent secretResolution].config ofSetting:message];
     //: self.label.textColor = setting.textColor;
     self.label.textColor = setting.textColor;
     //: self.label.font = setting.font;
     self.label.font = setting.font;
 
-    //: return @"FFFSessionUnknowContentView";
+    //: return @"WorkSessionUnknowContentView";
     return @"ManagingDirectorContentView";
 }
 
 //: - (UIEdgeInsets)contentViewInsets:(NIMMessage *)message
 - (UIEdgeInsets)team:(NIMMessage *)message
 {
-    //: FFFKitSettings *settings = message.isOutgoingMsg? [MyUserKit sharedKit].config.rightBubbleSettings : [MyUserKit sharedKit].config.leftBubbleSettings;
+    //: WorkKitSettings *settings = message.isOutgoingMsg? [MyUserKit sharedKit].config.rightBubbleSettings : [MyUserKit sharedKit].config.leftBubbleSettings;
     CircleSettings *settings = message.isOutgoingMsg? [MessageContent secretResolution].config.rightBubbleSettings : [MessageContent secretResolution].config.leftBubbleSettings;
     //: return settings.unsupportSetting.contentInsets;
     return settings.unsupportSetting.contentInsets;

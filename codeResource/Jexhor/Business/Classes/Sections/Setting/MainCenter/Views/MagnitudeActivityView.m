@@ -139,7 +139,7 @@ Byte userItemValue[] = {36, 7, 12, 152, 182, 244, 7, 29, 109, 238, 192, 188, 49,
 //: - (void)reloadWithNickname:(NSString *)nickname
 - (void)of:(NSString *)nickname
 {
-    //: self.titleLabel.text = [FFFLanguageManager getTextWithKey:@"activity_my_user_info_nick"];
+    //: self.titleLabel.text = [WorkLanguageManager getTextWithKey:@"activity_my_user_info_nick"];
     self.titleLabel.text = [InputRed preserve:StringFromYellowedData(mEnableText)];
     //: self.searchField.text = nickname;
     self.searchField.text = nickname;
@@ -155,7 +155,7 @@ Byte userItemValue[] = {36, 7, 12, 152, 182, 244, 7, 29, 109, 238, 192, 188, 49,
 //    self.box.frame = CGRectMake(0, SCREEN_HEIGHT-210, SCREEN_WIDTH, 210);
     //: if (!self.titleLabel.text.length) {
     if (!self.titleLabel.text.length) {
-        //: [self makeToast:[FFFLanguageManager getTextWithKey:@"set_nick_activity_input"] duration:2.0 position:CSToastPositionCenter];
+        //: [self makeToast:[WorkLanguageManager getTextWithKey:@"set_nick_activity_input"] duration:2.0 position:CSToastPositionCenter];
         [self makeToast:[InputRed preserve:StringFromYellowedData(noti_successData)] duration:2.0 position:CSToastPositionCenter];
         //: return;
         return;
@@ -171,7 +171,7 @@ Byte userItemValue[] = {36, 7, 12, 152, 182, 244, 7, 29, 109, 238, 192, 188, 49,
         [SVProgressHUD dismiss];
         //: if (!error) {
         if (!error) {
-            //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_success"]
+            //: [wself makeToast:[WorkLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_success"]
             [wself makeToast:[InputRed preserve:StringFromYellowedData(userTargetTitle)]
                          //: duration:2
                          duration:2
@@ -183,7 +183,7 @@ Byte userItemValue[] = {36, 7, 12, 152, 182, 244, 7, 29, 109, 238, 192, 188, 49,
 
         //: }else{
         }else{
-            //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"]
+            //: [wself makeToast:[WorkLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"]
             [wself makeToast:[InputRed preserve:StringFromYellowedData(appSizeValue)]
                          //: duration:2
                          duration:2
@@ -298,7 +298,7 @@ Byte userItemValue[] = {36, 7, 12, 152, 182, 244, 7, 29, 109, 238, 192, 188, 49,
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:16];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor ground:StringFromYellowedData(mainDisableName)] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[InputRed preserve:StringFromYellowedData(mainColorData)] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -329,7 +329,7 @@ Byte userItemValue[] = {36, 7, 12, 152, 182, 244, 7, 29, 109, 238, 192, 188, 49,
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:16];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[WorkLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[InputRed preserve:StringFromYellowedData(m_thanData)] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#05D481"];
         _sureBtn.backgroundColor = [UIColor ground:StringFromYellowedData(userItemValue)];
@@ -373,7 +373,7 @@ Byte userItemValue[] = {36, 7, 12, 152, 182, 244, 7, 29, 109, 238, 192, 188, 49,
 
         //: _searchField = [[UITextField alloc]initWithFrame:CGRectMake(15, 6, [[UIScreen mainScreen] bounds].size.width-80-30, 40)];
         _searchField = [[UITextField alloc]initWithFrame:CGRectMake(15, 6, [[UIScreen mainScreen] bounds].size.width-80-30, 40)];
-        //: _searchField.placeholder = [FFFLanguageManager getTextWithKey:@"activity_my_user_info_nick"];
+        //: _searchField.placeholder = [WorkLanguageManager getTextWithKey:@"activity_my_user_info_nick"];
         _searchField.placeholder = [InputRed preserve:StringFromYellowedData(mEnableText)];
         //: _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];
         _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];

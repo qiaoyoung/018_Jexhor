@@ -12,10 +12,10 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @class FFFKitInfo;
+//: @class WorkKitInfo;
 @class ConfirmationInfo;
 
-//: @protocol FFFContactPickedViewDelegate <NSObject>
+//: @protocol WorkContactPickedViewDelegate <NSObject>
 @protocol PickedDelegate <NSObject>
 
 //: - (void)removeUser:(NSString *)userId;
@@ -24,16 +24,16 @@
 //: @end
 @end
 
-//: @interface FFFContactPickedView : UIView <UIScrollViewDelegate>
+//: @interface WorkContactPickedView : UIView <UIScrollViewDelegate>
 @interface SameView : UIView <UIScrollViewDelegate>
 
-//: @property (nonatomic, weak) id<FFFContactPickedViewDelegate> delegate;
+//: @property (nonatomic, weak) id<WorkContactPickedViewDelegate> delegate;
 @property (nonatomic, weak) id<PickedDelegate> delegate;
 
-//: - (void)removeMemberInfo:(FFFKitInfo *)info;
+//: - (void)removeMemberInfo:(WorkKitInfo *)info;
 - (void)elite:(ConfirmationInfo *)info;
 
-//: - (void)addMemberInfo:(FFFKitInfo *)info;
+//: - (void)addMemberInfo:(WorkKitInfo *)info;
 - (void)pressed:(ConfirmationInfo *)info;
 
 //: @end

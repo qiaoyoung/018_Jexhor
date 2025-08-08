@@ -12,10 +12,10 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @interface FFFKitDevice : NSObject
+//: @interface WorkKitDevice : NSObject
 @interface TeamTing : NSObject
 
-//: + (FFFKitDevice *)currentDevice;
+//: + (WorkKitDevice *)currentDevice;
 + (TeamTing *)style;
 
 /// 语言

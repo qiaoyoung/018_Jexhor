@@ -9,12 +9,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitAudioCenter.h"
+//: #import "WorkKitAudioCenter.h"
 #import "LineVideoMessage.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
 
-//: @interface FFFKitAudioCenter()<NIMMediaManagerDelegate>
+//: @interface WorkKitAudioCenter()<NIMMediaManagerDelegate>
 @interface LineVideoMessage()<NIMMediaManagerDelegate>
 
 //: @property (nonatomic,assign) NSInteger retryCount;
@@ -23,19 +23,19 @@
 //: @end
 @end
 
-//: @implementation FFFKitAudioCenter
+//: @implementation WorkKitAudioCenter
 @implementation LineVideoMessage
 
 //: + (instancetype)instance
 + (instancetype)pinThan
 {
-    //: static FFFKitAudioCenter *instance;
+    //: static WorkKitAudioCenter *instance;
     static LineVideoMessage *instance;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFKitAudioCenter alloc] init];
+        //: instance = [[WorkKitAudioCenter alloc] init];
         instance = [[LineVideoMessage alloc] init];
     //: });
     });

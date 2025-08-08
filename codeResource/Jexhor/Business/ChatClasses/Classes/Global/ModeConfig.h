@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitSetting.h"
+//: #import "WorkKitSetting.h"
 #import "ViewKey.h"
 
-//: @class FFFKitSettings;
+//: @class WorkKitSettings;
 @class CircleSettings;
 //: @class NIMMessage;
 @class NIMMessage;
@@ -31,7 +31,7 @@ typedef NS_ENUM(NSInteger,NIMKitAvatarType) {
 //: };
 };
 
-//: @interface FFFKitConfig : NSObject
+//: @interface WorkKitConfig : NSObject
 @interface ModeConfig : NSObject
 
 
@@ -114,13 +114,13 @@ typedef NS_ENUM(NSInteger,NIMKitAvatarType) {
 /**
  *  左侧气泡设置
  */
-//: @property (nonatomic, strong) FFFKitSettings *leftBubbleSettings;
+//: @property (nonatomic, strong) WorkKitSettings *leftBubbleSettings;
 @property (nonatomic, strong) CircleSettings *leftBubbleSettings;
 
 /**
  *  右侧气泡设置
  */
-//: @property (nonatomic, strong) FFFKitSettings *rightBubbleSettings;
+//: @property (nonatomic, strong) WorkKitSettings *rightBubbleSettings;
 @property (nonatomic, strong) CircleSettings *rightBubbleSettings;
 
 
@@ -138,13 +138,13 @@ typedef NS_ENUM(NSInteger,NIMKitAvatarType) {
 
 /*根据消息取到配置*/
 
-//: - (FFFKitSetting *)setting:(NIMMessage *)message;
+//: - (WorkKitSetting *)setting:(NIMMessage *)message;
 - (ViewKey *)ofSetting:(NIMMessage *)message;
 
 
 /*被回复消息取到配置*/
 
-//: - (FFFKitSetting *)repliedSetting:(NIMMessage *)message;
+//: - (WorkKitSetting *)repliedSetting:(NIMMessage *)message;
 - (ViewKey *)ting:(NIMMessage *)message;
 
 //: @end
@@ -156,91 +156,91 @@ typedef NS_ENUM(NSInteger,NIMKitAvatarType) {
 /**
  *  组件 UI 设置
  */
-//: @interface FFFKitSettings : NSObject
+//: @interface WorkKitSettings : NSObject
 @interface CircleSettings : NSObject
 
 /**
  *  文本类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *textSetting;
+//: @property (nonatomic, strong) WorkKitSetting *textSetting;
 @property (nonatomic, strong) ViewKey *textSetting;
 
 /**
  *  音频类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *audioSetting;
+//: @property (nonatomic, strong) WorkKitSetting *audioSetting;
 @property (nonatomic, strong) ViewKey *audioSetting;
 
 /**
  *  视频类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *videoSetting;
+//: @property (nonatomic, strong) WorkKitSetting *videoSetting;
 @property (nonatomic, strong) ViewKey *videoSetting;
 
 /**
  *  文件类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *fileSetting;
+//: @property (nonatomic, strong) WorkKitSetting *fileSetting;
 @property (nonatomic, strong) ViewKey *fileSetting;
 
 /**
  *  图片类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *imageSetting;
+//: @property (nonatomic, strong) WorkKitSetting *imageSetting;
 @property (nonatomic, strong) ViewKey *imageSetting;
 
 /**
  *  地理位置类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *locationSetting;
+//: @property (nonatomic, strong) WorkKitSetting *locationSetting;
 @property (nonatomic, strong) ViewKey *locationSetting;
 
 /**
  *  提示类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *tipSetting;
+//: @property (nonatomic, strong) WorkKitSetting *tipSetting;
 @property (nonatomic, strong) ViewKey *tipSetting;
 
 /**
  *  Rtc话单类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *rtcCallRecordSetting;
+//: @property (nonatomic, strong) WorkKitSetting *rtcCallRecordSetting;
 @property (nonatomic, strong) ViewKey *rtcCallRecordSetting;
 
 /**
  *  无法识别类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *unsupportSetting;
+//: @property (nonatomic, strong) WorkKitSetting *unsupportSetting;
 @property (nonatomic, strong) ViewKey *unsupportSetting;
 
 /**
  *  群组通知类型通知消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *teamNotificationSetting;
+//: @property (nonatomic, strong) WorkKitSetting *teamNotificationSetting;
 @property (nonatomic, strong) ViewKey *teamNotificationSetting;
 
 /**
  *  群组通知类型通知消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *superTeamNotificationSetting;
+//: @property (nonatomic, strong) WorkKitSetting *superTeamNotificationSetting;
 @property (nonatomic, strong) ViewKey *superTeamNotificationSetting;
 
 /**
  *  聊天室类型类型通知消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *chatroomNotificationSetting;
+//: @property (nonatomic, strong) WorkKitSetting *chatroomNotificationSetting;
 @property (nonatomic, strong) ViewKey *chatroomNotificationSetting;
 
 /**
  *  网络电话类型类型通知消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *netcallNotificationSetting;
+//: @property (nonatomic, strong) WorkKitSetting *netcallNotificationSetting;
 @property (nonatomic, strong) ViewKey *netcallNotificationSetting;
 
 /**
  *  被回复消息的设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *repliedSetting;
+//: @property (nonatomic, strong) WorkKitSetting *repliedSetting;
 @property (nonatomic, strong) ViewKey *repliedSetting;
 
 

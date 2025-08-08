@@ -12,10 +12,10 @@
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-//: @interface FFFPinyinConverter : NSObject
+//: @interface WorkPinyinConverter : NSObject
 @interface KeyShow : NSObject
 
-//: + (FFFPinyinConverter *)sharedInstance;
+//: + (WorkPinyinConverter *)sharedInstance;
 + (KeyShow *)app;
 
 //: - (NSString *)toPinyin: (NSString *)source;

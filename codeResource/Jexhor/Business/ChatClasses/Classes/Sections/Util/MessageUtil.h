@@ -29,7 +29,7 @@ extern const CGFloat show_spaceNameValue;
 extern NSString * const main_controlData;
 
 
-//: @interface FFFKitQuickCommentUtil : NSObject
+//: @interface WorkKitQuickCommentUtil : NSObject
 @interface MessageUtil : NSObject
 
 //: + (UIFont *)commentFont;

@@ -520,13 +520,13 @@ typedef struct {
 // __M_A_C_R_O__
 //: #import "AppDelegate.h"
 #import "AppDelegate.h"
-//: #import "FFFLoginViewController.h"
+//: #import "WorkLoginViewController.h"
 #import "FactorViewController.h"
 //: #import "UIView+Toast.h"
 #import "UIView+Toast.h"
 //: #import "NTESNotificationCenter.h"
 #import "ClickCenter.h"
-//: #import "FFFConfig.h"
+//: #import "WorkConfig.h"
 #import "AccountWith.h"
 //: #import "NTESSessionUtil.h"
 #import "SessionUtil.h"
@@ -574,7 +574,7 @@ typedef struct {
 #import <objc/runtime.h>
 //: #import "TYLNoticeRequest.h"
 #import "GibbetEnable.h"
-//: #import "FFFKitDevice.h"
+//: #import "WorkKitDevice.h"
 #import "TeamTing.h"
 //: #import <UMCommon/UMCommon.h>
 #import <UMCommon/UMCommon.h>
@@ -651,14 +651,14 @@ NSString *userCustomText = @"NotificationLogout";
 //: - (void)addRootViewController {
 - (void)send {
     // 检查并更新域名
-    //: [[FFFConfig sharedConfig] fetchLatestDomainWithCompletion:^(BOOL success) {
+    //: [[WorkConfig sharedConfig] fetchLatestDomainWithCompletion:^(BOOL success) {
     [[AccountWith max] share:^(BOOL success) {
         //: if (success) {
         if (success) {
-            //: NSLog(@"域名更新成功: %@", [[FFFConfig sharedConfig] getCurrentDomain]);
+            //: NSLog(@"域名更新成功: %@", [[WorkConfig sharedConfig] getCurrentDomain]);
         //: } else {
         } else {
-            //: NSLog(@"使用默认域名: %@", [[FFFConfig sharedConfig] getCurrentDomain]);
+            //: NSLog(@"使用默认域名: %@", [[WorkConfig sharedConfig] getCurrentDomain]);
         }
     //: }];
     }];
@@ -846,7 +846,7 @@ NSString *userCustomText = @"NotificationLogout";
 - (void)rangeComment
 {
 
-    //: NSString *langType = [FFFKitDevice language];
+    //: NSString *langType = [WorkKitDevice language];
     NSString *langType = [TeamTing emptyMedia];
     //: NSLog(@"langType : %@",langType);
     NSLog([RaftData sharedInstance].mRealistValue,langType);//zh-Hant-TW 中文繁体（台湾）
@@ -1349,7 +1349,7 @@ NSString *userCustomText = @"NotificationLogout";
     ShowCircle *data = [[NameForwardMessage input] currentLoginData];
 
     //如果有缓存用户名密码推荐使用自动登录
-    //: BOOL allow = [FFFConfig sharedConfig].allowAutoLogin;
+    //: BOOL allow = [WorkConfig sharedConfig].allowAutoLogin;
     BOOL allow = [AccountWith max].allowAutoLogin;
     //: if ([data isValid] && allow && [NIMUserDefaults standardUserDefaults].loginToken)
     if ([data tap] && allow && [SessionRecord afterUser].loginToken)
@@ -1405,7 +1405,7 @@ NSString *userCustomText = @"NotificationLogout";
 {
     //: [self.window.rootViewController dismissViewControllerAnimated:YES completion:nil];
     [self.window.rootViewController dismissViewControllerAnimated:YES completion:nil];
-    //: FFFLoginViewController *loginController = [[FFFLoginViewController alloc] init];
+    //: WorkLoginViewController *loginController = [[WorkLoginViewController alloc] init];
     FactorViewController *loginController = [[FactorViewController alloc] init];
     //: UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:loginController];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:loginController];
@@ -1563,13 +1563,13 @@ NSString *userCustomText = @"NotificationLogout";
     //appkey 是应用的标识，不同应用之间的数据（用户、消息、群组等）是完全隔离的。
     //如需打网易云信 Demo 包，请勿修改 appkey ，开发自己的应用时，请替换为自己的 appkey 。
     //并请对应更换 Demo 代码中的获取好友列表、个人信息等网易云信 SDK 未提供的接口。
-    //: NSString *appKey = [[FFFConfig sharedConfig] appKey];
+    //: NSString *appKey = [[WorkConfig sharedConfig] appKey];
     NSString *appKey = [[AccountWith max] appKey];
     //: NIMSDKOption *option = [NIMSDKOption optionWithAppKey:appKey];
     NIMSDKOption *option = [NIMSDKOption optionWithAppKey:appKey];
-    //: option.apnsCername = [[FFFConfig sharedConfig] apnsCername];
+    //: option.apnsCername = [[WorkConfig sharedConfig] apnsCername];
     option.apnsCername = [[AccountWith max] apnsCername];
-    //: option.pkCername = [[FFFConfig sharedConfig] pkCername];
+    //: option.pkCername = [[WorkConfig sharedConfig] pkCername];
     option.pkCername = [[AccountWith max] pkCername];
 
     //: [[NIMSDK sharedSDK] registerWithOption:option];
@@ -1650,7 +1650,7 @@ NSString *userCustomText = @"NotificationLogout";
         [vc addAction:retryAction];
     }
 
-    //: UIAlertAction *logoutAction = [UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"]
+    //: UIAlertAction *logoutAction = [UIAlertAction actionWithTitle:[WorkLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"]
     UIAlertAction *logoutAction = [UIAlertAction actionWithTitle:[InputRed preserve:[RaftData sharedInstance].userPhenomName]
                                                            //: style:UIAlertActionStyleDestructive
                                                            style:UIAlertActionStyleDestructive
@@ -1752,7 +1752,7 @@ NSString *userCustomText = @"NotificationLogout";
             //: action.type = LEEActionTypeCancel;
             action.type = LEEActionTypeCancel;
 
-            //: action.title = [FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"];
+            //: action.title = [WorkLanguageManager getTextWithKey:@"contact_tag_fragment_sure"];
             action.title = [InputRed preserve:[RaftData sharedInstance].showPursuitValue];
 
             //: action.titleColor = [UIColor whiteColor];

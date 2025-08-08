@@ -75,11 +75,11 @@ typedef struct {
 // __M_A_C_R_O__
 //: #import "NTESMergeMessageCell.h"
 #import "ConsubstantiateVideoCompartmentViewCell.h"
-//: #import "FFFBadgeView.h"
+//: #import "WorkBadgeView.h"
 #import "AggregationView.h"
-//: #import "FFFSessionTextContentView.h"
+//: #import "WorkSessionTextContentView.h"
 #import "BottomControl.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WorkAvatarImageView.h"
 #import "ButtonControl.h"
 //: #import "M80AttributedLabel.h"
 #import "VideoTextView.h"
@@ -183,7 +183,7 @@ typedef struct {
     return _timeLab;
 }
 
-//: - (void)refreshData:(FFFMessageModel *)data {
+//: - (void)refreshData:(WorkMessageModel *)data {
 - (void)flushVideo:(ShowModel *)data {
     //: [super refreshData:data];
     [super flushVideo:data];
@@ -202,8 +202,8 @@ typedef struct {
         //: _timeLab.text = timeInfo ?: @"00:00";
         _timeLab.text = timeInfo ?: [ParentImageData sharedInstance].kCousinLengthContent;
 
-        //: self.bubbleView.layoutStyle = FFFSessionMessageContentViewLayoutLeft;
-        self.bubbleView.layoutStyle = FFFSessionMessageContentViewLayoutLeft;
+        //: self.bubbleView.layoutStyle = WorkSessionMessageContentViewLayoutLeft;
+        self.bubbleView.layoutStyle = WorkSessionMessageContentViewLayoutLeft;
     }
 
     //: self.bubbleView.bubbleImageView.hidden = YES;
@@ -215,9 +215,9 @@ typedef struct {
 
     //: id bubbleView = self.bubbleView;
     id bubbleView = self.bubbleView;
-    //: if ([bubbleView isKindOfClass:[FFFSessionTextContentView class]]) {
+    //: if ([bubbleView isKindOfClass:[WorkSessionTextContentView class]]) {
     if ([bubbleView isKindOfClass:[BottomControl class]]) {
-        //: ((FFFSessionTextContentView *)bubbleView).textView.textColor = [UIColor blackColor];
+        //: ((WorkSessionTextContentView *)bubbleView).textView.textColor = [UIColor blackColor];
         ((BottomControl *)bubbleView).textView.textColor = [UIColor blackColor];
     }
 }

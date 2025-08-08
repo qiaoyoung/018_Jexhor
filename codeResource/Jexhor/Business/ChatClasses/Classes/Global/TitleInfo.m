@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitIndependentModeExtraInfo.h"
+//: #import "WorkKitIndependentModeExtraInfo.h"
 #import "TitleInfo.h"
 
-//: @implementation FFFKitIndependentModeExtraInfo
+//: @implementation WorkKitIndependentModeExtraInfo
 @implementation TitleInfo
 
 //: @end

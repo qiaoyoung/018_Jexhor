@@ -13,10 +13,10 @@
 #import <Foundation/Foundation.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFUsrInfoData.h"
-#import "FFFUsrInfoData.h"
+//: #import "WorkUsrInfoData.h"
+#import "WorkUsrInfoData.h"
 
-//: @interface FFFTeamInfoData : NSObject<NIMGroupMemberProtocol>
+//: @interface WorkTeamInfoData : NSObject<NIMGroupMemberProtocol>
 @interface NumberData : NSObject<MemberProtocol>
 
 //: @property (nonatomic, copy) NSString *teamId;

@@ -13,7 +13,7 @@
 #import "VideoTextView.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
-//: #import "FFFTextHighlight.h"
+//: #import "WorkTextHighlight.h"
 #import "ImageTextHighlight.h"
 
 //: static NSString* const M80EllipsesCharacter = @"\u2026";
@@ -284,7 +284,7 @@ static NSString* const dreamStateValue = @"\u2026";
             //: NSString *emoString = [attrM.string substringWithRange:range];
             NSString *emoString = [attrM.string substringWithRange:range];
 
-            //: NIMInputEmoticon *emoticon = [[FFFInputEmoticonManager sharedManager] emoticonByTag:emoString];
+            //: NIMInputEmoticon *emoticon = [[WorkInputEmoticonManager sharedManager] emoticonByTag:emoString];
             FrontwardsCount *emoticon = [[RedManager session] success:emoString];
 
             //: UIImage *image = [UIImage nim_emoticonInKit:emoticon.filename];
@@ -319,10 +319,10 @@ static NSString* const dreamStateValue = @"\u2026";
                     [emoText yy_setAttribute:NSKernAttributeName value:@(-1)];
                 }
 
-                //: FFFTextHighlight *highlight = [[FFFTextHighlight alloc] init];
+                //: WorkTextHighlight *highlight = [[WorkTextHighlight alloc] init];
                 ImageTextHighlight *highlight = [[ImageTextHighlight alloc] init];
-                //: highlight.type = FFFTextHighlightTypeEmoji;
-                highlight.type = FFFTextHighlightTypeEmoji;
+                //: highlight.type = WorkTextHighlightTypeEmoji;
+                highlight.type = WorkTextHighlightTypeEmoji;
                 //: highlight.text = emoString;
                 highlight.text = emoString;
                 //: [emoText yy_setTextHighlight:highlight range:NSMakeRange(0, emoText.length)];

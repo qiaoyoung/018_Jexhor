@@ -198,13 +198,13 @@ typedef struct {
         case NIMLoginStepLinkFailed:
         //: case NIMLoginStepLoseConnection:
         case NIMLoginStepLoseConnection:
-            //: text = [FFFLanguageManager getTextWithKey:@"home_fragment_net_error"];
+            //: text = [WorkLanguageManager getTextWithKey:@"home_fragment_net_error"];
             text = [InputRed preserve:[TableData sharedInstance].showAppearTitle];
             //: break;
             break;
         //: case NIMLoginStepLoginFailed:
         case NIMLoginStepLoginFailed:
-            //: text = [FFFLanguageManager getTextWithKey:@"login_activity_login_failed"];
+            //: text = [WorkLanguageManager getTextWithKey:@"login_activity_login_failed"];
             text = [InputRed preserve:[TableData sharedInstance].user_parentName];
             //: break;
             break;
@@ -219,7 +219,7 @@ typedef struct {
             //: else
             else
             {
-                //: text = [FFFLanguageManager getTextWithKey:@"home_fragment_net_error"];
+                //: text = [WorkLanguageManager getTextWithKey:@"home_fragment_net_error"];
                 text = [InputRed preserve:[TableData sharedInstance].showAppearTitle];
             }
         }

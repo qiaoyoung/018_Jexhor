@@ -115,7 +115,7 @@ typedef struct {
 //: - (void)refreshWithModel:(NIMTeamMember *)member
 - (void)smartDataModel:(NIMTeamMember *)member
 {
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:member.userId option:nil];
+    //: WorkKitInfo *info = [[MyUserKit sharedKit] infoByUser:member.userId option:nil];
     ConfirmationInfo *info = [[MessageContent secretResolution] recent:member.userId blue:nil];
     //: self.titleLabel.text = info.showName;
     self.titleLabel.text = info.showName;

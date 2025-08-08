@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFMessageCellMaker.h
+//  WorkMessageCellMaker.h
 // MessageContent
 //
 //  Created by chris.
@@ -11,26 +11,26 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFMessageCell.h"
+//: #import "WorkMessageCell.h"
 #import "CellView.h"
-//: #import "FFFSessionTimestampCell.h"
+//: #import "WorkSessionTimestampCell.h"
 #import "ContentViewCell.h"
-//: #import "FFFCellConfig.h"
-#import "FFFCellConfig.h"
-//: #import "FFFMessageCellProtocol.h"
-#import "FFFMessageCellProtocol.h"
+//: #import "WorkCellConfig.h"
+#import "WorkCellConfig.h"
+//: #import "WorkMessageCellProtocol.h"
+#import "WorkMessageCellProtocol.h"
 
-//: @interface FFFMessageCellFactory : NSObject
+//: @interface WorkMessageCellFactory : NSObject
 @interface PhoneMessageSystemCanneryFactory : NSObject
 
-//: - (FFFMessageCell *)cellInTable:(UITableView*)tableView
+//: - (WorkMessageCell *)cellInTable:(UITableView*)tableView
 - (CellView *)quantity:(UITableView*)tableView
-                 //: forMessageMode:(FFFMessageModel *)model;
+                 //: forMessageMode:(WorkMessageModel *)model;
                  pastLifeStyle:(ShowModel *)model;
 
-//: - (FFFSessionTimestampCell *)cellInTable:(UITableView *)tableView
+//: - (WorkSessionTimestampCell *)cellInTable:(UITableView *)tableView
 - (ContentViewCell *)valueModel:(UITableView *)tableView
-                            //: forTimeModel:(FFFTimestampModel *)model;
+                            //: forTimeModel:(WorkTimestampModel *)model;
                             from:(EngraftTing *)model;
 
 //: @end

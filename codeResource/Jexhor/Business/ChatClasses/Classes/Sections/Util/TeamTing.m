@@ -9,18 +9,18 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitDevice.h"
+//: #import "WorkKitDevice.h"
 #import "TeamTing.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "WorkGlobalMacro.h"
+#import "WorkGlobalMacro.h"
 
-//: @interface FFFKitDevice ()
+//: @interface WorkKitDevice ()
 @interface TeamTing ()
 
 //: @end
 @end
 
-//: @implementation FFFKitDevice
+//: @implementation WorkKitDevice
 @implementation TeamTing
 
 //: - (instancetype)init
@@ -36,15 +36,15 @@
 }
 
 
-//: + (FFFKitDevice *)currentDevice{
+//: + (WorkKitDevice *)currentDevice{
 + (TeamTing *)style{
-    //: static FFFKitDevice *instance = nil;
+    //: static WorkKitDevice *instance = nil;
     static TeamTing *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFKitDevice alloc] init];
+        //: instance = [[WorkKitDevice alloc] init];
         instance = [[TeamTing alloc] init];
     //: });
     });

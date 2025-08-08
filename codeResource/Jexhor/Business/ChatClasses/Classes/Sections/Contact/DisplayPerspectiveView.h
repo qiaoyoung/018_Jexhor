@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 //: typedef void(^SpeiceBackBlock) (NSString *groupName);
 typedef void(^SpeiceBackBlock) (NSString *groupName);
 
-//: @interface FFFSetGroupNameView : UIView
+//: @interface WorkSetGroupNameView : UIView
 @interface DisplayPerspectiveView : UIView
 
 //: @property (nonatomic, copy) SpeiceBackBlock speiceBackBlock;

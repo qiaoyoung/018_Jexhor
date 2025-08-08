@@ -22,8 +22,8 @@ Byte notiVideoShowText[] = {73, 27, 41, 4, 119, 125, 110, 124, 108, 145, 138, 15
 #import "ThreadConfig.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "VideoTextView+MessageContent.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "WorkGlobalMacro.h"
+#import "WorkGlobalMacro.h"
 
 //: @interface NTESChatroomTextContentConfig()
 @interface ThreadConfig()

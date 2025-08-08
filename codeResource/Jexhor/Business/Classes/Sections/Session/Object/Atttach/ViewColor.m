@@ -193,7 +193,7 @@
 #import "ViewColor.h"
 //: #import "NTESFileLocationHelper.h"
 #import "LineHelper.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WorkKitInfoFetchOption.h"
 #import "RangeOption.h"
 //: #import "NSDictionary+NTESJson.h"
 #import "NSDictionary+SubjectMatterJson.h"
@@ -201,7 +201,7 @@
 #import "VideoTextView+MessageContent.h"
 //: #import "NTESMessageUtil.h"
 #import "ShowTitleButton.h"
-//: #import "FFFInputEmoticonParser.h"
+//: #import "WorkInputEmoticonParser.h"
 #import "SignParser.h"
 
 //: @interface NTESMultiRetweetAttachment ()
@@ -540,13 +540,13 @@
     }
     //: NTESMessageAbstract *ret = [[NTESMessageAbstract alloc] init];
     TeamAbstract *ret = [[TeamAbstract alloc] init];
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: WorkKitInfoFetchOption *option = [[WorkKitInfoFetchOption alloc] init];
     RangeOption *option = [[RangeOption alloc] init];
     //: option.session = message.session;
     option.session = message.session;
     //: option.message = message;
     option.message = message;
-    //: FFFKitInfo *info = [[MyUserKit sharedKit].provider infoByUser:message.from option:option];
+    //: WorkKitInfo *info = [[MyUserKit sharedKit].provider infoByUser:message.from option:option];
     ConfirmationInfo *info = [[MessageContent secretResolution].provider recent:message.from blue:option];
     //: ret.sender = info.showName ?: @"null";
     ret.sender = info.showName ?: [AccountingData m_countData];
@@ -581,7 +581,7 @@
     NSMutableString *ret = [NSMutableString string];
     //: if (msg.length > (32)) {
     if (msg.length > (32)) {
-        //: NSArray *tokens = [[FFFInputEmoticonParser currentParser] tokens:msg];
+        //: NSArray *tokens = [[WorkInputEmoticonParser currentParser] tokens:msg];
         NSArray *tokens = [[SignParser byTo] down:msg];
         //: for (NIMInputTextToken *token in tokens) { 
         for (ChangeTing *token in tokens) { //防止emoji表情被截断

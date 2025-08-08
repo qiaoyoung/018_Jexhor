@@ -15,7 +15,7 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFTeamCartSetTableViewCell : UITableViewCell
+//: @interface WorkTeamCartSetTableViewCell : UITableViewCell
 @interface ProviderView : UITableViewCell
 
 //: @property(nonatomic, strong) UIImageView *iconImageView;

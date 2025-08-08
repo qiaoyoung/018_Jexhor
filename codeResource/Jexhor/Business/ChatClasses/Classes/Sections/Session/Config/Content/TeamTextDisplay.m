@@ -9,12 +9,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFLocationContentConfig.h"
+//: #import "WorkLocationContentConfig.h"
 #import "TeamTextDisplay.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
 
-//: @implementation FFFLocationContentConfig
+//: @implementation WorkLocationContentConfig
 @implementation TeamTextDisplay
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
@@ -27,7 +27,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)on:(NIMMessage *)message
 {
-    //: return @"FFFSessionLocationContentView";
+    //: return @"WorkSessionLocationContentView";
     return @"ButtonMessageView";
 }
 

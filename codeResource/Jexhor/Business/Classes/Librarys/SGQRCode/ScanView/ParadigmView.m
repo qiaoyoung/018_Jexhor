@@ -446,7 +446,7 @@
     //: if (self.link == nil) {
     if (self.link == nil) {
         //: self.link = [CADisplayLink displayLinkWithTarget:[SGWeakProxy weakProxyWithTarget:self] selector:@selector(updateUI)];
-        self.link = [CADisplayLink displayLinkWithTarget:[MarketPlaceProxy managerTarget:self] selector:@selector(updateUI)];
+        self.link = [CADisplayLink displayLinkWithTarget:[MarketPlaceProxy managerTarget:self] selector:@selector(barColor)];
         //: [self.link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
         [self.link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
     }

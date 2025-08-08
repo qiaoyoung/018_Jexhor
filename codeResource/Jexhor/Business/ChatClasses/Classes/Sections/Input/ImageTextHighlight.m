@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTextHighlight.h"
+//: #import "WorkTextHighlight.h"
 #import "ImageTextHighlight.h"
 
-//: @implementation FFFTextHighlight
+//: @implementation WorkTextHighlight
 @implementation ImageTextHighlight
 
 //: @end

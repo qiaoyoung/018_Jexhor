@@ -13,16 +13,16 @@
 #import <Foundation/Foundation.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFMessageModel.h"
+//: #import "WorkMessageModel.h"
 #import "ShowModel.h"
 
-//: @interface FFFKitEvent : NSObject
+//: @interface WorkKitEvent : NSObject
 @interface WrittenAccountLab : NSObject
 
 //: @property (nonatomic,copy) NSString *eventName;
 @property (nonatomic,copy) NSString *eventName;
 
-//: @property (nonatomic,strong) FFFMessageModel *messageModel;
+//: @property (nonatomic,strong) WorkMessageModel *messageModel;
 @property (nonatomic,strong) ShowModel *messageModel;
 
 //: @property (nonatomic,strong) id data;
@@ -34,12 +34,12 @@
 
 
 
-//: extern NSString *const FFFKitEventNameTapContent;
+//: extern NSString *const WorkKitEventNameTapContent;
 extern NSString *const userTopData;
-//: extern NSString *const FFFKitEventNameTapLabelLink;
+//: extern NSString *const WorkKitEventNameTapLabelLink;
 extern NSString *const k_onText;
-//: extern NSString *const FFFKitEventNameTapAudio;
+//: extern NSString *const WorkKitEventNameTapAudio;
 extern NSString *const kTitleData;
 
-//: extern NSString *const FFFKitEventNameTapRepliedContent;
+//: extern NSString *const WorkKitEventNameTapRepliedContent;
 extern NSString *const dreamSumObjectText;

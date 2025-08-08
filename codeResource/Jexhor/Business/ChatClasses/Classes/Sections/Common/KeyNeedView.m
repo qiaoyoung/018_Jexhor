@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFPageView.h"
+//: #import "WorkPageView.h"
 #import "KeyNeedView.h"
 
-//: @interface FFFPageView ()
+//: @interface WorkPageView ()
 @interface KeyNeedView ()
 {
     //: NSInteger _currentPage;
@@ -37,7 +37,7 @@
 //: @end
 @end
 
-//: @implementation FFFPageView
+//: @implementation WorkPageView
 @implementation KeyNeedView
 
 //: - (id)initWithFrame:(CGRect)frame

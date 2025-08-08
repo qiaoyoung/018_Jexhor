@@ -11,7 +11,7 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFGrowingTextView.h"
+//: #import "WorkGrowingTextView.h"
 #import "ItemView.h"
 
 //: typedef NS_ENUM(NSInteger,NIMInputStatus)
@@ -29,7 +29,7 @@ typedef NS_ENUM(NSInteger,NIMInputStatus)
 };
 
 
-//: @protocol FFFInputToolBarDelegate <NSObject>
+//: @protocol WorkInputToolBarDelegate <NSObject>
 @protocol RangeDelegate <NSObject>
 
 //: @optional
@@ -57,7 +57,7 @@ typedef NS_ENUM(NSInteger,NIMInputStatus)
 @end
 
 
-//: @interface FFFInputToolBar : UIView
+//: @interface WorkInputToolBar : UIView
 @interface CoatButtonView : UIView
 
 //: @property (nonatomic,strong) UIButton *voiceButton;
@@ -86,7 +86,7 @@ typedef NS_ENUM(NSInteger,NIMInputStatus)
 //: @property (nonatomic,copy) NSString *contentText;
 @property (nonatomic,copy) NSString *contentText;
 
-//: @property (nonatomic,weak) id<FFFInputToolBarDelegate> delegate;
+//: @property (nonatomic,weak) id<WorkInputToolBarDelegate> delegate;
 @property (nonatomic,weak) id<RangeDelegate> delegate;
 
 //: @property (nonatomic,assign) BOOL showsKeyboard;
@@ -98,7 +98,7 @@ typedef NS_ENUM(NSInteger,NIMInputStatus)
 //: @property (nonatomic,assign) NSInteger maxNumberOfInputLines;
 @property (nonatomic,assign) NSInteger maxNumberOfInputLines;
 
-//: @property (nonatomic,strong) FFFGrowingTextView *inputTextView;
+//: @property (nonatomic,strong) WorkGrowingTextView *inputTextView;
 @property (nonatomic,strong) ItemView *inputTextView;
 
 //: - (void)update:(NIMInputStatus)status;
@@ -107,7 +107,7 @@ typedef NS_ENUM(NSInteger,NIMInputStatus)
 //: @end
 @end
 
-//: @interface FFFInputToolBar(InputText)
+//: @interface WorkInputToolBar(InputText)
 @interface CoatButtonView(InputText)
 
 //: - (NSRange)selectedRange;

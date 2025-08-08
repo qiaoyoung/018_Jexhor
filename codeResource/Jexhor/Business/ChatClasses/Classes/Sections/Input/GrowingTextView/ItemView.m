@@ -9,15 +9,15 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFGrowingTextView.h"
+//: #import "WorkGrowingTextView.h"
 #import "ItemView.h"
-//: #import "FFFGrowingInternalTextView.h"
+//: #import "WorkGrowingInternalTextView.h"
 #import "RedScrollView.h"
 
-//: @interface FFFGrowingTextView()<UITextViewDelegate>
+//: @interface WorkGrowingTextView()<UITextViewDelegate>
 @interface ItemView()<UITextViewDelegate>
 
-//: @property (nonatomic,strong) FFFGrowingInternalTextView *textView;
+//: @property (nonatomic,strong) WorkGrowingInternalTextView *textView;
 @property (nonatomic,strong) RedScrollView *textView;
 
 //: @property (nonatomic,assign) CGFloat maxHeight;
@@ -35,7 +35,7 @@
 //: @end
 @end
 
-//: @implementation FFFGrowingTextView
+//: @implementation WorkGrowingTextView
 @implementation ItemView
 
 //: #pragma mark - Override
@@ -49,7 +49,7 @@
     if (self) {
         //: CGRect rect = CGRectMake(0, 0, frame.size.width, frame.size.height);
         CGRect rect = CGRectMake(0, 0, frame.size.width, frame.size.height);
-        //: FFFGrowingInternalTextView *textView = [[FFFGrowingInternalTextView alloc] initWithFrame:rect];
+        //: WorkGrowingInternalTextView *textView = [[WorkGrowingInternalTextView alloc] initWithFrame:rect];
         RedScrollView *textView = [[RedScrollView alloc] initWithFrame:rect];
         //: self.textView = textView;
         self.textView = textView;
@@ -70,7 +70,7 @@
     self = [super initWithCoder:aDecoder];
     //: if (self) {
     if (self) {
-        //: FFFGrowingInternalTextView *textView = [[FFFGrowingInternalTextView alloc] initWithFrame:CGRectZero];
+        //: WorkGrowingInternalTextView *textView = [[WorkGrowingInternalTextView alloc] initWithFrame:CGRectZero];
         RedScrollView *textView = [[RedScrollView alloc] initWithFrame:CGRectZero];
         //: self.textView = textView;
         self.textView = textView;
@@ -477,7 +477,7 @@
 
 
 
-//: @implementation FFFGrowingTextView(TextView)
+//: @implementation WorkGrowingTextView(TextView)
 @implementation ItemView(TextView)
 
 //: - (NSAttributedString *)placeholderAttributedText

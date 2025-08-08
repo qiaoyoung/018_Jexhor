@@ -60,8 +60,8 @@
 // __M_A_C_R_O__
 //: #import "NTESCardVerificationCell.h"
 #import "ColorViewCell.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "WorkCommonTableData.h"
+#import "WorkCommonTableData.h"
 
 //: @interface NTESCardVerificationCell ()<UITextViewDelegate>
 @interface ColorViewCell ()<UITextViewDelegate>
@@ -107,9 +107,9 @@
 //        }];
 //
 
-        //: NSString *activity_add_friend_my_is = [FFFLanguageManager getTextWithKey:@"activity_add_friend_my_is"];
+        //: NSString *activity_add_friend_my_is = [WorkLanguageManager getTextWithKey:@"activity_add_friend_my_is"];
         NSString *activity_add_friend_my_is = [InputRed preserve:[MakeData mOpenText]];
-        //: NSString *activity_add_friend_my_request = [FFFLanguageManager getTextWithKey:@"activity_add_friend_my_request"];
+        //: NSString *activity_add_friend_my_request = [WorkLanguageManager getTextWithKey:@"activity_add_friend_my_request"];
         NSString *activity_add_friend_my_request = [InputRed preserve:[MakeData show_textTitle]];
 
         //: NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:[[NIMSDK sharedSDK].loginManager currentAccount]];

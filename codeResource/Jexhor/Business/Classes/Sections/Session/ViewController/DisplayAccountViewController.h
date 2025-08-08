@@ -9,13 +9,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionViewController.h"
+//: #import "WorkSessionViewController.h"
 #import "AccountViewController.h"
 
 //: extern NSString *kNTESDemoRevokeMessageFromMeNotication;
 extern NSString *appBlockData;
 
-//: @interface NTESSessionViewController : FFFSessionViewController
+//: @interface NTESSessionViewController : WorkSessionViewController
 @interface DisplayAccountViewController : AccountViewController
 
 //: @property (nonatomic,assign) BOOL disableCommandTyping; 

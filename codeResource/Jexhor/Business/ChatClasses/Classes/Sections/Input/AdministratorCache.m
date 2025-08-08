@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputAtCache.h"
+//: #import "WorkInputAtCache.h"
 #import "AdministratorCache.h"
 
-//: @interface FFFInputAtCache()
+//: @interface WorkInputAtCache()
 @interface AdministratorCache()
 
 //: @property (nonatomic,strong) NSMutableArray *items;
@@ -21,7 +21,7 @@
 //: @end
 @end
 
-//: @implementation FFFInputAtCache
+//: @implementation WorkInputAtCache
 @implementation AdministratorCache
 
 //: - (instancetype)init

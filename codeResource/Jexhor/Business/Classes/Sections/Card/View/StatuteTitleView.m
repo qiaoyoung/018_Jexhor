@@ -203,7 +203,7 @@ typedef struct {
     labsubLabel.textColor = [UIColor ground:[[PressData sharedInstance] user_valueAppearTitle]];
     //: labsubLabel.numberOfLines = 0;
     labsubLabel.numberOfLines = 0;
-    //: labsubLabel.text = [FFFLanguageManager getTextWithKey:@"report_next_select_delete"];
+    //: labsubLabel.text = [WorkLanguageManager getTextWithKey:@"report_next_select_delete"];
     labsubLabel.text = [InputRed preserve:[[PressData sharedInstance] dreamFileName]];
     //: [_box addSubview:labsubLabel];
     [_box addSubview:labsubLabel];
@@ -250,7 +250,7 @@ typedef struct {
         _titleLabel.textColor = [UIColor blackColor];
         //: _titleLabel.textAlignment = NSTextAlignmentCenter;
         _titleLabel.textAlignment = NSTextAlignmentCenter;
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend"];
+        //: _titleLabel.text = [WorkLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend"];
         _titleLabel.text = [InputRed preserve:[[PressData sharedInstance] mainHandleText]];
     }
     //: return _titleLabel;
@@ -269,7 +269,7 @@ typedef struct {
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor ground:[[PressData sharedInstance] notiButtonTitle]] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[InputRed preserve:[[PressData sharedInstance] k_sessionData]] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -296,7 +296,7 @@ typedef struct {
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"delete"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[WorkLanguageManager getTextWithKey:@"delete"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[InputRed preserve:[[PressData sharedInstance] m_disableData]] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#05D481"];
         _sureBtn.backgroundColor = [UIColor ground:[[PressData sharedInstance] user_tagName]];

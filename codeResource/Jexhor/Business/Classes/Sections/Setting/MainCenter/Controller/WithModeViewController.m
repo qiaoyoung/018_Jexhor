@@ -211,7 +211,7 @@
     labtitle.textColor = [UIColor ground:[PastData sharedInstance].show_sendSuccessValue];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"my_log"];
+    //: labtitle.text = [WorkLanguageManager getTextWithKey:@"my_log"];
     labtitle.text = [InputRed preserve:[PastData sharedInstance].mainTagBubbleTitle];
     //: [self.view addSubview:labtitle];
     [self.view addSubview:labtitle];
@@ -372,7 +372,7 @@
         emptyTipLabel.textAlignment = NSTextAlignmentCenter;
         //: [_defView addSubview:emptyTipLabel];
         [_defView addSubview:emptyTipLabel];
-        //: emptyTipLabel.text = [FFFLanguageManager getTextWithKey:@"group_info_activity_without"];
+        //: emptyTipLabel.text = [WorkLanguageManager getTextWithKey:@"group_info_activity_without"];
         emptyTipLabel.text = [InputRed preserve:[PastData sharedInstance].mThreadText];
     }
     //: return _defView;

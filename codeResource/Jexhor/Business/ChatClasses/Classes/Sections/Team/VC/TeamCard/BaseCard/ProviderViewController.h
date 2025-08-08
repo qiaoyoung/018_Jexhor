@@ -11,13 +11,13 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFTeamCardRowItem.h"
+//: #import "WorkTeamCardRowItem.h"
 #import "CardItem.h"
-//: #import "FFFTeamMemberListCell.h"
+//: #import "WorkTeamMemberListCell.h"
 #import "FixingViewCell.h"
-//: #import "FFFTeamSwitchTableViewCell.h"
+//: #import "WorkTeamSwitchTableViewCell.h"
 #import "KeyStyleView.h"
-//: #import "FFFTeamListDataManager.h"
+//: #import "WorkTeamListDataManager.h"
 #import "ShowManager.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
@@ -39,7 +39,7 @@ typedef NS_ENUM (NSInteger, NIMTeamCardSwithCellType){
 //: typedef void(^NIMTeamCardPickerHandle)(UIImage *image);
 typedef void(^NIMTeamCardPickerHandle)(UIImage *image);
 
-//: @protocol FFFTeamCardViewControllerDelegate <NSObject>
+//: @protocol WorkTeamCardViewControllerDelegate <NSObject>
 @protocol DialFrame <NSObject>
 
 //: - (void)NIMTeamCardVCDidSetTop:(BOOL)on;
@@ -53,17 +53,17 @@ typedef void(^NIMTeamCardPickerHandle)(UIImage *image);
 
 //: #pragma mark - UI基类
 #pragma mark - UI基类
-//: @interface FFFTeamCardViewController : UIViewController
+//: @interface WorkTeamCardViewController : UIViewController
 @interface ProviderViewController : UIViewController
 
-//: @property (nonatomic,weak) id <FFFTeamCardViewControllerDelegate> delegate;
+//: @property (nonatomic,weak) id <WorkTeamCardViewControllerDelegate> delegate;
 @property (nonatomic,weak) id <DialFrame> delegate;
 
 //: @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) UITableView *tableView;
 
 //数据源
-//: @property (nonatomic,strong) NSArray <NSArray <FFFTeamCardRowItem *> *> *datas;
+//: @property (nonatomic,strong) NSArray <NSArray <WorkTeamCardRowItem *> *> *datas;
 @property (nonatomic,strong) NSArray <NSArray <CardItem *> *> *datas;
 
 // "canMemberInfo": 1,//0 不允许查看资料 1 是允许
@@ -101,7 +101,7 @@ typedef void(^NIMTeamCardPickerHandle)(UIImage *image);
 - (UIView *)margin;
 
 // 子类自定义cell
-//: - (void)didBuildTeamMemberCell:(FFFTeamMemberListCell *)cell;
+//: - (void)didBuildTeamMemberCell:(WorkTeamMemberListCell *)cell;
 - (void)cell:(FixingViewCell *)cell;
 
 // 子类刷新tableview

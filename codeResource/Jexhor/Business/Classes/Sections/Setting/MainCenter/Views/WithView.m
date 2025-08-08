@@ -45,7 +45,7 @@
     return mSuccessTitle;
 }
 
-//: #ffffff
+//: #fffWork
 + (NSString *)dreamHandleValue {
     /* static */ NSString *dreamHandleValue = nil;
     if (!dreamHandleValue) {
@@ -102,7 +102,7 @@
         //: self.labTitle.frame = CGRectMake(40+32, 0, [[UIScreen mainScreen] bounds].size.width-80, 56);
         self.labTitle.frame = CGRectMake(40+32, 0, [[UIScreen mainScreen] bounds].size.width-80, 56);
 
-        //: self.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: self.backgroundColor = [UIColor colorWithHexString:@"#fffWork"];
         self.backgroundColor = [UIColor ground:[InstrumentationData dreamHandleValue]];
         //: self.layer.cornerRadius = 12;
         self.layer.cornerRadius = 12;

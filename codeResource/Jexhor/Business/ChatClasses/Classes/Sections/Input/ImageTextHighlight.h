@@ -15,20 +15,20 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: typedef NS_ENUM(NSUInteger, FFFTextHighlightType) {
-typedef NS_ENUM(NSUInteger, FFFTextHighlightType) {
-    //: FFFTextHighlightTypeDefault = 0, 
-    FFFTextHighlightTypeDefault = 0, /// 服务下发了不认识的类型
-    //: FFFTextHighlightTypeEmoji,
-    FFFTextHighlightTypeEmoji,
+//: typedef NS_ENUM(NSUInteger, WorkTextHighlightType) {
+typedef NS_ENUM(NSUInteger, WorkTextHighlightType) {
+    //: WorkTextHighlightTypeDefault = 0, 
+    WorkTextHighlightTypeDefault = 0, /// 服务下发了不认识的类型
+    //: WorkTextHighlightTypeEmoji,
+    WorkTextHighlightTypeEmoji,
 //: };
 };
 
-//: @interface FFFTextHighlight : YYTextHighlight
+//: @interface WorkTextHighlight : YYTextHighlight
 @interface ImageTextHighlight : YYTextHighlight
 
-//: @property (nonatomic, assign) FFFTextHighlightType type;
-@property (nonatomic, assign) FFFTextHighlightType type;
+//: @property (nonatomic, assign) WorkTextHighlightType type;
+@property (nonatomic, assign) WorkTextHighlightType type;
 //: @property (nonatomic, copy) NSString *text;
 @property (nonatomic, copy) NSString *text;
 //: @property (nonatomic, copy) NSString *textId;

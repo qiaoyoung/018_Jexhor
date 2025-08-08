@@ -69,14 +69,14 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFImageContentConfig.h"
+//: #import "WorkImageContentConfig.h"
 #import "RedSystemView.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
 
-//: @implementation FFFImageContentConfig
+//: @implementation WorkImageContentConfig
 @implementation RedSystemView
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
 - (CGSize)refer:(CGFloat)cellWidth componentPart:(NIMMessage *)message
@@ -129,7 +129,7 @@ typedef struct {
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)on:(NIMMessage *)message
 {
-    //: return @"FFFSessionImageContentView";
+    //: return @"WorkSessionImageContentView";
     return @"ComponentContentView";
 }
 

@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFInputEmoticonDefine.h
+//  WorkInputEmoticonDefine.h
 // MessageContent
 //
 //  Created by chris.

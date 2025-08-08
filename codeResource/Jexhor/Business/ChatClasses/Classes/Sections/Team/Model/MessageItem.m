@@ -9,9 +9,9 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCardMemberItem.h"
+//: #import "WorkTeamCardMemberItem.h"
 #import "MessageItem.h"
-//: #import "FFFKitUtil.h"
+//: #import "WorkKitUtil.h"
 #import "WantUtil.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
@@ -54,7 +54,7 @@
 
 //: - (UIImage *)imageNormal{
 - (UIImage *)imageNormal{
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.userId option:nil];
+    //: WorkKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.userId option:nil];
     ConfirmationInfo *info = [[MessageContent secretResolution] recent:self.userId blue:nil];
     //: return info.avatarImage;
     return info.avatarImage;
@@ -64,7 +64,7 @@
 - (NSString *)title {
     //: NIMSession *session = [NIMSession session:self.userId type:NIMSessionTypeP2P];
     NIMSession *session = [NIMSession session:self.userId type:NIMSessionTypeP2P];
-    //: return [FFFKitUtil showNick:self.userId inSession:session];
+    //: return [WorkKitUtil showNick:self.userId inSession:session];
     return [WantUtil teamSessionText:self.userId last:session];
 }
 
@@ -95,7 +95,7 @@
 //: @end
 @end
 
-//: @interface FFFTeamCardMemberItem ()
+//: @interface WorkTeamCardMemberItem ()
 @interface MessageItem ()
 
 //: @property (nonatomic, strong) NIMTeamMember *member;
@@ -107,7 +107,7 @@
 //: @end
 @end
 
-//: @implementation FFFTeamCardMemberItem
+//: @implementation WorkTeamCardMemberItem
 @implementation MessageItem
 
 //: - (instancetype)init {
@@ -148,19 +148,19 @@
 
 //: - (BOOL)isEqual:(id)object{
 - (BOOL)isEqual:(id)object{
-    //: if (![object isKindOfClass:[FFFTeamCardMemberItem class]]) {
+    //: if (![object isKindOfClass:[WorkTeamCardMemberItem class]]) {
     if (![object isKindOfClass:[MessageItem class]]) {
         //: return NO;
         return NO;
     }
-    //: FFFTeamCardMemberItem *obj = (FFFTeamCardMemberItem*)object;
+    //: WorkTeamCardMemberItem *obj = (WorkTeamCardMemberItem*)object;
     MessageItem *obj = (MessageItem*)object;
     //: return [obj.userId isEqual:self.userId];
     return [obj.userId isEqual:self.userId];
 }
 
-//: #pragma mark - <FFFKitCardHeaderData>
-#pragma mark - <FFFKitCardHeaderData>
+//: #pragma mark - <WorkKitCardHeaderData>
+#pragma mark - <WorkKitCardHeaderData>
 //: - (NSString *)teamId {
 - (NSString *)teamId {
     //: return _member.teamId;
@@ -200,7 +200,7 @@
 
 //: - (UIImage *)imageNormal{
 - (UIImage *)imageNormal{
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.userId option:nil];
+    //: WorkKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.userId option:nil];
     ConfirmationInfo *info = [[MessageContent secretResolution] recent:self.userId blue:nil];
     //: return info.avatarImage;
     return info.avatarImage;
@@ -226,7 +226,7 @@
             session = [NIMSession session:self.teamId type:NIMSessionTypeTeam];
         }
     }
-    //: return [FFFKitUtil showNick:self.userId inSession:session];
+    //: return [WorkKitUtil showNick:self.userId inSession:session];
     return [WantUtil teamSessionText:self.userId last:session];
 }
 

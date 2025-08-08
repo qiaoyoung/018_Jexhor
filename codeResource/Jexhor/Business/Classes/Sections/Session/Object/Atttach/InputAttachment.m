@@ -158,7 +158,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)provider:(NIMMessage *)message
 {
-    //: return @"FFFSessionShareCardContentView";
+    //: return @"WorkSessionShareCardContentView";
     return @"RedNameView";
 }
 

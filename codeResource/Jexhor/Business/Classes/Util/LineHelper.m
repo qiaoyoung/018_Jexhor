@@ -90,7 +90,7 @@
 #import "LineHelper.h"
 //: #import <sys/stat.h>
 #import <sys/stat.h>
-//: #import "FFFConfig.h"
+//: #import "WorkConfig.h"
 #import "AccountWith.h"
 
 //: @interface NTESFileLocationHelper ()
@@ -135,7 +135,7 @@
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: NSString *appKey = [[FFFConfig sharedConfig] appKey];
+        //: NSString *appKey = [[WorkConfig sharedConfig] appKey];
         NSString *appKey = [[AccountWith max] appKey];
         //: NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);

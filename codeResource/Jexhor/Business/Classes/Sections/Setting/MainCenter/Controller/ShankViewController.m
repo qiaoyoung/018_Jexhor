@@ -208,7 +208,7 @@ ShowRowTargetData mNeedText = (ShowRowTargetData){187, (Byte []){216, 212, 213, 
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"report_activity_title"];
+    //: labtitle.text = [WorkLanguageManager getTextWithKey:@"report_activity_title"];
     labtitle.text = [InputRed preserve:StringFromShowRowTargetData(&notiCompleteSuccessName)];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -238,7 +238,7 @@ ShowRowTargetData mNeedText = (ShowRowTargetData){187, (Byte []){216, 212, 213, 
 
     //: _textView = [[UITextView alloc] initWithFrame:CGRectMake(15, (44.0f + [UIDevice vg_statusBarHeight])+15, [[UIScreen mainScreen] bounds].size.width-30, 200)];
     _textView = [[UITextView alloc] initWithFrame:CGRectMake(15, (44.0f + [UIDevice heightShowStop])+15, [[UIScreen mainScreen] bounds].size.width-30, 200)];
-    //: _textView.placeholder = [FFFLanguageManager getTextWithKey:@"report_info"];
+    //: _textView.placeholder = [WorkLanguageManager getTextWithKey:@"report_info"];
     _textView.placeholder = [InputRed preserve:StringFromShowRowTargetData(&main_tagName)];//@"请输入您的举报信息";
     //: _textView.backgroundColor = [UIColor whiteColor];
     _textView.backgroundColor = [UIColor whiteColor];
@@ -375,7 +375,7 @@ ShowRowTargetData mNeedText = (ShowRowTargetData){187, (Byte []){216, 212, 213, 
         //: NSLog(@"%@",error);
         //: [SVProgressHUD dismiss];
         [SVProgressHUD dismiss];
-        //: [SVProgressHUD showMessage:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"]];
+        //: [SVProgressHUD showMessage:[WorkLanguageManager getTextWithKey:@"group_info_activity_op_failed"]];
         [SVProgressHUD text:[InputRed preserve:StringFromShowRowTargetData(&mainTagName)]];
     //: }];
     }];

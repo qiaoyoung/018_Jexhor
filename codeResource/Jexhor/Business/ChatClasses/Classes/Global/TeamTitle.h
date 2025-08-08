@@ -15,7 +15,7 @@
 //: @class NIMCommonTableRow;
 @class ConstituentRow;
 
-//: @protocol FFFCommonTableViewCell <NSObject>
+//: @protocol WorkCommonTableViewCell <NSObject>
 @protocol TeamTitle <NSObject>
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier;

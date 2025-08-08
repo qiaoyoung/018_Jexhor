@@ -371,7 +371,7 @@
     //: }else{
     }else{
 
-        //: [self makeToast:[FFFLanguageManager getTextWithKey:@"wrong_password"] duration:2.0 position:CSToastPositionCenter];
+        //: [self makeToast:[WorkLanguageManager getTextWithKey:@"wrong_password"] duration:2.0 position:CSToastPositionCenter];
         [self makeToast:[InputRed preserve:[MustBubbleData sharedInstance].kInfoVideoData] duration:2.0 position:CSToastPositionCenter];
     }
 
@@ -481,7 +481,7 @@
         labtitle1.font = [UIFont systemFontOfSize:11.f];
         //: labtitle1.textColor = [UIColor blackColor];
         labtitle1.textColor = [UIColor blackColor];
-        //: labtitle1.text = [FFFLanguageManager getTextWithKey:@"Read_agree_agreement"];
+        //: labtitle1.text = [WorkLanguageManager getTextWithKey:@"Read_agree_agreement"];
         labtitle1.text = [InputRed preserve:[MustBubbleData sharedInstance].userEndMustName];
         //: labtitle1.numberOfLines = 2;
         labtitle1.numberOfLines = 2;
@@ -522,7 +522,7 @@
         labtitle2.font = [UIFont systemFontOfSize:11.f];
         //: labtitle2.textColor = [UIColor blackColor];
         labtitle2.textColor = [UIColor blackColor];
-        //: labtitle2.text = [FFFLanguageManager getTextWithKey:@"Vertify_login_password"];
+        //: labtitle2.text = [WorkLanguageManager getTextWithKey:@"Vertify_login_password"];
         labtitle2.text = [InputRed preserve:[MustBubbleData sharedInstance].m_imageValue];
         //: labtitle2.numberOfLines = 2;
         labtitle2.numberOfLines = 2;
@@ -563,7 +563,7 @@
         labtitle3.font = [UIFont systemFontOfSize:11.f];
         //: labtitle3.textColor = [UIColor colorWithHexString:@"#5D5F66"];
         labtitle3.textColor = [UIColor ground:[MustBubbleData sharedInstance].noti_imageTitle];
-        //: labtitle3.text = [FFFLanguageManager getTextWithKey:@"Complete_operation"];
+        //: labtitle3.text = [WorkLanguageManager getTextWithKey:@"Complete_operation"];
         labtitle3.text = [InputRed preserve:[MustBubbleData sharedInstance].kEndFileText];
         //: labtitle3.numberOfLines = 2;
         labtitle3.numberOfLines = 2;
@@ -615,7 +615,7 @@
 
         //: _searchField = [[UITextField alloc]initWithFrame:CGRectMake(50, 2, [[UIScreen mainScreen] bounds].size.width-80-50, 40)];
         _searchField = [[UITextField alloc]initWithFrame:CGRectMake(50, 2, [[UIScreen mainScreen] bounds].size.width-80-50, 40)];
-        //: _searchField.placeholder = [FFFLanguageManager getTextWithKey:@"get_pay_psw_activity_input_psw"];
+        //: _searchField.placeholder = [WorkLanguageManager getTextWithKey:@"get_pay_psw_activity_input_psw"];
         _searchField.placeholder = [InputRed preserve:[MustBubbleData sharedInstance].k_addData];
         //: _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];
         _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];
@@ -643,7 +643,7 @@
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor ground:[MustBubbleData sharedInstance].noti_imageTitle] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[InputRed preserve:[MustBubbleData sharedInstance].user_changeContent] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -670,7 +670,7 @@
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[InputRed preserve:[MustBubbleData sharedInstance].k_shouldValue] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#FF483D"];
         _sureBtn.backgroundColor = [UIColor ground:[MustBubbleData sharedInstance].noti_videoName];

@@ -17,7 +17,7 @@ NSString * RestApi(NSString *api) {
     //: NSString* resultApi;
     NSString* resultApi;
 //    resultApi = [[AccountWith sharedConfig].domainURL stringByAppendingString:api];
-    //: resultApi = [[[FFFConfig sharedConfig] getCurrentDomain] stringByAppendingString:api];
+    //: resultApi = [[[WorkConfig sharedConfig] getCurrentDomain] stringByAppendingString:api];
     resultApi = [[[AccountWith max] record] stringByAppendingString:api];
     //: return resultApi;
     return resultApi;

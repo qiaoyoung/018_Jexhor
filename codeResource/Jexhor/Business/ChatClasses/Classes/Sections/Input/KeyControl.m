@@ -9,29 +9,29 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputEmoticonButton.h"
+//: #import "WorkInputEmoticonButton.h"
 #import "KeyControl.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "WorkInputEmoticonManager.h"
 #import "RedManager.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
+//: #import "WorkInputEmoticonDefine.h"
+#import "WorkInputEmoticonDefine.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
-//: #import "FFFKitDevice.h"
+//: #import "WorkKitDevice.h"
 #import "TeamTing.h"
 //: #import "NSBundle+MyUserKit.h"
 #import "NSBundle+MessageContent.h"
 //: #import "SSZipArchiveManager.h"
 #import "ButtonManager.h"
 
-//: @implementation FFFInputEmoticonButton
+//: @implementation WorkInputEmoticonButton
 @implementation KeyControl
 
-//: + (FFFInputEmoticonButton*)iconButtonWithData:(NIMInputEmoticon*)data catalogID:(NSString*)catalogID delegate:( id<NIMEmoticonButtonTouchDelegate>)delegate{
+//: + (WorkInputEmoticonButton*)iconButtonWithData:(NIMInputEmoticon*)data catalogID:(NSString*)catalogID delegate:( id<NIMEmoticonButtonTouchDelegate>)delegate{
 + (KeyControl*)inheritance:(FrontwardsCount*)data lineItem:(NSString*)catalogID remote:( id<ImageNeed>)delegate{
-    //: FFFInputEmoticonButton* icon = [[FFFInputEmoticonButton alloc] init];
+    //: WorkInputEmoticonButton* icon = [[WorkInputEmoticonButton alloc] init];
     KeyControl* icon = [[KeyControl alloc] init];
     //: [icon addTarget:icon action:@selector(onIconSelected:) forControlEvents:UIControlEventTouchUpInside];
     [icon addTarget:icon action:@selector(states:) forControlEvents:UIControlEventTouchUpInside];

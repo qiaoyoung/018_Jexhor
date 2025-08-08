@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitInfo.h"
+//: #import "WorkKitInfo.h"
 #import "ConfirmationInfo.h"
 
-//: @implementation FFFKitInfo
+//: @implementation WorkKitInfo
 @implementation ConfirmationInfo
 
 //: @end

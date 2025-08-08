@@ -49,12 +49,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamInfoData.h"
+//: #import "WorkTeamInfoData.h"
 #import "NumberData.h"
-//: #import "FFFSpellingCenter.h"
+//: #import "WorkSpellingCenter.h"
 #import "ContentRed.h"
 
-//: @implementation FFFTeamInfoData
+//: @implementation WorkTeamInfoData
 @implementation NumberData
 
 //: - (instancetype)initWithTeam:(NIMTeam *)team{
@@ -76,7 +76,7 @@
 
 //: - (NSString *)groupTitle{
 - (NSString *)quick{
-    //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.teamName].capitalizedString;
+    //: NSString *title = [[WorkSpellingCenter sharedCenter] firstLetter:self.teamName].capitalizedString;
     NSString *title = [[ContentRed bar] lightGreen:self.teamName].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
@@ -93,14 +93,14 @@
 }
 
 //: - (NSString *)memberId{
-- (NSString *)pressedFor{
+- (NSString *)memberId{
     //: return self.teamId;
     return self.teamId;
 }
 
 //: - (id)sortKey{
 - (id)screenSortFormat{
-    //: return [[FFFSpellingCenter sharedCenter] spellingForString:self.teamName].shortSpelling;
+    //: return [[WorkSpellingCenter sharedCenter] spellingForString:self.teamName].shortSpelling;
     return [[ContentRed bar] baleOut:self.teamName].shortSpelling;
 }
 
@@ -117,7 +117,7 @@
 }
 
 //: - (NSString *)showName{
-- (NSString *)exhibitDoing{
+- (NSString *)showName{
     //: return self.teamName;
     return self.teamName;
 }

@@ -145,7 +145,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFConfig.h"
+//: #import "WorkConfig.h"
 #import "AccountWith.h"
 //: #import "RestUtil.h"
 #import "ValueLab.h"
@@ -155,7 +155,7 @@ static NSString *const app_commentName = @"https://apple.akunjapan0206chat.com";
 //: static NSString *const kSavedDomainKey = @"SavedDomainKey";
 static NSString *const k_playerData = @"SavedDomainKey";
 
-//: @interface FFFConfig ()
+//: @interface WorkConfig ()
 @interface AccountWith ()
 
 //: @property (nonatomic,copy) NSString *hostFrom;
@@ -166,19 +166,19 @@ static NSString *const k_playerData = @"SavedDomainKey";
 //: @end
 @end
 
-//: @implementation FFFConfig
+//: @implementation WorkConfig
 @implementation AccountWith
 
 //: + (instancetype)sharedConfig
 + (instancetype)max
 {
-    //: static FFFConfig *instance = nil;
+    //: static WorkConfig *instance = nil;
     static AccountWith *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFConfig alloc] init];
+        //: instance = [[WorkConfig alloc] init];
         instance = [[AccountWith alloc] init];
     //: });
     });
@@ -198,7 +198,7 @@ static NSString *const k_playerData = @"SavedDomainKey";
 
         //        _apnsCername = @"DEVELOPER";
         //: _apnsCername = @"pushDev";
-        _apnsCername = [SubmitData sharedInstance].noti_completeResultValue;
+        _apnsCername = @"push_Jexhor_release";
         //: _pkCername = @"pushkit_voice_test";
         _pkCername = [SubmitData sharedInstance].appArrestData;
         //: _allowAutoLogin = YES; 

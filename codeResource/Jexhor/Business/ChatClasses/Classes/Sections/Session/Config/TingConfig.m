@@ -9,66 +9,66 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCellLayoutConfig.h"
+//: #import "WorkCellLayoutConfig.h"
 #import "TingConfig.h"
-//: #import "FFFSessionMessageContentView.h"
+//: #import "WorkSessionMessageContentView.h"
 #import "TextControl.h"
-//: #import "FFFSessionUnknowContentView.h"
+//: #import "WorkSessionUnknowContentView.h"
 #import "ManagingDirectorContentView.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "VideoTextView+MessageContent.h"
-//: #import "FFFKitUtil.h"
+//: #import "WorkKitUtil.h"
 #import "WantUtil.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
-//: #import "FFFMessageModel.h"
+//: #import "WorkMessageModel.h"
 #import "ShowModel.h"
-//: #import "FFFBaseSessionContentConfig.h"
-#import "FFFBaseSessionContentConfig.h"
+//: #import "WorkBaseSessionContentConfig.h"
+#import "WorkBaseSessionContentConfig.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
 
-//: @interface FFFCellLayoutConfig()
+//: @interface WorkCellLayoutConfig()
 @interface TingConfig()
 
 //: @end
 @end
 
-//: @implementation FFFCellLayoutConfig
+//: @implementation WorkCellLayoutConfig
 @implementation TingConfig
 
-//: - (CGSize)contentSize:(FFFMessageModel *)model cellWidth:(CGFloat)cellWidth{
+//: - (CGSize)contentSize:(WorkMessageModel *)model cellWidth:(CGFloat)cellWidth{
 - (CGSize)from:(ShowModel *)model bubble:(CGFloat)cellWidth{
-    //: id<CCCSessionContentConfig>config = [[FFFSessionContentConfigFactory sharedFacotry] configBy:model.message];
+    //: id<CCCSessionContentConfig>config = [[WorkSessionContentConfigFactory sharedFacotry] configBy:model.message];
     id<CellTitleConfig>config = [[SameModeFactory letter] independent:model.message];
     //: return [config contentSize:cellWidth message:model.message];
     return [config refer:cellWidth componentPart:model.message];
 }
 
-//: - (NSString *)cellContent:(FFFMessageModel *)model{
+//: - (NSString *)cellContent:(WorkMessageModel *)model{
 - (NSString *)change:(ShowModel *)model{
-    //: id<CCCSessionContentConfig>config = [[FFFSessionContentConfigFactory sharedFacotry] configBy:model.message];
+    //: id<CCCSessionContentConfig>config = [[WorkSessionContentConfigFactory sharedFacotry] configBy:model.message];
     id<CellTitleConfig>config = [[SameModeFactory letter] independent:model.message];
     //: NSString *cellContent = [config cellContent:model.message];
     NSString *cellContent = [config on:model.message];
-    //: return cellContent.length ? cellContent : @"FFFSessionUnknowContentView";
+    //: return cellContent.length ? cellContent : @"WorkSessionUnknowContentView";
     return cellContent.length ? cellContent : @"ManagingDirectorContentView";
 }
 
 
-//: - (UIEdgeInsets)contentViewInsets:(FFFMessageModel *)model{
+//: - (UIEdgeInsets)contentViewInsets:(WorkMessageModel *)model{
 - (UIEdgeInsets)container:(ShowModel *)model{
-    //: id<CCCSessionContentConfig>config = [[FFFSessionContentConfigFactory sharedFacotry] configBy:model.message];
+    //: id<CCCSessionContentConfig>config = [[WorkSessionContentConfigFactory sharedFacotry] configBy:model.message];
     id<CellTitleConfig>config = [[SameModeFactory letter] independent:model.message];
     //: return [config contentViewInsets:model.message];
     return [config team:model.message];
 }
 
 
-//: - (UIEdgeInsets)cellInsets:(FFFMessageModel *)model
+//: - (UIEdgeInsets)cellInsets:(WorkMessageModel *)model
 - (UIEdgeInsets)text:(ShowModel *)model
 {
-    //: if ([[self cellContent:model] isEqualToString:@"FFFSessionNotificationContentView"]) {
+    //: if ([[self cellContent:model] isEqualToString:@"WorkSessionNotificationContentView"]) {
     if ([[self change:model] isEqualToString:@"SoundView"]) {
         //: return UIEdgeInsetsZero;
         return UIEdgeInsetsZero;
@@ -99,19 +99,19 @@
 
 }
 
-//: - (UIEdgeInsets)replyContentViewInsets:(FFFMessageModel *)model{
+//: - (UIEdgeInsets)replyContentViewInsets:(WorkMessageModel *)model{
 - (UIEdgeInsets)user:(ShowModel *)model{
-    //: id<CCCSessionContentConfig>config = [[FFFSessionContentConfigFactory sharedFacotry] replyConfigBy:model.repliedMessage];
+    //: id<CCCSessionContentConfig>config = [[WorkSessionContentConfigFactory sharedFacotry] replyConfigBy:model.repliedMessage];
     id<CellTitleConfig>config = [[SameModeFactory letter] towardView:model.repliedMessage];
     //: return [config contentViewInsets:model.repliedMessage];
     return [config team:model.repliedMessage];
 }
 
 
-//: - (UIEdgeInsets)replyCellInsets:(FFFMessageModel *)model
+//: - (UIEdgeInsets)replyCellInsets:(WorkMessageModel *)model
 - (UIEdgeInsets)message:(ShowModel *)model
 {
-    //: if ([[self cellContent:model] isEqualToString:@"FFFSessionNotificationContentView"]) {
+    //: if ([[self cellContent:model] isEqualToString:@"WorkSessionNotificationContentView"]) {
     if ([[self change:model] isEqualToString:@"SoundView"]) {
         //: return UIEdgeInsetsZero;
         return UIEdgeInsetsZero;
@@ -142,25 +142,25 @@
 
 }
 
-//: - (CGSize)replyContentSize:(FFFMessageModel *)model cellWidth:(CGFloat)cellWidth {
+//: - (CGSize)replyContentSize:(WorkMessageModel *)model cellWidth:(CGFloat)cellWidth {
 - (CGSize)temp:(ShowModel *)model disable:(CGFloat)cellWidth {
-    //: id<CCCSessionContentConfig>config = [[FFFSessionContentConfigFactory sharedFacotry] replyConfigBy:model.repliedMessage];
+    //: id<CCCSessionContentConfig>config = [[WorkSessionContentConfigFactory sharedFacotry] replyConfigBy:model.repliedMessage];
     id<CellTitleConfig>config = [[SameModeFactory letter] towardView:model.repliedMessage];
     //: return [config contentSize:cellWidth message:model.repliedMessage];
     return [config refer:cellWidth componentPart:model.repliedMessage];
 }
 
-//: - (NSString *)replyContent:(FFFMessageModel *)model {
+//: - (NSString *)replyContent:(WorkMessageModel *)model {
 - (NSString *)area:(ShowModel *)model {
-    //: id<CCCSessionContentConfig>config = [[FFFSessionContentConfigFactory sharedFacotry] replyConfigBy:model.repliedMessage];
+    //: id<CCCSessionContentConfig>config = [[WorkSessionContentConfigFactory sharedFacotry] replyConfigBy:model.repliedMessage];
     id<CellTitleConfig>config = [[SameModeFactory letter] towardView:model.repliedMessage];
     //: NSString *cellContent = [config cellContent:model.repliedMessage];
     NSString *cellContent = [config on:model.repliedMessage];
-    //: return cellContent.length ? cellContent : @"FFFSessionUnknowContentView";
+    //: return cellContent.length ? cellContent : @"WorkSessionUnknowContentView";
     return cellContent.length ? cellContent : @"ManagingDirectorContentView";
 }
 
-//: - (BOOL)shouldShowAvatar:(FFFMessageModel *)model
+//: - (BOOL)shouldShowAvatar:(WorkMessageModel *)model
 - (BOOL)shouldTitleImpression:(ShowModel *)model
 {
     //: return [[MyUserKit sharedKit].config setting:model.message].showAvatar;
@@ -168,7 +168,7 @@
 }
 
 
-//: - (BOOL)shouldShowNickName:(FFFMessageModel *)model{
+//: - (BOOL)shouldShowNickName:(WorkMessageModel *)model{
 - (BOOL)demonstrate:(ShowModel *)model{
     //: NIMMessage *message = model.message;
     NIMMessage *message = model.message;
@@ -198,28 +198,28 @@
 }
 
 
-//: - (BOOL)shouldShowLeft:(FFFMessageModel *)model
+//: - (BOOL)shouldShowLeft:(WorkMessageModel *)model
 - (BOOL)header:(ShowModel *)model
 {
     //: return !model.message.isOutgoingMsg;
     return !model.message.isOutgoingMsg;
 }
 
-//: - (CGPoint)avatarMargin:(FFFMessageModel *)model
+//: - (CGPoint)avatarMargin:(WorkMessageModel *)model
 - (CGPoint)back:(ShowModel *)model
 {
     //: return CGPointMake(8.f, 0.f);
     return CGPointMake(8.f, 0.f);
 }
 
-//: - (CGSize)avatarSize:(FFFMessageModel *)model
+//: - (CGSize)avatarSize:(WorkMessageModel *)model
 - (CGSize)enableRefresh:(ShowModel *)model
 {
     //: return CGSizeMake(36, 36);
     return CGSizeMake(36, 36);
 }
 
-//: - (CGPoint)nickNameMargin:(FFFMessageModel *)model
+//: - (CGPoint)nickNameMargin:(WorkMessageModel *)model
 - (CGPoint)index:(ShowModel *)model
 {
     //: return [self shouldShowAvatar:model] ? CGPointMake([self avatarSize:model].width + 15.f, -3.f) : CGPointMake(10.f, -3.f);
@@ -227,21 +227,21 @@
 }
 
 
-//: - (NSArray *)customViews:(FFFMessageModel *)model
+//: - (NSArray *)customViews:(WorkMessageModel *)model
 - (NSArray *)with:(ShowModel *)model
 {
     //: return nil;
     return nil;
 }
 
-//: - (BOOL)disableRetryButton:(FFFMessageModel *)model
+//: - (BOOL)disableRetryButton:(WorkMessageModel *)model
 - (BOOL)sessions:(ShowModel *)model
 {
 
     //: if (model.message.session.sessionType == NIMSessionTypeTeam)
     if (model.message.session.sessionType == NIMSessionTypeTeam)
     {
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<WorkCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<TingConfig> layoutConfig = [[MessageContent secretResolution] layoutConfig];
         //: BOOL left = [layoutConfig shouldShowLeft:model];
         BOOL left = [layoutConfig header:model];
@@ -261,7 +261,7 @@
     //: else if (model.message.session.sessionType == NIMSessionTypeSuperTeam)
     else if (model.message.session.sessionType == NIMSessionTypeSuperTeam)
     {
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<WorkCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<TingConfig> layoutConfig = [[MessageContent secretResolution] layoutConfig];
         //: BOOL left = [layoutConfig shouldShowLeft:model];
         BOOL left = [layoutConfig header:model];
@@ -294,10 +294,10 @@
     }
 }
 
-//: - (BOOL)shouldDisplayBubbleBackground:(FFFMessageModel *)model
+//: - (BOOL)shouldDisplayBubbleBackground:(WorkMessageModel *)model
 - (BOOL)should:(ShowModel *)model
 {
-    //: id<CCCSessionContentConfig> config = [[FFFSessionContentConfigFactory sharedFacotry] configBy:model.message];
+    //: id<CCCSessionContentConfig> config = [[WorkSessionContentConfigFactory sharedFacotry] configBy:model.message];
     id<CellTitleConfig> config = [[SameModeFactory letter] independent:model.message];
     //: if ([config respondsToSelector:@selector(enableBackgroundBubbleView:)])
     if ([config respondsToSelector:@selector(bubbled:)])

@@ -59,11 +59,11 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactPickedView.h"
+//: #import "WorkContactPickedView.h"
 #import "SameView.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WorkAvatarImageView.h"
 #import "ButtonControl.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
@@ -78,7 +78,7 @@ enum RefreshType
 //: };
 };
 
-//: @interface NIMContactSelectAvatarView : FFFAvatarImageView
+//: @interface NIMContactSelectAvatarView : WorkAvatarImageView
 @interface SmartControl : ButtonControl
 
 //: @property (nonatomic, strong) NSString *userId;
@@ -114,7 +114,7 @@ enum RefreshType
 @end
 
 
-//: @interface FFFContactPickedView()
+//: @interface WorkContactPickedView()
 @interface SameView()
 
 //: @property (nonatomic, strong) UIScrollView *scrollView;
@@ -129,7 +129,7 @@ enum RefreshType
 //: @end
 @end
 
-//: @implementation FFFContactPickedView
+//: @implementation WorkContactPickedView
 @implementation SameView
 
 //: - (instancetype)initWithCoder:(NSCoder *)aDecoder {
@@ -273,7 +273,7 @@ enum RefreshType
 }
 
 
-//: - (void)addMemberInfo:(FFFKitInfo *)info
+//: - (void)addMemberInfo:(WorkKitInfo *)info
 - (void)pressed:(ConfirmationInfo *)info
 {
 
@@ -289,7 +289,7 @@ enum RefreshType
     [self value:avatar];
 }
 
-//: - (void)removeMemberInfo:(FFFKitInfo *)info
+//: - (void)removeMemberInfo:(WorkKitInfo *)info
 - (void)elite:(ConfirmationInfo *)info
 {
     //: NSInteger i = 0;

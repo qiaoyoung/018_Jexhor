@@ -138,39 +138,39 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactSelectViewController.h"
+//: #import "WorkContactSelectViewController.h"
 #import "CompartmentViewController.h"
-//: #import "FFFContactSelectTabView.h"
+//: #import "WorkContactSelectTabView.h"
 #import "WithColorView.h"
-//: #import "FFFContactPickedView.h"
+//: #import "WorkContactPickedView.h"
 #import "SameView.h"
-//: #import "FFFGroupedUsrInfo.h"
-#import "FFFGroupedUsrInfo.h"
+//: #import "WorkGroupedUsrInfo.h"
+#import "WorkGroupedUsrInfo.h"
 //: #import "UserGroupedData.h"
 #import "SessionCount.h"
-//: #import "FFFContactDataCell.h"
+//: #import "WorkContactDataCell.h"
 #import "AccountingDataViewCell.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFSetGroupNameView.h"
+//: #import "WorkKitDependency.h"
+#import "WorkKitDependency.h"
+//: #import "WorkGlobalMacro.h"
+#import "WorkGlobalMacro.h"
+//: #import "WorkSetGroupNameView.h"
 #import "DisplayPerspectiveView.h"
-//: #import "FFFGroupAvatarViewController.h"
+//: #import "WorkGroupAvatarViewController.h"
 #import "TextViewController.h"
 
-//: @interface FFFContactSelectViewController ()<UITableViewDataSource, UITableViewDelegate, FFFContactPickedViewDelegate>{
+//: @interface WorkContactSelectViewController ()<UITableViewDataSource, UITableViewDelegate, WorkContactPickedViewDelegate>{
 @interface CompartmentViewController ()<UITableViewDataSource, UITableViewDelegate, PickedDelegate>{
     //: NSMutableArray *_selectecContacts;
     NSMutableArray *_selectecContacts;
 }
 //: @property (strong, nonatomic) UITableView *tableView;
 @property (strong, nonatomic) UITableView *tableView;
-//: @property(nonatomic, strong) FFFSetGroupNameView *setGroupnameView;
+//: @property(nonatomic, strong) WorkSetGroupNameView *setGroupnameView;
 @property(nonatomic, strong) DisplayPerspectiveView *setGroupnameView;
 //: @property(nonatomic, strong) UIView *headerview;
 @property(nonatomic, strong) UIView *headerview;
@@ -181,7 +181,7 @@
 //: @property(nonatomic, strong) UIImage *headPortrait;
 @property(nonatomic, strong) UIImage *headPortrait;
 
-//: @property (strong, nonatomic) FFFContactSelectTabView *selectIndicatorView;
+//: @property (strong, nonatomic) WorkContactSelectTabView *selectIndicatorView;
 @property (strong, nonatomic) WithColorView *selectIndicatorView;
 
 //: @property (nonatomic, assign) NSInteger maxSelectCount;
@@ -198,7 +198,7 @@
 //: @end
 @end
 
-//: @implementation FFFContactSelectViewController
+//: @implementation WorkContactSelectViewController
 @implementation CompartmentViewController
 
 //: - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -215,7 +215,7 @@
     return self;
 }
 
-//: - (instancetype)initWithConfig:(id<FFFContactSelectConfig>) config{
+//: - (instancetype)initWithConfig:(id<WorkContactSelectConfig>) config{
 - (instancetype)initWithStateAtPull:(id<TitleConfig>) config{
     //: self = [self initWithNibName:nil bundle:nil];
     self = [self initWithNibName:nil bundle:nil];
@@ -314,7 +314,7 @@
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"select_contact"];
+    //: labtitle.text = [WorkLanguageManager getTextWithKey:@"select_contact"];
     labtitle.text = [InputRed preserve:[ControlData show_countValue]];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -436,7 +436,7 @@
     [vc presentViewController:[[UINavigationController alloc] initWithRootViewController:self] animated:YES completion:nil];
 }
 
-//: - (void)setConfig:(id<FFFContactSelectConfig>)config{
+//: - (void)setConfig:(id<WorkContactSelectConfig>)config{
 - (void)setConfig:(id<TitleConfig>)config{
     //: _config = config;
     _config = config;
@@ -478,7 +478,7 @@
 
     //: if (_selectecContacts.count == 0) {
     if (_selectecContacts.count == 0) {
-        //: [SVProgressHUD showMessage:[FFFLanguageManager getTextWithKey:@"main_activity_choose_least_one"]];
+        //: [SVProgressHUD showMessage:[WorkLanguageManager getTextWithKey:@"main_activity_choose_least_one"]];
         [SVProgressHUD text:[InputRed preserve:[ControlData k_preventionValue]]];
         //: return;
         return;
@@ -486,7 +486,7 @@
 
 
     //: if (self.config.showSelectHeaderview) {
-    if (self.config.headerviewQuestion) {
+    if (self.config.showSelectHeaderview) {
 
         //: [self.view addSubview:self.setGroupnameView];
         [self.view addSubview:self.setGroupnameView];
@@ -508,7 +508,7 @@
                         [self.delegate anointExamine:_selectecContacts];
                     }
 
-                    //: FFFGroupAvatarViewController *vc = [[FFFGroupAvatarViewController alloc]init];
+                    //: WorkGroupAvatarViewController *vc = [[WorkGroupAvatarViewController alloc]init];
                     TextViewController *vc = [[TextViewController alloc]init];
                     //: vc.groupName = groupName;
                     vc.groupName = groupName;
@@ -632,7 +632,7 @@
     _selectecContacts = _selectecContacts.count ? _selectecContacts : [NSMutableArray array];
     //: for (NSString *selectId in _selectecContacts) {
     for (NSString *selectId in _selectecContacts) {
-        //: FFFKitInfo *info;
+        //: WorkKitInfo *info;
         ConfirmationInfo *info;
         //: info = [self.config getInfoById:selectId];
         info = [self.config image:selectId];
@@ -671,17 +671,17 @@
     //: id<NIMGroupMemberProtocol> contactItem = arr[indexPath.row];
     id<MemberProtocol> contactItem = arr[indexPath.row];
 
-    //: FFFContactDataCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SelectContactCellID"];
+    //: WorkContactDataCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SelectContactCellID"];
     AccountingDataViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[ControlData m_completeName]];
     //: if (cell == nil) {
     if (cell == nil) {
-        //: cell = [[FFFContactDataCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"SelectContactCellID"];
+        //: cell = [[WorkContactDataCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"SelectContactCellID"];
         cell = [[AccountingDataViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:[ControlData m_completeName]];
     }
     //: cell.accessoryBtn.hidden = NO;
     cell.accessoryBtn.hidden = NO;
     //: cell.accessoryBtn.selected = [_selectecContacts containsObject:[contactItem memberId]];
-    cell.accessoryBtn.selected = [_selectecContacts containsObject:[contactItem pressedFor]];
+    cell.accessoryBtn.selected = [_selectecContacts containsObject:[contactItem memberId]];
     //: [cell refreshItem:contactItem];
     [cell showWith:contactItem];
     //: return cell;
@@ -714,10 +714,10 @@
     id<MemberProtocol> member = arr[indexPath.row];
 
     //: NSString *memberId = [(id<NIMGroupMemberProtocol>)member memberId];
-    NSString *memberId = [(id<MemberProtocol>)member pressedFor];
-    //: FFFContactDataCell *cell = (FFFContactDataCell *)[tableView cellForRowAtIndexPath:indexPath];
+    NSString *memberId = [(id<MemberProtocol>)member memberId];
+    //: WorkContactDataCell *cell = (WorkContactDataCell *)[tableView cellForRowAtIndexPath:indexPath];
     AccountingDataViewCell *cell = (AccountingDataViewCell *)[tableView cellForRowAtIndexPath:indexPath];
-    //: FFFKitInfo *info;
+    //: WorkKitInfo *info;
     ConfirmationInfo *info;
     //: info = [self.config getInfoById:memberId];
     info = [self.config image:memberId];
@@ -771,7 +771,7 @@
 //: #pragma mark - Private
 #pragma mark - Private
 
-//: - (FFFContactSelectTabView *)selectIndicatorView{
+//: - (WorkContactSelectTabView *)selectIndicatorView{
 - (WithColorView *)selectIndicatorView{
     //: if (_selectIndicatorView) {
     if (_selectIndicatorView) {
@@ -779,7 +779,7 @@
         return _selectIndicatorView;
     }
 
-    //: _selectIndicatorView = [[FFFContactSelectTabView alloc] initWithFrame:CGRectMake(0, (44.0f + [UIDevice vg_statusBarHeight]), [[UIScreen mainScreen] bounds].size.width, 64)];
+    //: _selectIndicatorView = [[WorkContactSelectTabView alloc] initWithFrame:CGRectMake(0, (44.0f + [UIDevice vg_statusBarHeight]), [[UIScreen mainScreen] bounds].size.width, 64)];
     _selectIndicatorView = [[WithColorView alloc] initWithFrame:CGRectMake(0, (44.0f + [UIDevice heightShowStop]), [[UIScreen mainScreen] bounds].size.width, 64)];
     //: _selectIndicatorView.doneButton.hidden = YES;
     _selectIndicatorView.doneButton.hidden = YES;
@@ -787,11 +787,11 @@
     return _selectIndicatorView;
 }
 
-//: - (FFFSetGroupNameView *)setGroupnameView{
+//: - (WorkSetGroupNameView *)setGroupnameView{
 - (DisplayPerspectiveView *)setGroupnameView{
     //: if(!_setGroupnameView){
     if(!_setGroupnameView){
-        //: _setGroupnameView = [[FFFSetGroupNameView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
+        //: _setGroupnameView = [[WorkSetGroupNameView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
         _setGroupnameView = [[DisplayPerspectiveView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
     }
     //: return _setGroupnameView;

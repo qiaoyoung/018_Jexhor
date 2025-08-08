@@ -11,17 +11,17 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFKitEvent.h"
+//: #import "WorkKitEvent.h"
 #import "WrittenAccountLab.h"
 
-//: typedef NS_ENUM (NSInteger, FFFSessionMessageContentViewLayout){
-typedef NS_ENUM (NSInteger, FFFSessionMessageContentViewLayout){
-    //: FFFSessionMessageContentViewLayoutAuto = 0, 
-    FFFSessionMessageContentViewLayoutAuto = 0, //根据消息自动布局
-    //: FFFSessionMessageContentViewLayoutLeft, 
-    FFFSessionMessageContentViewLayoutLeft, //左边布局
-    //: FFFSessionMessageContentViewLayoutRight, 
-    FFFSessionMessageContentViewLayoutRight, //右边布局
+//: typedef NS_ENUM (NSInteger, WorkSessionMessageContentViewLayout){
+typedef NS_ENUM (NSInteger, WorkSessionMessageContentViewLayout){
+    //: WorkSessionMessageContentViewLayoutAuto = 0, 
+    WorkSessionMessageContentViewLayoutAuto = 0, //根据消息自动布局
+    //: WorkSessionMessageContentViewLayoutLeft, 
+    WorkSessionMessageContentViewLayoutLeft, //左边布局
+    //: WorkSessionMessageContentViewLayoutRight, 
+    WorkSessionMessageContentViewLayoutRight, //右边布局
 //: };
 };
 
@@ -31,7 +31,7 @@ typedef NS_ENUM (NSInteger, FFFSessionMessageContentViewLayout){
 //: @protocol NIMMessageContentViewDelegate <NSObject>
 @protocol ModeBar <NSObject>
 
-//: - (void)onCatchEvent:(FFFKitEvent *)event;
+//: - (void)onCatchEvent:(WorkKitEvent *)event;
 - (void)aboveImage:(WrittenAccountLab *)event;
 
 //: - (void)disableLongPress:(BOOL)disable;
@@ -49,20 +49,20 @@ typedef NS_ENUM (NSInteger, FFFSessionMessageContentViewLayout){
 //: @end
 @end
 
-//: @class FFFMessageModel;
+//: @class WorkMessageModel;
 @class ShowModel;
 
-//: @interface FFFSessionMessageContentView : UIControl
+//: @interface WorkSessionMessageContentView : UIControl
 @interface TextControl : UIControl
 
-//: @property (nonatomic,strong,readonly) FFFMessageModel *model;
+//: @property (nonatomic,strong,readonly) WorkMessageModel *model;
 @property (nonatomic,strong,readonly) ShowModel *model;
 
 //: @property (nonatomic,strong) UIImageView * bubbleImageView;
 @property (nonatomic,strong) UIImageView * bubbleImageView;
 
-//: @property (nonatomic,assign) FFFSessionMessageContentViewLayout layoutStyle;
-@property (nonatomic,assign) FFFSessionMessageContentViewLayout layoutStyle;
+//: @property (nonatomic,assign) WorkSessionMessageContentViewLayout layoutStyle;
+@property (nonatomic,assign) WorkSessionMessageContentViewLayout layoutStyle;
 
 //: @property (nonatomic,weak) id<NIMMessageContentViewDelegate> delegate;
 @property (nonatomic,weak) id<ModeBar> delegate;
@@ -81,7 +81,7 @@ typedef NS_ENUM (NSInteger, FFFSessionMessageContentViewLayout){
  *  @param data 刷新数据
  *
  */
-//: - (void)refresh:(FFFMessageModel*)data;
+//: - (void)refresh:(WorkMessageModel*)data;
 - (void)panorama:(ShowModel*)data;
 
 

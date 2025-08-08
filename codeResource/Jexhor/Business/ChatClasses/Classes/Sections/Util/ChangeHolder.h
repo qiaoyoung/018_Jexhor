@@ -16,24 +16,24 @@
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-//: @class FFFKitTimerHolder;
+//: @class WorkKitTimerHolder;
 @class ChangeHolder;
 
-//: @protocol FFFKitTimerHolderDelegate <NSObject>
+//: @protocol WorkKitTimerHolderDelegate <NSObject>
 @protocol KitWith <NSObject>
-//: - (void)onNIMKitTimerFired:(FFFKitTimerHolder *)holder;
+//: - (void)onNIMKitTimerFired:(WorkKitTimerHolder *)holder;
 - (void)alonging:(ChangeHolder *)holder;
 //: @end
 @end
 
-//: @interface FFFKitTimerHolder : NSObject
+//: @interface WorkKitTimerHolder : NSObject
 @interface ChangeHolder : NSObject
-//: @property (nonatomic,weak) id<FFFKitTimerHolderDelegate> timerDelegate;
+//: @property (nonatomic,weak) id<WorkKitTimerHolderDelegate> timerDelegate;
 @property (nonatomic,weak) id<KitWith> timerDelegate;
 
 //: - (void)startTimer:(NSTimeInterval)seconds
 - (void)limit:(NSTimeInterval)seconds
-          //: delegate:(id<FFFKitTimerHolderDelegate>)delegate
+          //: delegate:(id<WorkKitTimerHolderDelegate>)delegate
           byRepeatsHolderDelegate:(id<KitWith>)delegate
            //: repeats:(BOOL)repeats;
            data:(BOOL)repeats;

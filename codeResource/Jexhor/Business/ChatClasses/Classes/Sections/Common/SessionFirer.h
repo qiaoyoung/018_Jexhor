@@ -13,19 +13,19 @@
 #import <Foundation/Foundation.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFKitTimerHolder.h"
+//: #import "WorkKitTimerHolder.h"
 #import "ChangeHolder.h"
 
 //: @class NIMKitFirerInfo;
 @class ColorInfo;
 
-//: @interface FFFKitNotificationFirer : NSObject<FFFKitTimerHolderDelegate>
+//: @interface WorkKitNotificationFirer : NSObject<WorkKitTimerHolderDelegate>
 @interface SessionFirer : NSObject<KitWith>
 
 //: @property (nonatomic,strong) NSMutableDictionary *cachedInfo;
 @property (nonatomic,strong) NSMutableDictionary *cachedInfo;
 
-//: @property (nonatomic,strong) FFFKitTimerHolder *timer;
+//: @property (nonatomic,strong) WorkKitTimerHolder *timer;
 @property (nonatomic,strong) ChangeHolder *timer;
 
 //: @property (nonatomic,assign) NSTimeInterval timeInterval;

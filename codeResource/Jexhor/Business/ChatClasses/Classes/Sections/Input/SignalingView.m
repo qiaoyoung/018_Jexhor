@@ -69,11 +69,11 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputMoreContainerView.h"
+//: #import "WorkInputMoreContainerView.h"
 #import "SignalingView.h"
-//: #import "FFFPageView.h"
+//: #import "WorkPageView.h"
 #import "KeyNeedView.h"
-//: #import "FFFMediaItem.h"
+//: #import "WorkMediaItem.h"
 #import "AccountAction.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
@@ -96,7 +96,7 @@ NSInteger userTapData = 11;
 
 
 
-//: @interface FFFInputMoreContainerView() <FFFPageViewDataSource,FFFPageViewDelegate,CustomMediaPickerViewDelegate>
+//: @interface WorkInputMoreContainerView() <WorkPageViewDataSource,WorkPageViewDelegate,CustomMediaPickerViewDelegate>
 @interface SignalingView() <FrameSource,PageDoingValueDelegate,RecordNeedMessage>
 {
     //: NSArray *_mediaButtons;
@@ -106,13 +106,13 @@ NSInteger userTapData = 11;
 }
 
 
-//: @property (nonatomic, strong) FFFPageView *pageView;
+//: @property (nonatomic, strong) WorkPageView *pageView;
 @property (nonatomic, strong) KeyNeedView *pageView;
 
 //: @end
 @end
 
-//: @implementation FFFInputMoreContainerView
+//: @implementation WorkInputMoreContainerView
 @implementation SignalingView
 
 //: - (instancetype)initWithFrame:(CGRect)frame
@@ -144,7 +144,7 @@ NSInteger userTapData = 11;
     return self;
 }
 
-//: - (void)setConfig:(id<FFFSessionConfig>)config
+//: - (void)setConfig:(id<WorkSessionConfig>)config
 - (void)setConfig:(id<LineConfig>)config
 {
     //: _config = config;
@@ -242,7 +242,7 @@ NSInteger userTapData = 11;
         //: items = [self.config mediaItems];
         items = [self.config prefaceWith];
     }
-    //: [items enumerateObjectsUsingBlock:^(FFFMediaItem *item, NSUInteger idx, BOOL *stop) {
+    //: [items enumerateObjectsUsingBlock:^(WorkMediaItem *item, NSUInteger idx, BOOL *stop) {
     [items enumerateObjectsUsingBlock:^(AccountAction *item, NSUInteger idx, BOOL *stop) {
         //: [mediaItems addObject:item];
         [mediaItems addObject:item];
@@ -326,7 +326,7 @@ NSInteger userTapData = 11;
 
 //: #pragma mark PageViewDataSource
 #pragma mark PageViewDataSource
-//: - (NSInteger)numberOfPages: (FFFPageView *)pageView
+//: - (NSInteger)numberOfPages: (WorkPageView *)pageView
 - (NSInteger)elites: (KeyNeedView *)pageView
 {
     //: NSInteger count = [_mediaButtons count] / NIMMaxItemCountInPage;
@@ -337,7 +337,7 @@ NSInteger userTapData = 11;
     return ((count) > (1) ? (count) : (1));
 }
 
-//: - (UIView*)mediaPageView:(FFFPageView*)pageView beginItem:(NSInteger)begin endItem:(NSInteger)end
+//: - (UIView*)mediaPageView:(WorkPageView*)pageView beginItem:(NSInteger)begin endItem:(NSInteger)end
 - (UIView*)searched:(KeyNeedView*)pageView titleBy:(NSInteger)begin name:(NSInteger)end
 {
     //: UIView *subView = [[UIView alloc] init];
@@ -391,7 +391,7 @@ NSInteger userTapData = 11;
     return subView;
 }
 
-//: - (UIView*)oneLineMediaInPageView:(FFFPageView *)pageView
+//: - (UIView*)oneLineMediaInPageView:(WorkPageView *)pageView
 - (UIView*)perspectiveCount:(KeyNeedView *)pageView
                        //: viewInPage: (NSInteger)index
                        sessionOption: (NSInteger)index
@@ -421,7 +421,7 @@ NSInteger userTapData = 11;
     return subView;
 }
 
-//: - (UIView *)pageView: (FFFPageView *)pageView viewInPage: (NSInteger)index
+//: - (UIView *)pageView: (WorkPageView *)pageView viewInPage: (NSInteger)index
 - (UIView *)text: (KeyNeedView *)pageView with: (NSInteger)index
 {
     //: if ([_mediaButtons count] == 2 || [_mediaButtons count] == 3) 
@@ -460,7 +460,7 @@ NSInteger userTapData = 11;
 {
     //: NSInteger index = [(UIButton *)sender tag];
     NSInteger index = [(UIButton *)sender tag];
-    //: FFFMediaItem *item = _mediaItems[index];
+    //: WorkMediaItem *item = _mediaItems[index];
     AccountAction *item = _mediaItems[index];
     //: if (_actionDelegate && [_actionDelegate respondsToSelector:@selector(onTapMediaItem:)]) {
     if (_actionDelegate && [_actionDelegate respondsToSelector:@selector(coloring:)]) {

@@ -9,21 +9,21 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitEvent.h"
+//: #import "WorkKitEvent.h"
 #import "WrittenAccountLab.h"
 
-//: NSString *const FFFKitEventNameTapContent = @"FFFKitEventNameTapContent";
-NSString *const userTopData = @"FFFKitEventNameTapContent";
-//: NSString *const FFFKitEventNameTapLabelLink = @"FFFKitEventNameTapLabelLink";
-NSString *const k_onText = @"FFFKitEventNameTapLabelLink";
-//: NSString *const FFFKitEventNameTapAudio = @"FFFKitEventNameTapAudio";
-NSString *const kTitleData = @"FFFKitEventNameTapAudio";
+//: NSString *const WorkKitEventNameTapContent = @"WorkKitEventNameTapContent";
+NSString *const userTopData = @"WorkKitEventNameTapContent";
+//: NSString *const WorkKitEventNameTapLabelLink = @"WorkKitEventNameTapLabelLink";
+NSString *const k_onText = @"WorkKitEventNameTapLabelLink";
+//: NSString *const WorkKitEventNameTapAudio = @"WorkKitEventNameTapAudio";
+NSString *const kTitleData = @"WorkKitEventNameTapAudio";
 
-//: NSString *const FFFKitEventNameTapRepliedContent = @"FFFKitEventNameTapRepliedContent";
-NSString *const dreamSumObjectText = @"FFFKitEventNameTapRepliedContent";
+//: NSString *const WorkKitEventNameTapRepliedContent = @"WorkKitEventNameTapRepliedContent";
+NSString *const dreamSumObjectText = @"WorkKitEventNameTapRepliedContent";
 
 
-//: @implementation FFFKitEvent
+//: @implementation WorkKitEvent
 @implementation WrittenAccountLab
 
 //: @end

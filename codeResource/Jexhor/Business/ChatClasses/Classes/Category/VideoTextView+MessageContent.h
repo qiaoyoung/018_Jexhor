@@ -9,8 +9,8 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "WorkKitDependency.h"
+#import "WorkKitDependency.h"
 
 //: @interface M80AttributedLabel (MyUserKit)
 @interface VideoTextView (MessageContent)

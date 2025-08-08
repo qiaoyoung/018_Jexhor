@@ -17,7 +17,7 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface UIView (FFFToast)
+//: @interface UIView (WorkToast)
 @interface UIView (Factor)
 
 /**

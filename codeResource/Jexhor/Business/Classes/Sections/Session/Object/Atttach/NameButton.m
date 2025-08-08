@@ -63,7 +63,7 @@ TimePeriodData dream_pollutionData = (TimePeriodData){201, (Byte []){32, 107, 79
 #import "SessionUtil.h"
 //: #import "M80AttributedLabel.h"
 #import "VideoTextView.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WorkKitInfoFetchOption.h"
 #import "RangeOption.h"
 
 //: @interface NTESRedPacketTipAttachment()
@@ -150,7 +150,7 @@ TimePeriodData dream_pollutionData = (TimePeriodData){201, (Byte []){32, 107, 79
     //: NSString * currentUserId = [[NIMSDK sharedSDK].loginManager currentAccount];
     NSString * currentUserId = [[NIMSDK sharedSDK].loginManager currentAccount];
     // 领取别人的红包
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: WorkKitInfoFetchOption *option = [[WorkKitInfoFetchOption alloc] init];
     RangeOption *option = [[RangeOption alloc] init];
     //: option.message = self.message;
     option.message = self.message;
@@ -174,7 +174,7 @@ TimePeriodData dream_pollutionData = (TimePeriodData){201, (Byte []){32, 107, 79
     //: else if ([currentUserId isEqualToString:self.openPacketId])
     else if ([currentUserId isEqualToString:self.openPacketId])
     {
-        //: FFFKitInfo * sendUserInfo = [[MyUserKit sharedKit] infoByUser:self.sendPacketId option:option];
+        //: WorkKitInfo * sendUserInfo = [[MyUserKit sharedKit] infoByUser:self.sendPacketId option:option];
         ConfirmationInfo * sendUserInfo = [[MessageContent secretResolution] recent:self.sendPacketId blue:option];
         //: NSString * name = sendUserInfo.showName;
         NSString * name = sendUserInfo.showName;
@@ -192,7 +192,7 @@ TimePeriodData dream_pollutionData = (TimePeriodData){201, (Byte []){32, 107, 79
     //: else if ([currentUserId isEqualToString:self.sendPacketId])
     else if ([currentUserId isEqualToString:self.sendPacketId])
     {
-        //: FFFKitInfo * openUserInfo = [[MyUserKit sharedKit] infoByUser:self.openPacketId option:option];
+        //: WorkKitInfo * openUserInfo = [[MyUserKit sharedKit] infoByUser:self.openPacketId option:option];
         ConfirmationInfo * openUserInfo = [[MessageContent secretResolution] recent:self.openPacketId blue:option];
         //: NSString * name = openUserInfo.showName;
         NSString * name = openUserInfo.showName;

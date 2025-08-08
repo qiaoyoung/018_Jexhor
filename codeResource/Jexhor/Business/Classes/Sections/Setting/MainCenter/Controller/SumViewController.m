@@ -103,7 +103,7 @@
 #import "SumViewController.h"
 //: #import <WebKit/WebKit.h>
 #import <WebKit/WebKit.h>
-//: #import "FFFRegisterViewController.h"
+//: #import "WorkRegisterViewController.h"
 #import "ResearchLabViewController.h"
 //: #import "SSZipArchiveManager.h"
 #import "ButtonManager.h"
@@ -187,7 +187,7 @@
 //: - (void)doAgree{
 - (void)backgroundUser{
 
-    //: FFFRegisterViewController *vc = [[FFFRegisterViewController alloc]init];
+    //: WorkRegisterViewController *vc = [[WorkRegisterViewController alloc]init];
     ResearchLabViewController *vc = [[ResearchLabViewController alloc]init];
     //: [self.navigationController pushViewController:vc animated:YES];
     [self.navigationController pushViewController:vc animated:YES];

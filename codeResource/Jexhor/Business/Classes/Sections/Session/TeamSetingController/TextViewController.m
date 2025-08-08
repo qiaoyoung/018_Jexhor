@@ -241,7 +241,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFGroupAvatarViewController.h"
+//: #import "WorkGroupAvatarViewController.h"
 #import "TextViewController.h"
 //: #import "SVProgressHUD.h"
 #import "SVProgressHUD.h"
@@ -271,10 +271,10 @@
 #import "UIView+Toast.h"
 //: #import "NTESRegistConfigManager.h"
 #import "Manager.h"
-//: #import "FFFKitProgressHUD.h"
+//: #import "WorkKitProgressHUD.h"
 #import "KitEffectView.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "WorkKitDependency.h"
+#import "WorkKitDependency.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
 //: #import "NSString+MyUserKit.h"
@@ -282,7 +282,7 @@
 //: #import "NSSetAvater.h"
 #import "InfoView.h"
 
-//: @interface FFFGroupAvatarViewController ()<NTESCustomUIAlertDelegate>
+//: @interface WorkGroupAvatarViewController ()<NTESCustomUIAlertDelegate>
 @interface TextViewController ()<ViewMessageName>
 
 //: @property (nonatomic, strong) UIButton *closeBtn;
@@ -306,7 +306,7 @@
 //: @end
 @end
 
-//: @implementation FFFGroupAvatarViewController
+//: @implementation WorkGroupAvatarViewController
 @implementation TextViewController
 
 //: - (void)viewDidLoad {
@@ -338,7 +338,7 @@
     titleLabel.textColor = [UIColor blackColor];
     //: titleLabel.font = [UIFont boldSystemFontOfSize:16];
     titleLabel.font = [UIFont boldSystemFontOfSize:16];
-    //: titleLabel.text = [FFFLanguageManager getTextWithKey:@"set_group_avater"];
+    //: titleLabel.text = [WorkLanguageManager getTextWithKey:@"set_group_avater"];
     titleLabel.text = [InputRed preserve:[SliceData sharedInstance].notiItsValue];
     //: titleLabel.textAlignment = NSTextAlignmentCenter;
     titleLabel.textAlignment = NSTextAlignmentCenter;
@@ -391,7 +391,7 @@
     self.accountLabel.font = [UIFont boldSystemFontOfSize:14];
     //: self.accountLabel.textColor = [UIColor colorWithHexString:@"#5D5F66"];
     self.accountLabel.textColor = [UIColor ground:[SliceData sharedInstance].appInfoTargetValue];
-    //: self.accountLabel.text = [FFFLanguageManager getTextWithKey:@"register_good_avater"];
+    //: self.accountLabel.text = [WorkLanguageManager getTextWithKey:@"register_good_avater"];
     self.accountLabel.text = [InputRed preserve:[SliceData sharedInstance].m_planetHandleDrinkingData];
     //: self.accountLabel.textAlignment = NSTextAlignmentCenter;
     self.accountLabel.textAlignment = NSTextAlignmentCenter;
@@ -467,7 +467,7 @@
     self.registButton.titleLabel.font = [UIFont systemFontOfSize:16];
     //: [self.registButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.registButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [self.registButton setTitle:[FFFLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
+    //: [self.registButton setTitle:[WorkLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
     [self.registButton setTitle:[InputRed preserve:[SliceData sharedInstance].showBarrelData] forState:UIControlStateNormal];
     //: [bodyView addSubview:self.registButton];
     [bodyView addSubview:self.registButton];

@@ -33,30 +33,30 @@ Byte main_cussTitle[] = {83, 27, 11, 5, 92, 110, 122, 121, 127, 108, 110, 127, 1
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitMediaFetcher.h"
+//: #import "WorkKitMediaFetcher.h"
 #import "ValueAction.h"
 //: #import <MobileCoreServices/MobileCoreServices.h>
 #import <MobileCoreServices/MobileCoreServices.h>
-//: #import "FFFKitFileLocationHelper.h"
+//: #import "WorkKitFileLocationHelper.h"
 #import "ImageHelper.h"
-//: #import "FFFMessageMaker.h"
+//: #import "WorkMessageMaker.h"
 #import "EnterName.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "WorkGlobalMacro.h"
+#import "WorkGlobalMacro.h"
+//: #import "WorkKitDependency.h"
+#import "WorkKitDependency.h"
 //: #import "TZImageManager.h"
 #import "TZImageManager.h"
-//: #import "FFFKitProgressHUD.h"
+//: #import "WorkKitProgressHUD.h"
 #import "KitEffectView.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
-//: #import "FFFKitMediaPickerController.h"
+//: #import "WorkKitMediaPickerController.h"
 #import "KitNavigationController.h"
 //: #import "AVAsset+MyUserKit.h"
 #import "AVAsset+MessageContent.h"
 
-//: @interface FFFKitMediaFetcher()<FFFKitMediaPickerDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
+//: @interface WorkKitMediaFetcher()<WorkKitMediaPickerDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 @interface ValueAction()<ChaseLab,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 
 //: @property (nonatomic,copy) NIMKitLibraryFetchResult libraryResultHandler;
@@ -68,13 +68,13 @@ Byte main_cussTitle[] = {83, 27, 11, 5, 92, 110, 122, 121, 127, 108, 110, 127, 1
 //: @property (nonatomic,weak) UIImagePickerController *imagePicker;
 @property (nonatomic,weak) UIImagePickerController *imagePicker;
 
-//: @property (nonatomic,strong) FFFKitMediaPickerController *assetsPicker;
+//: @property (nonatomic,strong) WorkKitMediaPickerController *assetsPicker;
 @property (nonatomic,strong) KitNavigationController *assetsPicker;
 
 //: @end
 @end
 
-//: @implementation FFFKitMediaFetcher
+//: @implementation WorkKitMediaFetcher
 @implementation ValueAction
 
 //: - (instancetype)init
@@ -194,7 +194,7 @@ Byte main_cussTitle[] = {83, 27, 11, 5, 92, 110, 122, 121, 127, 108, 110, 127, 1
 - (void)netShared:(void(^)(UIViewController * _Nullable picker)) handler {
     //: UIViewController *pickerVC = nil;
     UIViewController *pickerVC = nil;
-    //: FFFKitMediaPickerController *vc = [[FFFKitMediaPickerController alloc] initWithMaxImagesCount:self.limit];
+    //: WorkKitMediaPickerController *vc = [[WorkKitMediaPickerController alloc] initWithMaxImagesCount:self.limit];
     KitNavigationController *vc = [[KitNavigationController alloc] initWithMaxBackgroundCountUpStreetwisePage:self.limit];
     //: vc.nim_delegate = self;
     vc.nim_delegate = self;
@@ -267,15 +267,15 @@ Byte main_cussTitle[] = {83, 27, 11, 5, 92, 110, 122, 121, 127, 108, 110, 127, 1
             //: default:
             default:
             {
-                //: [[[UIAlertView alloc] initWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"]
+                //: [[[UIAlertView alloc] initWithTitle:[WorkLanguageManager getTextWithKey:@"warm_prompt"]
                 [[[UIAlertView alloc] initWithTitle:[InputRed preserve:StringFromHopeData(notiPayerNumberegrityData)]
-                                            //: message:[FFFLanguageManager getTextWithKey:@"setting_privacy"]
+                                            //: message:[WorkLanguageManager getTextWithKey:@"setting_privacy"]
                                             message:[InputRed preserve:StringFromHopeData(mTossText)]
                                            //: delegate:self
                                            delegate:self
-                                  //: cancelButtonTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
+                                  //: cancelButtonTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
                                   cancelButtonTitle:[InputRed preserve:StringFromHopeData(main_cussTitle)]
-                                  //: otherButtonTitles:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
+                                  //: otherButtonTitles:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
                                   otherButtonTitles:[InputRed preserve:StringFromHopeData(dream_mortalModeReasonName)],nil] show];
 
 //                UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:LangKey(@"warm_prompt") message:LangKey(@"setting_privacy") preferredStyle:UIAlertControllerStyleAlert];
@@ -307,15 +307,15 @@ Byte main_cussTitle[] = {83, 27, 11, 5, 92, 110, 122, 121, 127, 108, 110, 127, 1
                 if (status == PHAuthorizationStatusRestricted || status == PHAuthorizationStatusDenied) {
 
 
-                    //: [[[UIAlertView alloc] initWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"]
+                    //: [[[UIAlertView alloc] initWithTitle:[WorkLanguageManager getTextWithKey:@"warm_prompt"]
                     [[[UIAlertView alloc] initWithTitle:[InputRed preserve:StringFromHopeData(notiPayerNumberegrityData)]
-                                                //: message:[FFFLanguageManager getTextWithKey:@"setting_privacy"]
+                                                //: message:[WorkLanguageManager getTextWithKey:@"setting_privacy"]
                                                 message:[InputRed preserve:StringFromHopeData(mTossText)]
                                                //: delegate:self
                                                delegate:self
-                                      //: cancelButtonTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
+                                      //: cancelButtonTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
                                       cancelButtonTitle:[InputRed preserve:StringFromHopeData(main_cussTitle)]
-                                      //: otherButtonTitles:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
+                                      //: otherButtonTitles:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
                                       otherButtonTitles:[InputRed preserve:StringFromHopeData(dream_mortalModeReasonName)],nil] show];
 
                     //: if(handler) handler(nil);
@@ -364,9 +364,9 @@ Byte main_cussTitle[] = {83, 27, 11, 5, 92, 110, 122, 121, 127, 108, 110, 127, 1
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
             //: NSURL *inputURL = [info objectForKey:UIImagePickerControllerMediaURL];
             NSURL *inputURL = [info objectForKey:UIImagePickerControllerMediaURL];
-            //: NSString *outputFileName = [FFFKitFileLocationHelper genFilenameWithExt:@"mp4"];
+            //: NSString *outputFileName = [WorkKitFileLocationHelper genFilenameWithExt:@"mp4"];
             NSString *outputFileName = [ImageHelper key:StringFromHopeData(mainPollutionValue)];
-            //: NSString *outputPath = [FFFKitFileLocationHelper filepathForVideo:outputFileName];
+            //: NSString *outputPath = [WorkKitFileLocationHelper filepathForVideo:outputFileName];
             NSString *outputPath = [ImageHelper soundVideo:outputFileName];
             //: AVURLAsset *asset = [AVURLAsset URLAssetWithURL:inputURL options:nil];
             AVURLAsset *asset = [AVURLAsset URLAssetWithURL:inputURL options:nil];
@@ -536,15 +536,15 @@ Byte main_cussTitle[] = {83, 27, 11, 5, 92, 110, 122, 121, 127, 108, 110, 127, 1
     if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
 
 
-        //: [[[UIAlertView alloc] initWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"]
+        //: [[[UIAlertView alloc] initWithTitle:[WorkLanguageManager getTextWithKey:@"warm_prompt"]
         [[[UIAlertView alloc] initWithTitle:[InputRed preserve:StringFromHopeData(notiPayerNumberegrityData)]
-                                    //: message:[FFFLanguageManager getTextWithKey:@"setting_privacy_camera"]
+                                    //: message:[WorkLanguageManager getTextWithKey:@"setting_privacy_camera"]
                                     message:[InputRed preserve:StringFromHopeData(notiEvidenceData)]
                                    //: delegate:self
                                    delegate:self
-                          //: cancelButtonTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
+                          //: cancelButtonTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
                           cancelButtonTitle:[InputRed preserve:StringFromHopeData(main_cussTitle)]
-                          //: otherButtonTitles:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
+                          //: otherButtonTitles:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
                           otherButtonTitles:[InputRed preserve:StringFromHopeData(dream_mortalModeReasonName)],nil] show];
         //: return NO;
         return NO;
@@ -557,15 +557,15 @@ Byte main_cussTitle[] = {83, 27, 11, 5, 92, 110, 122, 121, 127, 108, 110, 127, 1
     if(authStatus == AVAuthorizationStatusRestricted || authStatus == AVAuthorizationStatusDenied){
 
 
-        //: [[[UIAlertView alloc] initWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"]
+        //: [[[UIAlertView alloc] initWithTitle:[WorkLanguageManager getTextWithKey:@"warm_prompt"]
         [[[UIAlertView alloc] initWithTitle:[InputRed preserve:StringFromHopeData(notiPayerNumberegrityData)]
-                                    //: message:[FFFLanguageManager getTextWithKey:@"setting_privacy_camera"]
+                                    //: message:[WorkLanguageManager getTextWithKey:@"setting_privacy_camera"]
                                     message:[InputRed preserve:StringFromHopeData(notiEvidenceData)]
                                    //: delegate:self
                                    delegate:self
-                          //: cancelButtonTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
+                          //: cancelButtonTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
                           cancelButtonTitle:[InputRed preserve:StringFromHopeData(main_cussTitle)]
-                          //: otherButtonTitles:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
+                          //: otherButtonTitles:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
                           otherButtonTitles:[InputRed preserve:StringFromHopeData(dream_mortalModeReasonName)],nil] show];
 
         //: return NO;

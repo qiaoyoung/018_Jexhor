@@ -15,11 +15,11 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFLanguageManager : NSObject
+//: @interface WorkLanguageManager : NSObject
 @interface InputRed : NSObject
 //: @property (nonatomic,strong) NSMutableDictionary *langDict;
 @property (nonatomic,strong) NSMutableDictionary *langDict;
-//: + (FFFLanguageManager *)shareInstance;
+//: + (WorkLanguageManager *)shareInstance;
 + (InputRed *)mortificationDisable;
 //: - (void)setLanguagre:(NSString *)langType;
 - (void)setApposeCellLanguagre:(NSString *)langType;

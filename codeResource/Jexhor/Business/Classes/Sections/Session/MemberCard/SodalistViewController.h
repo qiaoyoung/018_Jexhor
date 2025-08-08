@@ -11,11 +11,11 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFTeamCardMemberItem.h"
+//: #import "WorkTeamCardMemberItem.h"
 #import "MessageItem.h"
-//: #import "FFFTeamMemberListDataSource.h"
+//: #import "WorkTeamMemberListDataSource.h"
 #import "ColorActionClean.h"
-//: #import "FFFTeamListDataManager.h"
+//: #import "WorkTeamListDataManager.h"
 #import "ShowManager.h"
 
 //: @protocol NIMTeamMemberCardActionDelegate <NSObject>
@@ -23,21 +23,21 @@
 //: @optional
 @optional
 
-//: - (void)onTeamMemberMuted:(FFFTeamCardMemberItem *)member mute:(BOOL)mute;
+//: - (void)onTeamMemberMuted:(WorkTeamCardMemberItem *)member mute:(BOOL)mute;
 - (void)send:(MessageItem *)member mute:(BOOL)mute;
-//: - (void)onTeamMemberKicked:(FFFTeamCardMemberItem *)member;
+//: - (void)onTeamMemberKicked:(WorkTeamCardMemberItem *)member;
 - (void)to:(MessageItem *)member;
 
 //: @end
 @end
 
-//: @interface FFFTeamMemberCardViewController : UIViewController
+//: @interface WorkTeamMemberCardViewController : UIViewController
 @interface SodalistViewController : UIViewController
 
 //: @property (nonatomic, strong) id<NIMTeamMemberCardActionDelegate> delegate;
 @property (nonatomic, strong) id<SameDelegate> delegate;
 
-//: @property (nonatomic, strong) FFFTeamListDataManager *teamListManager;
+//: @property (nonatomic, strong) WorkTeamListDataManager *teamListManager;
 @property (nonatomic, strong) ShowManager *teamListManager;
 //: @property (nonatomic, strong) NSString *memberId;
 @property (nonatomic, strong) NSString *memberId;

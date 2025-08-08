@@ -170,7 +170,7 @@ NSString *const mMinValue = @"NIMDemoEventNameOpenMergeMessage";
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data{
+//: - (void)refresh:(WorkMessageModel *)data{
 - (void)panorama:(ShowModel *)data{
     //: [super refresh:data];
     [super panorama:data];
@@ -256,7 +256,7 @@ NSString *const mMinValue = @"NIMDemoEventNameOpenMergeMessage";
 - (void)ofs:(UIButton *)sender {
     //: if ([self.delegate respondsToSelector:@selector(onCatchEvent:)]) {
     if ([self.delegate respondsToSelector:@selector(aboveImage:)]) {
-        //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+        //: WorkKitEvent *event = [[WorkKitEvent alloc] init];
         WrittenAccountLab *event = [[WrittenAccountLab alloc] init];
         //: event.eventName = NIMDemoEventNameOpenMergeMessage;
         event.eventName = mMinValue;

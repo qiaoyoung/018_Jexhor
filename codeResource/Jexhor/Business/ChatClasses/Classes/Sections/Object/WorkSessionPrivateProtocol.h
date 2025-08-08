@@ -1,20 +1,20 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFSessionPrivateProtocol.h
+//  WorkSessionPrivateProtocol.h
 // MessageContent
 //
 //  Created by chris on 2016/11/7.
 //  Copyright © 2016年 NetEase. All rights reserved.
 //
-//: #import "FFFSessionViewController.h"
+//: #import "WorkSessionViewController.h"
 #import "AccountViewController.h"
 
 // __M_A_C_R_O__
 
 //: @class NIMMessage;
 @class NIMMessage;
-//: @class FFFMessageModel;
+//: @class WorkMessageModel;
 @class ShowModel;
 
 //: @interface NIMSessionMessageOperateResult : NSObject
@@ -41,16 +41,16 @@
 //: - (NIMSessionMessageOperateResult *)insertMessageModels:(NSArray *)models;
 - (InfoChange *)quantityryColor:(NSArray *)models;
 
-//: - (NIMSessionMessageOperateResult *)deleteMessageModel:(FFFMessageModel *)model;
+//: - (NIMSessionMessageOperateResult *)deleteMessageModel:(WorkMessageModel *)model;
 - (InfoChange *)blueModel:(ShowModel *)model;
 
-//: - (NIMSessionMessageOperateResult *)updateMessageModel:(FFFMessageModel *)model;
+//: - (NIMSessionMessageOperateResult *)updateMessageModel:(WorkMessageModel *)model;
 - (InfoChange *)inputModel:(ShowModel *)model;
 
-//: - (FFFMessageModel *)findModel:(NIMMessage *)message;
+//: - (WorkMessageModel *)findModel:(NIMMessage *)message;
 - (ShowModel *)model:(NIMMessage *)message;
 
-//: - (NSInteger)indexAtModelArray:(FFFMessageModel *)model;
+//: - (NSInteger)indexAtModelArray:(WorkMessageModel *)model;
 - (NSInteger)show:(ShowModel *)model;
 
 //: - (NSArray *)deleteModels:(NSRange)range;
@@ -87,7 +87,7 @@
 - (void)remoteWith:(void (^)(NSError *))handler;
 
 // 展示message之前做额外配置
-//: - (void)willDisplayMessageModel:(FFFMessageModel *)model;
+//: - (void)willDisplayMessageModel:(WorkMessageModel *)model;
 - (void)globule:(ShowModel *)model;
 
 //: - (void)addPinForMessage:(NIMMessage *)message callback:(void (^)(NSError *))handler;
@@ -124,7 +124,7 @@
 //: - (BOOL)canInsertChatroomMessages;
 - (BOOL)asFormat;
 
-//: - (void)calculateContent:(FFFMessageModel *)model;
+//: - (void)calculateContent:(WorkMessageModel *)model;
 - (void)title:(ShowModel *)model;
 
 //: - (void)reloadTable;
@@ -137,7 +137,7 @@
 - (void)collection:(CGFloat)inputViewHeight;
 
 //: - (void)setDelegate:(id<NIMSessionLayoutDelegate>)delegate;
-- (void)setDate:(id<VideoActivityDelegate>)delegate;
+- (void)setDelegate:(id<VideoActivityDelegate>)delegate;
 
 //: - (void)layoutAfterRefresh;
 - (void)chemicalElement;
@@ -158,7 +158,7 @@
 
 
 
-//: @interface FFFSessionViewController(Interactor)
+//: @interface WorkSessionViewController(Interactor)
 @interface AccountViewController(Interactor)
 
 //: - (void)setInteractor:(id<NIMSessionInteractor>) interactor;

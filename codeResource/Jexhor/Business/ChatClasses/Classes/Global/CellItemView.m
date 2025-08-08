@@ -52,20 +52,20 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitSwitcherCell.h"
+//: #import "WorkKitSwitcherCell.h"
 #import "CellItemView.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "WorkCommonTableData.h"
+#import "WorkCommonTableData.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 
-//: @interface FFFKitSwitcherCell ()
+//: @interface WorkKitSwitcherCell ()
 @interface CellItemView ()
 
 //: @end
 @end
 
-//: @implementation FFFKitSwitcherCell
+//: @implementation WorkKitSwitcherCell
 @implementation CellItemView
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{

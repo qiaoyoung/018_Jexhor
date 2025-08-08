@@ -184,7 +184,7 @@
 
         //: _textField = [[UITextField alloc] init];
         _textField = [[UITextField alloc] init];
-        //: _textField.placeholder = [FFFLanguageManager getTextWithKey:@"register_avtivity3_nick"];
+        //: _textField.placeholder = [WorkLanguageManager getTextWithKey:@"register_avtivity3_nick"];
         _textField.placeholder = [InputRed preserve:[[TroopData sharedInstance] noti_breastButtonName]];
         //: [backGroundView addSubview:_textField];
         [backGroundView addSubview:_textField];
@@ -225,7 +225,7 @@
         UIButton *knowButton = [UIButton buttonWithType:UIButtonTypeCustom];
         //: knowButton.titleLabel.font = [UIFont systemFontOfSize:16];
         knowButton.titleLabel.font = [UIFont systemFontOfSize:16];
-        //: [knowButton setTitle:[FFFLanguageManager getTextWithKey:@"activity_register_next"] forState:UIControlStateNormal];
+        //: [knowButton setTitle:[WorkLanguageManager getTextWithKey:@"activity_register_next"] forState:UIControlStateNormal];
         [knowButton setTitle:[InputRed preserve:[[TroopData sharedInstance] userIllegalNegotiationName]] forState:UIControlStateNormal];
         //: [knowButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [knowButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];

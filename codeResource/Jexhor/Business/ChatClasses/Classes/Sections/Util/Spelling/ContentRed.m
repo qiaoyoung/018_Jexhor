@@ -26,9 +26,9 @@ IneligibleData userPapTitle = (IneligibleData){119, (Byte []){3, 14, 27, 40, 4, 
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSpellingCenter.h"
+//: #import "WorkSpellingCenter.h"
 #import "ContentRed.h"
-//: #import "FFFPinyinConverter.h"
+//: #import "WorkPinyinConverter.h"
 #import "KeyShow.h"
 //: #import "YYModel/YYModel.h"
 #import "YYModel/YYModel.h"
@@ -41,7 +41,7 @@ IneligibleData userPapTitle = (IneligibleData){119, (Byte []){3, 14, 27, 40, 4, 
 //: @end
 @end
 
-//: @interface FFFSpellingCenter ()
+//: @interface WorkSpellingCenter ()
 @interface ContentRed ()
 //: - (NIMSpellingUnit *)calcSpellingOfString: (NSString *)source;
 - (ReleasingFactorMessage *)key: (NSString *)source;
@@ -49,18 +49,18 @@ IneligibleData userPapTitle = (IneligibleData){119, (Byte []){3, 14, 27, 40, 4, 
 @end
 
 
-//: @implementation FFFSpellingCenter
+//: @implementation WorkSpellingCenter
 @implementation ContentRed
-//: + (FFFSpellingCenter *)sharedCenter
+//: + (WorkSpellingCenter *)sharedCenter
 + (ContentRed *)bar
 {
-    //: static FFFSpellingCenter *instance = nil;
+    //: static WorkSpellingCenter *instance = nil;
     static ContentRed *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFSpellingCenter alloc]init];
+        //: instance = [[WorkSpellingCenter alloc]init];
         instance = [[ContentRed alloc]init];
     //: });
     });
@@ -181,7 +181,7 @@ IneligibleData userPapTitle = (IneligibleData){119, (Byte []){3, 14, 27, 40, 4, 
     {
         //: NSString *word = [source substringWithRange:NSMakeRange(i, 1)];
         NSString *word = [source substringWithRange:NSMakeRange(i, 1)];
-        //: NSString *pinyin = [[FFFPinyinConverter sharedInstance] toPinyin:word];
+        //: NSString *pinyin = [[WorkPinyinConverter sharedInstance] toPinyin:word];
         NSString *pinyin = [[KeyShow app] file:word];
 
         //: if ([pinyin length])

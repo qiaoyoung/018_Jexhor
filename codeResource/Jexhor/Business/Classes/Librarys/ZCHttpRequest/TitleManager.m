@@ -54,7 +54,7 @@
 @property (nonatomic, copy) NSString *noti_ecruData;
 
 //: AppKey
-@property (nonatomic, copy) NSString *m_drinkingCliffFederalTitle;
+@property (nonatomic, copy) NSString *m_drinkingCliWorkederalTitle;
 
 //: jpg
 @property (nonatomic, copy) NSString *dreamLeatherSteadReliefData;
@@ -185,12 +185,12 @@
 }
 
 //: AppKey
-- (NSString *)m_drinkingCliffFederalTitle {
-    if (!_m_drinkingCliffFederalTitle) {
+- (NSString *)m_drinkingCliWorkederalTitle {
+    if (!_m_drinkingCliWorkederalTitle) {
         Byte value[] = {6, 14, 8, 75, 214, 96, 162, 21, 51, 98, 98, 61, 87, 107, 74};
-        _m_drinkingCliffFederalTitle = [self StringFromRealistData:value];
+        _m_drinkingCliWorkederalTitle = [self StringFromRealistData:value];
     }
-    return _m_drinkingCliffFederalTitle;
+    return _m_drinkingCliWorkederalTitle;
 }
 
 //: picture
@@ -629,10 +629,10 @@
     AFHTTPSessionManager *manager = [TitleManager ting].manager;
 
     //添加请求头
-    //: NSString *appKey = [[FFFConfig sharedConfig] appKey];
+    //: NSString *appKey = [[WorkConfig sharedConfig] appKey];
     NSString *appKey = [[AccountWith max] appKey];
     //: [manager.requestSerializer setValue:appKey forHTTPHeaderField:@"AppKey"];
-    [manager.requestSerializer setValue:appKey forHTTPHeaderField:[RealistData sharedInstance].m_drinkingCliffFederalTitle];
+    [manager.requestSerializer setValue:appKey forHTTPHeaderField:[RealistData sharedInstance].m_drinkingCliWorkederalTitle];
 //    NSString *nonce = [NSString stringWithFormat:@"%d",arc4random() % 100 ];
     //: [manager.requestSerializer setValue:nonce forHTTPHeaderField:@"Nonce"];
     [manager.requestSerializer setValue:nonce forHTTPHeaderField:[RealistData sharedInstance].mTitleOmitText];

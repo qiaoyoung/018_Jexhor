@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFPinyinConverter.h"
+//: #import "WorkPinyinConverter.h"
 #import "KeyShow.h"
 
-//: @interface FFFPinyinConverter ()
+//: @interface WorkPinyinConverter ()
 @interface KeyShow ()
 {
     //: int *_codeIndex;
@@ -25,18 +25,18 @@
 //: @end
 @end
 
-//: @implementation FFFPinyinConverter
+//: @implementation WorkPinyinConverter
 @implementation KeyShow
-//: + (FFFPinyinConverter *)sharedInstance
+//: + (WorkPinyinConverter *)sharedInstance
 + (KeyShow *)app
 {
-    //: static FFFPinyinConverter *instance = nil;
+    //: static WorkPinyinConverter *instance = nil;
     static KeyShow *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFPinyinConverter alloc] init];
+        //: instance = [[WorkPinyinConverter alloc] init];
         instance = [[KeyShow alloc] init];
     //: });
     });

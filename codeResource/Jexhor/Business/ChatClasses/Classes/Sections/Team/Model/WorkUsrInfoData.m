@@ -9,9 +9,9 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFUsrInfoData.h"
-#import "FFFUsrInfoData.h"
-//: #import "FFFSpellingCenter.h"
+//: #import "WorkUsrInfoData.h"
+#import "WorkUsrInfoData.h"
+//: #import "WorkSpellingCenter.h"
 #import "ContentRed.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
@@ -37,7 +37,7 @@
 
 //: - (NSString *)groupTitle {
 - (NSString *)quick {
-    //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.info.showName].capitalizedString;
+    //: NSString *title = [[WorkSpellingCenter sharedCenter] firstLetter:self.info.showName].capitalizedString;
     NSString *title = [[ContentRed bar] lightGreen:self.info.showName].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
@@ -53,13 +53,13 @@
 }
 
 //: - (NSString *)memberId{
-- (NSString *)pressedFor{
+- (NSString *)memberId{
     //: return self.info.infoId;
     return self.info.infoId;
 }
 
 //: - (NSString *)showName{
-- (NSString *)exhibitDoing{
+- (NSString *)showName{
     //: return self.info.showName;
     return self.info.showName;
 }
@@ -78,7 +78,7 @@
 
 //: - (id)sortKey {
 - (id)screenSortFormat {
-    //: return [[FFFSpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
+    //: return [[WorkSpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
     return [[ContentRed bar] baleOut:self.info.showName].shortSpelling;
 }
 

@@ -13,10 +13,10 @@
 #import <UIKit/UIKit.h>
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "WorkCardDataSourceProtocol.h"
+#import "WorkCardDataSourceProtocol.h"
 
-//: @class FFFAvatarImageView;
+//: @class WorkAvatarImageView;
 @class ButtonControl;
 
 
@@ -35,7 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-//: @interface FFFGroupMemberTableViewCell : UITableViewCell
+//: @interface WorkGroupMemberTableViewCell : UITableViewCell
 @interface HomeboyViewCell : UITableViewCell
 
 

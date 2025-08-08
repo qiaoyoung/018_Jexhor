@@ -215,7 +215,7 @@ typedef struct {
 // __M_A_C_R_O__
 //: #import "NTESSessionConfig.h"
 #import "ActivityConfigImage.h"
-//: #import "FFFMediaItem.h"
+//: #import "WorkMediaItem.h"
 #import "AccountAction.h"
 //: #import "NTESBundleSetting.h"
 #import "ImageTing.h"
@@ -227,13 +227,13 @@ typedef struct {
 #import "ImageTing.h"
 //: #import "NSString+NTES.h"
 #import "NSString+Recent.h"
-//: #import "FFFSessionConfig.h"
+//: #import "WorkSessionConfig.h"
 #import "LineConfig.h"
 //: #import "NTESSessionUtil.h"
 #import "SessionUtil.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "WorkInputEmoticonManager.h"
 #import "RedManager.h"
-//: #import "FFFKitUtil.h"
+//: #import "WorkKitUtil.h"
 #import "WantUtil.h"
 
 //: @interface NTESSessionConfig()
@@ -329,18 +329,18 @@ typedef struct {
 }
 
 
-//: - (NSArray<FFFMediaItem *> *)menuItemsWithMessage:(NIMMessage *)message {
+//: - (NSArray<WorkMediaItem *> *)menuItemsWithMessage:(NIMMessage *)message {
 - (NSArray<AccountAction *> *)showing:(NIMMessage *)message {
     //: NSMutableArray *items = [NSMutableArray array];
     NSMutableArray *items = [NSMutableArray array];
 
-    //: FFFMediaItem *Praise = [FFFMediaItem item:@"onTapMenuItemPraise:"
+    //: WorkMediaItem *Praise = [WorkMediaItem item:@"onTapMenuItemPraise:"
     AccountAction *Praise = [AccountAction showName:[[ImageLimitData sharedInstance] dreamLabelMustTitle]
                                  //: normalImage:[UIImage imageNamed:@"menu_praise"]
                                  with:[UIImage imageNamed:[[ImageLimitData sharedInstance] dreamPremiumName]]
                                //: selectedImage:nil
                                data:nil
-                                       //: title:[FFFLanguageManager getTextWithKey:@"friend_circle_adapter_like"]];
+                                       //: title:[WorkLanguageManager getTextWithKey:@"friend_circle_adapter_like"]];
                                        fit:[InputRed preserve:[[ImageLimitData sharedInstance] user_sliceName]]];
 
 //    AccountAction *reply = [AccountAction item:@"onTapMenuItemReply:"
@@ -348,22 +348,22 @@ typedef struct {
 //                               selectedImage:nil
 //                                       title:LangKey(@"回复")];
 
-    //: FFFMediaItem *copy = [FFFMediaItem item:@"onTapMenuItemCopy:"
+    //: WorkMediaItem *copy = [WorkMediaItem item:@"onTapMenuItemCopy:"
     AccountAction *copy = [AccountAction showName:[[ImageLimitData sharedInstance] kNameData]
                                 //: normalImage:[UIImage imageNamed:@"menu_copy"]
                                 with:[UIImage imageNamed:[[ImageLimitData sharedInstance] user_withValue]]
                               //: selectedImage:nil
                               data:nil
-                                      //: title:[FFFLanguageManager getTextWithKey:@"复制"]];
+                                      //: title:[WorkLanguageManager getTextWithKey:@"复制"]];
                                       fit:[InputRed preserve:@"复制"]];
 
-    //: FFFMediaItem *forword = [FFFMediaItem item:@"onTapMenuItemForword:"
+    //: WorkMediaItem *forword = [WorkMediaItem item:@"onTapMenuItemForword:"
     AccountAction *forword = [AccountAction showName:[[ImageLimitData sharedInstance] k_sizeSliceText]
                                    //: normalImage:[UIImage imageNamed:@"menu_forword"]
                                    with:[UIImage imageNamed:[[ImageLimitData sharedInstance] showThanName]]
                                  //: selectedImage:nil
                                  data:nil
-                                         //: title:[FFFLanguageManager getTextWithKey:@"转发"]];
+                                         //: title:[WorkLanguageManager getTextWithKey:@"转发"]];
                                          fit:[InputRed preserve:@"转发"]];
 
 //    AccountAction *mark = [AccountAction item:@"onTapMenuItemMark:"
@@ -379,40 +379,40 @@ typedef struct {
 //                             selectedImage:nil
 //                                     title:pinTitle];
 
-    //: FFFMediaItem *report = [FFFMediaItem item:@"onTapMenuItemReport:"
+    //: WorkMediaItem *report = [WorkMediaItem item:@"onTapMenuItemReport:"
     AccountAction *report = [AccountAction showName:[[ImageLimitData sharedInstance] dreamPlaceData]
                                   //: normalImage:[UIImage imageNamed:@"menu_report"]
                                   with:[UIImage imageNamed:[[ImageLimitData sharedInstance] m_acheContent]]
                                 //: selectedImage:nil
                                 data:nil
-                                        //: title:[FFFLanguageManager getTextWithKey:@"report_Content"]];
+                                        //: title:[WorkLanguageManager getTextWithKey:@"report_Content"]];
                                         fit:[InputRed preserve:[[ImageLimitData sharedInstance] dream_givingData]]];
 
-    //: FFFMediaItem *translation = [FFFMediaItem item:@"onTapMenuItemTranslation:"
+    //: WorkMediaItem *translation = [WorkMediaItem item:@"onTapMenuItemTranslation:"
     AccountAction *translation = [AccountAction showName:[[ImageLimitData sharedInstance] main_appearName]
                                   //: normalImage:[UIImage imageNamed:@"menu_translation"]
                                   with:[UIImage imageNamed:[[ImageLimitData sharedInstance] user_accountData]]
                                 //: selectedImage:nil
                                 data:nil
-                                        //: title:[FFFLanguageManager getTextWithKey:@"翻译"]];
+                                        //: title:[WorkLanguageManager getTextWithKey:@"翻译"]];
                                         fit:[InputRed preserve:@"翻译"]];
 
-    //: FFFMediaItem *revoke = [FFFMediaItem item:@"onTapMenuItemRevoke:"
+    //: WorkMediaItem *revoke = [WorkMediaItem item:@"onTapMenuItemRevoke:"
     AccountAction *revoke = [AccountAction showName:[[ImageLimitData sharedInstance] dream_withValue]
                                   //: normalImage:[UIImage imageNamed:@"menu_revoke"]
                                   with:[UIImage imageNamed:[[ImageLimitData sharedInstance] userParentName]]
                                 //: selectedImage:nil
                                 data:nil
-                                        //: title:[FFFLanguageManager getTextWithKey:@"撤回"]];
+                                        //: title:[WorkLanguageManager getTextWithKey:@"撤回"]];
                                         fit:[InputRed preserve:@"撤回"]];
 
-    //: FFFMediaItem *delete = [FFFMediaItem item:@"onTapMenuItemDelete:"
+    //: WorkMediaItem *delete = [WorkMediaItem item:@"onTapMenuItemDelete:"
     AccountAction *delete = [AccountAction showName:[[ImageLimitData sharedInstance] k_makeValue]
                                   //: normalImage:[UIImage imageNamed:@"menu_del"]
                                   with:[UIImage imageNamed:[[ImageLimitData sharedInstance] k_successName]]
                                 //: selectedImage:nil
                                 data:nil
-                                        //: title:[FFFLanguageManager getTextWithKey:@"删除"]];
+                                        //: title:[WorkLanguageManager getTextWithKey:@"删除"]];
                                         fit:[InputRed preserve:@"删除"]];
 
 //    AccountAction *mutiSelect = [AccountAction item:@"onTapMenuItemMutiSelect:"
@@ -499,7 +499,7 @@ typedef struct {
     {
         //: NSString * ID = [NSString stringWithFormat:NIMKitQuickCommentFormat, [index integerValue]];
         NSString * ID = [NSString stringWithFormat:main_controlData, [index integerValue]];
-        //: NIMInputEmoticon *item = [[FFFInputEmoticonManager sharedManager] emoticonByID:ID];
+        //: NIMInputEmoticon *item = [[WorkInputEmoticonManager sharedManager] emoticonByID:ID];
         FrontwardsCount *item = [[RedManager session] record:ID];
         //: if (item)
         if (item)
@@ -523,13 +523,13 @@ typedef struct {
 - (NSArray<NSNumber *> *)flushTypes{
     //: return @[
     return @[
-//        @(FFFInputBarItemTypeMore),
-//        @(FFFInputBarItemTypeEmoticon),
-//             @(FFFInputBarItemTypeVoice),
-             //: @(FFFInputBarItemTypeTextAndRecord),
-             @(FFFInputBarItemTypeTextAndRecord),
-        //: @(FFFInputBarItemTypeSend),
-        @(FFFInputBarItemTypeSend),
+//        @(WorkInputBarItemTypeMore),
+//        @(WorkInputBarItemTypeEmoticon),
+//             @(WorkInputBarItemTypeVoice),
+             //: @(WorkInputBarItemTypeTextAndRecord),
+             @(WorkInputBarItemTypeTextAndRecord),
+        //: @(WorkInputBarItemTypeSend),
+        @(WorkInputBarItemTypeSend),
             //: ];
             ];
 }

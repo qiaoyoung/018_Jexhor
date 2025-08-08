@@ -11,20 +11,20 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFInputProtocol.h"
-#import "FFFInputProtocol.h"
-//: #import "FFFSessionConfig.h"
+//: #import "WorkInputProtocol.h"
+#import "WorkInputProtocol.h"
+//: #import "WorkSessionConfig.h"
 #import "LineConfig.h"
-//: #import "FFFInputToolBar.h"
+//: #import "WorkInputToolBar.h"
 #import "CoatButtonView.h"
-//: #import "FFFInputAtCache.h"
+//: #import "WorkInputAtCache.h"
 #import "AdministratorCache.h"
 
-//: @class FFFInputMoreContainerView;
+//: @class WorkInputMoreContainerView;
 @class SignalingView;
-//: @class FFFInputEmoticonContainerView;
+//: @class WorkInputEmoticonContainerView;
 @class ReferView;
-//: @class FFFReplyContentView;
+//: @class WorkReplyContentView;
 @class CircleView;
 
 
@@ -56,7 +56,7 @@ typedef NS_ENUM(NSInteger, NIMAudioRecordPhase) {
 //: @end
 @end
 
-//: @interface FFFInputView : UIView
+//: @interface WorkInputView : UIView
 @interface TingShowView : UIView
 
 //: @property (nonatomic, strong) NIMSession *session;
@@ -68,24 +68,24 @@ typedef NS_ENUM(NSInteger, NIMAudioRecordPhase) {
 //: @property (assign, nonatomic, getter=isRecording) BOOL recording;
 @property (assign, nonatomic, getter=isRecording) BOOL recording;
 
-//: @property (strong, nonatomic) FFFInputToolBar *toolBar;
+//: @property (strong, nonatomic) WorkInputToolBar *toolBar;
 @property (strong, nonatomic) CoatButtonView *toolBar;
-//: @property (strong, nonatomic) FFFInputMoreContainerView *moreContainer;
+//: @property (strong, nonatomic) WorkInputMoreContainerView *moreContainer;
 @property (strong, nonatomic) SignalingView *moreContainer;
 //: @property (strong, nonatomic) UIView *emoticonContainer;
 @property (strong, nonatomic) UIView *emoticonContainer;
 
-//: @property (nonatomic, strong) FFFReplyContentView *replyedContent;
+//: @property (nonatomic, strong) WorkReplyContentView *replyedContent;
 @property (nonatomic, strong) CircleView *replyedContent;
 
 //: @property (nonatomic, assign) NIMInputStatus status;
 @property (nonatomic, assign) NIMInputStatus status;
-//: @property (nonatomic, strong) FFFInputAtCache *atCache;
+//: @property (nonatomic, strong) WorkInputAtCache *atCache;
 @property (nonatomic, strong) AdministratorCache *atCache;
 
 //: - (instancetype)initWithFrame:(CGRect)frame
 - (instancetype)initWithContainerDisable:(CGRect)frame
-                       //: config:(id<FFFSessionConfig>)config;
+                       //: config:(id<WorkSessionConfig>)config;
                        success:(id<LineConfig>)config;
 
 //: - (void)reset;

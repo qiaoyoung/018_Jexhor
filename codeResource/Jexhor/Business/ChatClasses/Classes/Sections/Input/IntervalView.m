@@ -33,18 +33,18 @@ StingData app_pdaContent = (StingData){74, (Byte []){105, 122, 127, 14, 126, 114
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputEmoticonTabView.h"
+//: #import "WorkInputEmoticonTabView.h"
 #import "IntervalView.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "WorkInputEmoticonManager.h"
 #import "RedManager.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "WorkGlobalMacro.h"
+#import "WorkGlobalMacro.h"
 
-//: const NSInteger FFFInputEmoticonTabViewHeight = 44;
+//: const NSInteger WorkInputEmoticonTabViewHeight = 44;
 const NSInteger showOrientationValue = 44;
 //: const NSInteger NIMInputEmoticonSendButtonWidth = 56;
 const NSInteger app_kitBorderValue = 56;
@@ -52,7 +52,7 @@ const NSInteger app_kitBorderValue = 56;
 //: const CGFloat NIMInputLineBoarder = .5f;
 const CGFloat app_linkValue = .5f;
 
-//: @interface FFFInputEmoticonTabView()
+//: @interface WorkInputEmoticonTabView()
 @interface IntervalView()
 
 //: @property (nonatomic,strong) NSMutableArray * tabs;
@@ -66,12 +66,12 @@ const CGFloat app_linkValue = .5f;
 
 
 
-//: @implementation FFFInputEmoticonTabView
+//: @implementation WorkInputEmoticonTabView
 @implementation IntervalView
 
 //: - (instancetype)initWithFrame:(CGRect)frame{
 - (instancetype)initWithFrame:(CGRect)frame{
-    //: self = [super initWithFrame:CGRectMake(0, 0, frame.size.width, FFFInputEmoticonTabViewHeight)];
+    //: self = [super initWithFrame:CGRectMake(0, 0, frame.size.width, WorkInputEmoticonTabViewHeight)];
     self = [super initWithFrame:CGRectMake(0, 0, frame.size.width, showOrientationValue)];
     //: if (self) {
     if (self) {
@@ -107,7 +107,7 @@ const CGFloat app_linkValue = .5f;
 //        _sendButton.layer.shadowOpacity = 1;
 //        _sendButton.layer.shadowRadius = 8;
 //        
-        //: _sendButton.nim_height = FFFInputEmoticonTabViewHeight;
+        //: _sendButton.nim_height = WorkInputEmoticonTabViewHeight;
         _sendButton.nim_height = showOrientationValue;
         //: _sendButton.nim_width = NIMInputEmoticonSendButtonWidth;
         _sendButton.nim_width = app_kitBorderValue;
@@ -170,7 +170,7 @@ const CGFloat app_linkValue = .5f;
         //: [_tabs addObject:button];
         [_tabs addObject:button];
 
-//        UIView *sep = [[UIView alloc] initWithFrame:CGRectMake(0, 0, NIMInputLineBoarder, FFFInputEmoticonTabViewHeight)];
+//        UIView *sep = [[UIView alloc] initWithFrame:CGRectMake(0, 0, NIMInputLineBoarder, WorkInputEmoticonTabViewHeight)];
 ////        sep.backgroundColor = sepColor;
 //        sep.backgroundColor = [UIColor whiteColor];
 //        [_seps addObject:sep];
@@ -228,7 +228,7 @@ const CGFloat app_linkValue = .5f;
         UIButton *button = self.tabs[index];
         //: button.nim_width = NIMInputEmoticonSendButtonWidth;
         button.nim_width = app_kitBorderValue;
-        //: button.nim_height = FFFInputEmoticonTabViewHeight;
+        //: button.nim_height = WorkInputEmoticonTabViewHeight;
         button.nim_height = showOrientationValue;
         //: button.nim_left = left;
         button.nim_left = left;

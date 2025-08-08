@@ -68,24 +68,24 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTextView.h"
+//: #import "WorkTextView.h"
 #import "ShowScrollView.h"
-//: #import "FFFBubbleMenuView.h"
+//: #import "WorkBubbleMenuView.h"
 #import "ValueWithView.h"
-//: #import "FFFBubbleButtonModel.h"
+//: #import "WorkBubbleButtonModel.h"
 #import "GlobuleSession.h"
 //: #import "AppDelegate.h"
 #import "AppDelegate.h"
-//: #import "FFFMediaItem.h"
+//: #import "WorkMediaItem.h"
 #import "AccountAction.h"
 
-//: @interface FFFTextView()<UITextViewDelegate, UITextInputDelegate>
+//: @interface WorkTextView()<UITextViewDelegate, UITextInputDelegate>
 @interface ShowScrollView()<UITextViewDelegate, UITextInputDelegate>
 
 //: @end
 @end
 
-//: @implementation FFFTextView
+//: @implementation WorkTextView
 @implementation ShowScrollView
 
 //: - (id)initWithFrame:(CGRect)frame {
@@ -166,7 +166,7 @@
     //: CGRect cursorStartRectToWindow = [self convertRect:startRect toView:((AppDelegate*)([UIApplication sharedApplication].delegate)).window];
     CGRect cursorStartRectToWindow = [self convertRect:startRect toView:((AppDelegate*)([UIApplication sharedApplication].delegate)).window];
 
-    //: [[FFFBubbleMenuView shareMenuView] showViewWithButtonModels:self.selectedAllRangeButtons cursorStartRect:cursorStartRectToWindow selectionTextRectInWindow:tempRect selectBlock:^(FFFMediaItem *item) {
+    //: [[WorkBubbleMenuView shareMenuView] showViewWithButtonModels:self.selectedAllRangeButtons cursorStartRect:cursorStartRectToWindow selectionTextRectInWindow:tempRect selectBlock:^(WorkMediaItem *item) {
     [[ValueWithView success] sieve:self.selectedAllRangeButtons from:cursorStartRectToWindow stride:tempRect message:^(AccountAction *item) {
 
         //: !_selectBlock ? : _selectBlock(item);
@@ -174,7 +174,7 @@
 
         //: [self hideTextSelection];
         [self restoreExamineion];
-        //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+        //: [WorkBubbleMenuView.shareMenuView removeFromSuperview];
         [ValueWithView.success removeFromSuperview];
 
     //: } praiseBlock:^(NSInteger tag) {
@@ -184,7 +184,7 @@
 
         //: [self hideTextSelection];
         [self restoreExamineion];
-        //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+        //: [WorkBubbleMenuView.shareMenuView removeFromSuperview];
         [ValueWithView.success removeFromSuperview];
     //: }];
     }];
@@ -201,7 +201,7 @@
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     //: [self hideTextSelection];
     [self restoreExamineion];
-    //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+    //: [WorkBubbleMenuView.shareMenuView removeFromSuperview];
     [ValueWithView.success removeFromSuperview];
     //: [super touchesEnded:touches withEvent:event];
     [super touchesEnded:touches withEvent:event];
@@ -348,10 +348,10 @@
         //: items = [self.config menuItemsWithMessage:message];
         items = [self.config showing:message];
     }
-    //: [items enumerateObjectsUsingBlock:^(FFFMediaItem *item, NSUInteger idx, BOOL *stop) {
+    //: [items enumerateObjectsUsingBlock:^(WorkMediaItem *item, NSUInteger idx, BOOL *stop) {
     [items enumerateObjectsUsingBlock:^(AccountAction *item, NSUInteger idx, BOOL *stop) {
 
-        //: FFFBubbleButtonModel *model = [[FFFBubbleButtonModel alloc] init];
+        //: WorkBubbleButtonModel *model = [[WorkBubbleButtonModel alloc] init];
         GlobuleSession *model = [[GlobuleSession alloc] init];
         //: model.normalImage = item.normalImage;
         model.normalImage = item.normalImage;
@@ -364,7 +364,7 @@
         [selectedAllRangeButtons addObject:model];
 
         //: if (item.selctor == @selector(onTapMenuItemCopy:)) {
-        if (item.selctor == @selector(compartments:)) {
+        if (item.selctor == @selector(onTapMenuItemCopy:)) {
             //: [selectedPartRangeButtons addObject:model];
             [selectedPartRangeButtons addObject:model];
         }
@@ -388,17 +388,17 @@
     NSMutableArray *selectedPartRangeButtons = [NSMutableArray array];
 
 
-    //: FFFMediaItem *copy = [FFFMediaItem item:@"onTapMenuItemCopy:"
+    //: WorkMediaItem *copy = [WorkMediaItem item:@"onTapMenuItemCopy:"
     AccountAction *copy = [AccountAction showName:[VersionData notiResultMaxName]
                                 //: normalImage:[UIImage imageNamed:@"menu_copy"]
                                 with:[UIImage imageNamed:[VersionData app_middleComfortData]]
                               //: selectedImage:nil
                               data:nil
-                                      //: title:[FFFLanguageManager getTextWithKey:@"复制"]];
+                                      //: title:[WorkLanguageManager getTextWithKey:@"复制"]];
                                       fit:[InputRed preserve:@"复制"]];
 
 
-    //: FFFBubbleButtonModel *model = [[FFFBubbleButtonModel alloc] init];
+    //: WorkBubbleButtonModel *model = [[WorkBubbleButtonModel alloc] init];
     GlobuleSession *model = [[GlobuleSession alloc] init];
     //: model.normalImage = copy.normalImage;
     model.normalImage = copy.normalImage;

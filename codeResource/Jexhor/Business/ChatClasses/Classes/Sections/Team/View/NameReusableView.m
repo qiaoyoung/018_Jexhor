@@ -21,29 +21,29 @@ Byte m_typicalValue[] = {37, 15, 11, 247, 224, 73, 20, 28, 250, 141, 172, 108, 1
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCardHeaderCell.h"
+//: #import "WorkCardHeaderCell.h"
 #import "NameReusableView.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WorkAvatarImageView.h"
 #import "ButtonControl.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
-//: #import "FFFTeamHelper.h"
+//: #import "WorkTeamHelper.h"
 #import "NameSendStyle.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+MessageContent.h"
 
-//: @interface FFFCardHeaderCell()
+//: @interface WorkCardHeaderCell()
 @interface NameReusableView()
 
-//: @property (nonatomic,strong) id<FFFKitCardHeaderData> data;
-@property (nonatomic,strong) id<FFFKitCardHeaderData> data;
+//: @property (nonatomic,strong) id<WorkKitCardHeaderData> data;
+@property (nonatomic,strong) id<WorkKitCardHeaderData> data;
 
 //: @end
 @end
 
-//: @implementation FFFCardHeaderCell
+//: @implementation WorkCardHeaderCell
 @implementation NameReusableView
 
 //: - (instancetype)initWithFrame:(CGRect)frame{
@@ -52,7 +52,7 @@ Byte m_typicalValue[] = {37, 15, 11, 247, 224, 73, 20, 28, 250, 141, 172, 108, 1
     self = [super initWithFrame:frame];
     //: if (self) {
     if (self) {
-        //: _imageView = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 55, 55)];
+        //: _imageView = [[WorkAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 55, 55)];
         _imageView = [[ButtonControl alloc] initWithFrame:CGRectMake(0, 0, 55, 55)];
         //: [self addSubview:_imageView];
         [self addSubview:_imageView];
@@ -87,8 +87,8 @@ Byte m_typicalValue[] = {37, 15, 11, 247, 224, 73, 20, 28, 250, 141, 172, 108, 1
     return self;
 }
 
-//: - (void)refreshData:(id<FFFKitCardHeaderData>)data{
-- (void)collageData:(id<FFFKitCardHeaderData>)data{
+//: - (void)refreshData:(id<WorkKitCardHeaderData>)data{
+- (void)collageData:(id<WorkKitCardHeaderData>)data{
     //: self.data = data;
     self.data = data;
     //: NSURL *url = [NSURL URLWithString:data.imageUrl];
@@ -102,12 +102,12 @@ Byte m_typicalValue[] = {37, 15, 11, 247, 224, 73, 20, 28, 250, 141, 172, 108, 1
     NSString *showName = data.title;
     //: if ([data isMyUserId]) {
     if ([data isMyUserId]) {
-        //: showName = [FFFLanguageManager getTextWithKey:@"Group_Me"];
+        //: showName = [WorkLanguageManager getTextWithKey:@"Group_Me"];
         showName = [InputRed preserve:StringFromQuickData(app_willingnessData)];//@"我".nim_localized;
     }
     //: self.titleLabel.text = showName;
     self.titleLabel.text = showName;
-    //: self.roleImageView.image = [FFFTeamHelper imageWithMemberType:data.userType];
+    //: self.roleImageView.image = [WorkTeamHelper imageWithMemberType:data.userType];
     self.roleImageView.image = [NameSendStyle list:data.userType];
     //: [self.titleLabel sizeToFit];
     [self.titleLabel sizeToFit];

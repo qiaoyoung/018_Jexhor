@@ -7,7 +7,7 @@ NSString *StringFromItsReadData(Byte *data);
 //: #A148FF
 Byte userCareName[] = {86, 7, 41, 10, 172, 236, 176, 184, 197, 44, 250, 24, 8, 11, 15, 29, 29, 253};
 
-//: #ffffff
+//: #fffWork
 Byte mainVariationData[] = {11, 7, 53, 10, 71, 253, 211, 61, 35, 90, 238, 49, 49, 49, 49, 49, 49, 130};
 
 //: icon_cell_blue_normal
@@ -30,20 +30,20 @@ Byte userCigData[] = {15, 7, 91, 6, 170, 136, 200, 234, 234, 234, 234, 234, 234,
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactSelectTabView.h"
+//: #import "WorkContactSelectTabView.h"
 #import "WithColorView.h"
-//: #import "FFFContactPickedView.h"
+//: #import "WorkContactPickedView.h"
 #import "SameView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "WorkGlobalMacro.h"
+#import "WorkGlobalMacro.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
 
-//: @implementation FFFContactSelectTabView
+//: @implementation WorkContactSelectTabView
 @implementation WithColorView
 
 //: - (instancetype)initWithFrame:(CGRect)frame{
@@ -52,7 +52,7 @@ Byte userCigData[] = {15, 7, 91, 6, 170, 136, 200, 234, 234, 234, 234, 234, 234,
     self = [super initWithFrame:frame];
     //: if (self) {
     if (self) {
-        //: _pickedView = [[FFFContactPickedView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+        //: _pickedView = [[WorkContactPickedView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
         _pickedView = [[SameView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
         //: [self addSubview:_pickedView];
         [self addSubview:_pickedView];
@@ -67,7 +67,7 @@ Byte userCigData[] = {15, 7, 91, 6, 170, 136, 200, 234, 234, 234, 234, 234, 234,
         [_doneButton setBackgroundImage:doneButtonNormal forState:UIControlStateNormal];
         //: [_doneButton setBackgroundImage:doneButtonHighlighted forState:UIControlStateHighlighted];
         [_doneButton setBackgroundImage:doneButtonHighlighted forState:UIControlStateHighlighted];
-        //: [_doneButton setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_doneButton setTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_doneButton setTitle:[InputRed preserve:StringFromItsReadData(mFortunateTitle)] forState:UIControlStateNormal];
         //: [_doneButton sizeToFit];
         [_doneButton sizeToFit];
@@ -78,7 +78,7 @@ Byte userCigData[] = {15, 7, 91, 6, 170, 136, 200, 234, 234, 234, 234, 234, 234,
         //: [self addSubview:_doneButton];
         [self addSubview:_doneButton];
 //        self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"contact_bg"]];
-        //: self.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: self.backgroundColor = [UIColor colorWithHexString:@"#fffWork"];
         self.backgroundColor = [UIColor ground:StringFromItsReadData(mainVariationData)];
 
         //: UIView *line = [[UIView alloc]initWithFrame:CGRectMake(0, self.nim_height-1, self.nim_width, 1)];

@@ -41,7 +41,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFMessageCellMaker.m
+//  WorkMessageCellMaker.m
 // MessageContent
 //
 //  Created by chris.
@@ -49,28 +49,28 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMessageCellFactory.h"
+//: #import "WorkMessageCellFactory.h"
 #import "PhoneMessageSystemCanneryFactory.h"
-//: #import "FFFMessageModel.h"
+//: #import "WorkMessageModel.h"
 #import "ShowModel.h"
-//: #import "FFFTimestampModel.h"
+//: #import "WorkTimestampModel.h"
 #import "EngraftTing.h"
-//: #import "FFFSessionAudioContentView.h"
+//: #import "WorkSessionAudioContentView.h"
 #import "ThreadView.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
-//: #import "FFFKitAudioCenter.h"
+//: #import "WorkKitAudioCenter.h"
 #import "LineVideoMessage.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 
-//: @interface FFFMessageCellFactory()
+//: @interface WorkMessageCellFactory()
 @interface PhoneMessageSystemCanneryFactory()
 
 //: @end
 @end
 
-//: @implementation FFFMessageCellFactory
+//: @implementation WorkMessageCellFactory
 @implementation PhoneMessageSystemCanneryFactory
 
 //: - (instancetype)init
@@ -91,42 +91,42 @@
 
 }
 
-//: - (FFFMessageCell *)cellInTable:(UITableView*)tableView
+//: - (WorkMessageCell *)cellInTable:(UITableView*)tableView
 - (CellView *)quantity:(UITableView*)tableView
-                 //: forMessageMode:(FFFMessageModel *)model
+                 //: forMessageMode:(WorkMessageModel *)model
                  pastLifeStyle:(ShowModel *)model
 {
-    //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+    //: id<WorkCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
     id<TingConfig> layoutConfig = [[MessageContent secretResolution] layoutConfig];
     //: NSString *identity = [layoutConfig cellContent:model];
     NSString *identity = [layoutConfig change:model];
-    //: FFFMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
+    //: WorkMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
     CellView *cell = [tableView dequeueReusableCellWithIdentifier:identity];
     //: if (!cell) {
     if (!cell) {
-        //: NSString *clz = @"FFFAdvancedMessageCell";
+        //: NSString *clz = @"WorkAdvancedMessageCell";
         NSString *clz = @"ValueMessageCell";
         //: [tableView registerClass:NSClassFromString(clz) forCellReuseIdentifier:identity];
         [tableView registerClass:NSClassFromString(clz) forCellReuseIdentifier:identity];
         //: cell = [tableView dequeueReusableCellWithIdentifier:identity];
         cell = [tableView dequeueReusableCellWithIdentifier:identity];
     }
-    //: return (FFFMessageCell *)cell;
+    //: return (WorkMessageCell *)cell;
     return (CellView *)cell;
 }
 
-//: - (FFFSessionTimestampCell *)cellInTable:(UITableView *)tableView
+//: - (WorkSessionTimestampCell *)cellInTable:(UITableView *)tableView
 - (ContentViewCell *)valueModel:(UITableView *)tableView
-                            //: forTimeModel:(FFFTimestampModel *)model
+                            //: forTimeModel:(WorkTimestampModel *)model
                             from:(EngraftTing *)model
 {
     //: NSString *identity = @"time";
     NSString *identity = [ArrestData user_militaryValue];
-    //: FFFSessionTimestampCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
+    //: WorkSessionTimestampCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
     ContentViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
     //: if (!cell) {
     if (!cell) {
-        //: NSString *clz = @"FFFSessionTimestampCell";
+        //: NSString *clz = @"WorkSessionTimestampCell";
         NSString *clz = @"ContentViewCell";
         //: [tableView registerClass:NSClassFromString(clz) forCellReuseIdentifier:identity];
         [tableView registerClass:NSClassFromString(clz) forCellReuseIdentifier:identity];
@@ -135,7 +135,7 @@
     }
     //: [cell refreshData:model];
     [cell content:model];
-    //: return (FFFSessionTimestampCell *)cell;
+    //: return (WorkSessionTimestampCell *)cell;
     return (ContentViewCell *)cell;
 }
 

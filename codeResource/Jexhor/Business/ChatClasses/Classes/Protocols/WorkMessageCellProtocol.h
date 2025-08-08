@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFMessageCellProtocol.h
+//  WorkMessageCellProtocol.h
 // MessageContent
 //
 //  Created by NetEase.
@@ -9,23 +9,23 @@
 //
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFCellConfig.h"
-#import "FFFCellConfig.h"
+//: #import "WorkCellConfig.h"
+#import "WorkCellConfig.h"
 
 // __M_A_C_R_O__
 
-//: @class FFFMessageModel;
+//: @class WorkMessageModel;
 @class ShowModel;
 //: @class NIMMessage;
 @class NIMMessage;
 //: @class NIMQuickComment;
 @class NIMQuickComment;
-//: @class FFFKitEvent;
+//: @class WorkKitEvent;
 @class WrittenAccountLab;
-//: @class FFFTextView;
+//: @class WorkTextView;
 @class ShowScrollView;
 
-//: @protocol FFFMessageCellDelegate <NSObject>
+//: @protocol WorkMessageCellDelegate <NSObject>
 @protocol SystemCircle <NSObject>
 
 //: @optional
@@ -42,7 +42,7 @@
 
 //: #pragma mark - 点击事件
 #pragma mark - 点击事件
-//: - (BOOL)onTapCell:(FFFKitEvent *)event;
+//: - (BOOL)onTapCell:(WorkKitEvent *)event;
 - (BOOL)magnitudeerlayerred:(WrittenAccountLab *)event;
 
 //: - (BOOL)onLongPressCell:(NIMMessage *)message

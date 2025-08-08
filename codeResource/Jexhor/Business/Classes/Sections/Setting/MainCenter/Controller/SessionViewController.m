@@ -430,7 +430,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFUserInfoViewController.h"
+//: #import "WorkUserInfoViewController.h"
 #import "SessionViewController.h"
 //: #import "NTESSignSettingViewController.h"
 #import "ColorNameViewController.h"
@@ -445,7 +445,7 @@
 //: #import "NSSetAvater.h"
 #import "InfoView.h"
 
-//: @interface FFFUserInfoViewController ()<NIMUserManagerDelegate,TZImagePickerControllerDelegate,NTESCustomUIAlertDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
+//: @interface WorkUserInfoViewController ()<NIMUserManagerDelegate,TZImagePickerControllerDelegate,NTESCustomUIAlertDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 @interface SessionViewController ()<NIMUserManagerDelegate,TZImagePickerControllerDelegate,ViewMessageName,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 
 //: @property (strong, nonatomic) UIImageView *imgHeader;
@@ -494,7 +494,7 @@
 //: @end
 @end
 
-//: @implementation FFFUserInfoViewController
+//: @implementation WorkUserInfoViewController
 @implementation SessionViewController
 
 //: - (void)viewWillAppear:(BOOL)animated{
@@ -552,7 +552,7 @@
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"my_user_info_activity_title"];
+    //: labtitle.text = [WorkLanguageManager getTextWithKey:@"my_user_info_activity_title"];
     labtitle.text = [InputRed preserve:[[EndData sharedInstance] app_hideData]];
     //: [self.view addSubview:labtitle];
     [self.view addSubview:labtitle];
@@ -618,7 +618,7 @@
     self.labAccount.font = [UIFont systemFontOfSize:16.f];
     //: self.labAccount.textColor = [UIColor blackColor];
     self.labAccount.textColor = [UIColor blackColor];
-    //: self.labAccount.text = [FFFLanguageManager getTextWithKey:@"user_profile_avtivity_account"];
+    //: self.labAccount.text = [WorkLanguageManager getTextWithKey:@"user_profile_avtivity_account"];
     self.labAccount.text = [InputRed preserve:[[EndData sharedInstance] appChangeHideValue]];
     //: [accountView addSubview:self.labAccount];
     [accountView addSubview:self.labAccount];
@@ -668,7 +668,7 @@
     //: self.labNickname.textColor = [UIColor blackColor];
     self.labNickname.textColor = [UIColor blackColor];
 //    labtitle.textAlignment = NSTextAlignmentCenter;
-    //: self.labNickname.text = [FFFLanguageManager getTextWithKey:@"activity_my_user_info_nick"];
+    //: self.labNickname.text = [WorkLanguageManager getTextWithKey:@"activity_my_user_info_nick"];
     self.labNickname.text = [InputRed preserve:[[EndData sharedInstance] showInfoTitle]];
     //: [nameView addSubview:self.labNickname];
     [nameView addSubview:self.labNickname];
@@ -714,7 +714,7 @@
     //: self.labSex.textColor = [UIColor blackColor];
     self.labSex.textColor = [UIColor blackColor];
 //    labtitle.textAlignment = NSTextAlignmentCenter;
-    //: self.labSex.text = [FFFLanguageManager getTextWithKey:@"activity_friend_info_sex"];
+    //: self.labSex.text = [WorkLanguageManager getTextWithKey:@"activity_friend_info_sex"];
     self.labSex.text = [InputRed preserve:[[EndData sharedInstance] showVideoName]];
     //: [sexView addSubview:self.labSex];
     [sexView addSubview:self.labSex];
@@ -871,19 +871,19 @@
     switch (gender) {
         //: case 1:
         case 1:
-            //: genderStr = [FFFLanguageManager getTextWithKey:@"friend_info_activity_nan"];
+            //: genderStr = [WorkLanguageManager getTextWithKey:@"friend_info_activity_nan"];
             genderStr = [InputRed preserve:[[EndData sharedInstance] dream_bubbleAddValue]];
             //: break;
             break;
         //: case 2:
         case 2:
-            //: genderStr = [FFFLanguageManager getTextWithKey:@"friend_info_activity_nv"];
+            //: genderStr = [WorkLanguageManager getTextWithKey:@"friend_info_activity_nv"];
             genderStr = [InputRed preserve:[[EndData sharedInstance] main_atText]];
             //: break;
             break;
         //: case 0:
         case 0:
-            //: genderStr = [FFFLanguageManager getTextWithKey:@"friend_info_activity_xu"];
+            //: genderStr = [WorkLanguageManager getTextWithKey:@"friend_info_activity_xu"];
             genderStr = [InputRed preserve:[[EndData sharedInstance] dream_readData]];
         //: default:
         default:
@@ -901,7 +901,7 @@
     UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
     //: pasteboard.string = self.account.text;
     pasteboard.string = self.account.text;
-    //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"复制"]
+    //: [self.view makeToast:[WorkLanguageManager getTextWithKey:@"复制"]
     [self.view makeToast:[InputRed preserve:@"复制"]
                      //: duration:2
                      duration:2
@@ -961,13 +961,13 @@
 //            [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
 //        }
 
-        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
+        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[WorkLanguageManager getTextWithKey:@"warm_prompt"] message:[WorkLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
         UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[InputRed preserve:[[EndData sharedInstance] dreamLabelParentCanData]] message:[InputRed preserve:[[EndData sharedInstance] k_disableValue]] preferredStyle:UIAlertControllerStyleAlert];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[InputRed preserve:[[EndData sharedInstance] user_pressData]] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         //: }])];
         }])];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[WorkLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[InputRed preserve:[[EndData sharedInstance] userCountData]] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
             NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
@@ -1028,13 +1028,13 @@
 //            [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
 //        }
 
-        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy"] preferredStyle:UIAlertControllerStyleAlert];
+        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[WorkLanguageManager getTextWithKey:@"warm_prompt"] message:[WorkLanguageManager getTextWithKey:@"setting_privacy"] preferredStyle:UIAlertControllerStyleAlert];
         UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[InputRed preserve:[[EndData sharedInstance] dreamLabelParentCanData]] message:[InputRed preserve:[[EndData sharedInstance] k_viewData]] preferredStyle:UIAlertControllerStyleAlert];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[InputRed preserve:[[EndData sharedInstance] user_pressData]] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         //: }])];
         }])];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[WorkLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[InputRed preserve:[[EndData sharedInstance] userCountData]] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
             NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
@@ -1377,7 +1377,7 @@
                         [wself input];
                     //: }else{
                     }else{
-                        //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
+                        //: [wself.view makeToast:[WorkLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
                         [wself.view makeToast:[InputRed preserve:[[EndData sharedInstance] kValueMessageData]]
                                      //: duration:2
                                      duration:2
@@ -1388,7 +1388,7 @@
                 }];
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
+                //: [wself.view makeToast:[WorkLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
                 [wself.view makeToast:[InputRed preserve:[[EndData sharedInstance] kValueMessageData]]
                              //: duration:2
                              duration:2
@@ -1399,7 +1399,7 @@
         }];
     //: }else{
     }else{
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_update_failed"]
+        //: [self.view makeToast:[WorkLanguageManager getTextWithKey:@"group_info_activity_update_failed"]
         [self.view makeToast:[InputRed preserve:[[EndData sharedInstance] show_limitHandleName]]
                     //: duration:2
                     duration:2

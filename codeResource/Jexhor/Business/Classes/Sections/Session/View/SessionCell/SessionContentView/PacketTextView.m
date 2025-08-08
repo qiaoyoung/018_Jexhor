@@ -120,7 +120,7 @@ typedef struct {
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)model{
+//: - (void)refresh:(WorkMessageModel *)model{
 - (void)panorama:(ShowModel *)model{
     //: [super refresh:model];
     [super panorama:model];
@@ -189,7 +189,7 @@ typedef struct {
 {
     //: if ([self.delegate respondsToSelector:@selector(onCatchEvent:)]) {
     if ([self.delegate respondsToSelector:@selector(aboveImage:)]) {
-        //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+        //: WorkKitEvent *event = [[WorkKitEvent alloc] init];
         WrittenAccountLab *event = [[WrittenAccountLab alloc] init];
         //: event.eventName = NTESShowRedPacketDetailEvent;
         event.eventName = m_libraryValue;

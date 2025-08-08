@@ -9,18 +9,18 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionViewController.h"
+//: #import "WorkSessionViewController.h"
 #import "AccountViewController.h"
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
+//: #import "WorkSessionConfigurateProtocol.h"
+#import "WorkSessionConfigurateProtocol.h"
 
-//: @class FFFSessionViewController;
+//: @class WorkSessionViewController;
 @class AccountViewController;
 
-//: @interface FFFSessionConfigurator : NSObject
+//: @interface WorkSessionConfigurator : NSObject
 @interface ModeStatus : NSObject
 
-//: - (void)setup:(FFFSessionViewController *)vc;
+//: - (void)setup:(WorkSessionViewController *)vc;
 - (void)send:(AccountViewController *)vc;
 
 //: @end

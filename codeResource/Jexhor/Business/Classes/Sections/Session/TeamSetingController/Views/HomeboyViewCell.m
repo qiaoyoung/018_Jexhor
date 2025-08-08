@@ -122,29 +122,29 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFGroupMemberTableViewCell.h"
+//: #import "WorkGroupMemberTableViewCell.h"
 #import "HomeboyViewCell.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WorkAvatarImageView.h"
 #import "ButtonControl.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
-//: #import "FFFTeamHelper.h"
+//: #import "WorkTeamHelper.h"
 #import "NameSendStyle.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+MessageContent.h"
 
-//: @interface FFFGroupMemberTableViewCell()
+//: @interface WorkGroupMemberTableViewCell()
 @interface HomeboyViewCell()
 
-//: @property (nonatomic,strong) id<FFFKitCardHeaderData> data;
-@property (nonatomic,strong) id<FFFKitCardHeaderData> data;
+//: @property (nonatomic,strong) id<WorkKitCardHeaderData> data;
+@property (nonatomic,strong) id<WorkKitCardHeaderData> data;
 
 //: @end
 @end
 
-//: @implementation FFFGroupMemberTableViewCell
+//: @implementation WorkGroupMemberTableViewCell
 @implementation HomeboyViewCell
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -173,14 +173,14 @@
 //: + (instancetype)cellWithTableView:(UITableView *)tableView
 + (instancetype)byColor:(UITableView *)tableView
 {
-    //: static NSString *identifier = @"FFFGroupMemberTableViewCell";
+    //: static NSString *identifier = @"WorkGroupMemberTableViewCell";
     static NSString *identifier = @"HomeboyViewCell";
-    //: FFFGroupMemberTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    //: WorkGroupMemberTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     HomeboyViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     //: if (!cell)
     if (!cell)
     {
-        //: cell = [[FFFGroupMemberTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        //: cell = [[WorkGroupMemberTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         cell = [[HomeboyViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         //: cell.backgroundColor = [UIColor colorWithHexString:@"#F6F6F6"];
         cell.backgroundColor = [UIColor ground:[TicketData sharedInstance].notiEmergencyMediaName];
@@ -241,7 +241,7 @@
     self.userId = UserId;
 }
 
-//: - (void)setUserInfo:(FFFKitInfo *)userInfo
+//: - (void)setUserInfo:(WorkKitInfo *)userInfo
 - (void)setUserInfo:(ConfirmationInfo *)userInfo
 {
     //: self.userInfo = userInfo;

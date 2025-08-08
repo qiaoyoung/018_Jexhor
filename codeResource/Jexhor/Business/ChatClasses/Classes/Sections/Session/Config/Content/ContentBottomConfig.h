@@ -11,10 +11,10 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFBaseSessionContentConfig.h"
-#import "FFFBaseSessionContentConfig.h"
+//: #import "WorkBaseSessionContentConfig.h"
+#import "WorkBaseSessionContentConfig.h"
 
-//: @interface FFFUnsupportContentConfig : NSObject<CCCSessionContentConfig>
+//: @interface WorkUnsupportContentConfig : NSObject<CCCSessionContentConfig>
 @interface ContentBottomConfig : NSObject<CellTitleConfig>
 //: @end
 @end

@@ -9,22 +9,22 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionUnknowContentView.h"
+//: #import "WorkSessionUnknowContentView.h"
 #import "ManagingDirectorContentView.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "VideoTextView+MessageContent.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFMessageModel.h"
+//: #import "WorkMessageModel.h"
 #import "ShowModel.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+MessageContent.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "WorkGlobalMacro.h"
+#import "WorkGlobalMacro.h"
 
-//: @interface FFFSessionUnknowContentView()
+//: @interface WorkSessionUnknowContentView()
 @interface ManagingDirectorContentView()
 
 //: @property (nonatomic,strong) UILabel *label;
@@ -33,7 +33,7 @@
 //: @end
 @end
 
-//: @implementation FFFSessionUnknowContentView
+//: @implementation WorkSessionUnknowContentView
 @implementation ManagingDirectorContentView
 
 //: -(instancetype)initSessionMessageContentView
@@ -54,14 +54,14 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data{
+//: - (void)refresh:(WorkMessageModel *)data{
 - (void)panorama:(ShowModel *)data{
     //: [super refresh:data];
     [super panorama:data];
     //: NSString *text = @"";
     NSString *text = @"";
 //    NSString *text = @"未知类型消息".nim_localized;
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
+    //: WorkKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
     ViewKey *setting = [[MessageContent secretResolution].config ofSetting:data.message];
 
     //: self.label.textColor = setting.textColor;

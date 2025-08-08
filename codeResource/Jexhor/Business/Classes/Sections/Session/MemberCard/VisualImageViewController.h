@@ -13,9 +13,9 @@
 #import <UIKit/UIKit.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFTeamMemberListDataSource.h"
+//: #import "WorkTeamMemberListDataSource.h"
 #import "ColorActionClean.h"
-//: #import "FFFTeamListDataManager.h"
+//: #import "WorkTeamListDataManager.h"
 #import "ShowManager.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 //: @interface TeamMemberNormalViewController : UIViewController
 @interface VisualImageViewController : UIViewController
 
-//: @property (nonatomic,strong) FFFTeamListDataManager *teamListManager;
+//: @property (nonatomic,strong) WorkTeamListDataManager *teamListManager;
 @property (nonatomic,strong) ShowManager *teamListManager;
 
 //: @end

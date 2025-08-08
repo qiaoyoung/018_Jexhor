@@ -123,8 +123,8 @@
 #import "NSBundle+MessageContent.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
+//: #import "WorkInputEmoticonDefine.h"
+#import "WorkInputEmoticonDefine.h"
 //: #import "SSZipArchiveManager.h"
 #import "ButtonManager.h"
 

@@ -196,7 +196,7 @@ DrugSeriesData show_severData = (DrugSeriesData){6, (Byte []){227, 157, 152, 227
     return should;
 }
 
-//: - (id<FFFSessionConfig>)sessionConfig
+//: - (id<WorkSessionConfig>)sessionConfig
 - (id<LineConfig>)sessionConfig
 {
     //: if (_sessionConfig == nil) {

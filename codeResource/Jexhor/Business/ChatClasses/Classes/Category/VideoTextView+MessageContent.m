@@ -11,9 +11,9 @@
 // __M_A_C_R_O__
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "VideoTextView+MessageContent.h"
-//: #import "FFFInputEmoticonParser.h"
+//: #import "WorkInputEmoticonParser.h"
 #import "SignParser.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "WorkInputEmoticonManager.h"
 #import "RedManager.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"

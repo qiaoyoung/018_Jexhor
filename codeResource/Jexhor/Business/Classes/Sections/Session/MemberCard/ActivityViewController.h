@@ -11,18 +11,18 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFTeamMemberListDataSource.h"
+//: #import "WorkTeamMemberListDataSource.h"
 #import "ColorActionClean.h"
-//: #import "FFFTeamListDataManager.h"
+//: #import "WorkTeamListDataManager.h"
 #import "ShowManager.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFTeamMuteMemberListViewController : UIViewController
+//: @interface WorkTeamMuteMemberListViewController : UIViewController
 @interface ActivityViewController : UIViewController
 
-//: @property (nonatomic,strong) FFFTeamListDataManager *teamListManager;
+//: @property (nonatomic,strong) WorkTeamListDataManager *teamListManager;
 @property (nonatomic,strong) ShowManager *teamListManager;
 
 //: @end

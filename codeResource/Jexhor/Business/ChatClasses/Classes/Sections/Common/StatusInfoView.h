@@ -11,10 +11,10 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "WorkCardDataSourceProtocol.h"
+#import "WorkCardDataSourceProtocol.h"
 
-//: @protocol FFFMemberGroupViewDelegate <NSObject>
+//: @protocol WorkMemberGroupViewDelegate <NSObject>
 @protocol StatusDelegate <NSObject>
 //: @optional
 @optional
@@ -46,7 +46,7 @@
 //: @end
 @end
 
-//: @interface FFFMemberGroupView : UIView
+//: @interface WorkMemberGroupView : UIView
 @interface StatusInfoView : UIView
 
 //: @property (nonatomic,strong) UICollectionView *collectionView;
@@ -61,7 +61,7 @@
 //: @property (nonatomic,assign) BOOL enableRemove;
 @property (nonatomic,assign) BOOL enableRemove;
 
-//: @property (nonatomic,weak) id<FFFMemberGroupViewDelegate> delegate;
+//: @property (nonatomic,weak) id<WorkMemberGroupViewDelegate> delegate;
 @property (nonatomic,weak) id<StatusDelegate> delegate;
 
 //: - (void)refreshDatas:(NSArray <NIMMemebrGroupData *> *)datas operators:(NIMKitCardHeaderOpeator)operators;

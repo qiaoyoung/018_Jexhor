@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFInputProtocol.h
+//  WorkInputProtocol.h
 // MessageContent
 //
 //  Created by chris.
@@ -14,7 +14,7 @@
 
 // __M_A_C_R_O__
 
-//: @class FFFMediaItem;
+//: @class WorkMediaItem;
 @class AccountAction;
 
 
@@ -23,7 +23,7 @@
 
 //: @optional
 @optional
-//: - (BOOL)onTapMediaItem:(FFFMediaItem *)item;
+//: - (BOOL)onTapMediaItem:(WorkMediaItem *)item;
 - (BOOL)coloring:(AccountAction *)item;
 
 //: - (void)onTextChanged:(id)sender;

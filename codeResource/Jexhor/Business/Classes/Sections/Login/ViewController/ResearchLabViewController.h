@@ -14,7 +14,7 @@
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
-//: @interface FFFRegisterViewController : UIViewController
+//: @interface WorkRegisterViewController : UIViewController
 @interface ResearchLabViewController : UIViewController
 
 //: @end

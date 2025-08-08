@@ -539,35 +539,35 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFLanguageManager.h"
+//: #import "WorkLanguageManager.h"
 #import "InputRed.h"
-//: #import "FFFXMLReader.h"
+//: #import "WorkXMLReader.h"
 #import "VideoReader.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
 //: #import "SSZipArchiveManager.h"
 #import "ButtonManager.h"
 
-//: @interface FFFLanguageManager ()<NSXMLParserDelegate>
+//: @interface WorkLanguageManager ()<NSXMLParserDelegate>
 @interface InputRed ()<NSXMLParserDelegate>
 //: @property (nonatomic ,strong) NSString *currentElementName;
 @property (nonatomic ,strong) NSString *currentElementName;
 //: @end
 @end
 
-//: @implementation FFFLanguageManager
+//: @implementation WorkLanguageManager
 @implementation InputRed
 
-//: static FFFLanguageManager *shareInstance = nil;
+//: static WorkLanguageManager *shareInstance = nil;
 static InputRed *main_eventResultText = nil;
 
-//: + (FFFLanguageManager *)shareInstance{
+//: + (WorkLanguageManager *)shareInstance{
 + (InputRed *)mortificationDisable{
     //: @synchronized(self) {
     @synchronized(self) {
         //: if (shareInstance == nil) {
         if (main_eventResultText == nil) {
-            //: shareInstance = [[FFFLanguageManager alloc] init];
+            //: shareInstance = [[WorkLanguageManager alloc] init];
             main_eventResultText = [[InputRed alloc] init];
             //: shareInstance.langDict = [NSMutableDictionary dictionaryWithCapacity:100];
             main_eventResultText.langDict = [NSMutableDictionary dictionaryWithCapacity:100];
@@ -579,7 +579,7 @@ static InputRed *main_eventResultText = nil;
 
 //: + (NSString *)getTextWithKey:(NSString *)key{
 + (NSString *)preserve:(NSString *)key{
-    //: NSMutableDictionary *dict = [FFFLanguageManager shareInstance].langDict;
+    //: NSMutableDictionary *dict = [WorkLanguageManager shareInstance].langDict;
     NSMutableDictionary *dict = [InputRed mortificationDisable].langDict;
     //: NSString *value = [dict objectForKey:key];
     NSString *value = [dict objectForKey:key];
@@ -784,7 +784,7 @@ static InputRed *main_eventResultText = nil;
     if (error) {
         //: NSLog(@"error : %@", error);
     }
-    //: NSDictionary *result = [FFFXMLReader dictionaryForXMLData:xmlData error:&error];
+    //: NSDictionary *result = [WorkXMLReader dictionaryForXMLData:xmlData error:&error];
     NSDictionary *result = [VideoReader mode:xmlData user_autoreleasing:&error];
 //    NSDictionary *result = [NSDictionary dictionaryWithXML:xmlData];
 

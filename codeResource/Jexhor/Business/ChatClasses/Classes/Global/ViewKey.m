@@ -99,12 +99,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitSetting.h"
+//: #import "WorkKitSetting.h"
 #import "ViewKey.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
 
-//: @implementation FFFKitSetting
+//: @implementation WorkKitSetting
 @implementation ViewKey
 
 //: - (instancetype)init:(BOOL)isRight

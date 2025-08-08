@@ -100,23 +100,23 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputEmoticonContainerView.h"
+//: #import "WorkInputEmoticonContainerView.h"
 #import "ReferView.h"
-//: #import "FFFPageView.h"
+//: #import "WorkPageView.h"
 #import "KeyNeedView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFInputEmoticonButton.h"
+//: #import "WorkInputEmoticonButton.h"
 #import "KeyControl.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "WorkInputEmoticonManager.h"
 #import "RedManager.h"
-//: #import "FFFInputEmoticonTabView.h"
+//: #import "WorkInputEmoticonTabView.h"
 #import "IntervalView.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
+//: #import "WorkInputEmoticonDefine.h"
+#import "WorkInputEmoticonDefine.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
-//: #import "FFFMessageMaker.h"
+//: #import "WorkMessageMaker.h"
 #import "EnterName.h"
 
 //: NSInteger NIMCustomPageControlHeight = 36;
@@ -124,20 +124,20 @@ NSInteger noti_infoCommentName = 36;
 //: NSInteger NIMCustomPageViewHeight = 159;
 NSInteger noti_permissionName = 159;
 
-//: @interface FFFInputEmoticonContainerView()<NIMEmoticonButtonTouchDelegate,NIMInputEmoticonTabDelegate>
+//: @interface WorkInputEmoticonContainerView()<NIMEmoticonButtonTouchDelegate,NIMInputEmoticonTabDelegate>
 @interface ReferView()<ImageNeed,SignalingSearchDelegateNeed>
 
 //: @property (nonatomic,strong) NSMutableArray *pageData;
 @property (nonatomic,strong) NSMutableArray *pageData;
 
-//: @property (nonatomic,strong) FFFInputEmoticonButton* deleteIcon;
+//: @property (nonatomic,strong) WorkInputEmoticonButton* deleteIcon;
 @property (nonatomic,strong) KeyControl* deleteIcon;
 
 //: @end
 @end
 
 
-//: @implementation FFFInputEmoticonContainerView
+//: @implementation WorkInputEmoticonContainerView
 @implementation ReferView
 
 //: - (instancetype)initWithFrame:(CGRect)frame
@@ -159,7 +159,7 @@ NSInteger noti_permissionName = 159;
     self.backgroundColor = [UIColor ground:[[TakeData sharedInstance] showImageSeriesRemoveName]];
 }
 
-//: - (void)setConfig:(id<FFFSessionConfig>)config{
+//: - (void)setConfig:(id<WorkSessionConfig>)config{
 - (void)setConfig:(id<LineConfig>)config{
     //: _config = config;
     _config = config;
@@ -311,7 +311,7 @@ NSInteger noti_permissionName = 159;
             //: NIMInputEmoticon *data = [self.currentCatalogData.emoticons objectAtIndex:index];
             FrontwardsCount *data = [self.currentCatalogData.emoticons objectAtIndex:index];
 
-            //: FFFInputEmoticonButton *button = [FFFInputEmoticonButton iconButtonWithData:data catalogID:self.currentCatalogData.catalogID delegate:self];
+            //: WorkInputEmoticonButton *button = [WorkInputEmoticonButton iconButtonWithData:data catalogID:self.currentCatalogData.catalogID delegate:self];
             KeyControl *button = [KeyControl inheritance:data lineItem:self.currentCatalogData.catalogID remote:self];
             //计算表情位置
             //: rowIndex = indexInPage / self.currentCatalogData.layout.columes;
@@ -354,7 +354,7 @@ NSInteger noti_permissionName = 159;
 }
 
 
-//: - (UIView*)emojPageView:(FFFPageView*)pageView inEmoticonCatalog:(NIMInputEmoticonCatalog *)emoticon page:(NSInteger)page
+//: - (UIView*)emojPageView:(WorkPageView*)pageView inEmoticonCatalog:(NIMInputEmoticonCatalog *)emoticon page:(NSInteger)page
 - (UIView*)bubble:(KeyNeedView*)pageView inwardOld:(WithTextSearch *)emoticon refreshDown:(NSInteger)page
 {
     //: UIView *subView = [[UIView alloc] init];
@@ -385,7 +385,7 @@ NSInteger noti_permissionName = 159;
         //: NIMInputEmoticon *data = [emoticon.emoticons objectAtIndex:index];
         FrontwardsCount *data = [emoticon.emoticons objectAtIndex:index];
 
-        //: FFFInputEmoticonButton *button = [FFFInputEmoticonButton iconButtonWithData:data catalogID:emoticon.catalogID delegate:self];
+        //: WorkInputEmoticonButton *button = [WorkInputEmoticonButton iconButtonWithData:data catalogID:emoticon.catalogID delegate:self];
         KeyControl *button = [KeyControl inheritance:data lineItem:emoticon.catalogID remote:self];
         //计算表情位置
         //: rowIndex = indexInPage / emoticon.layout.columes;
@@ -437,7 +437,7 @@ NSInteger noti_permissionName = 159;
                 //: inEmoticonCatalog:(NIMInputEmoticonCatalog *)emoticon
                 width:(WithTextSearch *)emoticon
 {
-    //: FFFInputEmoticonButton* deleteIcon = [[FFFInputEmoticonButton alloc] init];
+    //: WorkInputEmoticonButton* deleteIcon = [[WorkInputEmoticonButton alloc] init];
     KeyControl* deleteIcon = [[KeyControl alloc] init];
     //: deleteIcon.delegate = self;
     deleteIcon.delegate = self;
@@ -475,14 +475,14 @@ NSInteger noti_permissionName = 159;
 
 //: #pragma mark - pageviewDelegate
 #pragma mark - pageviewDelegate
-//: - (NSInteger)numberOfPages: (FFFPageView *)pageView
+//: - (NSInteger)numberOfPages: (WorkPageView *)pageView
 - (NSInteger)elites: (KeyNeedView *)pageView
 {
     //: return [self sumPages];
     return [self showEnable];
 }
 
-//: - (UIView *)pageView:(FFFPageView *)pageView viewInPage:(NSInteger)index
+//: - (UIView *)pageView:(WorkPageView *)pageView viewInPage:(NSInteger)index
 - (UIView *)text:(KeyNeedView *)pageView with:(NSInteger)index
 {
     //: NSInteger page = 0;
@@ -509,7 +509,7 @@ NSInteger noti_permissionName = 159;
 //: - (NIMInputEmoticonCatalog*)loadDefaultCatalog
 - (WithTextSearch*)pressedFile
 {
-    //: NIMInputEmoticonCatalog *emoticonCatalog = [[FFFInputEmoticonManager sharedManager] emoticonCatalog:@"default"];
+    //: NIMInputEmoticonCatalog *emoticonCatalog = [[WorkInputEmoticonManager sharedManager] emoticonCatalog:@"default"];
     WithTextSearch *emoticonCatalog = [[RedManager session] deadLanguageExtra:[[TakeData sharedInstance] notiShowerText]];
     //: if (emoticonCatalog) {
     if (emoticonCatalog) {
@@ -527,7 +527,7 @@ NSInteger noti_permissionName = 159;
 //: - (NIMInputEmoticonCatalog*)loadGifCatalog
 - (WithTextSearch*)session
 {
-    //: NIMInputEmoticonCatalog *emoticonCatalog = [[FFFInputEmoticonManager sharedManager] emoticonCatalog:@"gif"];
+    //: NIMInputEmoticonCatalog *emoticonCatalog = [[WorkInputEmoticonManager sharedManager] emoticonCatalog:@"gif"];
     WithTextSearch *emoticonCatalog = [[RedManager session] deadLanguageExtra:[[TakeData sharedInstance] app_picContent]];
     //: if (emoticonCatalog) {
     if (emoticonCatalog) {
@@ -634,7 +634,7 @@ NSInteger noti_permissionName = 159;
     }
 }
 
-//: - (void)pageViewScrollEnd: (FFFPageView *)pageView
+//: - (void)pageViewScrollEnd: (WorkPageView *)pageView
 - (void)create: (KeyNeedView *)pageView
              //: currentIndex: (NSInteger)index
              cell: (NSInteger)index
@@ -706,7 +706,7 @@ NSInteger noti_permissionName = 159;
 
 //: #pragma mark - InputEmoticonTabDelegate
 #pragma mark - InputEmoticonTabDelegate
-//: - (void)tabView:(FFFInputEmoticonTabView *)tabView didSelectTabIndex:(NSInteger) index{
+//: - (void)tabView:(WorkInputEmoticonTabView *)tabView didSelectTabIndex:(NSInteger) index{
 - (void)off:(IntervalView *)tabView modeLog:(NSInteger) index{
     //: self.currentCatalogData = self.totalCatalogData[index];
     self.currentCatalogData = self.totalCatalogData[index];
@@ -749,12 +749,12 @@ NSInteger noti_permissionName = 159;
 
 //: #pragma mark - Get
 #pragma mark - Get
-//: - (FFFInputEmoticonTabView *)tabView
+//: - (WorkInputEmoticonTabView *)tabView
 - (IntervalView *)tabView
 {
     //: if (!_tabView) {
     if (!_tabView) {
-        //: _tabView = [[FFFInputEmoticonTabView alloc] initWithFrame:CGRectMake(0, 0, self.nim_width, 0)];
+        //: _tabView = [[WorkInputEmoticonTabView alloc] initWithFrame:CGRectMake(0, 0, self.nim_width, 0)];
         _tabView = [[IntervalView alloc] initWithFrame:CGRectMake(0, 0, self.nim_width, 0)];
         //: _tabView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         _tabView.autoresizingMask = UIViewAutoresizingFlexibleWidth;

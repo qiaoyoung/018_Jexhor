@@ -353,7 +353,7 @@
     labtitle.font = [UIFont systemFontOfSize:14.f];
     //: labtitle.textColor = [UIColor blackColor];
     labtitle.textColor = [UIColor blackColor];
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"Confirm_Account_Deactivation"];
+    //: labtitle.text = [WorkLanguageManager getTextWithKey:@"Confirm_Account_Deactivation"];
     labtitle.text = [InputRed preserve:[EpilateData noti_removeImageSessionName]];
     //: [_box addSubview:labtitle];
     [_box addSubview:labtitle];
@@ -394,7 +394,7 @@
 
     //: if (_agreementButton.selected == NO) {
     if (_agreementButton.selected == NO) {
-        //: [self makeToast:[FFFLanguageManager getTextWithKey:@"Read_agree_agreement"] duration:2.0 position:CSToastPositionCenter];
+        //: [self makeToast:[WorkLanguageManager getTextWithKey:@"Read_agree_agreement"] duration:2.0 position:CSToastPositionCenter];
         [self makeToast:[InputRed preserve:[EpilateData app_fileValue]] duration:2.0 position:CSToastPositionCenter];
         //: return;
         return;
@@ -456,7 +456,7 @@
         _titleLabel.font = [UIFont systemFontOfSize:16.f];
         //: _titleLabel.textColor = [UIColor blackColor];
         _titleLabel.textColor = [UIColor blackColor];
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"deactivate_account"];
+        //: _titleLabel.text = [WorkLanguageManager getTextWithKey:@"deactivate_account"];
         _titleLabel.text = [InputRed preserve:[EpilateData k_viewEndName]];
     }
     //: return _titleLabel;
@@ -519,7 +519,7 @@
         labtitle1.font = [UIFont systemFontOfSize:11.f];
         //: labtitle1.textColor = [UIColor blackColor];
         labtitle1.textColor = [UIColor blackColor];
-        //: labtitle1.text = [FFFLanguageManager getTextWithKey:@"Read_agree_agreement"];
+        //: labtitle1.text = [WorkLanguageManager getTextWithKey:@"Read_agree_agreement"];
         labtitle1.text = [InputRed preserve:[EpilateData app_fileValue]];
         //: labtitle1.numberOfLines = 2;
         labtitle1.numberOfLines = 2;
@@ -560,7 +560,7 @@
         labtitle2.font = [UIFont systemFontOfSize:11.f];
         //: labtitle2.textColor = [UIColor colorWithHexString:@"#5D5F66"];
         labtitle2.textColor = [UIColor ground:[EpilateData showButtonValue]];
-        //: labtitle2.text = [FFFLanguageManager getTextWithKey:@"Vertify_login_password"];
+        //: labtitle2.text = [WorkLanguageManager getTextWithKey:@"Vertify_login_password"];
         labtitle2.text = [InputRed preserve:[EpilateData k_rowHideLimitContent]];
         //: labtitle2.numberOfLines = 2;
         labtitle2.numberOfLines = 2;
@@ -601,7 +601,7 @@
         labtitle3.font = [UIFont systemFontOfSize:11.f];
         //: labtitle3.textColor = [UIColor colorWithHexString:@"#5D5F66"];
         labtitle3.textColor = [UIColor ground:[EpilateData showButtonValue]];
-        //: labtitle3.text = [FFFLanguageManager getTextWithKey:@"Complete_operation"];
+        //: labtitle3.text = [WorkLanguageManager getTextWithKey:@"Complete_operation"];
         labtitle3.text = [InputRed preserve:[EpilateData user_infoTitleValue]];
         //: labtitle3.numberOfLines = 2;
         labtitle3.numberOfLines = 2;
@@ -645,7 +645,7 @@
         labtitle1.font = [UIFont boldSystemFontOfSize:12.f];
         //: labtitle1.textColor = [UIColor colorWithHexString:@"#333333"];
         labtitle1.textColor = [UIColor ground:[EpilateData k_buttonText]];
-        //: labtitle1.text = [FFFLanguageManager getTextWithKey:@"Consequences_Deactivation"];
+        //: labtitle1.text = [WorkLanguageManager getTextWithKey:@"Consequences_Deactivation"];
         labtitle1.text = [InputRed preserve:[EpilateData appHandleContent]];
         //: [_contentBox addSubview:labtitle1];
         [_contentBox addSubview:labtitle1];
@@ -655,7 +655,7 @@
         labsubtitle1.font = [UIFont systemFontOfSize:12.f];
         //: labsubtitle1.textColor = [UIColor colorWithHexString:@"#333333"];
         labsubtitle1.textColor = [UIColor ground:[EpilateData k_buttonText]];
-        //: labsubtitle1.text = [FFFLanguageManager getTextWithKey:@"Consequences_Deactivation_content"];
+        //: labsubtitle1.text = [WorkLanguageManager getTextWithKey:@"Consequences_Deactivation_content"];
         labsubtitle1.text = [InputRed preserve:[EpilateData mainLimitData]];
         //: labsubtitle1.numberOfLines = 0;
         labsubtitle1.numberOfLines = 0;
@@ -670,7 +670,7 @@
         labtitle2.font = [UIFont boldSystemFontOfSize:12.f];
         //: labtitle2.textColor = [UIColor colorWithHexString:@"#333333"];
         labtitle2.textColor = [UIColor ground:[EpilateData k_buttonText]];
-        //: labtitle2.text = [FFFLanguageManager getTextWithKey:@"Data_Retention_Policy"];
+        //: labtitle2.text = [WorkLanguageManager getTextWithKey:@"Data_Retention_Policy"];
         labtitle2.text = [InputRed preserve:[EpilateData dream_pressValue]];
         //: [_contentBox addSubview:labtitle2];
         [_contentBox addSubview:labtitle2];
@@ -680,7 +680,7 @@
         labsubtitle2.font = [UIFont systemFontOfSize:12.f];
         //: labsubtitle2.textColor = [UIColor colorWithHexString:@"#333333"];
         labsubtitle2.textColor = [UIColor ground:[EpilateData k_buttonText]];
-        //: labsubtitle2.text = [FFFLanguageManager getTextWithKey:@"Data_Retention_Policy_content"];
+        //: labsubtitle2.text = [WorkLanguageManager getTextWithKey:@"Data_Retention_Policy_content"];
         labsubtitle2.text = [InputRed preserve:[EpilateData show_changeData]];
         //: labsubtitle2.numberOfLines = 0;
         labsubtitle2.numberOfLines = 0;
@@ -695,7 +695,7 @@
         labtitle3.font = [UIFont boldSystemFontOfSize:12.f];
         //: labtitle3.textColor = [UIColor colorWithHexString:@"#333333"];
         labtitle3.textColor = [UIColor ground:[EpilateData k_buttonText]];
-        //: labtitle3.text = [FFFLanguageManager getTextWithKey:@"Recovery_Options"];
+        //: labtitle3.text = [WorkLanguageManager getTextWithKey:@"Recovery_Options"];
         labtitle3.text = [InputRed preserve:[EpilateData appSendText]];
         //: [_contentBox addSubview:labtitle3];
         [_contentBox addSubview:labtitle3];
@@ -705,7 +705,7 @@
         labsubtitle3.font = [UIFont systemFontOfSize:12.f];
         //: labsubtitle3.textColor = [UIColor colorWithHexString:@"#333333"];
         labsubtitle3.textColor = [UIColor ground:[EpilateData k_buttonText]];
-        //: labsubtitle3.text = [FFFLanguageManager getTextWithKey:@"Recovery_Options_content"];
+        //: labsubtitle3.text = [WorkLanguageManager getTextWithKey:@"Recovery_Options_content"];
         labsubtitle3.text = [InputRed preserve:[EpilateData userLimitName]];
         //: labsubtitle3.numberOfLines = 0;
         labsubtitle3.numberOfLines = 0;
@@ -746,7 +746,7 @@
         //: [labprotocol addGestureRecognizer:singleTap];
         [labprotocol addGestureRecognizer:singleTap];
 
-        //: NSMutableAttributedString *tncString = [[NSMutableAttributedString alloc] initWithString:[FFFLanguageManager getTextWithKey:@"agree_account_deactivation_terms"]];
+        //: NSMutableAttributedString *tncString = [[NSMutableAttributedString alloc] initWithString:[WorkLanguageManager getTextWithKey:@"agree_account_deactivation_terms"]];
         NSMutableAttributedString *tncString = [[NSMutableAttributedString alloc] initWithString:[InputRed preserve:[EpilateData kContentText]]];
         //: [tncString addAttribute:NSUnderlineStyleAttributeName
         [tncString addAttribute:NSUnderlineStyleAttributeName
@@ -800,7 +800,7 @@
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor ground:[EpilateData showButtonValue]] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[InputRed preserve:[EpilateData appParentText]] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -835,7 +835,7 @@
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor colorWithHexString:@"#FF483D"] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor ground:[EpilateData mainMediaData]] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"activity_register_next"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[WorkLanguageManager getTextWithKey:@"activity_register_next"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[InputRed preserve:[EpilateData notiMaxColorValue]] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _sureBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];

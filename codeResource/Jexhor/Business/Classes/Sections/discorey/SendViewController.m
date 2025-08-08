@@ -39,7 +39,7 @@ typedef struct {
     return mainNameValue;
 }
 
-//: #ffffff
+//: #fffWork
 + (NSString *)m_removeName {
     /* static */ NSString *m_removeName = nil;
     if (!m_removeName) {
@@ -157,14 +157,14 @@ typedef struct {
     labtitle.textColor = [UIColor whiteColor];
     //: labtitle.font = [UIFont boldSystemFontOfSize:18];
     labtitle.font = [UIFont boldSystemFontOfSize:18];
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"discovery"];
+    //: labtitle.text = [WorkLanguageManager getTextWithKey:@"discovery"];
     labtitle.text = [InputRed preserve:[AtColorData mainNameValue]];
     //: [topview addSubview:labtitle];
     [topview addSubview:labtitle];
 
     //: UIView *contentView = [[UIView alloc]initWithFrame:CGRectMake(0, (44.0f + [UIDevice vg_statusBarHeight])+10, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height-(44.0f + [UIDevice vg_statusBarHeight]))];
     UIView *contentView = [[UIView alloc]initWithFrame:CGRectMake(0, (44.0f + [UIDevice heightShowStop])+10, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height-(44.0f + [UIDevice heightShowStop]))];
-    //: contentView.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+    //: contentView.backgroundColor = [UIColor colorWithHexString:@"#fffWork"];
     contentView.backgroundColor = [UIColor ground:[AtColorData m_removeName]];
     //: contentView.layer.cornerRadius = 34;
     contentView.layer.cornerRadius = 34;
@@ -201,7 +201,7 @@ typedef struct {
         emptyTipLabel.textAlignment = NSTextAlignmentCenter;
         //: [_defView addSubview:emptyTipLabel];
         [_defView addSubview:emptyTipLabel];
-        //: emptyTipLabel.text = [FFFLanguageManager getTextWithKey:@"group_info_activity_without"];
+        //: emptyTipLabel.text = [WorkLanguageManager getTextWithKey:@"group_info_activity_without"];
         emptyTipLabel.text = [InputRed preserve:[AtColorData mainHideData]];
 
 

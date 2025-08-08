@@ -9,7 +9,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "WorkSessionMessageContentView.h"
 #import "TextControl.h"
 
 //: @protocol NIMPlayAudioUIDelegate <NSObject>
@@ -23,7 +23,7 @@
 //: @end
 @end
 
-//: @interface FFFSessionAudioContentView : FFFSessionMessageContentView
+//: @interface WorkSessionAudioContentView : WorkSessionMessageContentView
 @interface ThreadView : TextControl
 
 //: @property (nonatomic, strong) UILabel *audioDurationLable; 

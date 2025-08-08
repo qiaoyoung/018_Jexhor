@@ -11,18 +11,18 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
-//: #import "FFFMessageCellProtocol.h"
-#import "FFFMessageCellProtocol.h"
+//: #import "WorkSessionConfigurateProtocol.h"
+#import "WorkSessionConfigurateProtocol.h"
+//: #import "WorkMessageCellProtocol.h"
+#import "WorkMessageCellProtocol.h"
 
-//: @interface FFFSessionTableAdapter : NSObject<UITableViewDelegate,UITableViewDataSource>
+//: @interface WorkSessionTableAdapter : NSObject<UITableViewDelegate,UITableViewDataSource>
 @interface ColorAdapter : NSObject<UITableViewDelegate,UITableViewDataSource>
 
 //: @property (nonatomic,weak) id<NIMSessionInteractor> interactor;
 @property (nonatomic,weak) id<WithText> interactor;
 
-//: @property (nonatomic,weak) id<FFFMessageCellDelegate> delegate;
+//: @property (nonatomic,weak) id<WorkMessageCellDelegate> delegate;
 @property (nonatomic,weak) id<SystemCircle> delegate;
 
 //: @end

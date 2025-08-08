@@ -26,7 +26,7 @@
 
 
 
-//: @interface FFFInputEmoticonButton : UIButton
+//: @interface WorkInputEmoticonButton : UIButton
 @interface KeyControl : UIButton
 
 //: @property (nonatomic, strong) NIMInputEmoticon *emoticonData;
@@ -38,7 +38,7 @@
 //: @property (nonatomic, weak) id<NIMEmoticonButtonTouchDelegate> delegate;
 @property (nonatomic, weak) id<ImageNeed> delegate;
 
-//: + (FFFInputEmoticonButton*)iconButtonWithData:(NIMInputEmoticon*)data catalogID:(NSString*)catalogID delegate:( id<NIMEmoticonButtonTouchDelegate>)delegate;
+//: + (WorkInputEmoticonButton*)iconButtonWithData:(NIMInputEmoticon*)data catalogID:(NSString*)catalogID delegate:( id<NIMEmoticonButtonTouchDelegate>)delegate;
 + (KeyControl*)inheritance:(FrontwardsCount*)data lineItem:(NSString*)catalogID remote:( id<ImageNeed>)delegate;
 
 //: - (void)onIconSelected:(id)sender;

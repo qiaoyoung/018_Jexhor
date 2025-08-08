@@ -12,7 +12,7 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @interface FFFKitProgressHUD : UIVisualEffectView
+//: @interface WorkKitProgressHUD : UIVisualEffectView
 @interface KitEffectView : UIVisualEffectView
 
 //: + (void)show;

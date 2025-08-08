@@ -9,11 +9,11 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFGroupedUsrInfo.h"
-#import "FFFGroupedUsrInfo.h"
-//: #import "FFFSpellingCenter.h"
+//: #import "WorkGroupedUsrInfo.h"
+#import "WorkGroupedUsrInfo.h"
+//: #import "WorkSpellingCenter.h"
 #import "ContentRed.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WorkKitInfoFetchOption.h"
 #import "RangeOption.h"
 
 //: @interface NIMGroupUser()
@@ -21,7 +21,7 @@
 
 //: @property (nonatomic,copy) NSString *userId;
 @property (nonatomic,copy) NSString *userId;
-//: @property (nonatomic,strong) FFFKitInfo *info;
+//: @property (nonatomic,strong) WorkKitInfo *info;
 @property (nonatomic,strong) ConfirmationInfo *info;
 
 //: @end
@@ -47,7 +47,7 @@
 
 //: - (NSString *)groupTitle{
 - (NSString *)quick{
-    //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.info.showName].capitalizedString;
+    //: NSString *title = [[WorkSpellingCenter sharedCenter] firstLetter:self.info.showName].capitalizedString;
     NSString *title = [[ContentRed bar] lightGreen:self.info.showName].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
@@ -63,20 +63,20 @@
 }
 
 //: - (NSString *)showName{
-- (NSString *)exhibitDoing{
+- (NSString *)showName{
     //: return self.info.showName;
     return self.info.showName;
 }
 
 //: - (NSString *)memberId{
-- (NSString *)pressedFor{
+- (NSString *)memberId{
     //: return self.userId;
     return self.userId;
 }
 
 //: - (id)sortKey{
 - (id)screenSortFormat{
-    //: return [[FFFSpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
+    //: return [[WorkSpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
     return [[ContentRed bar] baleOut:self.info.showName].shortSpelling;
 }
 
@@ -102,7 +102,7 @@
 
 //: @property (nonatomic,copy) NSString *userId;
 @property (nonatomic,copy) NSString *userId;
-//: @property (nonatomic,strong) FFFKitInfo *info;
+//: @property (nonatomic,strong) WorkKitInfo *info;
 @property (nonatomic,strong) ConfirmationInfo *info;
 
 //: @end
@@ -121,7 +121,7 @@
     if (self) {
         //: _userId = userId;
         _userId = userId;
-        //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+        //: WorkKitInfoFetchOption *option = [[WorkKitInfoFetchOption alloc] init];
         RangeOption *option = [[RangeOption alloc] init];
         //: option.session = session;
         option.session = session;
@@ -134,8 +134,8 @@
 
 //: - (NSString *)groupTitle{
 - (NSString *)quick{
-    //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.showName].capitalizedString;
-    NSString *title = [[ContentRed bar] lightGreen:self.exhibitDoing].capitalizedString;
+    //: NSString *title = [[WorkSpellingCenter sharedCenter] firstLetter:self.showName].capitalizedString;
+    NSString *title = [[ContentRed bar] lightGreen:self.showName].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
     //: if (character >= 'A' && character <= 'Z') {
@@ -151,18 +151,18 @@
 
 //: - (id)sortKey{
 - (id)screenSortFormat{
-    //: return [[FFFSpellingCenter sharedCenter] spellingForString:self.showName].shortSpelling;
-    return [[ContentRed bar] baleOut:self.exhibitDoing].shortSpelling;
+    //: return [[WorkSpellingCenter sharedCenter] spellingForString:self.showName].shortSpelling;
+    return [[ContentRed bar] baleOut:self.showName].shortSpelling;
 }
 
 //: - (NSString *)showName{
-- (NSString *)exhibitDoing{
+- (NSString *)showName{
     //: return self.info.showName;
     return self.info.showName;
 }
 
 //: - (NSString *)memberId{
-- (NSString *)pressedFor{
+- (NSString *)memberId{
     //: return self.userId;
     return self.userId;
 }
@@ -187,7 +187,7 @@
 
 //: @property (nonatomic,copy) NSString *teamId;
 @property (nonatomic,copy) NSString *teamId;
-//: @property (nonatomic,strong) FFFKitInfo *info;
+//: @property (nonatomic,strong) WorkKitInfo *info;
 @property (nonatomic,strong) ConfirmationInfo *info;
 
 //: @end
@@ -222,8 +222,8 @@
 
 //: - (NSString *)groupTitle{
 - (NSString *)quick{
-    //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.showName].capitalizedString;
-    NSString *title = [[ContentRed bar] lightGreen:self.exhibitDoing].capitalizedString;
+    //: NSString *title = [[WorkSpellingCenter sharedCenter] firstLetter:self.showName].capitalizedString;
+    NSString *title = [[ContentRed bar] lightGreen:self.showName].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
     //: if (character >= 'A' && character <= 'Z') {
@@ -239,18 +239,18 @@
 
 //: - (id)sortKey{
 - (id)screenSortFormat{
-    //: return [[FFFSpellingCenter sharedCenter] spellingForString:[self showName]].shortSpelling;
-    return [[ContentRed bar] baleOut:[self exhibitDoing]].shortSpelling;
+    //: return [[WorkSpellingCenter sharedCenter] spellingForString:[self showName]].shortSpelling;
+    return [[ContentRed bar] baleOut:[self showName]].shortSpelling;
 }
 
 //: - (NSString *)showName{
-- (NSString *)exhibitDoing{
+- (NSString *)showName{
     //: return self.info.showName;
     return self.info.showName;
 }
 
 //: - (NSString *)memberId{
-- (NSString *)pressedFor{
+- (NSString *)memberId{
     //: return self.teamId;
     return self.teamId;
 }

@@ -35,7 +35,7 @@ typedef enum : NSUInteger
 @end
 
 
-//: @interface FFFInputEmoticonParser : NSObject
+//: @interface WorkInputEmoticonParser : NSObject
 @interface SignParser : NSObject
 //: + (instancetype)currentParser;
 + (instancetype)byTo;

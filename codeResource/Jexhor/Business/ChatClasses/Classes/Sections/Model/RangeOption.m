@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WorkKitInfoFetchOption.h"
 #import "RangeOption.h"
 
-//: @implementation FFFKitInfoFetchOption
+//: @implementation WorkKitInfoFetchOption
 @implementation RangeOption
 
 //: @end

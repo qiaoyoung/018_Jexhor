@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionNotificationContentView.h"
+//: #import "WorkSessionNotificationContentView.h"
 #import "SoundView.h"
 
-//: @interface NTESSessionTipContentView : FFFSessionMessageContentView
+//: @interface NTESSessionTipContentView : WorkSessionMessageContentView
 @interface EnableControl : TextControl
 
 //: @property (nonatomic,strong) UILabel *label;

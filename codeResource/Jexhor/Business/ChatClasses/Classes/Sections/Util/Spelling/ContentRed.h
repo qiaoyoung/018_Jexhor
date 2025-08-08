@@ -21,7 +21,7 @@
 //: @end
 @end
 
-//: @interface FFFSpellingCenter : NSObject
+//: @interface WorkSpellingCenter : NSObject
 @interface ContentRed : NSObject
 {
     //: NSMutableDictionary *_spellingCache; 
@@ -29,7 +29,7 @@
     //: NSString *_filepath;
     NSString *_filepath;
 }
-//: + (FFFSpellingCenter *)sharedCenter;
+//: + (WorkSpellingCenter *)sharedCenter;
 + (ContentRed *)bar;
 //: - (void)saveSpellingCache; 
 - (void)endowCache; //写入缓存

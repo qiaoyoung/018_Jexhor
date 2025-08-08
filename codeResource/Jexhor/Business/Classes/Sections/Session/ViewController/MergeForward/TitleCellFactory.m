@@ -82,13 +82,13 @@
 
 //: - (NTESMergeMessageCell *)ntesCellInTable:(UITableView*)tableView
 - (ConsubstantiateVideoCompartmentViewCell *)startData:(UITableView*)tableView
-                         //: forMessageMode:(FFFMessageModel *)model {
+                         //: forMessageMode:(WorkMessageModel *)model {
                          event:(ShowModel *)model {
-    //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+    //: id<WorkCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
     id<TingConfig> layoutConfig = [[MessageContent secretResolution] layoutConfig];
     //: NSString *identity = [[layoutConfig cellContent:model] stringByAppendingString:@"_ntes"];
     NSString *identity = [[layoutConfig change:model] stringByAppendingString:[HideParentData sharedInstance].userWithText];
-    //: FFFMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
+    //: WorkMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
     CellView *cell = [tableView dequeueReusableCellWithIdentifier:identity];
     //: if (!cell) {
     if (!cell) {
@@ -105,7 +105,7 @@
 
 //: - (NTESTimestampCell *)ntesCellInTable:(UITableView *)tableView
 - (BottomTimestampCell *)withModel:(UITableView *)tableView
-                            //: forTimeModel:(FFFTimestampModel *)model {
+                            //: forTimeModel:(WorkTimestampModel *)model {
                             empty:(EngraftTing *)model {
     //: NSString *identity = @"time_ntes";
     NSString *identity = [HideParentData sharedInstance].dream_keepName;

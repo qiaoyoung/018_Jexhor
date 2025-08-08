@@ -98,10 +98,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFGroupEditTableViewCell.h"
+//: #import "WorkGroupEditTableViewCell.h"
 #import "InputKeyView.h"
 
-//: @implementation FFFGroupEditTableViewCell
+//: @implementation WorkGroupEditTableViewCell
 @implementation InputKeyView
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{

@@ -4,7 +4,7 @@
 NSString *StringFromAmbitionData(Byte *data);
 
 
-//: #ffffff
+//: #fffWork
 Byte showScaleValue[] = {61, 7, 3, 102, 102, 102, 102, 102, 102, 35, 197};
 
 //: user_profile_avtivity_send
@@ -175,7 +175,7 @@ Byte app_lengthValue[] = {67, 7, 13, 233, 55, 140, 230, 18, 29, 133, 13, 251, 19
 
     //: _viewBg = [[UIView alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height-_minHeight, [[UIScreen mainScreen] bounds].size.width, _minHeight)];
     _viewBg = [[UIView alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height-_minHeight, [[UIScreen mainScreen] bounds].size.width, _minHeight)];
-    //: _viewBg.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+    //: _viewBg.backgroundColor = [UIColor colorWithHexString:@"#fffWork"];
     _viewBg.backgroundColor = [UIColor ground:StringFromAmbitionData(showScaleValue)];
     //: _viewBg.layer.masksToBounds = YES;
     _viewBg.layer.masksToBounds = YES;
@@ -236,7 +236,7 @@ Byte app_lengthValue[] = {67, 7, 13, 233, 55, 140, 230, 18, 29, 133, 13, 251, 19
         _confirmButton = [UIButton buttonWithType:UIButtonTypeSystem];
         //: _confirmButton.layer.cornerRadius = 24;
         _confirmButton.layer.cornerRadius = 24;
-        //: [_confirmButton setTitle:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_send"] forState:UIControlStateNormal];
+        //: [_confirmButton setTitle:[WorkLanguageManager getTextWithKey:@"user_profile_avtivity_send"] forState:UIControlStateNormal];
         [_confirmButton setTitle:[InputRed preserve:StringFromAmbitionData(user_againstContent)] forState:UIControlStateNormal];
         //: [_confirmButton addTarget:self action:@selector(confirmButtonTapped) forControlEvents:UIControlEventTouchUpInside];
         [_confirmButton addTarget:self action:@selector(saveFrame) forControlEvents:UIControlEventTouchUpInside];
@@ -260,7 +260,7 @@ Byte app_lengthValue[] = {67, 7, 13, 233, 55, 140, 230, 18, 29, 133, 13, 251, 19
     //: NSLog(@"选择了 %lu 张图片", (unsigned long)assets.count);
     //: self.selectedPhoto = assets;
     self.selectedPhoto = assets;
-    //: [self.confirmButton setTitle:[NSString stringWithFormat:@"%@(%lu)",[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_send"],(unsigned long)self.selectedPhoto.count] forState:UIControlStateNormal];
+    //: [self.confirmButton setTitle:[NSString stringWithFormat:@"%@(%lu)",[WorkLanguageManager getTextWithKey:@"user_profile_avtivity_send"],(unsigned long)self.selectedPhoto.count] forState:UIControlStateNormal];
     [self.confirmButton setTitle:[NSString stringWithFormat:@"%@(%lu)",[InputRed preserve:StringFromAmbitionData(user_againstContent)],(unsigned long)self.selectedPhoto.count] forState:UIControlStateNormal];
 }
 

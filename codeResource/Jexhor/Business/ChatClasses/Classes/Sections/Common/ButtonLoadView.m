@@ -69,10 +69,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFLoadProgressView.h"
+//: #import "WorkLoadProgressView.h"
 #import "ButtonLoadView.h"
 
-//: @implementation FFFLoadProgressView
+//: @implementation WorkLoadProgressView
 @implementation ButtonLoadView
 
 //: - (id)initWithFrame:(CGRect)frame {

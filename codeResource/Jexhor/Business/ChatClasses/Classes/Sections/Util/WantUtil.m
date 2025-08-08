@@ -937,13 +937,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitUtil.h"
+//: #import "WorkKitUtil.h"
 #import "WantUtil.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WorkKitInfoFetchOption.h"
 #import "RangeOption.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "WorkInputEmoticonManager.h"
 #import "RedManager.h"
 //: #import "NSDictionary+MyUserKit.h"
 #import "NSDictionary+MessageContent.h"
@@ -951,7 +951,7 @@
 //: static NSDateComponentsFormatter *_dateComponentsFormatter;
 static NSDateComponentsFormatter *main_teamData;
 
-//: @implementation FFFKitUtil
+//: @implementation WorkKitUtil
 @implementation WantUtil
 
 //: + (NSString *)genFilenameWithExt:(NSString *)ext
@@ -979,7 +979,7 @@ static NSDateComponentsFormatter *main_teamData;
         //: return nil;
         return nil;
     }
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: WorkKitInfoFetchOption *option = [[WorkKitInfoFetchOption alloc] init];
     RangeOption *option = [[RangeOption alloc] init];
     //: option.message = message;
     option.message = message;
@@ -994,7 +994,7 @@ static NSDateComponentsFormatter *main_teamData;
         //: return nil;
         return nil;
     }
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: WorkKitInfoFetchOption *option = [[WorkKitInfoFetchOption alloc] init];
     RangeOption *option = [[RangeOption alloc] init];
     //: option.session = session;
     option.session = session;
@@ -1025,7 +1025,7 @@ static NSDateComponentsFormatter *main_teamData;
     //: double OnedayTimeIntervalValue = 24*60*60; 
     double OnedayTimeIntervalValue = 24*60*60; //一天的秒数
 
-    //: result = [FFFKitUtil getPeriodOfTime:hour withMinute:msgDateComponents.minute];
+    //: result = [WorkKitUtil getPeriodOfTime:hour withMinute:msgDateComponents.minute];
     result = [WantUtil bar:hour at:msgDateComponents.minute];
     //: if (hour > 12)
     if (hour > 12)
@@ -1046,13 +1046,13 @@ static NSDateComponentsFormatter *main_teamData;
     //: else if(isSameMonth && (nowDateComponents.day == (msgDateComponents.day+1)))
     else if(isSameMonth && (nowDateComponents.day == (msgDateComponents.day+1)))//昨天
     {
-        //: result = showDetail? [[NSString alloc] initWithFormat:@"%@%@ %zd:%02d",[FFFLanguageManager getTextWithKey:@"yesterday"],result,hour,(int)msgDateComponents.minute] : [FFFLanguageManager getTextWithKey:@"yesterday"];
+        //: result = showDetail? [[NSString alloc] initWithFormat:@"%@%@ %zd:%02d",[WorkLanguageManager getTextWithKey:@"yesterday"],result,hour,(int)msgDateComponents.minute] : [WorkLanguageManager getTextWithKey:@"yesterday"];
         result = showDetail? [[NSString alloc] initWithFormat:@"%@%@ %zd:%02d",[InputRed preserve:[MotionData sharedInstance].mConsequentLengthText],result,hour,(int)msgDateComponents.minute] : [InputRed preserve:[MotionData sharedInstance].mConsequentLengthText];//@"昨天";
     }
     //: else if([nowDate timeIntervalSinceDate:msgDate] < 7 * OnedayTimeIntervalValue)
     else if([nowDate timeIntervalSinceDate:msgDate] < 7 * OnedayTimeIntervalValue)//一周内
     {
-        //: NSString *weekDay = [FFFKitUtil weekdayStr:msgDateComponents.weekday];
+        //: NSString *weekDay = [WorkKitUtil weekdayStr:msgDateComponents.weekday];
         NSString *weekDay = [WantUtil model:msgDateComponents.weekday];
         //: result = showDetail? [weekDay stringByAppendingFormat:@"%@ %zd:%02d",result,hour,(int)msgDateComponents.minute] : weekDay;
         result = showDetail? [weekDay stringByAppendingFormat:@"%@ %zd:%02d",result,hour,(int)msgDateComponents.minute] : weekDay;
@@ -1082,25 +1082,25 @@ static NSDateComponentsFormatter *main_teamData;
     //: if (totalMin > 0 && totalMin <= 5 * 60)
     if (totalMin > 0 && totalMin <= 5 * 60)
     {
-        //: showPeriodOfTime = [FFFLanguageManager getTextWithKey:@"wee_hours"];
+        //: showPeriodOfTime = [WorkLanguageManager getTextWithKey:@"wee_hours"];
         showPeriodOfTime = [InputRed preserve:[MotionData sharedInstance].mainBronzeColorText];//@"凌晨";
     }
     //: else if (totalMin > 5 * 60 && totalMin < 12 * 60)
     else if (totalMin > 5 * 60 && totalMin < 12 * 60)
     {
-        //: showPeriodOfTime = [FFFLanguageManager getTextWithKey:@"day_am"];
+        //: showPeriodOfTime = [WorkLanguageManager getTextWithKey:@"day_am"];
         showPeriodOfTime = [InputRed preserve:[MotionData sharedInstance].kMakeName];//@"上午";
     }
     //: else if (totalMin >= 12 * 60 && totalMin <= 18 * 60)
     else if (totalMin >= 12 * 60 && totalMin <= 18 * 60)
     {
-        //: showPeriodOfTime = [FFFLanguageManager getTextWithKey:@"day_pm"];
+        //: showPeriodOfTime = [WorkLanguageManager getTextWithKey:@"day_pm"];
         showPeriodOfTime = [InputRed preserve:[MotionData sharedInstance].kBubbleValue];//@"下午";
     }
     //: else if ((totalMin > 18 * 60 && totalMin <= (23 * 60 + 59)) || totalMin == 0)
     else if ((totalMin > 18 * 60 && totalMin <= (23 * 60 + 59)) || totalMin == 0)
     {
-        //: showPeriodOfTime = [FFFLanguageManager getTextWithKey:@"day_night"];
+        //: showPeriodOfTime = [WorkLanguageManager getTextWithKey:@"day_night"];
         showPeriodOfTime = [InputRed preserve:[MotionData sharedInstance].dreamCrowdedSuspectTitle];//@"晚上";
     }
     //: return showPeriodOfTime;
@@ -1112,19 +1112,19 @@ static NSDateComponentsFormatter *main_teamData;
 {
     //: static NSDictionary *daysOfWeekDict = nil;
     static NSDictionary *daysOfWeekDict = nil;
-    //: daysOfWeekDict = @{@(1):[FFFLanguageManager getTextWithKey:@"Sunday"],//@"星期日".,
+    //: daysOfWeekDict = @{@(1):[WorkLanguageManager getTextWithKey:@"Sunday"],//@"星期日".,
     daysOfWeekDict = @{@(1):[InputRed preserve:[MotionData sharedInstance].appLimitInfoValue],//@"星期日".,
-                       //: @(2):[FFFLanguageManager getTextWithKey:@"Monday"],//@"星期一".,
+                       //: @(2):[WorkLanguageManager getTextWithKey:@"Monday"],//@"星期一".,
                        @(2):[InputRed preserve:[MotionData sharedInstance].dreamAnnuallyTitle],//@"星期一".,
-                       //: @(3):[FFFLanguageManager getTextWithKey:@"Tuesday"],//@"星期二".,
+                       //: @(3):[WorkLanguageManager getTextWithKey:@"Tuesday"],//@"星期二".,
                        @(3):[InputRed preserve:[MotionData sharedInstance].showNeedValue],//@"星期二".,
-                       //: @(4):[FFFLanguageManager getTextWithKey:@"Wednesday"],//@"星期三".,
+                       //: @(4):[WorkLanguageManager getTextWithKey:@"Wednesday"],//@"星期三".,
                        @(4):[InputRed preserve:[MotionData sharedInstance].noti_robotData],//@"星期三".,
-                       //: @(5):[FFFLanguageManager getTextWithKey:@"Thursday"],//@"星期四".,
+                       //: @(5):[WorkLanguageManager getTextWithKey:@"Thursday"],//@"星期四".,
                        @(5):[InputRed preserve:[MotionData sharedInstance].dream_southeastText],//@"星期四".,
-                       //: @(6):[FFFLanguageManager getTextWithKey:@"Friday"],//@"星期五".,
+                       //: @(6):[WorkLanguageManager getTextWithKey:@"Friday"],//@"星期五".,
                        @(6):[InputRed preserve:[MotionData sharedInstance].show_accountTitle],//@"星期五".,
-                       //: @(7):[FFFLanguageManager getTextWithKey:@"Saturday"]};
+                       //: @(7):[WorkLanguageManager getTextWithKey:@"Saturday"]};
                        @(7):[InputRed preserve:[MotionData sharedInstance].showRemarkData]};//@"星期六".,};
     //: return [daysOfWeekDict objectForKey:@(dayOfWeek)];
     return [daysOfWeekDict objectForKey:@(dayOfWeek)];
@@ -1142,7 +1142,7 @@ static NSDateComponentsFormatter *main_teamData;
         switch (message.messageType) {
             //: case NIMMessageTypeNotification:
             case NIMMessageTypeNotification:
-                //: text = [FFFKitUtil notificationMessage:message];
+                //: text = [WorkKitUtil notificationMessage:message];
                 text = [WantUtil infoText:message];
                 //: break;
                 break;
@@ -1206,22 +1206,22 @@ static NSDateComponentsFormatter *main_teamData;
     switch (object.notificationType) {
         //: case NIMNotificationTypeTeam:{
         case NIMNotificationTypeTeam:{
-            //: return [FFFKitUtil teamNotificationFormatedMessage:message];
+            //: return [WorkKitUtil teamNotificationFormatedMessage:message];
             return [WantUtil language:message];
         }
         //: case NIMNotificationTypeSuperTeam:{
         case NIMNotificationTypeSuperTeam:{
-            //: return [FFFKitUtil superTeamNotificationFormatedMessage:message];
+            //: return [WorkKitUtil superTeamNotificationFormatedMessage:message];
             return [WantUtil notificationImage:message];
         }
         //: case NIMNotificationTypeNetCall:{
         case NIMNotificationTypeNetCall:{
-            //: return [FFFKitUtil netcallNotificationFormatedMessage:message];
+            //: return [WorkKitUtil netcallNotificationFormatedMessage:message];
             return [WantUtil messageOption:message];
         }
         //: case NIMNotificationTypeChatroom:{
         case NIMNotificationTypeChatroom:{
-            //: return [FFFKitUtil chatroomNotificationFormatedMessage:message];
+            //: return [WorkKitUtil chatroomNotificationFormatedMessage:message];
             return [WantUtil load:message];
         }
         //: default:
@@ -1243,27 +1243,27 @@ static NSDateComponentsFormatter *main_teamData;
     {
         //: NIMTeamNotificationContent *content = (NIMTeamNotificationContent*)object.content;
         NIMTeamNotificationContent *content = (NIMTeamNotificationContent*)object.content;
-        //: NSString *source = [FFFKitUtil teamNotificationSourceName:message];
+        //: NSString *source = [WorkKitUtil teamNotificationSourceName:message];
         NSString *source = [WantUtil clinic:message];
-        //: NSArray *targets = [FFFKitUtil teamNotificationTargetNames:message];
+        //: NSArray *targets = [WorkKitUtil teamNotificationTargetNames:message];
         NSArray *targets = [WantUtil titleOn:message];
         //: NSString *targetText = [targets count] > 1 ? [targets componentsJoinedByString:@","] : [targets firstObject];
         NSString *targetText = [targets count] > 1 ? [targets componentsJoinedByString:@","] : [targets firstObject];
-        //: NSString *teamName = [FFFKitUtil teamNotificationTeamShowName:message];
+        //: NSString *teamName = [WorkKitUtil teamNotificationTeamShowName:message];
         NSString *teamName = [WantUtil complete:message];
 
         //: switch (content.operationType) {
         switch (content.operationType) {
             //: case NIMTeamOperationTypeInvite:{
             case NIMTeamOperationTypeInvite:{
-                //: NSString *str = [NSString stringWithFormat:@"%@%@%@",source,[FFFLanguageManager getTextWithKey:@"message_helper_invite"],targets.firstObject];
+                //: NSString *str = [NSString stringWithFormat:@"%@%@%@",source,[WorkLanguageManager getTextWithKey:@"message_helper_invite"],targets.firstObject];
                 NSString *str = [NSString stringWithFormat:@"%@%@%@",source,[InputRed preserve:[MotionData sharedInstance].notiGooData],targets.firstObject];
                 //: if (targets.count>1) {
                 if (targets.count>1) {
-                    //: str = [str stringByAppendingFormat:@"%zd%@",targets.count,[FFFLanguageManager getTextWithKey:@"message_people"]];
+                    //: str = [str stringByAppendingFormat:@"%zd%@",targets.count,[WorkLanguageManager getTextWithKey:@"message_people"]];
                     str = [str stringByAppendingFormat:@"%zd%@",targets.count,[InputRed preserve:[MotionData sharedInstance].notiPicPlungeValue]];
                 }
-                //: str = [str stringByAppendingFormat:@"%@%@",[FFFLanguageManager getTextWithKey:@"message_enter"],teamName];
+                //: str = [str stringByAppendingFormat:@"%@%@",[WorkLanguageManager getTextWithKey:@"message_enter"],teamName];
                 str = [str stringByAppendingFormat:@"%@%@",[InputRed preserve:[MotionData sharedInstance].m_antName],teamName];
                 //: formatedMessage = str;
                 formatedMessage = str;
@@ -1272,7 +1272,7 @@ static NSDateComponentsFormatter *main_teamData;
                 break;
             //: case NIMTeamOperationTypeDismiss:
             case NIMTeamOperationTypeDismiss:
-                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[FFFLanguageManager getTextWithKey:@"message_dismissed"],teamName];
+                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[WorkLanguageManager getTextWithKey:@"message_dismissed"],teamName];
                 formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[InputRed preserve:[MotionData sharedInstance].user_withData],teamName];
                 //: break;
                 break;
@@ -1282,10 +1282,10 @@ static NSDateComponentsFormatter *main_teamData;
                 NSString *str = [NSString stringWithFormat:@"%@ %@",source,targets.firstObject];
                 //: if (targets.count>1) {
                 if (targets.count>1) {
-                    //: str = [str stringByAppendingFormat:@"%zd%@",targets.count,[FFFLanguageManager getTextWithKey:@"message_people"]];
+                    //: str = [str stringByAppendingFormat:@"%zd%@",targets.count,[WorkLanguageManager getTextWithKey:@"message_people"]];
                     str = [str stringByAppendingFormat:@"%zd%@",targets.count,[InputRed preserve:[MotionData sharedInstance].notiPicPlungeValue]];
                 }
-                //: str = [str stringByAppendingFormat:@"%@%@",[FFFLanguageManager getTextWithKey:@"message_move_out"],teamName];
+                //: str = [str stringByAppendingFormat:@"%@%@",[WorkLanguageManager getTextWithKey:@"message_move_out"],teamName];
                 str = [str stringByAppendingFormat:@"%@%@",[InputRed preserve:[MotionData sharedInstance].userSuccessContent],teamName];
                 //: formatedMessage = str;
                 formatedMessage = str;
@@ -1296,7 +1296,7 @@ static NSDateComponentsFormatter *main_teamData;
             case NIMTeamOperationTypeUpdate:
             {
 
-                //: NSString *update = [FFFLanguageManager getTextWithKey:@"message_have_update"];
+                //: NSString *update = [WorkLanguageManager getTextWithKey:@"message_have_update"];
                 NSString *update = [InputRed preserve:[MotionData sharedInstance].main_placeData];
                 //: id attachment = [content attachment];
                 id attachment = [content attachment];
@@ -1304,7 +1304,7 @@ static NSDateComponentsFormatter *main_teamData;
                 if ([attachment isKindOfClass:[NIMUpdateTeamInfoAttachment class]]) {
                     //: NIMUpdateTeamInfoAttachment *teamAttachment = (NIMUpdateTeamInfoAttachment *)attachment;
                     NIMUpdateTeamInfoAttachment *teamAttachment = (NIMUpdateTeamInfoAttachment *)attachment;
-                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[FFFLanguageManager getTextWithKey:@"message_information"]];
+                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[WorkLanguageManager getTextWithKey:@"message_information"]];
                     formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[InputRed preserve:[MotionData sharedInstance].appTossTitle]];
                     //如果只是单个项目项被修改则显示具体的修改项
                     //: if ([teamAttachment.values count] == 1) {
@@ -1315,49 +1315,49 @@ static NSDateComponentsFormatter *main_teamData;
                         switch (tag) {
                             //: case NIMTeamUpdateTagName:
                             case NIMTeamUpdateTagName:
-                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[FFFLanguageManager getTextWithKey:@"message_name"]];
+                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[WorkLanguageManager getTextWithKey:@"message_name"]];
                                 formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[InputRed preserve:[MotionData sharedInstance].notiMagnitudeegrityData]];
                                 //: break;
                                 break;
                             //: case NIMTeamUpdateTagIntro:
                             case NIMTeamUpdateTagIntro:
-                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[FFFLanguageManager getTextWithKey:@"message_introduce"]];
+                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[WorkLanguageManager getTextWithKey:@"message_introduce"]];
                                 formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[InputRed preserve:[MotionData sharedInstance].user_organizationalTitle]];
                                 //: break;
                                 break;
                             //: case NIMTeamUpdateTagAnouncement:
                             case NIMTeamUpdateTagAnouncement:
-                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[FFFLanguageManager getTextWithKey:@"message_proclamation"]];
+                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[WorkLanguageManager getTextWithKey:@"message_proclamation"]];
                                 formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[InputRed preserve:[MotionData sharedInstance].notiSchoolData]];
                                 //: break;
                                 break;
                             //: case NIMTeamUpdateTagJoinMode:
                             case NIMTeamUpdateTagJoinMode:
-                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[FFFLanguageManager getTextWithKey:@"message_verification_mode"]];
+                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[WorkLanguageManager getTextWithKey:@"message_verification_mode"]];
                                 formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[InputRed preserve:[MotionData sharedInstance].mainPotentiallyData]];
                                 //: break;
                                 break;
                             //: case NIMTeamUpdateTagAvatar:
                             case NIMTeamUpdateTagAvatar:
-                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[FFFLanguageManager getTextWithKey:@"message_head_portrait"]];
+                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[WorkLanguageManager getTextWithKey:@"message_head_portrait"]];
                                 formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[InputRed preserve:[MotionData sharedInstance].dreamCandleTitle]];
                                 //: break;
                                 break;
                             //: case NIMTeamUpdateTagInviteMode:
                             case NIMTeamUpdateTagInviteMode:
-                                //: formatedMessage = [NSString stringWithFormat:@"%@%@",source,[FFFLanguageManager getTextWithKey:@"message_invite_permission"]];
+                                //: formatedMessage = [NSString stringWithFormat:@"%@%@",source,[WorkLanguageManager getTextWithKey:@"message_invite_permission"]];
                                 formatedMessage = [NSString stringWithFormat:@"%@%@",source,[InputRed preserve:[MotionData sharedInstance].notiAccountName]];
                                 //: break;
                                 break;
                             //: case NIMTeamUpdateTagBeInviteMode:
                             case NIMTeamUpdateTagBeInviteMode:
-                                //: formatedMessage = [NSString stringWithFormat:@"%@%@",source,[FFFLanguageManager getTextWithKey:@"message_permissions_updated"]];
+                                //: formatedMessage = [NSString stringWithFormat:@"%@%@",source,[WorkLanguageManager getTextWithKey:@"message_permissions_updated"]];
                                 formatedMessage = [NSString stringWithFormat:@"%@%@",source,[InputRed preserve:[MotionData sharedInstance].main_mythAtTitle]];
                                 //: break;
                                 break;
                             //: case NIMTeamUpdateTagUpdateInfoMode:
                             case NIMTeamUpdateTagUpdateInfoMode:
-                                //: formatedMessage = [NSString stringWithFormat:@"%@%@",source,[FFFLanguageManager getTextWithKey:@"message_modification_permissions"]];
+                                //: formatedMessage = [NSString stringWithFormat:@"%@%@",source,[WorkLanguageManager getTextWithKey:@"message_modification_permissions"]];
                                 formatedMessage = [NSString stringWithFormat:@"%@%@",source,[InputRed preserve:[MotionData sharedInstance].dreamAfternoonName]];
                                 //: break;
                                 break;
@@ -1367,7 +1367,7 @@ static NSDateComponentsFormatter *main_teamData;
                                 NSString *muteState = teamAttachment.values.allValues.firstObject;
                                 //: BOOL muted = [muteState isEqualToString:@"0"] ? NO : YES;
                                 BOOL muted = [muteState isEqualToString:@"0"] ? NO : YES;
-                                //: formatedMessage = muted? [NSString stringWithFormat:@"%@%@",source,[FFFLanguageManager getTextWithKey:@"message_forbidden_speech"]]: [NSString stringWithFormat:@"%@%@",source,[FFFLanguageManager getTextWithKey:@"message_been_lifted"]];
+                                //: formatedMessage = muted? [NSString stringWithFormat:@"%@%@",source,[WorkLanguageManager getTextWithKey:@"message_forbidden_speech"]]: [NSString stringWithFormat:@"%@%@",source,[WorkLanguageManager getTextWithKey:@"message_been_lifted"]];
                                 formatedMessage = muted? [NSString stringWithFormat:@"%@%@",source,[InputRed preserve:[MotionData sharedInstance].mainDifficultyName]]: [NSString stringWithFormat:@"%@%@",source,[InputRed preserve:[MotionData sharedInstance].notiIllegalItemName]];
                                 //: break;
                                 break;
@@ -1382,7 +1382,7 @@ static NSDateComponentsFormatter *main_teamData;
                 }
                 //: if (formatedMessage == nil){
                 if (formatedMessage == nil){
-                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[FFFLanguageManager getTextWithKey:@"message_information"]];
+                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[WorkLanguageManager getTextWithKey:@"message_information"]];
                     formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[InputRed preserve:[MotionData sharedInstance].appTossTitle]];
                 }
             }
@@ -1390,7 +1390,7 @@ static NSDateComponentsFormatter *main_teamData;
                 break;
             //: case NIMTeamOperationTypeLeave:
             case NIMTeamOperationTypeLeave:
-                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[FFFLanguageManager getTextWithKey:@"message_leave"],teamName];
+                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[WorkLanguageManager getTextWithKey:@"message_leave"],teamName];
                 formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[InputRed preserve:[MotionData sharedInstance].show_planetData],teamName];
                 //: break;
                 break;
@@ -1399,11 +1399,11 @@ static NSDateComponentsFormatter *main_teamData;
                 //: if ([source isEqualToString:targetText]) {
                 if ([source isEqualToString:targetText]) {
                     //说明是以不需要验证的方式进入
-                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[FFFLanguageManager getTextWithKey:@"message_enter"],teamName];
+                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[WorkLanguageManager getTextWithKey:@"message_enter"],teamName];
                     formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[InputRed preserve:[MotionData sharedInstance].m_antName],teamName];
                 //: }else{
                 }else{
-                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,[FFFLanguageManager getTextWithKey:@"message_passed"],targetText,[FFFLanguageManager getTextWithKey:@"message_apply_for"]];
+                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,[WorkLanguageManager getTextWithKey:@"message_passed"],targetText,[WorkLanguageManager getTextWithKey:@"message_apply_for"]];
                     formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,[InputRed preserve:[MotionData sharedInstance].userTwinData],targetText,[InputRed preserve:[MotionData sharedInstance].app_federalData]];
                 }
             }
@@ -1411,25 +1411,25 @@ static NSDateComponentsFormatter *main_teamData;
                 break;
             //: case NIMTeamOperationTypeTransferOwner:
             case NIMTeamOperationTypeTransferOwner:
-                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[FFFLanguageManager getTextWithKey:@"message_transferred_group_master"],targetText];
+                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[WorkLanguageManager getTextWithKey:@"message_transferred_group_master"],targetText];
                 formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[InputRed preserve:[MotionData sharedInstance].userFindingTitle],targetText];
                 //: break;
                 break;
             //: case NIMTeamOperationTypeAddManager:
             case NIMTeamOperationTypeAddManager:
-                //: formatedMessage = [NSString stringWithFormat:@"%@%@",targetText,[FFFLanguageManager getTextWithKey:@"message_group_administrator"]];
+                //: formatedMessage = [NSString stringWithFormat:@"%@%@",targetText,[WorkLanguageManager getTextWithKey:@"message_group_administrator"]];
                 formatedMessage = [NSString stringWithFormat:@"%@%@",targetText,[InputRed preserve:[MotionData sharedInstance].dream_leastName]];
                 //: break;
                 break;
             //: case NIMTeamOperationTypeRemoveManager:
             case NIMTeamOperationTypeRemoveManager:
-                //: formatedMessage = [NSString stringWithFormat:@"%@%@",targetText,[FFFLanguageManager getTextWithKey:@"message_group_revoked"]];
+                //: formatedMessage = [NSString stringWithFormat:@"%@%@",targetText,[WorkLanguageManager getTextWithKey:@"message_group_revoked"]];
                 formatedMessage = [NSString stringWithFormat:@"%@%@",targetText,[InputRed preserve:[MotionData sharedInstance].k_congressionalText]];
                 //: break;
                 break;
             //: case NIMTeamOperationTypeAcceptInvitation:
             case NIMTeamOperationTypeAcceptInvitation:
-                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,[FFFLanguageManager getTextWithKey:@"message_accept"],targetText,[FFFLanguageManager getTextWithKey:@"message_invited_into"]];
+                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,[WorkLanguageManager getTextWithKey:@"message_accept"],targetText,[WorkLanguageManager getTextWithKey:@"message_invited_into"]];
                 formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,[InputRed preserve:[MotionData sharedInstance].noti_wortContent],targetText,[InputRed preserve:[MotionData sharedInstance].show_imageData]];
                 //: break;
                 break;
@@ -1442,11 +1442,11 @@ static NSDateComponentsFormatter *main_teamData;
                 {
                     //: BOOL mute = [(NIMMuteTeamMemberAttachment *)attachment flag];
                     BOOL mute = [(NIMMuteTeamMemberAttachment *)attachment flag];
-                    //: NSString *muteStr = mute? [FFFLanguageManager getTextWithKey:@"message_banned_post"] : [FFFLanguageManager getTextWithKey:@"message_remove_banned"];
+                    //: NSString *muteStr = mute? [WorkLanguageManager getTextWithKey:@"message_banned_post"] : [WorkLanguageManager getTextWithKey:@"message_remove_banned"];
                     NSString *muteStr = mute? [InputRed preserve:[MotionData sharedInstance].dreamAcknowledgeValue] : [InputRed preserve:[MotionData sharedInstance].show_pdaData];
                     //: NSString *str = [targets componentsJoinedByString:@","];
                     NSString *str = [targets componentsJoinedByString:@","];
-                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",str,[FFFLanguageManager getTextWithKey:@"message_remove_by"],source,muteStr];
+                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",str,[WorkLanguageManager getTextWithKey:@"message_remove_by"],source,muteStr];
                     formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",str,[InputRed preserve:[MotionData sharedInstance].k_controlValue],source,muteStr];
                 }
             }
@@ -1460,7 +1460,7 @@ static NSDateComponentsFormatter *main_teamData;
     }
     //: if (!formatedMessage.length) {
     if (!formatedMessage.length) {
-        //: formatedMessage = [FFFLanguageManager getTextWithKey:@"message_unknown_system_message"];
+        //: formatedMessage = [WorkLanguageManager getTextWithKey:@"message_unknown_system_message"];
         formatedMessage = [InputRed preserve:[MotionData sharedInstance].user_cussData];//@"未知系统消息".;
     }
     //: return formatedMessage;
@@ -1478,27 +1478,27 @@ static NSDateComponentsFormatter *main_teamData;
     {
         //: NIMSuperTeamNotificationContent *content = (NIMSuperTeamNotificationContent*)object.content;
         NIMSuperTeamNotificationContent *content = (NIMSuperTeamNotificationContent*)object.content;
-        //: NSString *source = [FFFKitUtil superTeamNotificationSourceName:message];
+        //: NSString *source = [WorkKitUtil superTeamNotificationSourceName:message];
         NSString *source = [WantUtil title:message];
-        //: NSArray *targets = [FFFKitUtil superTeamNotificationTargetNames:message];
+        //: NSArray *targets = [WorkKitUtil superTeamNotificationTargetNames:message];
         NSArray *targets = [WantUtil record:message];
         //: NSString *targetText = [targets count] > 1 ? [targets componentsJoinedByString:@","] : [targets firstObject];
         NSString *targetText = [targets count] > 1 ? [targets componentsJoinedByString:@","] : [targets firstObject];
-        //: NSString *teamName = [FFFKitUtil superTeamNotificationTeamShowName:message];
+        //: NSString *teamName = [WorkKitUtil superTeamNotificationTeamShowName:message];
         NSString *teamName = [WantUtil value:message];
 
         //: switch (content.operationType) {
         switch (content.operationType) {
             //: case NIMSuperTeamOperationTypeInvite:{
             case NIMSuperTeamOperationTypeInvite:{
-                //: NSString *str = [NSString stringWithFormat:@"%@%@%@",source,[FFFLanguageManager getTextWithKey:@"message_helper_invite"],targets.firstObject];
+                //: NSString *str = [NSString stringWithFormat:@"%@%@%@",source,[WorkLanguageManager getTextWithKey:@"message_helper_invite"],targets.firstObject];
                 NSString *str = [NSString stringWithFormat:@"%@%@%@",source,[InputRed preserve:[MotionData sharedInstance].notiGooData],targets.firstObject];
                 //: if (targets.count>1) {
                 if (targets.count>1) {
-                    //: str = [str stringByAppendingFormat:@"%zd%@",targets.count,[FFFLanguageManager getTextWithKey:@"message_people"]];
+                    //: str = [str stringByAppendingFormat:@"%zd%@",targets.count,[WorkLanguageManager getTextWithKey:@"message_people"]];
                     str = [str stringByAppendingFormat:@"%zd%@",targets.count,[InputRed preserve:[MotionData sharedInstance].notiPicPlungeValue]];
                 }
-                //: str = [str stringByAppendingFormat:@"%@%@",[FFFLanguageManager getTextWithKey:@"message_enter"],teamName];
+                //: str = [str stringByAppendingFormat:@"%@%@",[WorkLanguageManager getTextWithKey:@"message_enter"],teamName];
                 str = [str stringByAppendingFormat:@"%@%@",[InputRed preserve:[MotionData sharedInstance].m_antName],teamName];
                 //: formatedMessage = str;
                 formatedMessage = str;
@@ -1507,20 +1507,20 @@ static NSDateComponentsFormatter *main_teamData;
                 break;
             //: case NIMSuperTeamOperationTypeDismiss:
             case NIMSuperTeamOperationTypeDismiss:
-                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[FFFLanguageManager getTextWithKey:@"message_dismissed"],teamName];
+                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[WorkLanguageManager getTextWithKey:@"message_dismissed"],teamName];
                 formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[InputRed preserve:[MotionData sharedInstance].user_withData],teamName];
                 //: break;
                 break;
             //: case NIMSuperTeamOperationTypeKick:{
             case NIMSuperTeamOperationTypeKick:{
-                //: NSString *str = [NSString stringWithFormat:@"%@%@%@",source,[FFFLanguageManager getTextWithKey:@"message_remove_by"],targets.firstObject];
+                //: NSString *str = [NSString stringWithFormat:@"%@%@%@",source,[WorkLanguageManager getTextWithKey:@"message_remove_by"],targets.firstObject];
                 NSString *str = [NSString stringWithFormat:@"%@%@%@",source,[InputRed preserve:[MotionData sharedInstance].k_controlValue],targets.firstObject];
                 //: if (targets.count>1) {
                 if (targets.count>1) {
-                    //: str = [str stringByAppendingFormat:@"%zd%@",targets.count,[FFFLanguageManager getTextWithKey:@"message_people"]];
+                    //: str = [str stringByAppendingFormat:@"%zd%@",targets.count,[WorkLanguageManager getTextWithKey:@"message_people"]];
                     str = [str stringByAppendingFormat:@"%zd%@",targets.count,[InputRed preserve:[MotionData sharedInstance].notiPicPlungeValue]];
                 }
-                //: str = [str stringByAppendingFormat:@"%@%@",[FFFLanguageManager getTextWithKey:@"message_move_out"],teamName];
+                //: str = [str stringByAppendingFormat:@"%@%@",[WorkLanguageManager getTextWithKey:@"message_move_out"],teamName];
                 str = [str stringByAppendingFormat:@"%@%@",[InputRed preserve:[MotionData sharedInstance].userSuccessContent],teamName];
                 //: formatedMessage = str;
                 formatedMessage = str;
@@ -1530,7 +1530,7 @@ static NSDateComponentsFormatter *main_teamData;
             //: case NIMSuperTeamOperationTypeUpdate:
             case NIMSuperTeamOperationTypeUpdate:
             {
-                //: NSString *update = [FFFLanguageManager getTextWithKey:@"message_have_update"];
+                //: NSString *update = [WorkLanguageManager getTextWithKey:@"message_have_update"];
                 NSString *update = [InputRed preserve:[MotionData sharedInstance].main_placeData];
                 //: id attachment = [content attachment];
                 id attachment = [content attachment];
@@ -1538,7 +1538,7 @@ static NSDateComponentsFormatter *main_teamData;
                 if ([attachment isKindOfClass:[NIMUpdateSuperTeamInfoAttachment class]]) {
                     //: NIMUpdateSuperTeamInfoAttachment *teamAttachment = (NIMUpdateSuperTeamInfoAttachment *)attachment;
                     NIMUpdateSuperTeamInfoAttachment *teamAttachment = (NIMUpdateSuperTeamInfoAttachment *)attachment;
-                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[FFFLanguageManager getTextWithKey:@"message_information"]];
+                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[WorkLanguageManager getTextWithKey:@"message_information"]];
                     formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[InputRed preserve:[MotionData sharedInstance].appTossTitle]];
                     //如果只是单个项目项被修改则显示具体的修改项
                     //: if ([teamAttachment.values count] == 1) {
@@ -1549,43 +1549,43 @@ static NSDateComponentsFormatter *main_teamData;
                         switch (tag) {
                             //: case NIMSuperTeamUpdateTagName:
                             case NIMSuperTeamUpdateTagName:
-                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[FFFLanguageManager getTextWithKey:@"message_name"]];
+                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[WorkLanguageManager getTextWithKey:@"message_name"]];
                                 formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[InputRed preserve:[MotionData sharedInstance].notiMagnitudeegrityData]];
                                 //: break;
                                 break;
                             //: case NIMSuperTeamUpdateTagIntro:
                             case NIMSuperTeamUpdateTagIntro:
-                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[FFFLanguageManager getTextWithKey:@"message_introduce"]];
+                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[WorkLanguageManager getTextWithKey:@"message_introduce"]];
                                 formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[InputRed preserve:[MotionData sharedInstance].user_organizationalTitle]];
                                 //: break;
                                 break;
                             //: case NIMSuperTeamUpdateTagAnouncement:
                             case NIMSuperTeamUpdateTagAnouncement:
-                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[FFFLanguageManager getTextWithKey:@"message_proclamation"]];
+                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[WorkLanguageManager getTextWithKey:@"message_proclamation"]];
                                 formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[InputRed preserve:[MotionData sharedInstance].notiSchoolData]];
                                 //: break;
                                 break;
                             //: case NIMSuperTeamUpdateTagAvatar:
                             case NIMSuperTeamUpdateTagAvatar:
-                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[FFFLanguageManager getTextWithKey:@"message_verification_mode"]];
+                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[WorkLanguageManager getTextWithKey:@"message_verification_mode"]];
                                 formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[InputRed preserve:[MotionData sharedInstance].mainPotentiallyData]];
                                 //: break;
                                 break;
                             //: case NIMSuperTeamUpdateTagJoinMode:
                             case NIMSuperTeamUpdateTagJoinMode:
-                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[FFFLanguageManager getTextWithKey:@"message_head_portrait"]];
+                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[WorkLanguageManager getTextWithKey:@"message_head_portrait"]];
                                 formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[InputRed preserve:[MotionData sharedInstance].dreamCandleTitle]];
                                 //: break;
                                 break;
                             //: case NIMSuperTeamUpdateTagBeInviteMode:
                             case NIMSuperTeamUpdateTagBeInviteMode:
-                                //: formatedMessage = [NSString stringWithFormat:@"%@%@",source,[FFFLanguageManager getTextWithKey:@"message_invite_permission"]];
+                                //: formatedMessage = [NSString stringWithFormat:@"%@%@",source,[WorkLanguageManager getTextWithKey:@"message_invite_permission"]];
                                 formatedMessage = [NSString stringWithFormat:@"%@%@",source,[InputRed preserve:[MotionData sharedInstance].notiAccountName]];
                                 //: break;
                                 break;
                             //: case NIMSuperTeamUpdateTagClientCustom:
                             case NIMSuperTeamUpdateTagClientCustom:
-                                //: formatedMessage = [NSString stringWithFormat:@"%@%@",source,[FFFLanguageManager getTextWithKey:@"message_custom_extension"]];
+                                //: formatedMessage = [NSString stringWithFormat:@"%@%@",source,[WorkLanguageManager getTextWithKey:@"message_custom_extension"]];
                                 formatedMessage = [NSString stringWithFormat:@"%@%@",source,[InputRed preserve:[MotionData sharedInstance].show_comfortableValue]];
                                 //: break;
                                 break;
@@ -1595,7 +1595,7 @@ static NSDateComponentsFormatter *main_teamData;
                                 NSString *muteState = teamAttachment.values.allValues.firstObject;
                                 //: BOOL muted = [muteState isEqualToString:@"0"] ? NO : YES;
                                 BOOL muted = [muteState isEqualToString:@"0"] ? NO : YES;
-                                //: formatedMessage = muted? [NSString stringWithFormat:@"%@%@",source,[FFFLanguageManager getTextWithKey:@"message_forbidden_speech"]]: [NSString stringWithFormat:@"%@%@",source,[FFFLanguageManager getTextWithKey:@"message_been_lifted"]];
+                                //: formatedMessage = muted? [NSString stringWithFormat:@"%@%@",source,[WorkLanguageManager getTextWithKey:@"message_forbidden_speech"]]: [NSString stringWithFormat:@"%@%@",source,[WorkLanguageManager getTextWithKey:@"message_been_lifted"]];
                                 formatedMessage = muted? [NSString stringWithFormat:@"%@%@",source,[InputRed preserve:[MotionData sharedInstance].mainDifficultyName]]: [NSString stringWithFormat:@"%@%@",source,[InputRed preserve:[MotionData sharedInstance].notiIllegalItemName]];
                                 //: break;
                                 break;
@@ -1610,7 +1610,7 @@ static NSDateComponentsFormatter *main_teamData;
                 }
                 //: if (formatedMessage.length == 0){
                 if (formatedMessage.length == 0){
-                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[FFFLanguageManager getTextWithKey:@"message_information"]];
+                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[WorkLanguageManager getTextWithKey:@"message_information"]];
                     formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[InputRed preserve:[MotionData sharedInstance].appTossTitle]];
                 }
             }
@@ -1618,7 +1618,7 @@ static NSDateComponentsFormatter *main_teamData;
                 break;
             //: case NIMSuperTeamOperationTypeLeave:
             case NIMSuperTeamOperationTypeLeave:
-                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[FFFLanguageManager getTextWithKey:@"message_leave"],teamName];
+                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[WorkLanguageManager getTextWithKey:@"message_leave"],teamName];
                 formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[InputRed preserve:[MotionData sharedInstance].show_planetData],teamName];
                 //: break;
                 break;
@@ -1627,11 +1627,11 @@ static NSDateComponentsFormatter *main_teamData;
                 //: if ([source isEqualToString:targetText]) {
                 if ([source isEqualToString:targetText]) {
                     //说明是以不需要验证的方式进入
-                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[FFFLanguageManager getTextWithKey:@"message_enter"],teamName];
+                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[WorkLanguageManager getTextWithKey:@"message_enter"],teamName];
                     formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[InputRed preserve:[MotionData sharedInstance].m_antName],teamName];
                 //: }else{
                 }else{
-                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,[FFFLanguageManager getTextWithKey:@"message_passed"],targetText,[FFFLanguageManager getTextWithKey:@"message_apply_for"]];
+                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,[WorkLanguageManager getTextWithKey:@"message_passed"],targetText,[WorkLanguageManager getTextWithKey:@"message_apply_for"]];
                     formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,[InputRed preserve:[MotionData sharedInstance].userTwinData],targetText,[InputRed preserve:[MotionData sharedInstance].app_federalData]];
                 }
             }
@@ -1639,25 +1639,25 @@ static NSDateComponentsFormatter *main_teamData;
                 break;
             //: case NIMSuperTeamOperationTypeTransferOwner:
             case NIMSuperTeamOperationTypeTransferOwner:
-                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[FFFLanguageManager getTextWithKey:@"message_transferred_group_master"],targets.firstObject];
+                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[WorkLanguageManager getTextWithKey:@"message_transferred_group_master"],targets.firstObject];
                 formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[InputRed preserve:[MotionData sharedInstance].userFindingTitle],targets.firstObject];
                 //: break;
                 break;
             //: case NIMSuperTeamOperationTypeAddManager:
             case NIMSuperTeamOperationTypeAddManager:
-                //: formatedMessage = [NSString stringWithFormat:@"%@%@",targets.firstObject,[FFFLanguageManager getTextWithKey:@"message_group_administrator"]];
+                //: formatedMessage = [NSString stringWithFormat:@"%@%@",targets.firstObject,[WorkLanguageManager getTextWithKey:@"message_group_administrator"]];
                 formatedMessage = [NSString stringWithFormat:@"%@%@",targets.firstObject,[InputRed preserve:[MotionData sharedInstance].dream_leastName]];
                 //: break;
                 break;
             //: case NIMSuperTeamOperationTypeRemoveManager:
             case NIMSuperTeamOperationTypeRemoveManager:
-                //: formatedMessage = [NSString stringWithFormat:@"%@%@",targets.firstObject,[FFFLanguageManager getTextWithKey:@"message_group_revoked"]];
+                //: formatedMessage = [NSString stringWithFormat:@"%@%@",targets.firstObject,[WorkLanguageManager getTextWithKey:@"message_group_revoked"]];
                 formatedMessage = [NSString stringWithFormat:@"%@%@",targets.firstObject,[InputRed preserve:[MotionData sharedInstance].k_congressionalText]];
                 //: break;
                 break;
             //: case NIMSuperTeamOperationTypeAcceptInvitation:
             case NIMSuperTeamOperationTypeAcceptInvitation:
-                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,[FFFLanguageManager getTextWithKey:@"message_accept"],targetText,[FFFLanguageManager getTextWithKey:@"message_invited_into"]];
+                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,[WorkLanguageManager getTextWithKey:@"message_accept"],targetText,[WorkLanguageManager getTextWithKey:@"message_invited_into"]];
                 formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,[InputRed preserve:[MotionData sharedInstance].noti_wortContent],targetText,[InputRed preserve:[MotionData sharedInstance].show_imageData]];
                 //: break;
                 break;
@@ -1670,11 +1670,11 @@ static NSDateComponentsFormatter *main_teamData;
                 {
                     //: BOOL mute = [(NIMMuteSuperTeamMemberAttachment *)attachment flag];
                     BOOL mute = [(NIMMuteSuperTeamMemberAttachment *)attachment flag];
-                    //: NSString *muteStr = mute? [FFFLanguageManager getTextWithKey:@"message_banned_post"] : [FFFLanguageManager getTextWithKey:@"message_remove_banned"];
+                    //: NSString *muteStr = mute? [WorkLanguageManager getTextWithKey:@"message_banned_post"] : [WorkLanguageManager getTextWithKey:@"message_remove_banned"];
                     NSString *muteStr = mute? [InputRed preserve:[MotionData sharedInstance].dreamAcknowledgeValue] : [InputRed preserve:[MotionData sharedInstance].show_pdaData];
                     //: NSString *str = [targets componentsJoinedByString:@","];
                     NSString *str = [targets componentsJoinedByString:@","];
-                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",str,[FFFLanguageManager getTextWithKey:@"message_remove_by"],source,muteStr];
+                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",str,[WorkLanguageManager getTextWithKey:@"message_remove_by"],source,muteStr];
                     formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",str,[InputRed preserve:[MotionData sharedInstance].k_controlValue],source,muteStr];
                 }
             }
@@ -1687,7 +1687,7 @@ static NSDateComponentsFormatter *main_teamData;
     }
     //: if (!formatedMessage.length) {
     if (!formatedMessage.length) {
-        //: formatedMessage = [FFFLanguageManager getTextWithKey:@"message_unknown_system_message"];
+        //: formatedMessage = [WorkLanguageManager getTextWithKey:@"message_unknown_system_message"];
         formatedMessage = [InputRed preserve:[MotionData sharedInstance].user_cussData];//@"未知系统消息";
     }
     //: return formatedMessage;
@@ -1702,35 +1702,35 @@ static NSDateComponentsFormatter *main_teamData;
     switch (record.callStatus) {
         //: case NIMRtcCallStatusCanceled:
         case NIMRtcCallStatusCanceled:
-            //: return [FFFLanguageManager getTextWithKey:@"app_avchat_cancel"];
+            //: return [WorkLanguageManager getTextWithKey:@"app_avchat_cancel"];
             return [InputRed preserve:[MotionData sharedInstance].noti_robotPromoteData];//@"已取消".;
         //: case NIMRtcCallStatusTimeout:
         case NIMRtcCallStatusTimeout:
-            //: return [FFFLanguageManager getTextWithKey:@"app_avchat_no_pick_up"];
+            //: return [WorkLanguageManager getTextWithKey:@"app_avchat_no_pick_up"];
             return [InputRed preserve:[MotionData sharedInstance].noti_antTitle];//@"未接听".;
         //: case NIMRtcCallStatusRejected:
         case NIMRtcCallStatusRejected:
-            //: return [FFFLanguageManager getTextWithKey:@"app_avchat_has_reject"];
+            //: return [WorkLanguageManager getTextWithKey:@"app_avchat_has_reject"];
             return [InputRed preserve:[MotionData sharedInstance].notiMakeValue];//@"已拒绝".;
         //: case NIMRtcCallStatusBusy:
         case NIMRtcCallStatusBusy:
             //: if ([message.from isEqualToString:NIMSDK.sharedSDK.loginManager.currentAccount]) {
             if ([message.from isEqualToString:NIMSDK.sharedSDK.loginManager.currentAccount]) {
-                //: return [FFFLanguageManager getTextWithKey:@"app_avchat_has_reject"];
+                //: return [WorkLanguageManager getTextWithKey:@"app_avchat_has_reject"];
                 return [InputRed preserve:[MotionData sharedInstance].notiMakeValue];//@"已拒绝".;
             }
-            //: return [FFFLanguageManager getTextWithKey:@"app_avchat_is_busy_opposite"];
+            //: return [WorkLanguageManager getTextWithKey:@"app_avchat_is_busy_opposite"];
             return [InputRed preserve:[MotionData sharedInstance].k_mailValue];//@"对方正忙".;
         //: case NIMRtcCallStatusComplete: {
         case NIMRtcCallStatusComplete: {
             //: NSTimeInterval duration = [record.durations nimkit_jsonInteger:NIMSDK.sharedSDK.loginManager.currentAccount?:@""];
             NSTimeInterval duration = [record.durations withTeam:NIMSDK.sharedSDK.loginManager.currentAccount?:@""];
-            //: return [NSString stringWithFormat:@"%@ %@",[FFFLanguageManager getTextWithKey:@"message_call_duration"],[FFFKitUtil durationTextWithSeconds:duration]];
+            //: return [NSString stringWithFormat:@"%@ %@",[WorkLanguageManager getTextWithKey:@"message_call_duration"],[WorkKitUtil durationTextWithSeconds:duration]];
             return [NSString stringWithFormat:@"%@ %@",[InputRed preserve:[MotionData sharedInstance].appSuspectData],[WantUtil showSeconds:duration]];
         }
         //: default:
         default:
-            //: return [FFFLanguageManager getTextWithKey:@"online_state_event_manager_unknown"];
+            //: return [WorkLanguageManager getTextWithKey:@"online_state_event_manager_unknown"];
             return [InputRed preserve:[MotionData sharedInstance].main_obtainTitle];//@"未知".;
     }
 }
@@ -1749,14 +1749,14 @@ static NSDateComponentsFormatter *main_teamData;
     switch (content.eventType) {
         //: case NIMNetCallEventTypeMiss:{
         case NIMNetCallEventTypeMiss:{
-            //: text = [FFFLanguageManager getTextWithKey:@"app_avchat_no_pick_up"];
+            //: text = [WorkLanguageManager getTextWithKey:@"app_avchat_no_pick_up"];
             text = [InputRed preserve:[MotionData sharedInstance].noti_antTitle];//@"未接听".;
             //: break;
             break;
         }
         //: case NIMNetCallEventTypeBill:{
         case NIMNetCallEventTypeBill:{
-            //: text = ([object.message.from isEqualToString:currentAccount])? [FFFLanguageManager getTextWithKey:@"message_call_duration"] : [FFFLanguageManager getTextWithKey:@"message_call_receiving"];
+            //: text = ([object.message.from isEqualToString:currentAccount])? [WorkLanguageManager getTextWithKey:@"message_call_duration"] : [WorkLanguageManager getTextWithKey:@"message_call_receiving"];
             text = ([object.message.from isEqualToString:currentAccount])? [InputRed preserve:[MotionData sharedInstance].appSuspectData] : [InputRed preserve:[MotionData sharedInstance].main_kaLendValue];
             //: NSTimeInterval duration = content.duration;
             NSTimeInterval duration = content.duration;
@@ -1769,14 +1769,14 @@ static NSDateComponentsFormatter *main_teamData;
         }
         //: case NIMNetCallEventTypeReject:{
         case NIMNetCallEventTypeReject:{
-            //: text = ([object.message.from isEqualToString:currentAccount])? [FFFLanguageManager getTextWithKey:@"app_avchat_is_busy_opposite"] : [FFFLanguageManager getTextWithKey:@"message_helper_already_no"];
+            //: text = ([object.message.from isEqualToString:currentAccount])? [WorkLanguageManager getTextWithKey:@"app_avchat_is_busy_opposite"] : [WorkLanguageManager getTextWithKey:@"message_helper_already_no"];
             text = ([object.message.from isEqualToString:currentAccount])? [InputRed preserve:[MotionData sharedInstance].k_mailValue] : [InputRed preserve:[MotionData sharedInstance].dream_emergingData];
             //: break;
             break;
         }
         //: case NIMNetCallEventTypeNoResponse:{
         case NIMNetCallEventTypeNoResponse:{
-            //: text = [FFFLanguageManager getTextWithKey:@"message_access_failure"];
+            //: text = [WorkLanguageManager getTextWithKey:@"message_access_failure"];
             text = [InputRed preserve:[MotionData sharedInstance].main_viewData];//@"未接通，已取消".;
             //: break;
             break;
@@ -1803,7 +1803,7 @@ static NSDateComponentsFormatter *main_teamData;
     for (NIMChatroomNotificationMember *memebr in content.targets) {
         //: if ([memebr.userId isEqualToString:[[NIMSDK sharedSDK].loginManager currentAccount]]) {
         if ([memebr.userId isEqualToString:[[NIMSDK sharedSDK].loginManager currentAccount]]) {
-           //: [targetNicks addObject:[FFFLanguageManager getTextWithKey:@"message_helper_you"]];
+           //: [targetNicks addObject:[WorkLanguageManager getTextWithKey:@"message_helper_you"]];
            [targetNicks addObject:[InputRed preserve:[MotionData sharedInstance].userSteadValue]];// @"你".
         //: }else{
         }else{
@@ -1821,19 +1821,19 @@ static NSDateComponentsFormatter *main_teamData;
         //: case NIMChatroomEventTypeEnter:
         case NIMChatroomEventTypeEnter:
         {
-            //: return [NSString stringWithFormat:@"%@%@%@".nim_localized,[FFFLanguageManager getTextWithKey:@"message_welcome"],targetText,[FFFLanguageManager getTextWithKey:@""]];
+            //: return [NSString stringWithFormat:@"%@%@%@".nim_localized,[WorkLanguageManager getTextWithKey:@"message_welcome"],targetText,[WorkLanguageManager getTextWithKey:@""]];
             return [NSString stringWithFormat:@"%@%@%@".titleBy,[InputRed preserve:[MotionData sharedInstance].appEvidenceSessionData],targetText,[InputRed preserve:@""]];
         }
         //: case NIMChatroomEventTypeAddBlack:
         case NIMChatroomEventTypeAddBlack:
         {
-            //: return [NSString stringWithFormat:@"%@ %@", targetText,[FFFLanguageManager getTextWithKey:@"message_blacklisted_administrator"]];
+            //: return [NSString stringWithFormat:@"%@ %@", targetText,[WorkLanguageManager getTextWithKey:@"message_blacklisted_administrator"]];
             return [NSString stringWithFormat:@"%@ %@", targetText,[InputRed preserve:[MotionData sharedInstance].noti_botScarTingValue]];
         }
         //: case NIMChatroomEventTypeRemoveBlack:
         case NIMChatroomEventTypeRemoveBlack:
         {
-            //: return [NSString stringWithFormat:@"%@ %@",targetText,[FFFLanguageManager getTextWithKey:@"message_removed_blacklist_administrator"]];
+            //: return [NSString stringWithFormat:@"%@ %@",targetText,[WorkLanguageManager getTextWithKey:@"message_removed_blacklist_administrator"]];
             return [NSString stringWithFormat:@"%@ %@",targetText,[InputRed preserve:[MotionData sharedInstance].appBarrelNameData]];
         }
         //: case NIMChatroomEventTypeAddMute:
@@ -1842,68 +1842,68 @@ static NSDateComponentsFormatter *main_teamData;
             //: if (content.targets.count == 1 && [[content.targets.firstObject userId] isEqualToString:[[NIMSDK sharedSDK].loginManager currentAccount]])
             if (content.targets.count == 1 && [[content.targets.firstObject userId] isEqualToString:[[NIMSDK sharedSDK].loginManager currentAccount]])
             {
-                //: return [FFFLanguageManager getTextWithKey:@"message_temporarily_muted"];
+                //: return [WorkLanguageManager getTextWithKey:@"message_temporarily_muted"];
                 return [InputRed preserve:[MotionData sharedInstance].m_ripTitle];//@"你已被禁言".;
             }
             //: else
             else
             {
-                //: return [NSString stringWithFormat:@"%@ %@".nim_localized,targetText,[FFFLanguageManager getTextWithKey:@"message_muted_administrator"]];
+                //: return [NSString stringWithFormat:@"%@ %@".nim_localized,targetText,[WorkLanguageManager getTextWithKey:@"message_muted_administrator"]];
                 return [NSString stringWithFormat:@"%@ %@".titleBy,targetText,[InputRed preserve:[MotionData sharedInstance].showMeasureData]];
             }
         }
         //: case NIMChatroomEventTypeRemoveMute:
         case NIMChatroomEventTypeRemoveMute:
         {
-            //: return [NSString stringWithFormat:@"%@ %@".nim_localized,targetText,[FFFLanguageManager getTextWithKey:@"message_unmuted_administrator"]];
+            //: return [NSString stringWithFormat:@"%@ %@".nim_localized,targetText,[WorkLanguageManager getTextWithKey:@"message_unmuted_administrator"]];
             return [NSString stringWithFormat:@"%@ %@".titleBy,targetText,[InputRed preserve:[MotionData sharedInstance].userItsCareContent]];
         }
         //: case NIMChatroomEventTypeAddManager:
         case NIMChatroomEventTypeAddManager:
         {
-            //: return [NSString stringWithFormat:@"%@ %@".nim_localized,targetText,[FFFLanguageManager getTextWithKey:@"message_appointed_admin"]];
+            //: return [NSString stringWithFormat:@"%@ %@".nim_localized,targetText,[WorkLanguageManager getTextWithKey:@"message_appointed_admin"]];
             return [NSString stringWithFormat:@"%@ %@".titleBy,targetText,[InputRed preserve:[MotionData sharedInstance].showAloneLeastName]];
         }
         //: case NIMChatroomEventTypeRemoveManager:
         case NIMChatroomEventTypeRemoveManager:
         {
-            //: return [NSString stringWithFormat:@"%@ %@".nim_localized,targetText,[FFFLanguageManager getTextWithKey:@"message_dismissed_admin"]];
+            //: return [NSString stringWithFormat:@"%@ %@".nim_localized,targetText,[WorkLanguageManager getTextWithKey:@"message_dismissed_admin"]];
             return [NSString stringWithFormat:@"%@ %@".titleBy,targetText,[InputRed preserve:[MotionData sharedInstance].dreamZingData]];
         }
         //: case NIMChatroomEventTypeRemoveCommon:
         case NIMChatroomEventTypeRemoveCommon:
         {
-            //: return [NSString stringWithFormat:@"%@ %@".nim_localized,targetText,[FFFLanguageManager getTextWithKey:@"message_dismissed_member_identity"]];
+            //: return [NSString stringWithFormat:@"%@ %@".nim_localized,targetText,[WorkLanguageManager getTextWithKey:@"message_dismissed_member_identity"]];
             return [NSString stringWithFormat:@"%@ %@".titleBy,targetText,[InputRed preserve:[MotionData sharedInstance].mainStoveValue]];
         }
         //: case NIMChatroomEventTypeAddCommon:
         case NIMChatroomEventTypeAddCommon:
         {
-            //: return [NSString stringWithFormat:@"%@%@".nim_localized,targetText,[FFFLanguageManager getTextWithKey:@"message_added_member"]];
+            //: return [NSString stringWithFormat:@"%@%@".nim_localized,targetText,[WorkLanguageManager getTextWithKey:@"message_added_member"]];
             return [NSString stringWithFormat:@"%@%@".titleBy,targetText,[InputRed preserve:[MotionData sharedInstance].k_pollutionName]];
         }
         //: case NIMChatroomEventTypeInfoUpdated:
         case NIMChatroomEventTypeInfoUpdated:
         {
-            //: return [FFFLanguageManager getTextWithKey:@"message_announcement_updated"];
+            //: return [WorkLanguageManager getTextWithKey:@"message_announcement_updated"];
             return [InputRed preserve:[MotionData sharedInstance].m_leastName];//@"直播间公告已更新".;
         }
         //: case NIMChatroomEventTypeKicked:
         case NIMChatroomEventTypeKicked:
         {
-            //: return [NSString stringWithFormat:@"%@%@".nim_localized,targetText,[FFFLanguageManager getTextWithKey:@"message_removed_room"]];
+            //: return [NSString stringWithFormat:@"%@%@".nim_localized,targetText,[WorkLanguageManager getTextWithKey:@"message_removed_room"]];
             return [NSString stringWithFormat:@"%@%@".titleBy,targetText,[InputRed preserve:[MotionData sharedInstance].show_aloneValue]];
         }
         //: case NIMChatroomEventTypeExit:
         case NIMChatroomEventTypeExit:
         {
-            //: return [NSString stringWithFormat:@"%@%@".nim_localized,targetText,[FFFLanguageManager getTextWithKey:@"message_left_room"]];
+            //: return [NSString stringWithFormat:@"%@%@".nim_localized,targetText,[WorkLanguageManager getTextWithKey:@"message_left_room"]];
             return [NSString stringWithFormat:@"%@%@".titleBy,targetText,[InputRed preserve:[MotionData sharedInstance].userToeSoutheastName]];
         }
         //: case NIMChatroomEventTypeClosed:
         case NIMChatroomEventTypeClosed:
         {
-            //: return [FFFLanguageManager getTextWithKey:@"message_room_closed"];
+            //: return [WorkLanguageManager getTextWithKey:@"message_room_closed"];
             return [InputRed preserve:[MotionData sharedInstance].showThanEmotionData];//@"直播间已关闭".;
         }
         //: case NIMChatroomEventTypeAddMuteTemporarily:
@@ -1912,45 +1912,45 @@ static NSDateComponentsFormatter *main_teamData;
             //: if (content.targets.count == 1 && [[content.targets.firstObject userId] isEqualToString:[[NIMSDK sharedSDK].loginManager currentAccount]])
             if (content.targets.count == 1 && [[content.targets.firstObject userId] isEqualToString:[[NIMSDK sharedSDK].loginManager currentAccount]])
             {
-                //: return [FFFLanguageManager getTextWithKey:@"message_temporarily_muted"];
+                //: return [WorkLanguageManager getTextWithKey:@"message_temporarily_muted"];
                 return [InputRed preserve:[MotionData sharedInstance].m_ripTitle];//@"你已被临时禁言".;
             }
             //: else
             else
             {
-                //: return [NSString stringWithFormat:@"%@%@".nim_localized,targetText,[FFFLanguageManager getTextWithKey:@"message_muted_administrator"]];
+                //: return [NSString stringWithFormat:@"%@%@".nim_localized,targetText,[WorkLanguageManager getTextWithKey:@"message_muted_administrator"]];
                 return [NSString stringWithFormat:@"%@%@".titleBy,targetText,[InputRed preserve:[MotionData sharedInstance].showMeasureData]];
             }
         }
         //: case NIMChatroomEventTypeRemoveMuteTemporarily:
         case NIMChatroomEventTypeRemoveMuteTemporarily:
         {
-            //: return [NSString stringWithFormat:@"%@%@".nim_localized,targetText,[FFFLanguageManager getTextWithKey:@"message_dismiss_temporary"]];
+            //: return [NSString stringWithFormat:@"%@%@".nim_localized,targetText,[WorkLanguageManager getTextWithKey:@"message_dismiss_temporary"]];
             return [NSString stringWithFormat:@"%@%@".titleBy,targetText,[InputRed preserve:[MotionData sharedInstance].showTypicalValue]];
         }
         //: case NIMChatroomEventTypeMemberUpdateInfo:
         case NIMChatroomEventTypeMemberUpdateInfo:
         {
-            //: return [NSString stringWithFormat:@"%@%@".nim_localized,targetText,[FFFLanguageManager getTextWithKey:@"message_updated_information"]];
+            //: return [NSString stringWithFormat:@"%@%@".nim_localized,targetText,[WorkLanguageManager getTextWithKey:@"message_updated_information"]];
             return [NSString stringWithFormat:@"%@%@".titleBy,targetText,[InputRed preserve:[MotionData sharedInstance].appIllegalName]];
         }
         //: case NIMChatroomEventTypeRoomMuted:
         case NIMChatroomEventTypeRoomMuted:
         {
-            //: return [FFFLanguageManager getTextWithKey:@"message_administrator_speak"];
+            //: return [WorkLanguageManager getTextWithKey:@"message_administrator_speak"];
             return [InputRed preserve:[MotionData sharedInstance].showBindData];//@"全体禁言，管理员可发言".;
         }
         //: case NIMChatroomEventTypeRoomUnMuted:
         case NIMChatroomEventTypeRoomUnMuted:
         {
-            //: return [FFFLanguageManager getTextWithKey:@"message_dismiss_whole_mute"];
+            //: return [WorkLanguageManager getTextWithKey:@"message_dismiss_whole_mute"];
             return [InputRed preserve:[MotionData sharedInstance].dream_scaleName];//@"解除全体禁言".;
         }
         //: case NIMChatroomEventTypeQueueChange:
         case NIMChatroomEventTypeQueueChange:
         //: case NIMChatroomEventTypeQueueBatchChange:
         case NIMChatroomEventTypeQueueBatchChange:
-            //: return [NSString stringWithFormat:@"%@%@".nim_localized,opeText,[FFFLanguageManager getTextWithKey:@"message_changed_room_queue"]];
+            //: return [NSString stringWithFormat:@"%@%@".nim_localized,opeText,[WorkLanguageManager getTextWithKey:@"message_changed_room_queue"]];
             return [NSString stringWithFormat:@"%@%@".titleBy,opeText,[InputRed preserve:[MotionData sharedInstance].noti_imageZineContent]];
         //: default:
         default:
@@ -1976,11 +1976,11 @@ static NSDateComponentsFormatter *main_teamData;
     NSString *currentAccount = [[NIMSDK sharedSDK].loginManager currentAccount];
     //: if ([content.sourceID isEqualToString:currentAccount]) {
     if ([content.sourceID isEqualToString:currentAccount]) {
-        //: source = [FFFLanguageManager getTextWithKey:@"message_helper_you"];
+        //: source = [WorkLanguageManager getTextWithKey:@"message_helper_you"];
         source = [InputRed preserve:[MotionData sharedInstance].userSteadValue];//@"你".;
     //: }else{
     }else{
-        //: source = [FFFKitUtil showNick:content.sourceID inSession:message.session];
+        //: source = [WorkKitUtil showNick:content.sourceID inSession:message.session];
         source = [WantUtil teamSessionText:content.sourceID last:message.session];
     }
     //: return source;
@@ -2001,11 +2001,11 @@ static NSDateComponentsFormatter *main_teamData;
     for (NSString *item in content.targetIDs) {
         //: if ([item isEqualToString:currentAccount]) {
         if ([item isEqualToString:currentAccount]) {
-            //: [targets addObject:[FFFLanguageManager getTextWithKey:@"message_helper_you"]];
+            //: [targets addObject:[WorkLanguageManager getTextWithKey:@"message_helper_you"]];
             [targets addObject:[InputRed preserve:[MotionData sharedInstance].userSteadValue]];
         //: }else{
         }else{
-            //: NSString *targetShowName = [FFFKitUtil showNick:item inSession:message.session];
+            //: NSString *targetShowName = [WorkKitUtil showNick:item inSession:message.session];
             NSString *targetShowName = [WantUtil teamSessionText:item last:message.session];
             //: [targets addObject:targetShowName];
             [targets addObject:targetShowName];
@@ -2020,7 +2020,7 @@ static NSDateComponentsFormatter *main_teamData;
 + (NSString *)complete:(NIMMessage *)message{
     //: NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:message.session.sessionId];
     NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:message.session.sessionId];
-    //: NSString *teamName = [FFFLanguageManager getTextWithKey:@"contact_my_group_activity_title"];
+    //: NSString *teamName = [WorkLanguageManager getTextWithKey:@"contact_my_group_activity_title"];
     NSString *teamName = [InputRed preserve:[MotionData sharedInstance].main_leastValue];
     //: return teamName;
     return teamName;
@@ -2038,11 +2038,11 @@ static NSDateComponentsFormatter *main_teamData;
     NSString *currentAccount = [[NIMSDK sharedSDK].loginManager currentAccount];
     //: if ([content.sourceID isEqualToString:currentAccount]) {
     if ([content.sourceID isEqualToString:currentAccount]) {
-        //: source = [FFFLanguageManager getTextWithKey:@"message_helper_you"];
+        //: source = [WorkLanguageManager getTextWithKey:@"message_helper_you"];
         source = [InputRed preserve:[MotionData sharedInstance].userSteadValue];//@"你".;
     //: }else{
     }else{
-        //: source = [FFFKitUtil showNick:content.sourceID inSession:message.session];
+        //: source = [WorkKitUtil showNick:content.sourceID inSession:message.session];
         source = [WantUtil teamSessionText:content.sourceID last:message.session];
     }
     //: return source;
@@ -2063,11 +2063,11 @@ static NSDateComponentsFormatter *main_teamData;
     for (NSString *item in content.targetIDs) {
         //: if ([item isEqualToString:currentAccount]) {
         if ([item isEqualToString:currentAccount]) {
-            //: [targets addObject:[FFFLanguageManager getTextWithKey:@"message_helper_you"]];
+            //: [targets addObject:[WorkLanguageManager getTextWithKey:@"message_helper_you"]];
             [targets addObject:[InputRed preserve:[MotionData sharedInstance].userSteadValue]];
         //: }else{
         }else{
-            //: NSString *targetShowName = [FFFKitUtil showNick:item inSession:message.session];
+            //: NSString *targetShowName = [WorkKitUtil showNick:item inSession:message.session];
             NSString *targetShowName = [WantUtil teamSessionText:item last:message.session];
             //: [targets addObject:targetShowName];
             [targets addObject:targetShowName];
@@ -2080,7 +2080,7 @@ static NSDateComponentsFormatter *main_teamData;
 
 //: + (NSString *)superTeamNotificationTeamShowName:(NIMMessage *)message{
 + (NSString *)value:(NIMMessage *)message{
-    //: NSString *teamName = [FFFLanguageManager getTextWithKey:@"message_super_team"];
+    //: NSString *teamName = [WorkLanguageManager getTextWithKey:@"message_super_team"];
     NSString *teamName = [InputRed preserve:[MotionData sharedInstance].mainClinicalValue];//@"超大群".;
     //: return teamName;
     return teamName;
@@ -2142,7 +2142,7 @@ static NSDateComponentsFormatter *main_teamData;
 {
     //: NSString *ID = [NSString stringWithFormat:NIMKitQuickCommentFormat, comment.replyType];
     NSString *ID = [NSString stringWithFormat:main_controlData, comment.replyType];
-    //: NIMInputEmoticon *emoticon = [[FFFInputEmoticonManager sharedManager] emoticonByID:ID];
+    //: NIMInputEmoticon *emoticon = [[WorkInputEmoticonManager sharedManager] emoticonByID:ID];
     FrontwardsCount *emoticon = [[RedManager session] record:ID];
     //: NSString *content = nil;
     NSString *content = nil;

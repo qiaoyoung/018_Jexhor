@@ -27,14 +27,14 @@ IgnitionData app_modeEraTitle = (IgnitionData){23, (Byte []){122, 114, 100, 100,
 //
 
 // __M_A_C_R_O__
-//: #import "FFFVideoContentConfig.h"
+//: #import "WorkVideoContentConfig.h"
 #import "NeedCircle.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
 
-//: @implementation FFFVideoContentConfig
+//: @implementation WorkVideoContentConfig
 @implementation NeedCircle
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
 - (CGSize)refer:(CGFloat)cellWidth componentPart:(NIMMessage *)message
@@ -74,7 +74,7 @@ IgnitionData app_modeEraTitle = (IgnitionData){23, (Byte []){122, 114, 100, 100,
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)on:(NIMMessage *)message
 {
-    //: return @"FFFSessionVideoContentView";
+    //: return @"WorkSessionVideoContentView";
     return @"LineContentView";
 }
 

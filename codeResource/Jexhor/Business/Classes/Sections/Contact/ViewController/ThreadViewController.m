@@ -550,7 +550,7 @@
 #import "HeadViewCell.h"
 //: #import "NTESContactDataCell.h"
 #import "BeView.h"
-//: #import "FFFContactSelectViewController.h"
+//: #import "WorkContactSelectViewController.h"
 #import "CompartmentViewController.h"
 //: #import "NTESUserUtil.h"
 #import "CellVideo.h"
@@ -582,7 +582,7 @@
 #import <FFDropDownMenu/FFDropDownMenuView.h>
 //: #import "NTESFriendListTableViewCell.h"
 #import "LightViewCell.h"
-//: #import "FFFKitFileLocationHelper.h"
+//: #import "WorkKitFileLocationHelper.h"
 #import "ImageHelper.h"
 
 //: static const NSString *contactCellUtilIcon = @"icon";
@@ -603,7 +603,7 @@ static const NSString *app_tapTipName = @"selName";
 @interface ThreadViewController ()<TextFactor,NIMUserManagerDelegate,NIMSystemNotificationManagerDelegate,
 //: NTESContactUtilCellDelegate,
 WithCount,
-//: FFFContactDataCellDelegate,
+//: WorkContactDataCellDelegate,
 CompartmentDelegate,
 //: NIMLoginManagerDelegate,
 NIMLoginManagerDelegate,
@@ -805,7 +805,7 @@ ContactInsertSearchDelegate> {
         emptyTipLabel.textAlignment = NSTextAlignmentCenter;
         //: [_defView addSubview:emptyTipLabel];
         [_defView addSubview:emptyTipLabel];
-        //: emptyTipLabel.text = [FFFLanguageManager getTextWithKey:@"group_info_activity_without"];
+        //: emptyTipLabel.text = [WorkLanguageManager getTextWithKey:@"group_info_activity_without"];
         emptyTipLabel.text = [InputRed preserve:[TurnOutData sharedInstance].noti_makeText];
 
 
@@ -841,7 +841,7 @@ ContactInsertSearchDelegate> {
 
             //: NSMutableDictionary *myfriend = [NSMutableDictionary dictionaryWithCapacity:0];
             NSMutableDictionary *myfriend = [NSMutableDictionary dictionaryWithCapacity:0];
-            //: [myfriend setObject:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_friend"] forKey:@"name"];
+            //: [myfriend setObject:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_friend"] forKey:@"name"];
             [myfriend setObject:[InputRed preserve:[TurnOutData sharedInstance].m_bubbleValue] forKey:[TurnOutData sharedInstance].userOldName];
             //: [myfriend setObject:friendIds forKey:@"ids"];
             [myfriend setObject:friendIds forKey:[TurnOutData sharedInstance].app_addData];
@@ -903,7 +903,7 @@ ContactInsertSearchDelegate> {
     _btnfriend.titleLabel.font = [UIFont systemFontOfSize:14];
     //: [_btnfriend setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [_btnfriend setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [_btnfriend setTitle:[FFFLanguageManager getTextWithKey:@"contact_fragment_friend"] forState:UIControlStateNormal];
+    //: [_btnfriend setTitle:[WorkLanguageManager getTextWithKey:@"contact_fragment_friend"] forState:UIControlStateNormal];
     [_btnfriend setTitle:[InputRed preserve:[TurnOutData sharedInstance].mViewTitle] forState:UIControlStateNormal];
     //: [_btnfriend addTarget:self action:@selector(sliderButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [_btnfriend addTarget:self action:@selector(viewFor:) forControlEvents:UIControlEventTouchUpInside];
@@ -922,7 +922,7 @@ ContactInsertSearchDelegate> {
     _btngroup.titleLabel.font = [UIFont systemFontOfSize:14];
     //: [_btngroup setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
     [_btngroup setTitleColor:[UIColor ground:[TurnOutData sharedInstance].appBubbleData] forState:UIControlStateNormal];
-    //: [_btngroup setTitle:[FFFLanguageManager getTextWithKey:@"contact_fragment_group"] forState:UIControlStateNormal];
+    //: [_btngroup setTitle:[WorkLanguageManager getTextWithKey:@"contact_fragment_group"] forState:UIControlStateNormal];
     [_btngroup setTitle:[InputRed preserve:[TurnOutData sharedInstance].m_targetButtonText] forState:UIControlStateNormal];
     //: [_btngroup addTarget:self action:@selector(sliderButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [_btngroup addTarget:self action:@selector(viewFor:) forControlEvents:UIControlEventTouchUpInside];
@@ -1047,17 +1047,17 @@ ContactInsertSearchDelegate> {
             SuppressPerformSelectorLeakWarning([self performSelector:sel withObject:nil]);
         }
         //: else if (contactItem.vcName.length) {
-        else if (contactItem.sign.length) {
+        else if (contactItem.vcName.length) {
             //: Class clazz = NSClassFromString(contactItem.vcName);
-            Class clazz = NSClassFromString(contactItem.sign);
+            Class clazz = NSClassFromString(contactItem.vcName);
             //: UIViewController * vc = [[clazz alloc] initWithNibName:nil bundle:nil];
             UIViewController * vc = [[clazz alloc] initWithNibName:nil bundle:nil];
             //: [self.navigationController pushViewController:vc animated:YES];
             [self.navigationController pushViewController:vc animated:YES];
         //: }else if([contactItem respondsToSelector:@selector(userId)]){
-        }else if([contactItem respondsToSelector:@selector(shouldTeam)]){
+        }else if([contactItem respondsToSelector:@selector(userId)]){
             //: NSString * friendId = contactItem.userId;
-            NSString * friendId = contactItem.shouldTeam;
+            NSString * friendId = contactItem.userId;
             //: [self enterPersonalCard:friendId];
             [self adHominemIn:friendId];
         }
@@ -1271,7 +1271,7 @@ ContactInsertSearchDelegate> {
     return _searchIgoreCase;
 }
 
-//: #pragma mark - FFFContactDataCellDelegate
+//: #pragma mark - WorkContactDataCellDelegate
 #pragma mark - CompartmentDelegate
 //: - (void)onPressAvatar:(NSString *)memberId{
 - (void)alongsed:(NSString *)memberId{
@@ -1378,9 +1378,9 @@ ContactInsertSearchDelegate> {
         //: id<NTESContactItem> contactItem = (id<NTESContactItem>)[_contacts memberOfIndex:indexPath];
         id<ItemTing> contactItem = (id<ItemTing>)[_contacts fullMargin:indexPath];
         //: if([contactItem respondsToSelector:@selector(userId)]){
-        if([contactItem respondsToSelector:@selector(shouldTeam)]){
+        if([contactItem respondsToSelector:@selector(userId)]){
             //: NSString * friendId = contactItem.userId;
-            NSString * friendId = contactItem.shouldTeam;
+            NSString * friendId = contactItem.userId;
             //: if ([ids containsObject:friendId]) {
             if ([ids containsObject:friendId]) {
                 //: [indexPaths addObject:indexPath];
@@ -1427,7 +1427,7 @@ ContactInsertSearchDelegate> {
     //: config.showSelectHeaderview = YES;
     config.showSelectHeaderview = YES;
     //初始化联系人选择器
-    //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+    //: WorkContactSelectViewController *vc = [[WorkContactSelectViewController alloc] initWithConfig:config];
     CompartmentViewController *vc = [[CompartmentViewController alloc] initWithStateAtPull:config];
     //回调处理
     //: vc.finshBlock = block;
@@ -1517,7 +1517,7 @@ ContactInsertSearchDelegate> {
             option.type = NIMTeamTypeAdvanced;
             //: option.joinMode = NIMTeamJoinModeNoAuth;
             option.joinMode = NIMTeamJoinModeNoAuth;
-            //: option.postscript = [FFFLanguageManager getTextWithKey:@"invite_you_group"];
+            //: option.postscript = [WorkLanguageManager getTextWithKey:@"invite_you_group"];
             option.postscript = [InputRed preserve:[TurnOutData sharedInstance].main_addName];
 //            [SVProgressHUD show];
 
@@ -1541,7 +1541,7 @@ ContactInsertSearchDelegate> {
                     [self timeId:option.name info:teamId];
                 //: }else{
                 }else{
-                    //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
+                    //: [self.view makeToast:[WorkLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
                     [self.view makeToast:[InputRed preserve:[TurnOutData sharedInstance].mainItemData] duration:2.0 position:CSToastPositionCenter];
                 }
             //: }];
@@ -1565,9 +1565,9 @@ ContactInsertSearchDelegate> {
 
     //: UIImage *imageForAvatarUpload = [image imageByScalingAndCroppingForSize:CGSizeMake(375, 375)];
     UIImage *imageForAvatarUpload = [image byName:CGSizeMake(375, 375)];
-    //: NSString *fileName = [FFFKitFileLocationHelper genFilenameWithExt:@"jpg"];
+    //: NSString *fileName = [WorkKitFileLocationHelper genFilenameWithExt:@"jpg"];
     NSString *fileName = [ImageHelper key:[TurnOutData sharedInstance].notiAtData];
-    //: NSString *filePath = [[FFFKitFileLocationHelper getAppDocumentPath] stringByAppendingPathComponent:fileName];
+    //: NSString *filePath = [[WorkKitFileLocationHelper getAppDocumentPath] stringByAppendingPathComponent:fileName];
     NSString *filePath = [[ImageHelper alongPath] stringByAppendingPathComponent:fileName];
     //: NSData *data = UIImageJPEGRepresentation(imageForAvatarUpload, 0.3);
     NSData *data = UIImageJPEGRepresentation(imageForAvatarUpload, 0.3);
@@ -1588,7 +1588,7 @@ ContactInsertSearchDelegate> {
 
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
+                //: [wself.view makeToast:[WorkLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
                 [wself.view makeToast:[InputRed preserve:[TurnOutData sharedInstance].mSessionTitle]
                              //: duration:2
                              duration:2
@@ -1602,7 +1602,7 @@ ContactInsertSearchDelegate> {
         }];
     //: }else{
     }else{
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
+        //: [self.view makeToast:[WorkLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
         [self.view makeToast:[InputRed preserve:[TurnOutData sharedInstance].mSessionTitle]
                     //: duration:2
                     duration:2
@@ -1793,13 +1793,13 @@ ContactInsertSearchDelegate> {
 //            [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
 //        }
 
-        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
+        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[WorkLanguageManager getTextWithKey:@"warm_prompt"] message:[WorkLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
         UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[InputRed preserve:[TurnOutData sharedInstance].userViewTitle] message:[InputRed preserve:[TurnOutData sharedInstance].showLimitText] preferredStyle:UIAlertControllerStyleAlert];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[InputRed preserve:[TurnOutData sharedInstance].mTableTitle] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         //: }])];
         }])];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[WorkLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[InputRed preserve:[TurnOutData sharedInstance].mainCompleteData] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
             NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
@@ -1834,7 +1834,7 @@ ContactInsertSearchDelegate> {
         option.type = NIMTeamTypeAdvanced;
         //: option.joinMode = NIMTeamJoinModeNoAuth;
         option.joinMode = NIMTeamJoinModeNoAuth;
-        //: option.postscript = [FFFLanguageManager getTextWithKey:@"invite_you_group"];
+        //: option.postscript = [WorkLanguageManager getTextWithKey:@"invite_you_group"];
         option.postscript = [InputRed preserve:[TurnOutData sharedInstance].main_addName];
         //: [SVProgressHUD show];
         [SVProgressHUD show];
@@ -1856,7 +1856,7 @@ ContactInsertSearchDelegate> {
                 [wself timeId:option.name info:teamId];
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
+                //: [wself.view makeToast:[WorkLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
                 [wself.view makeToast:[InputRed preserve:[TurnOutData sharedInstance].mainItemData] duration:2.0 position:CSToastPositionCenter];
             }
         //: }];
@@ -1915,7 +1915,7 @@ ContactInsertSearchDelegate> {
         labedit.font = [UIFont systemFontOfSize:14];
         //: labedit.textColor = [UIColor colorWithHexString:@"#2C3042"];
         labedit.textColor = [UIColor ground:[TurnOutData sharedInstance].kMediaColorName];
-        //: labedit.text = [FFFLanguageManager getTextWithKey:@"notification"];
+        //: labedit.text = [WorkLanguageManager getTextWithKey:@"notification"];
         labedit.text = [InputRed preserve:[TurnOutData sharedInstance].dream_disableValue];
         //: [editView addSubview:labedit];
         [editView addSubview:labedit];
@@ -1946,7 +1946,7 @@ ContactInsertSearchDelegate> {
         lablang.font = [UIFont systemFontOfSize:14];
         //: lablang.textColor = [UIColor colorWithHexString:@"#2C3042"];
         lablang.textColor = [UIColor ground:[TurnOutData sharedInstance].kMediaColorName];
-        //: lablang.text = [FFFLanguageManager getTextWithKey:@"add_friend_activity_add_friend"];
+        //: lablang.text = [WorkLanguageManager getTextWithKey:@"add_friend_activity_add_friend"];
         lablang.text = [InputRed preserve:[TurnOutData sharedInstance].k_buttonName];
         //: [langView addSubview:lablang];
         [langView addSubview:lablang];
@@ -1990,7 +1990,7 @@ ContactInsertSearchDelegate> {
         labedit.font = [UIFont systemFontOfSize:14];
         //: labedit.textColor = [UIColor colorWithHexString:@"#2C3042"];
         labedit.textColor = [UIColor ground:[TurnOutData sharedInstance].kMediaColorName];
-        //: labedit.text = [FFFLanguageManager getTextWithKey:@"notification"];
+        //: labedit.text = [WorkLanguageManager getTextWithKey:@"notification"];
         labedit.text = [InputRed preserve:[TurnOutData sharedInstance].dream_disableValue];
         //: [editView addSubview:labedit];
         [editView addSubview:labedit];
@@ -2021,7 +2021,7 @@ ContactInsertSearchDelegate> {
         lablang.font = [UIFont systemFontOfSize:14];
         //: lablang.textColor = [UIColor colorWithHexString:@"#2C3042"];
         lablang.textColor = [UIColor ground:[TurnOutData sharedInstance].kMediaColorName];
-        //: lablang.text = [FFFLanguageManager getTextWithKey:@"activity_create_group_name_create_group"];
+        //: lablang.text = [WorkLanguageManager getTextWithKey:@"activity_create_group_name_create_group"];
         lablang.text = [InputRed preserve:[TurnOutData sharedInstance].appLengthValue];
         //: [langView addSubview:lablang];
         [langView addSubview:lablang];

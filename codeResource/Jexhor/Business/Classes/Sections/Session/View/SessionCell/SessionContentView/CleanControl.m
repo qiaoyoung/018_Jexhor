@@ -280,7 +280,7 @@ NSString *const appBackTitle = @"NIMDemoEventNameOpenRedPacket";
 {
     //: if ([self.delegate respondsToSelector:@selector(onCatchEvent:)]) {
     if ([self.delegate respondsToSelector:@selector(aboveImage:)]) {
-        //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+        //: WorkKitEvent *event = [[WorkKitEvent alloc] init];
         WrittenAccountLab *event = [[WrittenAccountLab alloc] init];
         //: event.eventName = NIMDemoEventNameOpenRedPacket;
         event.eventName = appBackTitle;
@@ -295,7 +295,7 @@ NSString *const appBackTitle = @"NIMDemoEventNameOpenRedPacket";
 
 //: #pragma mark - 系统父类方法
 #pragma mark - 系统父类方法
-//: - (void)refresh:(FFFMessageModel*)data{
+//: - (void)refresh:(WorkMessageModel*)data{
 - (void)panorama:(ShowModel*)data{
     //: [super refresh:data];
     [super panorama:data];

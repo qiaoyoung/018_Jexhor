@@ -276,7 +276,7 @@
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"activity_safe_setting_modify"];
+    //: labtitle.text = [WorkLanguageManager getTextWithKey:@"activity_safe_setting_modify"];
     labtitle.text = [InputRed preserve:[SessionViewData showSendData]];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -310,7 +310,7 @@
     self.textfile_1.font = [UIFont systemFontOfSize:16];
     //: self.textfile_1.textColor = [UIColor colorWithHexString:@"#333333"];
     self.textfile_1.textColor = [UIColor ground:[SessionViewData user_sizeValue]];
-    //: self.textfile_1.placeholder = [FFFLanguageManager getTextWithKey:@"activity_modify_old"];
+    //: self.textfile_1.placeholder = [WorkLanguageManager getTextWithKey:@"activity_modify_old"];
     self.textfile_1.placeholder = [InputRed preserve:[SessionViewData app_limitData]];
     //: self.textfile_1.delegate = self;
     self.textfile_1.delegate = self;
@@ -342,7 +342,7 @@
     self.textfile_2.font = [UIFont systemFontOfSize:16];
     //: self.textfile_2.textColor = [UIColor colorWithHexString:@"#333333"];
     self.textfile_2.textColor = [UIColor ground:[SessionViewData user_sizeValue]];
-    //: self.textfile_2.placeholder = [FFFLanguageManager getTextWithKey:@"activity_modify_new"];
+    //: self.textfile_2.placeholder = [WorkLanguageManager getTextWithKey:@"activity_modify_new"];
     self.textfile_2.placeholder = [InputRed preserve:[SessionViewData dreamAddData]];
     //: self.textfile_2.delegate = self;
     self.textfile_2.delegate = self;
@@ -380,7 +380,7 @@
     self.textfile_3.font = [UIFont systemFontOfSize:16];
     //: self.textfile_3.textColor = [UIColor colorWithHexString:@"#333333"];
     self.textfile_3.textColor = [UIColor ground:[SessionViewData user_sizeValue]];
-    //: self.textfile_3.placeholder = [FFFLanguageManager getTextWithKey:@"activity_modify_new"];
+    //: self.textfile_3.placeholder = [WorkLanguageManager getTextWithKey:@"activity_modify_new"];
     self.textfile_3.placeholder = [InputRed preserve:[SessionViewData dreamAddData]];
     //: self.textfile_3.delegate = self;
     self.textfile_3.delegate = self;
@@ -397,7 +397,7 @@
     emptyButton.titleLabel.font = [UIFont systemFontOfSize:16];
     //: [emptyButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [emptyButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [emptyButton setTitle:[FFFLanguageManager getTextWithKey:@"sure_edit"] forState:UIControlStateNormal];
+    //: [emptyButton setTitle:[WorkLanguageManager getTextWithKey:@"sure_edit"] forState:UIControlStateNormal];
     [emptyButton setTitle:[InputRed preserve:[SessionViewData mainColorText]] forState:UIControlStateNormal];
     //: [emptyButton addTarget:self action:@selector(commitButtonClick) forControlEvents:UIControlEventTouchUpInside];
     [emptyButton addTarget:self action:@selector(sessionTitle) forControlEvents:UIControlEventTouchUpInside];

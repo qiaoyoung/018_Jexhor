@@ -9,9 +9,9 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "WorkSessionMessageContentView.h"
 #import "TextControl.h"
-//: #import "FFFMessageModel.h"
+//: #import "WorkMessageModel.h"
 #import "ShowModel.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
@@ -20,13 +20,13 @@
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
 
-//: @interface FFFSessionMessageContentView()
+//: @interface WorkSessionMessageContentView()
 @interface TextControl()
 
 //: @end
 @end
 
-//: @implementation FFFSessionMessageContentView
+//: @implementation WorkSessionMessageContentView
 @implementation TextControl
 
 //: - (instancetype)initSessionMessageContentView
@@ -56,7 +56,7 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel*)data
+//: - (void)refresh:(WorkMessageModel*)data
 - (void)panorama:(ShowModel*)data
 {
     //: _model = data;
@@ -107,7 +107,7 @@
 - (UIImage *)text:(UIControlState)state on:(BOOL)outgoing
 {
 
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:self.model.message];
+    //: WorkKitSetting *setting = [[MyUserKit sharedKit].config setting:self.model.message];
     ViewKey *setting = [[MessageContent secretResolution].config ofSetting:self.model.message];
     //: if (state == UIControlStateNormal)
     if (state == UIControlStateNormal)

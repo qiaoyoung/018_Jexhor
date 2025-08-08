@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitTimerHolder.h"
+//: #import "WorkKitTimerHolder.h"
 #import "ChangeHolder.h"
 
-//: @interface FFFKitTimerHolder ()
+//: @interface WorkKitTimerHolder ()
 @interface ChangeHolder ()
 {
     //: NSTimer *_timer;
@@ -25,7 +25,7 @@
 //: @end
 @end
 
-//: @implementation FFFKitTimerHolder
+//: @implementation WorkKitTimerHolder
 @implementation ChangeHolder
 
 //: - (void)dealloc
@@ -37,7 +37,7 @@
 
 //: - (void)startTimer: (NSTimeInterval)seconds
 - (void)limit: (NSTimeInterval)seconds
-          //: delegate: (id<FFFKitTimerHolderDelegate>)delegate
+          //: delegate: (id<WorkKitTimerHolderDelegate>)delegate
           byRepeatsHolderDelegate: (id<KitWith>)delegate
            //: repeats: (BOOL)repeats
            data: (BOOL)repeats

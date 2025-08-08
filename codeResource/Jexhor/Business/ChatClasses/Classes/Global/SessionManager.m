@@ -61,9 +61,9 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitUrlManager.h"
+//: #import "WorkKitUrlManager.h"
 #import "SessionManager.h"
-//: #import "FFFKitTimerHolder.h"
+//: #import "WorkKitTimerHolder.h"
 #import "ChangeHolder.h"
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
@@ -73,13 +73,13 @@
 //: NSString *const kNIMKitUrlDataKey = @"kNIMKitUrlDataKey";
 NSString *const show_buttonCollapseData = @"kNIMKitUrlDataKey";
 
-//: @interface FFFKitUrlManager ()<FFFKitTimerHolderDelegate>
+//: @interface WorkKitUrlManager ()<WorkKitTimerHolderDelegate>
 @interface SessionManager ()<KitWith>
 
 //: @property (nonatomic, strong) NSMutableDictionary *dic;
 @property (nonatomic, strong) NSMutableDictionary *dic;
 
-//: @property (nonatomic, strong) FFFKitTimerHolder *timer;
+//: @property (nonatomic, strong) WorkKitTimerHolder *timer;
 @property (nonatomic, strong) ChangeHolder *timer;
 
 //: @property (nonatomic, assign) BOOL needSync;
@@ -88,7 +88,7 @@ NSString *const show_buttonCollapseData = @"kNIMKitUrlDataKey";
 //: @end
 @end
 
-//: @implementation FFFKitUrlManager
+//: @implementation WorkKitUrlManager
 @implementation SessionManager
 
 //: + (instancetype)shareManager {
@@ -99,7 +99,7 @@ NSString *const show_buttonCollapseData = @"kNIMKitUrlDataKey";
     static id instance = nil;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFKitUrlManager alloc] init];
+        //: instance = [[WorkKitUrlManager alloc] init];
         instance = [[SessionManager alloc] init];
     //: });
     });
@@ -118,7 +118,7 @@ NSString *const show_buttonCollapseData = @"kNIMKitUrlDataKey";
             //: _dic = [NSMutableDictionary dictionary];
             _dic = [NSMutableDictionary dictionary];
         }
-        //: _timer = [[FFFKitTimerHolder alloc] init];
+        //: _timer = [[WorkKitTimerHolder alloc] init];
         _timer = [[ChangeHolder alloc] init];
         //: [_timer startTimer:5.0f delegate:self repeats:YES];
         [_timer limit:5.0f byRepeatsHolderDelegate:self data:YES];
@@ -243,7 +243,7 @@ NSString *const show_buttonCollapseData = @"kNIMKitUrlDataKey";
     }
 }
 
-//: - (void)onNIMKitTimerFired:(FFFKitTimerHolder *)holder {
+//: - (void)onNIMKitTimerFired:(WorkKitTimerHolder *)holder {
 - (void)alonging:(ChangeHolder *)holder {
     //: if (holder != _timer) {
     if (holder != _timer) {

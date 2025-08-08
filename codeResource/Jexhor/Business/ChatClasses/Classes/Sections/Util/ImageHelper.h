@@ -12,7 +12,7 @@
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-//: @interface FFFKitFileLocationHelper : NSObject
+//: @interface WorkKitFileLocationHelper : NSObject
 @interface ImageHelper : NSObject
 
 //: + (NSString *)getAppDocumentPath;

@@ -100,7 +100,7 @@ typedef struct {
     return mainShowData;
 }
 
-//: #ffffff
+//: #fffWork
 - (NSString *)showViewName {
     /* static */ NSString *showViewName = nil;
     if (!showViewName) {
@@ -316,7 +316,7 @@ typedef struct {
         labtitle1.font = [UIFont systemFontOfSize:11.f];
         //: labtitle1.textColor = [UIColor blackColor];
         labtitle1.textColor = [UIColor blackColor];
-        //: labtitle1.text = [FFFLanguageManager getTextWithKey:@"Read_agree_agreement"];
+        //: labtitle1.text = [WorkLanguageManager getTextWithKey:@"Read_agree_agreement"];
         labtitle1.text = [InputRed preserve:[[FileData sharedInstance] kThanText]];
         //: labtitle1.numberOfLines = 2;
         labtitle1.numberOfLines = 2;
@@ -341,7 +341,7 @@ typedef struct {
         labtitle2.font = [UIFont systemFontOfSize:11.f];
         //: labtitle2.textColor = [UIColor blackColor];
         labtitle2.textColor = [UIColor blackColor];
-        //: labtitle2.text = [FFFLanguageManager getTextWithKey:@"Vertify_login_password"];
+        //: labtitle2.text = [WorkLanguageManager getTextWithKey:@"Vertify_login_password"];
         labtitle2.text = [InputRed preserve:[[FileData sharedInstance] notiBubbleName]];
         //: labtitle2.numberOfLines = 2;
         labtitle2.numberOfLines = 2;
@@ -366,7 +366,7 @@ typedef struct {
         labtitle3.font = [UIFont systemFontOfSize:11.f];
         //: labtitle3.textColor = [UIColor blackColor];
         labtitle3.textColor = [UIColor blackColor];
-        //: labtitle3.text = [FFFLanguageManager getTextWithKey:@"Complete_operation"];
+        //: labtitle3.text = [WorkLanguageManager getTextWithKey:@"Complete_operation"];
         labtitle3.text = [InputRed preserve:[[FileData sharedInstance] userAtData]];
         //: labtitle3.numberOfLines = 2;
         labtitle3.numberOfLines = 2;
@@ -423,7 +423,7 @@ typedef struct {
         [_sureBtn addTarget:self action:@selector(formatAdd) forControlEvents:UIControlEventTouchUpInside];
         //: _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
-        //: [_sureBtn setTitleColor:[UIColor colorWithHexString:@"#ffffff"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitleColor:[UIColor colorWithHexString:@"#fffWork"] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor ground:[[FileData sharedInstance] showViewName]] forState:UIControlStateNormal];
         //: [_sureBtn setTitle:@"OK" forState:UIControlStateNormal];
         [_sureBtn setTitle:@"OK" forState:UIControlStateNormal];

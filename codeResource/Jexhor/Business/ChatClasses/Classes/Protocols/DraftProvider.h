@@ -14,14 +14,14 @@
 
 //: @class NIMSession;
 @class NIMSession;
-//: @class FFFKitInfo;
+//: @class WorkKitInfo;
 @class ConfirmationInfo;
-//: @class FFFKitInfoFetchOption;
+//: @class WorkKitInfoFetchOption;
 @class RangeOption;
 //: @class NIMMessage;
 @class NIMMessage;
 
-//: @protocol FFFKitDataProvider <NSObject>
+//: @protocol WorkKitDataProvider <NSObject>
 @protocol DraftProvider <NSObject>
 
 //: @optional
@@ -35,9 +35,9 @@
  *
  *  @return 用户信息
  */
-//: - (FFFKitInfo *)infoByUser:(NSString *)userId
+//: - (WorkKitInfo *)infoByUser:(NSString *)userId
 - (ConfirmationInfo *)recent:(NSString *)userId
-                    //: option:(FFFKitInfoFetchOption *)option;
+                    //: option:(WorkKitInfoFetchOption *)option;
                     blue:(RangeOption *)option;
 
 
@@ -49,9 +49,9 @@
  *
  *  @return 群组信息
  */
-//: - (FFFKitInfo *)infoByTeam:(NSString *)teamId
+//: - (WorkKitInfo *)infoByTeam:(NSString *)teamId
 - (ConfirmationInfo *)info:(NSString *)teamId
-                    //: option:(FFFKitInfoFetchOption *)option;
+                    //: option:(WorkKitInfoFetchOption *)option;
                     comment:(RangeOption *)option;
 
 /**
@@ -62,9 +62,9 @@
  *
  *  @return 群组信息
  */
-//: - (FFFKitInfo *)infoBySuperTeam:(NSString *)teamId
+//: - (WorkKitInfo *)infoBySuperTeam:(NSString *)teamId
 - (ConfirmationInfo *)item:(NSString *)teamId
-                         //: option:(FFFKitInfoFetchOption *)option;
+                         //: option:(WorkKitInfoFetchOption *)option;
                          pit:(RangeOption *)option;
 
 /**

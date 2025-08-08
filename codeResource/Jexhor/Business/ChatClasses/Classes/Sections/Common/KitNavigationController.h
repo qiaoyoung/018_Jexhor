@@ -11,19 +11,19 @@
 // __M_A_C_R_O__
 //: #import "TZImagePickerController.h"
 #import "TZImagePickerController.h"
-//: #import "FFFKitMediaPickerDelegate.h"
+//: #import "WorkKitMediaPickerDelegate.h"
 #import "ChaseLab.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFKitMediaPickerController : TZImagePickerController
+//: @interface WorkKitMediaPickerController : TZImagePickerController
 @interface KitNavigationController : TZImagePickerController
 
 //: - (instancetype)initWithMaxImagesCount:(NSInteger)maxImagesCount;
 - (instancetype)initWithMaxBackgroundCountUpStreetwisePage:(NSInteger)maxImagesCount;
 
-//: @property (nonatomic, weak) id<FFFKitMediaPickerDelegate> nim_delegate;
+//: @property (nonatomic, weak) id<WorkKitMediaPickerDelegate> nim_delegate;
 @property (nonatomic, weak) id<ChaseLab> nim_delegate;
 
 //: @property(nonatomic, strong) NSArray<NSString *> *mediaTypes;

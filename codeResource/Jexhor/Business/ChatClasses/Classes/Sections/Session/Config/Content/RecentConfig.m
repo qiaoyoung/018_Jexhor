@@ -9,14 +9,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTextContentConfig.h"
+//: #import "WorkTextContentConfig.h"
 #import "RecentConfig.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "VideoTextView+MessageContent.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
 
-//: @interface FFFTextContentConfig()
+//: @interface WorkTextContentConfig()
 @interface RecentConfig()
 
 //: @property (nonatomic,strong) M80AttributedLabel *label;
@@ -26,7 +26,7 @@
 @end
 
 
-//: @implementation FFFTextContentConfig
+//: @implementation WorkTextContentConfig
 @implementation RecentConfig
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
@@ -61,7 +61,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)on:(NIMMessage *)message
 {
-    //: return @"FFFSessionTextContentView";
+    //: return @"WorkSessionTextContentView";
     return @"BottomControl";
 }
 

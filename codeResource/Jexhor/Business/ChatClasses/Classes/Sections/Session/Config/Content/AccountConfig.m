@@ -48,12 +48,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFAudioContentConfig.h"
+//: #import "WorkAudioContentConfig.h"
 #import "AccountConfig.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
 
-//: @implementation FFFAudioContentConfig
+//: @implementation WorkAudioContentConfig
 @implementation AccountConfig
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
@@ -82,7 +82,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)on:(NIMMessage *)message
 {
-    //: return @"FFFSessionAudioContentView";
+    //: return @"WorkSessionAudioContentView";
     return @"ThreadView";
 }
 

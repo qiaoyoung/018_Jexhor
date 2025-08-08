@@ -9,9 +9,9 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFQuickCommentCell.h"
+//: #import "WorkQuickCommentCell.h"
 #import "ShowReusableView.h"
-//: #import "FFFKitQuickCommentUtil.h"
+//: #import "WorkKitQuickCommentUtil.h"
 #import "MessageUtil.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "VideoTextView+MessageContent.h"
@@ -22,7 +22,7 @@
 //: #import "UIColor+MyUserKit.h"
 #import "UIColor+MessageContent.h"
 
-//: @interface FFFQuickCommentCell ()
+//: @interface WorkQuickCommentCell ()
 @interface ShowReusableView ()
 
 //: @property (nonatomic, strong) M80AttributedLabel *textLabel;
@@ -33,7 +33,7 @@
 //: @end
 @end
 
-//: @implementation FFFQuickCommentCell
+//: @implementation WorkQuickCommentCell
 @implementation ShowReusableView
 
 
@@ -45,7 +45,7 @@
     //: if (self)
     if (self)
     {
-        //: _textLabel = [FFFKitQuickCommentUtil newCommentLabel];
+        //: _textLabel = [WorkKitQuickCommentUtil newCommentLabel];
         _textLabel = [MessageUtil readMessage];
         //: [self.contentView addSubview:_textLabel];
         [self.contentView addSubview:_textLabel];
@@ -66,12 +66,12 @@
     return self;
 }
 
-//: - (void)refreshWithData:(NSArray *)comments model:(FFFMessageModel *)data
+//: - (void)refreshWithData:(NSArray *)comments model:(WorkMessageModel *)data
 - (void)to:(NSArray *)comments tool:(ShowModel *)data
 {
     //: self.textLabel.textColor = data.shouldShowLeft ? [UIColor colorWithHex:0x000000 alpha:1] : [UIColor colorWithHex:0xFFFFFF alpha:1];
     self.textLabel.textColor = data.shouldShowLeft ? [UIColor member:0x000000 barMargin:1] : [UIColor member:0xFFFFFF barMargin:1];
-    //: [self.textLabel nim_setText:[FFFKitQuickCommentUtil commentsContent:comments]];
+    //: [self.textLabel nim_setText:[WorkKitQuickCommentUtil commentsContent:comments]];
     [self.textLabel infoCookie:[MessageUtil topName:comments]];
 }
 

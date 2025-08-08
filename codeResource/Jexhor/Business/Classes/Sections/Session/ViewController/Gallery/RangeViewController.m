@@ -56,7 +56,7 @@ Byte kMilkName[] = {22, 33, 28, 5, 157, 75, 86, 83, 89, 84, 67, 77, 82, 74, 83, 
 #import "UIView+Toast.h"
 //: #import "UIAlertView+NTESBlock.h"
 #import "UIAlertView+BottomMagnitude.h"
-//: #import "FFFKitAuthorizationTool.h"
+//: #import "WorkKitAuthorizationTool.h"
 #import "NewTing.h"
 //: #import <SDWebImageFLPlugin/SDWebImageFLPlugin.h>
 #import <SDWebImageFLPlugin/SDWebImageFLPlugin.h>
@@ -515,27 +515,27 @@ Byte kMilkName[] = {22, 33, 28, 5, 157, 75, 86, 83, 89, 84, 67, 77, 82, 74, 83, 
 //    }else{
         //: UIImage *image = [self imageWithPath:self.imagePath];
         UIImage *image = [self filter:self.imagePath];
-        //: [FFFKitAuthorizationTool requestPhotoLibraryAuthorization:^(FFFKitAuthorizationStatus status) {
-        [NewTing label:^(FFFKitAuthorizationStatus status) {
+        //: [WorkKitAuthorizationTool requestPhotoLibraryAuthorization:^(WorkKitAuthorizationStatus status) {
+        [NewTing label:^(WorkKitAuthorizationStatus status) {
             //: switch (status) {
             switch (status) {
-                //: case FFFKitAuthorizationStatusAuthorized:
-                case FFFKitAuthorizationStatusAuthorized:
+                //: case WorkKitAuthorizationStatusAuthorized:
+                case WorkKitAuthorizationStatusAuthorized:
                     //: UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), NULL);
                     UIImageWriteToSavedPhotosAlbum(image, self, @selector(dataFormat:with:garrison:), NULL);
                     //: break;
                     break;
                 //: default:
                 default:
-                    //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"setting_privacy"] duration:2.0 position:CSToastPositionCenter];
+                    //: [self.view makeToast:[WorkLanguageManager getTextWithKey:@"setting_privacy"] duration:2.0 position:CSToastPositionCenter];
                     [self.view makeToast:[InputRed preserve:StringFromBearEnableData(main_imageName)] duration:2.0 position:CSToastPositionCenter];
-                    //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy"] preferredStyle:UIAlertControllerStyleAlert];
+                    //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[WorkLanguageManager getTextWithKey:@"warm_prompt"] message:[WorkLanguageManager getTextWithKey:@"setting_privacy"] preferredStyle:UIAlertControllerStyleAlert];
                     UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[InputRed preserve:StringFromBearEnableData(k_videoOlaValue)] message:[InputRed preserve:StringFromBearEnableData(main_imageName)] preferredStyle:UIAlertControllerStyleAlert];
-                    //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+                    //: [alertControl addAction:([UIAlertAction actionWithTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
                     [alertControl addAction:([UIAlertAction actionWithTitle:[InputRed preserve:StringFromBearEnableData(notiAmbitionData)] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
                     //: }])];
                     }])];
-                    //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                    //: [alertControl addAction:([UIAlertAction actionWithTitle:[WorkLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                     [alertControl addAction:([UIAlertAction actionWithTitle:[InputRed preserve:StringFromBearEnableData(notiItsGivingHeightValue)] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                         //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
                         NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
@@ -562,7 +562,7 @@ Byte kMilkName[] = {22, 33, 28, 5, 157, 75, 86, 83, 89, 84, 67, 77, 82, 74, 83, 
 //: - (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo
 - (void)dataFormat:(UIImage *)image with:(NSError *)error garrison:(void *)contextInfo
 {
-    //: NSString *toast = (!image || error)?[FFFLanguageManager getTextWithKey:@"group_info_activity_update_success"] :[FFFLanguageManager getTextWithKey:@"group_info_activity_update_failed"];
+    //: NSString *toast = (!image || error)?[WorkLanguageManager getTextWithKey:@"group_info_activity_update_success"] :[WorkLanguageManager getTextWithKey:@"group_info_activity_update_failed"];
     NSString *toast = (!image || error)?[InputRed preserve:StringFromBearEnableData(mainAgainstEarlShowValue)] :[InputRed preserve:StringFromBearEnableData(kMilkName)];
     //: [self.view makeToast:toast duration:2.0 position:CSToastPositionCenter];
     [self.view makeToast:toast duration:2.0 position:CSToastPositionCenter];

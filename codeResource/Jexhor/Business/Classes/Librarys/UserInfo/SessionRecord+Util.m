@@ -128,7 +128,7 @@ TraceData kWeekData = (TraceData){64, (Byte []){14, 19, 21, 51, 37, 50, 4, 37, 3
 
     //: userDefaults.language = lang;
     userDefaults.language = lang;
-    //: [[FFFLanguageManager shareInstance] setLanguagre:lang];
+    //: [[WorkLanguageManager shareInstance] setLanguagre:lang];
     [[InputRed mortificationDisable] setApposeCellLanguagre:lang];
 
     //: [MyUserKit sharedKit].languageBundle = nil;

@@ -11,7 +11,7 @@
 //: error
 @property (nonatomic, copy) NSString *userAcheData;
 
-//: #ffffff
+//: #fffWork
 @property (nonatomic, copy) NSString *notiYaData;
 
 //: group_info_activity_update_success
@@ -44,7 +44,7 @@
 //: group_info_activity_update_failed
 @property (nonatomic, copy) NSString *mainIllegalData;
 
-//: #66FFFFFF
+//: #66FFFWork
 @property (nonatomic, copy) NSString *dreamTowerAddTitle;
 
 //: player_push
@@ -103,7 +103,7 @@
     return _userAcheData;
 }
 
-//: #ffffff
+//: #fffWork
 - (NSString *)notiYaData {
     if (!_notiYaData) {
         Byte value[] = {7, 52, 10, 177, 190, 149, 149, 106, 237, 239, 239, 50, 50, 50, 50, 50, 50, 106};
@@ -112,7 +112,7 @@
     return _notiYaData;
 }
 
-//: #66FFFFFF
+//: #66FFFWork
 - (NSString *)dreamTowerAddTitle {
     if (!_dreamTowerAddTitle) {
         Byte value[] = {9, 71, 10, 2, 129, 66, 154, 251, 242, 94, 220, 239, 239, 255, 255, 255, 255, 255, 255, 147};
@@ -478,7 +478,7 @@
     //: self.progressSlider.maximumTrackTintColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:0.2];
     self.progressSlider.maximumTrackTintColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:0.2];
 //    self.progressSlider.thumbTintColor = ThemeColor;
-    //: [self.progressSlider setThumbImage:[UIImage createImageWithColor:[UIColor colorWithHexString:@"#ffffff"] radius:3.0] forState:UIControlStateNormal];
+    //: [self.progressSlider setThumbImage:[UIImage createImageWithColor:[UIColor colorWithHexString:@"#fffWork"] radius:3.0] forState:UIControlStateNormal];
     [self.progressSlider setThumbImage:[UIImage team:[UIColor ground:[AddLimitEmergencyData sharedInstance].notiYaData] click:3.0] forState:UIControlStateNormal];
     //: self.progressSlider.layer.cornerRadius = 3;
     self.progressSlider.layer.cornerRadius = 3;
@@ -497,7 +497,7 @@
     _btnRate.backgroundColor = [UIColor blackColor];
     //: _btnRate.layer.cornerRadius = 9;
     _btnRate.layer.cornerRadius = 9;
-    //: _btnRate.layer.borderColor = [UIColor colorWithHexString:@"#66FFFFFF"].CGColor;
+    //: _btnRate.layer.borderColor = [UIColor colorWithHexString:@"#66FFFWork"].CGColor;
     _btnRate.layer.borderColor = [UIColor ground:[AddLimitEmergencyData sharedInstance].dreamTowerAddTitle].CGColor;
     //: _btnRate.layer.borderWidth = 1;
     _btnRate.layer.borderWidth = 1;
@@ -505,7 +505,7 @@
     [_btnRate addTarget:self action:@selector(pining:) forControlEvents:UIControlEventTouchUpInside];
     //: _btnRate.titleLabel.font = [UIFont systemFontOfSize:12];
     _btnRate.titleLabel.font = [UIFont systemFontOfSize:12];
-    //: [_btnRate setTitleColor:[UIColor colorWithHexString:@"#ffffff"] forState:UIControlStateNormal];
+    //: [_btnRate setTitleColor:[UIColor colorWithHexString:@"#fffWork"] forState:UIControlStateNormal];
     [_btnRate setTitleColor:[UIColor ground:[AddLimitEmergencyData sharedInstance].notiYaData] forState:UIControlStateNormal];
     //: [_btnRate setTitle:@"1x" forState:UIControlStateNormal];
     [_btnRate setTitle:@"1x" forState:UIControlStateNormal];
@@ -529,7 +529,7 @@
                 [wself lineupComment];
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                //: [wself.view makeToast:[WorkLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                 [wself.view makeToast:[InputRed preserve:[AddLimitEmergencyData sharedInstance].user_sizeContent]
                              //: duration:2
                              duration:2
@@ -645,7 +645,7 @@
     } completionHandler:^(BOOL success, NSError * _Nullable error) {
         //: dispatch_async(dispatch_get_main_queue(), ^{
         dispatch_async(dispatch_get_main_queue(), ^{
-            //: NSString *toast = (success)?[FFFLanguageManager getTextWithKey:@"group_info_activity_update_success"] :[FFFLanguageManager getTextWithKey:@"group_info_activity_update_failed"];
+            //: NSString *toast = (success)?[WorkLanguageManager getTextWithKey:@"group_info_activity_update_success"] :[WorkLanguageManager getTextWithKey:@"group_info_activity_update_failed"];
             NSString *toast = (success)?[InputRed preserve:[AddLimitEmergencyData sharedInstance].userLabelTitle] :[InputRed preserve:[AddLimitEmergencyData sharedInstance].mainIllegalData];
             //: [self.view makeToast:toast duration:2.0 position:CSToastPositionCenter];
             [self.view makeToast:toast duration:2.0 position:CSToastPositionCenter];
@@ -961,7 +961,7 @@
 
 //        //设置滑块图片样式
         // 1 通过颜色创建 Image
-        //: UIImage *normalImage = [UIImage createImageWithColor:[UIColor colorWithHexString:@"#ffffff"] radius:7.0];
+        //: UIImage *normalImage = [UIImage createImageWithColor:[UIColor colorWithHexString:@"#fffWork"] radius:7.0];
         UIImage *normalImage = [UIImage team:[UIColor ground:[AddLimitEmergencyData sharedInstance].notiYaData] click:7.0];
 
         //        UIView *normalImageView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 8, 8)];
@@ -982,8 +982,8 @@
 //        [_videoSlider setThumbImage:highlightImage forState:UIControlStateHighlighted];
 
 //        _videoSlider.trackColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:0.2];//轨道的颜色
-//        _videoSlider.bufferColor = RGB_COLOR_String(@"#ffffff");//缓冲的颜色
-//        _videoSlider.thumbValueColor = RGB_COLOR_String(@"#ffffff");///播放进度的颜色
+//        _videoSlider.bufferColor = RGB_COLOR_String(@"#fffWork");//缓冲的颜色
+//        _videoSlider.thumbValueColor = RGB_COLOR_String(@"#fffWork");///播放进度的颜色
         ///
         //: _videoSlider.trackHeight = 6;
         _videoSlider.trackHeight = 6;

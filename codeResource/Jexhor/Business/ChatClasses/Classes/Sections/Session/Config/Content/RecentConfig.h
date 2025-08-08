@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFBaseSessionContentConfig.h"
-#import "FFFBaseSessionContentConfig.h"
+//: #import "WorkBaseSessionContentConfig.h"
+#import "WorkBaseSessionContentConfig.h"
 
-//: @interface FFFTextContentConfig : NSObject<CCCSessionContentConfig>
+//: @interface WorkTextContentConfig : NSObject<CCCSessionContentConfig>
 @interface RecentConfig : NSObject<CellTitleConfig>
 
 //: @end

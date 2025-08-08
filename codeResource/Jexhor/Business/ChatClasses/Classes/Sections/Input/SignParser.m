@@ -49,9 +49,9 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputEmoticonParser.h"
+//: #import "WorkInputEmoticonParser.h"
 #import "SignParser.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "WorkInputEmoticonManager.h"
 #import "RedManager.h"
 
 //: @implementation NIMInputTextToken
@@ -59,7 +59,7 @@
 //: @end
 @end
 
-//: @interface FFFInputEmoticonParser ()
+//: @interface WorkInputEmoticonParser ()
 @interface SignParser ()
 //: @property (nonatomic,strong) NSCache *tokens;
 @property (nonatomic,strong) NSCache *tokens;
@@ -67,18 +67,18 @@
 @end
 
 
-//: @implementation FFFInputEmoticonParser
+//: @implementation WorkInputEmoticonParser
 @implementation SignParser
 //: + (instancetype)currentParser
 + (instancetype)byTo
 {
-    //: static FFFInputEmoticonParser *instance = nil;
+    //: static WorkInputEmoticonParser *instance = nil;
     static SignParser *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFInputEmoticonParser alloc] init];
+        //: instance = [[WorkInputEmoticonParser alloc] init];
         instance = [[SignParser alloc] init];
     //: });
     });
@@ -155,7 +155,7 @@
                        usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop) {
                            //: NSString *rangeText = [text substringWithRange:result.range];
                            NSString *rangeText = [text substringWithRange:result.range];
-                           //: if ([[FFFInputEmoticonManager sharedManager] emoticonByTag:rangeText])
+                           //: if ([[WorkInputEmoticonManager sharedManager] emoticonByTag:rangeText])
                            if ([[RedManager session] success:rangeText])
                            {
                                //: if (result.range.location > index)

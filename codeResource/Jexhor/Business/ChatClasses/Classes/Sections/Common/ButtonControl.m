@@ -63,22 +63,22 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFAvatarImageView.h"
+//: #import "WorkAvatarImageView.h"
 #import "ButtonControl.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "objc/runtime.h"
 #import "objc/runtime.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "WorkKitDependency.h"
+#import "WorkKitDependency.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WorkKitInfoFetchOption.h"
 #import "RangeOption.h"
-//: #import "FFFKitUrlManager.h"
+//: #import "WorkKitUrlManager.h"
 #import "SessionManager.h"
 
-//: @interface FFFAvatarImageView()
+//: @interface WorkAvatarImageView()
 @interface ButtonControl()
 
 //: @property (nonatomic,strong) UIImageView *imageView;
@@ -87,7 +87,7 @@ typedef struct {
 //: @end
 @end
 
-//: @implementation FFFAvatarImageView
+//: @implementation WorkAvatarImageView
 @implementation ButtonControl
 
 //: - (id)initWithFrame:(CGRect)frame
@@ -250,7 +250,7 @@ typedef struct {
 //: - (void)setAvatarBySession:(NIMSession *)session
 - (void)setSizeKey:(NIMSession *)session
 {
-    //: FFFKitInfo *info = nil;
+    //: WorkKitInfo *info = nil;
     ConfirmationInfo *info = nil;
     //: if (session.sessionType == NIMSessionTypeTeam) {
     if (session.sessionType == NIMSessionTypeTeam) {
@@ -268,7 +268,7 @@ typedef struct {
         info.avatarImage = [UIImage imageNamed:[[UniteData sharedInstance] m_oldData]];
     //: } else {
     } else {
-        //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+        //: WorkKitInfoFetchOption *option = [[WorkKitInfoFetchOption alloc] init];
         RangeOption *option = [[RangeOption alloc] init];
         //: option.session = session;
         option.session = session;
@@ -282,13 +282,13 @@ typedef struct {
 //: - (void)setAvatarByMessage:(NIMMessage *)message
 - (void)setEndPull:(NIMMessage *)message
 {
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: WorkKitInfoFetchOption *option = [[WorkKitInfoFetchOption alloc] init];
     RangeOption *option = [[RangeOption alloc] init];
     //: option.message = message;
     option.message = message;
     //: NSString *from = message.from;
     NSString *from = message.from;
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:from option:option];
+    //: WorkKitInfo *info = [[MyUserKit sharedKit] infoByUser:from option:option];
     ConfirmationInfo *info = [[MessageContent secretResolution] recent:from blue:option];
     //: [self setImageWithUrlString:info.avatarUrlString placeholderImage:info.avatarImage options:0];
     [self counterlanguage:info.avatarUrlString betweenImage:info.avatarImage direct:0];
@@ -324,7 +324,7 @@ typedef struct {
     __block NSURL *targetUrl = nil;
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [[FFFKitUrlManager shareManager] queryQriginalUrlWithShortUrl:urlString completion:^(NSString *originalUrl, NSError *error) {
+    //: [[WorkKitUrlManager shareManager] queryQriginalUrlWithShortUrl:urlString completion:^(NSString *originalUrl, NSError *error) {
     [[SessionManager table] qriginal:urlString rCompletion:^(NSString *originalUrl, NSError *error) {
         //: if (urlString && !error) {
         if (urlString && !error) {

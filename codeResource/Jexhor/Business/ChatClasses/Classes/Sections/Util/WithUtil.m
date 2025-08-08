@@ -209,20 +209,20 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMessageUtil.h"
+//: #import "WorkMessageUtil.h"
 #import "WithUtil.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFKitUtil.h"
+//: #import "WorkGlobalMacro.h"
+#import "WorkGlobalMacro.h"
+//: #import "WorkKitUtil.h"
 #import "WantUtil.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
 //: #import "NSDictionary+MyUserKit.h"
 #import "NSDictionary+MessageContent.h"
 
-//: @implementation FFFMessageUtil
+//: @implementation WorkMessageUtil
 @implementation WithUtil
 
 //: + (NSString *)messageContent:(NIMMessage*)message {
@@ -239,25 +239,25 @@
             break;
         //: case NIMMessageTypeAudio:
         case NIMMessageTypeAudio:
-            //: text = [FFFLanguageManager getTextWithKey:@"Audio"]; 
+            //: text = [WorkLanguageManager getTextWithKey:@"Audio"]; 
             text = [InputRed preserve:[[DevastatingRowData sharedInstance] app_quickText]]; //@"[语音]".;
             //: break;
             break;
         //: case NIMMessageTypeImage:
         case NIMMessageTypeImage:
-            //: text = [FFFLanguageManager getTextWithKey:@"Image"];
+            //: text = [WorkLanguageManager getTextWithKey:@"Image"];
             text = [InputRed preserve:[[DevastatingRowData sharedInstance] show_emotionName]];//@"[图片]".;
             //: break;
             break;
         //: case NIMMessageTypeVideo:
         case NIMMessageTypeVideo:
-            //: text = [FFFLanguageManager getTextWithKey:@"Video"];
+            //: text = [WorkLanguageManager getTextWithKey:@"Video"];
             text = [InputRed preserve:[[DevastatingRowData sharedInstance] mainTitleData]];//@"[视频]".;
             //: break;
             break;
         //: case NIMMessageTypeLocation:
         case NIMMessageTypeLocation:
-            //: text = [FFFLanguageManager getTextWithKey:@"Location"];
+            //: text = [WorkLanguageManager getTextWithKey:@"Location"];
             text = [InputRed preserve:[[DevastatingRowData sharedInstance] show_threadText]];//@"[位置]".;
             //: break;
             break;
@@ -268,7 +268,7 @@
         }
         //: case NIMMessageTypeFile:
         case NIMMessageTypeFile:
-            //: text = [FFFLanguageManager getTextWithKey:@"File"];
+            //: text = [WorkLanguageManager getTextWithKey:@"File"];
             text = [InputRed preserve:[[DevastatingRowData sharedInstance] show_nationalText]];//@"[文件]".;
             //: break;
             break;
@@ -282,7 +282,7 @@
         case NIMMessageTypeRtcCallRecord: {
             //: NIMRtcCallRecordObject *record = message.messageObject;
             NIMRtcCallRecordObject *record = message.messageObject;
-            //: return (record.callType == NIMRtcCallTypeAudio ? [FFFLanguageManager getTextWithKey:@"Internet_call"] : [FFFLanguageManager getTextWithKey:@"Video_chat"]);
+            //: return (record.callType == NIMRtcCallTypeAudio ? [WorkLanguageManager getTextWithKey:@"Internet_call"] : [WorkLanguageManager getTextWithKey:@"Video_chat"]);
             return (record.callType == NIMRtcCallTypeAudio ? [InputRed preserve:[[DevastatingRowData sharedInstance] showCousinName]] : [InputRed preserve:[[DevastatingRowData sharedInstance] noti_comfortablePaintValue]]);
         }
         //: default:
@@ -304,10 +304,10 @@
         NIMNetCallNotificationContent *content = (NIMNetCallNotificationContent *)object.content;
         //: if (content.callType == NIMNetCallTypeAudio) {
         if (content.callType == NIMNetCallTypeAudio) {
-            //: return [FFFLanguageManager getTextWithKey:@"Internet_call"];
+            //: return [WorkLanguageManager getTextWithKey:@"Internet_call"];
             return [InputRed preserve:[[DevastatingRowData sharedInstance] showCousinName]];//@"[网络通话]".;
         }
-        //: return [FFFLanguageManager getTextWithKey:@"Video_chat"];
+        //: return [WorkLanguageManager getTextWithKey:@"Video_chat"];
         return [InputRed preserve:[[DevastatingRowData sharedInstance] noti_comfortablePaintValue]];//@"[视频聊天]".;
     }
     //: if (object.notificationType == NIMNotificationTypeTeam) {
@@ -316,7 +316,7 @@
         NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:message.session.sessionId];
         //: if (team.type == NIMTeamTypeNormal) {
         if (team.type == NIMTeamTypeNormal) {
-            //: return [FFFLanguageManager getTextWithKey:@"Group_chat_information_update"];
+            //: return [WorkLanguageManager getTextWithKey:@"Group_chat_information_update"];
             return [InputRed preserve:[[DevastatingRowData sharedInstance] dreamMothValue]];//@"[讨论组信息更新]".;
         //: }else{
         }else{
@@ -398,14 +398,14 @@
                         break;
             }
 
-            //: return [FFFLanguageManager getTextWithKey:@"Group_information_update"];
+            //: return [WorkLanguageManager getTextWithKey:@"Group_information_update"];
             return [InputRed preserve:[[DevastatingRowData sharedInstance] appRantValue]];//@"[群信息更新]".;
         }
     }
 
     //: if (object.notificationType == NIMNotificationTypeSuperTeam) {
     if (object.notificationType == NIMNotificationTypeSuperTeam) {
-        //: return [FFFLanguageManager getTextWithKey:@"Super_Group_Information_Update"];
+        //: return [WorkLanguageManager getTextWithKey:@"Super_Group_Information_Update"];
         return [InputRed preserve:[[DevastatingRowData sharedInstance] notiHandleTitle]];//@"[超大群信息更新]".;
     }
     //: return @"";

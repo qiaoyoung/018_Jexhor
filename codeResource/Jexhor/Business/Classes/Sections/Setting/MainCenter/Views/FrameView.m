@@ -152,7 +152,7 @@ Byte k_mediaValue[] = {29, 19, 3, 50, 112, 105, 116, 95, 101, 116, 101, 108, 101
         _titleLabel.textColor = [UIColor ground:StringFromHandleShouldData(noti_makeThanName)];
         //: _titleLabel.textAlignment = NSTextAlignmentCenter;
         _titleLabel.textAlignment = NSTextAlignmentCenter;
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"];
+        //: _titleLabel.text = [WorkLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"];
         _titleLabel.text = [InputRed preserve:StringFromHandleShouldData(mainVideoScaleName)];
     }
     //: return _titleLabel;
@@ -176,7 +176,7 @@ Byte k_mediaValue[] = {29, 19, 3, 50, 112, 105, 116, 95, 101, 116, 101, 108, 101
         labtitle1.font = [UIFont systemFontOfSize:14.f];
         //: labtitle1.textColor = [UIColor colorWithHexString:@"#333333"];
         labtitle1.textColor = [UIColor ground:StringFromHandleShouldData(mainMaxName)];
-        //: labtitle1.text = [FFFLanguageManager getTextWithKey:@"account_delete_tip1"];
+        //: labtitle1.text = [WorkLanguageManager getTextWithKey:@"account_delete_tip1"];
         labtitle1.text = [InputRed preserve:StringFromHandleShouldData(k_oldValue)];
         //: labtitle1.numberOfLines = 0;
         labtitle1.numberOfLines = 0;
@@ -191,7 +191,7 @@ Byte k_mediaValue[] = {29, 19, 3, 50, 112, 105, 116, 95, 101, 116, 101, 108, 101
         labsubtitle1.font = [UIFont systemFontOfSize:14.f];
         //: labsubtitle1.textColor = [UIColor colorWithHexString:@"#333333"];
         labsubtitle1.textColor = [UIColor ground:StringFromHandleShouldData(mainMaxName)];
-        //: labsubtitle1.text = [FFFLanguageManager getTextWithKey:@"account_delete_tip2"];
+        //: labsubtitle1.text = [WorkLanguageManager getTextWithKey:@"account_delete_tip2"];
         labsubtitle1.text = [InputRed preserve:StringFromHandleShouldData(k_mediaValue)];
         //: labsubtitle1.numberOfLines = 0;
         labsubtitle1.numberOfLines = 0;
@@ -217,7 +217,7 @@ Byte k_mediaValue[] = {29, 19, 3, 50, 112, 105, 116, 95, 101, 116, 101, 108, 101
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor ground:StringFromHandleShouldData(user_tagScaleTitle)] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[InputRed preserve:StringFromHandleShouldData(show_buttonTitleText)] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -244,7 +244,7 @@ Byte k_mediaValue[] = {29, 19, 3, 50, 112, 105, 116, 95, 101, 116, 101, 108, 101
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[InputRed preserve:StringFromHandleShouldData(noti_infoText)] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#FF483D"];
         _sureBtn.backgroundColor = [UIColor ground:StringFromHandleShouldData(app_colorData)];

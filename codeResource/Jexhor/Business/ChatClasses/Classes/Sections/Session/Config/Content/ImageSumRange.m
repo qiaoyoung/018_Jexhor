@@ -9,12 +9,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFFileContentConfig.h"
+//: #import "WorkFileContentConfig.h"
 #import "ImageSumRange.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
 
-//: @implementation FFFFileContentConfig
+//: @implementation WorkFileContentConfig
 @implementation ImageSumRange
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
@@ -27,7 +27,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)on:(NIMMessage *)message
 {
-    //: return @"FFFSessionFileTransContentView";
+    //: return @"WorkSessionFileTransContentView";
     return @"ProviderControl";
 }
 

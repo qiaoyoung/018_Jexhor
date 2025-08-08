@@ -9,21 +9,21 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCommonTableDelegate.h"
+//: #import "WorkCommonTableDelegate.h"
 #import "TableDelegate.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
-//: #import "FFFCommonTableViewCell.h"
+//: #import "WorkCommonTableData.h"
+#import "WorkCommonTableData.h"
+//: #import "WorkCommonTableViewCell.h"
 #import "TeamTitle.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "WorkGlobalMacro.h"
+#import "WorkGlobalMacro.h"
 
 //: static NSString *DefaultTableCell = @"UITableViewCell";
 static NSString *showPageText = @"UITableViewCell";
 
-//: @interface FFFCommonTableDelegate()
+//: @interface WorkCommonTableDelegate()
 @interface TableDelegate()
 
 //: @property (nonatomic,copy) NSArray *(^NTESDataReceiver)(void);
@@ -32,7 +32,7 @@ static NSString *showPageText = @"UITableViewCell";
 //: @end
 @end
 
-//: @implementation FFFCommonTableDelegate
+//: @implementation WorkCommonTableDelegate
 @implementation TableDelegate
 
 //: - (instancetype) initWithTableData:(NSArray *(^)(void))data{
@@ -107,7 +107,7 @@ static NSString *showPageText = @"UITableViewCell";
         [self stochastic:tableRow sum:defaultCell];
     //: }else{
     }else{
-        //: [(id<FFFCommonTableViewCell>)cell refreshData:tableRow tableView:tableView];
+        //: [(id<WorkCommonTableViewCell>)cell refreshData:tableRow tableView:tableView];
         [(id<TeamTitle>)cell demonstrate:tableRow gray:tableView];
     }
     //: cell.accessoryType = tableRow.showAccessory ? UITableViewCellAccessoryDisclosureIndicator : UITableViewCellAccessoryNone;

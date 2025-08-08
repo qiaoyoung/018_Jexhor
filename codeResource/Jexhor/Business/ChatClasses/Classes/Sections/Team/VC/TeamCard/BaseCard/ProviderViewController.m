@@ -146,24 +146,24 @@ typedef struct {
 //  
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCardViewController.h"
+//: #import "WorkTeamCardViewController.h"
 #import "ProviderViewController.h"
-//: #import "FFFKitUtil.h"
+//: #import "WorkKitUtil.h"
 #import "WantUtil.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFKitColorButtonCell.h"
+//: #import "WorkKitColorButtonCell.h"
 #import "WithInfoView.h"
-//: #import "FFFTeamMemberListCell.h"
+//: #import "WorkTeamMemberListCell.h"
 #import "FixingViewCell.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
-//: #import "FFFTeamCardSelectedViewController.h"
+//: #import "WorkKitDependency.h"
+#import "WorkKitDependency.h"
+//: #import "WorkTeamCardSelectedViewController.h"
 #import "EigenvalueOfASquareMatrixViewController.h"
-//: #import "FFFGroupEditTableViewCell.h"
+//: #import "WorkGroupEditTableViewCell.h"
 #import "InputKeyView.h"
 
-//: @interface FFFTeamCardViewController () <UITableViewDataSource,
+//: @interface WorkTeamCardViewController () <UITableViewDataSource,
 @interface ProviderViewController () <UITableViewDataSource,
                                          //: UITableViewDelegate,
                                          UITableViewDelegate,
@@ -176,7 +176,7 @@ typedef struct {
 //: @end
 @end
 
-//: @implementation FFFTeamCardViewController
+//: @implementation WorkTeamCardViewController
 @implementation ProviderViewController
 
 //: - (void)viewDidLoad {
@@ -260,7 +260,7 @@ typedef struct {
 
 //: - (UIAlertAction *)makeCancelAction {
 - (UIAlertAction *)key {
-    //: UIAlertAction *cancel = [UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
+    //: UIAlertAction *cancel = [UIAlertAction actionWithTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
     UIAlertAction *cancel = [UIAlertAction actionWithTitle:[InputRed preserve:[SackData userShowData]]
                                                      //: style:UIAlertActionStyleCancel
                                                      style:UIAlertActionStyleCancel
@@ -586,11 +586,11 @@ typedef struct {
 {
     //: NSString *identifier = [NSString stringWithFormat:@"builidCommonCell%ld%ld",(long)indexPath.section,(long)indexPath.row];
     NSString *identifier = [NSString stringWithFormat:[SackData notiAbuseText],(long)indexPath.section,(long)indexPath.row];
-    //: FFFGroupEditTableViewCell * cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
+    //: WorkGroupEditTableViewCell * cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
     InputKeyView * cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
     //: if (!cell) {
     if (!cell) {
-        //: cell = [[FFFGroupEditTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        //: cell = [[WorkGroupEditTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         cell = [[InputKeyView alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         //: CGFloat left = 60.f;
         CGFloat left = 60.f;
@@ -684,12 +684,12 @@ typedef struct {
     }
     //: if (bodyData.type == TeamCardRowItemTypeSelected) {
     if (bodyData.type == TeamCardRowItemTypeSelected) {
-        //: FFFTeamCardSelectedViewController *vc = [FFFTeamCardSelectedViewController instanceWithTitle:bodyData.title
+        //: WorkTeamCardSelectedViewController *vc = [WorkTeamCardSelectedViewController instanceWithTitle:bodyData.title
         EigenvalueOfASquareMatrixViewController *vc = [EigenvalueOfASquareMatrixViewController view:bodyData.title
                                                                                //: items:bodyData.optionItems
                                                                                progress:bodyData.optionItems
-                                                                              //: result:^(id<FFFKitSelectCardData> _Nonnull item) {
-                                                                              tingItems:^(id<FFFKitSelectCardData> _Nonnull item) {
+                                                                              //: result:^(id<WorkKitSelectCardData> _Nonnull item) {
+                                                                              tingItems:^(id<WorkKitSelectCardData> _Nonnull item) {
               //: if (bodyData.selectedBlock) {
               if (bodyData.selectedBlock) {
                   //: bodyData.selectedBlock(item);
@@ -721,17 +721,17 @@ typedef struct {
 //    tableButtonCell
     //: NSString *identifier = [NSString stringWithFormat:@"tableButtonCell%ld%ld",(long)indexPath.section,(long)indexPath.row];
     NSString *identifier = [NSString stringWithFormat:[SackData main_sterolName],(long)indexPath.section,(long)indexPath.row];
-    //: FFFKitColorButtonCell * cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
+    //: WorkKitColorButtonCell * cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
     WithInfoView * cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
     //: if (!cell) {
     if (!cell) {
-        //: cell = [[FFFKitColorButtonCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        //: cell = [[WorkKitColorButtonCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         cell = [[WithInfoView alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    //: cell.button.style = FFFKitColorButtonCellStyleRed;
-    cell.button.style = FFFKitColorButtonCellStyleRed;
+    //: cell.button.style = WorkKitColorButtonCellStyleRed;
+    cell.button.style = WorkKitColorButtonCellStyleRed;
     //: [cell.button setTitle:bodyData.title forState:UIControlStateNormal];
     [cell.button setTitle:bodyData.title forState:UIControlStateNormal];
     //: return cell;
@@ -740,17 +740,17 @@ typedef struct {
 
 //: - (UITableViewCell*)builidBlueButtonCell:(id<NTESCardBodyData>) bodyData{
 - (UITableViewCell*)shared:(id<NTESCardBodyData>) bodyData{
-    //: FFFKitColorButtonCell * cell = [self.tableView dequeueReusableCellWithIdentifier:@"tableButtonCell"];
+    //: WorkKitColorButtonCell * cell = [self.tableView dequeueReusableCellWithIdentifier:@"tableButtonCell"];
     WithInfoView * cell = [self.tableView dequeueReusableCellWithIdentifier:[SackData dream_participantContent]];
     //: if (!cell) {
     if (!cell) {
-        //: cell = [[FFFKitColorButtonCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"tableButtonCell"];
+        //: cell = [[WorkKitColorButtonCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"tableButtonCell"];
         cell = [[WithInfoView alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:[SackData dream_participantContent]];
     }
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    //: cell.button.style = FFFKitColorButtonCellStyleBlue;
-    cell.button.style = FFFKitColorButtonCellStyleBlue;
+    //: cell.button.style = WorkKitColorButtonCellStyleBlue;
+    cell.button.style = WorkKitColorButtonCellStyleBlue;
     //: [cell.button setTitle:bodyData.title forState:UIControlStateNormal];
     [cell.button setTitle:bodyData.title forState:UIControlStateNormal];
     //: return cell;
@@ -759,11 +759,11 @@ typedef struct {
 
 //: - (UITableViewCell*)builidTeamMemberCell:(id<NTESCardBodyData>) bodyData{
 - (UITableViewCell*)popIndexCell:(id<NTESCardBodyData>) bodyData{
-    //: FFFTeamMemberListCell * cell = [self.tableView dequeueReusableCellWithIdentifier:@"tableMemberCell"];
+    //: WorkTeamMemberListCell * cell = [self.tableView dequeueReusableCellWithIdentifier:@"tableMemberCell"];
     FixingViewCell * cell = [self.tableView dequeueReusableCellWithIdentifier:[SackData notiUnitText]];
     //: if (!cell) {
     if (!cell) {
-        //: cell = [[FFFTeamMemberListCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"tableMemberCell"];
+        //: cell = [[WorkTeamMemberListCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"tableMemberCell"];
         cell = [[FixingViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:[SackData notiUnitText]];
     }
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -817,13 +817,13 @@ typedef struct {
 {
     //: NSString *identifier = [NSString stringWithFormat:@"TableSwitch%ld%ld",(long)indexPath.section,(long)indexPath.row];
     NSString *identifier = [NSString stringWithFormat:[SackData kInformalName],(long)indexPath.section,(long)indexPath.row];
-    //: FFFTeamSwitchTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
+    //: WorkTeamSwitchTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
     KeyStyleView *cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //: if (!cell) {
     if (!cell) {
-        //: cell = [[FFFTeamSwitchTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        //: cell = [[WorkTeamSwitchTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         cell = [[KeyStyleView alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         //: CGFloat left = 60.f;
         CGFloat left = 60.f;
@@ -896,7 +896,7 @@ typedef struct {
 
 //: #pragma mark - Setter
 #pragma mark - Setter
-//: - (void)setDatas:(NSArray<NSArray<FFFTeamCardRowItem *> *> *)datas {
+//: - (void)setDatas:(NSArray<NSArray<WorkTeamCardRowItem *> *> *)datas {
 - (void)setDatas:(NSArray<NSArray<CardItem *> *> *)datas {
     //: _datas = datas;
     _datas = datas;
@@ -964,10 +964,10 @@ typedef struct {
 //: - (UIView *)didGetHeaderView { return [UIView new]; }
 - (UIView *)margin { return [UIView new]; }
 
-//: - (void)didBuildTeamMemberCell:(FFFTeamMemberListCell *)cell {}
+//: - (void)didBuildTeamMemberCell:(WorkTeamMemberListCell *)cell {}
 - (void)cell:(FixingViewCell *)cell {}
 
-//: - (void)didBuildTeamSwitchCell:(FFFTeamSwitchTableViewCell *)cell {}
+//: - (void)didBuildTeamSwitchCell:(WorkTeamSwitchTableViewCell *)cell {}
 - (void)withChange:(KeyStyleView *)cell {}
 
 //: - (void)reloadTableViewData {};

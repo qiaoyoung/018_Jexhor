@@ -9,13 +9,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMediaItem.h"
+//: #import "WorkMediaItem.h"
 #import "AccountAction.h"
 
-//: @implementation FFFMediaItem
+//: @implementation WorkMediaItem
 @implementation AccountAction
 
-//: + (FFFMediaItem *)item:(NSString *)selector
+//: + (WorkMediaItem *)item:(NSString *)selector
 + (AccountAction *)showName:(NSString *)selector
            //: normalImage:(UIImage *)normalImage
            with:(UIImage *)normalImage
@@ -24,7 +24,7 @@
                  //: title:(NSString *)title
                  fit:(NSString *)title
 {
-    //: FFFMediaItem *item = [[FFFMediaItem alloc] init];
+    //: WorkMediaItem *item = [[WorkMediaItem alloc] init];
     AccountAction *item = [[AccountAction alloc] init];
     //: item.selctor = NSSelectorFromString(selector);
     item.selctor = NSSelectorFromString(selector);

@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFBaseSessionContentConfig.h"
-#import "FFFBaseSessionContentConfig.h"
+//: #import "WorkBaseSessionContentConfig.h"
+#import "WorkBaseSessionContentConfig.h"
 
-//: @interface FFFLocationContentConfig : NSObject<CCCSessionContentConfig>
+//: @interface WorkLocationContentConfig : NSObject<CCCSessionContentConfig>
 @interface TeamTextDisplay : NSObject<CellTitleConfig>
 
 //: @end

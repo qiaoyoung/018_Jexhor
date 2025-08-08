@@ -15,7 +15,7 @@
 //: @interface NTESContactDataMember : NSObject
 @interface PresentItem : NSObject
 
-//: @property (nonatomic,strong) FFFKitInfo *info;
+//: @property (nonatomic,strong) WorkKitInfo *info;
 @property (nonatomic,strong) ConfirmationInfo *info;
 
 //: @end

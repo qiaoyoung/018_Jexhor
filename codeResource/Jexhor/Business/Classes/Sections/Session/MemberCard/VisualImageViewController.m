@@ -85,15 +85,15 @@ NovelData app_sendLabelTitle = (NovelData){106, (Byte []){69, 30, 15, 11, 7, 69,
 // __M_A_C_R_O__
 //: #import "TeamMemberNormalViewController.h"
 #import "VisualImageViewController.h"
-//: #import "FFFContactSelectViewController.h"
+//: #import "WorkContactSelectViewController.h"
 #import "CompartmentViewController.h"
-//: #import "FFFCardHeaderCell.h"
+//: #import "WorkCardHeaderCell.h"
 #import "NameReusableView.h"
 //: #import "TeamMemberNormalCollectionViewCell.h"
 #import "SameViewCell.h"
 //: #import "NTESPersonalCardViewController.h"
 #import "SystemViewController.h"
-//: #import "FFFTeamMemberCardViewController.h"
+//: #import "WorkTeamMemberCardViewController.h"
 #import "SodalistViewController.h"
 
 //: @interface TeamMemberNormalViewController ()<UICollectionViewDelegate, UICollectionViewDataSource,NIMContactSelectDelegate>
@@ -211,7 +211,7 @@ NovelData app_sendLabelTitle = (NovelData){106, (Byte []){69, 30, 15, 11, 7, 69,
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"group_info_activity_team_member"];
+    //: labtitle.text = [WorkLanguageManager getTextWithKey:@"group_info_activity_team_member"];
     labtitle.text = [InputRed preserve:StringFromNovelData(&m_pursuitImageData)];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -267,7 +267,7 @@ NovelData app_sendLabelTitle = (NovelData){106, (Byte []){69, 30, 15, 11, 7, 69,
     subtitleLabel.textColor = [UIColor ground:StringFromNovelData(&user_atValue)];
     //: subtitleLabel.textAlignment = NSTextAlignmentRight;
     subtitleLabel.textAlignment = NSTextAlignmentRight;
-    //: subtitleLabel.text = [FFFLanguageManager getTextWithKey:@"group_member_info_activity_team_creator"];
+    //: subtitleLabel.text = [WorkLanguageManager getTextWithKey:@"group_member_info_activity_team_creator"];
     subtitleLabel.text = [InputRed preserve:StringFromNovelData(&notiButtonSessionName)];
     //: [owerView addSubview:subtitleLabel];
     [owerView addSubview:subtitleLabel];
@@ -325,7 +325,7 @@ NovelData app_sendLabelTitle = (NovelData){106, (Byte []){69, 30, 15, 11, 7, 69,
         config.filterIds = users;
         //: config.needMutiSelected = YES;
         config.needMutiSelected = YES;
-        //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+        //: WorkContactSelectViewController *vc = [[WorkContactSelectViewController alloc] initWithConfig:config];
         CompartmentViewController *vc = [[CompartmentViewController alloc] initWithStateAtPull:config];
         //: vc.delegate = self;
         vc.delegate = self;
@@ -434,7 +434,7 @@ NovelData app_sendLabelTitle = (NovelData){106, (Byte []){69, 30, 15, 11, 7, 69,
                     //: self.owerInfo = member;
                     self.owerInfo = member;
 
-                    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:member.userId option:nil];
+                    //: WorkKitInfo *info = [[MyUserKit sharedKit] infoByUser:member.userId option:nil];
                     ConfirmationInfo *info = [[MessageContent secretResolution] recent:member.userId blue:nil];
                     //: self.titleLabel.text = info.showName;
                     self.titleLabel.text = info.showName;
@@ -473,7 +473,7 @@ NovelData app_sendLabelTitle = (NovelData){106, (Byte []){69, 30, 15, 11, 7, 69,
     //: TeamMemberNormalCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"TeamMemberNormalCollectionViewCell" forIndexPath:indexPath];
     SameViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"SameViewCell" forIndexPath:indexPath];
     //    cell.delegate = self;
-//    cell.backgroundColor  = RGB_COLOR_String(@"#ffffff");
+//    cell.backgroundColor  = RGB_COLOR_String(@"#fffWork");
 
     //: NIMTeamMember *member = self.memberList[indexPath.row];
     NIMTeamMember *member = self.memberList[indexPath.row];

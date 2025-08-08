@@ -14,28 +14,28 @@
 
 //: enum {
 enum {
-    //: FFFXMLReaderOptionsProcessNamespaces = 1 << 0, 
-    FFFXMLReaderOptionsProcessNamespaces = 1 << 0, // Specifies whether the receiver reports the namespace and the qualified name of an element.
-    //: FFFXMLReaderOptionsReportNamespacePrefixes = 1 << 1, 
-    FFFXMLReaderOptionsReportNamespacePrefixes = 1 << 1, // Specifies whether the receiver reports the scope of namespace declarations.
-    //: FFFXMLReaderOptionsResolveExternalEntities = 1 << 2, 
-    FFFXMLReaderOptionsResolveExternalEntities = 1 << 2, // Specifies whether the receiver reports declarations of external entities.
+    //: WorkXMLReaderOptionsProcessNamespaces = 1 << 0, 
+    WorkXMLReaderOptionsProcessNamespaces = 1 << 0, // Specifies whether the receiver reports the namespace and the qualified name of an element.
+    //: WorkXMLReaderOptionsReportNamespacePrefixes = 1 << 1, 
+    WorkXMLReaderOptionsReportNamespacePrefixes = 1 << 1, // Specifies whether the receiver reports the scope of namespace declarations.
+    //: WorkXMLReaderOptionsResolveExternalEntities = 1 << 2, 
+    WorkXMLReaderOptionsResolveExternalEntities = 1 << 2, // Specifies whether the receiver reports declarations of external entities.
 //: };
 };
-//: typedef NSUInteger FFFXMLReaderOptions;
-typedef NSUInteger FFFXMLReaderOptions;
+//: typedef NSUInteger WorkXMLReaderOptions;
+typedef NSUInteger WorkXMLReaderOptions;
 
-//: @interface FFFXMLReader : NSObject <NSXMLParserDelegate>
+//: @interface WorkXMLReader : NSObject <NSXMLParserDelegate>
 @interface VideoReader : NSObject <NSXMLParserDelegate>
 
 //: + (NSDictionary *)dictionaryForXMLData:(NSData *)data error:(NSError **)errorPointer;
 + (NSDictionary *)mode:(NSData *)data user_autoreleasing:(NSError **)errorPointer;
 //: + (NSDictionary *)dictionaryForXMLString:(NSString *)string error:(NSError **)errorPointer;
 + (NSDictionary *)titleMargin:(NSString *)string status:(NSError **)errorPointer;
-//: + (NSDictionary *)dictionaryForXMLData:(NSData *)data options:(FFFXMLReaderOptions)options error:(NSError **)errorPointer;
-+ (NSDictionary *)barrelhouse:(NSData *)data options:(FFFXMLReaderOptions)options nonaccomplishment:(NSError **)errorPointer;
-//: + (NSDictionary *)dictionaryForXMLString:(NSString *)string options:(FFFXMLReaderOptions)options error:(NSError **)errorPointer;
-+ (NSDictionary *)with:(NSString *)string playBackground:(FFFXMLReaderOptions)options notIndex:(NSError **)errorPointer;
+//: + (NSDictionary *)dictionaryForXMLData:(NSData *)data options:(WorkXMLReaderOptions)options error:(NSError **)errorPointer;
++ (NSDictionary *)barrelhouse:(NSData *)data options:(WorkXMLReaderOptions)options nonaccomplishment:(NSError **)errorPointer;
+//: + (NSDictionary *)dictionaryForXMLString:(NSString *)string options:(WorkXMLReaderOptions)options error:(NSError **)errorPointer;
++ (NSDictionary *)with:(NSString *)string playBackground:(WorkXMLReaderOptions)options notIndex:(NSError **)errorPointer;
 
 //: @end
 @end

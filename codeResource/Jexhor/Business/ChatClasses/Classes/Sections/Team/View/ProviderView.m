@@ -70,10 +70,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCartSetTableViewCell.h"
+//: #import "WorkTeamCartSetTableViewCell.h"
 #import "ProviderView.h"
 
-//: @implementation FFFTeamCartSetTableViewCell
+//: @implementation WorkTeamCartSetTableViewCell
 @implementation ProviderView
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -110,14 +110,14 @@
 //: + (instancetype)cellWithTableView:(UITableView *)tableView
 + (instancetype)path:(UITableView *)tableView
 {
-    //: static NSString *identifier = @"FFFTeamCartSetTableViewCell";
+    //: static NSString *identifier = @"WorkTeamCartSetTableViewCell";
     static NSString *identifier = @"ProviderView";
-    //: FFFTeamCartSetTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    //: WorkTeamCartSetTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     ProviderView *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     //: if (!cell)
     if (!cell)
     {
-        //: cell = [[FFFTeamCartSetTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        //: cell = [[WorkTeamCartSetTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         cell = [[ProviderView alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
 
     }

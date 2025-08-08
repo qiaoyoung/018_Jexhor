@@ -14,7 +14,7 @@
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
 
-//: @interface FFFTeamAnnouncementListCell : UITableViewCell
+//: @interface WorkTeamAnnouncementListCell : UITableViewCell
 @interface RankView : UITableViewCell
 
 //: - (void)refreshData:(NSDictionary *)data nick:(NSString *)nick;

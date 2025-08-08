@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFContactDefines.h
+//  WorkContactDefines.h
 //  NIM
 //
 //  Created by chris on 15/2/26.
@@ -19,10 +19,10 @@
 - (NSString *)quick;
 
 //: - (NSString *)memberId;
-- (NSString *)pressedFor;
+- (NSString *)memberId;
 
 //: - (NSString *)showName;
-- (NSString *)exhibitDoing;
+- (NSString *)showName;
 
 //: - (NSString *)avatarUrlString;
 - (NSString *)belowGlobal;

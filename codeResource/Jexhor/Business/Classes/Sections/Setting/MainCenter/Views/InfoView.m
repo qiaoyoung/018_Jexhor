@@ -31,7 +31,7 @@ Byte mainSizeName[] = {78, 7, 58, 6, 106, 231, 93, 128, 113, 126, 108, 128, 109,
 //: message_send_camera
 Byte user_sessionData[] = {82, 19, 15, 4, 124, 116, 130, 130, 112, 118, 116, 110, 130, 116, 125, 115, 110, 114, 112, 124, 116, 129, 112, 243};
 
-//: #ffffff
+//: #fffWork
 Byte kCanData[] = {5, 7, 88, 8, 98, 236, 8, 90, 123, 190, 190, 190, 190, 190, 190, 183};
 
 // __DEBUG__
@@ -95,7 +95,7 @@ Byte kCanData[] = {5, 7, 88, 8, 98, 236, 8, 90, 123, 190, 190, 190, 190, 190, 19
 
     //: _viewBg = [[UIView alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height-278, [[UIScreen mainScreen] bounds].size.width, 278)];
     _viewBg = [[UIView alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height-278, [[UIScreen mainScreen] bounds].size.width, 278)];
-    //: _viewBg.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+    //: _viewBg.backgroundColor = [UIColor colorWithHexString:@"#fffWork"];
     _viewBg.backgroundColor = [UIColor ground:StringFromMakeThanData(kCanData)];
     //: _viewBg.layer.masksToBounds = YES;
     _viewBg.layer.masksToBounds = YES;
@@ -129,7 +129,7 @@ Byte kCanData[] = {5, 7, 88, 8, 98, 236, 8, 90, 123, 190, 190, 190, 190, 190, 19
 -(CGFloat)tip:(NSInteger)Font barAddText:(NSString *)text{
     //: NSDictionary *attr = @{NSFontAttributeName : [UIFont systemFontOfSize:Font]};
     NSDictionary *attr = @{NSFontAttributeName : [UIFont systemFontOfSize:Font]};
-    //: CGRect rect = [text boundingRectWithSize:CGSizeMake(0x1.fffffep+127f, Font + 2)
+    //: CGRect rect = [text boundingRectWithSize:CGSizeMake(0x1.Workffep+127f, Font + 2)
     CGRect rect = [text boundingRectWithSize:CGSizeMake(0x1.fffffep+127f, Font + 2)
                                      //: options:NSStringDrawingUsesFontLeading|NSStringDrawingUsesLineFragmentOrigin
                                      options:NSStringDrawingUsesFontLeading|NSStringDrawingUsesLineFragmentOrigin
@@ -195,7 +195,7 @@ Byte kCanData[] = {5, 7, 88, 8, 98, 236, 8, 90, 123, 190, 190, 190, 190, 190, 19
         lab.font = [UIFont systemFontOfSize:14];
         //: lab.textColor = [UIColor colorWithHexString:@"#000000"];
         lab.textColor = [UIColor ground:StringFromMakeThanData(noti_scaleTitle)];
-        //: lab.text = [FFFLanguageManager getTextWithKey:@"message_send_camera"];
+        //: lab.text = [WorkLanguageManager getTextWithKey:@"message_send_camera"];
         lab.text = [InputRed preserve:StringFromMakeThanData(user_sessionData)];
         //: lab.textAlignment = NSTextAlignmentCenter;
         lab.textAlignment = NSTextAlignmentCenter;
@@ -243,7 +243,7 @@ Byte kCanData[] = {5, 7, 88, 8, 98, 236, 8, 90, 123, 190, 190, 190, 190, 190, 19
         lab.font = [UIFont systemFontOfSize:14];
         //: lab.textColor = [UIColor colorWithHexString:@"#000000"];
         lab.textColor = [UIColor ground:StringFromMakeThanData(noti_scaleTitle)];
-        //: lab.text = [FFFLanguageManager getTextWithKey:@"message_send_album"];
+        //: lab.text = [WorkLanguageManager getTextWithKey:@"message_send_album"];
         lab.text = [InputRed preserve:StringFromMakeThanData(dreamTagText)];
         //: lab.textAlignment = NSTextAlignmentCenter;
         lab.textAlignment = NSTextAlignmentCenter;
@@ -276,9 +276,9 @@ Byte kCanData[] = {5, 7, 88, 8, 98, 236, 8, 90, 123, 190, 190, 190, 190, 190, 19
         _cancelBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_cancelBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_cancelBtn setTitleColor:[UIColor ground:StringFromMakeThanData(kMediaInfoText)] forState:UIControlStateNormal];
-        //: [_cancelBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_cancelBtn setTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_cancelBtn setTitle:[InputRed preserve:StringFromMakeThanData(dreamCloseTitle)] forState:UIControlStateNormal];
-        //: _cancelBtn.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: _cancelBtn.backgroundColor = [UIColor colorWithHexString:@"#fffWork"];
         _cancelBtn.backgroundColor = [UIColor ground:StringFromMakeThanData(kCanData)];
         //: _cancelBtn.layer.cornerRadius = 22;
         _cancelBtn.layer.cornerRadius = 22;

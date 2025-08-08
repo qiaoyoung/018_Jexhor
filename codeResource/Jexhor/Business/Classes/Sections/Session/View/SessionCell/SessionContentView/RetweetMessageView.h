@@ -9,7 +9,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "WorkSessionMessageContentView.h"
 #import "TextControl.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 //: extern NSString *const NIMDemoEventNameOpenMergeMessage; 
 extern NSString *const mMinValue; //自定义消息打开合并消息
 
-//: @interface NTESSessionMultiRetweetContentView : FFFSessionMessageContentView
+//: @interface NTESSessionMultiRetweetContentView : WorkSessionMessageContentView
 @interface RetweetMessageView : TextControl
 
 //: @end

@@ -11,10 +11,10 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFSessionConfig.h"
+//: #import "WorkSessionConfig.h"
 #import "LineConfig.h"
-//: #import "FFFInputProtocol.h"
-#import "FFFInputProtocol.h"
+//: #import "WorkInputProtocol.h"
+#import "WorkInputProtocol.h"
 //: #import "CustomAlbumPickerView.h"
 #import "RfView.h"
 
@@ -27,10 +27,10 @@
 //: @end
 @end
 
-//: @interface FFFInputMoreContainerView : UIView
+//: @interface WorkInputMoreContainerView : UIView
 @interface SignalingView : UIView
 
-//: @property (nonatomic,weak) id<FFFSessionConfig> config;
+//: @property (nonatomic,weak) id<WorkSessionConfig> config;
 @property (nonatomic,weak) id<LineConfig> config;
 //: @property (nonatomic,weak) id<NIMInputActionDelegate> actionDelegate;
 @property (nonatomic,weak) id<ButtonDelegate> actionDelegate;

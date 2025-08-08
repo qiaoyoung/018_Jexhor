@@ -367,7 +367,7 @@ typedef struct {
     labtitle.textColor = [UIColor ground:[ColorData noti_bubbleTargetValue]];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"Confirm_Account_Deletion"];
+    //: labtitle.text = [WorkLanguageManager getTextWithKey:@"Confirm_Account_Deletion"];
     labtitle.text = [InputRed preserve:[ColorData appTableValue]];
     //: [_box addSubview:labtitle];
     [_box addSubview:labtitle];
@@ -405,7 +405,7 @@ typedef struct {
 
     //: if (_agreementButton.selected == NO) {
     if (_agreementButton.selected == NO) {
-        //: [self makeToast:[FFFLanguageManager getTextWithKey:@"Read_agree_agreement"] duration:2.0 position:CSToastPositionCenter];
+        //: [self makeToast:[WorkLanguageManager getTextWithKey:@"Read_agree_agreement"] duration:2.0 position:CSToastPositionCenter];
         [self makeToast:[InputRed preserve:[ColorData mThreadMakeData]] duration:2.0 position:CSToastPositionCenter];
         //: return;
         return;
@@ -471,7 +471,7 @@ typedef struct {
         _titleLabel.textAlignment = NSTextAlignmentCenter;
 //        _titleLabel.numberOfLines = 1;
 //        _titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"];
+        //: _titleLabel.text = [WorkLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"];
         _titleLabel.text = [InputRed preserve:[ColorData app_addText]];
     }
     //: return _titleLabel;
@@ -534,7 +534,7 @@ typedef struct {
         labtitle1.font = [UIFont systemFontOfSize:11.f];
         //: labtitle1.textColor = [UIColor blackColor];
         labtitle1.textColor = [UIColor blackColor];
-        //: labtitle1.text = [FFFLanguageManager getTextWithKey:@"Read_agree_agreement"];
+        //: labtitle1.text = [WorkLanguageManager getTextWithKey:@"Read_agree_agreement"];
         labtitle1.text = [InputRed preserve:[ColorData mThreadMakeData]];
         //: labtitle1.numberOfLines = 2;
         labtitle1.numberOfLines = 2;
@@ -575,7 +575,7 @@ typedef struct {
         labtitle2.font = [UIFont systemFontOfSize:11.f];
         //: labtitle2.textColor = [UIColor colorWithHexString:@"#5D5F66"];
         labtitle2.textColor = [UIColor ground:[ColorData mOnShowData]];
-        //: labtitle2.text = [FFFLanguageManager getTextWithKey:@"Vertify_login_password"];
+        //: labtitle2.text = [WorkLanguageManager getTextWithKey:@"Vertify_login_password"];
         labtitle2.text = [InputRed preserve:[ColorData appDisableData]];
         //: labtitle2.numberOfLines = 2;
         labtitle2.numberOfLines = 2;
@@ -616,7 +616,7 @@ typedef struct {
         labtitle3.font = [UIFont systemFontOfSize:11.f];
         //: labtitle3.textColor = [UIColor colorWithHexString:@"#5D5F66"];
         labtitle3.textColor = [UIColor ground:[ColorData mOnShowData]];
-        //: labtitle3.text = [FFFLanguageManager getTextWithKey:@"Complete_operation"];
+        //: labtitle3.text = [WorkLanguageManager getTextWithKey:@"Complete_operation"];
         labtitle3.text = [InputRed preserve:[ColorData k_changeName]];
         //: labtitle3.numberOfLines = 2;
         labtitle3.numberOfLines = 2;
@@ -660,7 +660,7 @@ typedef struct {
         labtitle1.font = [UIFont boldSystemFontOfSize:12.f];
         //: labtitle1.textColor = [UIColor colorWithHexString:@"#333333"];
         labtitle1.textColor = [UIColor ground:[ColorData show_endData]];
-        //: labtitle1.text = [FFFLanguageManager getTextWithKey:@"Consequences_Account_Deletion"];
+        //: labtitle1.text = [WorkLanguageManager getTextWithKey:@"Consequences_Account_Deletion"];
         labtitle1.text = [InputRed preserve:[ColorData showAtTitle]];
         //: [_contentBox addSubview:labtitle1];
         [_contentBox addSubview:labtitle1];
@@ -670,7 +670,7 @@ typedef struct {
         labsubtitle1.font = [UIFont systemFontOfSize:12.f];
         //: labsubtitle1.textColor = [UIColor colorWithHexString:@"#333333"];
         labsubtitle1.textColor = [UIColor ground:[ColorData show_endData]];
-        //: labsubtitle1.text = [FFFLanguageManager getTextWithKey:@"Consequences_Account_Deletion_content"];
+        //: labsubtitle1.text = [WorkLanguageManager getTextWithKey:@"Consequences_Account_Deletion_content"];
         labsubtitle1.text = [InputRed preserve:[ColorData userTextData]];
         //: labsubtitle1.numberOfLines = 0;
         labsubtitle1.numberOfLines = 0;
@@ -685,7 +685,7 @@ typedef struct {
         labtitle2.font = [UIFont boldSystemFontOfSize:12.f];
         //: labtitle2.textColor = [UIColor colorWithHexString:@"#333333"];
         labtitle2.textColor = [UIColor ground:[ColorData show_endData]];
-        //: labtitle2.text = [FFFLanguageManager getTextWithKey:@"Explanation_Data_Deletion"];
+        //: labtitle2.text = [WorkLanguageManager getTextWithKey:@"Explanation_Data_Deletion"];
         labtitle2.text = [InputRed preserve:[ColorData k_scaleValue]];
         //: [_contentBox addSubview:labtitle2];
         [_contentBox addSubview:labtitle2];
@@ -695,7 +695,7 @@ typedef struct {
         labsubtitle2.font = [UIFont systemFontOfSize:12.f];
         //: labsubtitle2.textColor = [UIColor colorWithHexString:@"#333333"];
         labsubtitle2.textColor = [UIColor ground:[ColorData show_endData]];
-        //: labsubtitle2.text = [FFFLanguageManager getTextWithKey:@"Explanation_Data_Deletion_content"];
+        //: labsubtitle2.text = [WorkLanguageManager getTextWithKey:@"Explanation_Data_Deletion_content"];
         labsubtitle2.text = [InputRed preserve:[ColorData kDisableValue]];
         //: labsubtitle2.numberOfLines = 0;
         labsubtitle2.numberOfLines = 0;
@@ -710,7 +710,7 @@ typedef struct {
         labtitle3.font = [UIFont boldSystemFontOfSize:12.f];
         //: labtitle3.textColor = [UIColor colorWithHexString:@"#333333"];
         labtitle3.textColor = [UIColor ground:[ColorData show_endData]];
-        //: labtitle3.text = [FFFLanguageManager getTextWithKey:@"Irreversible_Operation"];
+        //: labtitle3.text = [WorkLanguageManager getTextWithKey:@"Irreversible_Operation"];
         labtitle3.text = [InputRed preserve:[ColorData user_needItemName]];
         //: [_contentBox addSubview:labtitle3];
         [_contentBox addSubview:labtitle3];
@@ -720,7 +720,7 @@ typedef struct {
         labsubtitle3.font = [UIFont systemFontOfSize:12.f];
         //: labsubtitle3.textColor = [UIColor colorWithHexString:@"#333333"];
         labsubtitle3.textColor = [UIColor ground:[ColorData show_endData]];
-        //: labsubtitle3.text = [FFFLanguageManager getTextWithKey:@"Irreversible_Operation_content"];
+        //: labsubtitle3.text = [WorkLanguageManager getTextWithKey:@"Irreversible_Operation_content"];
         labsubtitle3.text = [InputRed preserve:[ColorData kRowReadValue]];
         //: labsubtitle3.numberOfLines = 0;
         labsubtitle3.numberOfLines = 0;
@@ -761,7 +761,7 @@ typedef struct {
         //: [labprotocol addGestureRecognizer:singleTap];
         [labprotocol addGestureRecognizer:singleTap];
 
-        //: NSMutableAttributedString *tncString = [[NSMutableAttributedString alloc] initWithString:[FFFLanguageManager getTextWithKey:@"agree_account_deletion_terms"]];
+        //: NSMutableAttributedString *tncString = [[NSMutableAttributedString alloc] initWithString:[WorkLanguageManager getTextWithKey:@"agree_account_deletion_terms"]];
         NSMutableAttributedString *tncString = [[NSMutableAttributedString alloc] initWithString:[InputRed preserve:[ColorData notiSizeData]]];
         //: [tncString addAttribute:NSUnderlineStyleAttributeName
         [tncString addAttribute:NSUnderlineStyleAttributeName
@@ -815,7 +815,7 @@ typedef struct {
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor ground:[ColorData mOnShowData]] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[InputRed preserve:[ColorData user_onName]] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -842,7 +842,7 @@ typedef struct {
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[InputRed preserve:[ColorData mCommentOldSuccessValue]] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#FF483D"];
         _sureBtn.backgroundColor = [UIColor ground:[ColorData appParentName]];

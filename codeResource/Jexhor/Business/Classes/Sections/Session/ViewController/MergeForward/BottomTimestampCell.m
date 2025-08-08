@@ -71,7 +71,7 @@ typedef struct {
 #import "BottomTimestampCell.h"
 //: #import "UIView+NTES.h"
 #import "UIView+Recent.h"
-//: #import "FFFTimestampModel.h"
+//: #import "WorkTimestampModel.h"
 #import "EngraftTing.h"
 
 //: @interface NTESTimestampCell ()
@@ -125,9 +125,9 @@ typedef struct {
     _lineRight.centerY = self.timeLabel.centerY;
 }
 
-//: - (void)refreshData:(FFFTimestampModel *)data {
+//: - (void)refreshData:(WorkTimestampModel *)data {
 - (void)content:(EngraftTing *)data {
-    //: if ([data isKindOfClass:[FFFTimestampModel class]]) {
+    //: if ([data isKindOfClass:[WorkTimestampModel class]]) {
     if ([data isKindOfClass:[EngraftTing class]]) {
         //: self.timeLabel.text = [self timeFormatString:data.messageTime];
         self.timeLabel.text = [self pin:data.messageTime];

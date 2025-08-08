@@ -27,7 +27,7 @@
 //: @end
 @end
 
-//: @interface FFFInputAtCache : NSObject
+//: @interface WorkInputAtCache : NSObject
 @interface AdministratorCache : NSObject
 
 //: - (NSArray *)allAtUid:(NSString *)sendText;

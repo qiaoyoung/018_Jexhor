@@ -16,7 +16,7 @@
 //: @class NTESRedPacketConfig;
 @class NTESRedPacketConfig;
 
-//: @interface FFFConfig : NSObject
+//: @interface WorkConfig : NSObject
 @interface AccountWith : NSObject
 
 //: + (instancetype)sharedConfig;

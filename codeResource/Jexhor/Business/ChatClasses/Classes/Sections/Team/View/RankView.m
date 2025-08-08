@@ -119,18 +119,18 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamAnnouncementListCell.h"
+//: #import "WorkTeamAnnouncementListCell.h"
 #import "RankView.h"
-//: #import "FFFUsrInfoData.h"
-#import "FFFUsrInfoData.h"
-//: #import "FFFKitUtil.h"
+//: #import "WorkUsrInfoData.h"
+#import "WorkUsrInfoData.h"
+//: #import "WorkKitUtil.h"
 #import "WantUtil.h"
 //: #import "M80AttributedLabel.h"
 #import "VideoTextView.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "VideoTextView+MessageContent.h"
 
-//: @interface FFFTeamAnnouncementListCell ()
+//: @interface WorkTeamAnnouncementListCell ()
 @interface RankView ()
 //: @property (strong, nonatomic) UILabel *titleLabel;
 @property (strong, nonatomic) UILabel *titleLabel;
@@ -144,7 +144,7 @@
 //: @end
 @end
 
-//: @implementation FFFTeamAnnouncementListCell
+//: @implementation WorkTeamAnnouncementListCell
 @implementation RankView
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -214,7 +214,7 @@
          //: autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
          autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
                       ;
-        //: _contentLabel.selectBlock = ^(FFFMediaItem *item) {
+        //: _contentLabel.selectBlock = ^(WorkMediaItem *item) {
         _contentLabel.selectBlock = ^(AccountAction *item) {
             @
              //: try{} @finally{} __typeof__(self) self = __weak_self__;

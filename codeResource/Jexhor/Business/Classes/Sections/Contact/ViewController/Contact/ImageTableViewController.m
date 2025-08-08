@@ -172,7 +172,7 @@
 #import "UIView+Toast.h"
 //: #import "UIView+NTES.h"
 #import "UIView+Recent.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WorkAvatarImageView.h"
 #import "ButtonControl.h"
 //: #import "NTESSessionViewController.h"
 #import "DisplayAccountViewController.h"
@@ -531,7 +531,7 @@
 
 //: - (NSMutableAttributedString *)showNameWithUser:(NIMUser *)user {
 - (NSMutableAttributedString *)outTitle:(NIMUser *)user {
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:user.userId option:nil];
+    //: WorkKitInfo *info = [[MyUserKit sharedKit] infoByUser:user.userId option:nil];
     ConfirmationInfo *info = [[MessageContent secretResolution] recent:user.userId blue:nil];
     //: NSMutableAttributedString *ret = [[NSMutableAttributedString alloc] init];
     NSMutableAttributedString *ret = [[NSMutableAttributedString alloc] init];

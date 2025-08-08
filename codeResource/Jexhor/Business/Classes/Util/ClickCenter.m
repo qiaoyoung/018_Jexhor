@@ -247,7 +247,7 @@ NSString *appMakeTitle = @"appMakeTitle";
     BOOL needPlay = YES;
     //: for (UIViewController *vc in nav.viewControllers) {
     for (UIViewController *vc in nav.viewControllers) {
-        //: if ([vc isKindOfClass:[FFFSessionViewController class]])
+        //: if ([vc isKindOfClass:[WorkSessionViewController class]])
         if ([vc isKindOfClass:[AccountViewController class]])
         {
             //: needPlay = NO;
@@ -384,7 +384,7 @@ NSString *appMakeTitle = @"appMakeTitle";
         if ([vc isKindOfClass:[DisplayAccountViewController class]]
             //: && [vc.session.sessionId isEqualToString:notification.session.sessionId]) {
             && [vc.session.sessionId isEqualToString:notification.session.sessionId]) {
-            //: FFFMessageModel *model = [vc uiDeleteMessage:notification.message];
+            //: WorkMessageModel *model = [vc uiDeleteMessage:notification.message];
             ShowModel *model = [vc image:notification.message];
             //: if (notification.notificationType == NIMRevokeMessageNotificationTypeP2POneWay ||
             if (notification.notificationType == NIMRevokeMessageNotificationTypeP2POneWay ||
@@ -583,7 +583,7 @@ NSString *appMakeTitle = @"appMakeTitle";
 {
     //: NSString *text = @"你收到了一个白板请求".ntes_localized;
     NSString *text = [GivingData m_adultQuickTitle].shouldLocalized;
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:caller option:nil];
+    //: WorkKitInfo *info = [[MyUserKit sharedKit] infoByUser:caller option:nil];
     ConfirmationInfo *info = [[MessageContent secretResolution] recent:caller blue:nil];
     //: if ([info.showName length])
     if ([info.showName length])
@@ -657,7 +657,7 @@ NSString *appMakeTitle = @"appMakeTitle";
     return should;
 }
 
-//: - (FFFSessionViewController *)currentSessionViewController
+//: - (WorkSessionViewController *)currentSessionViewController
 - (AccountViewController *)currentnessController
 {
     //: UINavigationController *nav = [NTESMainTabController instance].selectedViewController;
@@ -665,10 +665,10 @@ NSString *appMakeTitle = @"appMakeTitle";
     //: for (UIViewController *vc in nav.viewControllers)
     for (UIViewController *vc in nav.viewControllers)
     {
-        //: if ([vc isKindOfClass:[FFFSessionViewController class]])
+        //: if ([vc isKindOfClass:[WorkSessionViewController class]])
         if ([vc isKindOfClass:[AccountViewController class]])
         {
-            //: return (FFFSessionViewController *)vc;
+            //: return (WorkSessionViewController *)vc;
             return (AccountViewController *)vc;
         }
     }

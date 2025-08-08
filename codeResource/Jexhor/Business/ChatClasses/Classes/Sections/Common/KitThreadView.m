@@ -9,12 +9,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitTitleView.h"
+//: #import "WorkKitTitleView.h"
 #import "KitThreadView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 
-//: @implementation FFFKitTitleView
+//: @implementation WorkKitTitleView
 @implementation KitThreadView
 
 //: - (instancetype)initWithFrame:(CGRect)frame

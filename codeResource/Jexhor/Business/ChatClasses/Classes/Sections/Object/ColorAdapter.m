@@ -121,11 +121,11 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionTableAdapter.h"
+//: #import "WorkSessionTableAdapter.h"
 #import "ColorAdapter.h"
-//: #import "FFFMessageModel.h"
+//: #import "WorkMessageModel.h"
 #import "ShowModel.h"
-//: #import "FFFMessageCellFactory.h"
+//: #import "WorkMessageCellFactory.h"
 #import "PhoneMessageSystemCanneryFactory.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
@@ -134,16 +134,16 @@
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "VideoTextView+MessageContent.h"
 
-//: @interface FFFSessionTableAdapter()
+//: @interface WorkSessionTableAdapter()
 @interface ColorAdapter()
 
-//: @property (nonatomic,strong) FFFMessageCellFactory *cellFactory;
+//: @property (nonatomic,strong) WorkMessageCellFactory *cellFactory;
 @property (nonatomic,strong) PhoneMessageSystemCanneryFactory *cellFactory;
 
 //: @end
 @end
 
-//: @implementation FFFSessionTableAdapter
+//: @implementation WorkSessionTableAdapter
 @implementation ColorAdapter
 
 //: - (instancetype)init
@@ -153,7 +153,7 @@
     self = [super init];
     //: if (self) {
     if (self) {
-        //: _cellFactory = [[FFFMessageCellFactory alloc] init];
+        //: _cellFactory = [[WorkMessageCellFactory alloc] init];
         _cellFactory = [[PhoneMessageSystemCanneryFactory alloc] init];
     }
     //: return self;
@@ -181,20 +181,20 @@
     UITableViewCell *cell = nil;
     //: id model = [[self.interactor items] objectAtIndex:indexPath.row];
     id model = [[self.interactor with] objectAtIndex:indexPath.row];
-    //: if ([model isKindOfClass:[FFFMessageModel class]]) {
+    //: if ([model isKindOfClass:[WorkMessageModel class]]) {
     if ([model isKindOfClass:[ShowModel class]]) {
         //: cell = [self.cellFactory cellInTable:tableView
         cell = [self.cellFactory quantity:tableView
                                    //: forMessageMode:model];
                                    pastLifeStyle:model];
-        //: [(FFFMessageCell *)cell setDelegate:self.delegate];
+        //: [(WorkMessageCell *)cell setDelegate:self.delegate];
         [(CellView *)cell setDelegate:self.delegate];
         //: [self.interactor willDisplayMessageModel:model];
         [self.interactor when:model];
-        //: [(FFFMessageCell *)cell refreshData:model];
+        //: [(WorkMessageCell *)cell refreshData:model];
         [(CellView *)cell flushVideo:model];
     }
-    //: else if ([model isKindOfClass:[FFFTimestampModel class]])
+    //: else if ([model isKindOfClass:[WorkTimestampModel class]])
     else if ([model isKindOfClass:[EngraftTing class]])
     {
         //: cell = [self.cellFactory cellInTable:tableView
@@ -244,10 +244,10 @@
     CGFloat cellHeight = 0;
     //: id modelInArray = [[self.interactor items] objectAtIndex:indexPath.row];
     id modelInArray = [[self.interactor with] objectAtIndex:indexPath.row];
-    //: if ([modelInArray isKindOfClass:[FFFMessageModel class]])
+    //: if ([modelInArray isKindOfClass:[WorkMessageModel class]])
     if ([modelInArray isKindOfClass:[ShowModel class]])
     {
-        //: FFFMessageModel *model = (FFFMessageModel *)modelInArray;
+        //: WorkMessageModel *model = (WorkMessageModel *)modelInArray;
         ShowModel *model = (ShowModel *)modelInArray;
 
         // 撤回的消息 发送自定义消息
@@ -360,10 +360,10 @@
 
 
     }
-    //: else if ([modelInArray isKindOfClass:[FFFTimestampModel class]])
+    //: else if ([modelInArray isKindOfClass:[WorkTimestampModel class]])
     else if ([modelInArray isKindOfClass:[EngraftTing class]])
     {
-        //: cellHeight = [(FFFTimestampModel *)modelInArray height];
+        //: cellHeight = [(WorkTimestampModel *)modelInArray height];
         cellHeight = [(EngraftTing *)modelInArray height];
     }
     //: else

@@ -9,13 +9,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "WorkSessionMessageContentView.h"
 #import "TextControl.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFSessionShareCardContentView : FFFSessionMessageContentView
+//: @interface WorkSessionShareCardContentView : WorkSessionMessageContentView
 @interface RedNameView : TextControl
 
 

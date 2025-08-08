@@ -12,10 +12,10 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @class FFFGrowingTextView;
+//: @class WorkGrowingTextView;
 @class ItemView;
 
-//: @protocol FFFGrowingTextViewDelegate <NSObject>
+//: @protocol WorkGrowingTextViewDelegate <NSObject>
 @protocol FactorRecent <NSObject>
 //: @optional
 @optional
@@ -29,22 +29,22 @@
 //: - (BOOL)shouldInteractWithTextAttachment:(NSTextAttachment *)textAttachment inRange:(NSRange)range;
 - (BOOL)sub:(NSTextAttachment *)textAttachment canIn:(NSRange)range;
 
-//: - (void)textViewDidBeginEditing:(FFFGrowingTextView *)growingTextView;
+//: - (void)textViewDidBeginEditing:(WorkGrowingTextView *)growingTextView;
 - (void)draftCopyNetDataConverter:(ItemView *)growingTextView;
 
-//: - (void)textViewDidChangeSelection:(FFFGrowingTextView *)growingTextView;
+//: - (void)textViewDidChangeSelection:(WorkGrowingTextView *)growingTextView;
 - (void)inputted:(ItemView *)growingTextView;
 
-//: - (void)textViewDidEndEditing:(FFFGrowingTextView *)growingTextView;
+//: - (void)textViewDidEndEditing:(WorkGrowingTextView *)growingTextView;
 - (void)adds:(ItemView *)growingTextView;
 
-//: - (BOOL)textViewShouldBeginEditing:(FFFGrowingTextView *)growingTextView;
+//: - (BOOL)textViewShouldBeginEditing:(WorkGrowingTextView *)growingTextView;
 - (BOOL)rangeValue:(ItemView *)growingTextView;
 
-//: - (BOOL)textViewShouldEndEditing:(FFFGrowingTextView *)growingTextView;
+//: - (BOOL)textViewShouldEndEditing:(WorkGrowingTextView *)growingTextView;
 - (BOOL)towardSize:(ItemView *)growingTextView;
 
-//: - (void)textViewDidChange:(FFFGrowingTextView *)growingTextView;
+//: - (void)textViewDidChange:(WorkGrowingTextView *)growingTextView;
 - (void)filmTo:(ItemView *)growingTextView;
 
 //: - (void)willChangeHeight:(CGFloat)height;
@@ -56,10 +56,10 @@
 //: @end
 @end
 
-//: @interface FFFGrowingTextView : UIScrollView
+//: @interface WorkGrowingTextView : UIScrollView
 @interface ItemView : UIScrollView
 
-//: @property (nonatomic,weak) id<FFFGrowingTextViewDelegate> textViewDelegate;
+//: @property (nonatomic,weak) id<WorkGrowingTextViewDelegate> textViewDelegate;
 @property (nonatomic,weak) id<FactorRecent> textViewDelegate;
 
 //: @property (nonatomic,assign) NSInteger minNumberOfLines;
@@ -74,7 +74,7 @@
 //: @end
 @end
 
-//: @interface FFFGrowingTextView(TextView)
+//: @interface WorkGrowingTextView(TextView)
 @interface ItemView(TextView)
 
 //: @property (nonatomic,copy) NSAttributedString *placeholderAttributedText;

@@ -92,9 +92,9 @@ GazeData m_onName = (GazeData){1, (Byte []){79, 85, 68, 82, 76, 100, 114, 114, 9
     //: return self;
     return self;
 }
-//: #pragma mark - FFFCellLayoutConfig
+//: #pragma mark - WorkCellLayoutConfig
 #pragma mark - TingConfig
-//: - (CGSize)contentSize:(FFFMessageModel *)model cellWidth:(CGFloat)width{
+//: - (CGSize)contentSize:(WorkMessageModel *)model cellWidth:(CGFloat)width{
 - (CGSize)from:(ShowModel *)model bubble:(CGFloat)width{
 
     //: NIMMessage *message = model.message;
@@ -123,7 +123,7 @@ GazeData m_onName = (GazeData){1, (Byte []){79, 85, 68, 82, 76, 100, 114, 114, 9
 
 }
 
-//: - (NSString *)cellContent:(FFFMessageModel *)model{
+//: - (NSString *)cellContent:(WorkMessageModel *)model{
 - (NSString *)change:(ShowModel *)model{
 
     //: NIMMessage *message = model.message;
@@ -147,7 +147,7 @@ GazeData m_onName = (GazeData){1, (Byte []){79, 85, 68, 82, 76, 100, 114, 114, 9
     return [super change:model];
 }
 
-//: - (UIEdgeInsets)contentViewInsets:(FFFMessageModel *)model
+//: - (UIEdgeInsets)contentViewInsets:(WorkMessageModel *)model
 - (UIEdgeInsets)container:(ShowModel *)model
 {
     //: NIMMessage *message = model.message;
@@ -171,7 +171,7 @@ GazeData m_onName = (GazeData){1, (Byte []){79, 85, 68, 82, 76, 100, 114, 114, 9
     return [super container:model];
 }
 
-//: - (UIEdgeInsets)cellInsets:(FFFMessageModel *)model
+//: - (UIEdgeInsets)cellInsets:(WorkMessageModel *)model
 - (UIEdgeInsets)text:(ShowModel *)model
 {
     //: NIMMessage *message = model.message;
@@ -193,7 +193,7 @@ GazeData m_onName = (GazeData){1, (Byte []){79, 85, 68, 82, 76, 100, 114, 114, 9
 
 
 
-//: - (BOOL)shouldShowAvatar:(FFFMessageModel *)model
+//: - (BOOL)shouldShowAvatar:(WorkMessageModel *)model
 - (BOOL)shouldTitleImpression:(ShowModel *)model
 {
     //: if ([self isSupportedChatroomMessage:model.message]) {
@@ -215,7 +215,7 @@ GazeData m_onName = (GazeData){1, (Byte []){79, 85, 68, 82, 76, 100, 114, 114, 9
     return [super shouldTitleImpression:model];
 }
 
-//: - (BOOL)shouldShowLeft:(FFFMessageModel *)model{
+//: - (BOOL)shouldShowLeft:(WorkMessageModel *)model{
 - (BOOL)header:(ShowModel *)model{
     //: if ([self isSupportedChatroomMessage:model.message]) {
     if ([self table:model.message]) {
@@ -227,7 +227,7 @@ GazeData m_onName = (GazeData){1, (Byte []){79, 85, 68, 82, 76, 100, 114, 114, 9
 }
 
 
-//: - (BOOL)shouldShowNickName:(FFFMessageModel *)model{
+//: - (BOOL)shouldShowNickName:(WorkMessageModel *)model{
 - (BOOL)demonstrate:(ShowModel *)model{
     //: if ([self isSupportedChatroomMessage:model.message]) {
     if ([self table:model.message]) {
@@ -243,7 +243,7 @@ GazeData m_onName = (GazeData){1, (Byte []){79, 85, 68, 82, 76, 100, 114, 114, 9
     return [super demonstrate:model];
 }
 
-//: - (CGPoint)nickNameMargin:(FFFMessageModel *)model{
+//: - (CGPoint)nickNameMargin:(WorkMessageModel *)model{
 - (CGPoint)index:(ShowModel *)model{
 
     //: if ([self isSupportedChatroomMessage:model.message]) {
@@ -273,7 +273,7 @@ GazeData m_onName = (GazeData){1, (Byte []){79, 85, 68, 82, 76, 100, 114, 114, 9
     return [super index:model];
 }
 
-//: - (NSArray *)customViews:(FFFMessageModel *)model
+//: - (NSArray *)customViews:(WorkMessageModel *)model
 - (NSArray *)with:(ShowModel *)model
 {
     //: if ([self isSupportedChatroomMessage:model.message]) {
@@ -333,7 +333,7 @@ GazeData m_onName = (GazeData){1, (Byte []){79, 85, 68, 82, 76, 100, 114, 114, 9
 }
 
 
-//: - (BOOL)disableRetryButton:(FFFMessageModel *)model
+//: - (BOOL)disableRetryButton:(WorkMessageModel *)model
 - (BOOL)sessions:(ShowModel *)model
 {
     //: if ([model.message.localExt.allKeys containsObject:@"NTESMessageRefusedTag"])
@@ -414,7 +414,7 @@ GazeData m_onName = (GazeData){1, (Byte []){79, 85, 68, 82, 76, 100, 114, 114, 9
     return NO;
 }
 
-//: - (BOOL)shouldDisplayBubbleBackground:(FFFMessageModel *)model
+//: - (BOOL)shouldDisplayBubbleBackground:(WorkMessageModel *)model
 - (BOOL)should:(ShowModel *)model
 {
     //: NIMMessage *message = model.message;

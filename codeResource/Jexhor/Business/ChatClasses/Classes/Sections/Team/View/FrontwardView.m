@@ -79,21 +79,21 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCardHeaderView.h"
+//: #import "WorkTeamCardHeaderView.h"
 #import "FrontwardView.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WorkAvatarImageView.h"
 #import "ButtonControl.h"
-//: #import "FFFKitUtil.h"
+//: #import "WorkKitUtil.h"
 #import "WantUtil.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
 
-//: @interface FFFTeamCardHeaderView ()
+//: @interface WorkTeamCardHeaderView ()
 @interface FrontwardView ()
 
-//: @property (nonatomic,strong) FFFAvatarImageView *avatar;
+//: @property (nonatomic,strong) WorkAvatarImageView *avatar;
 @property (nonatomic,strong) ButtonControl *avatar;
 
 //: @property (nonatomic,strong) UILabel *titleLabel;
@@ -108,7 +108,7 @@
 //: @end
 @end
 
-//: @implementation FFFTeamCardHeaderView
+//: @implementation WorkTeamCardHeaderView
 @implementation FrontwardView
 
 //: - (instancetype)initWithFrame:(CGRect)frame {
@@ -233,11 +233,11 @@
 
 //: #pragma mark - Getter
 #pragma mark - Getter
-//: - (FFFAvatarImageView *)avatar {
+//: - (WorkAvatarImageView *)avatar {
 - (ButtonControl *)avatar {
     //: if (!_avatar) {
     if (!_avatar) {
-        //: _avatar = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+        //: _avatar = [[WorkAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
         _avatar = [[ButtonControl alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
         //: [_avatar addTarget:self
         [_avatar addTarget:self

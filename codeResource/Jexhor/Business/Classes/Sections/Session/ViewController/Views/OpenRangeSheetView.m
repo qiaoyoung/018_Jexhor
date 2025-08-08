@@ -404,7 +404,7 @@
         _unitLabel.textColor = [UIColor whiteColor];
         //: _unitLabel.font = [UIFont systemFontOfSize:15];
         _unitLabel.font = [UIFont systemFontOfSize:15];
-        //: _unitLabel.text = [FFFLanguageManager getTextWithKey:@"team_red_adapter_yuan"];
+        //: _unitLabel.text = [WorkLanguageManager getTextWithKey:@"team_red_adapter_yuan"];
         _unitLabel.text = [InputRed preserve:[AcceptableData appSessionValue]];
         //: [_backView addSubview:_unitLabel];
         [_backView addSubview:_unitLabel];
@@ -661,7 +661,7 @@
 -(void)mail:(NSString *)userID{
     //: NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
     NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
+    //: WorkKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
     ConfirmationInfo *info = [[MessageContent secretResolution] recent:userID blue:nil];
     //: NSString *headerUrl = me.userInfo.avatarUrl;
     NSString *headerUrl = me.userInfo.avatarUrl;

@@ -47,7 +47,7 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data
+//: - (void)refresh:(WorkMessageModel *)data
 - (void)panorama:(ShowModel *)data
 {
     //: [super refresh:data];

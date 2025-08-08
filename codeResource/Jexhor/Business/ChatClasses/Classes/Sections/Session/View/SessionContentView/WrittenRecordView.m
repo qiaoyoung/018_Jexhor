@@ -21,16 +21,16 @@ Byte mainTargetImageValue[] = {29, 15, 10, 67, 11, 78, 185, 232, 39, 25, 103, 95
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionRtcCallRecordContentView.h"
+//: #import "WorkSessionRtcCallRecordContentView.h"
 #import "WrittenRecordView.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+MessageContent.h"
-//: #import "FFFKitUtil.h"
+//: #import "WorkKitUtil.h"
 #import "WantUtil.h"
 
-//: @implementation FFFSessionRtcCallRecordContentView
+//: @implementation WorkSessionRtcCallRecordContentView
 @implementation WrittenRecordView
 
 //: - (instancetype)initSessionMessageContentView
@@ -57,17 +57,17 @@ Byte mainTargetImageValue[] = {29, 15, 10, 67, 11, 78, 185, 232, 39, 25, 103, 95
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data {
+//: - (void)refresh:(WorkMessageModel *)data {
 - (void)panorama:(ShowModel *)data {
     //: [super refresh:data];
     [super panorama:data];
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
+    //: WorkKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
     ViewKey *setting = [[MessageContent secretResolution].config ofSetting:data.message];
     //: self.textLabel.textColor = setting.textColor;
     self.textLabel.textColor = setting.textColor;
     //: self.textLabel.font = setting.font;
     self.textLabel.font = setting.font;
-    //: self.textLabel.text = [FFFKitUtil messageTipContent:data.message];
+    //: self.textLabel.text = [WorkKitUtil messageTipContent:data.message];
     self.textLabel.text = [WantUtil tingAcross:data.message];
 
     //: NIMRtcCallRecordObject *record = data.message.messageObject;

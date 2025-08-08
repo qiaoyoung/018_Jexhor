@@ -11,7 +11,7 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFCommonTableViewCell.h"
+//: #import "WorkCommonTableViewCell.h"
 #import "TeamTitle.h"
 
 //: typedef NS_ENUM(NSInteger, ColorButtonCellStyle){
@@ -26,7 +26,7 @@ typedef NS_ENUM(NSInteger, ColorButtonCellStyle){
 //: @class NTESColorButton;
 @class TotalTitleButton;
 
-//: @interface NTESColorButtonCell : UITableViewCell<FFFCommonTableViewCell>
+//: @interface NTESColorButtonCell : UITableViewCell<WorkCommonTableViewCell>
 @interface RecentViewCell : UITableViewCell<TeamTitle>
 
 //: @property (nonatomic,strong) NTESColorButton *button;

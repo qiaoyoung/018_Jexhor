@@ -12,30 +12,30 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @class FFFPageView;
+//: @class WorkPageView;
 @class KeyNeedView;
 
-//: @protocol FFFPageViewDataSource <NSObject>
+//: @protocol WorkPageViewDataSource <NSObject>
 @protocol FrameSource <NSObject>
-//: - (NSInteger)numberOfPages: (FFFPageView *)pageView;
+//: - (NSInteger)numberOfPages: (WorkPageView *)pageView;
 - (NSInteger)elites: (KeyNeedView *)pageView;
-//: - (UIView *)pageView: (FFFPageView *)pageView viewInPage: (NSInteger)index;
+//: - (UIView *)pageView: (WorkPageView *)pageView viewInPage: (NSInteger)index;
 - (UIView *)text: (KeyNeedView *)pageView with: (NSInteger)index;
 //: @end
 @end
 
-//: @protocol FFFPageViewDelegate <NSObject>
+//: @protocol WorkPageViewDelegate <NSObject>
 @protocol PageDoingValueDelegate <NSObject>
 //: @optional
 @optional
-//: - (void)pageViewScrollEnd: (FFFPageView *)pageView
+//: - (void)pageViewScrollEnd: (WorkPageView *)pageView
 - (void)create: (KeyNeedView *)pageView
              //: currentIndex: (NSInteger)index
              cell: (NSInteger)index
                //: totolPages: (NSInteger)pages;
                with: (NSInteger)pages;
 
-//: - (void)pageViewDidScroll: (FFFPageView *)pageView;
+//: - (void)pageViewDidScroll: (WorkPageView *)pageView;
 - (void)placed: (KeyNeedView *)pageView;
 //: - (BOOL)needScrollAnimation;
 - (BOOL)omitManager;
@@ -43,13 +43,13 @@
 @end
 
 
-//: @interface FFFPageView : UIView<UIScrollViewDelegate>
+//: @interface WorkPageView : UIView<UIScrollViewDelegate>
 @interface KeyNeedView : UIView<UIScrollViewDelegate>
 //: @property (nonatomic,strong) UIScrollView *scrollView;
 @property (nonatomic,strong) UIScrollView *scrollView;
-//: @property (nonatomic,weak) id<FFFPageViewDataSource> dataSource;
+//: @property (nonatomic,weak) id<WorkPageViewDataSource> dataSource;
 @property (nonatomic,weak) id<FrameSource> dataSource;
-//: @property (nonatomic,weak) id<FFFPageViewDelegate> pageViewDelegate;
+//: @property (nonatomic,weak) id<WorkPageViewDelegate> pageViewDelegate;
 @property (nonatomic,weak) id<PageDoingValueDelegate> pageViewDelegate;
 //: - (void)scrollToPage: (NSInteger)pages;
 - (void)show: (NSInteger)pages;

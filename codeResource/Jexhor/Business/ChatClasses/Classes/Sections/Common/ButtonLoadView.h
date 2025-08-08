@@ -16,7 +16,7 @@
 //: #import "UCZProgressView.h"
 #import "UCZProgressView.h"
 
-//: @interface FFFLoadProgressView : UIView {
+//: @interface WorkLoadProgressView : UIView {
 @interface ButtonLoadView : UIView {
     //: UIImageView *_maskView;
     UIImageView *_maskView;

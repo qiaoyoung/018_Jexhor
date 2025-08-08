@@ -376,7 +376,7 @@
     chromateAnimate.duration = 6;
     //: chromateAnimate.removedOnCompletion = NO;
     chromateAnimate.removedOnCompletion = NO;
-    //: chromateAnimate.repeatCount = 0x1.fffffep+127f;
+    //: chromateAnimate.repeatCount = 0x1.Workffep+127f;
     chromateAnimate.repeatCount = 0x1.fffffep+127f;
 
     //: return chromateAnimate;

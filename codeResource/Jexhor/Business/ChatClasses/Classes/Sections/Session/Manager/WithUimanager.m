@@ -138,18 +138,18 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFChatUIManager.h"
+//: #import "WorkChatUIManager.h"
 #import "WithUimanager.h"
-//: #import "FFFContactSelectConfig.h"
+//: #import "WorkContactSelectConfig.h"
 #import "TitleConfig.h"
-//: #import "FFFContactSelectViewController.h"
+//: #import "WorkContactSelectViewController.h"
 #import "CompartmentViewController.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WorkKitInfoFetchOption.h"
 #import "RangeOption.h"
-//: #import "UIView+FFFToast.h"
+//: #import "UIView+WorkToast.h"
 #import "UIView+Factor.h"
 
-//: @implementation FFFChatUIManager
+//: @implementation WorkChatUIManager
 @implementation WithUimanager
 
 //: + (instancetype)sharedManager
@@ -157,7 +157,7 @@
 {
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
-    //: static FFFChatUIManager *instance;
+    //: static WorkChatUIManager *instance;
     static WithUimanager *instance;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
@@ -172,15 +172,15 @@
 //: - (void)forwardMessage:(NIMMessage *)message fromViewController:(UIViewController *)fromVC
 - (void)cell:(NIMMessage *)message media:(UIViewController *)fromVC
 {
-    //: UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"选择会话类型"] message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    //: UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[WorkLanguageManager getTextWithKey:@"选择会话类型"] message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[InputRed preserve:[HarkData appSchoolData]] message:nil preferredStyle:UIAlertControllerStyleActionSheet];
-    //: [alertController addAction:[UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"watch_multiretweet_activity_person"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    //: [alertController addAction:[UIAlertAction actionWithTitle:[WorkLanguageManager getTextWithKey:@"watch_multiretweet_activity_person"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
     [alertController addAction:[UIAlertAction actionWithTitle:[InputRed preserve:[HarkData appCareName]] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         //: NIMContactFriendSelectConfig *config = [[NIMContactFriendSelectConfig alloc] init];
         RecentMessage *config = [[RecentMessage alloc] init];
         //: config.needMutiSelected = NO;
         config.needMutiSelected = NO;
-        //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+        //: WorkContactSelectViewController *vc = [[WorkContactSelectViewController alloc] initWithConfig:config];
         CompartmentViewController *vc = [[CompartmentViewController alloc] initWithStateAtPull:config];
         //: vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
         vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
@@ -196,13 +196,13 @@
         [vc high];
     //: }]];
     }]];
-    //: [alertController addAction:[UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_fragment_group"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    //: [alertController addAction:[UIAlertAction actionWithTitle:[WorkLanguageManager getTextWithKey:@"contact_fragment_group"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
     [alertController addAction:[UIAlertAction actionWithTitle:[InputRed preserve:[HarkData dream_remarkSteadCountText]] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         //: NIMContactTeamSelectConfig *config = [[NIMContactTeamSelectConfig alloc] init];
         MagnitudeRecord *config = [[MagnitudeRecord alloc] init];
         //: config.teamType = NIMKitTeamTypeNomal;
         config.teamType = NIMKitTeamTypeNomal;
-        //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+        //: WorkContactSelectViewController *vc = [[WorkContactSelectViewController alloc] initWithConfig:config];
         CompartmentViewController *vc = [[CompartmentViewController alloc] initWithStateAtPull:config];
         //: vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
         vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
@@ -218,13 +218,13 @@
         [vc high];
     //: }]];
     }]];
-    //: [alertController addAction:[UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"message_super_team"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    //: [alertController addAction:[UIAlertAction actionWithTitle:[WorkLanguageManager getTextWithKey:@"message_super_team"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
     [alertController addAction:[UIAlertAction actionWithTitle:[InputRed preserve:[HarkData noti_existingData]] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         //: NIMContactTeamSelectConfig *config = [[NIMContactTeamSelectConfig alloc] init];
         MagnitudeRecord *config = [[MagnitudeRecord alloc] init];
         //: config.teamType = NIMKitTeamTypeSuper;
         config.teamType = NIMKitTeamTypeSuper;
-        //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+        //: WorkContactSelectViewController *vc = [[WorkContactSelectViewController alloc] initWithConfig:config];
         CompartmentViewController *vc = [[CompartmentViewController alloc] initWithStateAtPull:config];
         //: vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
         vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
@@ -240,7 +240,7 @@
         [vc high];
     //: }]];
     }]];
-    //: [alertController addAction:[UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:nil]];
+    //: [alertController addAction:[UIAlertAction actionWithTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:nil]];
     [alertController addAction:[UIAlertAction actionWithTitle:[InputRed preserve:[HarkData dreamFashionedName]] style:UIAlertActionStyleCancel handler:nil]];
     //: [fromVC presentViewController:alertController animated:YES completion:nil];
     [fromVC presentViewController:alertController animated:YES completion:nil];
@@ -253,7 +253,7 @@
     NSString *name;
     //: if (session.sessionType == NIMSessionTypeP2P) {
     if (session.sessionType == NIMSessionTypeP2P) {
-        //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+        //: WorkKitInfoFetchOption *option = [[WorkKitInfoFetchOption alloc] init];
         RangeOption *option = [[RangeOption alloc] init];
         //: option.session = session;
         option.session = session;

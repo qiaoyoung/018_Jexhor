@@ -9,20 +9,20 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionNetChatNotifyContentView.h"
+//: #import "WorkSessionNetChatNotifyContentView.h"
 #import "MessageFactorView.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "VideoTextView+MessageContent.h"
-//: #import "FFFMessageModel.h"
+//: #import "WorkMessageModel.h"
 #import "ShowModel.h"
-//: #import "FFFKitUtil.h"
+//: #import "WorkKitUtil.h"
 #import "WantUtil.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
 
-//: @implementation FFFSessionNetChatNotifyContentView
+//: @implementation WorkSessionNetChatNotifyContentView
 @implementation MessageFactorView
 
 //: -(instancetype)initSessionMessageContentView
@@ -47,15 +47,15 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data
+//: - (void)refresh:(WorkMessageModel *)data
 - (void)panorama:(ShowModel *)data
 {
     //: [super refresh:data];
     [super panorama:data];
-    //: NSString *text = [FFFKitUtil messageTipContent:data.message];
+    //: NSString *text = [WorkKitUtil messageTipContent:data.message];
     NSString *text = [WantUtil tingAcross:data.message];
 
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
+    //: WorkKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
     ViewKey *setting = [[MessageContent secretResolution].config ofSetting:data.message];
     //: self.textLabel.textColor = setting.textColor;;
     self.textLabel.textColor = setting.textColor;;

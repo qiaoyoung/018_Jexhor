@@ -67,7 +67,7 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitNotificationFirer.h"
+//: #import "WorkKitNotificationFirer.h"
 #import "SessionFirer.h"
 
 //: NSString *const dream_versionData = @"dream_versionData";
@@ -86,7 +86,7 @@ NSString *const mMessageData = @"mMessageData";
 //: NSString *const main_memberName = @"InfoId";
 NSString *const main_memberName = @"InfoId";
 
-//: @implementation FFFKitNotificationFirer
+//: @implementation WorkKitNotificationFirer
 @implementation SessionFirer
 
 //: - (instancetype)init{
@@ -95,7 +95,7 @@ NSString *const main_memberName = @"InfoId";
     self = [super init];
     //: if (self) {
     if (self) {
-        //: _timer = [[FFFKitTimerHolder alloc] init];
+        //: _timer = [[WorkKitTimerHolder alloc] init];
         _timer = [[ChangeHolder alloc] init];
         //: _timeInterval = 1.0f;
         _timeInterval = 1.0f;
@@ -119,10 +119,10 @@ NSString *const main_memberName = @"InfoId";
     [self.cachedInfo setObject:info forKey:info.userShow];
 }
 
-//: #pragma mark - FFFKitTimerHolderDelegate
+//: #pragma mark - WorkKitTimerHolderDelegate
 #pragma mark - KitWith
 
-//: - (void)onNIMKitTimerFired:(FFFKitTimerHolder *)holder{
+//: - (void)onNIMKitTimerFired:(WorkKitTimerHolder *)holder{
 - (void)alonging:(ChangeHolder *)holder{
     //: NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];

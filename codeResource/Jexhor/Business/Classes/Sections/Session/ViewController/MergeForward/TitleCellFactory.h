@@ -9,7 +9,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMessageCellFactory.h"
+//: #import "WorkMessageCellFactory.h"
 #import "PhoneMessageSystemCanneryFactory.h"
 //: #import "NTESTimestampCell.h"
 #import "BottomTimestampCell.h"
@@ -19,17 +19,17 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface NTESMessageCellFactory : FFFMessageCellFactory
+//: @interface NTESMessageCellFactory : WorkMessageCellFactory
 @interface TitleCellFactory : PhoneMessageSystemCanneryFactory
 
 //: - (NTESMergeMessageCell *)ntesCellInTable:(UITableView*)tableView
 - (ConsubstantiateVideoCompartmentViewCell *)startData:(UITableView*)tableView
-                           //: forMessageMode:(FFFMessageModel *)model;
+                           //: forMessageMode:(WorkMessageModel *)model;
                            event:(ShowModel *)model;
 
 //: - (NTESTimestampCell *)ntesCellInTable:(UITableView *)tableView
 - (BottomTimestampCell *)withModel:(UITableView *)tableView
-                          //: forTimeModel:(FFFTimestampModel *)model;
+                          //: forTimeModel:(WorkTimestampModel *)model;
                           empty:(EngraftTing *)model;
 
 //: @end

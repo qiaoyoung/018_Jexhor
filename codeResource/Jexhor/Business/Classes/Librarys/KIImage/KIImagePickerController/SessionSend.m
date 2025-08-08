@@ -152,7 +152,7 @@
         self.delegate = delegate;
         //: self.viewController = viewController;
         self.viewController = viewController;
-        //: self.title = [FFFLanguageManager getTextWithKey:@"please_choose"];
+        //: self.title = [WorkLanguageManager getTextWithKey:@"please_choose"];
         self.title = [InputRed preserve:[PragmatistData sharedInstance].app_cigName];//@"请选择";
     }
     //: return self;
@@ -211,9 +211,9 @@
     //: if (_actionSheet == nil) {
     if (_actionSheet == nil) {
 
-        //: NSString *from_phone = [FFFLanguageManager getTextWithKey:@"friend_circle_activity_from_phone"];
+        //: NSString *from_phone = [WorkLanguageManager getTextWithKey:@"friend_circle_activity_from_phone"];
         NSString *from_phone = [InputRed preserve:[PragmatistData sharedInstance].userNationalValue];
-        //: NSString *activity_camera = [FFFLanguageManager getTextWithKey:@"friend_circle_activity_camera"];
+        //: NSString *activity_camera = [WorkLanguageManager getTextWithKey:@"friend_circle_activity_camera"];
         NSString *activity_camera = [InputRed preserve:[PragmatistData sharedInstance].mainOrganizationalKaValue];
 
         //: _actionSheet = [[UIActionSheet alloc] initWithTitle:self.title
@@ -245,7 +245,7 @@
             cancelIndex++;
         }
 
-        //: [_actionSheet addButtonWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]];
+        //: [_actionSheet addButtonWithTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]];
         [_actionSheet addButtonWithTitle:[InputRed preserve:[PragmatistData sharedInstance].noti_dogData]];
         //: cancelIndex++;
         cancelIndex++;
@@ -271,7 +271,6 @@
     return _imagePickerController;
 }
 
-//: - (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
 - (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
     //: if (buttonIndex == 0) {
     if (buttonIndex == 0) {

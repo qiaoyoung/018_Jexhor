@@ -88,11 +88,11 @@
 // __M_A_C_R_O__
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
+//: #import "WorkInputEmoticonDefine.h"
+#import "WorkInputEmoticonDefine.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
-//: #import "FFFKitDevice.h"
+//: #import "WorkKitDevice.h"
 #import "TeamTing.h"
 //: #import "NSBundle+MyUserKit.h"
 #import "NSBundle+MessageContent.h"
@@ -239,7 +239,7 @@
 //: - (UIImage *)nim_imageForAvatarUpload
 - (UIImage *)imageFormatUpload
 {
-    //: CGFloat pixels = [[FFFKitDevice currentDevice] suggestImagePixels];
+    //: CGFloat pixels = [[WorkKitDevice currentDevice] suggestImagePixels];
     CGFloat pixels = [[TeamTing style] gamut];
     //: UIImage * image = [self nim_imageForUpload:pixels];
     UIImage * image = [self forbid:pixels];

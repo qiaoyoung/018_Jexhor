@@ -13,20 +13,20 @@
 #import <UIKit/UIKit.h>
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "WorkCardDataSourceProtocol.h"
+#import "WorkCardDataSourceProtocol.h"
 
-//: @class FFFAvatarImageView;
+//: @class WorkAvatarImageView;
 @class ButtonControl;
-//: @protocol FFFCardHeaderCellDelegate;
+//: @protocol WorkCardHeaderCellDelegate;
 @protocol BottomSearchName;
 
 
 
-//: @interface FFFCardHeaderCell : UICollectionViewCell
+//: @interface WorkCardHeaderCell : UICollectionViewCell
 @interface NameReusableView : UICollectionViewCell
 
-//: @property (nonatomic,strong) FFFAvatarImageView *imageView;
+//: @property (nonatomic,strong) WorkAvatarImageView *imageView;
 @property (nonatomic,strong) ButtonControl *imageView;
 
 //: @property (nonatomic,strong) UIImageView *roleImageView;
@@ -38,29 +38,29 @@
 //: @property (nonatomic,strong) UIButton *removeBtn;
 @property (nonatomic,strong) UIButton *removeBtn;
 
-//: @property (nonatomic,weak) id<FFFCardHeaderCellDelegate>delegate;
+//: @property (nonatomic,weak) id<WorkCardHeaderCellDelegate>delegate;
 @property (nonatomic,weak) id<BottomSearchName>delegate;
 
-//: @property (nonatomic,readonly) id<FFFKitCardHeaderData> data;
-@property (nonatomic,readonly) id<FFFKitCardHeaderData> data;
+//: @property (nonatomic,readonly) id<WorkKitCardHeaderData> data;
+@property (nonatomic,readonly) id<WorkKitCardHeaderData> data;
 
-//: - (void)refreshData:(id<FFFKitCardHeaderData>)data;
-- (void)collageData:(id<FFFKitCardHeaderData>)data;
+//: - (void)refreshData:(id<WorkKitCardHeaderData>)data;
+- (void)collageData:(id<WorkKitCardHeaderData>)data;
 
 //: @end
 @end
 
 
-//: @protocol FFFCardHeaderCellDelegate <NSObject>
+//: @protocol WorkCardHeaderCellDelegate <NSObject>
 @protocol BottomSearchName <NSObject>
 
-//: - (void)cellDidSelected:(FFFCardHeaderCell*)cell;
+//: - (void)cellDidSelected:(WorkCardHeaderCell*)cell;
 - (void)userDown:(NameReusableView*)cell;
 
 
 //: @optional
 @optional
-//: - (void)cellShouldBeRemoved:(FFFCardHeaderCell*)cell;
+//: - (void)cellShouldBeRemoved:(WorkCardHeaderCell*)cell;
 - (void)untilImage:(NameReusableView*)cell;
 
 //: @end

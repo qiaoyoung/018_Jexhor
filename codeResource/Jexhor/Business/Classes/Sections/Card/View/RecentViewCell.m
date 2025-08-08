@@ -72,8 +72,8 @@
 #import "RecentViewCell.h"
 //: #import "UIView+NTES.h"
 #import "UIView+Recent.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "WorkCommonTableData.h"
+#import "WorkCommonTableData.h"
 
 //: @interface NTESColorButtonCell()
 @interface RecentViewCell()

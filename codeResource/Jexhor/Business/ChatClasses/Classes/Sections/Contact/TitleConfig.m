@@ -86,19 +86,19 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactSelectConfig.h"
+//: #import "WorkContactSelectConfig.h"
 #import "TitleConfig.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "WorkGlobalMacro.h"
+#import "WorkGlobalMacro.h"
 //: #import "UserGroupedData.h"
 #import "SessionCount.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WorkKitInfoFetchOption.h"
 #import "RangeOption.h"
-//: #import "FFFKitInfo.h"
+//: #import "WorkKitInfo.h"
 #import "ConfirmationInfo.h"
 
 //: @implementation NIMContactFriendSelectConfig : NSObject
@@ -112,7 +112,7 @@
 
 //: - (NSString *)title{
 - (NSString *)color{
-    //: return [FFFLanguageManager getTextWithKey:@"select_contact"];
+    //: return [WorkLanguageManager getTextWithKey:@"select_contact"];
     return [InputRed preserve:[PaintRecallData sharedInstance].showNurseReadTitle];
 }
 
@@ -192,9 +192,9 @@
     return nil;
 }
 
-//: - (FFFKitInfo *)getInfoById:(NSString *)selectedId {
+//: - (WorkKitInfo *)getInfoById:(NSString *)selectedId {
 - (ConfirmationInfo *)image:(NSString *)selectedId {
-    //: FFFKitInfo *info = nil;
+    //: WorkKitInfo *info = nil;
     ConfirmationInfo *info = nil;
     //: info = [[MyUserKit sharedKit] infoByUser:selectedId option:nil];
     info = [[MessageContent secretResolution] recent:selectedId blue:nil];
@@ -223,7 +223,7 @@
 
 //: - (NSString *)title{
 - (NSString *)color{
-    //: return [FFFLanguageManager getTextWithKey:@"select_contact"];
+    //: return [WorkLanguageManager getTextWithKey:@"select_contact"];
     return [InputRed preserve:[PaintRecallData sharedInstance].showNurseReadTitle];
 }
 
@@ -366,11 +366,11 @@
     return nil;
 }
 
-//: - (FFFKitInfo *)getInfoById:(NSString *)selectedId {
+//: - (WorkKitInfo *)getInfoById:(NSString *)selectedId {
 - (ConfirmationInfo *)image:(NSString *)selectedId {
-    //: FFFKitInfo *info = nil;
+    //: WorkKitInfo *info = nil;
     ConfirmationInfo *info = nil;
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: WorkKitInfoFetchOption *option = [[WorkKitInfoFetchOption alloc] init];
     RangeOption *option = [[RangeOption alloc] init];
     //: option.session = _session;
     option.session = _session;
@@ -492,9 +492,9 @@
     return nil;
 }
 
-//: - (FFFKitInfo *)getInfoById:(NSString *)selectedId {
+//: - (WorkKitInfo *)getInfoById:(NSString *)selectedId {
 - (ConfirmationInfo *)image:(NSString *)selectedId {
-    //: FFFKitInfo *info = nil;
+    //: WorkKitInfo *info = nil;
     ConfirmationInfo *info = nil;
     //: if (_teamType == NIMKitTeamTypeNomal) {
     if (_teamType == NIMKitTeamTypeNomal) {

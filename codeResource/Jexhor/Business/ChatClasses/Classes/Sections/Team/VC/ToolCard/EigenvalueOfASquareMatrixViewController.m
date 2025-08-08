@@ -89,18 +89,18 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCardSelectedViewController.h"
+//: #import "WorkTeamCardSelectedViewController.h"
 #import "EigenvalueOfASquareMatrixViewController.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFTeamCartSetTableViewCell.h"
+//: #import "WorkGlobalMacro.h"
+#import "WorkGlobalMacro.h"
+//: #import "WorkTeamCartSetTableViewCell.h"
 #import "ProviderView.h"
 
-//: @interface FFFTeamCardSelectedViewController ()<UITableViewDelegate, UITableViewDataSource>
+//: @interface WorkTeamCardSelectedViewController ()<UITableViewDelegate, UITableViewDataSource>
 @interface EigenvalueOfASquareMatrixViewController ()<UITableViewDelegate, UITableViewDataSource>
 
-//: @property (nonatomic, strong) NSMutableArray <id <FFFKitSelectCardData>> *datas;
-@property (nonatomic, strong) NSMutableArray <id <FFFKitSelectCardData>> *datas;
+//: @property (nonatomic, strong) NSMutableArray <id <WorkKitSelectCardData>> *datas;
+@property (nonatomic, strong) NSMutableArray <id <WorkKitSelectCardData>> *datas;
 
 //: @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UITableView *tableView;
@@ -117,16 +117,16 @@
 //: @end
 @end
 
-//: @implementation FFFTeamCardSelectedViewController
+//: @implementation WorkTeamCardSelectedViewController
 @implementation EigenvalueOfASquareMatrixViewController
 
 //: + (instancetype)instanceWithTitle:(NSString *)title
 + (instancetype)view:(NSString *)title
-                            //: items:(NSMutableArray <id <FFFKitSelectCardData>> *)items
-                            progress:(NSMutableArray <id <FFFKitSelectCardData>> *)items
+                            //: items:(NSMutableArray <id <WorkKitSelectCardData>> *)items
+                            progress:(NSMutableArray <id <WorkKitSelectCardData>> *)items
                            //: result:(NIMSelectedCompletion)result {
                            tingItems:(NIMSelectedCompletion)result {
-    //: FFFTeamCardSelectedViewController *vc = [[FFFTeamCardSelectedViewController alloc] initWithItems:items];
+    //: WorkTeamCardSelectedViewController *vc = [[WorkTeamCardSelectedViewController alloc] initWithItems:items];
     EigenvalueOfASquareMatrixViewController *vc = [[EigenvalueOfASquareMatrixViewController alloc] initWithValue:items];
     //: vc.titleString = title ?: @"";
     vc.titleString = title ?: @"";
@@ -136,8 +136,8 @@
     return vc;
 }
 
-//: - (instancetype)initWithItems:(NSMutableArray <id <FFFKitSelectCardData>> *)items {
-- (instancetype)initWithValue:(NSMutableArray <id <FFFKitSelectCardData>> *)items {
+//: - (instancetype)initWithItems:(NSMutableArray <id <WorkKitSelectCardData>> *)items {
+- (instancetype)initWithValue:(NSMutableArray <id <WorkKitSelectCardData>> *)items {
     //: if (self = [super init]) {
     if (self = [super init]) {
         //: _datas = items;
@@ -146,8 +146,8 @@
         _selectedIndex = -1;
         //: __weak typeof(self) weakSelf = self;
         __weak typeof(self) weakSelf = self;
-        //: [items enumerateObjectsUsingBlock:^(id<FFFKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        [items enumerateObjectsUsingBlock:^(id<FFFKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        //: [items enumerateObjectsUsingBlock:^(id<WorkKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [items enumerateObjectsUsingBlock:^(id<WorkKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             //: if (obj.selected) {
             if (obj.selected) {
                 //: weakSelf.selectedIndex = idx;
@@ -243,8 +243,8 @@
 - (void)showWith{
     //: if (_oriSelectedIndex != _selectedIndex) {
     if (_oriSelectedIndex != _selectedIndex) {
-        //: id <FFFKitSelectCardData> bodyData = _datas[_selectedIndex];
-        id <FFFKitSelectCardData> bodyData = _datas[_selectedIndex];
+        //: id <WorkKitSelectCardData> bodyData = _datas[_selectedIndex];
+        id <WorkKitSelectCardData> bodyData = _datas[_selectedIndex];
         //: if (_resultHandle) {
         if (_resultHandle) {
             //: _resultHandle(bodyData);
@@ -384,18 +384,18 @@
 
 //: - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    //: id <FFFKitSelectCardData> bodyData = _datas[indexPath.section];
-    id <FFFKitSelectCardData> bodyData = _datas[indexPath.section];
+    //: id <WorkKitSelectCardData> bodyData = _datas[indexPath.section];
+    id <WorkKitSelectCardData> bodyData = _datas[indexPath.section];
 
 //    ProviderView *cell = [ProviderView cellWithTableView:tableView];
     //: NSString *identifier = [NSString stringWithFormat:@"ZMONTeamCartSet%ld",(long)indexPath.row];
     NSString *identifier = [NSString stringWithFormat:[DogData user_milkData],(long)indexPath.row];
-    //: FFFTeamCartSetTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    //: WorkTeamCartSetTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     ProviderView *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     //: if (!cell)
     if (!cell)
     {
-        //: cell = [[FFFTeamCartSetTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        //: cell = [[WorkTeamCartSetTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         cell = [[ProviderView alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
 
@@ -418,8 +418,8 @@
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     //: _selectedIndex = indexPath.section;
     _selectedIndex = indexPath.section;
-    //: [_datas enumerateObjectsUsingBlock:^(id<FFFKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-    [_datas enumerateObjectsUsingBlock:^(id<FFFKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    //: [_datas enumerateObjectsUsingBlock:^(id<WorkKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [_datas enumerateObjectsUsingBlock:^(id<WorkKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         //: BOOL selected = (idx == indexPath.section);
         BOOL selected = (idx == indexPath.section);
         //: [obj setSelected:selected];
@@ -466,7 +466,7 @@
 //        btnClear.layer.cornerRadius = 24;
         //: btnClear.frame = CGRectMake(0, 20, [[UIScreen mainScreen] bounds].size.width-30, 48);
         btnClear.frame = CGRectMake(0, 20, [[UIScreen mainScreen] bounds].size.width-30, 48);
-        //: [btnClear setTitle:[FFFLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
+        //: [btnClear setTitle:[WorkLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
         [btnClear setTitle:[InputRed preserve:[DogData k_pdaTitle]] forState:UIControlStateNormal];
         //: [btnClear addTarget:self action:@selector(onDone) forControlEvents:UIControlEventTouchUpInside];
         [btnClear addTarget:self action:@selector(showWith) forControlEvents:UIControlEventTouchUpInside];

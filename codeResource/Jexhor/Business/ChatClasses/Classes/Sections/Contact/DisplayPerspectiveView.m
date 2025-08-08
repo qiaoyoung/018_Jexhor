@@ -145,10 +145,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSetGroupNameView.h"
+//: #import "WorkSetGroupNameView.h"
 #import "DisplayPerspectiveView.h"
 
-//: @interface FFFSetGroupNameView ()<UITextFieldDelegate>
+//: @interface WorkSetGroupNameView ()<UITextFieldDelegate>
 @interface DisplayPerspectiveView ()<UITextFieldDelegate>
 
 //: @property (nonatomic,assign) NSInteger inputLimit;
@@ -175,7 +175,7 @@
 //: @end
 @end
 
-//: @implementation FFFSetGroupNameView
+//: @implementation WorkSetGroupNameView
 @implementation DisplayPerspectiveView
 
 //: - (instancetype)initWithFrame:(CGRect)frame
@@ -322,7 +322,7 @@
 //        _titleLabel.textAlignment = NSTextAlignmentCenter;
 //        _titleLabel.numberOfLines = 1;
 //        _titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"activity_group_nickname_title"];
+        //: _titleLabel.text = [WorkLanguageManager getTextWithKey:@"activity_group_nickname_title"];
         _titleLabel.text = [InputRed preserve:[PiqueData sharedInstance].m_statementContent];
     }
     //: return _titleLabel;
@@ -340,7 +340,7 @@
         _subtitleLabel.textAlignment = NSTextAlignmentCenter;
         //: _subtitleLabel.textColor = [UIColor colorWithHexString:@"#05D481"];
         _subtitleLabel.textColor = [UIColor ground:[PiqueData sharedInstance].user_schoolMortalContent];
-        //: _subtitleLabel.text = [FFFLanguageManager getTextWithKey:@"Required"];
+        //: _subtitleLabel.text = [WorkLanguageManager getTextWithKey:@"Required"];
         _subtitleLabel.text = [InputRed preserve:[PiqueData sharedInstance].mainQuickValue];
     }
     //: return _subtitleLabel;
@@ -377,7 +377,7 @@
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor ground:[PiqueData sharedInstance].notiToeContent] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[InputRed preserve:[PiqueData sharedInstance].k_journalistTableWithTitle] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -404,7 +404,7 @@
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[WorkLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[InputRed preserve:[PiqueData sharedInstance].kAccelerateValue] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#05D481"];
         _sureBtn.backgroundColor = [UIColor ground:[PiqueData sharedInstance].user_schoolMortalContent];
@@ -443,7 +443,7 @@
 
         //: _searchField = [[UITextField alloc]initWithFrame:CGRectMake(15, 6, [[UIScreen mainScreen] bounds].size.width-80-30, 40)];
         _searchField = [[UITextField alloc]initWithFrame:CGRectMake(15, 6, [[UIScreen mainScreen] bounds].size.width-80-30, 40)];
-        //: _searchField.placeholder = [FFFLanguageManager getTextWithKey:@"contact_tag_fragment_name"];
+        //: _searchField.placeholder = [WorkLanguageManager getTextWithKey:@"contact_tag_fragment_name"];
         _searchField.placeholder = [InputRed preserve:[PiqueData sharedInstance].kDevastatingData];
         //: _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];
         _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];

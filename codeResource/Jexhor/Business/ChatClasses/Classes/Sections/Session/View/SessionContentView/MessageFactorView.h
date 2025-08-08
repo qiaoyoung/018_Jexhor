@@ -9,12 +9,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "WorkSessionMessageContentView.h"
 #import "TextControl.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "WorkKitDependency.h"
+#import "WorkKitDependency.h"
 
-//: @interface FFFSessionNetChatNotifyContentView : FFFSessionMessageContentView
+//: @interface WorkSessionNetChatNotifyContentView : WorkSessionMessageContentView
 @interface MessageFactorView : TextControl
 
 //: @property (nonatomic, strong) M80AttributedLabel *textLabel;

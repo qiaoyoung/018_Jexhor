@@ -12,7 +12,7 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @interface FFFKitKeyboardInfo : NSObject
+//: @interface WorkKitKeyboardInfo : NSObject
 @interface TitleFactor : NSObject
 
 //是否可见

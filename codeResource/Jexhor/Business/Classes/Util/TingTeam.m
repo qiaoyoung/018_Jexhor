@@ -112,8 +112,8 @@
 // __M_A_C_R_O__
 //: #import "NTESNoticationUtil.h"
 #import "TingTeam.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "WorkGlobalMacro.h"
+#import "WorkGlobalMacro.h"
 
 //: @implementation NTESNoticationUtil
 @implementation TingTeam

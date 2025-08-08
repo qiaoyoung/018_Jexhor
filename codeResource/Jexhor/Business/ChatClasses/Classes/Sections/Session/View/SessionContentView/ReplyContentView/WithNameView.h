@@ -9,7 +9,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "WorkSessionMessageContentView.h"
 #import "TextControl.h"
 
 //: @class M80AttributedLabel;
@@ -17,7 +17,7 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFReplyedTextContentView : FFFSessionMessageContentView
+//: @interface WorkReplyedTextContentView : WorkSessionMessageContentView
 @interface WithNameView : TextControl
 
 //: @property (nonatomic, strong) M80AttributedLabel *textLabel;

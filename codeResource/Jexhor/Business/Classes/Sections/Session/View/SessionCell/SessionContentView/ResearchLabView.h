@@ -17,7 +17,7 @@ extern NSString *const dream_crossCornerValue; //自定义消息阅后即焚，�
 //: extern NSString *const NIMDemoEventNameCloseSnapPicture; 
 extern NSString *const mainUserValue; //自定义消息阅后即焚，关闭阅后即焚预览窗口
 
-//: @interface NTESSessionSnapchatContentView : FFFSessionMessageContentView
+//: @interface NTESSessionSnapchatContentView : WorkSessionMessageContentView
 @interface ResearchLabView : TextControl
 
 //: @end

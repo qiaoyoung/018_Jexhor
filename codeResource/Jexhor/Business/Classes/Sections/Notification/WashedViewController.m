@@ -274,7 +274,7 @@ static NSString *userButtonValue = @"reuseIdentifier";
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"notification"];
+    //: labtitle.text = [WorkLanguageManager getTextWithKey:@"notification"];
     labtitle.text = [InputRed preserve:[ColumnData noti_colorLabelData]];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -540,7 +540,7 @@ static NSString *userButtonValue = @"reuseIdentifier";
             [[NIMSDK sharedSDK].teamManager passApplyToTeam:notification.targetID userId:notification.sourceID completion:^(NSError *error, NIMTeamApplyStatus applyStatus) {
                 //: if (!error) {
                 if (!error) {
-                    //: [wself.navigationController.view makeToast:[FFFLanguageManager getTextWithKey:@"message_helper_already_ok"]
+                    //: [wself.navigationController.view makeToast:[WorkLanguageManager getTextWithKey:@"message_helper_already_ok"]
                     [wself.navigationController.view makeToast:[InputRed preserve:[ColumnData mMaxName]]
                                                       //: duration:2
                                                       duration:2
@@ -554,7 +554,7 @@ static NSString *userButtonValue = @"reuseIdentifier";
                 }else {
                     //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        //: [wself.navigationController.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        //: [wself.navigationController.view makeToast:[WorkLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                         [wself.navigationController.view makeToast:[InputRed preserve:[ColumnData k_placeChangeName]]
                                                           //: duration:2
                                                           duration:2
@@ -579,7 +579,7 @@ static NSString *userButtonValue = @"reuseIdentifier";
             [[NIMSDK sharedSDK].superTeamManager passApplyToTeam:notification.targetID userId:notification.sourceID completion:^(NSError *error, NIMTeamApplyStatus applyStatus) {
                 //: if (!error) {
                 if (!error) {
-                    //: [wself.navigationController.view makeToast:[FFFLanguageManager getTextWithKey:@"message_helper_already_ok"]
+                    //: [wself.navigationController.view makeToast:[WorkLanguageManager getTextWithKey:@"message_helper_already_ok"]
                     [wself.navigationController.view makeToast:[InputRed preserve:[ColumnData mMaxName]]
                                                       //: duration:2
                                                       duration:2
@@ -593,7 +593,7 @@ static NSString *userButtonValue = @"reuseIdentifier";
                 }else {
                     //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        //: [wself.navigationController.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        //: [wself.navigationController.view makeToast:[WorkLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                         [wself.navigationController.view makeToast:[InputRed preserve:[ColumnData k_placeChangeName]]
                                                           //: duration:2
                                                           duration:2
@@ -632,7 +632,7 @@ static NSString *userButtonValue = @"reuseIdentifier";
                 }else {
                     //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        //: [wself.navigationController.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        //: [wself.navigationController.view makeToast:[WorkLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                         [wself.navigationController.view makeToast:[InputRed preserve:[ColumnData k_placeChangeName]]
                                                           //: duration:2
                                                           duration:2
@@ -641,7 +641,7 @@ static NSString *userButtonValue = @"reuseIdentifier";
                     }
                     //: else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
                     else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
-                        //: [wself.navigationController.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_team_not_exist"]
+                        //: [wself.navigationController.view makeToast:[WorkLanguageManager getTextWithKey:@"group_info_activity_team_not_exist"]
                         [wself.navigationController.view makeToast:[InputRed preserve:[ColumnData app_imageHandleData]]
                                                           //: duration:2
                                                           duration:2
@@ -682,7 +682,7 @@ static NSString *userButtonValue = @"reuseIdentifier";
                 }else {
                     //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        //: [wself.navigationController.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        //: [wself.navigationController.view makeToast:[WorkLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                         [wself.navigationController.view makeToast:[InputRed preserve:[ColumnData k_placeChangeName]]
                                                           //: duration:2
                                                           duration:2
@@ -691,7 +691,7 @@ static NSString *userButtonValue = @"reuseIdentifier";
                     }
                     //: else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
                     else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
-                        //: [wself.navigationController.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_team_not_exist"]
+                        //: [wself.navigationController.view makeToast:[WorkLanguageManager getTextWithKey:@"group_info_activity_team_not_exist"]
                         [wself.navigationController.view makeToast:[InputRed preserve:[ColumnData app_imageHandleData]]
                                                           //: duration:2
                                                           duration:2
@@ -727,7 +727,7 @@ static NSString *userButtonValue = @"reuseIdentifier";
                                                  completion:^(NSError *error) {
                                                      //: if (!error) {
                                                      if (!error) {
-                                                         //: [wself.navigationController.view makeToast:[FFFLanguageManager getTextWithKey:@"successful_authentication"]//@"验证成功".ntes_localized
+                                                         //: [wself.navigationController.view makeToast:[WorkLanguageManager getTextWithKey:@"successful_authentication"]//@"验证成功".ntes_localized
                                                          [wself.navigationController.view makeToast:[InputRed preserve:[ColumnData k_atName]]//@"验证成功".ntes_localized
                                                                                            //: duration:2
                                                                                            duration:2
@@ -764,7 +764,7 @@ static NSString *userButtonValue = @"reuseIdentifier";
                                                      //: else
                                                      else
                                                      {
-                                                         //: [wself.navigationController.view makeToast:[FFFLanguageManager getTextWithKey:@"fail_authentication"]//@"验证失败,请重试".ntes_localized
+                                                         //: [wself.navigationController.view makeToast:[WorkLanguageManager getTextWithKey:@"fail_authentication"]//@"验证失败,请重试".ntes_localized
                                                          [wself.navigationController.view makeToast:[InputRed preserve:[ColumnData appSuccessData]]//@"验证失败,请重试".ntes_localized
                                                                                            //: duration:2
                                                                                            duration:2
@@ -803,7 +803,7 @@ static NSString *userButtonValue = @"reuseIdentifier";
             [[NIMSDK sharedSDK].teamManager rejectApplyToTeam:notification.targetID userId:notification.sourceID rejectReason:@"" completion:^(NSError *error) {
                 //: if (!error) {
                 if (!error) {
-                    //: [wself.navigationController.view makeToast:[FFFLanguageManager getTextWithKey:@"message_helper_already_no"]
+                    //: [wself.navigationController.view makeToast:[WorkLanguageManager getTextWithKey:@"message_helper_already_no"]
                     [wself.navigationController.view makeToast:[InputRed preserve:[ColumnData dream_labelByValue]]
                                                       //: duration:2
                                                       duration:2
@@ -817,7 +817,7 @@ static NSString *userButtonValue = @"reuseIdentifier";
                 }else {
                     //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        //: [wself.navigationController.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        //: [wself.navigationController.view makeToast:[WorkLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                         [wself.navigationController.view makeToast:[InputRed preserve:[ColumnData k_placeChangeName]]
                                                           //: duration:2
                                                           duration:2
@@ -842,7 +842,7 @@ static NSString *userButtonValue = @"reuseIdentifier";
             [[NIMSDK sharedSDK].superTeamManager rejectApplyToTeam:notification.targetID userId:notification.sourceID rejectReason:@"" completion:^(NSError *error) {
                 //: if (!error) {
                 if (!error) {
-                    //: [wself.navigationController.view makeToast:[FFFLanguageManager getTextWithKey:@"message_helper_already_no"]
+                    //: [wself.navigationController.view makeToast:[WorkLanguageManager getTextWithKey:@"message_helper_already_no"]
                     [wself.navigationController.view makeToast:[InputRed preserve:[ColumnData dream_labelByValue]]
                                                       //: duration:2
                                                       duration:2
@@ -856,7 +856,7 @@ static NSString *userButtonValue = @"reuseIdentifier";
                 }else {
                     //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        //: [wself.navigationController.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        //: [wself.navigationController.view makeToast:[WorkLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                         [wself.navigationController.view makeToast:[InputRed preserve:[ColumnData k_placeChangeName]]
                                                           //: duration:2
                                                           duration:2
@@ -881,7 +881,7 @@ static NSString *userButtonValue = @"reuseIdentifier";
             [[NIMSDK sharedSDK].teamManager rejectInviteWithTeam:notification.targetID invitorId:notification.sourceID rejectReason:@"" completion:^(NSError *error) {
                 //: if (!error) {
                 if (!error) {
-                    //: [wself.navigationController.view makeToast:[FFFLanguageManager getTextWithKey:@"message_helper_already_no"]
+                    //: [wself.navigationController.view makeToast:[WorkLanguageManager getTextWithKey:@"message_helper_already_no"]
                     [wself.navigationController.view makeToast:[InputRed preserve:[ColumnData dream_labelByValue]]
                                                       //: duration:2
                                                       duration:2
@@ -895,7 +895,7 @@ static NSString *userButtonValue = @"reuseIdentifier";
                 }else {
                     //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        //: [wself.navigationController.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        //: [wself.navigationController.view makeToast:[WorkLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                         [wself.navigationController.view makeToast:[InputRed preserve:[ColumnData k_placeChangeName]]
                                                           //: duration:2
                                                           duration:2
@@ -904,7 +904,7 @@ static NSString *userButtonValue = @"reuseIdentifier";
                     }
                     //: else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
                     else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
-                        //: [wself.navigationController.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_team_not_exist"]
+                        //: [wself.navigationController.view makeToast:[WorkLanguageManager getTextWithKey:@"group_info_activity_team_not_exist"]
                         [wself.navigationController.view makeToast:[InputRed preserve:[ColumnData app_imageHandleData]]
                                                           //: duration:2
                                                           duration:2
@@ -930,7 +930,7 @@ static NSString *userButtonValue = @"reuseIdentifier";
             [[NIMSDK sharedSDK].superTeamManager rejectInviteWithTeam:notification.targetID invitorId:notification.sourceID rejectReason:@"" completion:^(NSError *error) {
                 //: if (!error) {
                 if (!error) {
-                    //: [wself.navigationController.view makeToast:[FFFLanguageManager getTextWithKey:@"message_helper_already_no"]
+                    //: [wself.navigationController.view makeToast:[WorkLanguageManager getTextWithKey:@"message_helper_already_no"]
                     [wself.navigationController.view makeToast:[InputRed preserve:[ColumnData dream_labelByValue]]
                                                       //: duration:2
                                                       duration:2
@@ -944,7 +944,7 @@ static NSString *userButtonValue = @"reuseIdentifier";
                 }else {
                     //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        //: [wself.navigationController.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        //: [wself.navigationController.view makeToast:[WorkLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                         [wself.navigationController.view makeToast:[InputRed preserve:[ColumnData k_placeChangeName]]
                                                           //: duration:2
                                                           duration:2
@@ -953,7 +953,7 @@ static NSString *userButtonValue = @"reuseIdentifier";
                     }
                     //: else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
                     else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
-                        //: [wself.navigationController.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_team_not_exist"]
+                        //: [wself.navigationController.view makeToast:[WorkLanguageManager getTextWithKey:@"group_info_activity_team_not_exist"]
                         [wself.navigationController.view makeToast:[InputRed preserve:[ColumnData app_imageHandleData]]
                                                           //: duration:2
                                                           duration:2
@@ -989,7 +989,7 @@ static NSString *userButtonValue = @"reuseIdentifier";
                                                  completion:^(NSError *error) {
                                                      //: if (!error) {
                                                      if (!error) {
-                                                         //: [wself.navigationController.view makeToast:[FFFLanguageManager getTextWithKey:@"message_helper_already_no"]
+                                                         //: [wself.navigationController.view makeToast:[WorkLanguageManager getTextWithKey:@"message_helper_already_no"]
                                                          [wself.navigationController.view makeToast:[InputRed preserve:[ColumnData dream_labelByValue]]
                                                                                            //: duration:2
                                                                                            duration:2
@@ -1001,7 +1001,7 @@ static NSString *userButtonValue = @"reuseIdentifier";
                                                      //: else
                                                      else
                                                      {
-                                                         //: [wself.navigationController.view makeToast:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"]
+                                                         //: [wself.navigationController.view makeToast:[WorkLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"]
                                                          [wself.navigationController.view makeToast:[InputRed preserve:[ColumnData userEndName]]
                                                                                            //: duration:2
                                                                                            duration:2

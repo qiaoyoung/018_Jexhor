@@ -13,10 +13,10 @@
 #import <Foundation/Foundation.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "WorkGlobalMacro.h"
+#import "WorkGlobalMacro.h"
 
-//: @interface FFFKitUtil : NSObject
+//: @interface WorkKitUtil : NSObject
 @interface WantUtil : NSObject
 
 //: + (NSString *)showNick:(NSString *)uid inMessage:(NIMMessage *)message;

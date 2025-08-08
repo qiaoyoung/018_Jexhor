@@ -270,7 +270,7 @@
         //: [self initUI];
         [self initBe];
 
-        //: self.selectButtons = @[[FFFLanguageManager getTextWithKey:@"report_reasons7"],[FFFLanguageManager getTextWithKey:@"report_reasons8"],[FFFLanguageManager getTextWithKey:@"report_reasons9"],[FFFLanguageManager getTextWithKey:@"report_reasons10"],[FFFLanguageManager getTextWithKey:@"report_reasons6"]];
+        //: self.selectButtons = @[[WorkLanguageManager getTextWithKey:@"report_reasons7"],[WorkLanguageManager getTextWithKey:@"report_reasons8"],[WorkLanguageManager getTextWithKey:@"report_reasons9"],[WorkLanguageManager getTextWithKey:@"report_reasons10"],[WorkLanguageManager getTextWithKey:@"report_reasons6"]];
         self.selectButtons = @[[InputRed preserve:[UndertakeData sharedInstance].mPollutionText],[InputRed preserve:[UndertakeData sharedInstance].user_withText],[InputRed preserve:[UndertakeData sharedInstance].noti_shouldData],[InputRed preserve:[UndertakeData sharedInstance].mFilePlaceText],[InputRed preserve:[UndertakeData sharedInstance].show_acheText]];
         //: self.index = 0;
         self.index = 0;
@@ -305,7 +305,7 @@
     labsub.textColor = [UIColor ground:[UndertakeData sharedInstance].kAppearTitle];
     //: labsub.numberOfLines = 0;
     labsub.numberOfLines = 0;
-    //: labsub.text = [FFFLanguageManager getTextWithKey:@"report_Tip"];
+    //: labsub.text = [WorkLanguageManager getTextWithKey:@"report_Tip"];
     labsub.text = [InputRed preserve:[UndertakeData sharedInstance].noti_withText];
     //: [_box addSubview:labsub];
     [_box addSubview:labsub];
@@ -351,7 +351,7 @@
 //        _titleLabel.textAlignment = NSTextAlignmentCenter;
 //        _titleLabel.numberOfLines = 0;
 //        _titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"report_Content"];
+        //: _titleLabel.text = [WorkLanguageManager getTextWithKey:@"report_Content"];
         _titleLabel.text = [InputRed preserve:[UndertakeData sharedInstance].dream_fortunateAcheData];
     }
     //: return _titleLabel;
@@ -390,7 +390,7 @@
         [Btn1 setImage:[UIImage imageNamed:[UndertakeData sharedInstance].noti_endName] forState:UIControlStateNormal];
         //: [Btn1 setImage:[UIImage imageNamed:@"icon_accessory_selected"] forState:UIControlStateSelected];
         [Btn1 setImage:[UIImage imageNamed:[UndertakeData sharedInstance].noti_premiumContent] forState:UIControlStateSelected];
-        //: [Btn1 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons7"] forState:UIControlStateNormal];
+        //: [Btn1 setTitle:[WorkLanguageManager getTextWithKey:@"report_reasons7"] forState:UIControlStateNormal];
         [Btn1 setTitle:[InputRed preserve:[UndertakeData sharedInstance].mPollutionText] forState:UIControlStateNormal];
         //: Btn1.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn1.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -418,7 +418,7 @@
         [Btn2 setImage:[UIImage imageNamed:[UndertakeData sharedInstance].noti_endName] forState:UIControlStateNormal];
         //: [Btn2 setImage:[UIImage imageNamed:@"icon_accessory_selected"] forState:UIControlStateSelected];
         [Btn2 setImage:[UIImage imageNamed:[UndertakeData sharedInstance].noti_premiumContent] forState:UIControlStateSelected];
-        //: [Btn2 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons8"] forState:UIControlStateNormal];
+        //: [Btn2 setTitle:[WorkLanguageManager getTextWithKey:@"report_reasons8"] forState:UIControlStateNormal];
         [Btn2 setTitle:[InputRed preserve:[UndertakeData sharedInstance].user_withText] forState:UIControlStateNormal];
         //: Btn2.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn2.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -447,7 +447,7 @@
         [Btn3 setImage:[UIImage imageNamed:[UndertakeData sharedInstance].noti_premiumContent] forState:UIControlStateSelected];
         //: [_buttonBox addSubview:Btn3];
         [_buttonBox addSubview:Btn3];
-        //: [Btn3 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons9"] forState:UIControlStateNormal];
+        //: [Btn3 setTitle:[WorkLanguageManager getTextWithKey:@"report_reasons9"] forState:UIControlStateNormal];
         [Btn3 setTitle:[InputRed preserve:[UndertakeData sharedInstance].noti_shouldData] forState:UIControlStateNormal];
         //: Btn3.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn3.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -474,7 +474,7 @@
         [Btn4 setImage:[UIImage imageNamed:[UndertakeData sharedInstance].noti_premiumContent] forState:UIControlStateSelected];
         //: [_buttonBox addSubview:Btn4];
         [_buttonBox addSubview:Btn4];
-        //: [Btn4 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons10"] forState:UIControlStateNormal];
+        //: [Btn4 setTitle:[WorkLanguageManager getTextWithKey:@"report_reasons10"] forState:UIControlStateNormal];
         [Btn4 setTitle:[InputRed preserve:[UndertakeData sharedInstance].mFilePlaceText] forState:UIControlStateNormal];
         //: Btn4.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn4.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -501,7 +501,7 @@
         [Btn5 setImage:[UIImage imageNamed:[UndertakeData sharedInstance].noti_premiumContent] forState:UIControlStateSelected];
         //: [_buttonBox addSubview:Btn5];
         [_buttonBox addSubview:Btn5];
-        //: [Btn5 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons6"] forState:UIControlStateNormal];
+        //: [Btn5 setTitle:[WorkLanguageManager getTextWithKey:@"report_reasons6"] forState:UIControlStateNormal];
         [Btn5 setTitle:[InputRed preserve:[UndertakeData sharedInstance].show_acheText] forState:UIControlStateNormal];
         //: Btn5.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn5.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -531,7 +531,7 @@
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor ground:[UndertakeData sharedInstance].showCanSessionValue] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[InputRed preserve:[UndertakeData sharedInstance].main_viewBubbleValue] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -558,7 +558,7 @@
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[InputRed preserve:[UndertakeData sharedInstance].user_afternoonData] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#05D481"];
         _sureBtn.backgroundColor = [UIColor ground:[UndertakeData sharedInstance].dreamHighlightData];

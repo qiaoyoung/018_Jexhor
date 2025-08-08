@@ -70,21 +70,21 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionTextContentView.h"
+//: #import "WorkSessionTextContentView.h"
 #import "BottomControl.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "VideoTextView+MessageContent.h"
-//: #import "FFFMessageModel.h"
+//: #import "WorkMessageModel.h"
 #import "ShowModel.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "WorkGlobalMacro.h"
+#import "WorkGlobalMacro.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
-//: #import "FFFTextView.h"
+//: #import "WorkTextView.h"
 #import "ShowScrollView.h"
-//: #import "FFFSessionConfig.h"
+//: #import "WorkSessionConfig.h"
 #import "LineConfig.h"
 //: #import "NTESSessionViewController.h"
 #import "DisplayAccountViewController.h"
@@ -94,7 +94,7 @@
 //: NSString *const NIMTextMessageLabelLinkData = @"NIMTextMessageLabelLinkData";
 NSString *const kLabelData = @"NIMTextMessageLabelLinkData";
 
-//: @interface FFFSessionTextContentView()<M80AttributedLabelDelegate>
+//: @interface WorkSessionTextContentView()<M80AttributedLabelDelegate>
 @interface BottomControl()<LabelDelegate>
 
 //: @property (nonatomic, strong) NSString *urlStr;
@@ -105,7 +105,7 @@ NSString *const kLabelData = @"NIMTextMessageLabelLinkData";
 //: @end
 @end
 
-//: @implementation FFFSessionTextContentView
+//: @implementation WorkSessionTextContentView
 @implementation BottomControl
 
 //: - (instancetype)initSessionMessageContentView
@@ -136,7 +136,7 @@ NSString *const kLabelData = @"NIMTextMessageLabelLinkData";
          //: autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
          autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
                       ;
-        //: _textView.selectBlock = ^(FFFMediaItem *item) {
+        //: _textView.selectBlock = ^(WorkMediaItem *item) {
         _textView.selectBlock = ^(AccountAction *item) {
             @
              //: try{} @finally{} __typeof__(self) self = __weak_self__;
@@ -233,7 +233,7 @@ NSString *const kLabelData = @"NIMTextMessageLabelLinkData";
     return isUrl;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data
+//: - (void)refresh:(WorkMessageModel *)data
 - (void)panorama:(ShowModel *)data
 {
     //: if (self.model == data) {
@@ -247,7 +247,7 @@ NSString *const kLabelData = @"NIMTextMessageLabelLinkData";
 
     //: NSString *text = self.model.message.text;
     NSString *text = self.model.message.text;
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
+    //: WorkKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
     ViewKey *setting = [[MessageContent secretResolution].config ofSetting:data.message];
     //: self.textView.textColor = setting.textColor;
     self.textView.textColor = setting.textColor;
@@ -267,7 +267,7 @@ NSString *const kLabelData = @"NIMTextMessageLabelLinkData";
                 //: self.textView.actionDelegate = vc;
                 self.textView.actionDelegate = vc;
                 //: self.textView.config = vc.sessionConfig;
-                self.textView.config = vc.temp;
+                self.textView.config = vc.sessionConfig;
             }
         //: }];
         }];
@@ -356,9 +356,9 @@ NSString *const kLabelData = @"NIMTextMessageLabelLinkData";
 - (void)messageValue:(VideoTextView *)label
              //: clickedOnLink:(id)linkData{
              maxAlong:(id)linkData{
-    //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+    //: WorkKitEvent *event = [[WorkKitEvent alloc] init];
     WrittenAccountLab *event = [[WrittenAccountLab alloc] init];
-    //: event.eventName = FFFKitEventNameTapLabelLink;
+    //: event.eventName = WorkKitEventNameTapLabelLink;
     event.eventName = k_onText;
     //: event.messageModel = self.model;
     event.messageModel = self.model;

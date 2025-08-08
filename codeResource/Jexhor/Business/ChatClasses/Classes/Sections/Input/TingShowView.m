@@ -5,7 +5,7 @@
 
 + (instancetype)sharedInstance;
 
-//: #ffffff
+//: #fffWork
 @property (nonatomic, copy) NSString *dreamMailBotTitle;
 
 //: message_please_enter_content
@@ -58,7 +58,7 @@
     return [NSString stringWithUTF8String:(char *)[self FloodOutDataToCache:data]];
 }
 
-//: #ffffff
+//: #fffWork
 - (NSString *)dreamMailBotTitle {
     if (!_dreamMailBotTitle) {
         Byte value[] = {7, 61, 10, 112, 93, 11, 74, 110, 80, 177, 96, 163, 163, 163, 163, 163, 163, 3};
@@ -134,48 +134,48 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputView.h"
+//: #import "WorkInputView.h"
 #import "TingShowView.h"
 //: #import <AVFoundation/AVFoundation.h>
 #import <AVFoundation/AVFoundation.h>
-//: #import "FFFInputMoreContainerView.h"
+//: #import "WorkInputMoreContainerView.h"
 #import "SignalingView.h"
-//: #import "FFFInputEmoticonContainerView.h"
+//: #import "WorkInputEmoticonContainerView.h"
 #import "ReferView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "WorkInputEmoticonDefine.h"
+#import "WorkInputEmoticonDefine.h"
+//: #import "WorkInputEmoticonManager.h"
 #import "RedManager.h"
-//: #import "FFFInputToolBar.h"
+//: #import "WorkInputToolBar.h"
 #import "CoatButtonView.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFContactSelectViewController.h"
+//: #import "WorkGlobalMacro.h"
+#import "WorkGlobalMacro.h"
+//: #import "WorkContactSelectViewController.h"
 #import "CompartmentViewController.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WorkKitInfoFetchOption.h"
 #import "RangeOption.h"
-//: #import "FFFKitKeyboardInfo.h"
+//: #import "WorkKitKeyboardInfo.h"
 #import "TitleFactor.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+MessageContent.h"
-//: #import "FFFReplyContentView.h"
+//: #import "WorkReplyContentView.h"
 #import "CircleView.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "VideoTextView+MessageContent.h"
 //: #import <YYText.h>
 #import <YYText.h>
-//: #import "FFFTextHighlight.h"
+//: #import "WorkTextHighlight.h"
 #import "ImageTextHighlight.h"
 //: #import "PhotoContainerView.h"
 #import "MagnitudeView.h"
 
-//: @interface FFFInputView()<FFFInputToolBarDelegate,NIMInputEmoticonProtocol,NIMContactSelectDelegate,FFFReplyContentViewDelegate,moreCustomPickerViewDelegate>
+//: @interface WorkInputView()<WorkInputToolBarDelegate,NIMInputEmoticonProtocol,NIMContactSelectDelegate,WorkReplyContentViewDelegate,moreCustomPickerViewDelegate>
 @interface TingShowView()<RangeDelegate,FiveRecord,NeedInfoName,ProviderLine,moreCustomPickerViewDelegate>
 {
     //: UIView *_emoticonView;
@@ -185,7 +185,7 @@
 
 //: @property (nonatomic, assign) NIMAudioRecordPhase recordPhase;
 @property (nonatomic, assign) NIMAudioRecordPhase recordPhase;
-//: @property (nonatomic, weak) id<FFFSessionConfig> inputConfig;
+//: @property (nonatomic, weak) id<WorkSessionConfig> inputConfig;
 @property (nonatomic, weak) id<LineConfig> inputConfig;
 //: @property (nonatomic, weak) id<NIMInputDelegate> inputDelegate;
 @property (nonatomic, weak) id<SignalingDelegate> inputDelegate;
@@ -203,7 +203,7 @@
 @end
 
 
-//: @implementation FFFInputView
+//: @implementation WorkInputView
 @implementation TingShowView
 
 //: @synthesize emoticonContainer = _emoticonContainer;
@@ -213,7 +213,7 @@
 
 //: - (instancetype)initWithFrame:(CGRect)frame
 - (instancetype)initWithContainerDisable:(CGRect)frame
-                       //: config:(id<FFFSessionConfig>)config
+                       //: config:(id<WorkSessionConfig>)config
                        success:(id<LineConfig>)config
 {
     //: self = [super initWithFrame:frame];
@@ -225,11 +225,11 @@
         _recording = NO;
         //: _recordPhase = AudioRecordPhaseEnd;
         _recordPhase = AudioRecordPhaseEnd;
-        //: _atCache = [[FFFInputAtCache alloc] init];
+        //: _atCache = [[WorkInputAtCache alloc] init];
         _atCache = [[AdministratorCache alloc] init];
         //: _inputConfig = config;
         _inputConfig = config;
-        //: self.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: self.backgroundColor = [UIColor colorWithHexString:@"#fffWork"];
         self.backgroundColor = [UIColor ground:[FloodOutData sharedInstance].dreamMailBotTitle];
         //: self.layer.shadowColor = [UIColor colorWithRed:0/255.0 green:0/255.0 blue:0/255.0 alpha:0.0800].CGColor;
         self.layer.shadowColor = [UIColor colorWithRed:0/255.0 green:0/255.0 blue:0/255.0 alpha:0.0800].CGColor;
@@ -286,7 +286,7 @@
             //: UIEdgeInsets safeArea = self.superview.safeAreaInsets;
             UIEdgeInsets safeArea = self.superview.safeAreaInsets;
             //键盘是从最底下弹起的，需要减去安全区域底部的高度
-            //: CGFloat keyboardDelta = [FFFKitKeyboardInfo instance].keyboardHeight - safeArea.bottom;
+            //: CGFloat keyboardDelta = [WorkKitKeyboardInfo instance].keyboardHeight - safeArea.bottom;
             CGFloat keyboardDelta = [TitleFactor action].keyboardHeight - safeArea.bottom;
 
             //如果键盘还没有安全区域高，容器的初始值为0；否则则为键盘和安全区域的高度差值，这样可以保证 toolBar 始终在键盘上面
@@ -354,7 +354,7 @@
     //: if (!_toolBar)
     if (!_toolBar)
     {
-        //: _toolBar = [[FFFInputToolBar alloc] initWithFrame:CGRectMake(0, 0, self.nim_width, 0)];
+        //: _toolBar = [[WorkInputToolBar alloc] initWithFrame:CGRectMake(0, 0, self.nim_width, 0)];
         _toolBar = [[CoatButtonView alloc] initWithFrame:CGRectMake(0, 0, self.nim_width, 0)];
     }
     //: [self addSubview:_toolBar];
@@ -362,7 +362,7 @@
     //设置placeholder
 //        NSString *placeholder = [MessageContent sharedKit].config.placeholder;
 //        [_toolBar setPlaceHolder:placeholder];
-    //: [_toolBar setPlaceHolder:[FFFLanguageManager getTextWithKey:@"message_please_enter_content"]];
+    //: [_toolBar setPlaceHolder:[WorkLanguageManager getTextWithKey:@"message_please_enter_content"]];
     [_toolBar setChecked:[InputRed preserve:[FloodOutData sharedInstance].showHideName]];
     //设置input bar 上的按钮
     //: if ([_inputConfig respondsToSelector:@selector(inputBarItemTypes)]) {
@@ -437,7 +437,7 @@
 {
     //: if (!_moreContainer) {
     if (!_moreContainer) {
-        //: _moreContainer = [[FFFInputMoreContainerView alloc] initWithFrame:CGRectZero];
+        //: _moreContainer = [[WorkInputMoreContainerView alloc] initWithFrame:CGRectZero];
         _moreContainer = [[SignalingView alloc] initWithFrame:CGRectZero];
         //: _moreContainer.nim_size = [_moreContainer sizeThatFits:CGSizeMake(self.nim_width, 1.7976931348623157e+308)];
         _moreContainer.nim_size = [_moreContainer sizeThatFits:CGSizeMake(self.nim_width, 1.7976931348623157e+308)];
@@ -482,7 +482,7 @@
 {
     //: if (!_emoticonContainer) {
     if (!_emoticonContainer) {
-        //: FFFInputEmoticonContainerView *emoticonContainer = [[FFFInputEmoticonContainerView alloc] initWithFrame:CGRectZero];
+        //: WorkInputEmoticonContainerView *emoticonContainer = [[WorkInputEmoticonContainerView alloc] initWithFrame:CGRectZero];
         ReferView *emoticonContainer = [[ReferView alloc] initWithFrame:CGRectZero];
 
         //: emoticonContainer.nim_size = [emoticonContainer sizeThatFits:CGSizeMake(self.nim_width, 1.7976931348623157e+308)];
@@ -573,13 +573,13 @@
     //: NSString *text = [NSString stringWithFormat:@"%@", [[MyUserKit sharedKit] replyedContentWithMessage:message]];
     NSString *text = [NSString stringWithFormat:@"%@", [[MessageContent secretResolution] bared:message]];
 
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: WorkKitInfoFetchOption *option = [[WorkKitInfoFetchOption alloc] init];
     RangeOption *option = [[RangeOption alloc] init];
     //: option.message = message;
     option.message = message;
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:message.from option:option];
+    //: WorkKitInfo *info = [[MyUserKit sharedKit] infoByUser:message.from option:option];
     ConfirmationInfo *info = [[MessageContent secretResolution] recent:message.from blue:option];
-    //: self.replyedContent.fromUser.text = [NSString stringWithFormat:@"%@%@",[FFFLanguageManager getTextWithKey:@"回复"],info.showName];
+    //: self.replyedContent.fromUser.text = [NSString stringWithFormat:@"%@%@",[WorkLanguageManager getTextWithKey:@"回复"],info.showName];
     self.replyedContent.fromUser.text = [NSString stringWithFormat:@"%@%@",[InputRed preserve:@"回复"],info.showName];
     //: self.replyedContent.label.text = text;
     self.replyedContent.label.text = text;
@@ -713,13 +713,13 @@
 //    _emoticonContainer.nim_top = self.toolBar.nim_bottom;
 }
 
-//: - (FFFReplyContentView *)replyedContent
+//: - (WorkReplyContentView *)replyedContent
 - (CircleView *)replyedContent
 {
     //: if (!_replyedContent)
     if (!_replyedContent)
     {
-        //: _replyedContent = [[FFFReplyContentView alloc] initWithFrame:CGRectMake(0, 0, self.nim_width, 50)];
+        //: _replyedContent = [[WorkReplyContentView alloc] initWithFrame:CGRectMake(0, 0, self.nim_width, 50)];
         _replyedContent = [[CircleView alloc] initWithFrame:CGRectMake(0, 0, self.nim_width, 50)];
         //: _replyedContent.hidden = YES;
         _replyedContent.hidden = YES;
@@ -956,13 +956,13 @@
         [self alongPolaroidCameraFeelBtn];
     //: }else{
     }else{
-        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy"] preferredStyle:UIAlertControllerStyleAlert];
+        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[WorkLanguageManager getTextWithKey:@"warm_prompt"] message:[WorkLanguageManager getTextWithKey:@"setting_privacy"] preferredStyle:UIAlertControllerStyleAlert];
         UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[InputRed preserve:[FloodOutData sharedInstance].showHighlightText] message:[InputRed preserve:[FloodOutData sharedInstance].show_sizeEmergingTitle] preferredStyle:UIAlertControllerStyleAlert];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[InputRed preserve:[FloodOutData sharedInstance].k_resourceTitle] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         //: }])];
         }])];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[WorkLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[InputRed preserve:[FloodOutData sharedInstance].app_beValue] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
             NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
@@ -1029,7 +1029,7 @@
 }
 
 
-//: #pragma mark - FFFInputToolBarDelegate
+//: #pragma mark - WorkInputToolBarDelegate
 #pragma mark - RangeDelegate
 
 //: - (BOOL)textViewShouldBeginEditing
@@ -1116,7 +1116,7 @@
                 config.session = self.session;
                 //: config.filterIds = @[[NIMSDK sharedSDK].loginManager.currentAccount];
                 config.filterIds = @[[NIMSDK sharedSDK].loginManager.currentAccount];
-                //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+                //: WorkContactSelectViewController *vc = [[WorkContactSelectViewController alloc] initWithConfig:config];
                 CompartmentViewController *vc = [[CompartmentViewController alloc] initWithStateAtPull:config];
                 //: vc.delegate = self;
                 vc.delegate = self;
@@ -1144,7 +1144,7 @@
                 config.session = self.session;
                 //: config.filterIds = @[[NIMSDK sharedSDK].loginManager.currentAccount];
                 config.filterIds = @[[NIMSDK sharedSDK].loginManager.currentAccount];
-                //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+                //: WorkContactSelectViewController *vc = [[WorkContactSelectViewController alloc] initWithConfig:config];
                 CompartmentViewController *vc = [[CompartmentViewController alloc] initWithStateAtPull:config];
                 //: vc.delegate = self;
                 vc.delegate = self;
@@ -1216,7 +1216,7 @@
 //: - (void)addContacts:(NSArray *)selectedContacts prefix:(NSMutableString *)str
 - (void)visualization:(NSArray *)selectedContacts tapPlacePrefix:(NSMutableString *)str
 {
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: WorkKitInfoFetchOption *option = [[WorkKitInfoFetchOption alloc] init];
     RangeOption *option = [[RangeOption alloc] init];
     //: option.session = self.session;
     option.session = self.session;
@@ -1277,7 +1277,7 @@
 //: - (void)selectedGifEmoticon:(NSString*)gif
 - (void)objectFile:(NSString*)gif
 {
-    //: [self.toolBar setPlaceHolder:[FFFLanguageManager getTextWithKey:@"message_please_enter_content"]];
+    //: [self.toolBar setPlaceHolder:[WorkLanguageManager getTextWithKey:@"message_please_enter_content"]];
     [self.toolBar setChecked:[InputRed preserve:[FloodOutData sharedInstance].showHideName]];
     //发送贴图消息
     //: if ([self.actionDelegate respondsToSelector:@selector(onSelectChartlet:catalog:)]) {
@@ -1295,7 +1295,7 @@
     //: self.toolBar.sendButton.hidden = YES;
     self.toolBar.sendButton.hidden = YES;
 //    self.toolBar.emoticonBtn2.hidden = YES;
-    //: [self.toolBar setPlaceHolder:[FFFLanguageManager getTextWithKey:@"message_please_enter_content"]];
+    //: [self.toolBar setPlaceHolder:[WorkLanguageManager getTextWithKey:@"message_please_enter_content"]];
     [self.toolBar setChecked:[InputRed preserve:[FloodOutData sharedInstance].showHideName]];
     //: [self doButtonDeleteText];
     [self digitizer];
@@ -1355,7 +1355,7 @@
         self.toolBar.contentText = @"";
 //        self.toolBar.sendButton.hidden = YES;
 //        self.toolBar.emoticonBtn2.hidden = YES;
-        //: [self.toolBar setPlaceHolder:[FFFLanguageManager getTextWithKey:@"message_please_enter_content"]];
+        //: [self.toolBar setPlaceHolder:[WorkLanguageManager getTextWithKey:@"message_please_enter_content"]];
         [self.toolBar setChecked:[InputRed preserve:[FloodOutData sharedInstance].showHideName]];
         //: [self.toolBar layoutIfNeeded];
         [self.toolBar layoutIfNeeded];
@@ -1385,12 +1385,12 @@
 - (NSMutableAttributedString *)changeDes:(NSMutableAttributedString *)attrM {
     //: [attrM enumerateAttribute:YYTextHighlightAttributeName inRange:NSMakeRange(0, attrM.length) options:NSAttributedStringEnumerationReverse usingBlock:^(id _Nullable value, NSRange range, BOOL * _Nonnull stop) {
     [attrM enumerateAttribute:YYTextHighlightAttributeName inRange:NSMakeRange(0, attrM.length) options:NSAttributedStringEnumerationReverse usingBlock:^(id _Nullable value, NSRange range, BOOL * _Nonnull stop) {
-        //: if (value && [value isKindOfClass:[FFFTextHighlight class]]) {
+        //: if (value && [value isKindOfClass:[WorkTextHighlight class]]) {
         if (value && [value isKindOfClass:[ImageTextHighlight class]]) {
-            //: FFFTextHighlight *textHighlight = value;
+            //: WorkTextHighlight *textHighlight = value;
             ImageTextHighlight *textHighlight = value;
-            //: if (textHighlight.type == FFFTextHighlightTypeEmoji) {
-            if (textHighlight.type == FFFTextHighlightTypeEmoji) {
+            //: if (textHighlight.type == WorkTextHighlightTypeEmoji) {
+            if (textHighlight.type == WorkTextHighlightTypeEmoji) {
                 //: [attrM replaceCharactersInRange:range withString:textHighlight.text];
                 [attrM replaceCharactersInRange:range withString:textHighlight.text];
             }
@@ -1489,7 +1489,7 @@
         {
             //: NSString *name = [text substringWithRange:subRange];
             NSString *name = [text substringWithRange:subRange];
-            //: NIMInputEmoticon *icon = [[FFFInputEmoticonManager sharedManager] emoticonByTag:name];
+            //: NIMInputEmoticon *icon = [[WorkInputEmoticonManager sharedManager] emoticonByTag:name];
             FrontwardsCount *icon = [[RedManager session] success:name];
             //: range = icon? subRange : NSMakeRange(selectedRange.location - 1, 1);
             range = icon? subRange : NSMakeRange(selectedRange.location - 1, 1);
@@ -1528,7 +1528,7 @@
     {
         //: NSString *name = [text substringWithRange:subRange];
         NSString *name = [text substringWithRange:subRange];
-        //: NIMInputEmoticon *icon = [[FFFInputEmoticonManager sharedManager] emoticonByTag:name];
+        //: NIMInputEmoticon *icon = [[WorkInputEmoticonManager sharedManager] emoticonByTag:name];
         FrontwardsCount *icon = [[RedManager session] success:name];
         //: range = icon? subRange : NSMakeRange(selectedRange.location - 1, 1);
         range = icon? subRange : NSMakeRange(selectedRange.location - 1, 1);
@@ -1622,7 +1622,7 @@
     return index == -1? NSMakeRange(endLocation - 1, 1) : NSMakeRange(index, endLocation - index);
 }
 
-//: #pragma mark - FFFReplyContentViewDelegate
+//: #pragma mark - WorkReplyContentViewDelegate
 #pragma mark - ProviderLine
 
 //: - (void)onClearReplyContent:(id)sender

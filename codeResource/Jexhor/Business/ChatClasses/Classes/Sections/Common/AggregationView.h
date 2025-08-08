@@ -12,7 +12,7 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @interface FFFBadgeView : UIView
+//: @interface WorkBadgeView : UIView
 @interface AggregationView : UIView
 
 //@property (nonatomic, strong) UIColor *badgeBackgroundColor;

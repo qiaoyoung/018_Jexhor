@@ -12,17 +12,17 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @class FFFTeamSwitchTableViewCell;
+//: @class WorkTeamSwitchTableViewCell;
 @class KeyStyleView;
 
 //: @protocol NIMTeamSwitchProtocol <NSObject>
 @protocol TingThread <NSObject>
-//: - (void)cell:(FFFTeamSwitchTableViewCell *)cell onStateChanged:(BOOL)on;
+//: - (void)cell:(WorkTeamSwitchTableViewCell *)cell onStateChanged:(BOOL)on;
 - (void)successBy:(KeyStyleView *)cell line:(BOOL)on;
 //: @end
 @end
 
-//: @interface FFFTeamSwitchTableViewCell : UITableViewCell
+//: @interface WorkTeamSwitchTableViewCell : UITableViewCell
 @interface KeyStyleView : UITableViewCell
 //: @property (nonatomic, assign) NSInteger identify;
 @property (nonatomic, assign) NSInteger identify;

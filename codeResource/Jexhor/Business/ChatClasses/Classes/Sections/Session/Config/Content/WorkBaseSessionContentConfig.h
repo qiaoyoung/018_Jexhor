@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFBaseSessionContentConfig.h
+//  WorkBaseSessionContentConfig.h
 // MessageContent
 //
 //  Created by amao on 9/15/15.
@@ -13,8 +13,8 @@
 #import <Foundation/Foundation.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "WorkGlobalMacro.h"
+#import "WorkGlobalMacro.h"
 
 //: @protocol CCCSessionContentConfig <NSObject>
 @protocol CellTitleConfig <NSObject>
@@ -39,7 +39,7 @@
 //: @end
 @end
 
-//: @interface FFFSessionContentConfigFactory : NSObject
+//: @interface WorkSessionContentConfigFactory : NSObject
 @interface SameModeFactory : NSObject
 //: + (instancetype)sharedFacotry;
 + (instancetype)letter;

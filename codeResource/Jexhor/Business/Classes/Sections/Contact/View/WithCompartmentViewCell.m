@@ -11,7 +11,7 @@
 // __M_A_C_R_O__
 //: #import "NTESUserListCell.h"
 #import "WithCompartmentViewCell.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WorkAvatarImageView.h"
 #import "ButtonControl.h"
 //: #import "UIView+NTES.h"
 #import "UIView+Recent.h"
@@ -41,7 +41,7 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     //: if (self) {
     if (self) {
-        //: _avatarImageView = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
+        //: _avatarImageView = [[WorkAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
         _avatarImageView = [[ButtonControl alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
         //: [_avatarImageView addTarget:self action:@selector(onTouchAvatar:) forControlEvents:UIControlEventTouchUpInside];
         [_avatarImageView addTarget:self action:@selector(buttonned:) forControlEvents:UIControlEventTouchUpInside];

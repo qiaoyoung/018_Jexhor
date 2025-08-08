@@ -59,9 +59,9 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionLocationContentView.h"
+//: #import "WorkSessionLocationContentView.h"
 #import "ButtonMessageView.h"
-//: #import "FFFMessageModel.h"
+//: #import "WorkMessageModel.h"
 #import "ShowModel.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
@@ -70,7 +70,7 @@
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
 
-//: @interface FFFSessionLocationContentView()
+//: @interface WorkSessionLocationContentView()
 @interface ButtonMessageView()
 
 //: @property (nonatomic,strong) UIImageView * imageView;
@@ -82,7 +82,7 @@
 //: @end
 @end
 
-//: @implementation FFFSessionLocationContentView
+//: @implementation WorkSessionLocationContentView
 @implementation ButtonMessageView
 
 //: - (instancetype)initSessionMessageContentView{
@@ -126,7 +126,7 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data
+//: - (void)refresh:(WorkMessageModel *)data
 - (void)panorama:(ShowModel *)data
 {
     //: [super refresh:data];
@@ -136,7 +136,7 @@
     //: self.titleLabel.text = locationObject.title;
     self.titleLabel.text = locationObject.title;
 
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
+    //: WorkKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
     ViewKey *setting = [[MessageContent secretResolution].config ofSetting:data.message];
 
     //: self.titleLabel.textColor = setting.textColor;
@@ -148,9 +148,9 @@
 //: - (void)onTouchUpInside:(id)sender
 - (void)recorded:(id)sender
 {
-    //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+    //: WorkKitEvent *event = [[WorkKitEvent alloc] init];
     WrittenAccountLab *event = [[WrittenAccountLab alloc] init];
-    //: event.eventName = FFFKitEventNameTapContent;
+    //: event.eventName = WorkKitEventNameTapContent;
     event.eventName = userTopData;
     //: event.messageModel = self.model;
     event.messageModel = self.model;

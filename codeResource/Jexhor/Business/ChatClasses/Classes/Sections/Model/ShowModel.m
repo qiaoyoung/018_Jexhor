@@ -27,14 +27,14 @@ MagnituderyData dreamNonethelessName = (MagnituderyData){162, (Byte []){208, 199
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMessageModel.h"
+//: #import "WorkMessageModel.h"
 #import "ShowModel.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
-//: #import "FFFKitQuickCommentUtil.h"
+//: #import "WorkKitQuickCommentUtil.h"
 #import "MessageUtil.h"
 
-//: @interface FFFMessageModel()
+//: @interface WorkMessageModel()
 @interface ShowModel()
 
 //: @property (nonatomic,strong) NSMutableDictionary *contentSizeInfo;
@@ -45,7 +45,7 @@ MagnituderyData dreamNonethelessName = (MagnituderyData){162, (Byte []){208, 199
 //: @end
 @end
 
-//: @implementation FFFMessageModel
+//: @implementation WorkMessageModel
 @implementation ShowModel
 
 //: @synthesize contentViewInsets = _contentViewInsets;
@@ -124,7 +124,7 @@ MagnituderyData dreamNonethelessName = (MagnituderyData){162, (Byte []){208, 199
 //: - (BOOL)isEqual:(id)object
 - (BOOL)isEqual:(id)object
 {
-    //: if (![object isKindOfClass:[FFFMessageModel class]])
+    //: if (![object isKindOfClass:[WorkMessageModel class]])
     if (![object isKindOfClass:[ShowModel class]])
     {
         //: return NO;
@@ -133,7 +133,7 @@ MagnituderyData dreamNonethelessName = (MagnituderyData){162, (Byte []){208, 199
     //: else
     else
     {
-        //: FFFMessageModel *model = object;
+        //: WorkMessageModel *model = object;
         ShowModel *model = object;
         //: return [self.message isEqual:model.message];
         return [self.message isEqual:model.message];
@@ -150,7 +150,7 @@ MagnituderyData dreamNonethelessName = (MagnituderyData){162, (Byte []){208, 199
     {
         //: [self updateLayoutConfig];
         [self margin];
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<WorkCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<TingConfig> layoutConfig = [[MessageContent secretResolution] layoutConfig];
         //: size = [layoutConfig contentSize:self cellWidth:width];
         size = [layoutConfig from:self bubble:width];
@@ -167,7 +167,7 @@ MagnituderyData dreamNonethelessName = (MagnituderyData){162, (Byte []){208, 199
     //: if (UIEdgeInsetsEqualToEdgeInsets(_contentViewInsets, UIEdgeInsetsZero))
     if (UIEdgeInsetsEqualToEdgeInsets(_contentViewInsets, UIEdgeInsetsZero))
     {
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<WorkCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<TingConfig> layoutConfig = [[MessageContent secretResolution] layoutConfig];
         //: _contentViewInsets = [layoutConfig contentViewInsets:self];
         _contentViewInsets = [layoutConfig container:self];
@@ -181,7 +181,7 @@ MagnituderyData dreamNonethelessName = (MagnituderyData){162, (Byte []){208, 199
     //: if (UIEdgeInsetsEqualToEdgeInsets(_bubbleViewInsets, UIEdgeInsetsZero))
     if (UIEdgeInsetsEqualToEdgeInsets(_bubbleViewInsets, UIEdgeInsetsZero))
     {
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<WorkCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<TingConfig> layoutConfig = [[MessageContent secretResolution] layoutConfig];
         //: _bubbleViewInsets = [layoutConfig cellInsets:self];
         _bubbleViewInsets = [layoutConfig text:self];
@@ -193,7 +193,7 @@ MagnituderyData dreamNonethelessName = (MagnituderyData){162, (Byte []){208, 199
 //: - (CGSize)replyContentSize:(CGFloat)width
 - (CGSize)high:(CGFloat)width
 {
-    //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+    //: id<WorkCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
     id<TingConfig> layoutConfig = [[MessageContent secretResolution] layoutConfig];
     //: CGSize size = [layoutConfig replyContentSize:self cellWidth:width];
     CGSize size = [layoutConfig temp:self disable:width];
@@ -206,7 +206,7 @@ MagnituderyData dreamNonethelessName = (MagnituderyData){162, (Byte []){208, 199
     //: if (UIEdgeInsetsEqualToEdgeInsets(_replyContentViewInsets, UIEdgeInsetsZero))
     if (UIEdgeInsetsEqualToEdgeInsets(_replyContentViewInsets, UIEdgeInsetsZero))
     {
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<WorkCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<TingConfig> layoutConfig = [[MessageContent secretResolution] layoutConfig];
         //: _replyContentViewInsets = [layoutConfig replyContentViewInsets:self];
         _replyContentViewInsets = [layoutConfig user:self];
@@ -220,7 +220,7 @@ MagnituderyData dreamNonethelessName = (MagnituderyData){162, (Byte []){208, 199
     //: if (UIEdgeInsetsEqualToEdgeInsets(_replyBubbleViewInsets, UIEdgeInsetsZero))
     if (UIEdgeInsetsEqualToEdgeInsets(_replyBubbleViewInsets, UIEdgeInsetsZero))
     {
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<WorkCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<TingConfig> layoutConfig = [[MessageContent secretResolution] layoutConfig];
         //: _replyBubbleViewInsets = [layoutConfig replyCellInsets:self];
         _replyBubbleViewInsets = [layoutConfig message:self];
@@ -233,7 +233,7 @@ MagnituderyData dreamNonethelessName = (MagnituderyData){162, (Byte []){208, 199
 //: - (void)updateLayoutConfig
 - (void)margin
 {
-    //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+    //: id<WorkCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
     id<TingConfig> layoutConfig = [[MessageContent secretResolution] layoutConfig];
 
     //: _shouldShowAvatar = [layoutConfig shouldShowAvatar:self];
@@ -315,7 +315,7 @@ MagnituderyData dreamNonethelessName = (MagnituderyData){162, (Byte []){208, 199
             //: if (result.count > 0)
             if (result.count > 0)
             {
-                //: _emoticonsContainerSize = [FFFKitQuickCommentUtil containerSizeWithComments:result];
+                //: _emoticonsContainerSize = [WorkKitQuickCommentUtil containerSizeWithComments:result];
                 _emoticonsContainerSize = [MessageUtil size:result];
             }
             //: completion(result);

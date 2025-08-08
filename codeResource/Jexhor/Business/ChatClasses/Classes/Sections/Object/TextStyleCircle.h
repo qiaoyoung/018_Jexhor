@@ -9,23 +9,23 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionConfigurator.h"
+//: #import "WorkSessionConfigurator.h"
 #import "ModeStatus.h"
-//: #import "FFFSessionPrivateProtocol.h"
-#import "FFFSessionPrivateProtocol.h"
+//: #import "WorkSessionPrivateProtocol.h"
+#import "WorkSessionPrivateProtocol.h"
 
-//: @interface FFFSessionLayoutImpl : NSObject<NIMSessionLayout>
+//: @interface WorkSessionLayoutImpl : NSObject<NIMSessionLayout>
 @interface TextStyleCircle : NSObject<ReleasingFactorLayout>
 
 //: @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) UITableView *tableView;
 
-//: @property (nonatomic,strong) FFFInputView *inputView;
+//: @property (nonatomic,strong) WorkInputView *inputView;
 @property (nonatomic,strong) TingShowView *inputView;
 
 //: - (instancetype)initWithSession:(NIMSession *)session
 - (instancetype)initWithName:(NIMSession *)session
-                         //: config:(id<FFFSessionConfig>)sessionConfig;
+                         //: config:(id<WorkSessionConfig>)sessionConfig;
                          range:(id<LineConfig>)sessionConfig;
 
 //: @end

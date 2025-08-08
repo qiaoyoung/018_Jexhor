@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "WorkSessionMessageContentView.h"
 #import "TextControl.h"
 
-//: @interface FFFSessionFileTransContentView : FFFSessionMessageContentView
+//: @interface WorkSessionFileTransContentView : WorkSessionMessageContentView
 @interface ProviderControl : TextControl
 
 //: @property (nonatomic,strong,readonly) UIImageView *imageView;

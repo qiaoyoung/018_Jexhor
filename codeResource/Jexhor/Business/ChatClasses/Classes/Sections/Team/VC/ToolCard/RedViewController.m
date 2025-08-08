@@ -133,12 +133,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamIntroduceViewController.h"
+//: #import "WorkTeamIntroduceViewController.h"
 #import "RedViewController.h"
 //: #import "UITextView+Util.h"
 #import "UITextView+Util.h"
 
-//: @interface FFFTeamIntroduceViewController ()<UITextFieldDelegate, UITextViewDelegate>
+//: @interface WorkTeamIntroduceViewController ()<UITextFieldDelegate, UITextViewDelegate>
 @interface RedViewController ()<UITextFieldDelegate, UITextViewDelegate>
 
 
@@ -156,7 +156,7 @@
 //: @end
 @end
 
-//: @implementation FFFTeamIntroduceViewController
+//: @implementation WorkTeamIntroduceViewController
 @implementation RedViewController
 
 //: - (void)viewWillAppear:(BOOL)animated{
@@ -213,7 +213,7 @@
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"Group_description"];
+    //: labtitle.text = [WorkLanguageManager getTextWithKey:@"Group_description"];
     labtitle.text = [InputRed preserve:[NationalData sharedInstance].dream_schoolData];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -241,7 +241,7 @@
     self.contentTextView.font = [UIFont systemFontOfSize:16.f];
     //: self.contentTextView.delegate = self;
     self.contentTextView.delegate = self;
-    //: self.contentTextView.placeholder = [FFFLanguageManager getTextWithKey:@"Please_enter_content"];
+    //: self.contentTextView.placeholder = [WorkLanguageManager getTextWithKey:@"Please_enter_content"];
     self.contentTextView.placeholder = [InputRed preserve:[NationalData sharedInstance].kAssaultNapName];
     //: self.contentTextView.text = self.defaultContent;
     self.contentTextView.text = self.defaultContent;
@@ -265,7 +265,7 @@
         submitButton.titleLabel.font = [UIFont boldSystemFontOfSize:16];
         //: [submitButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [submitButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [submitButton setTitle:[FFFLanguageManager getTextWithKey:@"feedback_activity_submit"] forState:UIControlStateNormal];
+        //: [submitButton setTitle:[WorkLanguageManager getTextWithKey:@"feedback_activity_submit"] forState:UIControlStateNormal];
         [submitButton setTitle:[InputRed preserve:[NationalData sharedInstance].show_needData] forState:UIControlStateNormal];
         //: [submitButton addTarget:self action:@selector(onSave:) forControlEvents:UIControlEventTouchUpInside];
         [submitButton addTarget:self action:@selector(centerred:) forControlEvents:UIControlEventTouchUpInside];

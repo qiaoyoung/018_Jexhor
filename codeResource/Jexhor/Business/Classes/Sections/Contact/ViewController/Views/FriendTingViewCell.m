@@ -156,7 +156,7 @@
     //: }];
     }];
 
-    //: NSString *my_account = [FFFLanguageManager getTextWithKey:@"activity_add_friend_my_account"];
+    //: NSString *my_account = [WorkLanguageManager getTextWithKey:@"activity_add_friend_my_account"];
     NSString *my_account = [InputRed preserve:[ChangeData sharedInstance].k_needName];
     //: NSString *myCodeStr = [NSString stringWithFormat:@"%@:%@",my_account,[NIMUserDefaults standardUserDefaults].accountName];
     NSString *myCodeStr = [NSString stringWithFormat:@"%@:%@",my_account,[SessionRecord afterUser].accountName];

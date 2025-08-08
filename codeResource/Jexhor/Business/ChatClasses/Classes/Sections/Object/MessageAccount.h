@@ -11,17 +11,17 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFSessionPrivateProtocol.h"
-#import "FFFSessionPrivateProtocol.h"
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
+//: #import "WorkSessionPrivateProtocol.h"
+#import "WorkSessionPrivateProtocol.h"
+//: #import "WorkSessionConfigurateProtocol.h"
+#import "WorkSessionConfigurateProtocol.h"
 
-//: @interface FFFSessionInteractorImpl : NSObject<NIMSessionInteractor,NIMSessionLayoutDelegate>
+//: @interface WorkSessionInteractorImpl : NSObject<NIMSessionInteractor,NIMSessionLayoutDelegate>
 @interface MessageAccount : NSObject<WithText,VideoActivityDelegate>
 
 //: - (instancetype)initWithSession:(NIMSession *)session
 - (instancetype)initWithColorConfig:(NIMSession *)session
-                         //: config:(id<FFFSessionConfig>)sessionConfig;
+                         //: config:(id<WorkSessionConfig>)sessionConfig;
                          should:(id<LineConfig>)sessionConfig;
 
 //: @property(nonatomic,weak) id<NIMSessionInteractorDelegate> delegate;

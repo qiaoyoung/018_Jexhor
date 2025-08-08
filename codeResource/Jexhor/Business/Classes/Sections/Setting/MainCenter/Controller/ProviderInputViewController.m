@@ -922,7 +922,7 @@
     labtitle.textColor = [UIColor ground:[ShouldData notiMessageData]];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"system_change_language"];
+    //: labtitle.text = [WorkLanguageManager getTextWithKey:@"system_change_language"];
     labtitle.text = [InputRed preserve:[ShouldData mainColorByData]];
     //: [self.view addSubview:labtitle];
     [self.view addSubview:labtitle];

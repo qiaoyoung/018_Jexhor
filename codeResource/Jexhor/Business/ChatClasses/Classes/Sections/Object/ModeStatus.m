@@ -9,25 +9,25 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionConfigurator.h"
+//: #import "WorkSessionConfigurator.h"
 #import "ModeStatus.h"
-//: #import "FFFSessionMsgDatasource.h"
+//: #import "WorkSessionMsgDatasource.h"
 #import "TingClean.h"
-//: #import "FFFSessionInteractorImpl.h"
+//: #import "WorkSessionInteractorImpl.h"
 #import "MessageAccount.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFMessageModel.h"
+//: #import "WorkMessageModel.h"
 #import "ShowModel.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFSessionInteractorImpl.h"
+//: #import "WorkGlobalMacro.h"
+#import "WorkGlobalMacro.h"
+//: #import "WorkSessionInteractorImpl.h"
 #import "MessageAccount.h"
-//: #import "FFFSessionDataSourceImpl.h"
+//: #import "WorkSessionDataSourceImpl.h"
 #import "TingCell.h"
-//: #import "FFFSessionLayoutImpl.h"
+//: #import "WorkSessionLayoutImpl.h"
 #import "TextStyleCircle.h"
-//: #import "FFFSessionTableAdapter.h"
+//: #import "WorkSessionTableAdapter.h"
 #import "ColorAdapter.h"
 
 /*
@@ -57,36 +57,36 @@
             .......................................................................
  */
 
-//: @interface FFFSessionConfigurator()
+//: @interface WorkSessionConfigurator()
 @interface ModeStatus()
 
-//: @property (nonatomic,strong) FFFSessionInteractorImpl *interactor;
+//: @property (nonatomic,strong) WorkSessionInteractorImpl *interactor;
 @property (nonatomic,strong) MessageAccount *interactor;
 
-//: @property (nonatomic,strong) FFFSessionTableAdapter *tableAdapter;
+//: @property (nonatomic,strong) WorkSessionTableAdapter *tableAdapter;
 @property (nonatomic,strong) ColorAdapter *tableAdapter;
 
 //: @end
 @end
 
-//: @implementation FFFSessionConfigurator
+//: @implementation WorkSessionConfigurator
 @implementation ModeStatus
 
-//: - (void)setup:(FFFSessionViewController *)vc
+//: - (void)setup:(WorkSessionViewController *)vc
 - (void)send:(AccountViewController *)vc
 {
     //: NIMSession *session = vc.session;
     NIMSession *session = vc.session;
-    //: id<FFFSessionConfig> sessionConfig = vc.sessionConfig;
-    id<LineConfig> sessionConfig = vc.temp;
+    //: id<WorkSessionConfig> sessionConfig = vc.sessionConfig;
+    id<LineConfig> sessionConfig = vc.sessionConfig;
     //: UITableView *tableView = vc.tableView;
     UITableView *tableView = vc.tableView;
-    //: FFFInputView *inputView = vc.sessionInputView;
+    //: WorkInputView *inputView = vc.sessionInputView;
     TingShowView *inputView = vc.sessionInputView;
 
-    //: FFFSessionDataSourceImpl *datasource = [[FFFSessionDataSourceImpl alloc] initWithSession:session config:sessionConfig];
+    //: WorkSessionDataSourceImpl *datasource = [[WorkSessionDataSourceImpl alloc] initWithSession:session config:sessionConfig];
     TingCell *datasource = [[TingCell alloc] initWithRead:session voiceSession:sessionConfig];
-    //: FFFSessionLayoutImpl *layout = [[FFFSessionLayoutImpl alloc] initWithSession:session config:sessionConfig];
+    //: WorkSessionLayoutImpl *layout = [[WorkSessionLayoutImpl alloc] initWithSession:session config:sessionConfig];
     TextStyleCircle *layout = [[TextStyleCircle alloc] initWithName:session range:sessionConfig];
     //: layout.tableView = tableView;
     layout.tableView = tableView;
@@ -94,7 +94,7 @@
     layout.inputView = inputView;
 
 
-    //: _interactor = [[FFFSessionInteractorImpl alloc] initWithSession:session config:sessionConfig];
+    //: _interactor = [[WorkSessionInteractorImpl alloc] initWithSession:session config:sessionConfig];
     _interactor = [[MessageAccount alloc] initWithColorConfig:session should:sessionConfig];
     //: _interactor.delegate = vc;
     _interactor.delegate = vc;
@@ -104,9 +104,9 @@
     _interactor.layout = layout;
 
     //: [layout setDelegate:_interactor];
-    [layout setDate:_interactor];
+    [layout setDelegate:_interactor];
 
-    //: _tableAdapter = [[FFFSessionTableAdapter alloc] init];
+    //: _tableAdapter = [[WorkSessionTableAdapter alloc] init];
     _tableAdapter = [[ColorAdapter alloc] init];
     //: _tableAdapter.interactor = _interactor;
     _tableAdapter.interactor = _interactor;

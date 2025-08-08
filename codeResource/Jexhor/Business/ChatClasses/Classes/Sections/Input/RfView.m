@@ -255,7 +255,7 @@
     _confirmButton.frame = CGRectMake(0, self.frame.size.height - 50, self.frame.size.width, 48);
     //: _confirmButton.layer.cornerRadius = 24;
     _confirmButton.layer.cornerRadius = 24;
-    //: [_confirmButton setTitle:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_send"] forState:UIControlStateNormal];
+    //: [_confirmButton setTitle:[WorkLanguageManager getTextWithKey:@"user_profile_avtivity_send"] forState:UIControlStateNormal];
     [_confirmButton setTitle:[InputRed preserve:[BlowData app_mustShowValue]] forState:UIControlStateNormal];
     //: [_confirmButton addTarget:self action:@selector(confirmButtonTapped) forControlEvents:UIControlEventTouchUpInside];
     [_confirmButton addTarget:self action:@selector(saveFrame) forControlEvents:UIControlEventTouchUpInside];

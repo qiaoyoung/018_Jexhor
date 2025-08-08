@@ -101,7 +101,7 @@
     //: for (id<NIMGroupMemberProtocol>member in members) {
     for (id<MemberProtocol>member in members) {
         //: if ([[member memberId] isEqualToString:me]) {
-        if ([[member pressedFor] isEqualToString:me]) {
+        if ([[member memberId] isEqualToString:me]) {
             //: continue;
             continue;
         }

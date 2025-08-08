@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFGroupedUsrInfo.h
+//  WorkGroupedUsrInfo.h
 //  NIM
 //
 //  Created by Xuhui on 15/3/24.
@@ -9,15 +9,15 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactDefines.h"
-#import "FFFContactDefines.h"
+//: #import "WorkContactDefines.h"
+#import "WorkContactDefines.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
 
 //: @interface NIMGroupUser:NSObject<NIMGroupMemberProtocol>
 @interface RedUser:NSObject<MemberProtocol>
 
-//: @property (nonatomic,readonly) FFFKitInfo *info;
+//: @property (nonatomic,readonly) WorkKitInfo *info;
 @property (nonatomic,readonly) ConfirmationInfo *info;
 
 //: - (instancetype)initWithUserId:(NSString *)userId;
@@ -29,7 +29,7 @@
 //: @interface NIMGroupTeamMember:NSObject<NIMGroupMemberProtocol>
 @interface LineMember:NSObject<MemberProtocol>
 
-//: @property (nonatomic,readonly) FFFKitInfo *info;
+//: @property (nonatomic,readonly) WorkKitInfo *info;
 @property (nonatomic,readonly) ConfirmationInfo *info;
 
 //: - (instancetype)initWithUserId:(NSString *)userId
@@ -44,7 +44,7 @@
 //: @interface NIMGroupTeam:NSObject<NIMGroupMemberProtocol>
 @interface SendSame:NSObject<MemberProtocol>
 
-//: @property (nonatomic,readonly) FFFKitInfo *info;
+//: @property (nonatomic,readonly) WorkKitInfo *info;
 @property (nonatomic,readonly) ConfirmationInfo *info;
 
 //: - (instancetype)initWithTeamId:(NSString *)teamId

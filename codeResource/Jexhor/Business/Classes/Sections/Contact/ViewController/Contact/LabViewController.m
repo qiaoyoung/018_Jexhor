@@ -329,13 +329,13 @@ PressColorData kInfoTitle = (PressColorData){116, (Byte []){25, 7, 19, 124}, 3, 
         } else if (status == SGPermissionStatusDenied) {
 
 
-            //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
+            //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[WorkLanguageManager getTextWithKey:@"warm_prompt"] message:[WorkLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
             UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[InputRed preserve:StringFromPressColorData(&main_tableData)] message:[InputRed preserve:StringFromPressColorData(&main_withName)] preferredStyle:UIAlertControllerStyleAlert];
-            //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            //: [alertControl addAction:([UIAlertAction actionWithTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
             [alertControl addAction:([UIAlertAction actionWithTitle:[InputRed preserve:StringFromPressColorData(&show_textCompleteData)] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
             //: }])];
             }])];
-            //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            //: [alertControl addAction:([UIAlertAction actionWithTitle:[WorkLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             [alertControl addAction:([UIAlertAction actionWithTitle:[InputRed preserve:StringFromPressColorData(&app_removeValue)] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                 //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
                 NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
@@ -357,13 +357,13 @@ PressColorData kInfoTitle = (PressColorData){116, (Byte []){25, 7, 19, 124}, 3, 
 //                [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
 //            }
 
-            //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
+            //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[WorkLanguageManager getTextWithKey:@"warm_prompt"] message:[WorkLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
             UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[InputRed preserve:StringFromPressColorData(&main_tableData)] message:[InputRed preserve:StringFromPressColorData(&main_withName)] preferredStyle:UIAlertControllerStyleAlert];
-            //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            //: [alertControl addAction:([UIAlertAction actionWithTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
             [alertControl addAction:([UIAlertAction actionWithTitle:[InputRed preserve:StringFromPressColorData(&show_textCompleteData)] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
             //: }])];
             }])];
-            //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            //: [alertControl addAction:([UIAlertAction actionWithTitle:[WorkLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             [alertControl addAction:([UIAlertAction actionWithTitle:[InputRed preserve:StringFromPressColorData(&app_removeValue)] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                 //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
                 NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];

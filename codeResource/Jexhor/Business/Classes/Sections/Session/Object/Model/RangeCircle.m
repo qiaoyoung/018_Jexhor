@@ -39,7 +39,7 @@ PlaceInfoData showParentName = (PlaceInfoData){68, (Byte []){173, 221, 192, 160,
 #import "SignalCell.h"
 //: #import "NTESMessageModel.h"
 #import "ActionMessageModel.h"
-//: #import "FFFTimestampModel.h"
+//: #import "WorkTimestampModel.h"
 #import "EngraftTing.h"
 //: #import "NTESMultiRetweetAttachment.h"
 #import "ViewColor.h"
@@ -214,9 +214,9 @@ PlaceInfoData showParentName = (PlaceInfoData){68, (Byte []){173, 221, 192, 160,
     return model;
 }
 
-//: - (FFFTimestampModel *)setupTimeModel:(NSTimeInterval)timestamp {
+//: - (WorkTimestampModel *)setupTimeModel:(NSTimeInterval)timestamp {
 - (EngraftTing *)globule:(NSTimeInterval)timestamp {
-    //: FFFTimestampModel *ret = [[FFFTimestampModel alloc] init];
+    //: WorkTimestampModel *ret = [[WorkTimestampModel alloc] init];
     EngraftTing *ret = [[EngraftTing alloc] init];
     //: ret.messageTime = timestamp;
     ret.messageTime = timestamp;
@@ -239,7 +239,7 @@ PlaceInfoData showParentName = (PlaceInfoData){68, (Byte []){173, 221, 192, 160,
         if (idx == 0) { //插入时间
             //: weakSelf.currentDay = [weakSelf getDay:obj.timestamp];
             weakSelf.currentDay = [weakSelf nameGet:obj.timestamp];
-            //: FFFTimestampModel *timeModel = [weakSelf setupTimeModel:obj.timestamp];
+            //: WorkTimestampModel *timeModel = [weakSelf setupTimeModel:obj.timestamp];
             EngraftTing *timeModel = [weakSelf globule:obj.timestamp];
             //: [items addObject:timeModel];
             [items addObject:timeModel];
@@ -261,7 +261,7 @@ PlaceInfoData showParentName = (PlaceInfoData){68, (Byte []){173, 221, 192, 160,
                 model.hiddenSeparatorLine = YES;
             }
 
-            //: FFFTimestampModel *timeModel = [weakSelf setupTimeModel:obj.timestamp];
+            //: WorkTimestampModel *timeModel = [weakSelf setupTimeModel:obj.timestamp];
             EngraftTing *timeModel = [weakSelf globule:obj.timestamp];
             //: [items addObject:timeModel];
             [items addObject:timeModel];
@@ -328,9 +328,9 @@ PlaceInfoData showParentName = (PlaceInfoData){68, (Byte []){173, 221, 192, 160,
             //: message = item;
             message = item;
         }
-        //: if ([item isKindOfClass:[FFFMessageModel class]]) {
+        //: if ([item isKindOfClass:[WorkMessageModel class]]) {
         if ([item isKindOfClass:[ShowModel class]]) {
-            //: message = [(FFFMessageModel *)item message];
+            //: message = [(WorkMessageModel *)item message];
             message = [(ShowModel *)item message];
         }
         //: if (message && !message.isOutgoingMsg

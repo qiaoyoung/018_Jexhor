@@ -9,7 +9,7 @@
 //  群组操作
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCardViewController.h"
+//: #import "WorkTeamCardViewController.h"
 #import "ProviderViewController.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 //: #pragma mark - 外部配置项
 #pragma mark - 外部配置项
-//: @interface FFFTeamCardViewControllerOption : NSObject
+//: @interface WorkTeamCardViewControllerOption : NSObject
 @interface ThreadBottom : NSObject
 
 //: @property (nonatomic, assign) BOOL isTop;
@@ -26,15 +26,15 @@ NS_ASSUME_NONNULL_BEGIN
 //: @end
 @end
 
-//: @interface FFFTeamCardOperationViewController : FFFTeamCardViewController
+//: @interface WorkTeamCardOperationViewController : WorkTeamCardViewController
 @interface InputViewController : ProviderViewController
 
 //外部配置
-//: @property (nonatomic,strong) FFFTeamCardViewControllerOption *option;
+//: @property (nonatomic,strong) WorkTeamCardViewControllerOption *option;
 @property (nonatomic,strong) ThreadBottom *option;
 
 //群组管理
-//: @property (nonatomic,strong) FFFTeamListDataManager *teamListManager;
+//: @property (nonatomic,strong) WorkTeamListDataManager *teamListManager;
 @property (nonatomic,strong) ShowManager *teamListManager;
 
 
@@ -43,10 +43,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithInput:(NIMTeam *)team
                      //: session:(NIMSession *)session
                      toFromOption:(NIMSession *)session
-                      //: option:(FFFTeamCardViewControllerOption * _Nullable)option;
+                      //: option:(WorkTeamCardViewControllerOption * _Nullable)option;
                       value:(ThreadBottom * _Nullable)option;
 //查询全部群成员
-//: - (void)didFetchTeamMember:(nullable FFFMembersFetchOption *)option;
+//: - (void)didFetchTeamMember:(nullable WorkMembersFetchOption *)option;
 - (void)teamColor:(nullable SameOption *)option;
 
 //加人

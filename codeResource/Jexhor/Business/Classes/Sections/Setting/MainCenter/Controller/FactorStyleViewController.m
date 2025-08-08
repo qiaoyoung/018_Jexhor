@@ -206,7 +206,7 @@ ArgumentData dreamOldMaxValue = (ArgumentData){79, (Byte []){108, 119, 120, 122,
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"feedback_activity_title"];
+    //: labtitle.text = [WorkLanguageManager getTextWithKey:@"feedback_activity_title"];
     labtitle.text = [InputRed preserve:StringFromArgumentData(&k_tableData)];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -226,7 +226,7 @@ ArgumentData dreamOldMaxValue = (ArgumentData){79, (Byte []){108, 119, 120, 122,
 
     //: _textView = [[UITextView alloc] initWithFrame:CGRectMake(15, 15, [[UIScreen mainScreen] bounds].size.width-60, 230)];
     _textView = [[UITextView alloc] initWithFrame:CGRectMake(15, 15, [[UIScreen mainScreen] bounds].size.width-60, 230)];
-    //: _textView.placeholder = [FFFLanguageManager getTextWithKey:@"report_info"];
+    //: _textView.placeholder = [WorkLanguageManager getTextWithKey:@"report_info"];
     _textView.placeholder = [InputRed preserve:StringFromArgumentData(&appParentButtonText)];//@"请输入您的举报信息";
     //: _textView.backgroundColor = [UIColor whiteColor];
     _textView.backgroundColor = [UIColor whiteColor];
@@ -249,7 +249,7 @@ ArgumentData dreamOldMaxValue = (ArgumentData){79, (Byte []){108, 119, 120, 122,
     lab.font = [UIFont systemFontOfSize:16.f];
     //: lab.textColor = [UIColor colorWithHexString:@"#2C3042"];
     lab.textColor = [UIColor ground:StringFromArgumentData(&showWithContent)];
-    //: lab.text = [FFFLanguageManager getTextWithKey:@"upload_picture"];
+    //: lab.text = [WorkLanguageManager getTextWithKey:@"upload_picture"];
     lab.text = [InputRed preserve:StringFromArgumentData(&app_imageRowText)];
     //: [self.view addSubview:lab];
     [self.view addSubview:lab];
@@ -279,7 +279,7 @@ ArgumentData dreamOldMaxValue = (ArgumentData){79, (Byte []){108, 119, 120, 122,
     submitButton.titleLabel.font = [UIFont systemFontOfSize:16];
     //: [submitButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [submitButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [submitButton setTitle:[FFFLanguageManager getTextWithKey:@"feedback_activity_submit"] forState:UIControlStateNormal];
+    //: [submitButton setTitle:[WorkLanguageManager getTextWithKey:@"feedback_activity_submit"] forState:UIControlStateNormal];
     [submitButton setTitle:[InputRed preserve:StringFromArgumentData(&noti_handleLengthTitle)] forState:UIControlStateNormal];
     //: submitButton.backgroundColor = [UIColor colorWithHexString:@"#05D481"];
     submitButton.backgroundColor = [UIColor ground:StringFromArgumentData(&main_fileName)];
@@ -364,7 +364,7 @@ ArgumentData dreamOldMaxValue = (ArgumentData){79, (Byte []){108, 119, 120, 122,
 //        [SVProgressHUD dismiss];
         //: [self.loadingView animationClose];
         [self.loadingView animationWithEnableAtHand];
-        //: [SVProgressHUD showMessage:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"]];
+        //: [SVProgressHUD showMessage:[WorkLanguageManager getTextWithKey:@"group_info_activity_op_failed"]];
         [SVProgressHUD text:[InputRed preserve:StringFromArgumentData(&m_thanValue)]];
     //: }];
     }];

@@ -103,7 +103,7 @@ typedef struct {
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)model{
+//: - (void)refresh:(WorkMessageModel *)model{
 - (void)panorama:(ShowModel *)model{
     //: [super refresh:model];
     [super panorama:model];

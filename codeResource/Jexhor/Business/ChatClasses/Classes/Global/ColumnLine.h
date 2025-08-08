@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitDataProvider.h"
+//: #import "WorkKitDataProvider.h"
 #import "DraftProvider.h"
 
-//: @interface FFFKitDataProviderImpl : NSObject<FFFKitDataProvider>
+//: @interface WorkKitDataProviderImpl : NSObject<WorkKitDataProvider>
 @interface ColumnLine : NSObject<DraftProvider>
 
 //: @end

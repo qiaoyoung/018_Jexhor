@@ -112,7 +112,7 @@
 #import "LightViewCell.h"
 //: #import "NTESSessionUtil.h"
 #import "SessionUtil.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WorkAvatarImageView.h"
 #import "ButtonControl.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
@@ -200,10 +200,10 @@
 //: - (void)refreshUser:(id<NIMGroupMemberProtocol>)member{
 - (void)bottom:(id<MemberProtocol>)member{
     //: self.titleLabel.text = member.showName;
-    self.titleLabel.text = member.exhibitDoing;
+    self.titleLabel.text = member.showName;
     //: self.memberId = [member memberId];
-    self.memberId = [member pressedFor];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.memberId option:nil];
+    self.memberId = [member memberId];
+    //: WorkKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.memberId option:nil];
     ConfirmationInfo *info = [[MessageContent secretResolution] recent:self.memberId blue:nil];
     //: NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;
     NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;
@@ -220,7 +220,7 @@
     self.titleLabel.text = team.teamName;
     //: self.memberId = [team teamId];
     self.memberId = [team teamId];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByTeam:self.memberId option:nil];
+    //: WorkKitInfo *info = [[MyUserKit sharedKit] infoByTeam:self.memberId option:nil];
     ConfirmationInfo *info = [[MessageContent secretResolution] info:self.memberId comment:nil];
     //: NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;
     NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;

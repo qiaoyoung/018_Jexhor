@@ -70,7 +70,7 @@
 // __M_A_C_R_O__
 //: #import "NTESUserUtil.h"
 #import "CellVideo.h"
-//: #import "FFFKitUtil.h"
+//: #import "WorkKitUtil.h"
 #import "WantUtil.h"
 
 //: @implementation NTESUserUtil
@@ -84,19 +84,19 @@
     switch (gender) {
         //: case NIMUserGenderMale:
         case NIMUserGenderMale:
-            //: genderStr = [FFFLanguageManager getTextWithKey:@"friend_info_activity_nan"];
+            //: genderStr = [WorkLanguageManager getTextWithKey:@"friend_info_activity_nan"];
             genderStr = [InputRed preserve:[ApartmentGazeData k_keepName]];
             //: break;
             break;
         //: case NIMUserGenderFemale:
         case NIMUserGenderFemale:
-            //: genderStr = [FFFLanguageManager getTextWithKey:@"friend_info_activity_nv"];
+            //: genderStr = [WorkLanguageManager getTextWithKey:@"friend_info_activity_nv"];
             genderStr = [InputRed preserve:[ApartmentGazeData m_weekText]];
             //: break;
             break;
         //: case NIMUserGenderUnknown:
         case NIMUserGenderUnknown:
-            //: genderStr = [FFFLanguageManager getTextWithKey:@"friend_info_activity_xu"];
+            //: genderStr = [WorkLanguageManager getTextWithKey:@"friend_info_activity_xu"];
             genderStr = [InputRed preserve:[ApartmentGazeData appRecallName]];
         //: default:
         default:

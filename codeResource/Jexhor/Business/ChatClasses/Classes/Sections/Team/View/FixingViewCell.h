@@ -21,7 +21,7 @@ extern NSString *const dreamObjectFormatName;
 //: extern NSString *const kTeamMemberInfo;
 extern NSString *const kCommentData;
 
-//: @protocol FFFTeamMemberListCellActionDelegate <NSObject>
+//: @protocol WorkTeamMemberListCellActionDelegate <NSObject>
 @protocol FrameThread <NSObject>
 
 //: - (void)didSelectAddOpeartor;
@@ -31,7 +31,7 @@ extern NSString *const kCommentData;
 @end
 
 
-//: @interface FFFTeamMemberListCell : UITableViewCell
+//: @interface WorkTeamMemberListCell : UITableViewCell
 @interface FixingViewCell : UITableViewCell
 
 
@@ -44,7 +44,7 @@ extern NSString *const kCommentData;
 //: @property(nonatomic, strong) NSMutableArray <NSDictionary *> *infos;
 @property(nonatomic, strong) NSMutableArray <NSDictionary *> *infos;
 
-//: @property(nonatomic, weak) id<FFFTeamMemberListCellActionDelegate>delegate;
+//: @property(nonatomic, weak) id<WorkTeamMemberListCellActionDelegate>delegate;
 @property(nonatomic, weak) id<FrameThread>delegate;
 
 //: @end

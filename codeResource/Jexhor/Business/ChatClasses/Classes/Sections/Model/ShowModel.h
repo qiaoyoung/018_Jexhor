@@ -11,10 +11,10 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFSessionConfig.h"
+//: #import "WorkSessionConfig.h"
 #import "LineConfig.h"
 
-//: @interface FFFMessageModel : NSObject
+//: @interface WorkMessageModel : NSObject
 @interface ShowModel : NSObject
 
 /**
@@ -129,11 +129,11 @@
 
 
 /**
- *  NIMMessage封装成FFFMessageModel的方法
+ *  NIMMessage封装成WorkMessageModel的方法
  *
  *  @param  message 消息体
  *
- *  @return FFFMessageModel实例
+ *  @return WorkMessageModel实例
  */
 //: - (instancetype)initWithMessage:(NIMMessage*)message;
 - (instancetype)initWithReadBegin:(NIMMessage*)message;

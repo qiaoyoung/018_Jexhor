@@ -57,22 +57,22 @@ Byte mCongressionalData[] = {90, 31, 5, 69, 41, 57, 48, 48, 95, 103, 110, 105, 1
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionAudioContentView.h"
+//: #import "WorkSessionAudioContentView.h"
 #import "ThreadView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFMessageModel.h"
+//: #import "WorkMessageModel.h"
 #import "ShowModel.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
-//: #import "FFFKitAudioCenter.h"
+//: #import "WorkKitAudioCenter.h"
 #import "LineVideoMessage.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
 //: #import "UIColor+MyUserKit.h"
 #import "UIColor+MessageContent.h"
 
-//: @interface FFFSessionAudioContentView()<NIMMediaManagerDelegate>
+//: @interface WorkSessionAudioContentView()<NIMMediaManagerDelegate>
 @interface ThreadView()<NIMMediaManagerDelegate>
 
 //: @property (nonatomic,strong) UIImageView *voiceImageView;
@@ -91,7 +91,7 @@ Byte mCongressionalData[] = {90, 31, 5, 69, 41, 57, 48, 48, 95, 103, 110, 105, 1
 //: @end
 @end
 
-//: @implementation FFFSessionAudioContentView
+//: @implementation WorkSessionAudioContentView
 @implementation ThreadView
 
 //: -(instancetype)initSessionMessageContentView{
@@ -226,7 +226,7 @@ Byte mCongressionalData[] = {90, 31, 5, 69, 41, 57, 48, 48, 95, 103, 110, 105, 1
 
 }
 
-//: - (void)refresh:(FFFMessageModel *)data {
+//: - (void)refresh:(WorkMessageModel *)data {
 - (void)panorama:(ShowModel *)data {
     //: [super refresh:data];
     [super panorama:data];
@@ -235,7 +235,7 @@ Byte mCongressionalData[] = {90, 31, 5, 69, 41, 57, 48, 48, 95, 103, 110, 105, 1
     //: self.durationLabel.text = [NSString stringWithFormat:@"%zd\"",(NSInteger)((object.duration+500)/1000)];
     self.durationLabel.text = [NSString stringWithFormat:@"%zd\"",(NSInteger)((object.duration+500)/1000)];//四舍五入
 
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
+    //: WorkKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
     ViewKey *setting = [[MessageContent secretResolution].config ofSetting:data.message];
 
     //: self.durationLabel.font = setting.font;
@@ -251,7 +251,7 @@ Byte mCongressionalData[] = {90, 31, 5, 69, 41, 57, 48, 48, 95, 103, 110, 105, 1
     [self background:data];
 }
 
-//: - (void)refreshBackground:(FFFMessageModel *)data
+//: - (void)refreshBackground:(WorkMessageModel *)data
 - (void)background:(ShowModel *)data
 {
     //: if (data.shouldShowLeft)
@@ -289,8 +289,8 @@ Byte mCongressionalData[] = {90, 31, 5, 69, 41, 57, 48, 48, 95, 103, 110, 105, 1
     UIEdgeInsets contentInsets = self.model.contentViewInsets;
     //: switch (self.layoutStyle) {
     switch (self.layoutStyle) {
-        //: case FFFSessionMessageContentViewLayoutLeft: {
-        case FFFSessionMessageContentViewLayoutLeft: {
+        //: case WorkSessionMessageContentViewLayoutLeft: {
+        case WorkSessionMessageContentViewLayoutLeft: {
 //            _voiceImageView.transform = CGAffineTransformIdentity;
 //            self.voiceImageView.left = contentInsets.left * 2;
             //: self.voiceImageViewleft.left = contentInsets.left * 2;
@@ -300,8 +300,8 @@ Byte mCongressionalData[] = {90, 31, 5, 69, 41, 57, 48, 48, 95, 103, 110, 105, 1
             //: break;
             break;
         }
-        //: case FFFSessionMessageContentViewLayoutRight: {
-        case FFFSessionMessageContentViewLayoutRight: {
+        //: case WorkSessionMessageContentViewLayoutRight: {
+        case WorkSessionMessageContentViewLayoutRight: {
 //            _voiceImageView.transform = CGAffineTransformMakeRotation(M_PI);
             //: self.voiceImageView.right = self.width - contentInsets.right * 2;
             self.voiceImageView.right = self.width - contentInsets.right * 2;
@@ -310,8 +310,8 @@ Byte mCongressionalData[] = {90, 31, 5, 69, 41, 57, 48, 48, 95, 103, 110, 105, 1
             //: break;
             break;
         }
-        //: case FFFSessionMessageContentViewLayoutAuto:
-        case FFFSessionMessageContentViewLayoutAuto:
+        //: case WorkSessionMessageContentViewLayoutAuto:
+        case WorkSessionMessageContentViewLayoutAuto:
         //: default:
         default:
         {
@@ -380,8 +380,8 @@ Byte mCongressionalData[] = {90, 31, 5, 69, 41, 57, 48, 48, 95, 103, 110, 105, 1
     CGFloat backgroundLeft = 0;
     //: switch (self.layoutStyle) {
     switch (self.layoutStyle) {
-        //: case FFFSessionMessageContentViewLayoutLeft:
-        case FFFSessionMessageContentViewLayoutLeft:
+        //: case WorkSessionMessageContentViewLayoutLeft:
+        case WorkSessionMessageContentViewLayoutLeft:
             {
                 //: backgroundWidth = self.width - contentInsets.left * .5f - 2;
                 backgroundWidth = self.width - contentInsets.left * .5f - 2;
@@ -390,8 +390,8 @@ Byte mCongressionalData[] = {90, 31, 5, 69, 41, 57, 48, 48, 95, 103, 110, 105, 1
             }
             //: break;
             break;
-        //: case FFFSessionMessageContentViewLayoutRight:
-        case FFFSessionMessageContentViewLayoutRight:
+        //: case WorkSessionMessageContentViewLayoutRight:
+        case WorkSessionMessageContentViewLayoutRight:
             {
                 //: backgroundWidth = self.width - 2 - contentInsets.right * .5f;
                 backgroundWidth = self.width - 2 - contentInsets.right * .5f;
@@ -453,9 +453,9 @@ Byte mCongressionalData[] = {90, 31, 5, 69, 41, 57, 48, 48, 95, 103, 110, 105, 1
             [self successUi];
         }
 
-        //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+        //: WorkKitEvent *event = [[WorkKitEvent alloc] init];
         WrittenAccountLab *event = [[WrittenAccountLab alloc] init];
-        //: event.eventName = FFFKitEventNameTapAudio;
+        //: event.eventName = WorkKitEventNameTapAudio;
         event.eventName = kTitleData;
         //: event.messageModel = self.model;
         event.messageModel = self.model;
@@ -506,7 +506,7 @@ Byte mCongressionalData[] = {90, 31, 5, 69, 41, 57, 48, 48, 95, 103, 110, 105, 1
 //: - (BOOL)isPlaying
 - (BOOL)content
 {
-    //: BOOL play = [FFFKitAudioCenter instance].currentPlayingMessage == self.model.message; 
+    //: BOOL play = [WorkKitAudioCenter instance].currentPlayingMessage == self.model.message; 
     BOOL play = [LineVideoMessage pinThan].currentPlayingMessage == self.model.message; //对比是否是同一条消息，严格同一条，不能是相同ID，防止进了会话又进云端消息界面，导致同一个ID的云消息也在动画
     //: return play;
     return play;

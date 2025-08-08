@@ -64,7 +64,7 @@
 }
 
 //: - (NSString *)groupTitle {
-- (NSString *)name {
+- (NSString *)groupTitle {
     //: return nil;
     return nil;
 }
@@ -82,7 +82,7 @@
 }
 
 //: - (id)sortKey {
-- (id)holder {
+- (id)sortKey {
     //: return nil;
     return nil;
 }

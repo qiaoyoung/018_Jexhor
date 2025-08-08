@@ -19,7 +19,7 @@ Byte k_successValue[] = {6, 8, 94, 12, 182, 48, 67, 104, 190, 238, 90, 1, 174, 2
 //: Malta
 Byte main_lengthMessageContent[] = {95, 5, 80, 7, 128, 46, 150, 157, 177, 188, 196, 177, 22};
 
-//: #ffffff
+//: #fffWork
 Byte userAccountViewData[] = {11, 7, 83, 7, 191, 192, 205, 118, 185, 185, 185, 185, 185, 185, 22};
 
 //: feedback_activity_title
@@ -215,9 +215,9 @@ Byte show_placeContent[] = {84, 9, 82, 5, 117, 199, 197, 183, 196, 177, 187, 181
 // __M_A_C_R_O__
 //: #import "NTESMainCenterViewController.h"
 #import "KeyViewController.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
-//: #import "FFFCommonTableDelegate.h"
+//: #import "WorkCommonTableData.h"
+#import "WorkCommonTableData.h"
+//: #import "WorkCommonTableDelegate.h"
 #import "TableDelegate.h"
 //: #import "SVProgressHUD.h"
 #import "SVProgressHUD.h"
@@ -253,7 +253,7 @@ Byte show_placeContent[] = {84, 9, 82, 5, 117, 199, 197, 183, 196, 177, 187, 181
 #import "UIView+Recent.h"
 //: #import "UIAlertView+NTESBlock.h"
 #import "UIAlertView+BottomMagnitude.h"
-//: #import "FFFUserInfoViewController.h"//个人资料
+//: #import "WorkUserInfoViewController.h"//个人资料
 #import "SessionViewController.h"//个人资料
 //: #import "NTESUserQRCodeViewController.h" //我的二维码
 #import "SameViewController.h" //我的二维码
@@ -357,7 +357,7 @@ Byte show_placeContent[] = {84, 9, 82, 5, 117, 199, 197, 183, 196, 177, 187, 181
     NSString *userID = [[NIMSDK sharedSDK].loginManager currentAccount];
     //: NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
     NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
+    //: WorkKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
     ConfirmationInfo *info = [[MessageContent secretResolution] recent:userID blue:nil];
 
     //: self.titleLabel.text = me.userInfo.nickName;
@@ -548,7 +548,7 @@ Byte show_placeContent[] = {84, 9, 82, 5, 117, 199, 197, 183, 196, 177, 187, 181
     NSString *userID = [[NIMSDK sharedSDK].loginManager currentAccount];
     //: NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
     NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
+    //: WorkKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
     ConfirmationInfo *info = [[MessageContent secretResolution] recent:userID blue:nil];
 
     //: _headerImage = [[UIImageView alloc] initWithFrame:CGRectMake(20,(44.0f + [UIDevice vg_statusBarHeight]), 64, 64)];
@@ -598,7 +598,7 @@ Byte show_placeContent[] = {84, 9, 82, 5, 117, 199, 197, 183, 196, 177, 187, 181
     qrBtn.titleLabel.font = [UIFont systemFontOfSize:12];
     //: [qrBtn setTitleColor:[UIColor colorWithHexString:@"#05D481"] forState:UIControlStateNormal];
     [qrBtn setTitleColor:[UIColor ground:StringFromSessionChangeData(k_imageValue)] forState:UIControlStateNormal];
-    //: [qrBtn setTitle:[FFFLanguageManager getTextWithKey:@"qrcode_activity_title"] forState:UIControlStateNormal];
+    //: [qrBtn setTitle:[WorkLanguageManager getTextWithKey:@"qrcode_activity_title"] forState:UIControlStateNormal];
     [qrBtn setTitle:[InputRed preserve:StringFromSessionChangeData(kHandleText)] forState:UIControlStateNormal];
     //: [qrBtn layoutButtonWithEdgeInsetsStyle:(MKButtonEdgeInsetsStyleTop) imageTitleSpace:10];
     [qrBtn cookie:(MKButtonEdgeInsetsStyleTop) disable:10];
@@ -607,7 +607,7 @@ Byte show_placeContent[] = {84, 9, 82, 5, 117, 199, 197, 183, 196, 177, 187, 181
 
     //: UIView *contentView = [[UIView alloc]initWithFrame:CGRectMake(0, (44.0f + [UIDevice vg_statusBarHeight])+100, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height-(44.0f + [UIDevice vg_statusBarHeight])-(49.0f))];
     UIView *contentView = [[UIView alloc]initWithFrame:CGRectMake(0, (44.0f + [UIDevice heightShowStop])+100, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height-(44.0f + [UIDevice heightShowStop])-(49.0f))];
-    //: contentView.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+    //: contentView.backgroundColor = [UIColor colorWithHexString:@"#fffWork"];
     contentView.backgroundColor = [UIColor ground:StringFromSessionChangeData(userAccountViewData)];
     //: contentView.layer.cornerRadius = 34;
     contentView.layer.cornerRadius = 34;
@@ -644,7 +644,7 @@ Byte show_placeContent[] = {84, 9, 82, 5, 117, 199, 197, 183, 196, 177, 187, 181
     labedit.font = [UIFont systemFontOfSize:14];
     //: labedit.textColor = [UIColor colorWithHexString:@"#2C3042"];
     labedit.textColor = [UIColor ground:StringFromSessionChangeData(mSessionButtonValue)];
-    //: labedit.text = [FFFLanguageManager getTextWithKey:@"edit_profile"];
+    //: labedit.text = [WorkLanguageManager getTextWithKey:@"edit_profile"];
     labedit.text = [InputRed preserve:StringFromSessionChangeData(dreamLabelViewData)];
     //: [editView addSubview:labedit];
     [editView addSubview:labedit];
@@ -718,7 +718,7 @@ Byte show_placeContent[] = {84, 9, 82, 5, 117, 199, 197, 183, 196, 177, 187, 181
     label11.font = [UIFont systemFontOfSize:13.f];
     //: label11.textColor = [UIColor blackColor];
     label11.textColor = [UIColor blackColor];
-    //: label11.text = [FFFLanguageManager getTextWithKey:@"receiver_model"];
+    //: label11.text = [WorkLanguageManager getTextWithKey:@"receiver_model"];
     label11.text = [InputRed preserve:StringFromSessionChangeData(noti_imageContent)];
     //: [box1 addSubview:label11];
     [box1 addSubview:label11];
@@ -757,7 +757,7 @@ Byte show_placeContent[] = {84, 9, 82, 5, 117, 199, 197, 183, 196, 177, 187, 181
     labellog.font = [UIFont systemFontOfSize:13.f];
     //: labellog.textColor = [UIColor blackColor];
     labellog.textColor = [UIColor blackColor];
-    //: labellog.text = [FFFLanguageManager getTextWithKey:@"my_log"];
+    //: labellog.text = [WorkLanguageManager getTextWithKey:@"my_log"];
     labellog.text = [InputRed preserve:StringFromSessionChangeData(userAtOldColorName)];
     //: [boxlog addSubview:labellog];
     [boxlog addSubview:labellog];
@@ -793,7 +793,7 @@ Byte show_placeContent[] = {84, 9, 82, 5, 117, 199, 197, 183, 196, 177, 187, 181
     label23.font = [UIFont systemFontOfSize:13.f];
     //: label23.textColor = [UIColor blackColor];
     label23.textColor = [UIColor blackColor];
-    //: label23.text = [FFFLanguageManager getTextWithKey:@"safe_setting_activity_title"];
+    //: label23.text = [WorkLanguageManager getTextWithKey:@"safe_setting_activity_title"];
     label23.text = [InputRed preserve:StringFromSessionChangeData(m_successValue)];
     //: [box6 addSubview:label23];
     [box6 addSubview:label23];
@@ -843,7 +843,7 @@ Byte show_placeContent[] = {84, 9, 82, 5, 117, 199, 197, 183, 196, 177, 187, 181
     label14.font = [UIFont systemFontOfSize:13.f];
     //: label14.textColor = [UIColor blackColor];
     label14.textColor = [UIColor blackColor];
-    //: label14.text = [FFFLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
+    //: label14.text = [WorkLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
     label14.text = [InputRed preserve:StringFromSessionChangeData(dream_messageData)];//@"用户协议和隐私协议";
     //: [box3 addSubview:label14];
     [box3 addSubview:label14];
@@ -885,7 +885,7 @@ Byte show_placeContent[] = {84, 9, 82, 5, 117, 199, 197, 183, 196, 177, 187, 181
     label22.font = [UIFont systemFontOfSize:13.f];
     //: label22.textColor = [UIColor blackColor];
     label22.textColor = [UIColor blackColor];
-    //: label22.text = [FFFLanguageManager getTextWithKey:@"feedback_activity_title"];
+    //: label22.text = [WorkLanguageManager getTextWithKey:@"feedback_activity_title"];
     label22.text = [InputRed preserve:StringFromSessionChangeData(mMagnitudeValue)];
     //: [box5 addSubview:label22];
     [box5 addSubview:label22];
@@ -923,7 +923,7 @@ Byte show_placeContent[] = {84, 9, 82, 5, 117, 199, 197, 183, 196, 177, 187, 181
     label31.textColor = [UIColor blackColor];
     //: [box7 addSubview:label31];
     [box7 addSubview:label31];
-    //: NSString *fragment_my_version = [FFFLanguageManager getTextWithKey:@"fragment_my_version"];
+    //: NSString *fragment_my_version = [WorkLanguageManager getTextWithKey:@"fragment_my_version"];
     NSString *fragment_my_version = [InputRed preserve:StringFromSessionChangeData(noti_showText)];
     //: NSDictionary *infoDic = [[NSBundle mainBundle] infoDictionary];
     NSDictionary *infoDic = [[NSBundle mainBundle] infoDictionary];
@@ -940,7 +940,7 @@ Byte show_placeContent[] = {84, 9, 82, 5, 117, 199, 197, 183, 196, 177, 187, 181
     loginButton.titleLabel.font = [UIFont systemFontOfSize:14];
     //: [loginButton setTitleColor:[UIColor colorWithHexString:@"5D5F66"] forState:UIControlStateNormal];
     [loginButton setTitleColor:[UIColor ground:StringFromSessionChangeData(appByValue)] forState:UIControlStateNormal];
-    //: [loginButton setTitle:[FFFLanguageManager getTextWithKey:@"activity_comment_setting_exit"] forState:UIControlStateNormal];
+    //: [loginButton setTitle:[WorkLanguageManager getTextWithKey:@"activity_comment_setting_exit"] forState:UIControlStateNormal];
     [loginButton setTitle:[InputRed preserve:StringFromSessionChangeData(noti_countName)] forState:UIControlStateNormal];
     //: [loginButton addTarget:self action:@selector(logoutCurrentAccount) forControlEvents:UIControlEventTouchUpInside];
     [loginButton addTarget:self action:@selector(clearByLabel) forControlEvents:UIControlEventTouchUpInside];
@@ -962,7 +962,7 @@ Byte show_placeContent[] = {84, 9, 82, 5, 117, 199, 197, 183, 196, 177, 187, 181
 #pragma mark - NTESMainCenterDelegate
 //: -(void)userInfoCenter{
 -(void)withFor{
-    //: FFFUserInfoViewController *vc = [[FFFUserInfoViewController alloc] init];
+    //: WorkUserInfoViewController *vc = [[WorkUserInfoViewController alloc] init];
     SessionViewController *vc = [[SessionViewController alloc] init];
     //: [self.navigationController pushViewController:vc animated:YES];
     [self.navigationController pushViewController:vc animated:YES];
@@ -1090,18 +1090,18 @@ Byte show_placeContent[] = {84, 9, 82, 5, 117, 199, 197, 183, 196, 177, 187, 181
 }
 //: -(void)exitApp{
 -(void)exitRange{
-    //: NSString *alertStr = [FFFLanguageManager getTextWithKey:@"system_change_language_title"];
+    //: NSString *alertStr = [WorkLanguageManager getTextWithKey:@"system_change_language_title"];
     NSString *alertStr = [InputRed preserve:StringFromSessionChangeData(userVideoName)];
     //: UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:alertStr preferredStyle:UIAlertControllerStyleAlert];
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:alertStr preferredStyle:UIAlertControllerStyleAlert];
-    //: [alert addAction:[UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    //: [alert addAction:[UIAlertAction actionWithTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
     [alert addAction:[UIAlertAction actionWithTitle:[InputRed preserve:StringFromSessionChangeData(mMessageText)] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         //: exit(0);
         exit(0);
     //: }]];
     }]];
 
-    //: [alert addAction:[UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+    //: [alert addAction:[UIAlertAction actionWithTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
     [alert addAction:[UIAlertAction actionWithTitle:[InputRed preserve:StringFromSessionChangeData(app_mustAppearContent)] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
 
     //: }]];
@@ -1119,7 +1119,7 @@ Byte show_placeContent[] = {84, 9, 82, 5, 117, 199, 197, 183, 196, 177, 187, 181
 
     //: ZMONPolicyPrivacyViewController *vc = [[ZMONPolicyPrivacyViewController alloc] init];
     SumViewController *vc = [[SumViewController alloc] init];
-    //: vc.webTitle = [FFFLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
+    //: vc.webTitle = [WorkLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
     vc.webTitle = [InputRed preserve:StringFromSessionChangeData(dream_messageData)];//@"隐私协议";
     //: vc.urlString = [NIMUserDefaults standardUserDefaults].yshref;
     vc.urlString = [SessionRecord afterUser].yshref;

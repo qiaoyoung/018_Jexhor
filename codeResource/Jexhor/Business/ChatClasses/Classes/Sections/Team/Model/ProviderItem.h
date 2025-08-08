@@ -11,11 +11,11 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "WorkCardDataSourceProtocol.h"
+#import "WorkCardDataSourceProtocol.h"
 
-//: @interface FFFCardOperationItem : NSObject<FFFKitCardHeaderData>
-@interface ProviderItem : NSObject<FFFKitCardHeaderData>
+//: @interface WorkCardOperationItem : NSObject<WorkKitCardHeaderData>
+@interface ProviderItem : NSObject<WorkKitCardHeaderData>
 
 //: @property(nonatomic,copy) NSString *title;
 @property(nonatomic,copy) NSString *title;

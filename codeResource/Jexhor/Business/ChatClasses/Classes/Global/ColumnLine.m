@@ -105,9 +105,9 @@
 #import <UIKit/UIKit.h>
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
-//: #import "FFFKitDataProviderImpl.h"
+//: #import "WorkKitDataProviderImpl.h"
 #import "ColumnLine.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WorkKitInfoFetchOption.h"
 #import "RangeOption.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
@@ -239,7 +239,7 @@
 //: #pragma mark - data provider impl
 #pragma mark - data provider impl
 
-//: @interface FFFKitDataProviderImpl()<NIMUserManagerDelegate,
+//: @interface WorkKitDataProviderImpl()<NIMUserManagerDelegate,
 @interface ColumnLine()<NIMUserManagerDelegate,
                                     //: NIMTeamManagerDelegate,
                                     NIMTeamManagerDelegate,
@@ -261,7 +261,7 @@
 @end
 
 
-//: @implementation FFFKitDataProviderImpl
+//: @implementation WorkKitDataProviderImpl
 @implementation ColumnLine
 
 //: - (instancetype)init{
@@ -301,27 +301,27 @@
 
 //: #pragma mark - public api
 #pragma mark - public api
-//: - (FFFKitInfo *)infoByUser:(NSString *)userId
+//: - (WorkKitInfo *)infoByUser:(NSString *)userId
 - (ConfirmationInfo *)recent:(NSString *)userId
-                    //: option:(FFFKitInfoFetchOption *)option
+                    //: option:(WorkKitInfoFetchOption *)option
                     blue:(RangeOption *)option
 {
     //: NIMSession *session = option.message.session?:option.session;
     NIMSession *session = option.message.session?:option.session;
-    //: FFFKitInfo *info = [self infoByUser:userId session:session option:option];
+    //: WorkKitInfo *info = [self infoByUser:userId session:session option:option];
     ConfirmationInfo *info = [self inputBy:userId ting:session image:option];
     //: return info;
     return info;
 }
 
-//: - (FFFKitInfo *)infoByTeam:(NSString *)teamId
+//: - (WorkKitInfo *)infoByTeam:(NSString *)teamId
 - (ConfirmationInfo *)info:(NSString *)teamId
-                    //: option:(FFFKitInfoFetchOption *)option
+                    //: option:(WorkKitInfoFetchOption *)option
                     comment:(RangeOption *)option
 {
     //: NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:teamId];
     NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:teamId];
-    //: FFFKitInfo *info = [[FFFKitInfo alloc] init];
+    //: WorkKitInfo *info = [[WorkKitInfo alloc] init];
     ConfirmationInfo *info = [[ConfirmationInfo alloc] init];
     //: info.showName = team.teamName;
     info.showName = team.teamName;
@@ -335,14 +335,14 @@
     return info;
 }
 
-//: - (FFFKitInfo *)infoBySuperTeam:(NSString *)teamId
+//: - (WorkKitInfo *)infoBySuperTeam:(NSString *)teamId
 - (ConfirmationInfo *)item:(NSString *)teamId
-                         //: option:(FFFKitInfoFetchOption *)option
+                         //: option:(WorkKitInfoFetchOption *)option
                          pit:(RangeOption *)option
 {
     //: NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:teamId];
     NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:teamId];
-    //: FFFKitInfo *info = [[FFFKitInfo alloc] init];
+    //: WorkKitInfo *info = [[WorkKitInfo alloc] init];
     ConfirmationInfo *info = [[ConfirmationInfo alloc] init];
     //: info.showName = team.teamName;
     info.showName = team.teamName;
@@ -363,11 +363,11 @@
     NIMMessageType messageType = replyedMessage.messageType;
     //: NSString *content = @"未知消息".nim_localized;
     NSString *content = [[RoperData sharedInstance] mainAtPursuitName].titleBy;
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: WorkKitInfoFetchOption *option = [[WorkKitInfoFetchOption alloc] init];
     RangeOption *option = [[RangeOption alloc] init];
     //: option.message = replyedMessage;
     option.message = replyedMessage;
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:replyedMessage.from option:option];
+    //: WorkKitInfo *info = [[MyUserKit sharedKit] infoByUser:replyedMessage.from option:option];
     ConfirmationInfo *info = [[MessageContent secretResolution] recent:replyedMessage.from blue:option];
     //: NSString *from = info.showName;
     NSString *from = info.showName;
@@ -444,16 +444,16 @@
 //: #pragma mark - 用户信息拼装
 #pragma mark - 用户信息拼装
 //会话中用户信息
-//: - (FFFKitInfo *)infoByUser:(NSString *)userId
+//: - (WorkKitInfo *)infoByUser:(NSString *)userId
 - (ConfirmationInfo *)inputBy:(NSString *)userId
                    //: session:(NIMSession *)session
                    ting:(NIMSession *)session
-                    //: option:(FFFKitInfoFetchOption *)option
+                    //: option:(WorkKitInfoFetchOption *)option
                     image:(RangeOption *)option
 {
     //: NIMSessionType sessionType = session.sessionType;
     NIMSessionType sessionType = session.sessionType;
-    //: FFFKitInfo *info;
+    //: WorkKitInfo *info;
     ConfirmationInfo *info;
 
     //: switch (sessionType) {
@@ -513,7 +513,7 @@
             [self.request sendIds:@[userId]];
         }
 
-        //: info = [[FFFKitInfo alloc] init];
+        //: info = [[WorkKitInfo alloc] init];
         info = [[ConfirmationInfo alloc] init];
         //: info.infoId = userId;
         info.infoId = userId;
@@ -530,21 +530,21 @@
 
 //: #pragma mark - P2P 用户信息
 #pragma mark - P2P 用户信息
-//: - (FFFKitInfo *)userInfoInP2P:(NSString *)userId
+//: - (WorkKitInfo *)userInfoInP2P:(NSString *)userId
 - (ConfirmationInfo *)key:(NSString *)userId
-                       //: option:(FFFKitInfoFetchOption *)option
+                       //: option:(WorkKitInfoFetchOption *)option
                        alongOption:(RangeOption *)option
 {
     //: NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:userId];
     NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:userId];
     //: NIMUserInfo *userInfo = user.userInfo;
     NIMUserInfo *userInfo = user.userInfo;
-    //: FFFKitInfo *info;
+    //: WorkKitInfo *info;
     ConfirmationInfo *info;
     //: if (userInfo)
     if (userInfo)
     {
-        //: info = [[FFFKitInfo alloc] init];
+        //: info = [[WorkKitInfo alloc] init];
         info = [[ConfirmationInfo alloc] init];
         //: info.infoId = userId;
         info.infoId = userId;
@@ -568,11 +568,11 @@
 
 //: #pragma mark - 群组用户信息
 #pragma mark - 群组用户信息
-//: - (FFFKitInfo *)userInfo:(NSString *)userId
+//: - (WorkKitInfo *)userInfo:(NSString *)userId
 - (ConfirmationInfo *)with:(NSString *)userId
                   //: inTeam:(NSString *)teamId
                   table:(NSString *)teamId
-                  //: option:(FFFKitInfoFetchOption *)option
+                  //: option:(WorkKitInfoFetchOption *)option
                   nameOption:(RangeOption *)option
 {
     //: NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:userId];
@@ -584,13 +584,13 @@
                                                                  //: inTeam:teamId];
                                                                  inTeam:teamId];
 
-    //: FFFKitInfo *info;
+    //: WorkKitInfo *info;
     ConfirmationInfo *info;
 
     //: if (userInfo || member)
     if (userInfo || member)
     {
-        //: info = [[FFFKitInfo alloc] init];
+        //: info = [[WorkKitInfo alloc] init];
         info = [[ConfirmationInfo alloc] init];
         //: info.infoId = userId;
         info.infoId = userId;
@@ -614,11 +614,11 @@
 
 //: #pragma mark - 超大群用户信息
 #pragma mark - 超大群用户信息
-//: - (FFFKitInfo *)userInfo:(NSString *)userId
+//: - (WorkKitInfo *)userInfo:(NSString *)userId
 - (ConfirmationInfo *)should:(NSString *)userId
              //: inSuperTeam:(NSString *)teamId
              surprise:(NSString *)teamId
-                  //: option:(FFFKitInfoFetchOption *)option
+                  //: option:(WorkKitInfoFetchOption *)option
                   bench:(RangeOption *)option
 {
     //: NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:userId];
@@ -630,13 +630,13 @@
                                                                       //: inTeam:teamId];
                                                                       inTeam:teamId];
 
-    //: FFFKitInfo *info;
+    //: WorkKitInfo *info;
     ConfirmationInfo *info;
 
     //: if (userInfo || member)
     if (userInfo || member)
     {
-        //: info = [[FFFKitInfo alloc] init];
+        //: info = [[WorkKitInfo alloc] init];
         info = [[ConfirmationInfo alloc] init];
         //: info.infoId = userId;
         info.infoId = userId;
@@ -661,14 +661,14 @@
 
 //: #pragma mark - 聊天室用户信息
 #pragma mark - 聊天室用户信息
-//: - (FFFKitInfo *)userInfo:(NSString *)userId
+//: - (WorkKitInfo *)userInfo:(NSString *)userId
 - (ConfirmationInfo *)soulOf:(NSString *)userId
               //: inChatroom:(NSString *)roomId
               center:(NSString *)roomId
-                  //: option:(FFFKitInfoFetchOption *)option
+                  //: option:(WorkKitInfoFetchOption *)option
                   gender:(RangeOption *)option
 {
-    //: FFFKitInfo *info = [[FFFKitInfo alloc] init];
+    //: WorkKitInfo *info = [[WorkKitInfo alloc] init];
     ConfirmationInfo *info = [[ConfirmationInfo alloc] init];
     //: info.infoId = userId;
     info.infoId = userId;
@@ -737,7 +737,7 @@
 - (NSString *)item:(NIMUser *)user
                           //: nick:(NSString *)nick
                           searchedShare:(NSString *)nick
-                        //: option:(FFFKitInfoFetchOption *)option
+                        //: option:(WorkKitInfoFetchOption *)option
                         nationality:(RangeOption *)option
 {
     //: NSString *name = nil;

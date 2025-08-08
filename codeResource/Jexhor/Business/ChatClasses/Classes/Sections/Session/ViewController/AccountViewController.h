@@ -13,22 +13,22 @@
 #import <UIKit/UIKit.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFSessionConfig.h"
+//: #import "WorkSessionConfig.h"
 #import "LineConfig.h"
-//: #import "FFFMessageCellProtocol.h"
-#import "FFFMessageCellProtocol.h"
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
-//: #import "FFFInputView.h"
+//: #import "WorkMessageCellProtocol.h"
+#import "WorkMessageCellProtocol.h"
+//: #import "WorkSessionConfigurateProtocol.h"
+#import "WorkSessionConfigurateProtocol.h"
+//: #import "WorkInputView.h"
 #import "TingShowView.h"
 
-//: @interface FFFSessionViewController : UIViewController<NIMSessionInteractorDelegate,NIMInputActionDelegate,FFFMessageCellDelegate,NIMChatManagerDelegate,NIMConversationManagerDelegate,NIMChatExtendManagerDelegate>
+//: @interface WorkSessionViewController : UIViewController<NIMSessionInteractorDelegate,NIMInputActionDelegate,WorkMessageCellDelegate,NIMChatManagerDelegate,NIMConversationManagerDelegate,NIMChatExtendManagerDelegate>
 @interface AccountViewController : UIViewController<MagnitudeeractorDelegate,ButtonDelegate,SystemCircle,NIMChatManagerDelegate,NIMConversationManagerDelegate,NIMChatExtendManagerDelegate>
 
 //: @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UITableView *tableView;
 
-//: @property (nonatomic, strong) FFFInputView *sessionInputView;
+//: @property (nonatomic, strong) WorkInputView *sessionInputView;
 @property (nonatomic, strong) TingShowView *sessionInputView;
 //: @property (nonatomic, assign) BOOL canTapVoiceBtn; 
 @property (nonatomic, assign) BOOL canTapVoiceBtn; // 能够点击语音按钮
@@ -144,8 +144,8 @@
 /**
  *  会话页详细配置
  */
-//: - (id<FFFSessionConfig>)sessionConfig;
-- (id<LineConfig>)temp;
+//: - (id<WorkSessionConfig>)sessionConfig;
+- (id<LineConfig>)sessionConfig;
 
 
 //: #pragma mark - 消息接口
@@ -234,7 +234,7 @@
  *
  *  @discussion 不会触发 DB 操作，请手动调用 SDK 里 deleteMessage: 接口
  */
-//: - (FFFMessageModel *)uiDeleteMessage:(NIMMessage *)message;
+//: - (WorkMessageModel *)uiDeleteMessage:(NIMMessage *)message;
 - (ShowModel *)image:(NIMMessage *)message;
 
 /**

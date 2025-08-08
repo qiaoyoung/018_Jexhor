@@ -146,20 +146,20 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitMediaPickerController.h"
+//: #import "WorkKitMediaPickerController.h"
 #import "KitNavigationController.h"
-//: #import "FFFKitProgressHUD.h"
+//: #import "WorkKitProgressHUD.h"
 #import "KitEffectView.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFKitFileLocationHelper.h"
+//: #import "WorkKitDependency.h"
+#import "WorkKitDependency.h"
+//: #import "WorkGlobalMacro.h"
+#import "WorkGlobalMacro.h"
+//: #import "WorkKitFileLocationHelper.h"
 #import "ImageHelper.h"
 //: #import <MobileCoreServices/MobileCoreServices.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 
-//: @interface FFFKitMediaPickerController ()<TZImagePickerControllerDelegate>
+//: @interface WorkKitMediaPickerController ()<TZImagePickerControllerDelegate>
 @interface KitNavigationController ()<TZImagePickerControllerDelegate>
 
 //: @property (nonatomic, assign) UIStatusBarStyle myStatusBarStyle;
@@ -168,7 +168,7 @@
 //: @end
 @end
 
-//: @implementation FFFKitMediaPickerController
+//: @implementation WorkKitMediaPickerController
 @implementation KitNavigationController
 
 //: - (instancetype)initWithMaxImagesCount:(NSInteger)maxImagesCount {
@@ -292,11 +292,11 @@
 
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [FFFKitProgressHUD show];
+    //: [WorkKitProgressHUD show];
     [KitEffectView refreshShow];
     //: [self requestAsset:assets.firstObject handler:^(NSString *path, PHAssetMediaType type) {
     [self bottom:assets.firstObject buttonTing:^(NSString *path, PHAssetMediaType type) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [WorkKitProgressHUD dismiss];
         [KitEffectView should];
         //: if ([weakSelf.nim_delegate respondsToSelector:@selector(onPickerSelectedWithType:images:path:)]) {
         if ([weakSelf.nim_delegate respondsToSelector:@selector(alongUser:value:withPath:)]) {
@@ -347,9 +347,9 @@
                 } else {
                     //: AVURLAsset *URLAsset = (AVURLAsset *)assetR;
                     AVURLAsset *URLAsset = (AVURLAsset *)assetR;
-                    //: NSString *outputFileName = [FFFKitFileLocationHelper genFilenameWithExt:@"mp4"];
+                    //: NSString *outputFileName = [WorkKitFileLocationHelper genFilenameWithExt:@"mp4"];
                     NSString *outputFileName = [ImageHelper key:[DrumData sharedInstance].app_barrelValue];
-                    //: outputPath = [FFFKitFileLocationHelper filepathForVideo:outputFileName];
+                    //: outputPath = [WorkKitFileLocationHelper filepathForVideo:outputFileName];
                     outputPath = [ImageHelper soundVideo:outputFileName];
                     //: BOOL fileExist = [[NSFileManager defaultManager] fileExistsAtPath:URLAsset.URL.path];
                     BOOL fileExist = [[NSFileManager defaultManager] fileExistsAtPath:URLAsset.URL.path];

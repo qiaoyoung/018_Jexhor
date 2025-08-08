@@ -434,7 +434,7 @@ static Manager *noti_kitName = nil;
 
     //: } failed:^(id responseObject, NSError *error) {
     } time:^(id responseObject, NSError *error) {
-        //: !complete ? : complete(NO,[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]);
+        //: !complete ? : complete(NO,[WorkLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]);
         !complete ? : complete(NO,[InputRed preserve:[HemeAcknowledgeData sharedInstance].user_pdaValue]);
     //: }];
     }];
@@ -588,7 +588,7 @@ static Manager *noti_kitName = nil;
 
         //: } failed:^(id responseObject, NSError *error) {
         } forwardingUploadStreetwiseLastShowParametersSuccessBubble:^(id responseObject, NSError *error) {
-            //: [SVProgressHUD showMessage:[FFFLanguageManager getTextWithKey:@"register_avtivity3_register_fail"]];
+            //: [SVProgressHUD showMessage:[WorkLanguageManager getTextWithKey:@"register_avtivity3_register_fail"]];
             [SVProgressHUD text:[InputRed preserve:[HemeAcknowledgeData sharedInstance].mainSuspectAloneText]];
 
         //: }];

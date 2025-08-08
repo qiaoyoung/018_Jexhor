@@ -121,10 +121,10 @@
 // __M_A_C_R_O__
 //: #import "NTESCardPortraitCell.h"
 #import "FirstTeamView.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WorkAvatarImageView.h"
 #import "ButtonControl.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "WorkCommonTableData.h"
+#import "WorkCommonTableData.h"
 //: #import "UIView+NTES.h"
 #import "UIView+Recent.h"
 //: #import "NTESSessionUtil.h"
@@ -133,7 +133,7 @@
 //: @interface NTESCardPortraitCell()
 @interface FirstTeamView()
 
-//: @property (nonatomic,strong) FFFAvatarImageView *avatar;
+//: @property (nonatomic,strong) WorkAvatarImageView *avatar;
 @property (nonatomic,strong) ButtonControl *avatar;
 
 //: @property (nonatomic,strong) UILabel *nameLabel;
@@ -162,7 +162,7 @@
     if (self) {
         //: CGFloat avatarWidth = 55.f;
         CGFloat avatarWidth = 55.f;
-        //: _avatar = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, avatarWidth, avatarWidth)];
+        //: _avatar = [[WorkAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, avatarWidth, avatarWidth)];
         _avatar = [[ButtonControl alloc] initWithFrame:CGRectMake(0, 0, avatarWidth, avatarWidth)];
         //: [self.contentView addSubview:_avatar];
         [self.contentView addSubview:_avatar];
@@ -210,11 +210,11 @@
     if ([uid isKindOfClass:[NSString class]]) {
         //: NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:uid];
         NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:uid];
-        //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:uid option:nil];
+        //: WorkKitInfo *info = [[MyUserKit sharedKit] infoByUser:uid option:nil];
         ConfirmationInfo *info = [[MessageContent secretResolution] recent:uid blue:nil];
         //: self.nameLabel.text = info.showName ;
         self.nameLabel.text = info.showName ;
-        //: NSString *register_avtivity_account = [FFFLanguageManager getTextWithKey:@"register_avtivity_account"];
+        //: NSString *register_avtivity_account = [WorkLanguageManager getTextWithKey:@"register_avtivity_account"];
         NSString *register_avtivity_account = [InputRed preserve:[ButtonVideoData appColorName]];
         //: self.accountLabel.text = [NSString stringWithFormat:@"%@：%@",register_avtivity_account, uid];
         self.accountLabel.text = [NSString stringWithFormat:@"%@：%@",register_avtivity_account, uid];
@@ -281,7 +281,7 @@
             NSString *account = [data route:[ButtonVideoData m_lengthAtName]];
             //: self.accountLabel.hidden = NO;
             self.accountLabel.hidden = NO;
-            //: NSString *register_avtivity_account = [FFFLanguageManager getTextWithKey:@"register_avtivity_account"];
+            //: NSString *register_avtivity_account = [WorkLanguageManager getTextWithKey:@"register_avtivity_account"];
             NSString *register_avtivity_account = [InputRed preserve:[ButtonVideoData appColorName]];
 
             //: self.accountLabel.text = [NSString stringWithFormat:@"%@:%@",register_avtivity_account, account];

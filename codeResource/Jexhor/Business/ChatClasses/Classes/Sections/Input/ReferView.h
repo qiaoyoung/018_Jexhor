@@ -9,14 +9,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFPageView.h"
+//: #import "WorkPageView.h"
 #import "KeyNeedView.h"
-//: #import "FFFSessionConfig.h"
+//: #import "WorkSessionConfig.h"
 #import "LineConfig.h"
 
 //: @class NIMInputEmoticonCatalog;
 @class WithTextSearch;
-//: @class FFFInputEmoticonTabView;
+//: @class WorkInputEmoticonTabView;
 @class IntervalView;
 
 //: @protocol NIMInputEmoticonProtocol <NSObject>
@@ -38,10 +38,10 @@
 @end
 
 
-//: @interface FFFInputEmoticonContainerView : UIView<FFFPageViewDataSource,FFFPageViewDelegate>
+//: @interface WorkInputEmoticonContainerView : UIView<WorkPageViewDataSource,WorkPageViewDelegate>
 @interface ReferView : UIView<FrameSource,PageDoingValueDelegate>
 
-//: @property (nonatomic, strong) FFFPageView *emoticonPageView;
+//: @property (nonatomic, strong) WorkPageView *emoticonPageView;
 @property (nonatomic, strong) KeyNeedView *emoticonPageView;
 //: @property (nonatomic, strong) UIPageControl *emotPageController;
 @property (nonatomic, strong) UIPageControl *emotPageController;
@@ -51,11 +51,11 @@
 @property (nonatomic, strong) WithTextSearch *currentCatalogData;
 //: @property (nonatomic, readonly)NSArray *allEmoticons;
 @property (nonatomic, readonly)NSArray *allEmoticons;
-//: @property (nonatomic, strong) FFFInputEmoticonTabView *tabView;
+//: @property (nonatomic, strong) WorkInputEmoticonTabView *tabView;
 @property (nonatomic, strong) IntervalView *tabView;
 //: @property (nonatomic, weak) id<NIMInputEmoticonProtocol> delegate;
 @property (nonatomic, weak) id<FiveRecord> delegate;
-//: @property (nonatomic, weak) id<FFFSessionConfig> config;
+//: @property (nonatomic, weak) id<WorkSessionConfig> config;
 @property (nonatomic, weak) id<LineConfig> config;
 
 //: @property (nonatomic,strong) UIScrollView *scrollView;

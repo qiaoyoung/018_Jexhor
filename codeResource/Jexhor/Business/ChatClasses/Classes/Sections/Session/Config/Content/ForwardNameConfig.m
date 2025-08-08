@@ -9,22 +9,22 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFRtcCallRecordContentConfig.h"
+//: #import "WorkRtcCallRecordContentConfig.h"
 #import "ForwardNameConfig.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "VideoTextView+MessageContent.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
-//: #import "FFFKitUtil.h"
+//: #import "WorkKitUtil.h"
 #import "WantUtil.h"
 
-//: @implementation FFFRtcCallRecordContentConfig
+//: @implementation WorkRtcCallRecordContentConfig
 @implementation ForwardNameConfig
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
 - (CGSize)refer:(CGFloat)cellWidth componentPart:(NIMMessage *)message
 {
-    //: NSString *text = [FFFKitUtil messageTipContent:message];
+    //: NSString *text = [WorkKitUtil messageTipContent:message];
     NSString *text = [WantUtil tingAcross:message];
     //: UIFont *font = [[MyUserKit sharedKit].config setting:message].font;;
     UIFont *font = [[MessageContent secretResolution].config ofSetting:message].font;;
@@ -48,7 +48,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)on:(NIMMessage *)message
 {
-    //: return @"FFFSessionRtcCallRecordContentView";
+    //: return @"WorkSessionRtcCallRecordContentView";
     return @"WrittenRecordView";
 }
 

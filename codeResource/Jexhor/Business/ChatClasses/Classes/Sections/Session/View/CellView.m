@@ -106,7 +106,7 @@
     return mainJournalistContent;
 }
 
-//: ffffff
+//: fffWork
 + (NSString *)noti_solidData {
     /* static */ NSString *noti_solidData = nil;
     if (!noti_solidData) {
@@ -189,38 +189,38 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMessageCell.h"
+//: #import "WorkMessageCell.h"
 #import "CellView.h"
-//: #import "FFFMessageModel.h"
+//: #import "WorkMessageModel.h"
 #import "ShowModel.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WorkAvatarImageView.h"
 #import "ButtonControl.h"
-//: #import "FFFBadgeView.h"
+//: #import "WorkBadgeView.h"
 #import "AggregationView.h"
-//: #import "FFFSessionMessageContentView.h"
+//: #import "WorkSessionMessageContentView.h"
 #import "TextControl.h"
-//: #import "FFFKitUtil.h"
+//: #import "WorkKitUtil.h"
 #import "WantUtil.h"
-//: #import "FFFSessionAudioContentView.h"
+//: #import "WorkSessionAudioContentView.h"
 #import "ThreadView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "WorkKitDependency.h"
+#import "WorkKitDependency.h"
 //: #import "M80AttributedLabel.h"
 #import "VideoTextView.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
-//: #import "FFFSessionUnknowContentView.h"
+//: #import "WorkSessionUnknowContentView.h"
 #import "ManagingDirectorContentView.h"
-//: #import "FFFKitConfig.h"
+//: #import "WorkKitConfig.h"
 #import "ModeConfig.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
-//: #import "FFFSessionTextContentView.h"
+//: #import "WorkSessionTextContentView.h"
 #import "BottomControl.h"
 
-//: @interface FFFMessageCell()<NIMPlayAudioUIDelegate,NIMMessageContentViewDelegate>
+//: @interface WorkMessageCell()<NIMPlayAudioUIDelegate,NIMMessageContentViewDelegate>
 @interface CellView()<TextTing,ModeBar>
 {
     //: UILongPressGestureRecognizer *_longPressGesture;
@@ -229,7 +229,7 @@
     UIMenuController *_menuController;
 }
 
-//: @property (nonatomic,strong) FFFMessageModel *model;
+//: @property (nonatomic,strong) WorkMessageModel *model;
 @property (nonatomic,strong) ShowModel *model;
 
 //: @property (nonatomic,copy) NSArray *customViews;
@@ -240,7 +240,7 @@
 
 
 
-//: @implementation FFFMessageCell
+//: @implementation WorkMessageCell
 @implementation CellView
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -303,7 +303,7 @@
     [self.contentView addSubview:_retryButton];
 
     //audioPlayedIcon
-    //: _audioPlayedIcon = [FFFBadgeView viewWithBadgeTip:@""];
+    //: _audioPlayedIcon = [WorkBadgeView viewWithBadgeTip:@""];
     _audioPlayedIcon = [AggregationView area:@""];
 //    _audioPlayedIcon.badgeBackgroundColor = RGB_COLOR_String(@"#612CF9");
 //    [self.contentView addSubview:_audioPlayedIcon];
@@ -315,7 +315,7 @@
     [self.contentView addSubview:_traningActivityIndicator];
 
     //headerView
-    //: _headImageView = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 36, 36)];
+    //: _headImageView = [[WorkAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 36, 36)];
     _headImageView = [[ButtonControl alloc] initWithFrame:CGRectMake(0, 0, 36, 36)];
     //: [_headImageView addTarget:self action:@selector(onTapAvatar:) forControlEvents:UIControlEventTouchUpInside];
     [_headImageView addTarget:self action:@selector(generated:) forControlEvents:UIControlEventTouchUpInside];
@@ -407,7 +407,7 @@
     [self addGestureRecognizer:_longPressGesture];
 }
 
-//: - (void)refreshData:(FFFMessageModel *)data
+//: - (void)refreshData:(WorkMessageModel *)data
 - (void)flushVideo:(ShowModel *)data
 {
     //: self.model = data;
@@ -424,7 +424,7 @@
 
 //: - (BOOL)checkData{
 - (BOOL)data{
-    //: return [self.model isKindOfClass:[FFFMessageModel class]];
+    //: return [self.model isKindOfClass:[WorkMessageModel class]];
     return [self.model isKindOfClass:[ShowModel class]];
 }
 
@@ -491,7 +491,7 @@
     //: if([self needShowNickName])
     if([self device])
     {
-        //: NSString *nick = [FFFKitUtil showNick:self.model.message.from inMessage:self.model.message];
+        //: NSString *nick = [WorkKitUtil showNick:self.model.message.from inMessage:self.model.message];
         NSString *nick = [WantUtil text:self.model.message.from should:self.model.message];
         //: [self.nameLabel setText:nick];
         [self.nameLabel setText:nick];
@@ -531,7 +531,7 @@
     //: [self refreshReadButton];
     [self marginButton];
 
-    //: if ([_bubbleView isKindOfClass:[FFFSessionTextContentView class]]) {
+    //: if ([_bubbleView isKindOfClass:[WorkSessionTextContentView class]]) {
     if ([_bubbleView isKindOfClass:[BottomControl class]]) {
         //: [self disableLongPress:YES];
         [self propertyLine:YES];
@@ -558,7 +558,7 @@
         _bubblesBackgroundView.hidden = ![[MessageContent secretResolution].layoutConfig should:self.model];
         //: if (self.model.shouldShowLeft){
         if (self.model.shouldShowLeft){
-            //: _bubblesBackgroundView.backgroundColor = [UIColor colorWithHexString:@"ffffff"];
+            //: _bubblesBackgroundView.backgroundColor = [UIColor colorWithHexString:@"fffWork"];
             _bubblesBackgroundView.backgroundColor = [UIColor ground:[DabbleData noti_solidData]];
         //: }else{
         }else{
@@ -599,7 +599,7 @@
         //: else if(self.model.message.session.sessionType == NIMSessionTypeTeam)
         else if(self.model.message.session.sessionType == NIMSessionTypeTeam)
         {
-            //: [_readButton setTitle:[NSString stringWithFormat:@"%zd%@",self.model.message.teamReceiptInfo.unreadCount,[FFFLanguageManager getTextWithKey:@"msg_view_4"]] forState:UIControlStateNormal];
+            //: [_readButton setTitle:[NSString stringWithFormat:@"%zd%@",self.model.message.teamReceiptInfo.unreadCount,[WorkLanguageManager getTextWithKey:@"msg_view_4"]] forState:UIControlStateNormal];
             [_readButton setTitle:[NSString stringWithFormat:@"%zd%@",self.model.message.teamReceiptInfo.unreadCount,[InputRed preserve:[DabbleData noti_atSeriesData]]] forState:UIControlStateNormal];//人未读".nim_localized
             //: [_readButton sizeToFit];
             [_readButton sizeToFit];
@@ -676,7 +676,7 @@
         //: if (!_replyedBubbleView)
         if (!_replyedBubbleView)
         {
-            //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+            //: id<WorkCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
             id<TingConfig> layoutConfig = [[MessageContent secretResolution] layoutConfig];
             //: NSString *contentStr = [layoutConfig replyContent:self.model];
             NSString *contentStr = [layoutConfig area:self.model];
@@ -684,7 +684,7 @@
             NSAssert([contentStr length] > 0, [DabbleData app_viewConvictData]);
             //: Class clazz = NSClassFromString(contentStr);
             Class clazz = NSClassFromString(contentStr);
-            //: FFFSessionMessageContentView *contentView = [[clazz alloc] initSessionMessageContentView];
+            //: WorkSessionMessageContentView *contentView = [[clazz alloc] initSessionMessageContentView];
             TextControl *contentView = [[clazz alloc] initViewKey];
             //: NSAssert(contentView, @"can not init content view");
             NSAssert(contentView, [DabbleData main_remarkData]);
@@ -717,7 +717,7 @@
     //: if (_bubbleView == nil)
     if (_bubbleView == nil)
     {
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<WorkCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<TingConfig> layoutConfig = [[MessageContent secretResolution] layoutConfig];
         //: NSString *contentStr = [layoutConfig cellContent:self.model];
         NSString *contentStr = [layoutConfig change:self.model];
@@ -725,7 +725,7 @@
         NSAssert([contentStr length] > 0, [DabbleData app_viewConvictData]);
         //: Class clazz = NSClassFromString(contentStr);
         Class clazz = NSClassFromString(contentStr);
-        //: FFFSessionMessageContentView *contentView = [[clazz alloc] initSessionMessageContentView];
+        //: WorkSessionMessageContentView *contentView = [[clazz alloc] initSessionMessageContentView];
         TextControl *contentView = [[clazz alloc] initViewKey];
         //: NSAssert(contentView, @"can not init content view");
         NSAssert(contentView, [DabbleData main_remarkData]);
@@ -737,7 +737,7 @@
         NIMMessageType messageType = self.model.message.messageType;
         //: if (messageType == NIMMessageTypeAudio) {
         if (messageType == NIMMessageTypeAudio) {
-            //: ((FFFSessionAudioContentView *)_bubbleView).audioUIDelegate = self;
+            //: ((WorkSessionAudioContentView *)_bubbleView).audioUIDelegate = self;
             ((ThreadView *)_bubbleView).audioUIDelegate = self;
         }
         //: [self.contentView insertSubview:_bubbleView belowSubview:_selectButtonMask];
@@ -758,7 +758,7 @@
         //: [view removeFromSuperview];
         [view removeFromSuperview];
     }
-    //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+    //: id<WorkCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
     id<TingConfig> layoutConfig = [[MessageContent secretResolution] layoutConfig];
     //: self.customViews = [layoutConfig customViews:self.model];
     self.customViews = [layoutConfig with:self.model];
@@ -1131,7 +1131,7 @@
 
 //: #pragma mark - NIMMessageContentViewDelegate
 #pragma mark - ModeBar
-//: - (void)onCatchEvent:(FFFKitEvent *)event{
+//: - (void)onCatchEvent:(WorkKitEvent *)event{
 - (void)aboveImage:(WrittenAccountLab *)event{
     //: if ([self.delegate respondsToSelector:@selector(onTapCell:)]) {
     if ([self.delegate respondsToSelector:@selector(magnitudeerlayerred:)]) {
@@ -1222,7 +1222,7 @@
 - (UIImage *)voiceView:(UIControlState)state
 {
 
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:self.model.message];
+    //: WorkKitSetting *setting = [[MyUserKit sharedKit].config setting:self.model.message];
     ViewKey *setting = [[MessageContent secretResolution].config ofSetting:self.model.message];
     //: if (state == UIControlStateNormal)
     if (state == UIControlStateNormal)
@@ -1308,7 +1308,7 @@
 //: - (BOOL)retryButtonHidden
 - (BOOL)shlep
 {
-    //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+    //: id<WorkCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
     id<TingConfig> layoutConfig = [[MessageContent secretResolution] layoutConfig];
     //: BOOL disable = NO;
     BOOL disable = NO;

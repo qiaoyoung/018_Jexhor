@@ -14,7 +14,7 @@
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
 
-//: @interface NTESCellLayoutConfig : FFFCellLayoutConfig<FFFCellLayoutConfig>
+//: @interface NTESCellLayoutConfig : WorkCellLayoutConfig<WorkCellLayoutConfig>
 @interface RangeWithLayoutConfig : TingConfig<TingConfig>
 
 //: @end

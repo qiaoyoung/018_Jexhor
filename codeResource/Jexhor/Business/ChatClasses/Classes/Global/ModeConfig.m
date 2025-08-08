@@ -90,11 +90,11 @@ CasualData user_showerImpressValue = (CasualData){50, (Byte []){93, 92, 102, 83,
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitConfig.h"
+//: #import "WorkKitConfig.h"
 #import "ModeConfig.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFMediaItem.h"
+//: #import "WorkGlobalMacro.h"
+#import "WorkGlobalMacro.h"
+//: #import "WorkMediaItem.h"
 #import "AccountAction.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
@@ -103,7 +103,7 @@ CasualData user_showerImpressValue = (CasualData){50, (Byte []){93, 92, 102, 83,
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
 
-//: @interface FFFKitSettings()
+//: @interface WorkKitSettings()
 @interface CircleSettings()
 {
     //: BOOL _isRight;
@@ -117,7 +117,7 @@ CasualData user_showerImpressValue = (CasualData){50, (Byte []){93, 92, 102, 83,
 @end
 
 
-//: @implementation FFFKitConfig
+//: @implementation WorkKitConfig
 @implementation ModeConfig
 
 //: - (instancetype) init
@@ -138,31 +138,31 @@ CasualData user_showerImpressValue = (CasualData){50, (Byte []){93, 92, 102, 83,
 //: - (NSArray *)defaultMediaItems
 - (NSArray *)items
 {
-    //: return @[[FFFMediaItem item:@"onTapMediaItemPicture:"
+    //: return @[[WorkMediaItem item:@"onTapMediaItemPicture:"
     return @[[AccountAction showName:StringFromCasualData(&m_overwhelmBlindResourceName)
            //: normalImage:[UIImage imageNamed:@"bk_media_picture_normal"]
            with:[UIImage imageNamed:StringFromCasualData(&m_cakeDigitalName)]
          //: selectedImage:[UIImage imageNamed:@"bk_media_picture_normal"]
          data:[UIImage imageNamed:StringFromCasualData(&m_cakeDigitalName)]
-                 //: title:[FFFLanguageManager getTextWithKey:@"message_send_album"]],//@"相册".
+                 //: title:[WorkLanguageManager getTextWithKey:@"message_send_album"]],//@"相册".
                  fit:[InputRed preserve:StringFromCasualData(&show_fashionedContent)]],//@"相册".
 
-    //: [FFFMediaItem item:@"onTapMediaItemShoot:"
+    //: [WorkMediaItem item:@"onTapMediaItemShoot:"
     [AccountAction showName:StringFromCasualData(&k_imposeGrossData)
            //: normalImage:[UIImage imageNamed:@"bk_media_shoot_normal"]
            with:[UIImage imageNamed:StringFromCasualData(&noti_slaveryData)]
          //: selectedImage:[UIImage imageNamed:@"bk_media_shoot_normal"]
          data:[UIImage imageNamed:StringFromCasualData(&noti_slaveryData)]
-                 //: title:[FFFLanguageManager getTextWithKey:@"message_send_camera"]],//@"拍摄".
+                 //: title:[WorkLanguageManager getTextWithKey:@"message_send_camera"]],//@"拍摄".
                  fit:[InputRed preserve:StringFromCasualData(&appHarmValue)]],//@"拍摄".
 
-    //: [FFFMediaItem item:@"onTapMediaItemLocation:"
+    //: [WorkMediaItem item:@"onTapMediaItemLocation:"
     [AccountAction showName:StringFromCasualData(&mainWorryText)
            //: normalImage:[UIImage imageNamed:@"bk_media_position_normal"]
            with:[UIImage imageNamed:StringFromCasualData(&notiOccupyPremiumValue)]
          //: selectedImage:[UIImage imageNamed:@"bk_media_position_normal"]
          data:[UIImage imageNamed:StringFromCasualData(&notiOccupyPremiumValue)]
-                 //: title:[FFFLanguageManager getTextWithKey:@"Audios"]],//@"位置".
+                 //: title:[WorkLanguageManager getTextWithKey:@"Audios"]],//@"位置".
                  fit:[InputRed preserve:StringFromCasualData(&m_undertakeName)]],//@"位置".
 
     //: ];
@@ -177,13 +177,13 @@ CasualData user_showerImpressValue = (CasualData){50, (Byte []){93, 92, 102, 83,
     //: if (message.messageType == NIMMessageTypeText)
     if (message.messageType == NIMMessageTypeText)
     {
-        //: [menuItems addObject:[FFFMediaItem item:@"onTapMenuItemCopy:"
+        //: [menuItems addObject:[WorkMediaItem item:@"onTapMenuItemCopy:"
         [menuItems addObject:[AccountAction showName:StringFromCasualData(&user_showerImpressValue)
                                     //: normalImage:[UIImage imageNamed:@"bk_media_picture_normal"]
                                     with:[UIImage imageNamed:StringFromCasualData(&m_cakeDigitalName)]
                                   //: selectedImage:[UIImage imageNamed:@"bk_media_picture_pressed"]
                                   data:[UIImage imageNamed:StringFromCasualData(&notiMilkName)]
-                                          //: title:[FFFLanguageManager getTextWithKey:@"复制"]]];
+                                          //: title:[WorkLanguageManager getTextWithKey:@"复制"]]];
                                           fit:[InputRed preserve:@"复制"]]];
     }
 
@@ -213,7 +213,7 @@ CasualData user_showerImpressValue = (CasualData){50, (Byte []){93, 92, 102, 83,
     _messageLimit = 20;
     //: _recordMaxDuration = 60.f;
     _recordMaxDuration = 60.f;
-    //: _placeholder = [FFFLanguageManager getTextWithKey:@"message_please_enter_content"];
+    //: _placeholder = [WorkLanguageManager getTextWithKey:@"message_please_enter_content"];
     _placeholder = [InputRed preserve:StringFromCasualData(&kSpecifyValue)];//@"请输入消息".;
     //: _inputMaxLength = 1000;
     _inputMaxLength = 1000;
@@ -229,16 +229,16 @@ CasualData user_showerImpressValue = (CasualData){50, (Byte []){93, 92, 102, 83,
     _avatarType = NIMKitAvatarTypeRounded;
     //: _cellBackgroundColor = [UIColor colorWithRed:((float)((0xE4E7EC & 0xFF0000) >> 16))/255.0 green:((float)((0xE4E7EC & 0x00FF00) >> 8))/255.0 blue:((float)(0xE4E7EC & 0x0000FF))/255.0 alpha:1.0];
     _cellBackgroundColor = [UIColor colorWithRed:((float)((0xE4E7EC & 0xFF0000) >> 16))/255.0 green:((float)((0xE4E7EC & 0x00FF00) >> 8))/255.0 blue:((float)(0xE4E7EC & 0x0000FF))/255.0 alpha:1.0];
-    //: _leftBubbleSettings = [[FFFKitSettings alloc] init:NO];
+    //: _leftBubbleSettings = [[WorkKitSettings alloc] init:NO];
     _leftBubbleSettings = [[CircleSettings alloc] initName:NO];
-    //: _rightBubbleSettings = [[FFFKitSettings alloc] init:YES];
+    //: _rightBubbleSettings = [[WorkKitSettings alloc] init:YES];
     _rightBubbleSettings = [[CircleSettings alloc] initName:YES];
 }
 
-//: - (FFFKitSetting *)setting:(NIMMessage *)message
+//: - (WorkKitSetting *)setting:(NIMMessage *)message
 - (ViewKey *)ofSetting:(NIMMessage *)message
 {
-    //: FFFKitSettings *settings = message.isOutgoingMsg? self.rightBubbleSettings : self.leftBubbleSettings;
+    //: WorkKitSettings *settings = message.isOutgoingMsg? self.rightBubbleSettings : self.leftBubbleSettings;
     CircleSettings *settings = message.isOutgoingMsg? self.rightBubbleSettings : self.leftBubbleSettings;
     //: switch (message.messageType) {
     switch (message.messageType) {
@@ -315,10 +315,10 @@ CasualData user_showerImpressValue = (CasualData){50, (Byte []){93, 92, 102, 83,
     return settings.unsupportSetting;
 }
 
-//: - (FFFKitSetting *)repliedSetting:(NIMMessage *)message
+//: - (WorkKitSetting *)repliedSetting:(NIMMessage *)message
 - (ViewKey *)ting:(NIMMessage *)message
 {
-    //: FFFKitSettings *settings = message.isOutgoingMsg? self.rightBubbleSettings : self.leftBubbleSettings;
+    //: WorkKitSettings *settings = message.isOutgoingMsg? self.rightBubbleSettings : self.leftBubbleSettings;
     CircleSettings *settings = message.isOutgoingMsg? self.rightBubbleSettings : self.leftBubbleSettings;
     //: return settings.repliedSetting;
     return settings.repliedSetting;
@@ -328,7 +328,7 @@ CasualData user_showerImpressValue = (CasualData){50, (Byte []){93, 92, 102, 83,
 @end
 
 
-//: @implementation FFFKitSettings
+//: @implementation WorkKitSettings
 @implementation CircleSettings
 
 //: - (instancetype)init:(BOOL)isRight
@@ -384,7 +384,7 @@ CasualData user_showerImpressValue = (CasualData){50, (Byte []){93, 92, 102, 83,
 //: - (void)applyDefaultRepliedSettings
 - (void)ting
 {
-    //: _repliedSetting = [[FFFKitSetting alloc] init];
+    //: _repliedSetting = [[WorkKitSetting alloc] init];
     _repliedSetting = [[ViewKey alloc] init];
     //: _repliedSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{8,12,8,12}") : UIEdgeInsetsFromString(@"{8,12,8,12}");
     _repliedSetting.contentInsets = _isRight? UIEdgeInsetsFromString(StringFromCasualData(&appAtByPresentTitle)) : UIEdgeInsetsFromString(StringFromCasualData(&appAtByPresentTitle));
@@ -399,7 +399,7 @@ CasualData user_showerImpressValue = (CasualData){50, (Byte []){93, 92, 102, 83,
 //: - (void)applyDefaultTextSettings
 - (void)with
 {
-    //: _textSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _textSetting = [[WorkKitSetting alloc] init:_isRight];
     _textSetting = [[ViewKey alloc] initRange:_isRight];
     //: _textSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{8,12,8,12}") : UIEdgeInsetsFromString(@"{8,12,8,12}");
     _textSetting.contentInsets = _isRight? UIEdgeInsetsFromString(StringFromCasualData(&appAtByPresentTitle)) : UIEdgeInsetsFromString(StringFromCasualData(&appAtByPresentTitle));
@@ -414,7 +414,7 @@ CasualData user_showerImpressValue = (CasualData){50, (Byte []){93, 92, 102, 83,
 //: - (void)applyDefaultAudioSettings
 - (void)name
 {
-    //: _audioSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _audioSetting = [[WorkKitSetting alloc] init:_isRight];
     _audioSetting = [[ViewKey alloc] initRange:_isRight];
     //: _audioSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{8,12,8,12}") : UIEdgeInsetsFromString(@"{8,12,8,12}");
     _audioSetting.contentInsets = _isRight? UIEdgeInsetsFromString(StringFromCasualData(&appAtByPresentTitle)) : UIEdgeInsetsFromString(StringFromCasualData(&appAtByPresentTitle));
@@ -429,7 +429,7 @@ CasualData user_showerImpressValue = (CasualData){50, (Byte []){93, 92, 102, 83,
 //: - (void)applyDefaultVideoSettings
 - (void)defaultTing
 {
-    //: _videoSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _videoSetting = [[WorkKitSetting alloc] init:_isRight];
     _videoSetting = [[ViewKey alloc] initRange:_isRight];
     //: _videoSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{3,3,3,8}") : UIEdgeInsetsFromString(@"{3,8,3,3}");
     _videoSetting.contentInsets = _isRight? UIEdgeInsetsFromString(StringFromCasualData(&userTroopValue)) : UIEdgeInsetsFromString(StringFromCasualData(&noti_submitAccelerateData));
@@ -442,7 +442,7 @@ CasualData user_showerImpressValue = (CasualData){50, (Byte []){93, 92, 102, 83,
 //: - (void)applyDefaultFileSettings
 - (void)shareBubbleSettings
 {
-    //: _fileSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _fileSetting = [[WorkKitSetting alloc] init:_isRight];
     _fileSetting = [[ViewKey alloc] initRange:_isRight];
     //: _fileSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{3,3,3,8}") : UIEdgeInsetsFromString(@"{3,8,3,3}");
     _fileSetting.contentInsets = _isRight? UIEdgeInsetsFromString(StringFromCasualData(&userTroopValue)) : UIEdgeInsetsFromString(StringFromCasualData(&noti_submitAccelerateData));
@@ -455,7 +455,7 @@ CasualData user_showerImpressValue = (CasualData){50, (Byte []){93, 92, 102, 83,
 //: - (void)applyDefaultImageSettings
 - (void)blue
 {
-    //: _imageSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _imageSetting = [[WorkKitSetting alloc] init:_isRight];
     _imageSetting = [[ViewKey alloc] initRange:_isRight];
     //: _imageSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{3,3,3,8}") : UIEdgeInsetsFromString(@"{3,8,3,3}");
     _imageSetting.contentInsets = _isRight? UIEdgeInsetsFromString(StringFromCasualData(&userTroopValue)) : UIEdgeInsetsFromString(StringFromCasualData(&noti_submitAccelerateData));
@@ -466,7 +466,7 @@ CasualData user_showerImpressValue = (CasualData){50, (Byte []){93, 92, 102, 83,
 //: - (void)applyDefaultLocationSettings
 - (void)lastReprocess
 {
-    //: _locationSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _locationSetting = [[WorkKitSetting alloc] init:_isRight];
     _locationSetting = [[ViewKey alloc] initRange:_isRight];
     //: _locationSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{3,3,3,8}") : UIEdgeInsetsFromString(@"{3,8,3,3}");
     _locationSetting.contentInsets = _isRight? UIEdgeInsetsFromString(StringFromCasualData(&userTroopValue)) : UIEdgeInsetsFromString(StringFromCasualData(&noti_submitAccelerateData));
@@ -481,7 +481,7 @@ CasualData user_showerImpressValue = (CasualData){50, (Byte []){93, 92, 102, 83,
 //: - (void)applyDefaultTipSettings
 - (void)object
 {
-    //: _tipSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _tipSetting = [[WorkKitSetting alloc] init:_isRight];
     _tipSetting = [[ViewKey alloc] initRange:_isRight];
     //: _tipSetting.contentInsets = UIEdgeInsetsZero;
     _tipSetting.contentInsets = UIEdgeInsetsZero;
@@ -502,7 +502,7 @@ CasualData user_showerImpressValue = (CasualData){50, (Byte []){93, 92, 102, 83,
 //: - (void)applyDefaultRtcCallRecordSettings
 - (void)shouldMin
 {
-    //: _rtcCallRecordSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _rtcCallRecordSetting = [[WorkKitSetting alloc] init:_isRight];
     _rtcCallRecordSetting = [[ViewKey alloc] initRange:_isRight];
     //: _rtcCallRecordSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{9,11,9,15}") : UIEdgeInsetsFromString(@"{9,15,9,9}");
     _rtcCallRecordSetting.contentInsets = _isRight? UIEdgeInsetsFromString(StringFromCasualData(&m_educatorData)) : UIEdgeInsetsFromString(StringFromCasualData(&showVehicleName));
@@ -518,7 +518,7 @@ CasualData user_showerImpressValue = (CasualData){50, (Byte []){93, 92, 102, 83,
 //: - (void)applyDefaultUnsupportSettings
 - (void)hide
 {
-    //: _unsupportSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _unsupportSetting = [[WorkKitSetting alloc] init:_isRight];
     _unsupportSetting = [[ViewKey alloc] initRange:_isRight];
     //: _unsupportSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{10,10,10,10}") : UIEdgeInsetsFromString(@"{10,10,10,10}");
     _unsupportSetting.contentInsets = _isRight? UIEdgeInsetsFromString(StringFromCasualData(&m_willingnessName)) : UIEdgeInsetsFromString(StringFromCasualData(&m_willingnessName));
@@ -534,7 +534,7 @@ CasualData user_showerImpressValue = (CasualData){50, (Byte []){93, 92, 102, 83,
 //: - (void)applyDefaultTeamNotificationSettings
 - (void)notification
 {
-    //: _teamNotificationSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _teamNotificationSetting = [[WorkKitSetting alloc] init:_isRight];
     _teamNotificationSetting = [[ViewKey alloc] initRange:_isRight];
     //: _teamNotificationSetting.contentInsets = UIEdgeInsetsZero;
     _teamNotificationSetting.contentInsets = UIEdgeInsetsZero;
@@ -555,7 +555,7 @@ CasualData user_showerImpressValue = (CasualData){50, (Byte []){93, 92, 102, 83,
 //: - (void)applyDefaultSuperTeamNotificationSettings
 - (void)tingSettings
 {
-    //: _superTeamNotificationSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _superTeamNotificationSetting = [[WorkKitSetting alloc] init:_isRight];
     _superTeamNotificationSetting = [[ViewKey alloc] initRange:_isRight];
     //: _superTeamNotificationSetting.contentInsets = UIEdgeInsetsZero;
     _superTeamNotificationSetting.contentInsets = UIEdgeInsetsZero;
@@ -576,7 +576,7 @@ CasualData user_showerImpressValue = (CasualData){50, (Byte []){93, 92, 102, 83,
 //: - (void)applyDefaultChatroomNotificationSettings
 - (void)validOf
 {
-    //: _chatroomNotificationSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _chatroomNotificationSetting = [[WorkKitSetting alloc] init:_isRight];
     _chatroomNotificationSetting = [[ViewKey alloc] initRange:_isRight];
     //: _chatroomNotificationSetting.contentInsets = UIEdgeInsetsZero;
     _chatroomNotificationSetting.contentInsets = UIEdgeInsetsZero;
@@ -597,7 +597,7 @@ CasualData user_showerImpressValue = (CasualData){50, (Byte []){93, 92, 102, 83,
 //: - (void)applyDefaultNetcallNotificationSettings
 - (void)mobile
 {
-    //: _netcallNotificationSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _netcallNotificationSetting = [[WorkKitSetting alloc] init:_isRight];
     _netcallNotificationSetting = [[ViewKey alloc] initRange:_isRight];
     //: _netcallNotificationSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{11,11,9,15}") : UIEdgeInsetsFromString(@"{11,15,9,9}");
     _netcallNotificationSetting.contentInsets = _isRight? UIEdgeInsetsFromString(StringFromCasualData(&appDrinkingContent)) : UIEdgeInsetsFromString(StringFromCasualData(&dreamNapData));

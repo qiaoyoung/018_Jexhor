@@ -443,7 +443,7 @@ typedef struct {
     return m_videoData;
 }
 
-//: #ffffff
+//: #fffWork
 + (NSString *)mLimitValue {
     /* static */ NSString *mLimitValue = nil;
     if (!mLimitValue) {
@@ -556,7 +556,7 @@ typedef struct {
 #import "ShowViewController.h"
 //: #import "CCCContactScanViewController.h"
 #import "LabViewController.h"
-//: #import "FFFContactSelectViewController.h"
+//: #import "WorkContactSelectViewController.h"
 #import "CompartmentViewController.h"
 //: #import "NTESSystemSignNotificationSheet.h"
 #import "OrientationView.h"
@@ -564,11 +564,11 @@ typedef struct {
 #import "ZCHttpInterfacedConst.h"
 //: #import <YYText.h>
 #import <YYText.h>
-//: #import "FFFTextHighlight.h"
+//: #import "WorkTextHighlight.h"
 #import "ImageTextHighlight.h"
-//: #import "FFFInputEmoticonParser.h"
+//: #import "WorkInputEmoticonParser.h"
 #import "SignParser.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "WorkInputEmoticonManager.h"
 #import "RedManager.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
@@ -576,7 +576,7 @@ typedef struct {
 #import "NSString+MessageContent.h"
 //: #import <objc/runtime.h>
 #import <objc/runtime.h>
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WorkKitInfoFetchOption.h"
 #import "RangeOption.h"
 //: #import "NTESSystemNotificationViewController.h"
 #import "WashedViewController.h"
@@ -588,7 +588,7 @@ typedef struct {
 #import "ThreadViewController.h"
 //: #import "NTESMainTabController.h"
 #import "ManagerBarController.h"
-//: #import "FFFKitFileLocationHelper.h"
+//: #import "WorkKitFileLocationHelper.h"
 #import "ImageHelper.h"
 //: #import "ZMONPrivacyPolicyView.h"
 #import "PolicyView.h"
@@ -708,7 +708,7 @@ typedef struct {
 
     //: UIView *contentView = [[UIView alloc]initWithFrame:CGRectMake(0, [UIDevice vg_statusBarHeight]+190, [[UIScreen mainScreen] bounds].size.width, ([[UIScreen mainScreen] bounds].size.height - (44.0f + [UIDevice vg_statusBarHeight]) - (({UIEdgeInsets i; if(@available(iOS 11.0, *)) {i = [[[UIApplication sharedApplication] delegate] window].safeAreaInsets;} else {i = UIEdgeInsetsZero;} i;}).bottom))-190)];
     UIView *contentView = [[UIView alloc]initWithFrame:CGRectMake(0, [UIDevice heightShowStop]+190, [[UIScreen mainScreen] bounds].size.width, ([[UIScreen mainScreen] bounds].size.height - (44.0f + [UIDevice heightShowStop]) - (({UIEdgeInsets i; if(@available(iOS 11.0, *)) {i = [[[UIApplication sharedApplication] delegate] window].safeAreaInsets;} else {i = UIEdgeInsetsZero;} i;}).bottom))-190)];
-    //: contentView.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+    //: contentView.backgroundColor = [UIColor colorWithHexString:@"#fffWork"];
     contentView.backgroundColor = [UIColor ground:[HandleValueData mLimitValue]];
     //: contentView.layer.cornerRadius = 34;
     contentView.layer.cornerRadius = 34;
@@ -759,7 +759,7 @@ typedef struct {
     self.emptyTipLabel = [[UILabel alloc] init];
     //: self.emptyTipLabel.hidden = YES;
     self.emptyTipLabel.hidden = YES;
-    //: self.emptyTipLabel.text = [FFFLanguageManager getTextWithKey:@"no_conversation"];
+    //: self.emptyTipLabel.text = [WorkLanguageManager getTextWithKey:@"no_conversation"];
     self.emptyTipLabel.text = [InputRed preserve:[HandleValueData userDisableTitle]];//@"还没有会话，在通讯录中找个人聊聊吧".ntes_localized;
     //: self.emptyTipLabel.numberOfLines = 0;
     self.emptyTipLabel.numberOfLines = 0;
@@ -906,7 +906,7 @@ typedef struct {
     labtitle.textColor = [UIColor whiteColor];
     //: labtitle.font = [UIFont boldSystemFontOfSize:18];
     labtitle.font = [UIFont boldSystemFontOfSize:18];
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"activity_user_profile_chat"];
+    //: labtitle.text = [WorkLanguageManager getTextWithKey:@"activity_user_profile_chat"];
     labtitle.text = [InputRed preserve:[HandleValueData mEndCommentOffTitle]];
     //: [topview addSubview:labtitle];
     [topview addSubview:labtitle];
@@ -961,7 +961,7 @@ typedef struct {
 //    label12.textAlignment = NSTextAlignmentCenter;
     //: label12.textColor = [UIColor whiteColor];
     label12.textColor = [UIColor whiteColor];
-    //: label12.text = [FFFLanguageManager getTextWithKey:@"add_friend_activity_add_friend"];
+    //: label12.text = [WorkLanguageManager getTextWithKey:@"add_friend_activity_add_friend"];
     label12.text = [InputRed preserve:[HandleValueData noti_buttonName]];
     //: label12.numberOfLines = 0;
     label12.numberOfLines = 0;
@@ -994,7 +994,7 @@ typedef struct {
 //    label2.textAlignment = NSTextAlignmentCenter;
     //: label2.textColor = [UIColor whiteColor];
     label2.textColor = [UIColor whiteColor];
-    //: label2.text = [FFFLanguageManager getTextWithKey:@"activity_create_group_name_create_group"];
+    //: label2.text = [WorkLanguageManager getTextWithKey:@"activity_create_group_name_create_group"];
     label2.text = [InputRed preserve:[HandleValueData userReadNeedName]];
     //: [box2 addSubview:label2];
     [box2 addSubview:label2];
@@ -1030,7 +1030,7 @@ typedef struct {
 //    label2.textAlignment = NSTextAlignmentCenter;
     //: label3.textColor = [UIColor whiteColor];
     label3.textColor = [UIColor whiteColor];
-    //: label3.text = [FFFLanguageManager getTextWithKey:@"notification"];
+    //: label3.text = [WorkLanguageManager getTextWithKey:@"notification"];
     label3.text = [InputRed preserve:[HandleValueData noti_needData]];
     //: [box4 addSubview:label3];
     [box4 addSubview:label3];
@@ -1224,7 +1224,7 @@ typedef struct {
 //: - (void)onDisnodistrubRecentAtIndexPath:(NIMRecentSession *)recent isDis:(BOOL)isDis
 - (void)beyondView:(NIMRecentSession *)recent want:(BOOL)isDis
 {
-    //: FFFKitInfo *info = nil;
+    //: WorkKitInfo *info = nil;
     ConfirmationInfo *info = nil;
     //: if (recent.session.sessionType == NIMSessionTypeTeam) {
     if (recent.session.sessionType == NIMSessionTypeTeam) {
@@ -1243,7 +1243,7 @@ typedef struct {
         }];
     //: } else if (recent.session.sessionType == NIMSessionTypeP2P) {
     } else if (recent.session.sessionType == NIMSessionTypeP2P) {
-        //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+        //: WorkKitInfoFetchOption *option = [[WorkKitInfoFetchOption alloc] init];
         RangeOption *option = [[RangeOption alloc] init];
         //: option.session = recent.session;
         option.session = recent.session;
@@ -1288,7 +1288,7 @@ typedef struct {
 - (NSString *)tin:(NIMRecentSession *)recent{
     //: if ([recent.session.sessionId isEqualToString:[[NIMSDK sharedSDK].loginManager currentAccount]]) {
     if ([recent.session.sessionId isEqualToString:[[NIMSDK sharedSDK].loginManager currentAccount]]) {
-        //: return [FFFLanguageManager getTextWithKey:@"my_computer"];
+        //: return [WorkLanguageManager getTextWithKey:@"my_computer"];
         return [InputRed preserve:[HandleValueData app_mustName]];
     }
     //: return [super nameForRecentSession:recent];
@@ -1499,7 +1499,7 @@ typedef struct {
 
     //: BOOL isDisnodistrub = NO;
     BOOL isDisnodistrub = NO;
-    //: FFFKitInfo *info = nil;
+    //: WorkKitInfo *info = nil;
     ConfirmationInfo *info = nil;
     //: if (recentSession.session.sessionType == NIMSessionTypeTeam) {
     if (recentSession.session.sessionType == NIMSessionTypeTeam) {
@@ -1512,7 +1512,7 @@ typedef struct {
 
     //: } else if (recentSession.session.sessionType == NIMSessionTypeP2P) {
     } else if (recentSession.session.sessionType == NIMSessionTypeP2P) {
-        //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+        //: WorkKitInfoFetchOption *option = [[WorkKitInfoFetchOption alloc] init];
         RangeOption *option = [[RangeOption alloc] init];
         //: option.session = recentSession.session;
         option.session = recentSession.session;
@@ -1755,7 +1755,7 @@ typedef struct {
     {
         //: NIMMessage *msg = recent.lastMessage;
         NIMMessage *msg = recent.lastMessage;
-        //: if ([recent.lastMessage.text containsString:[FFFLanguageManager getTextWithKey:@"retracted_message"]]) {
+        //: if ([recent.lastMessage.text containsString:[WorkLanguageManager getTextWithKey:@"retracted_message"]]) {
         if ([recent.lastMessage.text containsString:[InputRed preserve:[HandleValueData show_scaleName]]]) {
             //: msg = [self lastMessageWithNoRevocationMessage:recent.lastMessage];
             msg = [self imageContent:recent.lastMessage];
@@ -1861,7 +1861,7 @@ typedef struct {
             //: NSString *emoString = [attrM.string substringWithRange:range];
             NSString *emoString = [attrM.string substringWithRange:range];
 
-            //: NIMInputEmoticon *emoticon = [[FFFInputEmoticonManager sharedManager] emoticonByTag:emoString];
+            //: NIMInputEmoticon *emoticon = [[WorkInputEmoticonManager sharedManager] emoticonByTag:emoString];
             FrontwardsCount *emoticon = [[RedManager session] success:emoString];
 
             //: UIImage *image = [UIImage nim_emoticonInKit:emoticon.filename];
@@ -1893,10 +1893,10 @@ typedef struct {
                 [emoText yy_setAttribute:NSKernAttributeName value:@(-1)];
             }
 
-            //: FFFTextHighlight *highlight = [[FFFTextHighlight alloc] init];
+            //: WorkTextHighlight *highlight = [[WorkTextHighlight alloc] init];
             ImageTextHighlight *highlight = [[ImageTextHighlight alloc] init];
-            //: highlight.type = FFFTextHighlightTypeEmoji;
-            highlight.type = FFFTextHighlightTypeEmoji;
+            //: highlight.type = WorkTextHighlightTypeEmoji;
+            highlight.type = WorkTextHighlightTypeEmoji;
             //: highlight.text = emoString;
             highlight.text = emoString;
             //: [emoText yy_setTextHighlight:highlight range:NSMakeRange(0, emoText.length)];
@@ -2011,7 +2011,7 @@ typedef struct {
     //: config.showSelectHeaderview = YES;
     config.showSelectHeaderview = YES;
     //初始化联系人选择器
-    //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+    //: WorkContactSelectViewController *vc = [[WorkContactSelectViewController alloc] initWithConfig:config];
     CompartmentViewController *vc = [[CompartmentViewController alloc] initWithStateAtPull:config];
     //回调处理
     //: vc.finshBlock = block;
@@ -2041,7 +2041,7 @@ typedef struct {
     //: config.showSelectHeaderview = NO;
     config.showSelectHeaderview = NO;
     //初始化联系人选择器
-    //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+    //: WorkContactSelectViewController *vc = [[WorkContactSelectViewController alloc] initWithConfig:config];
     CompartmentViewController *vc = [[CompartmentViewController alloc] initWithStateAtPull:config];
     //回调处理
     //: vc.finshBlock = block;
@@ -2130,7 +2130,7 @@ typedef struct {
 //: - (NSArray *)getMenuModelsArray {
 - (NSArray *)frameShow {
     //菜单模型0
-    //: NSString *add_friend = [FFFLanguageManager getTextWithKey:@"add_friend_activity_add_friend"];
+    //: NSString *add_friend = [WorkLanguageManager getTextWithKey:@"add_friend_activity_add_friend"];
     NSString *add_friend = [InputRed preserve:[HandleValueData noti_buttonName]];
     //: FFDropDownMenuModel *menuModel0 = [FFDropDownMenuModel ff_DropDownMenuModelWithMenuItemTitle:add_friend menuItemIconName:@"ic_add_fiend" menuBlock:^{
     FFDropDownMenuModel *menuModel0 = [FFDropDownMenuModel ff_DropDownMenuModelWithMenuItemTitle:add_friend menuItemIconName:[HandleValueData dream_removeSuccessWithTitle] menuBlock:^{
@@ -2141,7 +2141,7 @@ typedef struct {
     //: }];
     }];
 
-    //: NSString *activity = [FFFLanguageManager getTextWithKey:@"activity_create_group_name_create_group"];
+    //: NSString *activity = [WorkLanguageManager getTextWithKey:@"activity_create_group_name_create_group"];
     NSString *activity = [InputRed preserve:[HandleValueData userReadNeedName]];
 
     //菜单模型1
@@ -2149,7 +2149,7 @@ typedef struct {
     FFDropDownMenuModel *menuModel1 = [FFDropDownMenuModel ff_DropDownMenuModelWithMenuItemTitle:activity menuItemIconName:[HandleValueData show_viewParentTableData] menuBlock:^{
         //: if (_creatTeam.integerValue != 0) {
         if (_creatTeam.integerValue != 0) {
-            //: [SVProgressHUD showMessage:[FFFLanguageManager getTextWithKey:@"please_contact_your_administrator"]];
+            //: [SVProgressHUD showMessage:[WorkLanguageManager getTextWithKey:@"please_contact_your_administrator"]];
             [SVProgressHUD text:[InputRed preserve:[HandleValueData noti_messageData]]];
         //: }else{
         }else{
@@ -2164,7 +2164,7 @@ typedef struct {
      //: autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
      autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
                   ;
-    //: FFDropDownMenuModel *menuModel3 = [FFDropDownMenuModel ff_DropDownMenuModelWithMenuItemTitle:[FFFLanguageManager getTextWithKey:@"fragment_contact_new_scan"] menuItemIconName:@"ic_scan" menuBlock:^{
+    //: FFDropDownMenuModel *menuModel3 = [FFDropDownMenuModel ff_DropDownMenuModelWithMenuItemTitle:[WorkLanguageManager getTextWithKey:@"fragment_contact_new_scan"] menuItemIconName:@"ic_scan" menuBlock:^{
     FFDropDownMenuModel *menuModel3 = [FFDropDownMenuModel ff_DropDownMenuModelWithMenuItemTitle:[InputRed preserve:[HandleValueData k_accountData]] menuItemIconName:[HandleValueData dreamPressMaxText] menuBlock:^{
         @
          //: try{} @finally{} __typeof__(self) self = __weak_self__;
@@ -2236,13 +2236,13 @@ typedef struct {
 //        if( [[UIApplication sharedApplication] canOpenURL:url]) {
 //            [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
 //        }
-        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
+        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[WorkLanguageManager getTextWithKey:@"warm_prompt"] message:[WorkLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
         UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[InputRed preserve:[HandleValueData m_videoData]] message:[InputRed preserve:[HandleValueData userSessionData]] preferredStyle:UIAlertControllerStyleAlert];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[InputRed preserve:[HandleValueData notiPressTitle]] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         //: }])];
         }])];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[WorkLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[InputRed preserve:[HandleValueData show_viewName]] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
             NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
@@ -2297,7 +2297,7 @@ typedef struct {
             option.type = NIMTeamTypeAdvanced;
             //: option.joinMode = NIMTeamJoinModeNoAuth;
             option.joinMode = NIMTeamJoinModeNoAuth;
-            //: option.postscript = [FFFLanguageManager getTextWithKey:@"invite_you_group"];
+            //: option.postscript = [WorkLanguageManager getTextWithKey:@"invite_you_group"];
             option.postscript = [InputRed preserve:[HandleValueData show_sessionTitle]];
 //            [SVProgressHUD show];
 
@@ -2321,7 +2321,7 @@ typedef struct {
                     [self offRecording:option.name mark:teamId];
                 //: }else{
                 }else{
-                    //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
+                    //: [self.view makeToast:[WorkLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
                     [self.view makeToast:[InputRed preserve:[HandleValueData k_completeColorData]] duration:2.0 position:CSToastPositionCenter];
                 }
             //: }];
@@ -2351,9 +2351,9 @@ typedef struct {
 
     //: UIImage *imageForAvatarUpload = [image imageByScalingAndCroppingForSize:CGSizeMake(375, 375)];
     UIImage *imageForAvatarUpload = [image byName:CGSizeMake(375, 375)];
-    //: NSString *fileName = [FFFKitFileLocationHelper genFilenameWithExt:@"jpg"];
+    //: NSString *fileName = [WorkKitFileLocationHelper genFilenameWithExt:@"jpg"];
     NSString *fileName = [ImageHelper key:[HandleValueData mainTableSizeData]];
-    //: NSString *filePath = [[FFFKitFileLocationHelper getAppDocumentPath] stringByAppendingPathComponent:fileName];
+    //: NSString *filePath = [[WorkKitFileLocationHelper getAppDocumentPath] stringByAppendingPathComponent:fileName];
     NSString *filePath = [[ImageHelper alongPath] stringByAppendingPathComponent:fileName];
     //: NSData *data = UIImageJPEGRepresentation(imageForAvatarUpload, 0.3);
     NSData *data = UIImageJPEGRepresentation(imageForAvatarUpload, 0.3);
@@ -2374,7 +2374,7 @@ typedef struct {
 
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
+                //: [wself.view makeToast:[WorkLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
                 [wself.view makeToast:[InputRed preserve:[HandleValueData notiShouldData]]
                              //: duration:2
                              duration:2
@@ -2388,7 +2388,7 @@ typedef struct {
         }];
     //: }else{
     }else{
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
+        //: [self.view makeToast:[WorkLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
         [self.view makeToast:[InputRed preserve:[HandleValueData notiShouldData]]
                     //: duration:2
                     duration:2
@@ -2480,7 +2480,7 @@ typedef struct {
             option.type = NIMTeamTypeAdvanced;
             //: option.joinMode = NIMTeamJoinModeNoAuth;
             option.joinMode = NIMTeamJoinModeNoAuth;
-            //: option.postscript = [FFFLanguageManager getTextWithKey:@"invite_you_group"];
+            //: option.postscript = [WorkLanguageManager getTextWithKey:@"invite_you_group"];
             option.postscript = [InputRed preserve:[HandleValueData show_sessionTitle]];
 //            [SVProgressHUD show];
 
@@ -2504,7 +2504,7 @@ typedef struct {
                     [self offRecording:option.name mark:teamId];
                 //: }else{
                 }else{
-                    //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
+                    //: [self.view makeToast:[WorkLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
                     [self.view makeToast:[InputRed preserve:[HandleValueData k_completeColorData]] duration:2.0 position:CSToastPositionCenter];
                 }
             //: }];
@@ -2590,7 +2590,7 @@ typedef struct {
         _QuickChatBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_QuickChatBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_QuickChatBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_QuickChatBtn setTitle:[FFFLanguageManager getTextWithKey:@"quickchat"] forState:UIControlStateNormal];
+        //: [_QuickChatBtn setTitle:[WorkLanguageManager getTextWithKey:@"quickchat"] forState:UIControlStateNormal];
         [_QuickChatBtn setTitle:[InputRed preserve:[HandleValueData appThreadValue]] forState:UIControlStateNormal];
         //: [_QuickChatBtn layoutButtonWithEdgeInsetsStyle:(MKButtonEdgeInsetsStyleLeft) imageTitleSpace:10];
         [_QuickChatBtn cookie:(MKButtonEdgeInsetsStyleLeft) disable:10];

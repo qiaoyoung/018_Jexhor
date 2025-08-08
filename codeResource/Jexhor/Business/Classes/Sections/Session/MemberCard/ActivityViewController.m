@@ -87,7 +87,7 @@
     return dreamLimitValue;
 }
 
-//: #FFF6CF
+//: #Work6CF
 - (NSString *)userHandleData {
     /* static */ NSString *userHandleData = nil;
     if (!userHandleData) {
@@ -160,17 +160,17 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamMuteMemberListViewController.h"
+//: #import "WorkTeamMuteMemberListViewController.h"
 #import "ActivityViewController.h"
-//: #import "FFFTeamMemberCardViewController.h"
+//: #import "WorkTeamMemberCardViewController.h"
 #import "SodalistViewController.h"
-//: #import "FFFCardHeaderCell.h"
+//: #import "WorkCardHeaderCell.h"
 #import "NameReusableView.h"
-//: #import "FFFTeamCardMemberItem.h"
+//: #import "WorkTeamCardMemberItem.h"
 #import "MessageItem.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
-//: #import "FFFKitProgressHUD.h"
+//: #import "WorkKitDependency.h"
+#import "WorkKitDependency.h"
+//: #import "WorkKitProgressHUD.h"
 #import "KitEffectView.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+MessageContent.h"
@@ -181,7 +181,7 @@
 //: #import "NTESBlackListTableViewCell.h"
 #import "FileView.h"
 
-//: @interface FFFTeamMuteMemberListViewController ()<UITableViewDataSource,UITableViewDelegate,NTESUserListCellDelegate>
+//: @interface WorkTeamMuteMemberListViewController ()<UITableViewDataSource,UITableViewDelegate,NTESUserListCellDelegate>
 @interface ActivityViewController ()<UITableViewDataSource,UITableViewDelegate,TextFactor>
 
 //: @property (nonatomic,strong) UITableView *tableView;
@@ -197,7 +197,7 @@
 //: @end
 @end
 
-//: @implementation FFFTeamMuteMemberListViewController
+//: @implementation WorkTeamMuteMemberListViewController
 @implementation ActivityViewController
 
 
@@ -262,7 +262,7 @@
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"black_list_activity_black"];
+    //: labtitle.text = [WorkLanguageManager getTextWithKey:@"black_list_activity_black"];
     labtitle.text = [InputRed preserve:[[ModeData sharedInstance] m_givingData]];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -409,7 +409,7 @@
     //: NIMTeamMember *member = self.memberList[indexPath.section];
     NIMTeamMember *member = self.memberList[indexPath.section];
 
-    //: FFFTeamMemberCardViewController *vc = [[FFFTeamMemberCardViewController alloc] init];
+    //: WorkTeamMemberCardViewController *vc = [[WorkTeamMemberCardViewController alloc] init];
     SodalistViewController *vc = [[SodalistViewController alloc] init];
     //: vc.teamListManager = self.teamListManager;
     vc.teamListManager = self.teamListManager;
@@ -437,7 +437,7 @@
 
         //: if(!error) {
         if(!error) {
-            //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"group_chat_avatar_activity_remove_black_success"]
+            //: [self.view makeToast:[WorkLanguageManager getTextWithKey:@"group_chat_avatar_activity_remove_black_success"]
             [self.view makeToast:[InputRed preserve:[[ModeData sharedInstance] showQuickName]]
                          //: duration:2
                          duration:2
@@ -484,7 +484,7 @@
     if(!_box){
         //: _box = [[UIView alloc]initWithFrame:CGRectMake(0, (44.0f + [UIDevice vg_statusBarHeight]), [[UIScreen mainScreen] bounds].size.width, 26)];
         _box = [[UIView alloc]initWithFrame:CGRectMake(0, (44.0f + [UIDevice heightShowStop]), [[UIScreen mainScreen] bounds].size.width, 26)];
-        //: _box.backgroundColor = [UIColor colorWithHexString:@"#FFF6CF"];
+        //: _box.backgroundColor = [UIColor colorWithHexString:@"#Work6CF"];
         _box.backgroundColor = [UIColor ground:[[ModeData sharedInstance] userHandleData]];
 
         //: UIImageView *defImg = [[UIImageView alloc]initWithFrame:CGRectMake(15, 6, 14, 14)];
@@ -501,7 +501,7 @@
         //: subtitleLabel.textColor = [UIColor colorWithHexString:@"#FF483D"];
         subtitleLabel.textColor = [UIColor ground:[[ModeData sharedInstance] k_imageName]];
 //        subtitleLabel.textAlignment = NSTextAlignmentLeft;
-        //: subtitleLabel.text = [FFFLanguageManager getTextWithKey:@"black_list_activity_black_list_tip"];
+        //: subtitleLabel.text = [WorkLanguageManager getTextWithKey:@"black_list_activity_black_list_tip"];
         subtitleLabel.text = [InputRed preserve:[[ModeData sharedInstance] dreamLimitValue]];
         //: [_box addSubview:subtitleLabel];
         [_box addSubview:subtitleLabel];
@@ -536,7 +536,7 @@
         emptyTipLabel.textAlignment = NSTextAlignmentCenter;
         //: [_defView addSubview:emptyTipLabel];
         [_defView addSubview:emptyTipLabel];
-        //: emptyTipLabel.text = [FFFLanguageManager getTextWithKey:@"group_info_activity_without"];
+        //: emptyTipLabel.text = [WorkLanguageManager getTextWithKey:@"group_info_activity_without"];
         emptyTipLabel.text = [InputRed preserve:[[ModeData sharedInstance] appVideoValue]];
 
 

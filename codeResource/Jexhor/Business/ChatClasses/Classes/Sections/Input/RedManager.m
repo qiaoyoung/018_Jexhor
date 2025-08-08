@@ -145,10 +145,10 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputEmoticonManager.h"
+//: #import "WorkInputEmoticonManager.h"
 #import "RedManager.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
+//: #import "WorkInputEmoticonDefine.h"
+#import "WorkInputEmoticonDefine.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+MessageContent.h"
 //: #import "MyUserKit.h"
@@ -251,26 +251,26 @@ typedef struct {
 //: @end
 @end
 
-//: @interface FFFInputEmoticonManager ()
+//: @interface WorkInputEmoticonManager ()
 @interface RedManager ()
 //: @property (nonatomic,strong) NSArray *catalogs;
 @property (nonatomic,strong) NSArray *catalogs;
 //: @end
 @end
 
-//: @implementation FFFInputEmoticonManager
+//: @implementation WorkInputEmoticonManager
 @implementation RedManager
 
 //: + (instancetype)sharedManager
 + (instancetype)session
 {
-    //: static FFFInputEmoticonManager *instance = nil;
+    //: static WorkInputEmoticonManager *instance = nil;
     static RedManager *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFInputEmoticonManager alloc]init];
+        //: instance = [[WorkInputEmoticonManager alloc]init];
         instance = [[RedManager alloc]init];
     //: });
     });

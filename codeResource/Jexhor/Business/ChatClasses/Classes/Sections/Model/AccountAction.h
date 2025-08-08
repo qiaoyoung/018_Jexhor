@@ -12,7 +12,7 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @interface FFFMediaItem : NSObject
+//: @interface WorkMediaItem : NSObject
 @interface AccountAction : NSObject
 
 //: @property (nonatomic,assign) SEL selctor;
@@ -27,7 +27,7 @@
 //: @property (nonatomic,copy) NSString *title;
 @property (nonatomic,copy) NSString *title;
 
-//: + (FFFMediaItem *)item:(NSString *)selector
+//: + (WorkMediaItem *)item:(NSString *)selector
 + (AccountAction *)showName:(NSString *)selector
            //: normalImage:(UIImage *)normalImage
            with:(UIImage *)normalImage

@@ -9,28 +9,28 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionImageContentView.h"
+//: #import "WorkSessionImageContentView.h"
 #import "ComponentContentView.h"
-//: #import "FFFMessageModel.h"
+//: #import "WorkMessageModel.h"
 #import "ShowModel.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFLoadProgressView.h"
+//: #import "WorkLoadProgressView.h"
 #import "ButtonLoadView.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "WorkKitDependency.h"
+#import "WorkKitDependency.h"
 //: #import <YYImage/YYImage.h>
 #import <YYImage/YYImage.h>
 //: #import "UCZProgressView.h"
 #import "UCZProgressView.h"
 
-//: @interface FFFSessionImageContentView()
+//: @interface WorkSessionImageContentView()
 @interface ComponentContentView()
 
 //: @property (nonatomic,strong,readwrite) YYAnimatedImageView * imageView;
 @property (nonatomic,strong,readwrite) YYAnimatedImageView * imageView;
 
-//: @property (nonatomic,strong) FFFLoadProgressView * progressView;
+//: @property (nonatomic,strong) WorkLoadProgressView * progressView;
 @property (nonatomic,strong) ButtonLoadView * progressView;
 
 //@property (nonatomic, strong) UCZProgressView *progressView;
@@ -38,7 +38,7 @@
 //: @end
 @end
 
-//: @implementation FFFSessionImageContentView
+//: @implementation WorkSessionImageContentView
 @implementation ComponentContentView
 
 //: - (instancetype)initSessionMessageContentView{
@@ -64,7 +64,7 @@
 ////        self.progressView.tintColor = [KEKESkinColorManager shareInstance].skinColor;
 //        [self addSubview:self.progressView];
 
-        //: _progressView = [[FFFLoadProgressView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
+        //: _progressView = [[WorkLoadProgressView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
         _progressView = [[ButtonLoadView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
         //: _progressView.maxProgress = 1.0f;
         _progressView.maxProgress = 1.0f;
@@ -75,7 +75,7 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data
+//: - (void)refresh:(WorkMessageModel *)data
 - (void)panorama:(ShowModel *)data
 {
     //: [super refresh:data];
@@ -92,7 +92,7 @@
         //: [imageObject setUploadURL:url];
         [imageObject setUploadURL:url];
 
-        //: NSMutableDictionary *dic = [[FFFConfig sharedConfig] Gdic];
+        //: NSMutableDictionary *dic = [[WorkConfig sharedConfig] Gdic];
         NSMutableDictionary *dic = [[AccountWith max] Gdic];
         //: NSData *data = [dic objectForKey:self.model.message.messageId];
         NSData *data = [dic objectForKey:self.model.message.messageId];
@@ -195,9 +195,9 @@
 //: - (void)onTouchUpInside:(id)sender
 - (void)recorded:(id)sender
 {
-    //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+    //: WorkKitEvent *event = [[WorkKitEvent alloc] init];
     WrittenAccountLab *event = [[WrittenAccountLab alloc] init];
-    //: event.eventName = FFFKitEventNameTapContent;
+    //: event.eventName = WorkKitEventNameTapContent;
     event.eventName = userTopData;
     //: event.messageModel = self.model;
     event.messageModel = self.model;

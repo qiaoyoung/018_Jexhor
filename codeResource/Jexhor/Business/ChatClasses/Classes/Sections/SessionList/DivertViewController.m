@@ -39,29 +39,29 @@ Byte appRemoveValue[] = {56, 7, 48, 11, 194, 225, 157, 148, 193, 51, 218, 83, 11
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionListViewController.h"
+//: #import "WorkSessionListViewController.h"
 #import "DivertViewController.h"
-//: #import "FFFSessionViewController.h"
+//: #import "WorkSessionViewController.h"
 #import "AccountViewController.h"
-//: #import "FFFSessionListCell.h"
+//: #import "WorkSessionListCell.h"
 #import "BarView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WorkAvatarImageView.h"
 #import "ButtonControl.h"
-//: #import "FFFMessageUtil.h"
+//: #import "WorkMessageUtil.h"
 #import "WithUtil.h"
-//: #import "FFFKitUtil.h"
+//: #import "WorkKitUtil.h"
 #import "WantUtil.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
 //: #import <YYText.h>
 #import <YYText.h>
-//: #import "FFFTextHighlight.h"
+//: #import "WorkTextHighlight.h"
 #import "ImageTextHighlight.h"
-//: #import "FFFInputEmoticonParser.h"
+//: #import "WorkInputEmoticonParser.h"
 #import "SignParser.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "WorkInputEmoticonManager.h"
 #import "RedManager.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
@@ -72,7 +72,7 @@ Byte appRemoveValue[] = {56, 7, 48, 11, 194, 225, 157, 148, 193, 51, 218, 83, 11
 //: #import "LEEAlert.h"
 #import "SendAlert.h"
 
-//: @interface FFFSessionListViewController ()
+//: @interface WorkSessionListViewController ()
 @interface DivertViewController ()
 
 //@property (nonatomic,strong)  UIImageView *navBarHairlineImageView;
@@ -80,7 +80,7 @@ Byte appRemoveValue[] = {56, 7, 48, 11, 194, 225, 157, 148, 193, 51, 218, 83, 11
 //: @end
 @end
 
-//: @implementation FFFSessionListViewController
+//: @implementation WorkSessionListViewController
 @implementation DivertViewController
 
 //: - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
@@ -212,7 +212,7 @@ Byte appRemoveValue[] = {56, 7, 48, 11, 194, 225, 157, 148, 193, 51, 218, 83, 11
 - (void)delineationRecognizer:(id)sender {
     //: HMWebViewController *vc = [[HMWebViewController alloc] init];
     PlumeViewController *vc = [[PlumeViewController alloc] init];
-    //: vc.webTitle = [FFFLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
+    //: vc.webTitle = [WorkLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
     vc.webTitle = [InputRed preserve:StringFromLeastData(userSteadEndValue)];
     //: vc.urlString = [NIMUserDefaults standardUserDefaults].yshref;
     vc.urlString = [SessionRecord afterUser].yshref;
@@ -230,7 +230,7 @@ Byte appRemoveValue[] = {56, 7, 48, 11, 194, 225, 157, 148, 193, 51, 218, 83, 11
     [SendAlert hide].config
         //: .LeeAddTitle(^(UILabel * _Nonnull label) {
         .LeeAddTitle(^(UILabel * _Nonnull label) {
-            //: label.text = [FFFLanguageManager getTextWithKey:@"UserAgreement_PrivacyPolicy"];
+            //: label.text = [WorkLanguageManager getTextWithKey:@"UserAgreement_PrivacyPolicy"];
             label.text = [InputRed preserve:StringFromLeastData(user_potentData)];
             //: label.font = [UIFont boldSystemFontOfSize:17];
             label.font = [UIFont boldSystemFontOfSize:17];
@@ -241,7 +241,7 @@ Byte appRemoveValue[] = {56, 7, 48, 11, 194, 225, 157, 148, 193, 51, 218, 83, 11
     //: .LeeAddContent(^(UILabel *label) {
     .LeeAddContent(^(UILabel *label) {
 
-        //: NSString *markString = [FFFLanguageManager getTextWithKey:@"UserAgreementProtocol"];
+        //: NSString *markString = [WorkLanguageManager getTextWithKey:@"UserAgreementProtocol"];
         NSString *markString = [InputRed preserve:StringFromLeastData(k_nonethelessName)];
 
         //: NSMutableParagraphStyle *paragraphStyle = [NSMutableParagraphStyle new];
@@ -269,7 +269,7 @@ Byte appRemoveValue[] = {56, 7, 48, 11, 194, 225, 157, 148, 193, 51, 218, 83, 11
             NSUnderlineStyleAttributeName : @(NSUnderlineStyleSingle),
             //: NSForegroundColorAttributeName: [UIColor colorWithRed:6/255.0f green:53/255.0f blue:253/255.0f alpha:1.0f],
             NSForegroundColorAttributeName: [UIColor colorWithRed:6/255.0f green:53/255.0f blue:253/255.0f alpha:1.0f],
-        //: } range:[attrsString.string rangeOfString:[FFFLanguageManager getTextWithKey:@"UserAgreement_PrivacyPolicy"]]];
+        //: } range:[attrsString.string rangeOfString:[WorkLanguageManager getTextWithKey:@"UserAgreement_PrivacyPolicy"]]];
         } range:[attrsString.string rangeOfString:[InputRed preserve:StringFromLeastData(user_potentData)]]];
 
         //: label.attributedText = attrsString;
@@ -289,7 +289,7 @@ Byte appRemoveValue[] = {56, 7, 48, 11, 194, 225, 157, 148, 193, 51, 218, 83, 11
     //: .LeeAddAction(^(LEEAction *action) {
     .LeeAddAction(^(NameVideo *action) {
 
-        //: action.title = [FFFLanguageManager getTextWithKey:@"reject"];
+        //: action.title = [WorkLanguageManager getTextWithKey:@"reject"];
         action.title = [InputRed preserve:StringFromLeastData(appPremiumWishData)];
 
         //: action.titleColor = [UIColor darkGrayColor];
@@ -315,7 +315,7 @@ Byte appRemoveValue[] = {56, 7, 48, 11, 194, 225, 157, 148, 193, 51, 218, 83, 11
         //: action.type = LEEActionTypeCancel;
         action.type = LEEActionTypeCancel;
 
-        //: action.title = [FFFLanguageManager getTextWithKey:@"agree"];
+        //: action.title = [WorkLanguageManager getTextWithKey:@"agree"];
         action.title = [InputRed preserve:StringFromLeastData(mainFashionedContent)];
 
         //: action.titleColor = [UIColor whiteColor];
@@ -467,13 +467,13 @@ Byte appRemoveValue[] = {56, 7, 48, 11, 194, 225, 157, 148, 193, 51, 218, 83, 11
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     //: static NSString *cellId = @"cellId";
     static NSString *cellId = @"cellId";
-    //: FFFSessionListCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    //: WorkSessionListCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
     BarView *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //: if (!cell) {
     if (!cell) {
-        //: cell = [[FFFSessionListCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+        //: cell = [[WorkSessionListCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
         cell = [[BarView alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
         //: [cell.avatarImageView addTarget:self action:@selector(onTouchAvatar:) forControlEvents:UIControlEventTouchUpInside];
         [cell.avatarImageView addTarget:self action:@selector(buttonned:) forControlEvents:UIControlEventTouchUpInside];
@@ -654,7 +654,7 @@ Byte appRemoveValue[] = {56, 7, 48, 11, 194, 225, 157, 148, 193, 51, 218, 83, 11
 
 //: - (void)onSelectedRecent:(NIMRecentSession *)recentSession atIndexPath:(NSIndexPath *)indexPath{
 - (void)table:(NIMRecentSession *)recentSession thumbContent:(NSIndexPath *)indexPath{
-    //: FFFSessionViewController *vc = [[FFFSessionViewController alloc] initWithSession:recentSession.session];
+    //: WorkSessionViewController *vc = [[WorkSessionViewController alloc] initWithSession:recentSession.session];
     AccountViewController *vc = [[AccountViewController alloc] initWithLastTitleCell:recentSession.session];
     //: [self.navigationController pushViewController:vc animated:YES];
     [self.navigationController pushViewController:vc animated:YES];
@@ -666,7 +666,7 @@ Byte appRemoveValue[] = {56, 7, 48, 11, 194, 225, 157, 148, 193, 51, 218, 83, 11
 - (NSString *)tin:(NIMRecentSession *)recent {
     //: if (recent.session.sessionType == NIMSessionTypeP2P) {
     if (recent.session.sessionType == NIMSessionTypeP2P) {
-        //: return [FFFKitUtil showNick:recent.session.sessionId inSession:recent.session];
+        //: return [WorkKitUtil showNick:recent.session.sessionId inSession:recent.session];
         return [WantUtil teamSessionText:recent.session.sessionId last:recent.session];
     //: } else if (recent.session.sessionType == NIMSessionTypeTeam) {
     } else if (recent.session.sessionType == NIMSessionTypeTeam) {
@@ -701,13 +701,13 @@ Byte appRemoveValue[] = {56, 7, 48, 11, 194, 225, 157, 148, 193, 51, 218, 83, 11
 - (NSString *)max:(NIMRecentSession *)recent{
     //: if (recent.lastMessage) {
     if (recent.lastMessage) {
-        //: return [FFFKitUtil showTime:recent.lastMessage.timestamp showDetail:NO];
+        //: return [WorkKitUtil showTime:recent.lastMessage.timestamp showDetail:NO];
         return [WantUtil holder:recent.lastMessage.timestamp chorusLine:NO];
     }
     // 服务端时间戳以毫秒为单位,需要转化
     //: NSTimeInterval timeSecond = recent.updateTime / 1000.0;
     NSTimeInterval timeSecond = recent.updateTime / 1000.0;
-    //: return [FFFKitUtil showTime:timeSecond showDetail:NO];
+    //: return [WorkKitUtil showTime:timeSecond showDetail:NO];
     return [WantUtil holder:timeSecond chorusLine:NO];
 }
 
@@ -795,7 +795,7 @@ Byte appRemoveValue[] = {56, 7, 48, 11, 194, 225, 157, 148, 193, 51, 218, 83, 11
 #pragma mark - Private
 //: - (NSString *)messageContent:(NIMMessage*)lastMessage{
 - (NSString *)developmentTitle:(NIMMessage*)lastMessage{
-    //: NSString *text = [FFFMessageUtil messageContent:lastMessage];
+    //: NSString *text = [WorkMessageUtil messageContent:lastMessage];
     NSString *text = [WithUtil mailSession:lastMessage];
     //: if (lastMessage.session.sessionType == NIMSessionTypeP2P || lastMessage.messageType == NIMMessageTypeTip)
     if (lastMessage.session.sessionType == NIMSessionTypeP2P || lastMessage.messageType == NIMMessageTypeTip)
@@ -809,12 +809,12 @@ Byte appRemoveValue[] = {56, 7, 48, 11, 194, 225, 157, 148, 193, 51, 218, 83, 11
 
         //: NIMMessage *msg = [self lastMessageWithNoNotificationMessage:lastMessage];
         NIMMessage *msg = [self info:lastMessage];
-        //: text = [FFFMessageUtil messageContent:msg];
+        //: text = [WorkMessageUtil messageContent:msg];
         text = [WithUtil mailSession:msg];
 
         //: NSString *from = msg.from;
         NSString *from = msg.from;
-        //: NSString *nickName = [FFFKitUtil showNick:from inSession:msg.session];
+        //: NSString *nickName = [WorkKitUtil showNick:from inSession:msg.session];
         NSString *nickName = [WantUtil teamSessionText:from last:msg.session];
         //: return nickName.length ? [nickName stringByAppendingFormat:@" : %@",text] : @"";
         return nickName.length ? [nickName stringByAppendingFormat:@" : %@",text] : @"";

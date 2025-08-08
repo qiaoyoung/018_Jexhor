@@ -20,17 +20,17 @@ Byte notiLengthName[] = {9, 14, 20, 8, 136, 123, 145, 233, 57, 57, 25, 80, 80, 1
 // __M_A_C_R_O__
 //: #import "NTESKeyWordMessageCell.h"
 #import "ImageViewCell.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WorkAvatarImageView.h"
 #import "ButtonControl.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "WorkCommonTableData.h"
+#import "WorkCommonTableData.h"
 //: #import "UIView+NTES.h"
 #import "UIView+Recent.h"
 
 //: @interface NTESKeyWordMessageCell ()
 @interface ImageViewCell ()
 
-//: @property (nonatomic,strong) FFFAvatarImageView * avatar;
+//: @property (nonatomic,strong) WorkAvatarImageView * avatar;
 @property (nonatomic,strong) ButtonControl * avatar;
 
 //: @property (nonatomic,strong) UILabel * nickL;
@@ -113,7 +113,7 @@ Byte notiLengthName[] = {9, 14, 20, 8, 136, 123, 145, 233, 57, 57, 25, 80, 80, 1
     //: if ([message isKindOfClass:[NIMMessage class]])
     if ([message isKindOfClass:[NIMMessage class]])
     {
-        //: FFFKitInfo * info = nil;
+        //: WorkKitInfo * info = nil;
         ConfirmationInfo * info = nil;
         //: NIMSession * session = message.session;
         NIMSession * session = message.session;
@@ -203,13 +203,13 @@ Byte notiLengthName[] = {9, 14, 20, 8, 136, 123, 145, 233, 57, 57, 25, 80, 80, 1
 
 
 
-//: - (FFFAvatarImageView *)avatar
+//: - (WorkAvatarImageView *)avatar
 - (ButtonControl *)avatar
 {
     //: if (!_avatar)
     if (!_avatar)
     {
-        //: _avatar = [[FFFAvatarImageView alloc] init];
+        //: _avatar = [[WorkAvatarImageView alloc] init];
         _avatar = [[ButtonControl alloc] init];
     }
     //: return _avatar;

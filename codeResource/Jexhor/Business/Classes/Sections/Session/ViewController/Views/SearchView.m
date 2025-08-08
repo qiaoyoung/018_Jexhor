@@ -141,7 +141,7 @@
 // __M_A_C_R_O__
 //: #import "NTESRedPackagePaySheet.h"
 #import "SearchView.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WorkAvatarImageView.h"
 #import "ButtonControl.h"
 //: #import "TPPasswordTextView.h"
 #import "TextView.h"
@@ -232,7 +232,7 @@
         titleLabel_1.textColor = [UIColor ground:[UniteWithData m_showValue]];
         //: titleLabel_1.font = [UIFont boldSystemFontOfSize:16];
         titleLabel_1.font = [UIFont boldSystemFontOfSize:16];
-        //: titleLabel_1.text = [FFFLanguageManager getTextWithKey:@"activity_pay_psw_input"];
+        //: titleLabel_1.text = [WorkLanguageManager getTextWithKey:@"activity_pay_psw_input"];
         titleLabel_1.text = [InputRed preserve:[UniteWithData dream_itsNameValue]];
         //: titleLabel_1.textAlignment = NSTextAlignmentLeft;
         titleLabel_1.textAlignment = NSTextAlignmentLeft;
@@ -278,7 +278,7 @@
         title.textColor = [UIColor blackColor];
         //: title.font = [UIFont systemFontOfSize:15];
         title.font = [UIFont systemFontOfSize:15];
-        //: title.text = [FFFLanguageManager getTextWithKey:@"red_packet"];
+        //: title.text = [WorkLanguageManager getTextWithKey:@"red_packet"];
         title.text = [InputRed preserve:[UniteWithData dream_cousinData]];
         //: [_backView addSubview:title];
         [_backView addSubview:title];
@@ -415,7 +415,7 @@
     NSString *userID = [[NIMSDK sharedSDK].loginManager currentAccount];
     //: NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
     NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
+    //: WorkKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
     ConfirmationInfo *info = [[MessageContent secretResolution] recent:userID blue:nil];
     //: NSString *headerUrl = me.userInfo.avatarUrl;
     NSString *headerUrl = me.userInfo.avatarUrl;

@@ -13,7 +13,7 @@
 #import <Foundation/Foundation.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFTeamMemberListDataSource.h"
+//: #import "WorkTeamMemberListDataSource.h"
 #import "ColorActionClean.h"
 
 //: extern NSString * _Nonnull const kNIMTeamListDataTeamInfoUpdate;
@@ -24,7 +24,7 @@ extern NSString * _Nonnull const show_contentData;
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFTeamListDataManager : NSObject<FFFTeamMemberListDataSource>
+//: @interface WorkTeamListDataManager : NSObject<WorkTeamMemberListDataSource>
 @interface ShowManager : NSObject<ColorActionClean>
 
 //当前群

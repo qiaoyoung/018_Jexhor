@@ -86,16 +86,16 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitColorButtonCell.h"
+//: #import "WorkKitColorButtonCell.h"
 #import "WithInfoView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "WorkCommonTableData.h"
+#import "WorkCommonTableData.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
 
-//: @interface FFFKitColorButtonCell()
+//: @interface WorkKitColorButtonCell()
 @interface WithInfoView()
 
 //: @property (nonatomic,strong) NIMCommonTableRow *rowData;
@@ -104,7 +104,7 @@
 //: @end
 @end
 
-//: @implementation FFFKitColorButtonCell
+//: @implementation WorkKitColorButtonCell
 @implementation WithInfoView
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -134,8 +134,8 @@
     self.rowData = rowData;
     //: [self.button setTitle:rowData.title forState:UIControlStateNormal];
     [self.button setTitle:rowData.title forState:UIControlStateNormal];
-    //: FFFKitColorButtonCellStyle style = [rowData.extraInfo integerValue];
-    FFFKitColorButtonCellStyle style = [rowData.extraInfo integerValue];
+    //: WorkKitColorButtonCellStyle style = [rowData.extraInfo integerValue];
+    WorkKitColorButtonCellStyle style = [rowData.extraInfo integerValue];
     //: self.button.style = style;
     self.button.style = style;
     //: [self.button removeTarget:tableView.nim_viewController action:NULL forControlEvents:UIControlEventTouchUpInside];
@@ -206,8 +206,8 @@
     return self;
 }
 
-//: - (void)setStyle:(FFFKitColorButtonCellStyle)style{
-- (void)setStyle:(FFFKitColorButtonCellStyle)style{
+//: - (void)setStyle:(WorkKitColorButtonCellStyle)style{
+- (void)setStyle:(WorkKitColorButtonCellStyle)style{
     //: _style = style;
     _style = style;
     //: [self reset];
@@ -220,8 +220,8 @@
     NSString *imageNormalName = @"";
     //: switch (self.style) {
     switch (self.style) {
-        //: case FFFKitColorButtonCellStyleRed:{
-        case FFFKitColorButtonCellStyleRed:{
+        //: case WorkKitColorButtonCellStyleRed:{
+        case WorkKitColorButtonCellStyleRed:{
             //: imageNormalName = @"icon_cell_red_normal";
             imageNormalName = [TaiData sharedInstance].userExistingValue;
             //: UIImage *imageNormal = [[UIImage imageNamed:imageNormalName] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 10, 10, 10) resizingMode:UIImageResizingModeStretch];
@@ -231,8 +231,8 @@
         }
             //: break;
             break;
-        //: case FFFKitColorButtonCellStyleBlue:
-        case FFFKitColorButtonCellStyleBlue:
+        //: case WorkKitColorButtonCellStyleBlue:
+        case WorkKitColorButtonCellStyleBlue:
         {
             //: imageNormalName = @"icon_cell_blue_normal";
             imageNormalName = [TaiData sharedInstance].main_contributeText;

@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFBubbleButtonModel.h"
+//: #import "WorkBubbleButtonModel.h"
 #import "GlobuleSession.h"
 
-//: @implementation FFFBubbleButtonModel
+//: @implementation WorkBubbleButtonModel
 @implementation GlobuleSession
 
 //: @end

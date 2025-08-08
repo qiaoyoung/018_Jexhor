@@ -39,12 +39,12 @@ Byte app_bindValue[] = {58, 3, 9, 2, 186, 208, 151, 216, 135, 103, 112, 106, 70}
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCardOperationViewController.h"
+//: #import "WorkTeamCardOperationViewController.h"
 #import "InputViewController.h"
-//: #import "FFFKitProgressHUD.h"
+//: #import "WorkKitProgressHUD.h"
 #import "KitEffectView.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "WorkKitDependency.h"
+#import "WorkKitDependency.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
 //: #import "NSString+MyUserKit.h"
@@ -52,7 +52,7 @@ Byte app_bindValue[] = {58, 3, 9, 2, 186, 208, 151, 216, 135, 103, 112, 106, 70}
 //: #import "NTESSessionMsgConverter.h"
 #import "ViewLine.h"
 
-//: @implementation FFFTeamCardOperationViewController
+//: @implementation WorkTeamCardOperationViewController
 @implementation InputViewController
 
 //: - (void)dealloc {
@@ -65,13 +65,13 @@ Byte app_bindValue[] = {58, 3, 9, 2, 186, 208, 151, 216, 135, 103, 112, 106, 70}
 - (instancetype)initWithInput:(NIMTeam *)team
                      //: session:(NIMSession *)session
                      toFromOption:(NIMSession *)session
-                      //: option:(FFFTeamCardViewControllerOption *)option {
+                      //: option:(WorkTeamCardViewControllerOption *)option {
                       value:(ThreadBottom *)option {
     //: if (self = [super init]) {
     if (self = [super init]) {
         //: _option = option;
         _option = option;
-        //: _teamListManager = [[FFFTeamListDataManager alloc] initWithTeam:team session:session];
+        //: _teamListManager = [[WorkTeamListDataManager alloc] initWithTeam:team session:session];
         _teamListManager = [[ShowManager alloc] initWithKey:team section:session];
         //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(teamInfoUpdate:) name:kNIMTeamListDataTeamInfoUpdate object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(belowIntervalelligenceInformation:) name:notiRetValue object:nil];
@@ -86,7 +86,7 @@ Byte app_bindValue[] = {58, 3, 9, 2, 186, 208, 151, 216, 135, 103, 112, 106, 70}
 - (void)viewDidLoad {
     //: [super viewDidLoad];
     [super viewDidLoad];
-    //: FFFMembersFetchOption *option = [[FFFMembersFetchOption alloc] init];
+    //: WorkMembersFetchOption *option = [[WorkMembersFetchOption alloc] init];
     SameOption *option = [[SameOption alloc] init];
     //: option.isRefresh = YES;
     option.isRefresh = YES;
@@ -108,17 +108,17 @@ Byte app_bindValue[] = {58, 3, 9, 2, 186, 208, 151, 216, 135, 103, 112, 106, 70}
     [self itemBy];
 }
 
-//: - (void)didFetchTeamMember:(FFFMembersFetchOption *)option {
+//: - (void)didFetchTeamMember:(WorkMembersFetchOption *)option {
 - (void)teamColor:(SameOption *)option {
     //: __weak typeof(self) wself = self;
     __weak typeof(self) wself = self;
-    //: [FFFKitProgressHUD show];
+    //: [WorkKitProgressHUD show];
     [KitEffectView refreshShow];
     //: [self.teamListManager fetchTeamMembersWithOption:option
     [self.teamListManager ofTool:option
                                           //: completion:^(NSError * _Nullable error, NSString * _Nullable msg) {
                                           value:^(NSError * _Nullable error, NSString * _Nullable msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [WorkKitProgressHUD dismiss];
         [KitEffectView should];
         //: if (!error) {
         if (!error) {
@@ -173,11 +173,11 @@ Byte app_bindValue[] = {58, 3, 9, 2, 186, 208, 151, 216, 135, 103, 112, 106, 70}
     }
     //: __weak typeof(self) wself = self;
     __weak typeof(self) wself = self;
-    //: [FFFKitProgressHUD show];
+    //: [WorkKitProgressHUD show];
     [KitEffectView refreshShow];
     //: [self.teamListManager addUsers:userIds info:info completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
     [self.teamListManager small:userIds yieldShared:info net:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [WorkKitProgressHUD dismiss];
         [KitEffectView should];
         //: if (!error) {
         if (!error) {
@@ -199,11 +199,11 @@ Byte app_bindValue[] = {58, 3, 9, 2, 186, 208, 151, 216, 135, 103, 112, 106, 70}
 - (void)searchedMessage:(NSString *)userId {
     //: __weak typeof(self) wself = self;
     __weak typeof(self) wself = self;
-    //: [FFFKitProgressHUD show];
+    //: [WorkKitProgressHUD show];
     [KitEffectView refreshShow];
     //: [self.teamListManager kickUsers:@[userId] completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
     [self.teamListManager color:@[userId] minority:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [WorkKitProgressHUD dismiss];
         [KitEffectView should];
         //: if (!error) {
         if (!error) {
@@ -225,13 +225,13 @@ Byte app_bindValue[] = {58, 3, 9, 2, 186, 208, 151, 216, 135, 103, 112, 106, 70}
     }
     //: __weak typeof(self) wself = self;
     __weak typeof(self) wself = self;
-    //: [FFFKitProgressHUD show];
+    //: [WorkKitProgressHUD show];
     [KitEffectView refreshShow];
     //: [self.teamListManager updateTeamName:name
     [self.teamListManager last:name
                               //: completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
                               of:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [WorkKitProgressHUD dismiss];
         [KitEffectView should];
         //: if (!error) {
         if (!error) {
@@ -253,13 +253,13 @@ Byte app_bindValue[] = {58, 3, 9, 2, 186, 208, 151, 216, 135, 103, 112, 106, 70}
     }
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [FFFKitProgressHUD show];
+    //: [WorkKitProgressHUD show];
     [KitEffectView refreshShow];
     //: [self.teamListManager updateTeamNick:nick
     [self.teamListManager asChild:nick
                               //: completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
                               center:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [WorkKitProgressHUD dismiss];
         [KitEffectView should];
         //: if (!error) {
         if (!error) {
@@ -281,11 +281,11 @@ Byte app_bindValue[] = {58, 3, 9, 2, 186, 208, 151, 216, 135, 103, 112, 106, 70}
     }
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [FFFKitProgressHUD show];
+    //: [WorkKitProgressHUD show];
     [KitEffectView refreshShow];
     //: [self.teamListManager updateTeamIntro:intro completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
     [self.teamListManager voice:intro session:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [WorkKitProgressHUD dismiss];
         [KitEffectView should];
         //: if (!error) {
         if (!error) {
@@ -302,13 +302,13 @@ Byte app_bindValue[] = {58, 3, 9, 2, 186, 208, 151, 216, 135, 103, 112, 106, 70}
 - (void)image:(BOOL)mute {
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [FFFKitProgressHUD show];
+    //: [WorkKitProgressHUD show];
     [KitEffectView refreshShow];
     //: [self.teamListManager updateTeamMute:mute
     [self.teamListManager container:mute
                               //: completion:^(NSError * _Nullable error, NSString * _Nullable msg) {
                               inputCompletion:^(NSError * _Nullable error, NSString * _Nullable msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [WorkKitProgressHUD dismiss];
         [KitEffectView should];
         //: if (!error) {
         if (!error) {
@@ -337,11 +337,11 @@ Byte app_bindValue[] = {58, 3, 9, 2, 186, 208, 151, 216, 135, 103, 112, 106, 70}
 - (void)addUp:(NIMTeamJoinMode)mode {
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [FFFKitProgressHUD show];
+    //: [WorkKitProgressHUD show];
     [KitEffectView refreshShow];
     //: [self.teamListManager updateTeamJoinMode:mode completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
     [self.teamListManager regionCompletion:mode joinSize:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [WorkKitProgressHUD dismiss];
         [KitEffectView should];
         //: if (!error) {
         if (!error) {
@@ -358,11 +358,11 @@ Byte app_bindValue[] = {58, 3, 9, 2, 186, 208, 151, 216, 135, 103, 112, 106, 70}
 - (void)dateBarMode:(NIMTeamInviteMode)mode {
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [FFFKitProgressHUD show];
+    //: [WorkKitProgressHUD show];
     [KitEffectView refreshShow];
     //: [self.teamListManager updateTeamInviteMode:mode completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
     [self.teamListManager section:mode chromaticDataBlock:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [WorkKitProgressHUD dismiss];
         [KitEffectView should];
         //: if (!error) {
         if (!error) {
@@ -379,13 +379,13 @@ Byte app_bindValue[] = {58, 3, 9, 2, 186, 208, 151, 216, 135, 103, 112, 106, 70}
 - (void)invite:(NIMTeamBeInviteMode)mode {
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [FFFKitProgressHUD show];
+    //: [WorkKitProgressHUD show];
     [KitEffectView refreshShow];
     //: [self.teamListManager updateTeamBeInviteMode:mode
     [self.teamListManager origin:mode
                                       //: completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
                                       shared:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [WorkKitProgressHUD dismiss];
         [KitEffectView should];
         //: if (!error) {
         if (!error) {
@@ -402,11 +402,11 @@ Byte app_bindValue[] = {58, 3, 9, 2, 186, 208, 151, 216, 135, 103, 112, 106, 70}
 - (void)cellBlue:(NIMTeamUpdateInfoMode)mode {
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [FFFKitProgressHUD show];
+    //: [WorkKitProgressHUD show];
     [KitEffectView refreshShow];
     //: [self.teamListManager updateTeamInfoMode:mode completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
     [self.teamListManager generateCompletion:mode optionDataBlock:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [WorkKitProgressHUD dismiss];
         [KitEffectView should];
         //: if (!error) {
         if (!error) {
@@ -423,11 +423,11 @@ Byte app_bindValue[] = {58, 3, 9, 2, 186, 208, 151, 216, 135, 103, 112, 106, 70}
 - (void)textIn:(NIMTeamNotifyState)state {
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [FFFKitProgressHUD show];
+    //: [WorkKitProgressHUD show];
     [KitEffectView refreshShow];
     //: [self.teamListManager updateTeamNotifyState:state completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
     [self.teamListManager message:state insert:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [WorkKitProgressHUD dismiss];
         [KitEffectView should];
         //: if (!error) {
         if (!error) {
@@ -442,7 +442,7 @@ Byte app_bindValue[] = {58, 3, 9, 2, 186, 208, 151, 216, 135, 103, 112, 106, 70}
 
 //: - (void)didOntransferToUser:(NSString *)userId leave:(BOOL)leave {
 - (void)disable:(NSString *)userId show:(BOOL)leave {
-    //: [FFFKitProgressHUD show];
+    //: [WorkKitProgressHUD show];
     [KitEffectView refreshShow];
     //: [self.teamListManager transferOwnerWithUserId:userId
     [self.teamListManager maxShow:userId
@@ -450,7 +450,7 @@ Byte app_bindValue[] = {58, 3, 9, 2, 186, 208, 151, 216, 135, 103, 112, 106, 70}
                                          voice:leave
                                     //: completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
                                     iconHandle:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [WorkKitProgressHUD dismiss];
         [KitEffectView should];
         //: if (leave) {
         if (leave) {
@@ -471,11 +471,11 @@ Byte app_bindValue[] = {58, 3, 9, 2, 186, 208, 151, 216, 135, 103, 112, 106, 70}
 - (void)dismissInLittleLeagueTeam{
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [FFFKitProgressHUD show];
+    //: [WorkKitProgressHUD show];
     [KitEffectView refreshShow];
     //: [self.teamListManager dismissTeamCompletion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
     [self.teamListManager screen:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [WorkKitProgressHUD dismiss];
         [KitEffectView should];
         //: if (!error) {
         if (!error) {
@@ -492,11 +492,11 @@ Byte app_bindValue[] = {58, 3, 9, 2, 186, 208, 151, 216, 135, 103, 112, 106, 70}
 - (void)shouldColor{
     //: __weak typeof(self) wself = self;
     __weak typeof(self) wself = self;
-    //: [FFFKitProgressHUD show];
+    //: [WorkKitProgressHUD show];
     [KitEffectView refreshShow];
     //: [self.teamListManager quitTeamCompletion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
     [self.teamListManager color:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [WorkKitProgressHUD dismiss];
         [KitEffectView should];
         //: if (!error) {
         if (!error) {
@@ -587,13 +587,13 @@ Byte app_bindValue[] = {58, 3, 9, 2, 186, 208, 151, 216, 135, 103, 112, 106, 70}
     __weak typeof(self) wself = self;
     //: if (success) {
     if (success) {
-        //: [FFFKitProgressHUD show];
+        //: [WorkKitProgressHUD show];
         [KitEffectView refreshShow];
         //: __weak typeof(self) weakSelf = self;
         __weak typeof(self) weakSelf = self;
         //: [self.teamListManager updateTeamAvatar:filePath completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
         [self.teamListManager modifyInValue:filePath filling:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-            //: [FFFKitProgressHUD dismiss];
+            //: [WorkKitProgressHUD dismiss];
             [KitEffectView should];
             //: if (!error) {
             if (!error) {
@@ -620,7 +620,7 @@ Byte app_bindValue[] = {58, 3, 9, 2, 186, 208, 151, 216, 135, 103, 112, 106, 70}
         }];
     //: } else {
     } else {
-        //: [wself showToastMsg:[FFFLanguageManager getTextWithKey:@"group_info_activity_update_failed"]];
+        //: [wself showToastMsg:[WorkLanguageManager getTextWithKey:@"group_info_activity_update_failed"]];
         [wself textTag:[InputRed preserve:StringFromPopularityData(mExpectValue)]];
     }
 }
@@ -628,7 +628,7 @@ Byte app_bindValue[] = {58, 3, 9, 2, 186, 208, 151, 216, 135, 103, 112, 106, 70}
 //: @end
 @end
 
-//: @implementation FFFTeamCardViewControllerOption
+//: @implementation WorkTeamCardViewControllerOption
 @implementation ThreadBottom
 
 //: @end

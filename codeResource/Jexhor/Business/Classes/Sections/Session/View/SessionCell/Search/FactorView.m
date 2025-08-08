@@ -18,7 +18,7 @@
 #import "SessionUtil.h"
 //: #import "UIView+NTES.h"
 #import "UIView+Recent.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WorkAvatarImageView.h"
 #import "ButtonControl.h"
 
 //: CGFloat SearchCellTitleFontSize = 13.f;
@@ -51,7 +51,7 @@ CGFloat dreamItemLabelName = 15.f; //cell的高度是由文本高度决定的。
 //: @interface NTESSearchMessageContentCell()
 @interface FactorView()
 
-//: @property (nonatomic,strong) FFFAvatarImageView *avatar;
+//: @property (nonatomic,strong) WorkAvatarImageView *avatar;
 @property (nonatomic,strong) ButtonControl *avatar;
 
 //: @property (nonatomic,strong) UILabel *titleLabel;
@@ -78,7 +78,7 @@ CGFloat dreamItemLabelName = 15.f; //cell的高度是由文本高度决定的。
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     //: if (self) {
     if (self) {
-        //: _avatar = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+        //: _avatar = [[WorkAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
         _avatar = [[ButtonControl alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
         //: [self.contentView addSubview:_avatar];
         [self.contentView addSubview:_avatar];
@@ -115,7 +115,7 @@ CGFloat dreamItemLabelName = 15.f; //cell的高度是由文本高度决定的。
     self.object = object;
     //: NIMMessage *message = object.message;
     NIMMessage *message = object.message;
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:message.from option:nil];
+    //: WorkKitInfo *info = [[MyUserKit sharedKit] infoByUser:message.from option:nil];
     ConfirmationInfo *info = [[MessageContent secretResolution] recent:message.from blue:nil];
     //: NSURL *avatarURL;
     NSURL *avatarURL;

@@ -59,31 +59,31 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionTimestampCell.h"
+//: #import "WorkSessionTimestampCell.h"
 #import "ContentViewCell.h"
-//: #import "FFFCellConfig.h"
-#import "FFFCellConfig.h"
+//: #import "WorkCellConfig.h"
+#import "WorkCellConfig.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFTimestampModel.h"
+//: #import "WorkTimestampModel.h"
 #import "EngraftTing.h"
-//: #import "FFFKitUtil.h"
+//: #import "WorkKitUtil.h"
 #import "WantUtil.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
 
-//: @interface FFFSessionTimestampCell()
+//: @interface WorkSessionTimestampCell()
 @interface ContentViewCell()
 
-//: @property (nonatomic,strong) FFFTimestampModel *model;
+//: @property (nonatomic,strong) WorkTimestampModel *model;
 @property (nonatomic,strong) EngraftTing *model;
 
 //: @end
 @end
 
-//: @implementation FFFSessionTimestampCell
+//: @implementation WorkSessionTimestampCell
 @implementation ContentViewCell
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -131,7 +131,7 @@ typedef struct {
 }
 
 
-//: - (void)refreshData:(FFFTimestampModel *)data{
+//: - (void)refreshData:(WorkTimestampModel *)data{
 - (void)content:(EngraftTing *)data{
     //: if (self.model == data) {
     if (self.model == data) {
@@ -142,16 +142,16 @@ typedef struct {
     self.model = data;
     //: if([self checkData]){
     if([self metadata]){
-        //: FFFTimestampModel *model = (FFFTimestampModel *)data;
+        //: WorkTimestampModel *model = (WorkTimestampModel *)data;
         EngraftTing *model = (EngraftTing *)data;
-        //: [_timeLabel setText:[FFFKitUtil showTime:model.messageTime showDetail:YES]];
+        //: [_timeLabel setText:[WorkKitUtil showTime:model.messageTime showDetail:YES]];
         [_timeLabel setText:[WantUtil holder:model.messageTime chorusLine:YES]];
     }
 }
 
 //: - (BOOL)checkData{
 - (BOOL)metadata{
-    //: return [self.model isKindOfClass:[FFFTimestampModel class]];
+    //: return [self.model isKindOfClass:[WorkTimestampModel class]];
     return [self.model isKindOfClass:[EngraftTing class]];
 }
 

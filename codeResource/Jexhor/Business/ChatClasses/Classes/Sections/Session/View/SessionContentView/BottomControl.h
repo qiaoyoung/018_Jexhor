@@ -9,13 +9,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "WorkSessionMessageContentView.h"
 #import "TextControl.h"
 
 //: @class M80AttributedLabel;
 @class VideoTextView;
 
-//: @interface FFFSessionTextContentView : FFFSessionMessageContentView
+//: @interface WorkSessionTextContentView : WorkSessionMessageContentView
 @interface BottomControl : TextControl
 
 //: @property (nonatomic, strong) M80AttributedLabel *textView;

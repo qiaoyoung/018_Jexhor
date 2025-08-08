@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFChatUIManagerProtocol.h
+//  WorkChatUIManagerProtocol.h
 // MessageContent
 //
 //  Created by 丁文超 on 2020/3/19.
@@ -18,7 +18,7 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @protocol FFFChatUIManager <NSObject>
+//: @protocol WorkChatUIManager <NSObject>
 @protocol WithUimanager <NSObject>
 
 //: - (void)forwardMessage:(NIMMessage *)message fromViewController:(UIViewController *)fromVC;

@@ -90,14 +90,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCardOperationItem.h"
+//: #import "WorkCardOperationItem.h"
 #import "ProviderItem.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "WorkGlobalMacro.h"
+#import "WorkGlobalMacro.h"
 
-//: @interface FFFCardOperationItem()
+//: @interface WorkCardOperationItem()
 @interface ProviderItem()
 
 //: @property(nonatomic,assign) NIMKitCardHeaderOpeator opera;
@@ -106,7 +106,7 @@
 //: @end
 @end
 
-//: @implementation FFFCardOperationItem
+//: @implementation WorkCardOperationItem
 @implementation ProviderItem
 
 //: - (instancetype)initWithOperation:(NIMKitCardHeaderOpeator)opera{

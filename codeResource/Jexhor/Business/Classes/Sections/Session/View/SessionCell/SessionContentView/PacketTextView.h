@@ -9,7 +9,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "WorkSessionMessageContentView.h"
 #import "TextControl.h"
 //: #import "M80AttributedLabel.h"
 #import "VideoTextView.h"
@@ -18,7 +18,7 @@
 static NSString *const m_libraryValue = @"NTESShowRedPacketDetailEvent";
 
 
-//: @interface NTESSessionRedPacketTipContentView : FFFSessionMessageContentView
+//: @interface NTESSessionRedPacketTipContentView : WorkSessionMessageContentView
 @interface PacketTextView : TextControl
 
 //: @property (nonatomic,strong) M80AttributedLabel *label;

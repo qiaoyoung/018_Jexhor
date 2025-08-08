@@ -66,7 +66,7 @@
 //userId和Vcname必有一个有值，根据有值的状态push进不同的页面
 
 //: - (NSString *)vcName{
-- (NSString *)team{
+- (NSString *)vcName{
     //: return nil;
     return nil;
 }
@@ -90,7 +90,7 @@
 }
 
 //: - (NSString *)groupTitle {
-- (NSString *)remove {
+- (NSString *)groupTitle {
     //: NSString *title = [[NTESSpellingCenter sharedCenter] firstLetter:self.info.showName].capitalizedString;
     NSString *title = [[AncientHistoryCircle heritage] destabilisation:self.info.showName].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
@@ -107,7 +107,7 @@
 }
 
 //: - (NSString *)userId{
-- (NSString *)shouldTeam{
+- (NSString *)userId{
     //: return self.info.infoId;
     return self.info.infoId;
 }
@@ -125,13 +125,13 @@
 }
 
 //: - (NSString *)memberId{
-- (NSString *)with{
+- (NSString *)memberId {
     //: return self.info.infoId;
     return self.info.infoId;
 }
 
 //: - (NSString *)showName{
-- (NSString *)domainContent{
+- (NSString *)showName{
     //: return self.info.showName;
     return self.info.showName;
 }
@@ -143,7 +143,7 @@
 }
 
 //: - (id)sortKey {
-- (id)key {
+- (id)sortKey {
     //: return [[NTESSpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
     return [[AncientHistoryCircle heritage] pageView:self.info.showName].shortSpelling;
 }

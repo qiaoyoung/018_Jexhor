@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 //: @end
 @end
 
-//: @interface NTESThreadDataSourceProvider : NSObject <FFFKitMessageProvider>
+//: @interface NTESThreadDataSourceProvider : NSObject <WorkKitMessageProvider>
 @interface QueryRange : NSObject <SpecsText>
 
 //: @property (nonatomic,strong) NIMMessage *threadMessage;

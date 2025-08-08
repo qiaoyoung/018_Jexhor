@@ -21,22 +21,22 @@ Byte showKaTitle[] = {60, 8, 51, 8, 236, 161, 129, 2, 122, 165, 162, 168, 163, 1
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamMemberListCell.h"
+//: #import "WorkTeamMemberListCell.h"
 #import "FixingViewCell.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WorkAvatarImageView.h"
 #import "ButtonControl.h"
-//: #import "FFFKitUtil.h"
+//: #import "WorkKitUtil.h"
 #import "WantUtil.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
-//: #import "FFFTeamHelper.h"
+//: #import "WorkTeamHelper.h"
 #import "NameSendStyle.h"
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "WorkCardDataSourceProtocol.h"
+#import "WorkCardDataSourceProtocol.h"
 
 //: NSString *const kTeamMember = @"kTeamMember";
 NSString *const dreamObjectFormatName = @"kTeamMember";
@@ -48,7 +48,7 @@ NSString *const kCommentData = @"kTeamMemberInfo";
 
 }
 
-//: @property(nonatomic,strong) FFFAvatarImageView *imageView;
+//: @property(nonatomic,strong) WorkAvatarImageView *imageView;
 @property(nonatomic,strong) ButtonControl *imageView;
 
 //: @property (nonatomic,strong) UIImageView *roleImageView;
@@ -81,7 +81,7 @@ NSString *const kCommentData = @"kTeamMemberInfo";
         _titleLabel.font = [UIFont systemFontOfSize:12.f];
         //: [self addSubview:_titleLabel];
         [self addSubview:_titleLabel];
-        //: _imageView = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 37, 37)];
+        //: _imageView = [[WorkAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 37, 37)];
         _imageView = [[ButtonControl alloc] initWithFrame:CGRectMake(0, 0, 37, 37)];
         //: [self addSubview:_imageView];
         [self addSubview:_imageView];
@@ -98,10 +98,10 @@ NSString *const kCommentData = @"kTeamMemberInfo";
 - (void)setMember:(NSDictionary *)member{
     //: _member = member;
     _member = member;
-    //: FFFKitInfo *info = member[kTeamMemberInfo];
+    //: WorkKitInfo *info = member[kTeamMemberInfo];
     ConfirmationInfo *info = member[kCommentData];
-    //: id<FFFKitCardHeaderData>user = member[kTeamMember];
-    id<FFFKitCardHeaderData>user = member[dreamObjectFormatName];
+    //: id<WorkKitCardHeaderData>user = member[kTeamMember];
+    id<WorkKitCardHeaderData>user = member[dreamObjectFormatName];
     //: NSURL *avatarURL;
     NSURL *avatarURL;
     //: if (info.avatarUrlString.length) {
@@ -116,12 +116,12 @@ NSString *const kCommentData = @"kTeamMemberInfo";
     NSString *showName = (info.showName ?: @"");
     //: if ([user isMyUserId]) {
     if ([user isMyUserId]) {
-        //: showName = [FFFLanguageManager getTextWithKey:@"Group_Me"];
+        //: showName = [WorkLanguageManager getTextWithKey:@"Group_Me"];
         showName = [InputRed preserve:StringFromVisualisationData(showKaTitle)];//@"我".;
     }
     //: _titleLabel.text = showName;
     _titleLabel.text = showName;
-    //: _roleImageView.image = [FFFTeamHelper imageWithMemberType:user.userType];
+    //: _roleImageView.image = [WorkTeamHelper imageWithMemberType:user.userType];
     _roleImageView.image = [NameSendStyle list:user.userType];
 }
 
@@ -158,12 +158,12 @@ NSString *const kCommentData = @"kTeamMemberInfo";
 //: @end
 @end
 
-//: const CGFloat kFFFTeamMemberListCellItemWidth = 49.f;
+//: const CGFloat kWorkTeamMemberListCellItemWidth = 49.f;
 const CGFloat kRangeContentName = 49.f;
-//: const CGFloat kFFFTeamMemberListCellItemPadding = 44.f;
+//: const CGFloat kWorkTeamMemberListCellItemPadding = 44.f;
 const CGFloat show_blendData = 44.f;
 
-//: @interface FFFTeamMemberListCell()
+//: @interface WorkTeamMemberListCell()
 @interface FixingViewCell()
 
 //: @property(nonatomic,strong) NSMutableArray *icons;
@@ -175,7 +175,7 @@ const CGFloat show_blendData = 44.f;
 //: @end
 @end
 
-//: @implementation FFFTeamMemberListCell
+//: @implementation WorkTeamMemberListCell
 @implementation FixingViewCell
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -202,7 +202,7 @@ const CGFloat show_blendData = 44.f;
 - (NSInteger)maxShowMemberCount {
     //: CGFloat width = (self.nim_width != [UIScreen mainScreen].bounds.size.width) ? [UIScreen mainScreen].bounds.size.width : self.nim_width;
     CGFloat width = (self.nim_width != [UIScreen mainScreen].bounds.size.width) ? [UIScreen mainScreen].bounds.size.width : self.nim_width;
-    //: NSInteger maxShowCount = (width - kFFFTeamMemberListCellItemPadding) / kFFFTeamMemberListCellItemWidth;
+    //: NSInteger maxShowCount = (width - kWorkTeamMemberListCellItemPadding) / kWorkTeamMemberListCellItemWidth;
     NSInteger maxShowCount = (width - show_blendData) / kRangeContentName;
     //: return maxShowCount;
     return maxShowCount;

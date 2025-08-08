@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFGlobalMacro.h
+//  WorkGlobalMacro.h
 // MessageContent
 //
 //  Created by chris.

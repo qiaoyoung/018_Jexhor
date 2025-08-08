@@ -79,9 +79,9 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactDataCell.h"
+//: #import "WorkContactDataCell.h"
 #import "AccountingDataViewCell.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WorkAvatarImageView.h"
 #import "ButtonControl.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
@@ -90,13 +90,13 @@
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+MessageContent.h"
 
-//: @interface FFFContactDataCell()
+//: @interface WorkContactDataCell()
 @interface AccountingDataViewCell()
 
 //: @end
 @end
 
-//: @implementation FFFContactDataCell
+//: @implementation WorkContactDataCell
 @implementation AccountingDataViewCell
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -116,7 +116,7 @@
         [self.contentView addSubview:bgView];
 
 
-        //: _avatarImageView = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(15, 12, 48, 48)];
+        //: _avatarImageView = [[WorkAvatarImageView alloc] initWithFrame:CGRectMake(15, 12, 48, 48)];
         _avatarImageView = [[ButtonControl alloc] initWithFrame:CGRectMake(15, 12, 48, 48)];
         //: [_avatarImageView addTarget:self action:@selector(onPressAvatar:) forControlEvents:UIControlEventTouchUpInside];
         [_avatarImageView addTarget:self action:@selector(alongsed:) forControlEvents:UIControlEventTouchUpInside];
@@ -161,9 +161,9 @@
 //: - (void)refreshItem:(id<NIMGroupMemberProtocol>)member {
 - (void)showWith:(id<MemberProtocol>)member {
     //: [self refreshTitle:member.showName];
-    [self item:member.exhibitDoing];
+    [self item:member.showName];
     //: self.memberId = member.memberId;
-    self.memberId = member.pressedFor;
+    self.memberId = member.memberId;
     //: NSURL *url = member.avatarUrlString ? [NSURL URLWithString:member.avatarUrlString] : nil;
     NSURL *url = member.belowGlobal ? [NSURL URLWithString:member.belowGlobal] : nil;
     //: [_avatarImageView nim_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"head_default"] options:SDWebImageRetryFailed];
@@ -173,10 +173,10 @@
 //: - (void)refreshUser:(id<NIMGroupMemberProtocol>)member{
 - (void)celluloidUser:(id<MemberProtocol>)member{
     //: [self refreshTitle:member.showName];
-    [self item:member.exhibitDoing];
+    [self item:member.showName];
     //: self.memberId = [member memberId];
-    self.memberId = [member pressedFor];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.memberId option:nil];
+    self.memberId = [member memberId];
+    //: WorkKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.memberId option:nil];
     ConfirmationInfo *info = [[MessageContent secretResolution] recent:self.memberId blue:nil];
     //: [self refreshAvatar:info];
     [self parameter:info];
@@ -188,7 +188,7 @@
     [self item:team.teamName];
     //: self.memberId = [team teamId];
     self.memberId = [team teamId];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByTeam:self.memberId option:nil];
+    //: WorkKitInfo *info = [[MyUserKit sharedKit] infoByTeam:self.memberId option:nil];
     ConfirmationInfo *info = [[MessageContent secretResolution] info:self.memberId comment:nil];
     //: [self refreshAvatar:info];
     [self parameter:info];
@@ -200,7 +200,7 @@
     self.labName.text = title;
 }
 
-//: - (void)refreshAvatar:(FFFKitInfo *)info{
+//: - (void)refreshAvatar:(WorkKitInfo *)info{
 - (void)parameter:(ConfirmationInfo *)info{
     //: NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;
     NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;

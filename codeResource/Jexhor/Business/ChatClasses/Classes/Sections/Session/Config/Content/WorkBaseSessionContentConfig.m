@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFBaseSessionContentConfig.m
+//  WorkBaseSessionContentConfig.m
 // MessageContent
 //
 //  Created by amao on 9/15/15.
@@ -9,55 +9,55 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFBaseSessionContentConfig.h"
-#import "FFFBaseSessionContentConfig.h"
-//: #import "FFFTextContentConfig.h"
+//: #import "WorkBaseSessionContentConfig.h"
+#import "WorkBaseSessionContentConfig.h"
+//: #import "WorkTextContentConfig.h"
 #import "RecentConfig.h"
-//: #import "FFFImageContentConfig.h"
+//: #import "WorkImageContentConfig.h"
 #import "RedSystemView.h"
-//: #import "FFFAudioContentConfig.h"
+//: #import "WorkAudioContentConfig.h"
 #import "AccountConfig.h"
-//: #import "FFFVideoContentConfig.h"
+//: #import "WorkVideoContentConfig.h"
 #import "NeedCircle.h"
-//: #import "FFFFileContentConfig.h"
+//: #import "WorkFileContentConfig.h"
 #import "ImageSumRange.h"
-//: #import "FFFNotificationContentConfig.h"
+//: #import "WorkNotificationContentConfig.h"
 #import "SoundQuantity.h"
-//: #import "FFFLocationContentConfig.h"
+//: #import "WorkLocationContentConfig.h"
 #import "TeamTextDisplay.h"
-//: #import "FFFUnsupportContentConfig.h"
+//: #import "WorkUnsupportContentConfig.h"
 #import "ContentBottomConfig.h"
-//: #import "FFFTipContentConfig.h"
+//: #import "WorkTipContentConfig.h"
 #import "PacketConfig.h"
-//: #import "FFFReplyedTextContentConfig.h"
+//: #import "WorkReplyedTextContentConfig.h"
 #import "ContentThreadTeam.h"
-//: #import "FFFRtcCallRecordContentConfig.h"
+//: #import "WorkRtcCallRecordContentConfig.h"
 #import "ForwardNameConfig.h"
 
-//: @interface FFFSessionContentConfigFactory ()
+//: @interface WorkSessionContentConfigFactory ()
 @interface SameModeFactory ()
 //: @property (nonatomic,strong) NSDictionary *dict;
 @property (nonatomic,strong) NSDictionary *dict;
 //: @property (nonatomic,strong) NSDictionary *replyDict;
 @property (nonatomic,strong) NSDictionary *replyDict;
-//: @property (nonatomic,strong) FFFUnsupportContentConfig *unsupportConfig;
+//: @property (nonatomic,strong) WorkUnsupportContentConfig *unsupportConfig;
 @property (nonatomic,strong) ContentBottomConfig *unsupportConfig;
 //: @end
 @end
 
-//: @implementation FFFSessionContentConfigFactory
+//: @implementation WorkSessionContentConfigFactory
 @implementation SameModeFactory
 
 //: + (instancetype)sharedFacotry
 + (instancetype)letter
 {
-    //: static FFFSessionContentConfigFactory *instance = nil;
+    //: static WorkSessionContentConfigFactory *instance = nil;
     static SameModeFactory *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFSessionContentConfigFactory alloc] init];
+        //: instance = [[WorkSessionContentConfigFactory alloc] init];
         instance = [[SameModeFactory alloc] init];
     //: });
     });
@@ -71,28 +71,28 @@
     //: if (self = [super init])
     if (self = [super init])
     {
-        //: _dict = @{@(NIMMessageTypeText) : [FFFTextContentConfig new],
+        //: _dict = @{@(NIMMessageTypeText) : [WorkTextContentConfig new],
         _dict = @{@(NIMMessageTypeText) : [RecentConfig new],
-                  //: @(NIMMessageTypeImage) : [FFFImageContentConfig new],
+                  //: @(NIMMessageTypeImage) : [WorkImageContentConfig new],
                   @(NIMMessageTypeImage) : [RedSystemView new],
-                  //: @(NIMMessageTypeAudio) : [FFFAudioContentConfig new],
+                  //: @(NIMMessageTypeAudio) : [WorkAudioContentConfig new],
                   @(NIMMessageTypeAudio) : [AccountConfig new],
-                  //: @(NIMMessageTypeVideo) : [FFFVideoContentConfig new],
+                  //: @(NIMMessageTypeVideo) : [WorkVideoContentConfig new],
                   @(NIMMessageTypeVideo) : [NeedCircle new],
-                  //: @(NIMMessageTypeFile) : [FFFFileContentConfig new],
+                  //: @(NIMMessageTypeFile) : [WorkFileContentConfig new],
                   @(NIMMessageTypeFile) : [ImageSumRange new],
-                  //: @(NIMMessageTypeLocation) : [FFFLocationContentConfig new],
+                  //: @(NIMMessageTypeLocation) : [WorkLocationContentConfig new],
                   @(NIMMessageTypeLocation) : [TeamTextDisplay new],
-                  //: @(NIMMessageTypeNotification) : [FFFNotificationContentConfig new],
+                  //: @(NIMMessageTypeNotification) : [WorkNotificationContentConfig new],
                   @(NIMMessageTypeNotification) : [SoundQuantity new],
-                  //: @(NIMMessageTypeTip) : [FFFTipContentConfig new],
+                  //: @(NIMMessageTypeTip) : [WorkTipContentConfig new],
                   @(NIMMessageTypeTip) : [PacketConfig new],
-                  //: @(NIMMessageTypeRtcCallRecord): [FFFRtcCallRecordContentConfig new],
+                  //: @(NIMMessageTypeRtcCallRecord): [WorkRtcCallRecordContentConfig new],
                   @(NIMMessageTypeRtcCallRecord): [ForwardNameConfig new],
         //: };
         };
 
-        //: FFFReplyedTextContentConfig *replyedTextConfig = [FFFReplyedTextContentConfig new];
+        //: WorkReplyedTextContentConfig *replyedTextConfig = [WorkReplyedTextContentConfig new];
         ContentThreadTeam *replyedTextConfig = [ContentThreadTeam new];
         //: _replyDict = @{
         _replyDict = @{
@@ -120,7 +120,7 @@
             @(NIMMessageTypeRtcCallRecord) : replyedTextConfig,
         //: };
         };
-        //: _unsupportConfig = [[FFFUnsupportContentConfig alloc] init];
+        //: _unsupportConfig = [[WorkUnsupportContentConfig alloc] init];
         _unsupportConfig = [[ContentBottomConfig alloc] init];
     }
     //: return self;

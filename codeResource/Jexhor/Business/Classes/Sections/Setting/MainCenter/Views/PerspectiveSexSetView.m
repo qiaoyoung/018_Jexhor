@@ -8,7 +8,7 @@
 //: contact_tag_fragment_cancel
 @property (nonatomic, copy) NSString *app_rowImageName;
 
-//: #ffffff
+//: #fffWork
 @property (nonatomic, copy) NSString *kDisableData;
 
 //: ic_btn_accept
@@ -196,7 +196,7 @@
     return _mMessageContent;
 }
 
-//: #ffffff
+//: #fffWork
 - (NSString *)kDisableData {
     if (!_kDisableData) {
         Byte value[] = {7, 99, 12, 180, 38, 245, 59, 49, 219, 201, 243, 68, 134, 201, 201, 201, 201, 201, 201, 166};
@@ -294,7 +294,7 @@
     CGFloat totalwidth = 295;
     //: _box = [[UIView alloc]initWithFrame:CGRectMake(([[UIScreen mainScreen] bounds].size.width-totalwidth)/2, ([[UIScreen mainScreen] bounds].size.height-250)/2, totalwidth, 250)];
     _box = [[UIView alloc]initWithFrame:CGRectMake(([[UIScreen mainScreen] bounds].size.width-totalwidth)/2, ([[UIScreen mainScreen] bounds].size.height-250)/2, totalwidth, 250)];
-    //: _box.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+    //: _box.backgroundColor = [UIColor colorWithHexString:@"#fffWork"];
     _box.backgroundColor = [UIColor ground:[DoingData sharedInstance].kDisableData];
     //: _box.layer.cornerRadius = 20;
     _box.layer.cornerRadius = 20;
@@ -348,7 +348,7 @@
     _labUnknow.textColor = [UIColor ground:[DoingData sharedInstance].showAtData];
     //: _labUnknow.textAlignment = NSTextAlignmentCenter;
     _labUnknow.textAlignment = NSTextAlignmentCenter;
-    //: _labUnknow.text = [FFFLanguageManager getTextWithKey:@"friend_info_activity_xu"];
+    //: _labUnknow.text = [WorkLanguageManager getTextWithKey:@"friend_info_activity_xu"];
     _labUnknow.text = [InputRed preserve:[DoingData sharedInstance].m_lengthValue];
     //: [view1 addSubview:_labUnknow];
     [view1 addSubview:_labUnknow];
@@ -394,7 +394,7 @@
     _labMan.textColor = [UIColor blackColor];
     //: _labMan.textAlignment = NSTextAlignmentCenter;
     _labMan.textAlignment = NSTextAlignmentCenter;
-    //: _labMan.text = [FFFLanguageManager getTextWithKey:@"friend_info_activity_nan"];
+    //: _labMan.text = [WorkLanguageManager getTextWithKey:@"friend_info_activity_nan"];
     _labMan.text = [InputRed preserve:[DoingData sharedInstance].m_imageShouldTitle];
     //: [view2 addSubview:_labMan];
     [view2 addSubview:_labMan];
@@ -439,7 +439,7 @@
     _labWoman.textColor = [UIColor blackColor];
     //: _labWoman.textAlignment = NSTextAlignmentCenter;
     _labWoman.textAlignment = NSTextAlignmentCenter;
-    //: _labWoman.text = [FFFLanguageManager getTextWithKey:@"friend_info_activity_nv"];
+    //: _labWoman.text = [WorkLanguageManager getTextWithKey:@"friend_info_activity_nv"];
     _labWoman.text = [InputRed preserve:[DoingData sharedInstance].m_infoValue];
     //: [view3 addSubview:_labWoman];
     [view3 addSubview:_labWoman];
@@ -577,7 +577,7 @@
         //: _titleLabel.textColor = [UIColor colorWithHexString:@"#000000"];
         _titleLabel.textColor = [UIColor ground:[DoingData sharedInstance].k_commentValue];
 //        _titleLabel.textAlignment = NSTextAlignmentCenter;
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"activity_friend_info_sex"];
+        //: _titleLabel.text = [WorkLanguageManager getTextWithKey:@"activity_friend_info_sex"];
         _titleLabel.text = [InputRed preserve:[DoingData sharedInstance].main_hideContent];
     }
     //: return _titleLabel;
@@ -597,9 +597,9 @@
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:16];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor ground:[DoingData sharedInstance].show_tableValue] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[InputRed preserve:[DoingData sharedInstance].app_rowImageName] forState:UIControlStateNormal];
-        //: _closeBtn.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: _closeBtn.backgroundColor = [UIColor colorWithHexString:@"#fffWork"];
         _closeBtn.backgroundColor = [UIColor ground:[DoingData sharedInstance].kDisableData];
         //: _closeBtn.layer.cornerRadius = 22;
         _closeBtn.layer.cornerRadius = 22;
@@ -620,9 +620,9 @@
         [_sureBtn addTarget:self action:@selector(existCircle) forControlEvents:UIControlEventTouchUpInside];
         //: _sureBtn.titleLabel.font = [UIFont systemFontOfSize:16];
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:16];
-        //: [_sureBtn setTitleColor:[UIColor colorWithHexString:@"#ffffff"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitleColor:[UIColor colorWithHexString:@"#fffWork"] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor ground:[DoingData sharedInstance].kDisableData] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[WorkLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[InputRed preserve:[DoingData sharedInstance].appButtonTitle] forState:UIControlStateNormal];
         //: CGFloat width = (295-60)/2;
         CGFloat width = (295-60)/2;

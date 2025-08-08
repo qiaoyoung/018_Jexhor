@@ -11,18 +11,18 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "WorkCardDataSourceProtocol.h"
+#import "WorkCardDataSourceProtocol.h"
 //: #import "MyUserKit.h"
 #import "MessageContent.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: typedef void(^NIMSelectedCompletion)(id <FFFKitSelectCardData> item);
-typedef void(^NIMSelectedCompletion)(id <FFFKitSelectCardData> item);
+//: typedef void(^NIMSelectedCompletion)(id <WorkKitSelectCardData> item);
+typedef void(^NIMSelectedCompletion)(id <WorkKitSelectCardData> item);
 
-//: @interface FFFTeamCardSelectedViewController : UIViewController
+//: @interface WorkTeamCardSelectedViewController : UIViewController
 @interface EigenvalueOfASquareMatrixViewController : UIViewController
 
 //: @property (nonatomic, copy) NSString *titleString;
@@ -33,8 +33,8 @@ typedef void(^NIMSelectedCompletion)(id <FFFKitSelectCardData> item);
 
 //: + (instancetype)instanceWithTitle:(NSString *)title
 + (instancetype)view:(NSString *)title
-                            //: items:(NSMutableArray <id <FFFKitSelectCardData>> *)items
-                            progress:(NSMutableArray <id <FFFKitSelectCardData>> *)items
+                            //: items:(NSMutableArray <id <WorkKitSelectCardData>> *)items
+                            progress:(NSMutableArray <id <WorkKitSelectCardData>> *)items
                            //: result:(NIMSelectedCompletion)result;
                            tingItems:(NIMSelectedCompletion)result;
 

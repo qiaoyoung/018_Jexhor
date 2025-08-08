@@ -322,7 +322,7 @@ typedef struct {
         _titleLabel.numberOfLines = 1;
         //: _titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
         _titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
-        //: _titleLabel.text =[FFFLanguageManager getTextWithKey:@"my_group_name"];
+        //: _titleLabel.text =[WorkLanguageManager getTextWithKey:@"my_group_name"];
         _titleLabel.text =[InputRed preserve:[AccelerateData sharedInstance].appUniteContent];
     }
     //: return _titleLabel;
@@ -358,7 +358,7 @@ typedef struct {
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor ground:[AccelerateData sharedInstance].user_pursuitName] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[InputRed preserve:[AccelerateData sharedInstance].mPremiumThreadName] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -385,7 +385,7 @@ typedef struct {
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[WorkLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[InputRed preserve:[AccelerateData sharedInstance].main_givingTargetName] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#05D481"];
         _sureBtn.backgroundColor = [UIColor ground:[AccelerateData sharedInstance].show_crowdedItsText];
@@ -426,7 +426,7 @@ typedef struct {
 
         //: _searchField = [[UITextField alloc]initWithFrame:CGRectMake(15, 6, [[UIScreen mainScreen] bounds].size.width-80-30, 40)];
         _searchField = [[UITextField alloc]initWithFrame:CGRectMake(15, 6, [[UIScreen mainScreen] bounds].size.width-80-30, 40)];
-        //: _searchField.placeholder = [FFFLanguageManager getTextWithKey:@"activity_my_user_info_nick"];
+        //: _searchField.placeholder = [WorkLanguageManager getTextWithKey:@"activity_my_user_info_nick"];
         _searchField.placeholder = [InputRed preserve:[AccelerateData sharedInstance].kModeSendSeverValue];
         //: _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];
         _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];

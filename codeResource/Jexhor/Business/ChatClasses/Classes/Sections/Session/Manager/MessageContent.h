@@ -12,47 +12,47 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFLanguageManager.h"
+//: #import "WorkLanguageManager.h"
 #import "InputRed.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFKitInfo.h"
+//: #import "WorkKitInfo.h"
 #import "ConfirmationInfo.h"
-//: #import "FFFMediaItem.h"            //多媒体面板对象
+//: #import "WorkMediaItem.h"            //多媒体面板对象
 #import "AccountAction.h"            //多媒体面板对象
-//: #import "FFFMessageModel.h"         //message Wrapper
+//: #import "WorkMessageModel.h"         //message Wrapper
 #import "ShowModel.h"         //message Wrapper
-//: #import "FFFKitMessageProvider.h"
+//: #import "WorkKitMessageProvider.h"
 #import "SpecsText.h"
-//: #import "FFFCellConfig.h"           //message cell配置协议
-#import "FFFCellConfig.h"           //message cell配置协议
-//: #import "FFFInputProtocol.h"        //输入框回调
-#import "FFFInputProtocol.h"        //输入框回调
-//: #import "FFFKitDataProvider.h"      //APP内容提供器
+//: #import "WorkCellConfig.h"           //message cell配置协议
+#import "WorkCellConfig.h"           //message cell配置协议
+//: #import "WorkInputProtocol.h"        //输入框回调
+#import "WorkInputProtocol.h"        //输入框回调
+//: #import "WorkKitDataProvider.h"      //APP内容提供器
 #import "DraftProvider.h"      //APP内容提供器
-//: #import "FFFMessageCellProtocol.h"  //message cell事件回调
-#import "FFFMessageCellProtocol.h"  //message cell事件回调
-//: #import "FFFSessionConfig.h"        //会话页面配置
+//: #import "WorkMessageCellProtocol.h"  //message cell事件回调
+#import "WorkMessageCellProtocol.h"  //message cell事件回调
+//: #import "WorkSessionConfig.h"        //会话页面配置
 #import "LineConfig.h"        //会话页面配置
-//: #import "FFFKitEvent.h"             //点击事件封装类
+//: #import "WorkKitEvent.h"             //点击事件封装类
 #import "WrittenAccountLab.h"             //点击事件封装类
-//: #import "FFFCellLayoutConfig.h"
+//: #import "WorkCellLayoutConfig.h"
 #import "TingConfig.h"
-//: #import "FFFSessionMessageContentView.h"
+//: #import "WorkSessionMessageContentView.h"
 #import "TextControl.h"
-//: #import "FFFKitConfig.h"
+//: #import "WorkKitConfig.h"
 #import "ModeConfig.h"
-//: #import "FFFSessionViewController.h"
+//: #import "WorkSessionViewController.h"
 #import "AccountViewController.h"
-//: #import "FFFSessionListViewController.h"
+//: #import "WorkSessionListViewController.h"
 #import "DivertViewController.h"
-//: #import "FFFKitIndependentModeExtraInfo.h"
+//: #import "WorkKitIndependentModeExtraInfo.h"
 #import "TitleInfo.h"
-//: #import "FFFChatUIManagerProtocol.h"
-#import "FFFChatUIManagerProtocol.h"
-//: #import "FFFCollectionViewLeftAlignedLayout.h"
+//: #import "WorkChatUIManagerProtocol.h"
+#import "WorkChatUIManagerProtocol.h"
+//: #import "WorkCollectionViewLeftAlignedLayout.h"
 #import "ActionFlowLayout.h"
-//: #import "FFFKitQuickCommentUtil.h"
+//: #import "WorkKitQuickCommentUtil.h"
 #import "MessageUtil.h"
 
 //: extern double NIMKitVersionNumber;
@@ -122,25 +122,25 @@ extern const unsigned char userNameValue[];
 /**
  *  注册自定义的排版配置，通过注册自定义排版配置来实现自定义消息的定制化排版
  */
-//: - (void)registerLayoutConfig:(FFFCellLayoutConfig *)layoutConfig;
+//: - (void)registerLayoutConfig:(WorkCellLayoutConfig *)layoutConfig;
 - (void)fluctuation:(TingConfig *)layoutConfig;
 
 /**
  *  返回当前的排版配置
  */
-//: - (id<FFFCellLayoutConfig>)layoutConfig;
+//: - (id<WorkCellLayoutConfig>)layoutConfig;
 - (id<TingConfig>)layoutConfig;
 
 /**
  *  UI 配置器
  */
-//: @property (nonatomic,strong) FFFKitConfig *config;
+//: @property (nonatomic,strong) WorkKitConfig *config;
 @property (nonatomic,strong) ModeConfig *config;
 
 /**
  *  内容提供者，由上层开发者注入。如果没有则使用默认 provider
  */
-//: @property (nonatomic,strong) id<FFFKitDataProvider> provider;
+//: @property (nonatomic,strong) id<WorkKitDataProvider> provider;
 @property (nonatomic,strong) id<DraftProvider> provider;
 
 /**
@@ -148,13 +148,13 @@ extern const unsigned char userNameValue[];
  *
  *  此字段需要配合默认的 DraftProvider ( ColumnLine ) 使用，如果上层自己定义了 provider ， 则忽略此字段。
  */
-//: @property (nonatomic,strong) FFFKitIndependentModeExtraInfo *independentModeExtraInfo;
+//: @property (nonatomic,strong) WorkKitIndependentModeExtraInfo *independentModeExtraInfo;
 @property (nonatomic,strong) TitleInfo *independentModeExtraInfo;
 
 /**
  * 聊天模块常用UI方法
  */
-//: @property (nonatomic, readonly) id<FFFChatUIManager> chatUIManager;
+//: @property (nonatomic, readonly) id<WorkChatUIManager> chatUIManager;
 @property (nonatomic, readonly) id<WithUimanager> chatUIManager;
 
 /**
@@ -209,25 +209,25 @@ extern const unsigned char userNameValue[];
 /**
  *  返回用户信息
  */
-//: - (FFFKitInfo *)infoByUser:(NSString *)userId
+//: - (WorkKitInfo *)infoByUser:(NSString *)userId
 - (ConfirmationInfo *)recent:(NSString *)userId
-                    //: option:(FFFKitInfoFetchOption *)option;
+                    //: option:(WorkKitInfoFetchOption *)option;
                     blue:(RangeOption *)option;
 
 /**
  *  返回群信息
  */
-//: - (FFFKitInfo *)infoByTeam:(NSString *)teamId
+//: - (WorkKitInfo *)infoByTeam:(NSString *)teamId
 - (ConfirmationInfo *)info:(NSString *)teamId
-                    //: option:(FFFKitInfoFetchOption *)option;
+                    //: option:(WorkKitInfoFetchOption *)option;
                     comment:(RangeOption *)option;
 
 /**
  *  返回群信息
  */
-//: - (FFFKitInfo *)infoBySuperTeam:(NSString *)teamId
+//: - (WorkKitInfo *)infoBySuperTeam:(NSString *)teamId
 - (ConfirmationInfo *)item:(NSString *)teamId
-                         //: option:(FFFKitInfoFetchOption *)option;
+                         //: option:(WorkKitInfoFetchOption *)option;
                          pit:(RangeOption *)option;
 
 /**

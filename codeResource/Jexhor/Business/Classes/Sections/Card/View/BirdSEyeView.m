@@ -128,10 +128,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFRemarksView.h"
+//: #import "WorkRemarksView.h"
 #import "BirdSEyeView.h"
 
-//: @interface FFFRemarksView ()<UITextFieldDelegate>
+//: @interface WorkRemarksView ()<UITextFieldDelegate>
 @interface BirdSEyeView ()<UITextFieldDelegate>
 
 //: @property (nonatomic,assign) NSInteger inputLimit;
@@ -156,7 +156,7 @@
 //: @end
 @end
 
-//: @implementation FFFRemarksView
+//: @implementation WorkRemarksView
 @implementation BirdSEyeView
 
 //: - (instancetype)initWithFrame:(CGRect)frame
@@ -232,7 +232,7 @@
 {
     //: self.user = user;
     self.user = user;
-    //: self.titleLabel.text = [FFFLanguageManager getTextWithKey:@"message_remark_name"];
+    //: self.titleLabel.text = [WorkLanguageManager getTextWithKey:@"message_remark_name"];
     self.titleLabel.text = [InputRed preserve:[CommunicationData show_imageTitle]];
     //: self.searchField.text = user.alias;
     self.searchField.text = user.alias;
@@ -248,7 +248,7 @@
 //    self.box.frame = CGRectMake(0, SCREEN_HEIGHT-180, SCREEN_WIDTH, 180);
     //: if (!self.searchField.text.length) {
     if (!self.searchField.text.length) {
-        //: [self makeToast:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_input_beizhu"] duration:2.0 position:CSToastPositionCenter];
+        //: [self makeToast:[WorkLanguageManager getTextWithKey:@"user_profile_avtivity_input_beizhu"] duration:2.0 position:CSToastPositionCenter];
         [self makeToast:[InputRed preserve:[CommunicationData kLimitValue]] duration:2.0 position:CSToastPositionCenter];
         //: return;
         return;
@@ -269,7 +269,7 @@
         [SVProgressHUD dismiss];
         //: if (!error) {
         if (!error) {
-            //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_success"]
+            //: [wself makeToast:[WorkLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_success"]
             [wself makeToast:[InputRed preserve:[CommunicationData dream_videoData]]
                          //: duration:2
                          duration:2
@@ -281,7 +281,7 @@
 
         //: }else{
         }else{
-            //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"]
+            //: [wself makeToast:[WorkLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"]
             [wself makeToast:[InputRed preserve:[CommunicationData main_colorData]]
                          //: duration:2
                          duration:2
@@ -398,7 +398,7 @@
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor ground:[CommunicationData kWithContent]] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[InputRed preserve:[CommunicationData app_buttonTitle]] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -425,7 +425,7 @@
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[InputRed preserve:[CommunicationData kInfoTableData]] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#05D481"];
         _sureBtn.backgroundColor = [UIColor ground:[CommunicationData mButtonWithText]];
@@ -463,7 +463,7 @@
 
         //: _searchField = [[UITextField alloc]initWithFrame:CGRectMake(15, 6, [[UIScreen mainScreen] bounds].size.width-80-30, 40)];
         _searchField = [[UITextField alloc]initWithFrame:CGRectMake(15, 6, [[UIScreen mainScreen] bounds].size.width-80-30, 40)];
-        //: _searchField.placeholder = [FFFLanguageManager getTextWithKey:@"message_remark_name"];
+        //: _searchField.placeholder = [WorkLanguageManager getTextWithKey:@"message_remark_name"];
         _searchField.placeholder = [InputRed preserve:[CommunicationData show_imageTitle]];
         //: _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];
         _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];

@@ -62,14 +62,14 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitFileLocationHelper.h"
+//: #import "WorkKitFileLocationHelper.h"
 #import "ImageHelper.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
 //: #import <sys/stat.h>
 #import <sys/stat.h>
 
-//: @interface FFFKitFileLocationHelper ()
+//: @interface WorkKitFileLocationHelper ()
 @interface ImageHelper ()
 //: + (NSString *)filepathForDir: (NSString *)dirname filename: (NSString *)filename;
 + (NSString *)bubble: (NSString *)dirname query: (NSString *)filename;
@@ -77,7 +77,7 @@ typedef struct {
 @end
 
 
-//: @implementation FFFKitFileLocationHelper
+//: @implementation WorkKitFileLocationHelper
 @implementation ImageHelper
 //: + (BOOL)addSkipBackupAttributeToItemAtURL:(NSURL *)URL
 + (BOOL)container:(NSURL *)URL
@@ -130,7 +130,7 @@ typedef struct {
                                                             //: error:nil];
                                                             error:nil];
         }
-        //: [FFFKitFileLocationHelper addSkipBackupAttributeToItemAtURL:[NSURL fileURLWithPath:appDocumentPath]];
+        //: [WorkKitFileLocationHelper addSkipBackupAttributeToItemAtURL:[NSURL fileURLWithPath:appDocumentPath]];
         [ImageHelper container:[NSURL fileURLWithPath:appDocumentPath]];
     //: });
     });
@@ -149,7 +149,7 @@ typedef struct {
 //: + (NSString *)userDirectory
 + (NSString *)streetwise
 {
-    //: NSString *documentPath = [FFFKitFileLocationHelper getAppDocumentPath];
+    //: NSString *documentPath = [WorkKitFileLocationHelper getAppDocumentPath];
     NSString *documentPath = [ImageHelper alongPath];
     //: NSString *userID = [NIMSDK sharedSDK].loginManager.currentAccount;
     NSString *userID = [NIMSDK sharedSDK].loginManager.currentAccount;
@@ -180,7 +180,7 @@ typedef struct {
 //: + (NSString *)resourceDir: (NSString *)resouceName
 + (NSString *)object: (NSString *)resouceName
 {
-    //: NSString *dir = [[FFFKitFileLocationHelper userDirectory] stringByAppendingPathComponent:resouceName];
+    //: NSString *dir = [[WorkKitFileLocationHelper userDirectory] stringByAppendingPathComponent:resouceName];
     NSString *dir = [[ImageHelper streetwise] stringByAppendingPathComponent:resouceName];
     //: if (![[NSFileManager defaultManager] fileExistsAtPath:dir])
     if (![[NSFileManager defaultManager] fileExistsAtPath:dir])
@@ -202,7 +202,7 @@ typedef struct {
 //: + (NSString *)filepathForVideo:(NSString *)filename
 + (NSString *)soundVideo:(NSString *)filename
 {
-    //: return [FFFKitFileLocationHelper filepathForDir:@"video"
+    //: return [WorkKitFileLocationHelper filepathForDir:@"video"
     return [ImageHelper bubble:[BestowmentData mainViewValue]
                                          //: filename:filename];
                                          query:filename];
@@ -211,7 +211,7 @@ typedef struct {
 //: + (NSString *)filepathForImage:(NSString *)filename
 + (NSString *)notSession:(NSString *)filename
 {
-    //: return [FFFKitFileLocationHelper filepathForDir:@"image"
+    //: return [WorkKitFileLocationHelper filepathForDir:@"image"
     return [ImageHelper bubble:[BestowmentData main_troopAppearData]
                                          //: filename:filename];
                                          query:filename];
@@ -242,7 +242,7 @@ typedef struct {
                     //: filename:(NSString *)filename
                     query:(NSString *)filename
 {
-    //: return [[FFFKitFileLocationHelper resourceDir:dirname] stringByAppendingPathComponent:filename];
+    //: return [[WorkKitFileLocationHelper resourceDir:dirname] stringByAppendingPathComponent:filename];
     return [[ImageHelper object:dirname] stringByAppendingPathComponent:filename];
 }
 

@@ -16,11 +16,11 @@
 @protocol SessionCreate <NSObject>
 
 //: - (NSString *)groupTitle;
-- (NSString *)name;
+- (NSString *)groupTitle;
 //: - (NSString *)memberId;
-- (NSString *)on;
+- (NSString *)memberId;
 //: - (id)sortKey;
-- (id)holder;
+- (id)sortKey;
 
 //: @end
 @end

@@ -447,7 +447,7 @@
     return userTableTitle;
 }
 
-//: #ffffff
+//: #fffWork
 - (NSString *)app_needContent {
     /* static */ NSString *app_needContent = nil;
     if (!app_needContent) {
@@ -752,10 +752,10 @@
 // __M_A_C_R_O__
 //: #import "NTESPersonalCardViewController.h"
 #import "SystemViewController.h"
-//: #import "FFFCommonTableDelegate.h"
+//: #import "WorkCommonTableDelegate.h"
 #import "TableDelegate.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "WorkCommonTableData.h"
+#import "WorkCommonTableData.h"
 //: #import "UIView+Toast.h"
 #import "UIView+Toast.h"
 //: #import "SVProgressHUD.h"
@@ -774,7 +774,7 @@
 #import "CellVideo.h"
 //: #import "HMDataPicker.h"
 #import "RawDataView.h"
-//: #import "FFFRemarksView.h"
+//: #import "WorkRemarksView.h"
 #import "BirdSEyeView.h"
 //: #import "NTESOpinionBackViewController.h"
 #import "ShankViewController.h"
@@ -798,15 +798,15 @@
 #import "ManagerViewController.h"
 //: #import "CCCContactsViewController.h"
 #import "ThreadViewController.h"
-//: #import "FFFContactSelectViewController.h"
+//: #import "WorkContactSelectViewController.h"
 #import "CompartmentViewController.h"
-//: #import "FFFKitFileLocationHelper.h"
+//: #import "WorkKitFileLocationHelper.h"
 #import "ImageHelper.h"
 
 //: @interface NTESPersonalCardViewController ()<NIMUserManagerDelegate,HMDataPickerDelegate,NTESReportDelegate,NTESReportNextDelegate>
 @interface SystemViewController ()<NIMUserManagerDelegate,RecordFactorOff,RangeFrame,InformTing>
 
-//: @property (nonatomic,strong) FFFCommonTableDelegate *delegator;
+//: @property (nonatomic,strong) WorkCommonTableDelegate *delegator;
 @property (nonatomic,strong) TableDelegate *delegator;
 
 //: @property (nonatomic,copy ) NSArray *data;
@@ -874,7 +874,7 @@
 
 //: @property (nonatomic, strong) ZMONReportUserView *reprotView;
 @property (nonatomic, strong) RecentView *reprotView;
-//: @property (nonatomic, strong) FFFRemarksView *changeRemarksView;
+//: @property (nonatomic, strong) WorkRemarksView *changeRemarksView;
 @property (nonatomic, strong) BirdSEyeView *changeRemarksView;
 //: @property (nonatomic, strong) ZMONCustomLoadingView *loadingView;
 @property (nonatomic, strong) LabView *loadingView;
@@ -983,7 +983,7 @@
             //: NSString *avatar = [data newStringValueForKey:@"avatar"];
             NSString *avatar = [data route:[[EndAtData sharedInstance] k_canName]];
 
-            //: NSString *str = [NSString stringWithFormat:@"%@:%@",[FFFLanguageManager getTextWithKey:@"register_avtivity_account"],self.userAcount];
+            //: NSString *str = [NSString stringWithFormat:@"%@:%@",[WorkLanguageManager getTextWithKey:@"register_avtivity_account"],self.userAcount];
             NSString *str = [NSString stringWithFormat:@"%@:%@",[InputRed preserve:[[EndAtData sharedInstance] m_hideTitle]],self.userAcount];
             //: self.accountId.text = str;
             self.accountId.text = str;
@@ -1101,9 +1101,9 @@
                     //: self.switchNotice.on = needNotify;
                     self.switchNotice.on = needNotify;
 
-                    //: self.labRemark.text = self.user.alias.length ? self.user.alias : [FFFLanguageManager getTextWithKey:@"未设置"];
+                    //: self.labRemark.text = self.user.alias.length ? self.user.alias : [WorkLanguageManager getTextWithKey:@"未设置"];
                     self.labRemark.text = self.user.alias.length ? self.user.alias : [InputRed preserve:[[EndAtData sharedInstance] user_messageTitle]];
-                    //: self.labSign.text = self.user.userInfo.sign.length ? self.user.userInfo.sign : [FFFLanguageManager getTextWithKey:@"未设置"];
+                    //: self.labSign.text = self.user.userInfo.sign.length ? self.user.userInfo.sign : [WorkLanguageManager getTextWithKey:@"未设置"];
                     self.labSign.text = self.user.userInfo.sign.length ? self.user.userInfo.sign : [InputRed preserve:[[EndAtData sharedInstance] user_messageTitle]];
 
                     //: if(isMyFriend){
@@ -1178,7 +1178,7 @@
 //        [SVProgressHUD dismiss];
         //: [self.loadingView animationClose];
         [self.loadingView animationWithEnableAtHand];
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"add_friend_request_fail"]
+        //: [self.view makeToast:[WorkLanguageManager getTextWithKey:@"add_friend_request_fail"]
         [self.view makeToast:[InputRed preserve:[[EndAtData sharedInstance] showViewContent]]
                     //: duration:2.0
                     duration:2.0
@@ -1274,11 +1274,11 @@
             [self.loadingView animationWithEnableAtHand];
             //: if (!error) {
             if (!error) {
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"group_chat_avatar_activity_add_black_success"] duration:2.0f position:CSToastPositionCenter];
+                //: [wself.view makeToast:[WorkLanguageManager getTextWithKey:@"group_chat_avatar_activity_add_black_success"] duration:2.0f position:CSToastPositionCenter];
                 [wself.view makeToast:[InputRed preserve:[[EndAtData sharedInstance] show_commentName]] duration:2.0f position:CSToastPositionCenter];
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"black_list_activity_add_black_failed"] duration:2.0f position:CSToastPositionCenter];
+                //: [wself.view makeToast:[WorkLanguageManager getTextWithKey:@"black_list_activity_add_black_failed"] duration:2.0f position:CSToastPositionCenter];
                 [wself.view makeToast:[InputRed preserve:[[EndAtData sharedInstance] m_addData]] duration:2.0f position:CSToastPositionCenter];
                 //: [wself refresh];
                 [wself upFlush];
@@ -1294,11 +1294,11 @@
             [self.loadingView animationWithEnableAtHand];
             //: if (!error) {
             if (!error) {
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"black_list_activity_remove_black"] duration:2.0f position:CSToastPositionCenter];
+                //: [wself.view makeToast:[WorkLanguageManager getTextWithKey:@"black_list_activity_remove_black"] duration:2.0f position:CSToastPositionCenter];
                 [wself.view makeToast:[InputRed preserve:[[EndAtData sharedInstance] main_appearValue]] duration:2.0f position:CSToastPositionCenter];
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"black_list_activity_remove_black_failed"] duration:2.0f position:CSToastPositionCenter];
+                //: [wself.view makeToast:[WorkLanguageManager getTextWithKey:@"black_list_activity_remove_black_failed"] duration:2.0f position:CSToastPositionCenter];
                 [wself.view makeToast:[InputRed preserve:[[EndAtData sharedInstance] m_sessionName]] duration:2.0f position:CSToastPositionCenter];
                 //: [wself refresh];
                 [wself upFlush];
@@ -1324,7 +1324,7 @@
         [self.loadingView animationWithEnableAtHand];
         //: if (error) {
         if (error) {
-            //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2.0f position:CSToastPositionCenter];
+            //: [wself.view makeToast:[WorkLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2.0f position:CSToastPositionCenter];
             [wself.view makeToast:[InputRed preserve:[[EndAtData sharedInstance] m_atData]] duration:2.0f position:CSToastPositionCenter];
             //: [wself refresh];
             [wself upFlush];
@@ -1390,7 +1390,7 @@
             option.type = NIMTeamTypeAdvanced;
             //: option.joinMode = NIMTeamJoinModeNoAuth;
             option.joinMode = NIMTeamJoinModeNoAuth;
-            //: option.postscript = [FFFLanguageManager getTextWithKey:@"invite_you_group"];
+            //: option.postscript = [WorkLanguageManager getTextWithKey:@"invite_you_group"];
             option.postscript = [InputRed preserve:[[EndAtData sharedInstance] dreamMakeInfoAutoName]];
 //            [SVProgressHUD show];
 
@@ -1410,7 +1410,7 @@
                     [self.navigationController pushViewController:vc animated:YES];
                 //: }else{
                 }else{
-                    //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
+                    //: [self.view makeToast:[WorkLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
                     [self.view makeToast:[InputRed preserve:[[EndAtData sharedInstance] dreamVideoName]] duration:2.0 position:CSToastPositionCenter];
                 }
             //: }];
@@ -1450,7 +1450,7 @@
     //: config.showSelectHeaderview = YES;
     config.showSelectHeaderview = YES;
     //初始化联系人选择器
-    //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+    //: WorkContactSelectViewController *vc = [[WorkContactSelectViewController alloc] initWithConfig:config];
     CompartmentViewController *vc = [[CompartmentViewController alloc] initWithStateAtPull:config];
     //回调处理
     //: vc.finshBlock = block;
@@ -1471,9 +1471,9 @@
 
     //: UIImage *imageForAvatarUpload = [image imageByScalingAndCroppingForSize:CGSizeMake(375, 375)];
     UIImage *imageForAvatarUpload = [image byName:CGSizeMake(375, 375)];
-    //: NSString *fileName = [FFFKitFileLocationHelper genFilenameWithExt:@"jpg"];
+    //: NSString *fileName = [WorkKitFileLocationHelper genFilenameWithExt:@"jpg"];
     NSString *fileName = [ImageHelper key:[[EndAtData sharedInstance] app_hideName]];
-    //: NSString *filePath = [[FFFKitFileLocationHelper getAppDocumentPath] stringByAppendingPathComponent:fileName];
+    //: NSString *filePath = [[WorkKitFileLocationHelper getAppDocumentPath] stringByAppendingPathComponent:fileName];
     NSString *filePath = [[ImageHelper alongPath] stringByAppendingPathComponent:fileName];
     //: NSData *data = UIImageJPEGRepresentation(imageForAvatarUpload, 0.3);
     NSData *data = UIImageJPEGRepresentation(imageForAvatarUpload, 0.3);
@@ -1494,7 +1494,7 @@
 
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
+                //: [wself.view makeToast:[WorkLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
                 [wself.view makeToast:[InputRed preserve:[[EndAtData sharedInstance] userTableTitle]]
                              //: duration:2
                              duration:2
@@ -1508,7 +1508,7 @@
         }];
     //: }else{
     }else{
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
+        //: [self.view makeToast:[WorkLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
         [self.view makeToast:[InputRed preserve:[[EndAtData sharedInstance] userTableTitle]]
                     //: duration:2
                     duration:2
@@ -1532,7 +1532,7 @@
         NSString *canAddFriend = [_teamSetingConfig route:[[EndAtData sharedInstance] appButtonValue]];
         //: if (canAddFriend.integerValue <= 0) {
         if (canAddFriend.integerValue <= 0) {
-            //: [SVProgressHUD showMessage:[FFFLanguageManager getTextWithKey:@"please_contact_your_administrator"]];
+            //: [SVProgressHUD showMessage:[WorkLanguageManager getTextWithKey:@"please_contact_your_administrator"]];
             [SVProgressHUD text:[InputRed preserve:[[EndAtData sharedInstance] app_messageText]]];
             //: return;
             return;
@@ -1559,13 +1559,13 @@
     //: request.message = tempVerificationInfo.length > 0 ? tempVerificationInfo : @"";
     request.message = tempVerificationInfo.length > 0 ? tempVerificationInfo : @"";
 
-    //: NSString *contact_tag_fragment_add_success = [FFFLanguageManager getTextWithKey:@"contact_tag_fragment_add_success"];
+    //: NSString *contact_tag_fragment_add_success = [WorkLanguageManager getTextWithKey:@"contact_tag_fragment_add_success"];
     NSString *contact_tag_fragment_add_success = [InputRed preserve:[[EndAtData sharedInstance] userCanValue]];//@"添加成功"
-    //: NSString *request_successful = [FFFLanguageManager getTextWithKey:@"request_successful"];
+    //: NSString *request_successful = [WorkLanguageManager getTextWithKey:@"request_successful"];
     NSString *request_successful = [InputRed preserve:[[EndAtData sharedInstance] dreamImageText]];//@"请求成功"
-    //: NSString *add_friend_add_fail = [FFFLanguageManager getTextWithKey:@"add_friend_add_fail"];
+    //: NSString *add_friend_add_fail = [WorkLanguageManager getTextWithKey:@"add_friend_add_fail"];
     NSString *add_friend_add_fail = [InputRed preserve:[[EndAtData sharedInstance] dream_rowValue]];//@"添加失败"
-    //: NSString *add_friend_request_fail = [FFFLanguageManager getTextWithKey:@"add_friend_request_fail"];
+    //: NSString *add_friend_request_fail = [WorkLanguageManager getTextWithKey:@"add_friend_request_fail"];
     NSString *add_friend_request_fail = [InputRed preserve:[[EndAtData sharedInstance] showViewContent]];//@"请求失败"
     //: NSString *successText = request.operation == NIMUserOperationAdd ? contact_tag_fragment_add_success: request_successful;
     NSString *successText = request.operation == NIMUserOperationAdd ? contact_tag_fragment_add_success: request_successful;
@@ -1639,7 +1639,7 @@
 - (void)tapCell{
     //: __weak typeof(self) wself = self;
     __weak typeof(self) wself = self;//@"删除好友后，将同时解除双方的好友关系"
-    //: UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend"] message:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend_tip"] delegate:nil cancelButtonTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] otherButtonTitles:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"], nil];
+    //: UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[WorkLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend"] message:[WorkLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend_tip"] delegate:nil cancelButtonTitle:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] otherButtonTitles:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_sure"], nil];
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[InputRed preserve:[[EndAtData sharedInstance] user_placeWithValue]] message:[InputRed preserve:[[EndAtData sharedInstance] appShowTitle]] delegate:nil cancelButtonTitle:[InputRed preserve:[[EndAtData sharedInstance] appAppearValue]] otherButtonTitles:[InputRed preserve:[[EndAtData sharedInstance] user_fileName]], nil];
     //: [alert showAlertWithCompletionHandler:^(NSInteger index) {
     [alert menuMedia:^(NSInteger index) {
@@ -1662,7 +1662,7 @@
                 [self.loadingView animationWithEnableAtHand];
                 //: if (!error) {
                 if (!error) {
-                    //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_delete_success"] duration:2.0f position:CSToastPositionCenter];
+                    //: [wself.view makeToast:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_delete_success"] duration:2.0f position:CSToastPositionCenter];
                     [wself.view makeToast:[InputRed preserve:[[EndAtData sharedInstance] kLengthName]] duration:2.0f position:CSToastPositionCenter];
                     //: [wself refresh];
                     [wself upFlush];
@@ -1670,7 +1670,7 @@
                     [self argument];
                 //: }else{
                 }else{
-                    //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_delete_fail"] duration:2.0f position:CSToastPositionCenter];
+                    //: [wself.view makeToast:[WorkLanguageManager getTextWithKey:@"friend_delete_fail"] duration:2.0f position:CSToastPositionCenter];
                     [wself.view makeToast:[InputRed preserve:[[EndAtData sharedInstance] app_shouldValue]] duration:2.0f position:CSToastPositionCenter];
                 }
             //: }];
@@ -1931,9 +1931,9 @@
             [_messageBtn addTarget:self action:@selector(examineedBottom) forControlEvents:UIControlEventTouchUpInside];
             //: _messageBtn.titleLabel.font = [UIFont systemFontOfSize:12];
             _messageBtn.titleLabel.font = [UIFont systemFontOfSize:12];
-            //: [_messageBtn setTitleColor:[UIColor colorWithHexString:@"#ffffff"] forState:UIControlStateNormal];
+            //: [_messageBtn setTitleColor:[UIColor colorWithHexString:@"#fffWork"] forState:UIControlStateNormal];
             [_messageBtn setTitleColor:[UIColor ground:[[EndAtData sharedInstance] app_needContent]] forState:UIControlStateNormal];
-            //: [_messageBtn setTitle:[FFFLanguageManager getTextWithKey:@"message_info_activity_message_info"] forState:UIControlStateNormal];
+            //: [_messageBtn setTitle:[WorkLanguageManager getTextWithKey:@"message_info_activity_message_info"] forState:UIControlStateNormal];
             [_messageBtn setTitle:[InputRed preserve:[[EndAtData sharedInstance] userShowTitle]] forState:UIControlStateNormal];
             //: _messageBtn.layer.cornerRadius = 22;
             _messageBtn.layer.cornerRadius = 22;
@@ -1950,9 +1950,9 @@
             [_groupBtn addTarget:self action:@selector(loadChild) forControlEvents:UIControlEventTouchUpInside];
             //: _groupBtn.titleLabel.font = [UIFont systemFontOfSize:12];
             _groupBtn.titleLabel.font = [UIFont systemFontOfSize:12];
-            //: [_groupBtn setTitleColor:[UIColor colorWithHexString:@"#ffffff"] forState:UIControlStateNormal];
+            //: [_groupBtn setTitleColor:[UIColor colorWithHexString:@"#fffWork"] forState:UIControlStateNormal];
             [_groupBtn setTitleColor:[UIColor ground:[[EndAtData sharedInstance] app_needContent]] forState:UIControlStateNormal];
-            //: [_groupBtn setTitle:[FFFLanguageManager getTextWithKey:@"Group_chat"] forState:UIControlStateNormal];
+            //: [_groupBtn setTitle:[WorkLanguageManager getTextWithKey:@"Group_chat"] forState:UIControlStateNormal];
             [_groupBtn setTitle:[InputRed preserve:[[EndAtData sharedInstance] main_placeValue]] forState:UIControlStateNormal];
             //: _groupBtn.layer.cornerRadius = 22;
             _groupBtn.layer.cornerRadius = 22;
@@ -2022,7 +2022,7 @@
         self.labTitlenotice.font = [UIFont systemFontOfSize:16.f];
         //: self.labTitlenotice.textColor = [UIColor blackColor];
         self.labTitlenotice.textColor = [UIColor blackColor];
-        //: self.labTitlenotice.text = [FFFLanguageManager getTextWithKey:@"message_info_activity_msg_notice"];
+        //: self.labTitlenotice.text = [WorkLanguageManager getTextWithKey:@"message_info_activity_msg_notice"];
         self.labTitlenotice.text = [InputRed preserve:[[EndAtData sharedInstance] kTargetContent]];
         //: [noticeView addSubview:self.labTitlenotice];
         [noticeView addSubview:self.labTitlenotice];
@@ -2057,7 +2057,7 @@
         self.labTitleBlack.font = [UIFont systemFontOfSize:16.f];
         //: self.labTitleBlack.textColor = [UIColor blackColor];
         self.labTitleBlack.textColor = [UIColor blackColor];
-        //: self.labTitleBlack.text = [FFFLanguageManager getTextWithKey:@"func_viewholder_black"];
+        //: self.labTitleBlack.text = [WorkLanguageManager getTextWithKey:@"func_viewholder_black"];
         self.labTitleBlack.text = [InputRed preserve:[[EndAtData sharedInstance] userShouldData]];
         //: [blackView addSubview:self.labTitleBlack];
         [blackView addSubview:self.labTitleBlack];
@@ -2072,7 +2072,7 @@
         blackBtn.titleLabel.font = [UIFont systemFontOfSize:12];
         //: [blackBtn setTitleColor:[UIColor colorWithHexString:@"#05D481"] forState:UIControlStateNormal];
         [blackBtn setTitleColor:[UIColor ground:[[EndAtData sharedInstance] dream_changeSendData]] forState:UIControlStateNormal];
-        //: [blackBtn setTitle:[FFFLanguageManager getTextWithKey:@"gotoBlacklist"] forState:UIControlStateNormal];
+        //: [blackBtn setTitle:[WorkLanguageManager getTextWithKey:@"gotoBlacklist"] forState:UIControlStateNormal];
         [blackBtn setTitle:[InputRed preserve:[[EndAtData sharedInstance] notiHandleContent]] forState:UIControlStateNormal];
         //: [blackView addSubview:blackBtn];
         [blackView addSubview:blackBtn];
@@ -2147,7 +2147,7 @@
         self.labTitleRemark.font = [UIFont systemFontOfSize:16.f];
         //: self.labTitleRemark.textColor = [UIColor blackColor];
         self.labTitleRemark.textColor = [UIColor blackColor];
-        //: self.labTitleRemark.text = [FFFLanguageManager getTextWithKey:@"message_remark_name"];
+        //: self.labTitleRemark.text = [WorkLanguageManager getTextWithKey:@"message_remark_name"];
         self.labTitleRemark.text = [InputRed preserve:[[EndAtData sharedInstance] main_sizeImageTitle]];
         //: [nameView addSubview:self.labTitleRemark];
         [nameView addSubview:self.labTitleRemark];
@@ -2214,7 +2214,7 @@
         self.labTitleResport.font = [UIFont systemFontOfSize:16.f];
         //: self.labTitleResport.textColor = [UIColor blackColor];
         self.labTitleResport.textColor = [UIColor blackColor];
-        //: self.labTitleResport.text = [FFFLanguageManager getTextWithKey:@"report_activity_title"];
+        //: self.labTitleResport.text = [WorkLanguageManager getTextWithKey:@"report_activity_title"];
         self.labTitleResport.text = [InputRed preserve:[[EndAtData sharedInstance] k_atValue]];
         //: [reportView addSubview:self.labTitleResport];
         [reportView addSubview:self.labTitleResport];
@@ -2234,11 +2234,11 @@
         self.btnAdd.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [self.btnAdd setTitleColor:[UIColor colorWithHexString:@"#FF483D"] forState:UIControlStateNormal];
         [self.btnAdd setTitleColor:[UIColor ground:[[EndAtData sharedInstance] show_oldValueData]] forState:UIControlStateNormal];
-        //: [self.btnAdd setTitle:[FFFLanguageManager getTextWithKey:@"add_friend_activity_add_friend"] forState:UIControlStateNormal];
+        //: [self.btnAdd setTitle:[WorkLanguageManager getTextWithKey:@"add_friend_activity_add_friend"] forState:UIControlStateNormal];
         [self.btnAdd setTitle:[InputRed preserve:[[EndAtData sharedInstance] app_mustValue]] forState:UIControlStateNormal];
         //: [self.btnAdd addTarget:self action:@selector(addFriend) forControlEvents:UIControlEventTouchUpInside];
         [self.btnAdd addTarget:self action:@selector(inputFriend) forControlEvents:UIControlEventTouchUpInside];
-        //: self.btnAdd.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: self.btnAdd.backgroundColor = [UIColor colorWithHexString:@"#fffWork"];
         self.btnAdd.backgroundColor = [UIColor ground:[[EndAtData sharedInstance] app_needContent]];
         //: self.btnAdd.layer.borderWidth = 1;
         self.btnAdd.layer.borderWidth = 1;
@@ -2257,11 +2257,11 @@
         self.btnDelete.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [self.btnDelete setTitleColor:[UIColor colorWithHexString:@"#FF483D"] forState:UIControlStateNormal];
         [self.btnDelete setTitleColor:[UIColor ground:[[EndAtData sharedInstance] show_oldValueData]] forState:UIControlStateNormal];
-        //: [self.btnDelete setTitle:[FFFLanguageManager getTextWithKey:@"friend_circle_adapter_delete"] forState:UIControlStateNormal];
+        //: [self.btnDelete setTitle:[WorkLanguageManager getTextWithKey:@"friend_circle_adapter_delete"] forState:UIControlStateNormal];
         [self.btnDelete setTitle:[InputRed preserve:[[EndAtData sharedInstance] k_videoData]] forState:UIControlStateNormal];
         //: [self.btnDelete addTarget:self action:@selector(deleteFriend) forControlEvents:UIControlEventTouchUpInside];
         [self.btnDelete addTarget:self action:@selector(tapCell) forControlEvents:UIControlEventTouchUpInside];
-        //: self.btnDelete.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: self.btnDelete.backgroundColor = [UIColor colorWithHexString:@"#fffWork"];
         self.btnDelete.backgroundColor = [UIColor ground:[[EndAtData sharedInstance] app_needContent]];
         //: self.btnDelete.layer.borderWidth = 1;
         self.btnDelete.layer.borderWidth = 1;
@@ -2276,12 +2276,12 @@
     return _personView;
 }
 
-//: - (FFFRemarksView *)changeRemarksView
+//: - (WorkRemarksView *)changeRemarksView
 - (BirdSEyeView *)changeRemarksView
 {
     //: if(!_changeRemarksView){
     if(!_changeRemarksView){
-        //: _changeRemarksView = [[FFFRemarksView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
+        //: _changeRemarksView = [[WorkRemarksView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
         _changeRemarksView = [[BirdSEyeView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
 //        _changeRemarksView.hidden = YES;
 
@@ -2371,11 +2371,11 @@
 
                    //: if (!error) {
                    if (!error) {
-                       //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"group_chat_avatar_activity_add_black_success"] duration:2.0f position:CSToastPositionCenter];
+                       //: [self.view makeToast:[WorkLanguageManager getTextWithKey:@"group_chat_avatar_activity_add_black_success"] duration:2.0f position:CSToastPositionCenter];
                        [self.view makeToast:[InputRed preserve:[[EndAtData sharedInstance] show_commentName]] duration:2.0f position:CSToastPositionCenter];
                    //: }else{
                    }else{
-                       //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"black_list_activity_add_black_failed"] duration:2.0f position:CSToastPositionCenter];
+                       //: [self.view makeToast:[WorkLanguageManager getTextWithKey:@"black_list_activity_add_black_failed"] duration:2.0f position:CSToastPositionCenter];
                        [self.view makeToast:[InputRed preserve:[[EndAtData sharedInstance] m_addData]] duration:2.0f position:CSToastPositionCenter];
 
                    }
@@ -2429,11 +2429,11 @@
 
             //: if (!error) {
             if (!error) {
-                //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_delete_success"] duration:2.0f position:CSToastPositionCenter];
+                //: [self.view makeToast:[WorkLanguageManager getTextWithKey:@"contact_tag_fragment_delete_success"] duration:2.0f position:CSToastPositionCenter];
                 [self.view makeToast:[InputRed preserve:[[EndAtData sharedInstance] kLengthName]] duration:2.0f position:CSToastPositionCenter];
             //: }else{
             }else{
-                //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_delete_fail"] duration:2.0f position:CSToastPositionCenter];
+                //: [self.view makeToast:[WorkLanguageManager getTextWithKey:@"friend_delete_fail"] duration:2.0f position:CSToastPositionCenter];
                 [self.view makeToast:[InputRed preserve:[[EndAtData sharedInstance] app_shouldValue]] duration:2.0f position:CSToastPositionCenter];
             }
         //: }];

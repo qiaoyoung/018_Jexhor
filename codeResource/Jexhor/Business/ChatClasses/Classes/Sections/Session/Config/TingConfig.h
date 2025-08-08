@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCellConfig.h"
-#import "FFFCellConfig.h"
+//: #import "WorkCellConfig.h"
+#import "WorkCellConfig.h"
 
-//: @interface FFFCellLayoutConfig : NSObject<FFFCellLayoutConfig>
+//: @interface WorkCellLayoutConfig : NSObject<WorkCellLayoutConfig>
 @interface TingConfig : NSObject<TingConfig>
 
 //: @end

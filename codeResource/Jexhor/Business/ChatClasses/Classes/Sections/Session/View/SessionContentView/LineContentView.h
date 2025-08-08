@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "WorkSessionMessageContentView.h"
 #import "TextControl.h"
 
-//: @interface FFFSessionVideoContentView : FFFSessionMessageContentView
+//: @interface WorkSessionVideoContentView : WorkSessionMessageContentView
 @interface LineContentView : TextControl
 
 //: @end
