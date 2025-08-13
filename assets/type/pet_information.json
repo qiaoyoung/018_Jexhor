@@ -1,0 +1,1745 @@
+{
+    "pets": [
+      {
+        "id": "pet_1",
+        "name": "Patsy",
+        "type": "Poodle",
+        "image": "assets/type/pet_1.png",
+        "breed": "Standard Poodle",
+        "coat_color": "Dark chocolate brown",
+        "grooming_style": "Traditional Poodle clip with topknot and pom-poms",
+        "accessories": [
+          "Teal collar",
+          "Colorful bow tie (pink, lime green, yellow)",
+          "Pink flower clips near ears"
+        ],
+        "groomer": "Kristy",
+        "physical_characteristics": {
+          "size": "Standard",
+          "build": "Lean and athletic",
+          "eyes": "Dark brown with amber/orange glint",
+          "nose": "Dark brown/black",
+          "special_features": "Classic Poodle cut with ankle and wrist pom-poms",
+          "weight_range": "45-70 pounds",
+          "height_range": "15-24 inches",
+          "life_expectancy": "12-15 years"
+        },
+        "care_requirements": {
+          "grooming_frequency": "Every 4-6 weeks",
+          "brushing": "Daily brushing required",
+          "bathing": "Every 2-3 weeks",
+          "coat_maintenance": "Professional grooming essential to prevent matting",
+          "exercise": "High energy - needs daily exercise and mental stimulation",
+          "nail_trimming": "Every 2-3 weeks",
+          "ear_cleaning": "Weekly to prevent infections",
+          "dental_care": "Daily teeth brushing recommended"
+        },
+        "nutrition_requirements": {
+          "daily_food": "2-3 cups high-quality dry food",
+          "feeding_frequency": "2-3 times daily",
+          "special_diet": "May need grain-free if allergies present",
+          "water_intake": "Fresh water available 24/7",
+          "treats": "Limit to 10% of daily calories"
+        },
+        "exercise_needs": {
+          "daily_walks": "2-3 walks totaling 1-2 hours",
+          "mental_stimulation": "Puzzle toys, training sessions, agility",
+          "play_activities": "Fetch, swimming, obedience training",
+          "energy_level": "Very high - needs constant activity"
+        },
+        "training_requirements": {
+          "intelligence_level": "Very high - learns quickly",
+          "trainability": "Excellent - eager to please",
+          "basic_commands": "Sit, stay, come, heel, down",
+          "advanced_training": "Agility, obedience, therapy work",
+          "socialization": "Important from puppyhood"
+        },
+        "health_considerations": [
+          "Prone to hip dysplasia",
+          "Eye problems (cataracts, progressive retinal atrophy)",
+          "Skin allergies common",
+          "Regular vet check-ups recommended",
+          "Addison's disease",
+          "Bloat (gastric dilatation-volvulus)",
+          "Epilepsy",
+          "Thyroid problems"
+        ],
+        "personality_traits": [
+          "Highly intelligent",
+          "Active and energetic",
+          "Good with families",
+          "Excellent trainability",
+          "Loyal and devoted",
+          "Good with children",
+          "Alert and protective",
+          "Elegant and dignified"
+        ],
+        "living_environment": {
+          "space_requirements": "Medium to large home with yard",
+          "climate_preference": "Adaptable to most climates",
+          "indoor_outdoor": "Can be indoor with sufficient exercise",
+          "apartment_suitable": "Yes, with daily exercise"
+        },
+        "special_notes": "Poodles are hypoallergenic and excellent for families with allergies. Their curly coat requires professional grooming every 4-6 weeks to prevent matting. They excel in obedience, agility, and therapy work."
+      },
+      {
+        "id": "pet_2",
+        "name": "Golden Retriever",
+        "type": "Dog",
+        "image": "assets/type/pet_2.png",
+        "breed": "Golden Retriever",
+        "coat_color": "Light golden",
+        "accessories": [
+          "White bandana with colorful fish pattern"
+        ],
+        "physical_characteristics": {
+          "size": "Large",
+          "build": "Strong and muscular",
+          "coat": "Thick, water-repellent double coat",
+          "expression": "Happy and alert",
+          "weight_range": "55-75 pounds",
+          "height_range": "21-24 inches",
+          "life_expectancy": "10-12 years"
+        },
+        "care_requirements": {
+          "grooming_frequency": "Weekly brushing",
+          "bathing": "Every 6-8 weeks",
+          "exercise": "High energy - needs 1-2 hours daily exercise",
+          "mental_stimulation": "Training, games, and activities required",
+          "nail_trimming": "Every 2-3 weeks",
+          "ear_cleaning": "Weekly to prevent infections",
+          "dental_care": "Daily teeth brushing recommended"
+        },
+        "nutrition_requirements": {
+          "daily_food": "2-3 cups high-quality dry food",
+          "feeding_frequency": "2-3 times daily",
+          "special_diet": "May need joint supplements as they age",
+          "water_intake": "Fresh water available 24/7",
+          "treats": "Limit to 10% of daily calories"
+        },
+        "exercise_needs": {
+          "daily_walks": "2-3 walks totaling 1-2 hours",
+          "mental_stimulation": "Fetch, swimming, training sessions",
+          "play_activities": "Retrieving games, swimming, hiking",
+          "energy_level": "High - needs regular activity"
+        },
+        "training_requirements": {
+          "intelligence_level": "Very high - learns quickly",
+          "trainability": "Excellent - eager to please",
+          "basic_commands": "Sit, stay, come, heel, down",
+          "advanced_training": "Retrieving, therapy work, obedience",
+          "socialization": "Important from puppyhood"
+        },
+        "health_considerations": [
+          "Prone to hip and elbow dysplasia",
+          "Heart conditions",
+          "Eye problems",
+          "Cancer risk (especially hemangiosarcoma)",
+          "Skin allergies",
+          "Ear infections",
+          "Obesity risk",
+          "Joint problems in senior years"
+        ],
+        "personality_traits": [
+          "Friendly and outgoing",
+          "Excellent with children",
+          "Intelligent and trainable",
+          "Loyal and devoted",
+          "Patient and gentle",
+          "Good with other pets",
+          "Eager to please",
+          "Great family companion"
+        ],
+        "living_environment": {
+          "space_requirements": "Large home with yard preferred",
+          "climate_preference": "Adaptable to most climates",
+          "indoor_outdoor": "Can be indoor with sufficient exercise",
+          "apartment_suitable": "Yes, with daily exercise"
+        },
+        "special_notes": "Excellent family dogs, great with other pets and children. They are natural retrievers and love water. Regular exercise and mental stimulation are essential to prevent destructive behavior."
+      },
+      {
+        "id": "pet_3",
+        "name": "Border Collie Mix",
+        "type": "Dog",
+        "image": "assets/type/pet_3.png",
+        "breed": "Border Collie (likely mix)",
+        "coat_color": "Black, white, and grey/blue merle",
+        "accessories": [
+          "Bow tie with watermelon slice pattern"
+        ],
+        "physical_characteristics": {
+          "size": "Medium",
+          "build": "Athletic and agile",
+          "eyes": "Heterochromia - one blue, one brown/amber",
+          "coat": "Medium length, well-groomed",
+          "special_features": "Striking merle pattern",
+          "weight_range": "30-45 pounds",
+          "height_range": "18-22 inches",
+          "life_expectancy": "12-15 years"
+        },
+        "care_requirements": {
+          "grooming_frequency": "Weekly brushing",
+          "bathing": "As needed",
+          "exercise": "Very high energy - needs 2+ hours daily exercise",
+          "mental_stimulation": "Critical - needs jobs and training",
+          "nail_trimming": "Every 2-3 weeks",
+          "ear_cleaning": "Weekly to prevent infections",
+          "dental_care": "Daily teeth brushing recommended"
+        },
+        "nutrition_requirements": {
+          "daily_food": "1.5-2.5 cups high-quality dry food",
+          "feeding_frequency": "2-3 times daily",
+          "special_diet": "High-protein diet for active dogs",
+          "water_intake": "Fresh water available 24/7",
+          "treats": "Limit to 10% of daily calories"
+        },
+        "exercise_needs": {
+          "daily_walks": "3-4 walks totaling 2+ hours",
+          "mental_stimulation": "Agility, herding, obedience training",
+          "play_activities": "Frisbee, fetch, herding games",
+          "energy_level": "Extremely high - needs constant activity"
+        },
+        "training_requirements": {
+          "intelligence_level": "Extremely high - learns very quickly",
+          "trainability": "Excellent - needs mental challenges",
+          "basic_commands": "Sit, stay, come, heel, down",
+          "advanced_training": "Agility, herding, obedience, flyball",
+          "socialization": "Critical from puppyhood"
+        },
+        "health_considerations": [
+          "Hip dysplasia risk",
+          "Eye problems (collie eye anomaly)",
+          "Epilepsy",
+          "Regular exercise essential for mental health",
+          "Joint problems",
+          "Skin allergies",
+          "Hearing problems (in merle dogs)"
+        ],
+        "personality_traits": [
+          "Highly intelligent",
+          "Energetic and driven",
+          "Excellent herding instincts",
+          "Needs constant mental stimulation",
+          "Loyal and devoted",
+          "Alert and protective",
+          "Excellent work ethic",
+          "May be reserved with strangers"
+        ],
+        "living_environment": {
+          "space_requirements": "Large home with yard essential",
+          "climate_preference": "Adaptable to most climates",
+          "indoor_outdoor": "Needs both indoor and outdoor access",
+          "apartment_suitable": "Not recommended - needs too much exercise"
+        },
+        "special_notes": "One of the most intelligent dog breeds, requires extensive mental and physical stimulation. They need a job to do and can become destructive if bored. Excellent for active families who can provide constant stimulation."
+      },
+      {
+        "id": "pet_4",
+        "name": "Shih Tzu/Havanese Mix",
+        "type": "Dog",
+        "image": "assets/type/pet_4.png",
+        "breed": "Shih Tzu or Havanese mix",
+        "coat_color": "Charcoal grey/black with white markings",
+        "accessories": [
+          "Dark collar with silver tag"
+        ],
+        "physical_characteristics": {
+          "size": "Small",
+          "build": "Compact",
+          "coat": "Short body fur, longer head/face fur",
+          "grooming_style": "Recently groomed with clipper lines",
+          "special_features": "Salt-and-pepper appearance on chest and muzzle",
+          "weight_range": "8-16 pounds",
+          "height_range": "8-11 inches",
+          "life_expectancy": "12-16 years"
+        },
+        "care_requirements": {
+          "grooming_frequency": "Every 4-6 weeks",
+          "brushing": "Daily to prevent matting",
+          "bathing": "Every 2-3 weeks",
+          "exercise": "Moderate - 30-60 minutes daily",
+          "coat_maintenance": "Regular trimming required",
+          "nail_trimming": "Every 2-3 weeks",
+          "ear_cleaning": "Weekly to prevent infections",
+          "dental_care": "Daily teeth brushing recommended"
+        },
+        "nutrition_requirements": {
+          "daily_food": "0.5-1 cup high-quality dry food",
+          "feeding_frequency": "2-3 times daily",
+          "special_diet": "May need dental care food",
+          "water_intake": "Fresh water available 24/7",
+          "treats": "Limit to 10% of daily calories"
+        },
+        "exercise_needs": {
+          "daily_walks": "2-3 short walks totaling 30-60 minutes",
+          "mental_stimulation": "Puzzle toys, training sessions",
+          "play_activities": "Indoor play, gentle fetch",
+          "energy_level": "Moderate - adapts to family lifestyle"
+        },
+        "training_requirements": {
+          "intelligence_level": "High - learns well",
+          "trainability": "Good - can be stubborn",
+          "basic_commands": "Sit, stay, come, down",
+          "advanced_training": "Basic obedience, therapy work",
+          "socialization": "Important from puppyhood"
+        },
+        "health_considerations": [
+          "Eye problems (cataracts, progressive retinal atrophy)",
+          "Dental issues",
+          "Respiratory problems (brachycephalic)",
+          "Skin allergies",
+          "Luxating patella",
+          "Hip dysplasia",
+          "Ear infections"
+        ],
+        "personality_traits": [
+          "Affectionate and loyal",
+          "Good with families",
+          "Adaptable to different living situations",
+          "Gentle temperament",
+          "Good with children",
+          "Alert and watchful",
+          "Independent streak",
+          "Loving companion"
+        ],
+        "living_environment": {
+          "space_requirements": "Small to medium home",
+          "climate_preference": "Indoor preferred",
+          "indoor_outdoor": "Primarily indoor with outdoor access",
+          "apartment_suitable": "Excellent - perfect apartment dog"
+        },
+        "special_notes": "Excellent companion dogs, good for apartment living. They are adaptable and can fit into various family situations. Regular grooming is essential to prevent matting."
+      },
+      {
+        "id": "pet_5",
+        "name": "Exotic Shorthair",
+        "type": "Cat",
+        "image": "assets/type/pet_5.png",
+        "breed": "Exotic Shorthair",
+        "coat_color": "Light cream/peach",
+        "physical_characteristics": {
+          "size": "Medium",
+          "build": "Stocky and round",
+          "face": "Brachycephalic (flat face)",
+          "eyes": "Large, round, amber-orange",
+          "special_features": "Tear staining visible, very flat face",
+          "weight_range": "8-15 pounds",
+          "life_expectancy": "12-15 years"
+        },
+        "care_requirements": {
+          "grooming_frequency": "Weekly brushing",
+          "eye_care": "Daily cleaning of tear stains",
+          "dental_care": "Regular teeth cleaning",
+          "exercise": "Moderate - play sessions important",
+          "nail_trimming": "Every 2-3 weeks",
+          "ear_cleaning": "Weekly to prevent infections"
+        },
+        "nutrition_requirements": {
+          "daily_food": "1/4-1/2 cup dry food plus wet food",
+          "feeding_frequency": "2-3 times daily",
+          "special_diet": "May need dental care food",
+          "water_intake": "Fresh water available 24/7",
+          "treats": "Limit to 10% of daily calories"
+        },
+        "exercise_needs": {
+          "daily_play": "2-3 sessions of 10-15 minutes",
+          "mental_stimulation": "Puzzle toys, interactive games",
+          "play_activities": "Gentle play, climbing, chasing toys",
+          "energy_level": "Low to moderate"
+        },
+        "behavior_characteristics": {
+          "intelligence_level": "Moderate",
+          "trainability": "Can learn basic commands",
+          "socialization": "Good with families and other pets",
+          "vocalization": "Quiet breed",
+          "independence": "Moderate - enjoys company"
+        },
+        "health_considerations": [
+          "Brachycephalic airway syndrome",
+          "Eye problems due to flat face",
+          "Dental issues",
+          "Polycystic kidney disease",
+          "Heart disease",
+          "Respiratory problems",
+          "Skin allergies"
+        ],
+        "personality_traits": [
+          "Calm and gentle",
+          "Affectionate",
+          "Good with families",
+          "Less active than other breeds",
+          "Patient with children",
+          "Good with other pets",
+          "Quiet and undemanding",
+          "Loyal companion"
+        ],
+        "living_environment": {
+          "space_requirements": "Small to medium home",
+          "climate_preference": "Indoor only",
+          "indoor_outdoor": "Indoor only - not safe outdoors",
+          "apartment_suitable": "Excellent - perfect apartment cat"
+        },
+        "special_notes": "Requires regular eye cleaning due to flat face structure. They are indoor-only cats and should never be allowed outdoors. Good for families who want a calm, affectionate companion."
+      },
+      {
+        "id": "pet_6",
+        "name": "Maine Coon/Siberian Mix",
+        "type": "Cat",
+        "image": "assets/type/pet_6.png",
+        "breed": "Maine Coon, Siberian, or Norwegian Forest Cat mix",
+        "coat_color": "Grey with darker tabby stripes",
+        "accessories": [
+          "Dark leash/harness"
+        ],
+        "physical_characteristics": {
+          "size": "Large",
+          "build": "Substantial and muscular",
+          "coat": "Very thick, long fur with silver tips",
+          "special_features": "Frosted appearance, bushy tail with tabby markings",
+          "weight_range": "10-20 pounds",
+          "life_expectancy": "12-15 years"
+        },
+        "care_requirements": {
+          "grooming_frequency": "Daily brushing during shedding seasons",
+          "bathing": "Occasional baths to prevent matting",
+          "exercise": "High energy - needs climbing and play",
+          "coat_maintenance": "Regular grooming essential",
+          "nail_trimming": "Every 2-3 weeks",
+          "ear_cleaning": "Weekly to prevent infections"
+        },
+        "nutrition_requirements": {
+          "daily_food": "1/2-1 cup dry food plus wet food",
+          "feeding_frequency": "2-3 times daily",
+          "special_diet": "High-protein diet for large cats",
+          "water_intake": "Fresh water available 24/7",
+          "treats": "Limit to 10% of daily calories"
+        },
+        "exercise_needs": {
+          "daily_play": "3-4 sessions of 15-20 minutes",
+          "mental_stimulation": "Puzzle toys, interactive games",
+          "play_activities": "Climbing, hunting games, water play",
+          "energy_level": "High - needs lots of activity"
+        },
+        "behavior_characteristics": {
+          "intelligence_level": "High",
+          "trainability": "Can learn tricks and commands",
+          "socialization": "Good with families and other pets",
+          "vocalization": "Moderate - communicative",
+          "independence": "Moderate - enjoys company"
+        },
+        "health_considerations": [
+          "Hip dysplasia",
+          "Heart disease (HCM)",
+          "Polycystic kidney disease",
+          "Dental issues",
+          "Joint problems",
+          "Obesity risk"
+        ],
+        "personality_traits": [
+          "Intelligent and curious",
+          "Good with families",
+          "Enjoys water",
+          "Excellent hunters",
+          "Gentle giants",
+          "Playful and active",
+          "Loyal to family",
+          "Good with children"
+        ],
+        "living_environment": {
+          "space_requirements": "Large home with climbing opportunities",
+          "climate_preference": "Adaptable to most climates",
+          "indoor_outdoor": "Can be indoor with sufficient stimulation",
+          "apartment_suitable": "Yes, with lots of climbing and play areas"
+        },
+        "special_notes": "Large breed cats require more space and climbing opportunities. They enjoy water and may play in water bowls. Regular grooming is essential to prevent matting of their thick fur."
+      },
+      {
+        "id": "pet_7",
+        "name": "Maltipoo/Bichon Mix",
+        "type": "Dog",
+        "image": "assets/type/pet_7.png",
+        "breed": "Maltipoo or Bichon Frise mix",
+        "coat_color": "Light cream/off-white with golden-beige ears",
+        "accessories": [
+          "Bright red satin bow tie"
+        ],
+        "physical_characteristics": {
+          "size": "Small",
+          "build": "Compact and fluffy",
+          "coat": "Curly, hypoallergenic",
+          "grooming_style": "Recently groomed and trimmed",
+          "weight_range": "5-15 pounds",
+          "height_range": "8-12 inches",
+          "life_expectancy": "12-15 years"
+        },
+        "care_requirements": {
+          "grooming_frequency": "Every 4-6 weeks",
+          "brushing": "Daily to prevent matting",
+          "bathing": "Every 2-3 weeks",
+          "exercise": "Moderate - 30-60 minutes daily",
+          "coat_maintenance": "Regular trimming required",
+          "nail_trimming": "Every 2-3 weeks",
+          "ear_cleaning": "Weekly to prevent infections",
+          "dental_care": "Daily teeth brushing recommended"
+        },
+        "nutrition_requirements": {
+          "daily_food": "0.5-1 cup high-quality dry food",
+          "feeding_frequency": "2-3 times daily",
+          "special_diet": "May need dental care food",
+          "water_intake": "Fresh water available 24/7",
+          "treats": "Limit to 10% of daily calories"
+        },
+        "exercise_needs": {
+          "daily_walks": "2-3 short walks totaling 30-60 minutes",
+          "mental_stimulation": "Puzzle toys, training sessions",
+          "play_activities": "Indoor play, gentle fetch",
+          "energy_level": "Moderate - adapts to family lifestyle"
+        },
+        "training_requirements": {
+          "intelligence_level": "High - learns well",
+          "trainability": "Good - eager to please",
+          "basic_commands": "Sit, stay, come, down",
+          "advanced_training": "Basic obedience, therapy work",
+          "socialization": "Important from puppyhood"
+        },
+        "health_considerations": [
+          "Dental issues",
+          "Eye problems",
+          "Skin allergies",
+          "Luxating patella",
+          "Ear infections",
+          "Hip dysplasia",
+          "Obesity risk"
+        ],
+        "personality_traits": [
+          "Affectionate and loving",
+          "Good with families",
+          "Intelligent and trainable",
+          "Excellent companion dogs",
+          "Good with children",
+          "Adaptable to different situations",
+          "Loyal and devoted",
+          "Gentle temperament"
+        ],
+        "living_environment": {
+          "space_requirements": "Small to medium home",
+          "climate_preference": "Indoor preferred",
+          "indoor_outdoor": "Can be indoor with sufficient exercise",
+          "apartment_suitable": "Excellent - perfect apartment dog"
+        },
+        "special_notes": "Hypoallergenic breed, good for allergy sufferers. They are excellent companion dogs and adapt well to different living situations. Regular grooming is essential to maintain their curly coat."
+      },
+      {
+        "id": "pet_8",
+        "name": "Pomeranian",
+        "type": "Dog",
+        "image": "assets/type/pet_8.png",
+        "breed": "Pomeranian",
+        "coat_color": "Cream/off-white",
+        "accessories": [
+          "Dark collar with colorful floral pattern",
+          "Colorful leash"
+        ],
+        "physical_characteristics": {
+          "size": "Small",
+          "build": "Compact",
+          "coat": "Thick double coat, ruff-like appearance",
+          "special_features": "Shaggy fur, needs grooming",
+          "weight_range": "3-7 pounds",
+          "height_range": "6-7 inches",
+          "life_expectancy": "12-16 years"
+        },
+        "care_requirements": {
+          "grooming_frequency": "Every 4-6 weeks",
+          "brushing": "Daily to prevent matting",
+          "bathing": "Every 2-3 weeks",
+          "exercise": "Moderate - 30-60 minutes daily",
+          "coat_maintenance": "Regular grooming essential",
+          "nail_trimming": "Every 2-3 weeks",
+          "ear_cleaning": "Weekly to prevent infections",
+          "dental_care": "Daily teeth brushing recommended"
+        },
+        "nutrition_requirements": {
+          "daily_food": "0.25-0.5 cup high-quality dry food",
+          "feeding_frequency": "2-3 times daily",
+          "special_diet": "May need dental care food",
+          "water_intake": "Fresh water available 24/7",
+          "treats": "Limit to 10% of daily calories"
+        },
+        "exercise_needs": {
+          "daily_walks": "2-3 short walks totaling 30-60 minutes",
+          "mental_stimulation": "Puzzle toys, training sessions",
+          "play_activities": "Indoor play, gentle fetch",
+          "energy_level": "Moderate - adapts to family lifestyle"
+        },
+        "training_requirements": {
+          "intelligence_level": "High - learns well",
+          "trainability": "Good - can be stubborn",
+          "basic_commands": "Sit, stay, come, down",
+          "advanced_training": "Basic obedience, tricks",
+          "socialization": "Critical from puppyhood"
+        },
+        "health_considerations": [
+          "Dental issues",
+          "Luxating patella",
+          "Eye problems",
+          "Tracheal collapse",
+          "Skin allergies",
+          "Hip dysplasia",
+          "Ear infections"
+        ],
+        "personality_traits": [
+          "Bold and confident",
+          "Intelligent and alert",
+          "Good watchdogs",
+          "Loyal to family",
+          "Spirited and energetic",
+          "Good with families",
+          "May be reserved with strangers",
+          "Big personality in small package"
+        ],
+        "living_environment": {
+          "space_requirements": "Small to medium home",
+          "climate_preference": "Indoor preferred",
+          "indoor_outdoor": "Can be indoor with sufficient exercise",
+          "apartment_suitable": "Excellent - perfect apartment dog"
+        },
+        "special_notes": "Despite small size, they have big personalities and need proper training. They can be vocal and protective. Regular grooming is essential to maintain their thick double coat."
+      },
+      {
+        "id": "pet_9",
+        "name": "Siamese Cat",
+        "type": "Cat",
+        "image": "assets/type/pet_9.png",
+        "breed": "Siamese",
+        "coat_color": "Cream body with dark brown/black points",
+        "physical_characteristics": {
+          "size": "Medium",
+          "build": "Sleek and muscular",
+          "coat": "Short, fine",
+          "eyes": "Bright blue, almond-shaped",
+          "special_features": "Distinctive point coloration",
+          "weight_range": "8-15 pounds",
+          "life_expectancy": "15-20 years"
+        },
+        "care_requirements": {
+          "grooming_frequency": "Weekly brushing",
+          "bathing": "Rarely needed",
+          "exercise": "High energy - needs play and climbing",
+          "mental_stimulation": "Very intelligent, needs stimulation",
+          "nail_trimming": "Every 2-3 weeks",
+          "ear_cleaning": "Weekly to prevent infections"
+        },
+        "nutrition_requirements": {
+          "daily_food": "1/4-1/2 cup dry food plus wet food",
+          "feeding_frequency": "2-3 times daily",
+          "special_diet": "High-protein diet recommended",
+          "water_intake": "Fresh water available 24/7",
+          "treats": "Limit to 10% of daily calories"
+        },
+        "exercise_needs": {
+          "daily_play": "3-4 sessions of 15-20 minutes",
+          "mental_stimulation": "Puzzle toys, interactive games",
+          "play_activities": "Climbing, hunting games, fetch",
+          "energy_level": "High - needs lots of activity"
+        },
+        "behavior_characteristics": {
+          "intelligence_level": "Very high",
+          "trainability": "Can learn tricks and commands",
+          "socialization": "Good with families and other pets",
+          "vocalization": "Very vocal - communicative",
+          "independence": "Moderate - enjoys company"
+        },
+        "health_considerations": [
+          "Progressive retinal atrophy",
+          "Amyloidosis",
+          "Heart disease",
+          "Dental issues",
+          "Kidney disease",
+          "Asthma",
+          "Skin allergies"
+        ],
+        "personality_traits": [
+          "Highly intelligent",
+          "Vocal and communicative",
+          "Active and playful",
+          "Loyal to family",
+          "Curious and adventurous",
+          "Good with children",
+          "May be reserved with strangers",
+          "Excellent companion"
+        ],
+        "living_environment": {
+          "space_requirements": "Medium to large home with climbing",
+          "climate_preference": "Indoor only",
+          "indoor_outdoor": "Indoor only - not safe outdoors",
+          "apartment_suitable": "Good - with lots of stimulation"
+        },
+        "special_notes": "Very vocal breed, excellent at communicating with owners. They are highly intelligent and need mental stimulation. They form strong bonds with their families and can be quite demanding of attention."
+      },
+      {
+        "id": "pet_10",
+        "name": "Ragdoll",
+        "type": "Cat",
+        "image": "assets/type/pet_10.png",
+        "breed": "Ragdoll",
+        "coat_color": "Seal point or blue point with white bib",
+        "physical_characteristics": {
+          "size": "Large",
+          "build": "Substantial and muscular",
+          "coat": "Long, silky fur",
+          "eyes": "Vibrant blue",
+          "special_features": "White blaze on forehead, colorpoint pattern",
+          "weight_range": "10-20 pounds",
+          "life_expectancy": "12-17 years"
+        },
+        "care_requirements": {
+          "grooming_frequency": "Weekly brushing",
+          "bathing": "Occasional baths",
+          "exercise": "Moderate - enjoys play sessions",
+          "coat_maintenance": "Regular grooming to prevent matting",
+          "nail_trimming": "Every 2-3 weeks",
+          "ear_cleaning": "Weekly to prevent infections"
+        },
+        "nutrition_requirements": {
+          "daily_food": "1/2-1 cup dry food plus wet food",
+          "feeding_frequency": "2-3 times daily",
+          "special_diet": "High-protein diet for large cats",
+          "water_intake": "Fresh water available 24/7",
+          "treats": "Limit to 10% of daily calories"
+        },
+        "exercise_needs": {
+          "daily_play": "2-3 sessions of 10-15 minutes",
+          "mental_stimulation": "Puzzle toys, interactive games",
+          "play_activities": "Gentle play, climbing, chasing toys",
+          "energy_level": "Moderate - not overly active"
+        },
+        "behavior_characteristics": {
+          "intelligence_level": "High",
+          "trainability": "Can learn basic commands",
+          "socialization": "Excellent with families and other pets",
+          "vocalization": "Quiet - soft voice",
+          "independence": "Low - very dependent on family"
+        },
+        "health_considerations": [
+          "Hypertrophic cardiomyopathy (HCM)",
+          "Polycystic kidney disease",
+          "Dental issues",
+          "Obesity risk",
+          "Joint problems",
+          "Heart disease"
+        ],
+        "personality_traits": [
+          "Gentle and calm",
+          "Excellent with families",
+          "Goes limp when picked up",
+          "Good with other pets",
+          "Patient with children",
+          "Loyal and devoted",
+          "Quiet and undemanding",
+          "Perfect family cat"
+        ],
+        "living_environment": {
+          "space_requirements": "Medium to large home",
+          "climate_preference": "Indoor only",
+          "indoor_outdoor": "Indoor only - not safe outdoors",
+          "apartment_suitable": "Good - with climbing opportunities"
+        },
+        "special_notes": "Known for going limp when held, excellent family cats. They are very gentle and patient with children. They should be indoor-only cats as they lack street smarts."
+      },
+      {
+        "id": "pet_11",
+        "name": "Siberian Kittens",
+        "type": "Cat",
+        "image": "assets/type/pet_11.png",
+        "breed": "Siberian (Neva Masquerade) kittens",
+        "coat_color": "Cream body with lynx point markings and blue eyes",
+        "physical_characteristics": {
+          "size": "Small (kittens)",
+          "build": "Fluffy and sturdy",
+          "coat": "Medium-long triple coat",
+          "eyes": "Blue",
+          "weight_range": "1-4 pounds (kitten)",
+          "life_expectancy": "12-15 years"
+        },
+        "care_requirements": {
+          "grooming_frequency": "2-3 times weekly (increase during shedding)",
+          "bathing": "Rarely needed",
+          "exercise": "High kitten energy - multiple play sessions",
+          "coat_maintenance": "Regular brushing to prevent tangles",
+          "nail_trimming": "Every 2-3 weeks",
+          "ear_cleaning": "As needed"
+        },
+        "nutrition_requirements": {
+          "daily_food": "High-quality kitten food per vet guidance",
+          "feeding_frequency": "3-4 times daily",
+          "special_diet": "High-protein, DHA for development",
+          "water_intake": "Fresh water available 24/7",
+          "treats": "Minimal for kittens"
+        },
+        "exercise_needs": {
+          "daily_play": "4-5 sessions of 10-15 minutes",
+          "mental_stimulation": "Wand toys, tunnels, puzzle feeders",
+          "play_activities": "Chasing, climbing, interactive play",
+          "energy_level": "High"
+        },
+        "behavior_characteristics": {
+          "intelligence_level": "High",
+          "trainability": "Litter training and simple cues",
+          "socialization": "Gentle handling and positive experiences",
+          "vocalization": "Moderate",
+          "independence": "Low - enjoys companionship"
+        },
+        "health_considerations": [
+          "Hypertrophic cardiomyopathy (HCM)",
+          "Obesity risk in adulthood",
+          "Hairballs during shedding"
+        ],
+        "personality_traits": [
+          "Affectionate",
+          "Curious",
+          "Playful",
+          "Good with families"
+        ],
+        "living_environment": {
+          "space_requirements": "Indoor home with climbing areas",
+          "climate_preference": "Indoor preferred",
+          "indoor_outdoor": "Indoor only for kittens",
+          "apartment_suitable": "Excellent"
+        },
+        "special_notes": "Siberian kittens are energetic and benefit from early socialization and frequent interactive play."
+      },
+      {
+        "id": "pet_12",
+        "name": "Bengal Cat",
+        "type": "Cat",
+        "image": "assets/type/pet_12.png",
+        "breed": "Bengal",
+        "coat_color": "Brown rosetted/tabby with glitter sheen",
+        "physical_characteristics": {
+          "size": "Medium",
+          "build": "Athletic and muscular",
+          "coat": "Short, dense, silky",
+          "eyes": "Green to gold",
+          "weight_range": "8-15 pounds",
+          "life_expectancy": "12-16 years"
+        },
+        "care_requirements": {
+          "grooming_frequency": "Weekly brushing",
+          "bathing": "Rarely needed",
+          "exercise": "High energy - needs vigorous play",
+          "coat_maintenance": "Low",
+          "nail_trimming": "Every 2-3 weeks",
+          "ear_cleaning": "As needed"
+        },
+        "nutrition_requirements": {
+          "daily_food": "High-protein diet; wet + dry mix",
+          "feeding_frequency": "2-3 times daily",
+          "special_diet": "High moisture to support urinary health",
+          "water_intake": "Fresh water/fountain",
+          "treats": "Limit to 10% of calories"
+        },
+        "exercise_needs": {
+          "daily_play": "3-4 sessions of 15-20 minutes",
+          "mental_stimulation": "Clicker training, puzzle toys",
+          "play_activities": "Fetch, climbing, lure toys",
+          "energy_level": "Very high"
+        },
+        "behavior_characteristics": {
+          "intelligence_level": "Very high",
+          "trainability": "Learns tricks and leash walks",
+          "socialization": "Needs structured enrichment",
+          "vocalization": "Moderate",
+          "independence": "Moderate"
+        },
+        "health_considerations": [
+          "Hypertrophic cardiomyopathy (HCM)",
+          "Progressive retinal atrophy",
+          "Food sensitivities"
+        ],
+        "personality_traits": [
+          "Active",
+          "Curious",
+          "Confident",
+          "Engaging"
+        ],
+        "living_environment": {
+          "space_requirements": "Vertical space and safe windows",
+          "climate_preference": "Indoor preferred",
+          "indoor_outdoor": "Leash walks/enclosed catio",
+          "apartment_suitable": "Good with enrichment"
+        },
+        "special_notes": "Bengals thrive on training and interactive play; provide tall cat trees and regular challenges."
+      },
+      {
+        "id": "pet_13",
+        "name": "Tuxedo Kitten",
+        "type": "Cat",
+        "image": "assets/type/pet_13.png",
+        "breed": "Domestic Shorthair (Tuxedo)",
+        "coat_color": "Black with white chest, paws, and muzzle",
+        "physical_characteristics": {
+          "size": "Small (kitten)",
+          "build": "Slender",
+          "coat": "Short",
+          "eyes": "Green",
+          "weight_range": "1-4 pounds (kitten)",
+          "life_expectancy": "12-16 years"
+        },
+        "care_requirements": {
+          "grooming_frequency": "Weekly brushing",
+          "bathing": "Not typically needed",
+          "exercise": "Frequent kitten play",
+          "coat_maintenance": "Low",
+          "nail_trimming": "Every 2-3 weeks",
+          "ear_cleaning": "As needed"
+        },
+        "nutrition_requirements": {
+          "daily_food": "High-quality kitten formula",
+          "feeding_frequency": "3-4 times daily",
+          "special_diet": "High-protein, balanced for growth",
+          "water_intake": "Fresh water",
+          "treats": "Minimal"
+        },
+        "exercise_needs": {
+          "daily_play": "4-5 sessions of 10-15 minutes",
+          "mental_stimulation": "Wand toys, crinkle balls",
+          "play_activities": "Chasing and pouncing",
+          "energy_level": "High"
+        },
+        "behavior_characteristics": {
+          "intelligence_level": "Moderate",
+          "trainability": "Litter training and name recognition",
+          "socialization": "Gentle handling daily",
+          "vocalization": "Low to moderate",
+          "independence": "Low"
+        },
+        "health_considerations": [
+          "Parasite prevention",
+          "Viral respiratory infections in kittens",
+          "Spay/neuter at appropriate age"
+        ],
+        "personality_traits": [
+          "Affectionate",
+          "Playful",
+          "Curious",
+          "People-oriented"
+        ],
+        "living_environment": {
+          "space_requirements": "Safe indoor environment",
+          "climate_preference": "Indoor only",
+          "indoor_outdoor": "Indoor only for kittens",
+          "apartment_suitable": "Excellent"
+        },
+        "special_notes": "Ensure kitten-proofing at home and provide consistent socialization and vet care."
+      },
+      {
+        "id": "pet_14",
+        "name": "Creative Groom Poodle",
+        "type": "Dog",
+        "image": "assets/type/pet_14.png",
+        "breed": "Standard Poodle",
+        "coat_color": "White with pink creative dye accents",
+        "accessories": [
+          "Sparkling collar"
+        ],
+        "physical_characteristics": {
+          "size": "Large",
+          "build": "Athletic",
+          "coat": "Curly, professionally groomed",
+          "weight_range": "45-70 pounds",
+          "height_range": "22-27 inches",
+          "life_expectancy": "12-15 years"
+        },
+        "care_requirements": {
+          "grooming_frequency": "Every 4-6 weeks (professional grooming)",
+          "brushing": "Daily to prevent matting",
+          "bathing": "Every 2-3 weeks",
+          "exercise": "High - 1-2 hours daily",
+          "coat_maintenance": "Creative dye requires pet-safe products",
+          "nail_trimming": "Every 2-3 weeks",
+          "ear_cleaning": "Weekly"
+        },
+        "nutrition_requirements": {
+          "daily_food": "2-3 cups quality food",
+          "feeding_frequency": "2-3 times daily",
+          "special_diet": "Monitor for skin/allergy support",
+          "water_intake": "Fresh water",
+          "treats": "Limit to 10% of calories"
+        },
+        "exercise_needs": {
+          "daily_walks": "2-3 walks totaling 1-2 hours",
+          "mental_stimulation": "Obedience, trick training, agility",
+          "play_activities": "Fetch and scent games",
+          "energy_level": "High"
+        },
+        "training_requirements": {
+          "intelligence_level": "Very high",
+          "trainability": "Excellent",
+          "basic_commands": "Sit, stay, come, heel, down",
+          "advanced_training": "Agility, therapy, tricks",
+          "socialization": "Essential from puppyhood"
+        },
+        "health_considerations": [
+          "Hip dysplasia",
+          "Addison's disease",
+          "Bloat",
+          "Skin allergies"
+        ],
+        "personality_traits": [
+          "Elegant",
+          "Friendly",
+          "Intelligent",
+          "Trainable"
+        ],
+        "living_environment": {
+          "space_requirements": "Medium to large home",
+          "climate_preference": "Adaptable",
+          "indoor_outdoor": "Indoor with outdoor exercise",
+          "apartment_suitable": "Possible with ample exercise"
+        },
+        "special_notes": "Use only pet-safe, non-toxic dyes; avoid dyeing near eyes, ears, or sensitive areas."
+      },
+      {
+        "id": "pet_15",
+        "name": "Norwegian Forest Cat",
+        "type": "Cat",
+        "image": "assets/type/pet_15.png",
+        "breed": "Norwegian Forest Cat",
+        "coat_color": "Brown tabby with white",
+        "physical_characteristics": {
+          "size": "Large",
+          "build": "Strong with dense ruff",
+          "coat": "Thick double coat",
+          "eyes": "Green",
+          "weight_range": "10-18 pounds",
+          "life_expectancy": "12-16 years"
+        },
+        "care_requirements": {
+          "grooming_frequency": "2-3 times weekly (daily during shed)",
+          "bathing": "Occasional",
+          "exercise": "Moderate - climbing and play",
+          "coat_maintenance": "Prevent matting in ruff and breeches",
+          "nail_trimming": "Every 2-3 weeks",
+          "ear_cleaning": "As needed"
+        },
+        "nutrition_requirements": {
+          "daily_food": "High-quality wet + dry mix",
+          "feeding_frequency": "2-3 times daily",
+          "special_diet": "Omega-3s for coat",
+          "water_intake": "Encourage hydration",
+          "treats": "Limit"
+        },
+        "exercise_needs": {
+          "daily_play": "2-3 sessions of 10-15 minutes",
+          "mental_stimulation": "Puzzle toys, foraging",
+          "play_activities": "Climbing, chasing",
+          "energy_level": "Moderate"
+        },
+        "behavior_characteristics": {
+          "intelligence_level": "High",
+          "trainability": "Learns routines",
+          "socialization": "Friendly with families",
+          "vocalization": "Low",
+          "independence": "Moderate"
+        },
+        "health_considerations": [
+          "HCM",
+          "Hip dysplasia",
+          "Obesity risk"
+        ],
+        "personality_traits": [
+          "Gentle",
+          "Confident",
+          "Affectionate",
+          "Adaptable"
+        ],
+        "living_environment": {
+          "space_requirements": "Vertical space and scratching posts",
+          "climate_preference": "Indoor preferred",
+          "indoor_outdoor": "Indoor; supervised outdoor acceptable",
+          "apartment_suitable": "Good"
+        },
+        "special_notes": "Brush the ruff and hindquarters regularly to avoid mats."
+      },
+      {
+        "id": "pet_16",
+        "name": "Mixed-Breed Dog",
+        "type": "Dog",
+        "image": "assets/type/pet_16.png",
+        "breed": "Mixed breed (medium, upright ears)",
+        "coat_color": "Light tan with white chest",
+        "accessories": [
+          "Blue bandana",
+          "Small forehead sticker"
+        ],
+        "physical_characteristics": {
+          "size": "Medium",
+          "build": "Lean",
+          "coat": "Short",
+          "weight_range": "30-45 pounds",
+          "height_range": "18-22 inches",
+          "life_expectancy": "12-15 years"
+        },
+        "care_requirements": {
+          "grooming_frequency": "Weekly brushing",
+          "bathing": "Every 4-6 weeks",
+          "exercise": "High - 1-2 hours daily",
+          "coat_maintenance": "Low",
+          "nail_trimming": "Every 2-3 weeks",
+          "ear_cleaning": "Weekly"
+        },
+        "nutrition_requirements": {
+          "daily_food": "1.5-2.5 cups quality food",
+          "feeding_frequency": "2 times daily",
+          "special_diet": "As advised by vet",
+          "water_intake": "Fresh water",
+          "treats": "<10% calories"
+        },
+        "exercise_needs": {
+          "daily_walks": "2-3 walks totaling 60-90 minutes",
+          "mental_stimulation": "Training games, scent work",
+          "play_activities": "Fetch and tug",
+          "energy_level": "High"
+        },
+        "training_requirements": {
+          "intelligence_level": "High",
+          "trainability": "Good with consistency",
+          "basic_commands": "Sit, stay, come, down",
+          "advanced_training": "Loose-leash walking, impulse control",
+          "socialization": "Ongoing"
+        },
+        "health_considerations": [
+          "General mixed-breed robustness",
+          "Dental care needs",
+          "Joint health monitoring"
+        ],
+        "personality_traits": [
+          "Alert",
+          "Loyal",
+          "Friendly",
+          "Trainable"
+        ],
+        "living_environment": {
+          "space_requirements": "Home with regular outdoor time",
+          "climate_preference": "Adaptable",
+          "indoor_outdoor": "Indoor with daily outdoor exercise",
+          "apartment_suitable": "Possible with ample exercise"
+        },
+        "special_notes": "Provide consistent training and outlets for energy to prevent boredom."
+      },
+      {
+        "id": "pet_17",
+        "name": "Toy/Miniature Poodle",
+        "type": "Dog",
+        "image": "assets/type/pet_17.png",
+        "breed": "Toy or Miniature Poodle",
+        "coat_color": "Cream/apricot",
+        "accessories": [
+          "Large silver bow"
+        ],
+        "physical_characteristics": {
+          "size": "Small",
+          "build": "Compact",
+          "coat": "Curly, groomed teddy clip",
+          "weight_range": "6-12 pounds",
+          "height_range": "10-15 inches",
+          "life_expectancy": "13-16 years"
+        },
+        "care_requirements": {
+          "grooming_frequency": "Every 4-6 weeks",
+          "brushing": "Daily",
+          "bathing": "Every 3-4 weeks",
+          "exercise": "Moderate - 45-60 minutes daily",
+          "coat_maintenance": "Regular trims",
+          "nail_trimming": "Every 2-3 weeks",
+          "ear_cleaning": "Weekly"
+        },
+        "nutrition_requirements": {
+          "daily_food": "0.5-1 cup quality small-breed food",
+          "feeding_frequency": "2-3 times daily",
+          "special_diet": "Dental-support kibble helpful",
+          "water_intake": "Fresh water",
+          "treats": "Limit"
+        },
+        "exercise_needs": {
+          "daily_walks": "2 short walks plus play",
+          "mental_stimulation": "Trick training, puzzle toys",
+          "play_activities": "Fetch and indoor games",
+          "energy_level": "Moderate"
+        },
+        "training_requirements": {
+          "intelligence_level": "Very high",
+          "trainability": "Excellent",
+          "basic_commands": "Sit, stay, come, down",
+          "advanced_training": "Tricks and agility",
+          "socialization": "Important"
+        },
+        "health_considerations": [
+          "Luxating patella",
+          "Dental disease",
+          "Tracheal collapse"
+        ],
+        "personality_traits": [
+          "Cheerful",
+          "Affectionate",
+          "Intelligent",
+          "Social"
+        ],
+        "living_environment": {
+          "space_requirements": "Small home or apartment",
+          "climate_preference": "Indoor",
+          "indoor_outdoor": "Indoor with daily walks",
+          "apartment_suitable": "Excellent"
+        },
+        "special_notes": "Regular dental care is essential for toy breeds."
+      },
+      {
+        "id": "pet_18",
+        "name": "Siberian (Neva Masquerade)",
+        "type": "Cat",
+        "image": "assets/type/pet_18.png",
+        "breed": "Siberian (Neva Masquerade)",
+        "coat_color": "White/cream with lynx point mask and blue eyes",
+        "physical_characteristics": {
+          "size": "Large",
+          "build": "Substantial, very fluffy",
+          "coat": "Long triple coat",
+          "eyes": "Blue",
+          "weight_range": "10-18 pounds",
+          "life_expectancy": "12-15 years"
+        },
+        "care_requirements": {
+          "grooming_frequency": "2-3 times weekly (daily during shed)",
+          "bathing": "Occasional",
+          "exercise": "Moderate - play and climbing",
+          "coat_maintenance": "Prevent mats, especially in ruff",
+          "nail_trimming": "Every 2-3 weeks",
+          "ear_cleaning": "As needed"
+        },
+        "nutrition_requirements": {
+          "daily_food": "High-quality wet and dry mix",
+          "feeding_frequency": "2-3 times daily",
+          "special_diet": "Omega-3s for coat and skin",
+          "water_intake": "Encourage hydration",
+          "treats": "Limit"
+        },
+        "exercise_needs": {
+          "daily_play": "2-3 sessions of 10-15 minutes",
+          "mental_stimulation": "Interactive toys and foraging",
+          "play_activities": "Climbing, chasing",
+          "energy_level": "Moderate"
+        },
+        "behavior_characteristics": {
+          "intelligence_level": "High",
+          "trainability": "Leash training possible",
+          "socialization": "Friendly and confident",
+          "vocalization": "Low to moderate",
+          "independence": "Moderate"
+        },
+        "health_considerations": [
+          "HCM",
+          "Obesity risk",
+          "Hairballs"
+        ],
+        "personality_traits": [
+          "Calm",
+          "Affectionate",
+          "Confident",
+          "Loyal"
+        ],
+        "living_environment": {
+          "space_requirements": "Indoor with vertical space",
+          "climate_preference": "Indoor preferred",
+          "indoor_outdoor": "Leash walks/catio acceptable",
+          "apartment_suitable": "Good"
+        },
+        "special_notes": "Regular coat maintenance is essential due to dense triple coat."
+      },
+      {
+        "id": "pet_19",
+        "name": "Pomeranian Pair",
+        "type": "Dog",
+        "image": "assets/type/pet_19.png",
+        "breed": "Pomeranian",
+        "coat_color": "Red/orange sable (two dogs)",
+        "physical_characteristics": {
+          "size": "Small",
+          "build": "Compact and fluffy",
+          "coat": "Thick double coat",
+          "weight_range": "3-7 pounds each",
+          "height_range": "6-7 inches",
+          "life_expectancy": "12-16 years"
+        },
+        "care_requirements": {
+          "grooming_frequency": "Every 4-6 weeks",
+          "brushing": "Daily to prevent matting",
+          "bathing": "Every 2-3 weeks",
+          "exercise": "Moderate - 30-45 minutes daily",
+          "coat_maintenance": "Regular trimming and de-shedding",
+          "nail_trimming": "Every 2-3 weeks",
+          "ear_cleaning": "Weekly"
+        },
+        "nutrition_requirements": {
+          "daily_food": "0.25-0.5 cup small-breed kibble per dog",
+          "feeding_frequency": "2-3 times daily",
+          "special_diet": "Dental-support diet helpful",
+          "water_intake": "Fresh water",
+          "treats": "Limit"
+        },
+        "exercise_needs": {
+          "daily_walks": "2 short walks and indoor play",
+          "mental_stimulation": "Training games and puzzle toys",
+          "play_activities": "Fetch and chase",
+          "energy_level": "Moderate"
+        },
+        "training_requirements": {
+          "intelligence_level": "High",
+          "trainability": "Good; may be stubborn",
+          "basic_commands": "Sit, stay, come, down",
+          "advanced_training": "Tricks",
+          "socialization": "Important to reduce reactivity"
+        },
+        "health_considerations": [
+          "Dental disease",
+          "Luxating patella",
+          "Tracheal collapse",
+          "Eye issues"
+        ],
+        "personality_traits": [
+          "Alert",
+          "Loyal",
+          "Spirited",
+          "Affectionate"
+        ],
+        "living_environment": {
+          "space_requirements": "Small home or apartment",
+          "climate_preference": "Indoor",
+          "indoor_outdoor": "Indoor with daily walks",
+          "apartment_suitable": "Excellent"
+        },
+        "special_notes": "Pair dynamics require individual training and resources to prevent resource guarding."
+      },
+      {
+        "id": "pet_20",
+        "name": "Yorkshire Terrier",
+        "type": "Dog",
+        "image": "assets/type/pet_20.png",
+        "breed": "Yorkshire Terrier",
+        "coat_color": "Blue and tan (groomed clip)",
+        "physical_characteristics": {
+          "size": "Small",
+          "build": "Delicate and compact",
+          "coat": "Silky, trimmed",
+          "weight_range": "4-7 pounds",
+          "height_range": "7-8 inches",
+          "life_expectancy": "12-16 years"
+        },
+        "care_requirements": {
+          "grooming_frequency": "Every 4-6 weeks",
+          "brushing": "Daily for long coats; several times weekly for clips",
+          "bathing": "Every 2-3 weeks",
+          "exercise": "Moderate - 30-45 minutes daily",
+          "coat_maintenance": "Regular trims and ear hair care",
+          "nail_trimming": "Every 2-3 weeks",
+          "ear_cleaning": "Weekly"
+        },
+        "nutrition_requirements": {
+          "daily_food": "0.5-1 cup small-breed food",
+          "feeding_frequency": "2-3 times daily",
+          "special_diet": "Dental-support diet helpful",
+          "water_intake": "Fresh water",
+          "treats": "Limit"
+        },
+        "exercise_needs": {
+          "daily_walks": "2 short walks and indoor play",
+          "mental_stimulation": "Trick training and scent games",
+          "play_activities": "Fetch and tug",
+          "energy_level": "Moderate"
+        },
+        "training_requirements": {
+          "intelligence_level": "High",
+          "trainability": "Good with positive methods",
+          "basic_commands": "Sit, stay, come, down",
+          "advanced_training": "Tricks and agility",
+          "socialization": "Important to prevent small-dog reactivity"
+        },
+        "health_considerations": [
+          "Dental disease",
+          "Luxating patella",
+          "Tracheal collapse",
+          "Portosystemic shunt (rare)"
+        ],
+        "personality_traits": [
+          "Bold",
+          "Affectionate",
+          "Curious",
+          "Loyal"
+        ],
+        "living_environment": {
+          "space_requirements": "Small home or apartment",
+          "climate_preference": "Indoor",
+          "indoor_outdoor": "Indoor with supervised outdoor time",
+          "apartment_suitable": "Excellent"
+        },
+        "special_notes": "Consistent dental care and positive training are key for Yorkies."
+      },
+      {
+        "id": "pet_21",
+        "name": "Orange Tabby Cat",
+        "type": "Cat",
+        "image": "assets/type/pet_21.png",
+        "breed": "Domestic Shorthair (Orange Tabby)",
+        "coat_color": "Orange tabby with white chest and paws",
+        "accessories": [
+          "Black harness"
+        ],
+        "physical_characteristics": {
+          "size": "Medium",
+          "build": "Sturdy",
+          "coat": "Short",
+          "eyes": "Green",
+          "weight_range": "8-14 pounds",
+          "life_expectancy": "12-16 years"
+        },
+        "care_requirements": {
+          "grooming_frequency": "Weekly brushing",
+          "bathing": "Rarely needed",
+          "exercise": "Moderate - daily play",
+          "coat_maintenance": "Low",
+          "nail_trimming": "Every 2-3 weeks",
+          "ear_cleaning": "As needed"
+        },
+        "nutrition_requirements": {
+          "daily_food": "Balanced wet + dry diet",
+          "feeding_frequency": "2-3 times daily",
+          "special_diet": "Weight control if prone to obesity",
+          "water_intake": "Fresh water/fountain",
+          "treats": "Limit"
+        },
+        "exercise_needs": {
+          "daily_play": "2-3 sessions of 10-15 minutes",
+          "mental_stimulation": "Puzzle feeders and toys",
+          "play_activities": "Chasing, hunting games",
+          "energy_level": "Moderate"
+        },
+        "behavior_characteristics": {
+          "intelligence_level": "Moderate to high",
+          "trainability": "Can learn basic cues",
+          "socialization": "Generally friendly",
+          "vocalization": "Moderate",
+          "independence": "Moderate"
+        },
+        "health_considerations": [
+          "Dental disease",
+          "Obesity risk",
+          "Urinary issues (males)"
+        ],
+        "personality_traits": [
+          "Friendly",
+          "Curious",
+          "Affectionate",
+          "Laid-back"
+        ],
+        "living_environment": {
+          "space_requirements": "Indoor home with enrichment",
+          "climate_preference": "Indoor preferred",
+          "indoor_outdoor": "Harness walks optional",
+          "apartment_suitable": "Excellent"
+        },
+        "special_notes": "Harness training should be gradual and reward-based to keep the cat comfortable."
+      }
+    ],
+    "general_care_guidelines": {
+      "dogs": {
+        "grooming": {
+          "frequency": "Varies by breed - from weekly to every 4-6 weeks",
+          "brushing": "Daily for long-haired breeds, weekly for short-haired",
+          "bathing": "Every 2-8 weeks depending on breed and activity",
+          "nail_trimming": "Every 2-4 weeks",
+          "ear_cleaning": "Weekly to prevent infections",
+          "dental_care": "Daily teeth brushing recommended",
+          "professional_grooming": "Every 4-8 weeks for long-haired breeds"
+        },
+        "exercise": {
+          "high_energy": "2+ hours daily (Border Collies, Australian Shepherds)",
+          "moderate_energy": "1-2 hours daily (Golden Retrievers, Labradors)",
+          "low_energy": "30-60 minutes daily (Bulldogs, Basset Hounds)",
+          "mental_stimulation": "Puzzle toys, training sessions, interactive games",
+          "play_activities": "Fetch, tug-of-war, swimming, hiking"
+        },
+        "nutrition": {
+          "feeding_frequency": "2-3 times daily for adults",
+          "water": "Fresh water available 24/7",
+          "portion_control": "Important to prevent obesity",
+          "quality_food": "High-quality protein-rich diet",
+          "treats": "Limit to 10% of daily calories",
+          "life_stage_nutrition": "Puppy, adult, and senior formulas"
+        },
+        "health": {
+          "vaccinations": "Core vaccines required (DHPP, rabies)",
+          "parasite_prevention": "Monthly flea/tick and heartworm prevention",
+          "dental_care": "Regular teeth cleaning and dental chews",
+          "vet_visits": "Annual check-ups, more frequent for seniors",
+          "emergency_signs": "Lethargy, loss of appetite, vomiting, diarrhea",
+          "spay_neuter": "Recommended for health and behavior"
+        },
+        "training": {
+          "basic_commands": "Sit, stay, come, heel, down",
+          "socialization": "Critical from 3-16 weeks",
+          "positive_reinforcement": "Use treats and praise",
+          "consistency": "Important for all family members",
+          "professional_training": "Consider for difficult behaviors"
+        },
+        "behavior": {
+          "separation_anxiety": "Common in some breeds",
+          "barking": "Normal behavior, can be managed",
+          "chewing": "Provide appropriate chew toys",
+          "digging": "Provide designated digging area",
+          "aggression": "Seek professional help if needed"
+        }
+      },
+      "cats": {
+        "grooming": {
+          "frequency": "Weekly brushing for most breeds",
+          "bathing": "Rarely needed unless dirty or medical condition",
+          "nail_trimming": "Every 2-4 weeks",
+          "dental_care": "Regular teeth cleaning important",
+          "ear_cleaning": "Weekly to prevent infections",
+          "eye_care": "Clean tear stains if needed"
+        },
+        "exercise": {
+          "play_sessions": "2-3 daily sessions of 10-15 minutes",
+          "climbing": "Cat trees and perches important",
+          "hunting_simulation": "Interactive toys and puzzle feeders",
+          "energy_levels": "Varies by breed and age",
+          "indoor_enrichment": "Windows, bird feeders, scratching posts"
+        },
+        "nutrition": {
+          "feeding_frequency": "2-3 times daily",
+          "water": "Fresh water available 24/7",
+          "wet_vs_dry": "Mix of both recommended",
+          "portion_control": "Important to prevent obesity",
+          "life_stage_nutrition": "Kitten, adult, and senior formulas",
+          "treats": "Limit to 10% of daily calories"
+        },
+        "health": {
+          "vaccinations": "Core vaccines required (FVRCP, rabies)",
+          "parasite_prevention": "Monthly flea prevention",
+          "litter_box": "Clean daily, one box per cat plus one extra",
+          "vet_visits": "Annual check-ups, more frequent for seniors",
+          "emergency_signs": "Hiding, loss of appetite, vomiting, diarrhea",
+          "spay_neuter": "Recommended for health and behavior"
+        },
+        "behavior": {
+          "litter_box_training": "Usually instinctive",
+          "scratching": "Provide appropriate scratching posts",
+          "hunting": "Natural behavior, provide toys",
+          "socialization": "Important from kittenhood",
+          "territorial_behavior": "Normal, can be managed"
+        },
+        "environment": {
+          "indoor_safety": "Remove toxic plants and chemicals",
+          "climbing_opportunities": "Cat trees and shelves",
+          "hiding_places": "Boxes, tunnels, quiet areas",
+          "window_access": "Safe perches for bird watching",
+          "temperature": "Comfortable room temperature"
+        }
+      }
+    },
+    "emergency_signs": {
+      "dogs": [
+        "Lethargy or unusual tiredness",
+        "Loss of appetite for more than 24 hours",
+        "Vomiting or diarrhea",
+        "Difficulty breathing",
+        "Limping or reluctance to move",
+        "Excessive scratching or skin problems",
+        "Changes in drinking or urination",
+        "Seizures or collapse",
+        "Swollen abdomen",
+        "Coughing or gagging",
+        "Pale gums",
+        "Unusual behavior or aggression"
+      ],
+      "cats": [
+        "Hiding more than usual",
+        "Loss of appetite for more than 24 hours",
+        "Vomiting or diarrhea",
+        "Difficulty breathing",
+        "Limping or reluctance to jump",
+        "Changes in litter box habits",
+        "Excessive grooming or hair loss",
+        "Seizures or collapse",
+        "Swollen abdomen",
+        "Coughing or gagging",
+        "Pale gums",
+        "Unusual vocalization"
+      ]
+    },
+    "seasonal_care": {
+      "spring": {
+        "dogs": [
+          "Increase flea/tick prevention",
+          "Spring cleaning of yard",
+          "Update vaccinations",
+          "Check for seasonal allergies"
+        ],
+        "cats": [
+          "Increase flea prevention",
+          "Spring cleaning of home",
+          "Update vaccinations",
+          "Check for seasonal allergies"
+        ]
+      },
+      "summer": {
+        "dogs": [
+          "Never leave in hot car",
+          "Provide shade and water",
+          "Walk during cooler hours",
+          "Watch for heat stroke signs",
+          "Increase water intake",
+          "Consider cooling mats",
+          "Limit exercise in heat"
+        ],
+        "cats": [
+          "Keep indoors during peak heat",
+          "Provide cool resting spots",
+          "Ensure fresh water available",
+          "Watch for dehydration signs",
+          "Use air conditioning",
+          "Provide ice cubes in water"
+        ]
+      },
+      "fall": {
+        "dogs": [
+          "Prepare for cooler weather",
+          "Update flea/tick prevention",
+          "Check for seasonal allergies",
+          "Prepare winter gear"
+        ],
+        "cats": [
+          "Prepare for indoor season",
+          "Update flea prevention",
+          "Check for seasonal allergies",
+          "Provide warm sleeping spots"
+        ]
+      },
+      "winter": {
+        "dogs": [
+          "Limit time outdoors in extreme cold",
+          "Consider dog coats for short-haired breeds",
+          "Wipe paws after walks",
+          "Watch for frostbite signs",
+          "Increase food slightly for outdoor dogs",
+          "Use pet-safe ice melt",
+          "Provide warm bedding"
+        ],
+        "cats": [
+          "Keep indoors",
+          "Provide warm sleeping spots",
+          "Ensure adequate hydration",
+          "Watch for cold stress signs",
+          "Provide extra bedding",
+          "Check for drafts"
+        ]
+      }
+    },
+    "life_stage_care": {
+      "puppies_kittens": {
+        "age_range": "0-1 year",
+        "nutrition": "High-quality puppy/kitten food",
+        "feeding_frequency": "3-4 times daily",
+        "vaccinations": "Series of core vaccines",
+        "socialization": "Critical period 3-16 weeks",
+        "training": "Start basic commands early",
+        "exercise": "Short, frequent sessions",
+        "grooming": "Start early to build tolerance"
+      },
+      "adults": {
+        "age_range": "1-7 years",
+        "nutrition": "High-quality adult food",
+        "feeding_frequency": "2-3 times daily",
+        "vaccinations": "Annual boosters",
+        "exercise": "Regular daily exercise",
+        "preventive_care": "Annual vet visits",
+        "dental_care": "Regular teeth cleaning"
+      },
+      "seniors": {
+        "age_range": "7+ years",
+        "nutrition": "Senior formula food",
+        "feeding_frequency": "2-3 times daily",
+        "vet_visits": "Every 6 months",
+        "exercise": "Gentle, regular exercise",
+        "comfort": "Orthopedic bedding",
+        "monitoring": "Watch for age-related changes"
+      }
+    },
+    "common_health_issues": {
+      "dogs": {
+        "dental_disease": "Most common health issue",
+        "obesity": "Affects 50% of dogs",
+        "arthritis": "Common in senior dogs",
+        "allergies": "Skin and food allergies",
+        "ear_infections": "Common in floppy-eared breeds",
+        "parasites": "Fleas, ticks, worms"
+      },
+      "cats": {
+        "dental_disease": "Most common health issue",
+        "obesity": "Affects 30% of cats",
+        "kidney_disease": "Common in senior cats",
+        "urinary_issues": "Especially in male cats",
+        "diabetes": "Increasingly common",
+        "parasites": "Fleas, worms"
+      }
+    },
+    "behavioral_guidance": {
+      "dogs": {
+        "separation_anxiety": {
+          "signs": "Destructive behavior, excessive barking",
+          "solutions": "Gradual desensitization, crate training"
+        },
+        "aggression": {
+          "types": "Fear, territorial, resource guarding",
+          "solutions": "Professional training, behavior modification"
+        },
+        "house_soiling": {
+          "causes": "Medical issues, incomplete training",
+          "solutions": "Vet check, retraining, proper schedule"
+        }
+      },
+      "cats": {
+        "litter_box_issues": {
+          "causes": "Medical issues, stress, dirty box",
+          "solutions": "Vet check, clean box, reduce stress"
+        },
+        "aggression": {
+          "types": "Fear, territorial, redirected",
+          "solutions": "Identify trigger, gradual desensitization"
+        },
+        "excessive_vocalization": {
+          "causes": "Attention seeking, medical issues",
+          "solutions": "Vet check, ignore attention-seeking"
+        }
+      }
+    },
+    "enrichment_activities": {
+      "dogs": {
+        "mental_stimulation": [
+          "Puzzle toys and treat dispensers",
+          "Obedience training sessions",
+          "Scent work and nose games",
+          "Interactive play with toys",
+          "Learning new tricks"
+        ],
+        "physical_exercise": [
+          "Daily walks and hikes",
+          "Fetch and tug-of-war games",
+          "Swimming and water activities",
+          "Agility training"
+        ]
+      }
+    }
+  }
+
