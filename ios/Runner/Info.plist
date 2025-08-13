@@ -2,39 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-		<string>snapchat</string>
-		<string>instagram</string>
-		<string>kakaotalk</string>
-		<string>messenger</string>
-		<string>youtube</string>
-		<string>twitter</string>
-		<string>fb</string>
-		<string>tg</string>
-		<string>http</string>
-		<string>https</string>
-		<string>whatsapp</string>
-		<string>tiktok</string>
-		<string>line</string>
-	</array>
-	<key>UIUserInterfaceStyle</key>
-	<string>Light</string>
-	<key>NSCameraUsageDescription</key>
-	<string>The app needs access to your camera to take profile pictures.</string>
-	<key>NSContactsUsageDescription</key>
-	<string>The app need to use your address book permissions to recommend friends to you.</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>The app needs to access the microphone to record audio information for users to have voice chats.</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>The app needs access to your photo library to select profile pictures.</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>The app needs access to your photo library to select profile pictures.</string>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
 	<key>CFBundleDevelopmentRegion</key>
@@ -57,8 +24,39 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>snapchat</string>
+		<string>instagram</string>
+		<string>kakaotalk</string>
+		<string>messenger</string>
+		<string>youtube</string>
+		<string>twitter</string>
+		<string>fb</string>
+		<string>tg</string>
+		<string>http</string>
+		<string>https</string>
+		<string>whatsapp</string>
+		<string>tiktok</string>
+		<string>line</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>The app needs access to your camera to take profile pictures.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>The app need to use your address book permissions to recommend friends to you.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>The app needs to access the microphone to record audio information for users to have voice chats.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>The app needs access to your photo library to select profile pictures.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>The app needs access to your photo library to select profile pictures.</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
@@ -76,5 +74,7 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
 </dict>
 </plist>
