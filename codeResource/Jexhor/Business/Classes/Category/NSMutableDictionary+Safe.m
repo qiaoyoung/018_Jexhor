@@ -58,14 +58,12 @@ static void swizzle(Class class, SEL originalSEL, SEL newSEL)
     }
 }
 
-- (instancetype)initWithNullObjects:(const id [])objects forKeys:(const id <NSCopying> [])keys count:(NSUInteger)count
-{
+- (instancetype)initWithNullObjects:(const id [])objects forKeys:(const id <NSCopying> [])keys count:(NSUInteger)count{
     for (NSUInteger i = 0; i < count; i++) {
         if (objects[i] == nil || keys[i] == nil) {
             return nil;
         }
     }
-    
     return [self initWithNullObjects:objects forKeys:keys count:count];
 }
 
