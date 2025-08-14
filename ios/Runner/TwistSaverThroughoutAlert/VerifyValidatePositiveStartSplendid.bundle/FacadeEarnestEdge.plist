@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>bundleExtensionBeneathSecure</key>
+    <string>SelectContinueHandle</string>
+    <key>naturalTarget</key>
+    <string>DispatcherUponTrustTrack</string>
+    <key>vastStrategy</key>
+    <string>JustCompatibleCacheConvert</string>
+    <key>fallsRunKnownCollection</key>
+    <string>PastValidatorFloraShore</string>
+</dict>
+</plist>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>dispatcherWatchCanvas</key>
+    <string>CalculateNovelListBuilder</string>
+    <key>toolTransitThroughout</key>
+    <string>ProcessAboveSolarDeep</string>
+    <key>startResponseDeserializer</key>
+    <string>DropModelFinish</string>
+    <key>uniqueValidateClass</key>
+    <string>CleanCoordinatorInsertEnd</string>
+</dict>
+</plist>

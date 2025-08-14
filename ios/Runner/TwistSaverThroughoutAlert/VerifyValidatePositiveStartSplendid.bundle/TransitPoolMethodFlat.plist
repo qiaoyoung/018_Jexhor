@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>intenseProxyFixWarm</key>
+    <string>WarmAgainstResumeRefresh</string>
+    <key>testYieldingExport</key>
+    <string>ParseWithMatch</string>
+    <key>modelTorchMark</key>
+    <string>CoolWitty</string>
+    <key>fixSegment</key>
+    <string>MakeMakeDebugExtension</string>
+    <key>debugDense</key>
+    <string>DefinePauseExtractRun</string>
+    <key>terseProviderRecord</key>
+    <string>NobleOpalEmber</string>
+    <key>transformablePrimal</key>
+    <string>VisionBaseStar</string>
+</dict>
+</plist>

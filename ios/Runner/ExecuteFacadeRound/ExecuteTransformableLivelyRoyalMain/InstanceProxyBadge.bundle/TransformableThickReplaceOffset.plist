@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>optionContinueController</key>
+    <string>ChartIslandIntoDeserializer</string>
+    <key>measuredSortBadge</key>
+    <string>PaintBindSerializer</string>
+    <key>spriteBrokerMutual</key>
+    <string>ScriptGlad</string>
+    <key>enableClassic</key>
+    <string>CloseAgainstThrough</string>
+    <key>buildPrimeModel</key>
+    <string>MapStepDataSourceGenerous</string>
+    <key>stripeIdle</key>
+    <string>TransformableSelectView</string>
+    <key>imageComplex</key>
+    <string>ImportDropHaven</string>
+    <key>protocolWay</key>
+    <string>ValidatePastResponseHardyMultiply</string>
+    <key>coolBrightSaverSend</key>
+    <string>BaseEventInterpreterCommand</string>
+</dict>
+</plist>

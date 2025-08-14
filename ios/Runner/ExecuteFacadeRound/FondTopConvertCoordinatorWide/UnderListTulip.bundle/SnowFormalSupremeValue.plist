@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>exportDataSourceAdd</key>
+    <string>DefinedRouteTenderHoldDirect</string>
+    <key>ownerQueue</key>
+    <string>CarefulBaseContainerLucky</string>
+</dict>
+</plist>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>checkWildModern</key>
+    <string>ReturnLockSpokeHelper</string>
+    <key>gentleRun</key>
+    <string>AppendForWithout</string>
+    <key>configFormatter</key>
+    <string>AssignCacheResource</string>
+    <key>audioCreateProxyFree</key>
+    <string>LogicalOriginHonestNear</string>
+</dict>
+</plist>

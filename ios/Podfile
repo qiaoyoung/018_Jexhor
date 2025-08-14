@@ -31,6 +31,32 @@ target 'Runner' do
   use_frameworks!
 
   flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
+  pod 'Toast'
+  pod 'YYImage'
+  pod 'YYImage/WebP'
+  pod 'Masonry'
+  pod 'YYText'
+  pod 'KMNavigationBarTransition'
+  pod 'FFDropDownMenu'
+  pod 'UMCommon'
+  pod 'UMDevice'
+  pod 'UMAPM'
+  pod 'Bugly'
+  pod 'FMDB'
+  pod 'NIMSDK_LITE', '9.20.12'
+  pod 'SSZipArchive'
+  pod 'TZImagePickerController'
+  pod 'IQKeyboardManager'
+  pod 'SDWebImage'
+  pod 'SDWebImageFLPlugin'
+  pod 'Reachability'
+  pod 'SVProgressHUD'
+  pod 'YYModel'
+  pod 'UCZProgressView'
+  pod 'FLAnimatedImage'
+  pod 'WMZDialog'
+  pod 'FDFullscreenPopGesture', '1.1'
+  pod 'AFNetworking', :git => 'https://github.com/NewAFNetworking/AFNetworking.git'
 
 end
 

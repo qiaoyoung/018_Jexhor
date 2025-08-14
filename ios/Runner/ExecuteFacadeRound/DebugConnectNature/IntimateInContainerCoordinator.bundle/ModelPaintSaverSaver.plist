@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>earthReceive</key>
+    <string>ToolReadWrite</string>
+    <key>agentRelease</key>
+    <string>SpiritResumeBetweenFetch</string>
+    <key>providerOakenCreate</key>
+    <string>CollectionEnumDataSourceModify</string>
+    <key>sharpSurge</key>
+    <string>ReturnDisplayContentRadiant</string>
+    <key>alertWealthyArray</key>
+    <string>ObviousFreshSong</string>
+    <key>idealApplyHandleObserver</key>
+    <string>RavenSetLimit</string>
+    <key>protocolTransformDarkLibrary</key>
+    <string>FormalDispatcherContent</string>
+    <key>leanDeltaHandler</key>
+    <string>ProxyMediatorThroughPassage</string>
+    <key>crestCheck</key>
+    <string>OutputInsertAssignArray</string>
+</dict>
+</plist>

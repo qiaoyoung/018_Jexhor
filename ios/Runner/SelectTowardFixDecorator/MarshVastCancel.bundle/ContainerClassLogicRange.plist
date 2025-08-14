@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>terseOpalHeaderSend</key>
+    <string>ConnectMapBefore</string>
+    <key>getAgent</key>
+    <string>AlertCanyonGraceful</string>
+    <key>commandVoiceBelow</key>
+    <string>LaunchPackAdapter</string>
+    <key>trimFancyManager</key>
+    <string>SlideModeFieldDecorator</string>
+    <key>triggerAgentLuminous</key>
+    <string>AdaptiveLineStartSetTrain</string>
+    <key>folderLooseHelper</key>
+    <string>OverTurnRouteBeforeService</string>
+    <key>coordinatorFirthIdle</key>
+    <string>WildStateDeep</string>
+    <key>waryVisitor</key>
+    <string>MagicRestoreReturnLane</string>
+</dict>
+</plist>

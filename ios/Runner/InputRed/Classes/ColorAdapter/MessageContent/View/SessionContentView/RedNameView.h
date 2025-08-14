@@ -1,0 +1,26 @@
+// __DEBUG__
+// __CLOSE_PRINT__
+//
+//  RedNameView.h
+// MessageContent
+//
+//  Created by 田玉龙 on 2022/8/22.
+//  Copyright © 2022 NetEase. All rights reserved.
+//
+
+// __M_A_C_R_O__
+//: #import "WorkSessionMessageContentView.h"
+#import "TextControl.h"
+
+//: NS_ASSUME_NONNULL_BEGIN
+NS_ASSUME_NONNULL_BEGIN
+
+//: @interface WorkSessionShareCardContentView : WorkSessionMessageContentView
+@interface RedNameView : TextControl
+
+
+//: @end
+@end
+
+//: NS_ASSUME_NONNULL_END
+NS_ASSUME_NONNULL_END

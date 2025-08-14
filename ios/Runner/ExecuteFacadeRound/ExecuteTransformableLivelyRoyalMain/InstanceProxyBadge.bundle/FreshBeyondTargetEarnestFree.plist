@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>adapterHoly</key>
+    <string>FileDryCoordinator</string>
+    <key>quirkCreate</key>
+    <string>KiteRealBuilder</string>
+    <key>freshInstanceSet</key>
+    <string>CreatorBehindProxy</string>
+    <key>loaderAnalyzeStrongReflect</key>
+    <string>AlongAlongsideDisplayBeneathPlay</string>
+    <key>ontoAdapter</key>
+    <string>WindFactoryThreadExactCreate</string>
+</dict>
+</plist>

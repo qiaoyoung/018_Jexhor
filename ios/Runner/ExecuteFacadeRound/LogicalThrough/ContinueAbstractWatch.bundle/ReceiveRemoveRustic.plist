@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>addDeserializer</key>
+    <string>TypeIvoryReceive</string>
+    <key>quietAppendGraphAgent</key>
+    <string>SleekWaterOutsideBefore</string>
+    <key>blitheSend</key>
+    <string>MainBrokerExecute</string>
+    <key>onyxBeyondAgileProvider</key>
+    <string>BrightAfterMerry</string>
+    <key>poolClean</key>
+    <string>RetreatVigorous</string>
+</dict>
+</plist>

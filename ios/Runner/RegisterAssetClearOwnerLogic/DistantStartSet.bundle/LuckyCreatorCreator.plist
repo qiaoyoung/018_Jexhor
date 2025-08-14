@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>tacticDelegateFind</key>
+    <string>TreatMapImport</string>
+    <key>baseTypeSereneMove</key>
+    <string>LooseQuickBefore</string>
+    <key>closeBrokerBroad</key>
+    <string>HumaneResumeCounter</string>
+    <key>targetChief</key>
+    <string>UponIdleSearchCompare</string>
+    <key>implementFlowReplace</key>
+    <string>DeserializerGraveShowDropExport</string>
+    <key>uponDispatcherDark</key>
+    <string>DebugShareWildCycle</string>
+    <key>applyTense</key>
+    <string>FilterWordAsset</string>
+    <key>stableCollectionSecureWatch</key>
+    <string>StarFetchUponDecorator</string>
+</dict>
+</plist>

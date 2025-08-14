@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>thenProcess</key>
+    <string>MapDomain</string>
+    <key>controllerEvent</key>
+    <string>UpgradeSerializerRegionGrowing</string>
+    <key>poolCreate</key>
+    <string>BaseImportOptionFrameTrigger</string>
+    <key>engineAction</key>
+    <string>KindredTrainMultiply</string>
+    <key>wealthyDecoratorMonitorMerge</key>
+    <string>DiscreteDecodeInterpreterSync</string>
+    <key>smartColumnMoveAgent</key>
+    <string>PaintBetweenRunHeroic</string>
+    <key>attachDiscrete</key>
+    <string>MarkYewStrategyHost</string>
+    <key>trackAbundant</key>
+    <string>InstanceOntoGenuine</string>
+</dict>
+</plist>

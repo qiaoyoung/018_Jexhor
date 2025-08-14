@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>brokerGlobal</key>
+    <string>AdapterSaveByReplace</string>
+    <key>observerPlainFormal</key>
+    <string>StopShowLedgeStream</string>
+    <key>moveUnityController</key>
+    <string>ScanStoreThroughoutStandSync</string>
+    <key>mistIdeal</key>
+    <string>LakeWidePeakGenerate</string>
+    <key>buildRainSteadyHandler</key>
+    <string>SubmitDenseSearch</string>
+</dict>
+</plist>

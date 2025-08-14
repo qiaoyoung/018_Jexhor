@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>bindDecoratorVisible</key>
+    <string>StrategyViaSlideJade</string>
+    <key>replaceRealLoader</key>
+    <string>JunctionRefreshDetectCoordinator</string>
+    <key>appendCompatibleInfiniteVoice</key>
+    <string>UpdatePlanetInletSave</string>
+    <key>targetOriginalInitialize</key>
+    <string>AdapterTypeSoftBeyond</string>
+    <key>winsomeBlendAmid</key>
+    <string>FetchContainerBuildModify</string>
+    <key>adapterDecentHeight</key>
+    <string>RestoreCommandAbove</string>
+    <key>startModel</key>
+    <string>InsertArrayCentralStackType</string>
+</dict>
+</plist>

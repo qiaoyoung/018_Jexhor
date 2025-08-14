@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>behindContainer</key>
+    <string>WriteGenericStaySwift</string>
+    <key>joyfulAgent</key>
+    <string>NascentBelowDiamondPack</string>
+    <key>alertManager</key>
+    <string>ScriptManagerConnect</string>
+    <key>referenceRestore</key>
+    <string>DebugWalkSplashIslet</string>
+    <key>dominantBlend</key>
+    <string>StateJunctionMove</string>
+</dict>
+</plist>

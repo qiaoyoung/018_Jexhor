@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>mainEngine</key>
+    <string>InHeavenInVisitor</string>
+    <key>primalStart</key>
+    <string>HandlerWaveDirect</string>
+    <key>fetchHarmonic</key>
+    <string>RunCreatorDrop</string>
+    <key>astuteSolidAgentValidate</key>
+    <string>EndGateBefore</string>
+    <key>interpreterFileFormal</key>
+    <string>GroupHastyList</string>
+</dict>
+</plist>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>pauseCollectionLoader</key>
+    <string>BeforeCivicCache</string>
+    <key>domainInside</key>
+    <string>StopBelowWealthyOpen</string>
+    <key>serializerRecordHumble</key>
+    <string>PolicyInstanceClearEngine</string>
+    <key>watchReal</key>
+    <string>GladeArrayFinish</string>
+    <key>generousArrayTrain</key>
+    <string>AbovePerformDetectTool</string>
+    <key>equalDelegateRefreshStretch</key>
+    <string>RichParsePrompt</string>
+    <key>atlasFactoryTender</key>
+    <string>GetAlongPaintFill</string>
+</dict>
+</plist>

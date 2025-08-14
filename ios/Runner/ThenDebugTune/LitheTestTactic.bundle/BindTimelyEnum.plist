@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>handlerSplitDry</key>
+    <string>DesertReturnPast</string>
+    <key>markNectarAgentFocused</key>
+    <string>BlendPack</string>
+    <key>fixBrightClass</key>
+    <string>StoreBelowIntense</string>
+    <key>retreatProtocol</key>
+    <string>MacroWriteGracefulAppendProtocol</string>
+    <key>linkTense</key>
+    <string>HoldSolidSelect</string>
+</dict>
+</plist>

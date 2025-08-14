@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>universalEnumRemove</key>
+    <string>PushFinishContainer</string>
+    <key>treatQualityConvert</key>
+    <string>WordProcessPetalHold</string>
+    <key>enableTool</key>
+    <string>BareRestoreImplement</string>
+</dict>
+</plist>

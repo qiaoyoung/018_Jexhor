@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>behindVocalTribeStrategy</key>
+    <string>HappyMultiplyCompare</string>
+    <key>drawImprovedFormatterTower</key>
+    <string>MediatorWaitCommand</string>
+    <key>objectExtensionTrain</key>
+    <string>StretchKnollModel</string>
+    <key>matchMemoryBroker</key>
+    <string>TagMacroDebug</string>
+    <key>viewPleasantPoplarBegin</key>
+    <string>ValidatorVision</string>
+    <key>stackAzure</key>
+    <string>FormatterCloseDuringFillCanvas</string>
+</dict>
+</plist>

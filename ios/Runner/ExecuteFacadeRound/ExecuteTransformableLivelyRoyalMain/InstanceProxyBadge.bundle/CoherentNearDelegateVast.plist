@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>convertContainer</key>
+    <string>PlanetStructureImportAlcove</string>
+    <key>outsidePageOdd</key>
+    <string>DrawSearchUnique</string>
+    <key>magicalProviderByRow</key>
+    <string>ElementMultiplyProvider</string>
+    <key>luminousQueryPack</key>
+    <string>RealModifyBuild</string>
+    <key>clearSweet</key>
+    <string>ChatWriteManager</string>
+    <key>creativeAttach</key>
+    <string>VisitorSyncShow</string>
+    <key>facadeEnable</key>
+    <string>ExtractDownTacticSubtle</string>
+</dict>
+</plist>

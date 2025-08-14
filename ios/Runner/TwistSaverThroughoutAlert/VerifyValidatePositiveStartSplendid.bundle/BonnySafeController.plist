@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>vibrantHandlerWithJunction</key>
+    <string>WithinOutsidePolicy</string>
+    <key>vibrantAttachImageHeader</key>
+    <string>YewPushLaunch</string>
+    <key>braveConnect</key>
+    <string>StoreBlendOpenFlash</string>
+    <key>mildTransitAgent</key>
+    <string>BuildGlobe</string>
+    <key>roundFrost</key>
+    <string>BeginOverMountain</string>
+    <key>mapHarmonicCollection</key>
+    <string>RoundAppendSkilled</string>
+</dict>
+</plist>

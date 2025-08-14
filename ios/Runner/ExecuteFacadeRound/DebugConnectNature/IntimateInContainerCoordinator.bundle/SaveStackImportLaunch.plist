@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>dawnFirmDebugReference</key>
+    <string>SortSpaceModule</string>
+    <key>startSerializer</key>
+    <string>IdleCheckBright</string>
+    <key>pearlValidExtension</key>
+    <string>DuringStationInitializeGet</string>
+    <key>initializeFilterSand</key>
+    <string>DaintyDeserializerPortraitUpdate</string>
+</dict>
+</plist>

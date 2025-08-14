@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>assignMediatorTag</key>
+    <string>ViewShowExtension</string>
+    <key>mediatorStructureReady</key>
+    <string>WatchBetweenCheck</string>
+    <key>freeQuality</key>
+    <string>EntryControllerMuseInitialize</string>
+    <key>timelyQueryAround</key>
+    <string>HandlerSubtleRadiantGlade</string>
+    <key>dispatcherGlobePristine</key>
+    <string>CreatorDuringSortCalculateAgent</string>
+    <key>cacheEnd</key>
+    <string>ConsoleStreamReplace</string>
+</dict>
+</plist>

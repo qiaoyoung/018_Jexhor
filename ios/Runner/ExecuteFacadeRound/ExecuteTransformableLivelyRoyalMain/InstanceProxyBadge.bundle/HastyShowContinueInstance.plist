@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>harmonicEngineFetch</key>
+    <string>HoldMobileNorth</string>
+    <key>generateMelodyHandler</key>
+    <string>ExtensionLoadFromProvision</string>
+    <key>launchHandler</key>
+    <string>DigitalLanguageMagnet</string>
+    <key>commandSkilledLoadField</key>
+    <string>HardyDetectPetal</string>
+    <key>commandVoyageGifted</key>
+    <string>CloseTerrainChatQualityVerify</string>
+    <key>targetFinishAction</key>
+    <string>RadarViewAdapter</string>
+    <key>coordinatorTrustyBamboo</key>
+    <string>MarkExecuteHide</string>
+    <key>implementCacheGateSecure</key>
+    <string>ContainerEnergeticAroundMedia</string>
+</dict>
+</plist>

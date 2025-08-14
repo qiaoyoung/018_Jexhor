@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>hideEngine</key>
+    <string>ObjectEngineSelectEstuary</string>
+    <key>besidePlatformController</key>
+    <string>WaitOutsideMature</string>
+    <key>enginePlatformPast</key>
+    <string>ManagerHandleThroughEnd</string>
+    <key>mapDecisive</key>
+    <string>FetchTinyWreathPackage</string>
+    <key>coordinatorReplaceCrispSun</key>
+    <string>MergeTransformableSprite</string>
+    <key>voyageDuringList</key>
+    <string>VisitorReferenceExecuteGetDataSource</string>
+</dict>
+</plist>

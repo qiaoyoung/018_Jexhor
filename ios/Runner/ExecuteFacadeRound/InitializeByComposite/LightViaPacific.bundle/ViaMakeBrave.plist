@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>containerFinish</key>
+    <string>LogSyncWrite</string>
+    <key>modelRavenVocalBind</key>
+    <string>VisitorThroughoutClear</string>
+    <key>extensionTameFixRate</key>
+    <string>FixBetweenFeasibleHeader</string>
+    <key>brokerWaitGlad</key>
+    <string>TrackModuleLaunchFetch</string>
+</dict>
+</plist>
