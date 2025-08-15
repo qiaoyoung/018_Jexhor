@@ -29,11 +29,11 @@ jobs:
           rm -rf ~/Library/Developer/Xcode/iOS\ DeviceSupport
           rm -rf ~/Library/Developer/Xcode/Archives
           rm -rf ~/Library/Developer/Xcode/Products
-          
+
       # 添加 Xcode 版本选择
       - name: Select Xcode 16.2
         run: sudo xcode-select -s /Applications/Xcode_16.2.app
-        
+
       # 设置 CocoaPods
       # - name: Setup CocoaPods
       #   run: |
@@ -65,21 +65,19 @@ jobs:
 
           keychain-password: 111111
 
-      # 添加检查步骤
+      # # 添加检查步骤
       - name: 检查构建文件
         run: |
-          echo "检查 ios/build/ipa 目录内容："
-          ls -la ios/build/ipa/ || echo "ios/build/ipa/ 不存在"
-          echo "检查 ios/build 目录内容："
-          ls -la ios/build/ || echo "ios/build/ 不存在"
-          echo "检查当前目录构建文件："
-          find . -name "*.ipa" -type f || echo "未找到 .ipa 文件"
+          echo "检查 build/ios/ipa 目录内容："
+          ls -la build/ios/ipa/
+          echo "检查 build/ios 目录内容："
+          ls -la build/ios/
 
       - name: Archive IPA
         uses: actions/upload-artifact@v4
         with:
           name: release-ipa
-          path: ios/build/ipa
+          path: build/ios/ipa
 
           
       # - name: Upload using iTMSTransporter
