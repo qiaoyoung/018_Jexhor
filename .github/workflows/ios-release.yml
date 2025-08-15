@@ -107,12 +107,16 @@ jobs:
             with open(project_path, 'r') as f:
                 content = f.read()
             
-            # 强制设置构建设置，排除模拟器架构
+            # 强制设置构建设置，排除模拟器架构并调整iOS版本
             replacements = [
                 ('SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";', 'SUPPORTED_PLATFORMS = "iphoneos";'),
                 ('SUPPORTS_MACCATALYST = YES;', 'SUPPORTS_MACCATALYST = NO;'),
                 ('VALID_ARCHS = "arm64 x86_64";', 'VALID_ARCHS = "arm64";'),
                 ('ARCHS = "$(ARCHS_STANDARD)";', 'ARCHS = "arm64";'),
+                ('IPHONEOS_DEPLOYMENT_TARGET = 18.0;', 'IPHONEOS_DEPLOYMENT_TARGET = 16.0;'),
+                ('IPHONEOS_DEPLOYMENT_TARGET = 17.0;', 'IPHONEOS_DEPLOYMENT_TARGET = 16.0;'),
+                ('IPHONEOS_DEPLOYMENT_TARGET = 18.1;', 'IPHONEOS_DEPLOYMENT_TARGET = 16.0;'),
+                ('IPHONEOS_DEPLOYMENT_TARGET = 18.2;', 'IPHONEOS_DEPLOYMENT_TARGET = 16.0;'),
             ]
             
             for old, new in replacements:
@@ -127,10 +131,17 @@ jobs:
                     content
                 )
             
+            # 使用正则表达式处理可能的各种iOS版本格式
+            content = re.sub(
+                r'IPHONEOS_DEPLOYMENT_TARGET = (1[7-9]\.\d+|[2-9]\d\.\d+);',
+                'IPHONEOS_DEPLOYMENT_TARGET = 16.0;',
+                content
+            )
+            
             with open(project_path, 'w') as f:
                 f.write(content)
             
-            print("已修改Xcode项目设置，强制只支持真机架构")
+            print("已修改Xcode项目设置，强制只支持真机架构并调整iOS版本到16.0")
             EOF
             
             python3 fix_xcode_project.py
@@ -153,7 +164,7 @@ jobs:
               EXCLUDED_ARCHS="i386 x86_64" \
               SUPPORTS_MACCATALYST=NO \
               SUPPORTED_PLATFORMS="iphoneos" \
-              IPHONEOS_DEPLOYMENT_TARGET="11.0" \
+              IPHONEOS_DEPLOYMENT_TARGET="16.0" \
               CODE_SIGNING_ALLOWED=YES
             # 导出IPA
             xcodebuild -exportArchive \
