@@ -97,56 +97,7 @@ jobs:
             export ARCHS="arm64"
             export EXCLUDED_ARCHS="i386 x86_64"
             export SUPPORTS_MACCATALYST=NO
-            # 创建临时脚本来修改Xcode项目设置
-            cat > fix_xcode_project.py << 'EOF'
-            import os
-            import re
-            
-            # 读取项目文件
-            project_path = "ios/Runner.xcodeproj/project.pbxproj"
-            with open(project_path, 'r') as f:
-                content = f.read()
-            
-            # 强制设置构建设置，排除模拟器架构并调整iOS版本
-            replacements = [
-                ('SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";', 'SUPPORTED_PLATFORMS = "iphoneos";'),
-                ('SUPPORTS_MACCATALYST = YES;', 'SUPPORTS_MACCATALYST = NO;'),
-                ('VALID_ARCHS = "arm64 x86_64";', 'VALID_ARCHS = "arm64";'),
-                ('ARCHS = "$(ARCHS_STANDARD)";', 'ARCHS = "arm64";'),
-                ('IPHONEOS_DEPLOYMENT_TARGET = 18.0;', 'IPHONEOS_DEPLOYMENT_TARGET = 16.0;'),
-                ('IPHONEOS_DEPLOYMENT_TARGET = 17.0;', 'IPHONEOS_DEPLOYMENT_TARGET = 16.0;'),
-                ('IPHONEOS_DEPLOYMENT_TARGET = 18.1;', 'IPHONEOS_DEPLOYMENT_TARGET = 16.0;'),
-                ('IPHONEOS_DEPLOYMENT_TARGET = 18.2;', 'IPHONEOS_DEPLOYMENT_TARGET = 16.0;'),
-            ]
-            
-            for old, new in replacements:
-                content = content.replace(old, new)
-            
-            # 添加排除架构设置
-            if 'EXCLUDED_ARCHS' not in content:
-                # 在每个配置块中添加EXCLUDED_ARCHS
-                content = re.sub(
-                    r'(buildSettings = \{[^}]*?)(CODE_SIGN_STYLE = [^;]*;)',
-                    r'\1EXCLUDED_ARCHS = "i386 x86_64";\n\t\t\t\t\2',
-                    content
-                )
-            
-            # 使用正则表达式处理可能的各种iOS版本格式
-            content = re.sub(
-                r'IPHONEOS_DEPLOYMENT_TARGET = (1[7-9]\.\d+|[2-9]\d\.\d+);',
-                'IPHONEOS_DEPLOYMENT_TARGET = 16.0;',
-                content
-            )
-            
-            with open(project_path, 'w') as f:
-                f.write(content)
-            
-            print("已修改Xcode项目设置，强制只支持真机架构并调整iOS版本到16.0")
-            EOF
-            
-            python3 fix_xcode_project.py
-            
-            # 现在尝试构建iOS应用
+            # 本地Xcode项目配置已优化，直接构建iOS应用
             flutter build ios --release --no-codesign
             
             # 进入iOS目录使用xcodebuild
@@ -159,12 +110,6 @@ jobs:
               -destination "generic/platform=iOS" \
               -archivePath build/Runner.xcarchive \
               ONLY_ACTIVE_ARCH=NO \
-              VALID_ARCHS="arm64" \
-              ARCHS="arm64" \
-              EXCLUDED_ARCHS="i386 x86_64" \
-              SUPPORTS_MACCATALYST=NO \
-              SUPPORTED_PLATFORMS="iphoneos" \
-              IPHONEOS_DEPLOYMENT_TARGET="16.0" \
               CODE_SIGNING_ALLOWED=YES
             # 导出IPA
             xcodebuild -exportArchive \
