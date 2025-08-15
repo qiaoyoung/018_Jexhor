@@ -53,10 +53,23 @@ jobs:
           echo "Current Directory: $(pwd)"
 
 
+      # 添加环境变量和设置
+      - name: Set up iOS build environment
+        run: |
+          # 强制只使用真机设备架构
+          export ONLY_ACTIVE_ARCH=NO
+          export VALID_ARCHS="arm64"
+          export ARCHS="arm64"
+          # 清理可能的冲突文件
+          rm -rf ios/build
+          rm -rf build/ios
+          
       - uses: cedvdb/action-flutter-build-ios@v1
         with:
           build-cmd: |
-            flutter build ipa --release --export-options-plist=ios/ExportOptions.plist --no-tree-shake-icons
+            flutter build ios --release --no-codesign
+            cd ios && xcodebuild -workspace Runner.xcworkspace -scheme Runner -configuration Release -destination generic/platform=iOS -archivePath build/Runner.xcarchive archive
+            xcodebuild -exportArchive -archivePath build/Runner.xcarchive -exportPath build/ipa -exportOptionsPlist ExportOptions.plist
           certificate-base64: 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
 
           certificate-password: 111111
@@ -65,19 +78,21 @@ jobs:
 
           keychain-password: 111111
 
-      # # 添加检查步骤
+      # 添加检查步骤
       - name: 检查构建文件
         run: |
-          echo "检查 build/ios/ipa 目录内容："
-          ls -la build/ios/ipa/
-          echo "检查 build/ios 目录内容："
-          ls -la build/ios/
+          echo "检查 ios/build/ipa 目录内容："
+          ls -la ios/build/ipa/ || echo "ios/build/ipa/ 不存在"
+          echo "检查 ios/build 目录内容："
+          ls -la ios/build/ || echo "ios/build/ 不存在"
+          echo "检查当前目录构建文件："
+          find . -name "*.ipa" -type f || echo "未找到 .ipa 文件"
 
       - name: Archive IPA
         uses: actions/upload-artifact@v4
         with:
           name: release-ipa
-          path: build/ios/ipa
+          path: ios/build/ipa
 
           
       # - name: Upload using iTMSTransporter
