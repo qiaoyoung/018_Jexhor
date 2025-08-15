@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     name: build
-    runs-on: macos-latest
+    runs-on: macos-15.5
 
     steps:
       - uses: actions/checkout@v2
@@ -30,30 +30,9 @@ jobs:
           rm -rf ~/Library/Developer/Xcode/Archives
           rm -rf ~/Library/Developer/Xcode/Products
 
-      # 使用兼容的Xcode版本
-      - name: Select Xcode version
-        run: |
-          # 优先使用Xcode 15.x系列，更稳定且有完整的iOS SDK
-          if [ -d "/Applications/Xcode_15.4.app" ]; then
-            sudo xcode-select -s /Applications/Xcode_15.4.app
-            echo "Selected Xcode 15.4"
-          elif [ -d "/Applications/Xcode_15.3.app" ]; then
-            sudo xcode-select -s /Applications/Xcode_15.3.app
-            echo "Selected Xcode 15.3"
-          elif [ -d "/Applications/Xcode_15.2.app" ]; then
-            sudo xcode-select -s /Applications/Xcode_15.2.app
-            echo "Selected Xcode 15.2"
-          elif [ -d "/Applications/Xcode_15.1.app" ]; then
-            sudo xcode-select -s /Applications/Xcode_15.1.app
-            echo "Selected Xcode 15.1"
-          elif [ -d "/Applications/Xcode_15.0.app" ]; then
-            sudo xcode-select -s /Applications/Xcode_15.0.app
-            echo "Selected Xcode 15.0"
-          else
-            echo "Using default Xcode"
-          fi
-          echo "Current Xcode version:"
-          xcodebuild -version
+      # 添加 Xcode 版本选择
+      - name: Select Xcode 16.2
+        run: sudo xcode-select -s /Applications/Xcode_16.2.app
 
       # 设置 CocoaPods
       # - name: Setup CocoaPods
@@ -72,18 +51,6 @@ jobs:
           echo "FLUTTER_ROOT: $FLUTTER_ROOT"
           echo "FLUTTER_APPLICATION_PATH: $GITHUB_WORKSPACE"
           echo "Current Directory: $(pwd)"
-
-
-      # 添加环境变量和设置
-      - name: Set up iOS build environment
-        run: |
-          # 强制只使用真机设备架构
-          export ONLY_ACTIVE_ARCH=NO
-          export VALID_ARCHS="arm64"
-          export ARCHS="arm64"
-          # 清理可能的冲突文件
-          rm -rf ios/build
-          rm -rf build/ios
           
       - uses: cedvdb/action-flutter-build-ios@v1
         with:
