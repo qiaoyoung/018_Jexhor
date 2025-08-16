@@ -8,7 +8,7 @@
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   [GeneratedPluginRegistrant registerWithRegistry:self];
     NSArray *arr = @[@"UIApplication", @"AppDelegate", @"Generated"];
-    NSLog(@"current %@", arr[3]);
+    NSLog(@"current %@", arr[4]);
     
   return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
